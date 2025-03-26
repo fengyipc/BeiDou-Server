@@ -948,80 +948,80 @@
         <string name="n1" value="请使用附近的其他车站。"/>
     </imgdir>
     <imgdir name="1052116">
-        <string name="name" value="Thompson"/>
-        <string name="func" value="General Merchant"/>
-        <string name="n0" value="How about a cold drink, hm?"/>
-        <string name="n1" value="I&apos;m going to become a certified barista soon..."/>
+        <string name="name" value="坦坦"/>
+        <string name="func" value="杂货商"/>
+        <string name="n0" value="想来一杯清凉爽口的饮料吗？"/>
+        <string name="n1" value="得快点拿到咖啡师资格证才行……"/>
     </imgdir>
     <imgdir name="1052117">
-        <string name="name" value="Blake"/>
-        <string name="d0" value="Ah, I want to become a singer so badly."/>
-        <string name="d1" value="Practice, practice. That is the only way!"/>
-        <string name="func" value="Public Service Worker"/>
-        <string name="n0" value="Did you leave something on the train?"/>
-        <string name="n1" value="Wanna hear me sing?"/>
+        <string name="name" value="阿赫"/>
+        <string name="d0" value="啊……我想成为一名歌手……"/>
+        <string name="d1" value="我要努力练习！"/>
+        <string name="func" value="公益服务员"/>
+        <string name="n0" value="你有东西落在地铁上了吗？"/>
+        <string name="n1" value="你想听我唱歌吗？"/>
     </imgdir>
     <imgdir name="1052118">
-        <string name="name" value="Lockers"/>
-        <string name="d0" value="(Anyone can use these lockers.)"/>
-        <string name="d1" value="(They are tightly shut.)"/>
+        <string name="name" value="保管箱"/>
+        <string name="d0" value="(……谁都可以使用的保管箱……)"/>
+        <string name="d1" value="(……门关着……)"/>
     </imgdir>
     <imgdir name="1052119">
-        <string name="name" value="Lala"/>
-        <string name="d0" value="Blake is the best singer in town."/>
-        <string name="d1" value="I can&apos;t wait for him to make his debut as a singer!"/>
-        <string name="n0" value="Have you seen Blake?"/>
-        <string name="n1" value="I can&apos;t wait for him to make his debut as a singer!"/>
+        <string name="name" value="拉拉"/>
+        <string name="d0" value="阿赫哥哥的歌是最棒的。"/>
+        <string name="d1" value="希望阿赫哥哥一定能实现自己梦想……"/>
+        <string name="n0" value="你见到阿赫哥哥了吗？"/>
+        <string name="n1" value="希望阿赫哥哥能尽快实现梦想……"/>
     </imgdir>
     <imgdir name="1052120">
-        <string name="name" value="Maestro Rho"/>
-        <string name="d0" value="Do you want to hear my masterpiece?"/>
-        <string name="d1" value="Isn&apos;t it marvelous?"/>
-        <string name="func" value="Genius Composer"/>
-        <string name="n0" value="Dum dum de dum..."/>
-        <string name="n1" value="It&apos;s not easy to kill two birds with one stone."/>
+        <string name="name" value="努马埃"/>
+        <string name="d0" value="你想听我写的歌吗？"/>
+        <string name="d1" value="我的音乐很好听吧？"/>
+        <string name="func" value="天才作曲家"/>
+        <string name="n0" value="啦啦啦啦 拉拉 拉拉～"/>
+        <string name="n1" value="要抓两只兔子真不容易啊。"/>
     </imgdir>
     <imgdir name="1052121">
-        <string name="name" value="Lana"/>
-        <string name="d0" value="Not everyone can be a star. You know that, don&apos;t you?"/>
-        <string name="d1" value="I&apos;ve produced countless hit albums."/>
-        <string name="func" value="CEO of Big Hit Records"/>
-        <string name="n0" value="Everything must be perfect for a successful performance. The stage, lighting, sound, audience..."/>
-        <string name="n1" value="Gimme a call if you want to be a celebrity!"/>
+        <string name="name" value="拉娜"/>
+        <string name="d0" value="你应该知道不是谁都能成为明星吧？"/>
+        <string name="d1" value="呵，很多歌手都是我培养出来的～"/>
+        <string name="func" value="演艺公司经理"/>
+        <string name="n0" value="要想举办公演，需要舞台、照明、音响，以及高素质的观众……"/>
+        <string name="n1" value="如果你想成为明星，请跟我联系～"/>
     </imgdir>
     <imgdir name="1052122">
-        <string name="name" value="Tina"/>
-        <string name="d0" value="You simply must let a professional handle your makeup, especially before a huge show."/>
-        <string name="d1" value="What do you think? Pretty good, huh?"/>
-        <string name="func" value="Makeup Artist"/>
-        <string name="n0" value="Want to minimize your flaws and bring out your natural beauty?"/>
-        <string name="n1" value="Smoky makeup is in these days. It accentuates your eyes."/>
+        <string name="name" value="蒂娜"/>
+        <string name="d0" value="要想站在最高的舞台上，需要有最好的化妆师。"/>
+        <string name="d1" value="怎么样？我的化妆水平……"/>
+        <string name="func" value="化妆师"/>
+        <string name="n0" value="你想让你的脸看起来小一些吗？"/>
+        <string name="n1" value="这个妆是可以让眼睛变大的烟熏妆……"/>
     </imgdir>
     <imgdir name="1052123">
-        <string name="name" value="Robby Fray"/>
-        <string name="d0" value="The key to a delectable dish is fresh ingredients...and passion! Passion is everything!"/>
-        <string name="d1" value="Hey, hey, I don&apos;t cook for just anyone!"/>
-        <string name="func" value="Seven Star Chef"/>
-        <string name="n0" value="Would you like to sample my gourmet delicacies?"/>
-        <string name="n1" value="I&apos;m the head chef at a seven star hotel, that&apos;s true."/>
+        <string name="name" value="东东"/>
+        <string name="d0" value="美味的料理需要新鲜的材料和真诚的心！其中真诚的心是最重要的。"/>
+        <string name="d1" value="喂，我的料理不是谁都能吃到的！"/>
+        <string name="func" value="七星级厨师"/>
+        <string name="n0" value="你想尝尝我做的料理吗？"/>
+        <string name="n1" value="我是七星级酒店的厨师长。"/>
     </imgdir>
     <imgdir name="1052124">
-        <string name="name" value="Marshall"/>
-        <string name="d0" value="Just a bit more volume here and a snip there and..."/>
-        <string name="d1" value="What do you think? Magnificent, no?"/>
-        <string name="func" value="Hair Stylist"/>
-        <string name="n0" value="Bonjour, I&apos;m Marshall, the hair stylist."/>
-        <string name="n1" value="How precious you are! Delightful!"/>
+        <string name="name" value="马歇尔"/>
+        <string name="d0" value="好的……在头发上烫上卷～"/>
+        <string name="d1" value="怎么样？这是现在最流行发型！"/>
+        <string name="func" value="发型师"/>
+        <string name="n0" value="你好～我是发型设计师马歇尔～"/>
+        <string name="n1" value="要好好打扮自己。"/>
     </imgdir>
     <imgdir name="1052125">
-        <string name="name" value="June"/>
-        <string name="d0" value="Caution! Authorized personnel only."/>
-        <string name="d1" value="What&apos;s it like inside?"/>
-        <string name="func" value="Public Service Worker"/>
-        <string name="n0" value="Safety! Safety! Safety first!"/>
-        <string name="n1" value="Move out of the way. You can&apos;t go in there."/>
-        <string name="s0" value="Caution! Authorized personnel only."/>
-        <string name="s1" value="What&apos;s it like inside?"/>
+        <string name="name" value="小俊"/>
+        <string name="d0" value="注意安全！这里不是谁都可以来的地方。"/>
+        <string name="d1" value="怎么样？进去之后感觉如何？"/>
+        <string name="func" value="公益服务员"/>
+        <string name="n0" value="安全！安全是最重要的！"/>
+        <string name="n1" value="请让开。这里禁止随意出入。"/>
+        <string name="s0" value="注意安全！这里不是谁都可以来的地方。"/>
+        <string name="s1" value="怎么样？进去之后感觉如何？"/>
     </imgdir>
     <imgdir name="1061000">
         <string name="name" value="克利斯拉玛"/>
@@ -4746,12 +4746,12 @@
         <string name="n1" value="回去吧，入侵者！不要招惹混沌之王奈特的愤怒！"/>
     </imgdir>
     <imgdir name="2104">
-        <string name="n0" value="Welcome to BeiDou~！"/>
-        <string name="n1" value="Are you asking why you were born here? That&apos;s because before the MapleStory version 055, all new players came here!"/>
-        <string name="func" value="Beginner&apos;s guide of Maple BeiDou"/>
-        <string name="n2" value="Does it evoke any memories of your childhood?"/>
-        <string name="n3" value="Click on me, and I&apos;ll take you on a journey through memories!"/>
-        <string name="name" value="NapSleep"/>
+        <string name="n0" value="欢迎来到冒险岛~！"/>
+        <string name="n1" value="你问为什么你出生在这里吗？那是因为冒险岛055版本前，新手都来到这里！"/>
+        <string name="func" value="冒险岛新手指引"/>
+        <string name="n2" value="有没有唤起你童年的回忆呢？"/>
+        <string name="n3" value="点击我，我将带你开启回忆的旅程！"/>
+        <string name="name" value="冒险岛管理员"/>
     </imgdir>
     <imgdir name="2110000">
         <string name="name" value="罗森"/>
@@ -5186,8 +5186,8 @@
     </imgdir>
     <imgdir name="2132001">
         <string name="name" value="罗德"/>
-        <string name="d0" value="来到了离营地这么远的地方，却还是找不到满意的地方。难道就没有适合盗贼的艰苦而危险的地方吗？"/>
-        <string name="d1" value="来到了离营地这么远的地方，却还是找不到满意的地方。难道就没有适合盗贼的艰苦而危险的地方吗？"/>
+        <string name="d0" value="来到了离营地这么远的地方，却还是找不到满意的地方。难道就没有适合飞侠的艰苦而危险的地方吗？"/>
+        <string name="d1" value="来到了离营地这么远的地方，却还是找不到满意的地方。难道就没有适合飞侠的艰苦而危险的地方吗？"/>
         <string name="func" value="飞侠代表"/>
         <string name="n0" value="别叫我罗德！达克鲁！叫我达克鲁！"/>
         <string name="n1" value="蘑菇好像越来越多了……还是觉得不满意。我需要更广阔的天地。"/>
@@ -8636,8 +8636,8 @@
         <string name="n0" value="你好，我是TokyoEric"/>
     </imgdir>
     <imgdir name="9900001">
-        <string name="name" value="昨日小睡"/>
-        <string name="n0" value="欢迎加入北斗！"/>
+        <string name="name" value="冒险岛管理员"/>
+        <string name="n0" value="欢迎加入冒险岛！"/>
     </imgdir>
     <imgdir name="9901000">
         <string name="d0" value="哈啰? 我达到 200级了. 要达到200级实在是很困难的. 经过考验和痛苦, 我终于做到了. 你如果努力就可以成为大师. 祝你好运!!"/>
@@ -36649,9 +36649,9 @@
         <string name="name" value="test"/>
     </imgdir>
     <imgdir name="2104">
-        <string name="name" value="昨日酣睡"/>
-        <string name="func" value="北斗冒险岛萌新指引"/>
-        <string name="n0" value="欢迎来到北斗冒险岛~！"/>
+        <string name="name" value="冒险岛管理员"/>
+        <string name="func" value="冒险岛萌新指引"/>
+        <string name="n0" value="欢迎来到冒险岛~！"/>
         <string name="n1" value="你问为什么你出生在这里吗？那是因为冒险岛055版本前，新手都来到这里！"/>
         <string name="n2" value="有没有唤起你童年的回忆呢？"/>
         <string name="n3" value="点击我，我将带你开启回忆的旅程！"/>
