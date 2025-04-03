@@ -23,7 +23,12 @@ public class ChannelServerInitializer extends ServerChannelInitializer {
 
     @Override
     public void initChannel(SocketChannel socketChannel) {
-        final String clientIp = socketChannel.remoteAddress().getHostString();
+        try {
+            super.initChannel(socketChannel);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        final String clientIp = getRemoteAddress(socketChannel);
         log.info(I18nUtil.getLogMessage("ChannelServerInitializer.initChannel.info1"), clientIp,world,channel);
 
         PacketProcessor packetProcessor = PacketProcessor.getChannelServerProcessor(world, channel);

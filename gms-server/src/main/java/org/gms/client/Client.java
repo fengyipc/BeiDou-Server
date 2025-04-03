@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package org.gms.client;
 
+import io.netty.util.AttributeKey;
 import lombok.Getter;
 import org.gms.client.inventory.InventoryType;
 import org.gms.config.GameConfig;
@@ -193,9 +194,16 @@ public class Client extends ChannelInboundHandlerAdapter {
     }
 
     private static String getRemoteAddress(io.netty.channel.Channel channel) {
+        // 获取真实客户端地址
+        InetSocketAddress realAddress = (InetSocketAddress) channel.attr(AttributeKey.valueOf("realRemoteAddress")).get();
+
+        // 如果没有Proxy Protocol信息，则使用remoteAddress()
+        if (realAddress == null) {
+            realAddress = (InetSocketAddress) channel.remoteAddress();
+        }
         String remoteAddress = "null";
         try {
-            remoteAddress = ((InetSocketAddress) channel.remoteAddress()).getAddress().getHostAddress();
+            remoteAddress = realAddress.getAddress().getHostAddress();
         } catch (NullPointerException npe) {
             log.warn("Unable to get remote address for client", npe);
         }

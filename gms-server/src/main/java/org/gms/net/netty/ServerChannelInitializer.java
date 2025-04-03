@@ -1,14 +1,15 @@
 package org.gms.net.netty;
 
+import io.netty.channel.*;
+import io.netty.handler.codec.haproxy.HAProxyMessage;
+import io.netty.util.AttributeKey;
 import org.gms.client.Client;
 import org.gms.constants.net.ServerConstants;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandler;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.timeout.IdleStateHandler;
+import io.netty.handler.codec.haproxy.HAProxyMessageDecoder;
+
 import org.gms.net.encryption.ClientCyphers;
 import org.gms.net.encryption.InitializationVector;
 import org.gms.net.encryption.PacketCodec;
@@ -29,10 +30,45 @@ public abstract class ServerChannelInitializer extends ChannelInitializer<Socket
 
     static final AtomicLong sessionId = new AtomicLong(7777);
 
+    @Override
+    protected void initChannel(SocketChannel ch) throws Exception {
+        ch.pipeline().addLast(new HAProxyMessageDecoder());
+
+        // 添加自定义处理器获取真实IP
+        ch.pipeline().addLast(new ChannelInboundHandlerAdapter() {
+            @Override
+            public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+                if (msg instanceof HAProxyMessage) {
+                    HAProxyMessage proxyMsg = (HAProxyMessage) msg;
+                    // 获取真实客户端地址
+                    String realClientIp = proxyMsg.sourceAddress();
+                    int realClientPort = proxyMsg.sourcePort();
+
+                    // 将真实地址存储到channel属性中
+                    ctx.channel().attr(AttributeKey.valueOf("realRemoteAddress"))
+                            .set(new InetSocketAddress(realClientIp, realClientPort));
+
+                    // 移除HAProxyMessage，不传递给后续处理器
+                    return;
+                }
+
+                // 处理普通业务数据
+                super.channelRead(ctx, msg);
+            }
+        });
+    }
+
     String getRemoteAddress(Channel channel) {
+        // 获取真实客户端地址
+        InetSocketAddress realAddress = (InetSocketAddress) channel.attr(AttributeKey.valueOf("realRemoteAddress")).get();
+
+        // 如果没有Proxy Protocol信息，则使用remoteAddress()
+        if (realAddress == null) {
+            realAddress = (InetSocketAddress) channel.remoteAddress();
+        }
         String remoteAddress = "null";
         try {
-            remoteAddress = ((InetSocketAddress) channel.remoteAddress()).getAddress().getHostAddress();
+            remoteAddress = realAddress.getAddress().getHostAddress();
         } catch (NullPointerException npe) {
             log.warn("Unable to get remote address from netty Channel: {}", channel, npe);
         }

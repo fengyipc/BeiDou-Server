@@ -14,7 +14,12 @@ public class LoginServerInitializer extends ServerChannelInitializer {
 
     @Override
     public void initChannel(SocketChannel socketChannel) {
-        final String clientIp = socketChannel.remoteAddress().getHostString();
+        try {
+            super.initChannel(socketChannel);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        final String clientIp = getRemoteAddress(socketChannel);
         log.info(I18nUtil.getLogMessage("LoginServerInitializer.initChannel.info1"), clientIp);
 
         PacketProcessor packetProcessor = PacketProcessor.getLoginServerProcessor();
