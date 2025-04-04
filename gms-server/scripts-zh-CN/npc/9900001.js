@@ -23,7 +23,9 @@
 /**
  * @description 拍卖行中心脚本
  */
-var OldTitle ="\t\t\t\t\t#e欢迎来到#r冒险岛#k脚本中心#n\t\t\t\t\r\n";
+var OldTitle ="\t\t\t\t\t#e欢迎来到#r冒险岛#k帮助中心#n\t\t\t\t\r\n";
+var BuffStat = Java.type('org.gms.client.BuffStat');
+var GameConfig = Java.type('org.gms.config.GameConfig');
 var status = -1;
 var i = 0;
 function start() {
@@ -42,13 +44,27 @@ function action(mode, type, selection) {
 
     if (status === 0) {
 		let text = OldTitle;
-        text += "当前点券：" + cm.getPlayer().getCashShop().getCash(1) + "\r\n";
-        text += "当前抵用券：" + cm.getPlayer().getCashShop().getCash(2) + "\r\n";
-        text += "当前信用券：" + cm.getPlayer().getCashShop().getCash(4) + "\r\n";
+		let player = cm.getPlayer();
+		let expBuff = player.getBuffedValue(BuffStat.EXP_BUFF) ? 2 : 1;
+        text += "当前点券：" + player.getCashShop().getCash(1) + "\r\n";
+        text += "经验倍率：" + player.getExpRate() * expBuff * player.getFamilyExp() + "倍" + (player.hasNoviceExpRate() ? " - 新人倍率" : "") + "\r\n";
+        if (player.getMobExpRate() > 1) {
+            text += "怪物经验倍率：" + Math.round(player.getMobExpRate() * 100) / 100 + "x#k#n" + "\r\n";
+        }
+        text += "金币倍率：" + player.getMesoRate() +"倍\r\n";
+        text += "掉落倍率：" + player.getDropRate() * player.getFamilyDrop() +"倍\r\n";
+        text += "BOSS掉落倍率：" + player.getBossDropRate() +"倍\r\n";
+        if (GameConfig.getServerBoolean('use_quest_rate')) {
+            text += "任务经验倍率：" + cm.getClient().getWorldServer().getQuestRate() +"倍\r\n";
+        }
+//        text += "当前抵用券：" + player.getCashShop().getCash(2) + "\r\n";
+//        text += "当前信用券：" + player.getCashShop().getCash(4) + "\r\n";
         text += " \r\n\r\n";
+        text += "#L4#查询当前地图爆率#l\t#L5#查询物品掉落怪物#l\r\n\r\n";
+        text += "#L6#查询扭蛋机奖池#l\r\n\r\n";
 //        text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";
-        text += "#L3#返回自由市场#l \t #L4#爆率一览#l\r\n";
-        if (cm.getPlayer().isGM()) {
+//        text += "#L3#返回自由市场#l \t #L4#查询当前地图掉落#l\r\n";
+        if (player.isGM()) {
             text += "\r\n\r\n";
             text += "\t\t\t\t#r=====以下内容仅GM可见=====\r\n";
             text += "#L61#超级传送#l \t #L62#超级商店#l \t #L63#整容集合#l\r\n\r\n";
@@ -75,13 +91,22 @@ function doSelect(selection) {
 //        case 2:
 //            openNpc("在线奖励");
 //            break;
-        case 3:
-            cm.getPlayer().saveLocation("FREE_MARKET");
-            cm.warp(910000000, "out00");
-            break;
+//        case 3:
+//            cm.getPlayer().saveLocation("FREE_MARKET");
+//            cm.warp(910000000, "out00");
+//            break;
         case 4:
             openNpc("当前地图掉落");
             break;
+        case 5:
+            openNpc("查询物品掉落");
+            break;
+        case 6:
+            openNpc("查询扭蛋机奖池");
+            break;
+//        case 7:
+//            openNpc("查询NPC所在位置");
+//            break;
         // GM功能
         case 61:
             openNpc("万能传送");
