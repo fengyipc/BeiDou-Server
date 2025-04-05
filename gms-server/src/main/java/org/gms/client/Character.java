@@ -8681,7 +8681,10 @@ public class Character extends AbstractCharacterObject {
             short questid = mquest.getId();
             if (!mquest.isSameDayRepeatable() && !Quest.isExploitableQuest(questid)) {
                 awardQuestPoint(GameConfig.getServerInt("quest_point_per_quest_complete"));
-                addMaxHP(GameConfig.getServerInt("quest_complete_gain_max_hp"));
+                // 首次完成才可加HP
+                if (qs.getCompleted() < 1) {
+                    addMaxHP(GameConfig.getServerInt("quest_complete_gain_max_hp"));
+                }
             }
             qs.setCompleted(qs.getCompleted() + 1);   // Jayd's idea - count quest completed
 
