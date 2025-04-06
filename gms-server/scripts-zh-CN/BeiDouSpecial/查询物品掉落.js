@@ -22,15 +22,20 @@ function start() {
 function level1(inputText) {
     const jsItemList = getItemListByName(inputText);
     let text = "";
-    jsItemList.forEach(item => {
+    let printItem = 0;
+    for (const item of jsItemList) {
+      const MobList = getWhoDrops(item.id);
+      if (MobList.length == 0) continue;
       text += "#b#e#z" + item.id + "#: #k#n #v" + item.id + "# 掉落怪物列表：\r\n";
       text += '#d' + '\r\n'.padStart(28,'——') + '#k';
-      const MobList = getWhoDrops(item.id);
       MobList.forEach(mob => {
         text += mob + " \r\n";
       });
-    });
+      printItem += 1;
+      if (printItem >= MAX_ITEM_NUM) break;
+    };
     cm.sendOk(text);
+    cm.dispose();
 }
 
 // 根据输入的物品名模糊搜索获取物品列表转换为js数组，前五个
@@ -44,7 +49,7 @@ function getItemListByName(name) {
     jsItemList.sort(function(a, b) {
         return a.name.length - b.name.length;
     });
-    return jsItemList.slice(0, MAX_ITEM_NUM);
+    return jsItemList;
 }
 
 // 获取物品掉落的怪物列表，并转换为js数组

@@ -49,7 +49,7 @@ function action(mode, type, selection) {
 		let expBuff = player.getBuffedValue(BuffStat.EXP_BUFF) ? 2 : 1;
 		const expRate = player.getExpRate() * expBuff * player.getFamilyExp();
 		const mobRate = expRate * Math.round(player.getMobExpRate() * 100) / 100;
-        text += "当前点券：" + player.getCashShop().getCash(1) + "\t";
+        text += "当前点券：" + player.getCashShop().getCash(1) + "\r\n";
         text += "当前已完成任务数：" + player.getCompletedQuests().length + "个\r\n";
         text += " \r\n\r\n";
         text += "经验倍率：" + expRate + "倍" + (player.hasNoviceExpRate() ? " - 新人倍率" : "") + "\r\n";
