@@ -41,12 +41,12 @@ function level1() {
     }
     if (itemID === RING_ITEM[level]) {
         cm.sendOk("你当前完成任务"+questNum+"个，已拥有#e#z" + itemID + "##n，暂时不可升级，请努力完成任务升级它吧！");
-    } else if (cm.getPlayer().haveItemEquipped(item)) {
+    } else if (cm.getPlayer().haveItemEquipped(itemID)) {
         cm.sendOk("请先取下你的任务达人戒指放置在背包后再尝试升级！");
     } else {
         cm.gainItem(itemID, -1);
         cm.gainItem(RING_ITEM[level], 1);
-        cm.sendOk("已成功将你的戒指升级为#e#z" + RING_ITEM[level] + "#,请继续努力！");
+        cm.sendOk("已成功将你的戒指升级为#e#z" + RING_ITEM[level] + "##n,请继续努力！");
     }
     cm.dispose();
 }
