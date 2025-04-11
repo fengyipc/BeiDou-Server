@@ -16474,50 +16474,77 @@
                 <string name="name" value="熊宝宝聊天戒指"/>
                 <string name="desc" value="角色聊天时，会出现熊宝宝形式的对话\n框。"/>
             </imgdir>
-            <imgdir name="1112300">
-                <string name="name" value="任务达人戒指 &lt;6星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112301">
-                <string name="name" value="任务达人戒指 &lt;7星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112302">
-                <string name="name" value="任务达人戒指 &lt;8星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112303">
-                <string name="name" value="闪耀新星戒指1克拉"/>
-            </imgdir>
-            <imgdir name="1112304">
-                <string name="name" value="闪耀新星戒指2克拉"/>
-            </imgdir>
-            <imgdir name="1112305">
-                <string name="name" value="闪耀新星戒指3克拉"/>
-            </imgdir>
-            <imgdir name="1112306">
-                <string name="name" value="任务达人戒指 &lt;3星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112307">
-                <string name="name" value="任务达人戒指 &lt;4星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112308">
-                <string name="name" value="任务达人戒指 &lt;5星&gt;"/>
-                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
-            </imgdir>
-            <imgdir name="1112309">
+            <imgdir name="1112320">
                 <string name="name" value="任务达人戒指 &lt;0星&gt;"/>
                 <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
             </imgdir>
-            <imgdir name="1112310">
+            <imgdir name="1112321">
                 <string name="name" value="任务达人戒指 &lt;1星&gt;"/>
                 <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
             </imgdir>
-            <imgdir name="1112311">
+            <imgdir name="1112322">
                 <string name="name" value="任务达人戒指 &lt;2星&gt;"/>
                 <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112323">
+                <string name="name" value="任务达人戒指 &lt;3星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112324">
+                <string name="name" value="任务达人戒指 &lt;4星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112325">
+                <string name="name" value="任务达人戒指 &lt;5星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112326">
+                <string name="name" value="任务达人戒指 &lt;6星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112327">
+                <string name="name" value="任务达人戒指 &lt;7星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112328">
+                <string name="name" value="任务达人戒指 &lt;8星&gt;"/>
+                <string name="desc" value="任务达人：可通过完成一定数量任务\n升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112330">
+                <string name="name" value="怪物达人戒指 &lt;0星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112331">
+                <string name="name" value="怪物达人戒指 &lt;1星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112332">
+                <string name="name" value="怪物达人戒指 &lt;2星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112333">
+                <string name="name" value="怪物达人戒指 &lt;3星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112334">
+                <string name="name" value="怪物达人戒指 &lt;4星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112335">
+                <string name="name" value="怪物达人戒指 &lt;5星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112336">
+                <string name="name" value="怪物达人戒指 &lt;6星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112337">
+                <string name="name" value="怪物达人戒指 &lt;7星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
+            </imgdir>
+            <imgdir name="1112338">
+                <string name="name" value="怪物达人戒指 &lt;8星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物\n卡升级戒指属性"/>
             </imgdir>
             <imgdir name="1112400">
                 <string name="name" value="炼金术士之戒"/>
@@ -16625,6 +16652,10 @@
             </imgdir>
             <imgdir name="1112916">
                 <string name="name" value="寂寞单身戒指"/>
+            </imgdir>
+            <imgdir name="1112312">
+                <string name="name" value="怪物达人戒指 &lt;2星&gt;"/>
+                <string name="desc" value="怪物达人：可通过收集一定数量怪物卡\n升级戒指属性"/>
             </imgdir>
         </imgdir>
         <imgdir name="Shield">
