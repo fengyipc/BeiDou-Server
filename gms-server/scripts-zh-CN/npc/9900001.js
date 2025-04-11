@@ -66,7 +66,7 @@ function action(mode, type, selection) {
 //        text += "当前信用券：" + player.getCashShop().getCash(4) + "\r\n";
         text += " \r\n\r\n";
         text += "#L4#查询当前地图爆率#l\t#L5#查询物品掉落怪物#l\r\n\r\n";
-        text += "#L6#查询扭蛋机奖池#l\r\n\r\n";
+        text += "#L6#查询扭蛋机奖池#l\t#L7#升级任务达人戒指#l\r\n\r\n";
 //        text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";
 //        text += "#L3#返回自由市场#l \t #L4#查询当前地图掉落#l\r\n";
         if (player.isGM()) {
@@ -109,9 +109,9 @@ function doSelect(selection) {
         case 6:
             openNpc("查询扭蛋机奖池");
             break;
-//        case 7:
-//            openNpc("查询NPC所在位置");
-//            break;
+        case 7:
+            openNpc("升级任务达人戒指");
+            break;
         // GM功能
         case 61:
             openNpc("万能传送");
