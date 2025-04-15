@@ -1,28 +1,24 @@
 /*
-    This file is part of the HeavenMS MapleStory Server
-    Copyleft (L) 2016 - 2019 RonanLana
+    本文件是HeavenMS枫之谷服务器的一部分
+    版权所有(C) 2016 - 2019 RonanLana
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation version 3 as published by
-    the Free Software Foundation. You may not use, modify or distribute
-    this program under any other version of the GNU Affero General Public
-    License.
+    本程序是自由软件：您可以自由使用、修改和分发它
+    但必须遵循GNU Affero通用公共许可证第3版的规定。
+    您不能在其他版本的GNU Affero通用公共许可证下使用、修改或分发本程序。
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
+    本程序分发是希望它有用，但没有任何担保；
+    甚至没有适销性或特定用途适用性的默示担保。
+    详情请参阅GNU Affero通用公共许可证。
 
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    您应该已经收到了一份GNU Affero通用公共许可证的副本
+    如果没有，请参阅<http://www.gnu.org/licenses/>。
 */
-/* NPC: MapleTV / Larry
-	
-	Exchanger NPC:
-	* Scroll generator
-        * 
-        * @author Ronan Lana
+/* NPC: 枫叶TV / 拉里
+
+	兑换NPC:
+	* 卷轴生成器
+        *
+        * @作者 Ronan Lana
 */
 
 var status;
@@ -34,7 +30,7 @@ var tier1Scrolls = [];
 var tier2Scrolls = [2040000, 2040400, 2040500, 2040600, 2040700, 2040800, 2040900];
 var tier3Scrolls = [2048000, 2049200, 2041000, 2041100, 2041300, 2040100, 2040200, 2040300];
 
-var typeTierScrolls = [["PAD", "MAD"], ["STR", "DEX", "INT", "LUK", "ACC", "EVA", "Speed", "Jump"], ["PDD", "MDD", "MHP", "MMP"]];
+var typeTierScrolls = [["物理攻击", "魔法攻击"], ["力量", "敏捷", "智力", "运气", "命中", "回避", "移动速度", "跳跃力"], ["物理防御", "魔法防御", "最大HP", "最大MP"]];
 
 var sgItems = [4003004, 4003005, 4001006, 4006000, 4006001, 4030012];
 var sgToBucket = [100, 50, 37.5, 37.5, 37.5, 200];
@@ -67,16 +63,14 @@ function action(mode, type, selection) {
         }
 
         if (status == 0) {
-            cm.sendNext("这是冒险岛电视卷轴生成器广播。将你在冒险中获得的物品或金币放入其中，以兑换奖励！你可以放入#b任意数量的物品#k，但请注意，放入#r不同的物品#k，其中#r任何一种物品的数量更多#k，将提高奖励的可能性！");
+            cm.sendNext("这里是枫叶TV卷轴生成器广播。投入你在冒险中获得的物资或金币来兑换奖励！你可以投入#b任意数量的物资#k，但请注意投入#r不同种类的物资#k和#r大量同类物资#k会提高获得更好奖励的几率！");
         } else if (status == 1) {
             var sendStr;
 
-            //print("Book: " + sgBookBuckets + " Item: " + sgItemBuckets);
-
             if (sgItemBuckets > 0.0) {
-                sendStr = "With the items you have currently placed, you have #r" + sgBuckets + "#k buckets (#r" + (sgItemBuckets < 1.0 ? sgItemBuckets.toFixed(2) : Math.floor(sgItemBuckets)) + "#k supply buckets) for claiming a prize. Place supplies:";
+                sendStr = "根据你当前投入的物品，你有#r" + sgBuckets + "#k个兑换桶(#r" + (sgItemBuckets < 1.0 ? sgItemBuckets.toFixed(2) : Math.floor(sgItemBuckets)) + "#k个物资桶)可以兑换奖励。请选择要投入的物资：";
             } else {
-                sendStr = "You have placed no supplies yet. Place supplies:";
+                sendStr = "你还没有投入任何物资。请选择要投入的物资：";
             }
 
             var listStr = "";
@@ -89,17 +83,17 @@ function action(mode, type, selection) {
                 listStr += "#l\r\n";
             }
 
-            listStr += "#b#L" + i + "#Mesos#k";
+            listStr += "#b#L" + i + "#金币#k";
             if (sgAppliedMeso > 0) {
                 listStr += " - " + sgAppliedMeso;
             }
             listStr += "#l\r\n";
 
-            cm.sendSimple(sendStr + "\r\n\r\n" + listStr + "#r#L" + (sgItems.length + 2) + "#Retrieve a prize!#l#k\r\n");
+            cm.sendSimple(sendStr + "\r\n\r\n" + listStr + "#r#L" + (sgItems.length + 2) + "#兑换奖励！#l#k\r\n");
         } else if (status == 2) {
             if (selection == (sgItems.length + 2)) {
                 if (sgItemBuckets < 1.0) {
-                    cm.sendPrev("You have set not enough supplies. Insert at least one bucket of #bsupplies#k to claim a prize.");
+                    cm.sendPrev("你投入的物资不足。请至少投入一个#b物资桶#k才能兑换奖励。");
                 } else {
                     generateRandomScroll();
                     cm.dispose();
@@ -107,18 +101,18 @@ function action(mode, type, selection) {
             } else {
                 var tickSel;
                 if (selection < sgItems.length) {
-                    tickSel = "of #b#t" + sgItems[selection] + "##k";
+                    tickSel = "#b#t" + sgItems[selection] + "##k";
                     curItemQty = cm.getItemQuantity(sgItems[selection]);
                 } else {
-                    tickSel = "#bmesos#k";
+                    tickSel = "#b金币#k";
                     curItemQty = cm.getMeso();
                 }
 
                 curItemSel = selection;
                 if (curItemQty > 0) {
-                    cm.sendGetText("How many " + tickSel + " do you want to provide? (#r" + curItemQty + "#k available)#k");
+                    cm.sendGetText("你想投入多少" + tickSel + "？(当前有#r" + curItemQty + "#k)#k");
                 } else {
-                    cm.sendPrev("You have got #rnone#k " + tickSel + " to provide for Scroll Generation. Click '#rBack#k' to return to the main interface.");
+                    cm.sendPrev("你没有" + tickSel + "可以投入卷轴生成器。点击'#r返回#k'回到主界面。");
                 }
             }
         } else if (status == 3) {
@@ -131,7 +125,7 @@ function action(mode, type, selection) {
                 }
 
                 if (placedQty > curItemQty) {
-                    cm.sendPrev("You cannot insert the given amount of #r" + (curItemSel < sgItems.length ? "#t" + sgItems[curItemSel] + "#" : "mesos") + "#k (#r" + curItemQty + "#k available). Click '#rBack#k' to return to the main interface.");
+                    cm.sendPrev("你不能投入#r" + (curItemSel < sgItems.length ? "#t" + sgItems[curItemSel] + "#" : "金币") + "#k超过你拥有的数量(#r" + curItemQty + "#k)。点击'#r返回#k'回到主界面。");
                 } else {
                     if (curItemSel < sgItems.length) {
                         sgApplyItem(curItemSel, placedQty);
@@ -139,10 +133,10 @@ function action(mode, type, selection) {
                         sgApplyMeso(placedQty);
                     }
 
-                    cm.sendPrev("Operation succeeded. Click '#rBack#k' to return to the main interface.");
+                    cm.sendPrev("操作成功。点击'#r返回#k'回到主界面。");
                 }
             } catch (err) {
-                cm.sendPrev("You must enter a positive number of supplies to insert. Click '#rBack#k' to return to the main interface.");
+                cm.sendPrev("请输入一个正数来投入物资。点击'#r返回#k'回到主界面。");
             }
 
             status = 2;
@@ -239,7 +233,7 @@ function getAvailableScrollsPool(baseScrolls, rewardTier, successTier) {
     return scrolls;
 }
 
-// passive tier buckets...
+// 被动等级桶计算...
 
 function getLevelTier(level) {
     return Math.floor((level - 1) / 15) + 1;
@@ -256,7 +250,7 @@ function getPlayerCardTierPower() {
         var ceTier = Math.floor(cardid / 1000) % 10;
         countTier[ceTier] += ce.getValue();
 
-        if (ceTier >= 8) {  // is special card
+        if (ceTier >= 8) {  // 是特殊卡片
             const LifeFactory = Java.type('org.gms.server.life.LifeFactory');
             const ItemInformationProvider = Java.type('org.gms.server.ItemInformationProvider');
             var mobLevel = LifeFactory.getMonsterLevel(ItemInformationProvider.getInstance().getCardMobId(cardid));
@@ -274,7 +268,7 @@ function calculateMobBookTierBuckets(tierSize, playerCards, tier) {
         return 0.0;
     }
 
-    tier--; // started at 1
+    tier--; // 从1开始
     var tierHitRate = playerCards[tier] / (tierSize[tier] * 5);
     if (tierHitRate > 0.5) {
         tierHitRate = 0.5;
@@ -314,7 +308,7 @@ function recalcBuckets() {
     }
 }
 
-// variable buckets...
+// 变量桶计算...
 
 function sgApplyItem(idx, amount) {
     if (sgAppliedItems[idx] != amount) {
@@ -358,7 +352,7 @@ function calculateScrollTiers() {
         buckets--;
     }
 
-    // normalize tiers
+    // 标准化等级
     for (var i = 0; i < tiers.length; i++) {
         tiers[i] = 3 - tiers[i];
     }
@@ -401,7 +395,7 @@ function getRandomScrollFromRightPermutations(tiers) {
 function getRandomScroll(tiers) {
     var itemid = getRandomScrollFromTiers(tiers);
     if (itemid == -1) {
-        // worst case shift-right permutations...
+        // 最坏情况下的右移排列...
         itemid = getRandomScrollFromRightPermutations(tiers);
     }
 
@@ -439,14 +433,14 @@ function generateRandomScroll() {
         var itemid = getRandomScroll(calculateScrollTiers());
         if (itemid != -1) {
             if (performExchange(itemid, 1)) {
-                cm.sendNext("交易已接受！你已经收到了一个 #r#t" + itemid + "##k。");
+                cm.sendNext("交易成功！你获得了#r#t" + itemid + "##k。");
             } else {
-                cm.sendOk("哦，看起来有些物品不见了... 在尝试交换之前，请仔细检查你的库存中提供的物品。");
+                cm.sendOk("哦，看起来缺少一些物品...请在兑换前再次检查你背包中的物品。");
             }
         } else {
-            cm.sendOk("抱歉给您带来不便，但目前商店里似乎没有卷轴……请稍后再试。");
+            cm.sendOk("很抱歉，目前商店里没有可用的卷轴...请稍后再试。");
         }
     } else {
-        cm.sendOk("请在尝试卷轴之前，先查看您的美国东部服务器库存中是否有空位。");
+        cm.sendOk("请在尝试兑换卷轴前确保你的消耗栏有足够的空间。");
     }
 }
