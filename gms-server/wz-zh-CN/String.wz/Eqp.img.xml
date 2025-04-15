@@ -681,11 +681,11 @@
                 <string name="name" value="睡眠眼罩(绿色)"/>
             </imgdir>
             <imgdir name="1022088">
-                <string name="name" value="考古学家眼镜"/>
+                <string name="name" value="考古学家眼镜1"/>
                 <string name="desc" value="作为遗物大会活动参与奖奖品的考古学\n家眼镜"/>
             </imgdir>
             <imgdir name="1022089">
-                <string name="name" value="考古学家眼镜"/>
+                <string name="name" value="考古学家眼镜3"/>
                 <string name="desc" value="进入遗物大会Top10后可以获得的考古\n学家眼镜"/>
             </imgdir>
             <imgdir name="1022095">
@@ -695,7 +695,7 @@
                 <string name="name" value="LED炫光眼镜"/>
             </imgdir>
             <imgdir name="1022103">
-                <string name="name" value="考古学家眼镜"/>
+                <string name="name" value="考古学家眼镜2"/>
                 <string name="desc" value="作为遗物大会活动参与奖奖品的考古学\n家眼镜"/>
             </imgdir>
             <imgdir name="1022104">
@@ -16553,11 +16553,10 @@
                 <string name="name" value="休彼德蔓之戒"/>
             </imgdir>
             <imgdir name="1112402">
-                <string name="name" value="休彼德蔓的戒指"/>
+                <string name="name" value="休彼德蔓之戒"/>
             </imgdir>
             <imgdir name="1112405">
-                <string name="name" value="利琳的戒指"/>
-                <string name="desc" value="放在仓库里后，可以在同一帐号下的不\n同角色间共享的戒指。无法和其他玩家\n交易。"/>
+                <string name="name" value="利琳的戒指3"/>
             </imgdir>
             <imgdir name="1112407">
                 <string name="name" value="智力飞天猪的戒指"/>
@@ -16568,12 +16567,10 @@
                 <string name="desc" value=""/>
             </imgdir>
             <imgdir name="1112413">
-                <string name="name" value="利琳的戒指"/>
-                <string name="desc" value="放在仓库里后，可以在同一帐号下的不\n同角色间共享的戒指。无法和其他玩家\n交易。"/>
+                <string name="name" value="利琳的戒指1"/>
             </imgdir>
             <imgdir name="1112414">
-                <string name="name" value="利琳的戒指"/>
-                <string name="desc" value="放在仓库里后，可以在同一帐号下的不\n同角色间共享的戒指。无法和其他玩家\n交易。"/>
+                <string name="name" value="利琳的戒指2"/>
             </imgdir>
             <imgdir name="1112800">
                 <string name="name" value="四叶挚友戒指"/>
