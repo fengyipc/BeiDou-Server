@@ -127,7 +127,8 @@ function levelShowDropList(mobId) {
             Object.keys(table).forEach(key => table[key] = Math.ceil(table[key] / 2) * 2);
             msgtext += '#b' + Object.entries(table).map(([key,val]) => `${key.padEnd(val,'\t')}`).join('\t') + '#k\r\n';
             msgtext += Object.entries(dropitemlist).map(([itemId, { name, chance ,questid}]) => {
-                    let msg = `#L${itemId}##v${itemId}#\r\n#b#e${name.padEnd(table['物品名称'] + countAllSymbols(name), '\t')}#k#n\t`;
+                    let msg = `#L${itemId}##v${itemId}#\r\n#b#z${itemId}##k#n\t`;
+//                    let msg = `#L${itemId}##v${itemId}#\r\n#b#e${name.padEnd(table['物品名称'] + countAllSymbols(name), '\t')}#k#n\t`;
                     msg += `${(chance + '%').padEnd(table['基础掉率'], '\t')}\t#d${(chance * player.getDropRate() * player.getFamilyDrop() + '%').padEnd(table['你的掉率'], '\t')}#k\r\n`;
                     msg += questid > 0 ? '#r[任务道具]#k '+QuestInfo.getInstance(questid).getName()+'\r\n' : '';
                     msg += '#l';
