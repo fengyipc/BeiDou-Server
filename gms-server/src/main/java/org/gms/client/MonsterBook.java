@@ -201,6 +201,12 @@ public final class MonsterBook {
         }
     }
 
+    public long getFullCards() {
+        return cards.values().stream()
+                .filter(value -> value == 5)
+                .count();
+    }
+
     public static int[] getCardTierSize() {
         try (Connection con = DatabaseConnection.getConnection();
              PreparedStatement ps = con.prepareStatement("SELECT COUNT(*) FROM monstercarddata GROUP BY floor(cardid / 1000);", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
