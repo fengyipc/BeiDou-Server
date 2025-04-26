@@ -51,6 +51,7 @@ function action(mode, type, selection) {
 		const mobRate = expRate * Math.round(player.getMobExpRate() * 100) / 100;
         text += "当前点券：" + player.getCashShop().getCash(1) + "\r\n";
         text += "当前已完成任务数：" + player.getCompletedQuests().length + "个\r\n";
+        text += "当前已收集怪物卡数：" + cm.getPlayer().getFullMonsterCards() + "张\r\n";
         text += " \r\n\r\n";
         text += "经验倍率：" + expRate + "倍" + (player.hasNoviceExpRate() ? " - 新人倍率" : "") + "\r\n";
         if (player.getMobExpRate() > 1) {

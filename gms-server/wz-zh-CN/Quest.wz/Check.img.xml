@@ -10330,7 +10330,7 @@
         <imgdir name="0">
             <int name="npc" value="2042000"/>
             <int name="lvmin" value="30"/>
-            <int name="lvmax" value="50"/>
+            <int name="lvmax" value="70"/>
         </imgdir>
     </imgdir>
     <imgdir name="1302">
@@ -10338,7 +10338,7 @@
         <imgdir name="0">
             <int name="npc" value="2042000"/>
             <int name="lvmin" value="51"/>
-            <int name="lvmax" value="70"/>
+            <int name="lvmax" value="100"/>
         </imgdir>
     </imgdir>
     <imgdir name="19000">
@@ -34642,6 +34642,8 @@
         <imgdir name="0">
             <int name="npc" value="9201031"/>
             <int name="lvmin" value="23"/>
+            <string name="start" value="2010010100"/>
+            <string name="end" value="2010012000"/>
         </imgdir>
     </imgdir>
     <imgdir name="28333">

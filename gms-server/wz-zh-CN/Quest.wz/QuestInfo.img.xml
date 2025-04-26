@@ -1693,7 +1693,7 @@
         <string name="1"
             value="山姆教会了我#b如何使用AP#k，每当我的等级提升时就可以获得。AP的投资决定了我的力量（STR）、智力（INT）、敏捷（DEX）和运气（LUK）。我对AP的投资选择将增加我的HP和MP。\n\n哇……太棒了！多亏了他，我学到了很多。山姆说还有一件事要告诉我。" />
         <string name="2"
-            value="山姆告诉我，如果我想通过职业晋升成为更强的冒险者，就得去维多利亚岛。我可以选择战士、法师、弓箭手、盗贼和海盗这五个职业。每个职业都有加入和训练该职业所需的属性要求：#b战士需要35点STR，法师需要20点INT，弓箭手需要25点DEX，盗贼需要25点DEX#k。我会记住这些，并在我想要的职业上投入相应的AP！" />
+            value="山姆告诉我，如果我想通过职业晋升成为更强的冒险者，就得去维多利亚岛。我可以选择战士、法师、弓箭手、飞侠和海盗这五个职业。每个职业都有加入和训练该职业所需的属性要求：#b战士需要35点STR，法师需要20点INT，弓箭手需要25点DEX，飞侠需要25点DEX#k。我会记住这些，并在我想要的职业上投入相应的AP！" />
         <int name="area" value="20" />
         <int name="autoStart" value="1" />
     </imgdir>
@@ -10616,17 +10616,17 @@
         <string name="rewardSummary" value="50,000 Meso " />
     </imgdir>
     <imgdir name="28331">
-        <string name="name" value="Festival of Lights - Building the Altar" />
-        <string name="parent" value="Festival of Lights" />
+        <string name="name" value="光明庆典·搭建祭坛" />
+        <string name="parent" value="光明庆典" />
         <int name="order" value="1" />
         <string name="0"
-            value="Hmm, that woman looks like she&apos;s preparing some sort of celebration... I should check it out." />
+            value="那位女士似乎在筹备什么庆典活动...过去看看吧。" />
         <string name="1"
-            value="I spoke with Hannah, and she&apos;s preparing a Festival of Lights. I&apos;ve agreed to help her build the Altar by gathering 25 Altar Pieces. She mentioned that the monsters would already have an axe stuck in them, so I should hunt those." />
+            value="汉娜正在筹备光明庆典，我答应帮她收集25个祭坛部件来搭建祭坛。她说那些怪物身上会插着斧头，应该就是我要狩猎的目标。" />
         <string name="2"
-            value="I collected the 25 Altar Pieces and returned to Hannah. She was happy, and began building the Altar. She also mentioned that I could come back for more work when I have a chance" />
+            value="我收集齐25个祭坛部件交给汉娜。她很高兴地开始搭建祭坛，还表示等我方便时可以再来帮忙。" />
         <int name="area" value="30" />
-    </imgdir>
+</imgdir>
     <imgdir name="28333">
         <string name="name" value="New Year&apos;s Presents from Cassandra" />
         <int name="area" value="50" />
@@ -11105,26 +11105,26 @@
         <int name="viewMedalItem" value="1142014" />
     </imgdir>
     <imgdir name="29505">
-        <string name="name" value="The Carnivalian of Absolute Victory" />
-        <int name="area" value="10" />
+        <string name="name" value="挑战勋章-嘉年华百战百胜勋章" />
+        <int name="area" value="51" />
         <string name="0"
-            value="If you think you have the most wins under your belt in the 2nd Monster Carnival, acquire the #bAbsolute Victory Carnivalian Medal#k from Spiegelmann!" />
+                value="若你认为自己在第2届怪物嘉年华中获胜次数最多，就去#p2042000#那里领取#b#z1142077##k吧！" />
         <string name="1"
-            value="If you think you have the most wins under your belt in the 2nd Monster Carnival, acquire the #bAbsolute Victory Carnivalian Medal#k from Spiegelmann!" />
+                value="若你认为自己在第2届怪物嘉年华中获胜次数最多，就去#p2042000#那里领取#b#z1142077##k吧！" />
         <string name="2"
-            value="You have acquired the #bAbsolute Victory Carnivalian Medal#k for having the most wins in the 2nd Monster Carnival." />
+                value="你因在第2届怪物嘉年华中获胜次数最多，获得了#b#z1142077##k。" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142077" />
     </imgdir>
     <imgdir name="29506">
-        <string name="name" value="The Gifted Carnivalian" />
-        <int name="area" value="10" />
+        <string name="name" value="挑战勋章-嘉年华天才勋章" />
+        <int name="area" value="51" />
         <string name="0"
-            value="If you think you have the highest victory rate in the 2nd Monster Carnival, acquire the #bGifted Carnivalian Medal#k from Spiegelmann!" />
+                value="若你认为自己在第2届怪物嘉年华中胜率最高，就去#p2042000#那里领取#b#z1142078##k吧！" />
         <string name="1"
-            value="If you think you have the highest victory rate in the 2nd Monster Carnival, acquire the #bGifted Carnivalian Medal#k from Spiegelmann!" />
+                value="若你认为自己在第2届怪物嘉年华中胜率最高，就去#p2042000#那里领取#b#z1142078##k吧！" />
         <string name="2"
-            value="You have acquired the #Gifted Carnivalian Medal#k for having the highest victory rate in the 2nd Monster Carnival." />
+                value="你因在第2届怪物嘉年华中胜率最高，获得了#b#z1142078##k。" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142078" />
     </imgdir>
@@ -11132,12 +11132,12 @@
         <string name="name" value="挑战勋章-可爱宠物主人勋章" />
         <int name="area" value="51" />
         <string name="0"
-            value="#b#eTitle Challenge - Wonderful Pet Owner#n\n#kIf you have a pet, see if you can acquire #r1400 Closeness points#k with your pet! Dalair, on behalf of the God of Honor, is looking for passionate and caring pet owners. He says anyone who reaches #r1400 Closeness points#k with a pet will receive the #e#bWonderful Pet Owner#k#n title." />
+                value="#b#e挑战勋章 - 可爱宠物主人#n\n#k若你拥有宠物，试试能否与它培养#r1400点亲密度#k吧！达拉尔代表荣誉之神寻找充满爱心的宠物主人，宣布与宠物达到#r1400点亲密度#k者将获得#e#b可爱宠物主人#k#n称号。" />
         <string name="1"
-            value="#b#eTitle Challenge - Wonderful Pet Owner#n#k\n\nAcquire #r1400#k Closeness points with your pet." />
+                value="#b#e挑战勋章 - 可爱宠物主人#n#k\n\n与宠物培养#r1400#k点亲密度。" />
         <string name="2"
-            value="#b#eTitle Challenge - Wonderful Pet Owner#n#k\n\nYou have received the #bWonderful Pet Owner#k title and the associated medal." />
-        <string name="demandSummary" value="Acquire 1400 Closeness points with your pet." />
+                value="#b#e挑战勋章 - 可爱宠物主人#n#k\n\n你已获得#b可爱宠物主人#k称号及对应勋章。" />
+        <string name="demandSummary" value="与宠物培养1400点亲密度" />
         <string name="rewardSummary" value="#Wbasic# #v1142082:##t1142082:# 1" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142082" />
@@ -11146,51 +11146,51 @@
         <string name="name" value="挑战勋章-最佳公民勋章" />
         <int name="area" value="51" />
         <string name="0"
-            value="#b#eTitle Challenge - Outstanding Citizen#n\nParticipate in #k#bMarriage, Guild, and Family#k activities! Dalair, on behalf of the God of Honor, is looking for active citizens. He says anyone who participates in a #bMarriage#k and a #bGuild#k, and #bhas at least 1 Junior#k, will receive the #e#bOutstanding Citizen#k#n title." />
+                value="#b#e挑战勋章 - 模范公民#n\n参与#k#b婚姻、公会和家族#k活动！达拉尔代表荣誉之神寻找活跃公民，宣布同时参与#b婚姻#k与#b公会#k活动且#b拥有至少1名后辈#k者，将获得#e#b模范公民#k#n称号。" />
         <string name="1"
-            value="#b#eTitle Challenge - Outstanding Citizen#n#k\n Actively participate in Marriage, Guild, and Family activities." />
+                value="#b#e挑战勋章 - 模范公民#n#k\n积极参与婚姻、公会及家族活动" />
         <string name="2"
-            value="#b#eTitle Challenge - Outstanding Citizen#n#k\n\nYou have acquired the #bOutstanding Citizen#k title and the associated medal." />
+                value="#b#e挑战勋章 - 模范公民#n#k\n\n你已获得#b模范公民#k称号及对应勋章。" />
         <string name="demandSummary"
-            value="Be part of a Marriage and a Guild, and register at least 1 Junior." />
+                value="需同时拥有婚姻关系、加入公会并登记至少1名后辈" />
         <string name="rewardSummary" value="#Wbasic# #v1142081:##t1142081:# 1" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142081" />
     </imgdir>
     <imgdir name="29509">
-        <string name="name" value="坚强的挑战者" />
+        <string name="name" value="无尽的挑战者" />
         <int name="area" value="51" />
         <string name="0"
-            value="#b#eTitle Challenge - Persevering Challenger#n\nComplete the #k#bDangerous Dungeon!#k quest. Dalair, on behalf of the God of Honor, is looking for explorers who never cease to face challenges. He says anyone who defeats a lot of monsters in the dungeons in Sleepywood will receive the #bPersevering Challenger#k#n title." />
+                value="#b#e挑战勋章 - 坚韧挑战者#n\n完成#k#b危险地城！#k任务。达拉尔代表荣誉之神寻找永不言弃的探险者，宣布在勇士部落地城中击败大量怪物者将获得#b坚韧挑战者#k#n称号。" />
         <string name="1"
-            value="#b#eTitle Challenge - Persevering Challenger#n#k\nComplete 3 types of #bDangerous Dungeon!#k quests in Sleepywood." />
+                value="#b#e挑战勋章 - 坚韧挑战者#n#k\n完成勇士部落3种#b危险地城！#k任务" />
         <string name="2"
-            value="#b#eTitle Challenge - Persevering Challenger#n#k\n\nYou have acquired the #bPersevering Challenger#k title and the associated medal." />
+                value="#b#e挑战勋章 - 坚韧挑战者#n#k\n\n你已获得#b坚韧挑战者#k称号及对应勋章。" />
         <string name="demandSummary"
-            value="- #y2111# (#u2111#) - #y2112# (#u2112#) - #y2113# (#u2113#)" />
+                value="- #y2111# (#u2111#) - #y2112# (#u2112#) - #y2113# (#u2113#)" />
         <string name="rewardSummary" value="#Wbasic# #v1142084:##t1142084:# 1" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142084" />
     </imgdir>
     <imgdir name="29510">
-        <string name="name" value="Foxwit&apos;s Research" />
+        <string name="name" value="福克斯维特的研究" />
         <int name="area" value="45" />
-        <string name="0" value="Let&apos;s go find Foxwit." />
+        <string name="0" value="去找福克斯维特吧" />
         <string name="1"
-            value="Foxwit needs the drops of some raid bosses to research the cause of the recent upheavals. Guess it&apos;s time to join some expeditions.\n\n#i4021010##t4021010#  #b#c4021010##k / 1\n#i4032133##t4032133#  #b#c4032133##k / 1" />
+                value="福克斯维特需要某些远征BOSS的掉落物来研究近期异变的原因，是时候参加远征队了。\n\n#i4021010##t4021010#  #b#c4021010##k / 1\n#i4032133##t4032133#  #b#c4032133##k / 1" />
         <string name="2"
-            value="I have returned the items Foxwit asked for. The rewards were esplendid." />
+                value="已将福克斯维特所需的物品交还，获得的奖励非常丰厚。" />
     </imgdir>
     <imgdir name="29512">
         <string name="name" value="挑战勋章-怪物博士勋章" />
         <int name="area" value="51" />
         <string name="0"
-            value="#b#eTitle Challenge - Monster Expert#n\nCollect #k#b30 Monster Cards#k. Dalair, on behalf of the God of Honor, is looking for explorers who know everything there is to know about the monsters in Maple World. He says anyone who collects more than 30 Monster Cards will receive the #bMonster Expert#k#n title." />
+                value="#b#e挑战勋章 - 怪物博士#n\n收集#k#b30张怪物卡片#k。达拉尔代表荣誉之神寻找精通冒险岛怪物图鉴的探险者，宣布收集超过30张怪物卡片者将获得#b怪物博士#k#n称号。" />
         <string name="1"
-            value="Collect the Monster Cards, which will help you understand the tendencies, habitats, and dropped items of various monsters. Some cards have special powers that will help you in your adventures." />
+                value="收集能了解怪物习性、栖息地和掉落物的怪物卡片，部分卡片还蕴含特殊力量能助你冒险。" />
         <string name="2"
-            value="#b#eTitle Challenge - Monster Expert#n#k\n\nYou have received the #bMonster Expert#k title and the associated medal." />
-        <string name="demandSummary" value="Acquire at least 30 Monster Cards." />
+                value="#b#e挑战勋章 - 怪物博士#n#k\n\n你已获得#b怪物博士#k称号及对应勋章。" />
+        <string name="demandSummary" value="收集至少30张怪物卡片" />
         <string name="rewardSummary" value="#Wbasic# #v1142083:##t1142083:# 1" />
         <int name="medalCategory" value="2" />
         <int name="viewMedalItem" value="1142083" />
@@ -13114,35 +13114,37 @@
         <int name="area" value="37" />
     </imgdir>
     <imgdir name="3248">
-        <string name="name" value="Operation Strategy 1 : Collect All the Eggs" />
-        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <string name="name" value="作战计划一：收集所有的蛋" />
+        <string name="parent" value="时间塔怪物剿灭作战" />
         <int name="order" value="1" />
         <string name="0"
-            value="#b#p2041026##k in the #b#m220000000# Clocktower basement#k has proposed to begin a Clocktower Monster Wipe-Out Operation. What does he mean by that? Let&apos;s go find #p2041026#." />
+            value="#b#p2041026##k在#b#m220000000##m220070000##k提出了「时间塔怪物剿灭作战」。这是什么意思？去找#p2041026#问问看。" />
         <string name="1"
-            value="The Clocktower Monster Wipe-Out Operation has begun. #p2041026# asks you to bring back #b#o4230113##k, #b#o3230306##k, and #b#t4031991##k... It seems he wants to exterminate all the eggs first. Alright, whatever he wants!\nHe says you can find other eggs by hunting #rTick, Tick-Tock, or Chronos type monsters#k, but #b#o5220003s# have a tendency to hatch their eggs in another bird&apos;s nest#k, so their eggs would be amongst eggs of other birds. It seems you have to crack other eggs to find it and take it over to #t4031991#. \n\n#i2022354##t2022354# #b#c2022354#/10#k \n#i2022355##t2022355# #b#c2022355#/10#k \n#i4031991##t4031991# #b#c4031991#/10#k" />
+            value="时间塔怪物剿灭作战正式开始。#p2041026#要求你带回#b#o4230113##k、#b#o3230306##k和#b#t4031991##k...看来他想先消灭所有的蛋。好吧，就按他说的做！\n他说可以通过狩猎#r时之啾啾和时之恶魔系列的怪物#k找到他们的鸟蛋，但#b#o5220003#有在其他巢产卵的习性#k，所以它们的蛋会混在其他蛋中。看来必须打破其他蛋才能找到并带回#t4031991#。\n\n#i2022354##t2022354# #b#c2022354#/10#k\n#i2022355##t2022355# #b#c2022355#/10#k\n#i4031991##t4031991# #b#c4031991#/10#k" />
         <string name="2"
-            value="You have found all the eggs and gave them to #p2041026#. Ghosthunter Bob seems satisfied and suggest you engage in the operation. " />
+            value="你已收集所有蛋并交给#p2041026#。#p2041026#似乎很满意，并建议你继续参与作战。" />
         <int name="area" value="37" />
     </imgdir>
+    
     <imgdir name="3249">
-        <string name="name" value="Operation Strategy 2 : Defeat the Monsters" />
-        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <string name="name" value="作战计划二：消灭怪物" />
+        <string name="parent" value="时间塔怪物剿灭作战" />
         <int name="order" value="2" />
         <string name="1"
-            value="Operation strategy 2 is much simpler than strategy 1. It was to defeat the monsters! You must defeat #r#o4230113##k, #r#o3230306##k, #r#o4230114##k, #r#o4230115##k, and even #r#o5220003##k, so it&apos;s not child&apos;s play... but let&apos;s defeat the monsters.\n\n#o4230113# #r#a32491##k \n#o3230306# #r#a32492##k \n#o4230114# #r#a32493##k \n#o4230115# #r#a32494##k \n#o5220003# #r#a32495##k " />
+            value="作战计划二比计划一简单多了——直接消灭怪物！你需要击败#r#o4230113##k、#r#o3230306##k、#r#o4230114##k、#r#o4230115##k甚至#r#o5220003##k，这可不是儿戏...但让我们开始猎杀吧。\n\n#o4230113# #r#a32491##k\n#o3230306# #r#a32492##k\n#o4230114# #r#a32493##k\n#o4230115# #r#a32494##k\n#o5220003# #r#a32495##k" />
         <string name="2"
-            value="You have reported to #p2041026# after defeating all the monsters. It&apos;s not as easy as it may seem since there are so many types of monsters to hunt!" />
+            value="消灭所有怪物后你向#p2041026#报告。由于需要猎杀的怪物种类繁多，这任务可没看起来那么简单！" />
         <int name="area" value="37" />
     </imgdir>
+    
     <imgdir name="3250">
-        <string name="name" value="Operation Strategy 3: A Cute Baby Bird" />
-        <string name="parent" value="The Clocktower Monster Wipe-Out Operation" />
+        <string name="name" value="作战计划三：可爱的雏鸟" />
+        <string name="parent" value="时间塔怪物剿灭作战" />
         <int name="order" value="3" />
         <string name="1"
-            value="#p2041026# seems to be preoccupied with raising birds. According to the new research conducted, #o5220003#s have undergone changes under the management of Papulatus, but can make great pets when tamed. He has given you a cute baby bird, saying you can feed the bird #b#t4031992#s#k that can be obtained from the Clocktower Monsters. He has asked you to return the bird when it&apos;s fully grown." />
+            value="#p2041026#似乎沉迷于养鸟。根据最新研究，#o5220003#在帕普拉图斯的管理下产生了变异，但驯化后可以成为很好的宠物。他给了你一只可爱的雏鸟，说可以用从时间塔怪物身上获得的#b#t4031992##k喂养。他要求你在雏鸟长大后归还。" />
         <string name="2"
-            value="The baby bird has become full-fledged since you&apos;ve been diligently feeding the bird #t4031992#s. Although it&apos;s sad to let go of the bird to which you have grown attached, but you have no choice but to return the bird to Ghosthunter Bob. Be well, bird." />
+            value="通过你勤勉地喂养#t4031992#，雏鸟已经羽翼丰满。虽然很不舍，但你还是不得不将它归还给#p2041026#。保重了，小鸟。" />
         <int name="area" value="37" />
     </imgdir>
     <imgdir name="3300">
@@ -14728,9 +14730,9 @@
         <string name="0"
             value="按照旁观者的说法，要找回失去的记忆，必须回到开始的时候。冒险开始的时候……不就是离开冒险岛，踏上金银岛的转职的时候吗？去见见#b#p1052001##k吧。" />
         <string name="1"
-            value="很久之后再次见到了#p1052001#。他说很高兴看到曾经是青涩的新手的你成为了出色的盗贼。看到很久不见但还记得我的他，我的心里充满了温暖。" />
+            value="很久之后再次见到了#p1052001#。他说很高兴看到曾经是青涩的新手的你成为了出色的飞侠。看到很久不见但还记得我的他，我的心里充满了温暖。" />
         <string name="2"
-            value="很久之后再次见到了#p1052001#。他说很高兴看到曾经是青涩的新手的你成为了出色的盗贼。看到很久不见但还记得我的他，我的心里充满了温暖。" />
+            value="很久之后再次见到了#p1052001#。他说很高兴看到曾经是青涩的新手的你成为了出色的飞侠。看到很久不见但还记得我的他，我的心里充满了温暖。" />
         <int name="area" value="46" />
     </imgdir>
     <imgdir name="3527">
@@ -15245,13 +15247,13 @@
         <int name="area" value="37" />
     </imgdir>
     <imgdir name="3648">
-        <string name="name" value="Secret Love Affair with Seal Meat" />
+        <string name="name" value="与海豹肉的秘密情缘" />
         <string name="0"
-            value="#b#p2071007##k says she has a special favor to ask.  I should go to #b#m222000000##k." />
+            value="#b#p2071007##k说有个特别的请求。我该去#b#m222000000##k看看。" />
         <string name="1"
-            value="#b#p2071007##k says she used to love eating #t04000166#. \nEven #b#p2071007##k&apos;s husband knows how much she loves #t04000166# and would occasionally buy it for her.  The problem is that since recently, #b#p2071007##k says she&apos;s been liking #b#t04000157##k more.  I should help out #b#p2071007##k, who always has to get #b#t04000157##k secretly her husband&apos;s back.\n\n#i04000157##t04000157# #b#c04000157#/15" />
+            value="#b#p2071007##k说她曾经最爱吃#t04000166#。\n连#b#p2071007##k的丈夫都知道她这个喜好，偶尔会买给她。问题是最近#b#p2071007##k发现自己更爱#b#t04000157##k了。我该帮帮总是要背着丈夫偷偷弄#b#t04000157##k的#b#p2071007##k。\n\n#i04000157##t04000157# #b#c04000157#/15" />
         <string name="2"
-            value="#b#p2071007##k laughed with such excitement.  It felt good to know that my efforts were not in vain. " />
+            value="#b#p2071007##k开心得笑出声来。知道自己的努力没有白费，这种感觉真好。" />
         <int name="area" value="37" />
     </imgdir>
     <imgdir name="3700">
@@ -15390,126 +15392,132 @@
         <int name="area" value="41" />
     </imgdir>
     <imgdir name="3715">
-        <string name="name" value="The Suspicious Wanderer" />
-        <int name="area" value="41" />
+        <string name="name" value="可疑的流浪者" />
+        <int name="area" value="44" />
         <string name="0"
-            value="There is a rumor that Han the Broker of Magatia has acquired a new piece of information. Sounds exciting…" />
+            value="听说玛加提亚的后街小贩获得了新情报。听起来很有意思..." />
         <string name="1"
-            value="Han the Broker says a suspicious wanderer was staying in Magatia until just a few days ago, but then disappeared without a trace. Han the Broker thinks you might be able to find the wanderer if you follow the traces he left and suggests you first go to Ariant to find him." />
+            value="后街小贩提到前几天有个可疑的流浪者曾在玛加提亚逗留，随后就消失无踪。他认为如果循着流浪者留下的踪迹，或许能找到他，建议你先去阿里安特寻找线索。" />
         <string name="2"
-            value="You met Syras at Ariant Station to ask about the suspicious wanderer that Han the Broker has told you about. Syras at the ticket box desk said a strange man bought a ticket to Orbis." />
-        <string name="parent" value="The Truth Behind that Man" />
+            value="你在阿里安特车站见到了售票员塞拉斯，询问后街小贩提到的可疑流浪者。售票处的塞拉斯说有个怪人买了去天空之城的车票。" />
+        <string name="parent" value="那个男人的真相" />
         <int name="order" value="1" />
-        <string name="demandSummary" value="#bTalk to Syras, the ticket agent at Ariant Station." />
+        <string name="demandSummary" value="#b与阿里安特车站售票员塞拉斯对话" />
         <string name="rewardSummary"
-            value="EXP 30,000\r\nCan participate in the &quot;Wanderer&apos;s Whereabouts 1&quot; quest.\r\n" />
+            value="经验值 30,000\r\n可参与&quot;流浪者踪迹1&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3716">
-        <string name="name" value="The Wanderer&apos;s Whereabouts 1" />
-        <int name="area" value="41" />
+        <string name="name" value="流浪者踪迹1" />
+        <int name="area" value="44" />
         <string name="1"
-            value="#bSyras the ticket agent#k at Ariant Station claims the suspicious wanderer headed to Orbis and that you should talk to #bIsa#k at Orbis Station." />
-        <string name="parent" value="The Truth Behind that Man" />
+            value="#b阿里安特车站售票员塞拉斯#k称可疑流浪者前往了天空之城，建议你去找#b天空之城车站的艺斯#k打听。" />
+        <string name="parent" value="那个男人的真相" />
         <int name="order" value="2" />
         <string name="2"
-            value="You meet Isa the station guide as Syras instructed. Isa says an absent-minded man asked her directions to Leafre. She added that he was rather strange." />
-        <string name="demandSummary" value="#bTalk to Isa the Station Guide in Orbis" />
+            value="按照塞拉斯的指引，你找到了车站向导艺斯。艺斯说有个心不在焉的男子向她打听去神木村的路，还补充说那人行为很古怪。" />
+        <string name="demandSummary" value="#b与天空之城车站向导艺斯对话" />
         <string name="rewardSummary"
-            value="EXP 30,000\r\nCan participate in the &quot;Wanderer&apos;s Whereabouts 2&quot; quest.\r\n" />
+            value="经验值 30,000\r\n可参与&quot;流浪者踪迹2&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3717">
-        <string name="name" value="The Wanderer&apos;s Whereabouts 2" />
-        <int name="area" value="41" />
-        <string name="parent" value="The Truth Behind that Man" />
+        <string name="name" value="流浪者踪迹2" />
+        <int name="area" value="44" />
+        <string name="parent" value="那个男人的真相" />
         <int name="order" value="3" />
-        <string name="demandSummary" value="#bFind Tera Forest" />
+        <string name="demandSummary" value="#b寻找塔拉森林" />
         <string name="1"
-            value="Isa the station guide at Orbis Station informs you that the strange man was heading to Tera Forest, located east of Minar Forest. Will you be able to find this foreign place called Tera Forest?" />
+            value="天空之城车站的向导艺斯告诉你，那个怪人要去米纳尔森林东边的塔拉森林。你能找到这个陌生的塔拉森林吗？" />
         <string name="2"
-            value="You found the entrance to Tera Forest by searching the outskirts of east Minar Forest. There, you met the strange man you were searching for, Andy." />
+            value="你在米纳尔森林东郊找到了塔拉森林的入口，并见到了正在寻找的怪人安迪。" />
         <string name="rewardSummary"
-            value="EXP 30,000\r\nCan participate in the &quot;Andy the Time Traveler&quot; quest.\r\n" />
+            value="经验值 30,000\r\n可参与&quot;时空旅人安迪&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3718">
-        <string name="name" value="Andy the Time Traveler" />
-        <int name="area" value="41" />
-        <string name="parent" value="The Truth Behind that Man" />
+        <string name="name" value="时空旅人安迪" />
+        <int name="area" value="44" />
+        <string name="parent" value="那个男人的真相" />
         <int name="order" value="4" />
         <string name="1"
-            value="Andy the Time Traveler has asked you to help him find the Pocket Watch, the key to the Time Gate, which he&apos;s lost in Minar Forest." />
+            value="时空旅人安迪请求你帮忙寻找他在米纳尔森林丢失的时空之门钥匙——怀表。" />
         <string name="2"
-            value="The Pocket Watch has chosen you as the new Time Traveler. You begin to wonder what you&apos;ve got yourself into." />
+            value="怀表选择了你作为新的时空旅人。你开始思考自己究竟卷入了什么样的事件中。" />
         <string name="demandSummary" value="#i4032511:# #t4032511:# #c4032511# / 1 " />
         <string name="rewardSummary"
-            value="EXP 40,000\r\n#Wbasic#\r\n#i4001393:# 1 #t4001393:#\r\nCan participate in the &quot;Nex the Time Guard&quot; quest.\r\n" />
+            value="经验值 40,000\r\n#Wbasic#\r\n#i4001393:# 1 #t4001393:#\r\n可参与&quot;时间守护者努克斯&quot;任务。\r\n" />
     </imgdir>
     <imgdir name="3719">
-        <string name="name" value="Nex the Time Guard" />
+        <string name="name" value="时间守护者努克斯" />
         <int name="area" value="41" />
         <string name="1"
-            value="Andy the Time Traveler informs you that you must pass the test Nex the Gatekeeper of Time, who lives in the Old Tree of Tera, gives you before you can travel through time. Enter the Old Tree of Tera and pass Nex&apos;s test." />
+            value="时空旅人安迪告知，你必须通过居住在塔拉森林古树中的时间守护兽努克斯的考验，才能进行时间旅行。进入塔拉森林古树，接受努克斯的试炼吧。" />
         <string name="2"
-            value="You have passed the first test given by Nex the Gatekeeper of Time and have earned the right to travel to another time. You can now teleport to Average Town in the year 2021. Go to the Time Gate with the Time Traveler&apos;s Pocket Watch." />
-        <string name="parent" value="Year 2021- Just Another Day" />
+            value="你已通过时间守护兽努克斯的第一道考验，获得了穿越时空的资格。现在可以传送到2021年的平凡镇了。带着时空旅人的怀表前往时空之门吧。" />
+        <string name="parent" value="2021年-平凡的一天" />
         <int name="order" value="1" />
-        <string name="demandSummary" value="#o7120100# #a37191# " />
+        <string name="demandSummary" value="#o7120100# #a37191#" />
         <string name="0"
-            value="Andy the Time Traveler says he has something to tell you before your first time travel." />
+            value="时空旅人安迪表示，在你首次时空旅行前有事相告。" />
         <string name="rewardSummary"
-            value="EXP 80,000\r\nCan participate in the &quot;First Clue&quot; quest.\r\n" />
+            value="经验值 80,000\r\n可参与&quot;第一条线索&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3720">
-        <string name="name" value="The First Clue" />
+        <string name="name" value="第一条线索" />
         <int name="area" value="41" />
         <string name="1"
-            value="Year 2021. You must go through trash cans, find the clue that Andy needs, and bring it to him." />
+            value="2021年。你需要翻遍垃圾桶，找到安迪需要的线索并带给他。" />
         <string name="2"
-            value="You teleported to the year 2021, found a piece of paper that appeared to be the clue, and took it to Andy. Unfortunately, that was not what Andy was looking for. Will your time travel end in failure? Go back to year 2021." />
-        <string name="parent" value="Year 2021- Just Another Day" />
+            value="你传送到2021年，找到一张疑似线索的纸条带给安迪。可惜那并非安迪所需。难道这次时空旅行要以失败告终？再次回到2021年吧。" />
+        <string name="parent" value="2021年-平凡的一天" />
         <int name="order" value="2" />
-        <string name="demandSummary" value="#i4032512:# #t4032512:# #c4032512# / 1 " />
-        <string name="0" value="Andy has a request." />
+        <string name="demandSummary" value="#i4032512:# #t4032512:# #c4032512# / 1" />
+        <string name="0" value="安迪有个请求。" />
         <string name="rewardSummary"
-            value="EXP 61,000\r\nCan participate in the &apos;Dangerous Slimes&apos; quest.\r\n" />
+            value="经验值 61,000\r\n可参与'危险水灵怪'任务。\r\n" />
     </imgdir>
     <imgdir name="3721">
-        <string name="name" value="Dangerous Slimes" />
+        <string name="name" value="危险的水灵怪" />
         <int name="area" value="41" />
         <string name="1"
-            value="The year is 2021. Eliminate 50 Slimes that are threatening the boy and another 50 Slimes that are threatening the girl. Then collect 30 dropped items from each group of Slimes to prevent the Slimes from reviving and report back to the Brainy Boy." />
+            value="当前是2021年。请消灭威胁男孩的50只水灵怪和威胁女孩的另外50只水灵怪。然后分别收集两组水灵怪掉落的30个物品，防止它们复活，并向聪明男孩汇报。" />
         <string name="2"
-            value="You worked hard to eliminate so many Slimes, but the population of the Slimes has not gotten any smaller. Where are these monsters coming from?" />
-        <string name="parent" value="Year 2021- Just Another Day" />
+            value="虽然你努力消灭了大量水灵怪，但它们的数量丝毫未减。这些怪物究竟从何而来？" />
+        <string name="parent" value="2021年-平凡的一天" />
         <int name="order" value="3" />
         <string name="demandSummary"
-            value="#i4000545:# #t4000545:# #c4000545# / 30 #i4000546:# #t4000546:# #c4000546# / 30 #i4000547:# #t4000547:# #c4000547# / 30 #o7120103# #a37211# #o7120104# #a37212# #o7120105# #a37213# " />
+            value="#i4000545:# #t4000545:# #c4000545# / 30 #i4000546:# #t4000546:# #c4000546# / 30 #i4000547:# #t4000547:# #c4000547# / 30 #o7120103# #a37211# #o7120104# #a37212# #o7120105# #a37213#" />
         <string name="rewardSummary"
-            value="EXP 100,000\r\nCan participate in &quot;The Crying Girl&apos;s Sketchbook&quot; quest.\r\n" />
+            value="经验值 100,000\r\n可参与&quot;哭泣女孩的素描本&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3722">
-        <string name="name" value="The Crying Girl&apos;s Sketchbook" />
+        <string name="name" value="哭泣女孩的素描本" />
         <int name="area" value="41" />
         <string name="1"
-            value="Find Loose-Leaf Pages from the Sketchbook the Slimes ate and return it to the Crying Girl.\r\n" />
+            value="寻找被水灵怪吃掉的素描本散页，并将其归还给哭泣的女孩。\r\n" />
         <string name="2"
-            value="You have collected the Loose-Leaf Pages from the Sketchbook and returned them to the Girl. However, the girl seemed to be even more saddened by the pages that were chewed up by the Slimes." />
-        <string name="parent" value="Year 2021- Just Another Day" />
+            value="你已收集齐素描本散页并归还给女孩。然而看到被水灵怪咬坏的页面，女孩似乎更加伤心了。" />
+        <string name="parent" value="2021年-平凡的一天" />
         <int name="order" value="4" />
-        <string name="demandSummary" value="#i4032513:# #t4032513:# #c4032513# / 20 " />
+        <string name="demandSummary" value="#i4032513:# #t4032513:# #c4032513# / 20" />
         <string name="rewardSummary"
-            value="EXP 65,000\r\nCan participate in &quot;The Boy and the Girl&quot; quest.\r\n" />
+            value="经验值 65,000\r\n可参与&quot;男孩与女孩&quot;任务。\r\n" />
     </imgdir>
+    
     <imgdir name="3723">
-        <string name="name" value="The Boy and the Girl" />
+        <string name="name" value="男孩与女孩" />
         <int name="area" value="41" />
         <string name="1"
-            value="The Brainy Boy swore that he would find more Loose-Leaf Pages from the Crying Girl&apos;s Sketchbook, including her drawing of a Robot. This sounds like something Andy mentioned. Perhaps you should tell him about this." />
+            value="聪明男孩发誓要帮哭泣女孩找回更多素描本散页，包括她画的机器人图纸。这听起来像是安迪提到过的事情。也许你该把这件事告诉他。" />
         <string name="2"
-            value="When Andy heard the story about the kids, said it was a useful piece of information and that you should prepare yourself for your next time travel. " />
-        <string name="parent" value="Year 2021- Just Another Day" />
+            value="安迪听完孩子们的故事后，表示这是条有用的线索，并建议你为下一次时空旅行做好准备。" />
+        <string name="parent" value="2021年-平凡的一天" />
         <int name="order" value="5" />
         <string name="rewardSummary"
-            value="EXP 30,000\r\nCan participate in &quot;Nex the Time Guard&quot; quest.\r\n" />
+            value="经验值 30,000\r\n可再次参与&quot;时间守护者努克斯&quot;任务。\r\n" />
     </imgdir>
     <imgdir name="3724">
         <string name="name" value="Nex the Time Guard" />
@@ -16532,7 +16540,7 @@
         <string name="name" value="携詹的考验" />
         <string name="parent" value="携詹所说的沙子图团" />
         <int name="order" value="2" />
-        <string name="1" value="携詹说找到粮食之后要把它们分给居民，要偷偷把粮食放在村子居民家里。但是村子里还有很多欺负人们的残暴盗贼，要好好辨认盗贼的家……" />
+        <string name="1" value="携詹说找到粮食之后要把它们分给居民，要偷偷把粮食放在村子居民家里。但是村子里还有很多欺负人们的残暴飞侠，要好好辨认飞侠的家……" />
         <string name="2" value="给受苦的阿里安特居民送去了粮食。这下应该可以被认可了吧…… 但是携詹看起来还是不太相信我。" />
         <int name="area" value="44" />
     </imgdir>
@@ -16741,16 +16749,16 @@
         <int name="area" value="44" />
     </imgdir>
     <imgdir name="3951">
-        <string name="name" value="The Tree Cutter&apos;s Test" />
+        <string name="name" value="樵夫的考验" />
         <string name="0"
-            value="#b#p2071011##k in #b#m222010102##k is looking for me? That&apos;s strange.  What does he want with me...? " />
+            value="#b#p2071011##k在#b#m222010102##k找我？真奇怪...他找我有什么事...？" />
         <string name="1"
-            value="I spoke with #p2071011#.  He saw that I come here often, so he wanted to tell me to stay away from this dangerous place.  But, seriously?  He&apos;s afraid to walk around the forest because of #o5100003#?  If I don&apos;t convince #p2071011# that I&apos;m strong enough to handle myself here, he might physically drag me out of  #m222000000#.  I better hurry up and prove it to him!\n\n#r30 minute time limit\n#k#o5100003#  #r#a39511##k" />
+            value="我和#p2071011#谈过了。他看我经常来这里，想警告我远离这个危险的地方。但说真的？他因为害怕#o5100003#而不敢在森林里走动？如果我不能证明自己有足够实力在这里生存，他可能会强行把我拖出#m222000000#。得赶快向他证明！\n\n#r30分钟时限#k\n#o5100003#  #r#a39511##k" />
         <string name="2"
-            value="#p2071011# was amazed that I was able to hunt all the #o5100003# in such a short time.  But after all that work, all I got was permission to freely roam around the forest...  Wonderful..." />
+            value="#p2071011#对我能在短时间内猎杀所有#o5100003#感到惊讶。但忙活半天，得到的只是在森林自由行动的许可...真是太好了..." />
         <int name="timeLimit" value="1800" />
         <int name="area" value="37" />
-    </imgdir>
+</imgdir>
     <imgdir name="3952">
         <string name="name" value="沙子图团的悬赏通缉" />
         <string name="parent" value="沙漠的悬赏通缉" />
@@ -20826,13 +20834,13 @@
         <int name="area" value="48" />
     </imgdir>
     <imgdir name="8051">
-        <string name="name" value="An Unknown Love" />
+        <string name="name" value="未知的恋情" />
         <string name="0"
-            value=" An unknown lady in Kerning City spends yet another day shivering in coldness. I should hear her side of the story." />
+            value="在废弃都市，有位不知名的女士终日忍受着寒冷。或许我该听听她的故事。" />
         <string name="1"
-            value="Am I even allowed to take these...? I do feel like helping her find true love though... Whoever that may be... well, these are dropped by #b#o7130300##k, alright. \n#t04000148#  #b#c04000148##k/100" />
+            value="我真的可以收下这些吗...？不过确实想帮她找到真爱...不管对方是谁...好吧，这些是#b#o7130300##k掉落的物品。\n#t04000148#  #b#c04000148##k/100" />
         <string name="2"
-            value=" I surely wish she makes a good couple with that special someone. Hahaha...But then again, it&apos;s a little disturbing, come to think of it. I better ask her what&apos;s up next time." />
+            value="真心希望她能和那个特别的人终成眷属。哈哈...不过仔细想想又觉得有点不对劲。下次见面还是问问清楚比较好。" />
         <int name="area" value="30" />
     </imgdir>
     <imgdir name="7778">
@@ -22171,114 +22179,95 @@
         <int name="area" value="30" />
     </imgdir>
     <imgdir name="8850">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Beginner" />
-        <string name="parent" value="Cupid&apos;s Courier - Beginner" />
-        <int name="order" value="1" />
-        <string name="0" value="The wife of a sailor, eh? I&apos;ll bet she needs some help." />
-        <string name="1"
-            value="I spoke with the lovely Angelique, and I&apos;m going to deliver #b25 Stiff Feathers#k to her husband, Richard, for her. He works on Tae Gong&apos;s ship in Aqua Road. Once I have everything, I&apos;ll head there, drop everything off, and let Angelique know her husband has everything." />
-        <string name="2"
-            value="I delivered the materials to Richard and he thanked me. His wife must be happy..." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8851">
-        <string name="name" value="阿莫里亚：丘比特的信使 - 战士" />
-        <string name="parent" value="丘比特的信使 - 战士" />
-        <int name="order" value="1" />
-        <string name="0" value="海员的妻子？哦...我想她肯定有很多事情要忙，或许我能帮上忙。" />
-        <string name="1"
-            value="我已经和美丽的安琪莉聊过了，她拜托我给她在水下世界太公船上工作的丈夫理查德送 #b15个粘性蜘蛛网#k。等我这边的事情一结束，我就马上出发，确保这些物品能够顺利送到理查德手上，然后回来告诉安琪莉一切顺利。" />
-        <string name="2" value="我把那些材料交给了理查德，他非常感谢我。安琪莉知道后一定会很开心的……" />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8852">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Magician" />
-        <string name="parent" value="Cupid&apos;s Courier - Magician" />
-        <int name="order" value="1" />
-        <string name="0" value="The wife of a sailor, eh? I&apos;ll bet she needs some help." />
-        <string name="1"
-            value="I spoke with the lovely Angelique, and I&apos;m going to deliver #bLunar Pixie&apos;s Moonpiece#k to her husband, Richard, for her. He works on Tae Gong&apos;s ship in Aqua Road. Once I have everything, I&apos;ll head there, drop everything off, and let Angelique know her husband has everything." />
-        <string name="2"
-            value="I delivered the materials to Richard and he thanked me. His wife must be happy..." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8853">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Bowman" />
-        <string name="parent" value="Cupid&apos;s Courier - Bowman" />
-        <int name="order" value="1" />
-        <string name="0" value="The wife of a sailor, eh? I&apos;ll bet she needs some help." />
-        <string name="1"
-            value="I spoke with the lovely Angelique, and I&apos;m going to deliver #b20 Toy Ducklings#k to her husband, Richard, for her. He works on Tae Gong&apos;s ship in Aqua Road. Once I have everything, I&apos;ll head there, drop everything off, and let Angelique know her husband has everything." />
-        <string name="2"
-            value="I delivered the materials to Richard and he thanked me. His wife must be happy..." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8854">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Thief" />
-        <string name="parent" value="Cupid&apos;s Courier - Thief" />
-        <int name="order" value="1" />
-        <string name="0" value="The wife of a sailor, eh? I&apos;ll bet she needs some help." />
-        <string name="1"
-            value="I spoke with the lovely Angelique, and I&apos;m going to deliver #b20 Rat Traps#k to her husband, Richard, for her. He works on Tae Gong&apos;s ship in Aqua Road. Once I have everything, I&apos;ll head there, drop everything off, and let Angelique know her husband has everything." />
-        <string name="2"
-            value="I delivered the materials to Richard and he thanked me. His wife must be happy..." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8855">
-        <string name="name" value="Amoria : Cupid&apos;s Courier  - Beginner" />
-        <string name="parent" value="Cupid&apos;s Courier - Beginner" />
-        <int name="order" value="2" />
-        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
-        <string name="1"
-            value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
-        <string name="2"
-            value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8856">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Warrior" />
-        <string name="parent" value="Cupid&apos;s Courier - Warrior" />
-        <int name="order" value="2" />
-        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
-        <string name="1"
-            value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
-        <string name="2"
-            value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8857">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Magician" />
-        <string name="parent" value="Cupid&apos;s Courier - Magician" />
-        <int name="order" value="2" />
-        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
-        <string name="1"
-            value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
-        <string name="2"
-            value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8858">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Bowman" />
-        <string name="parent" value="Cupid&apos;s Courier - Bowman" />
-        <int name="order" value="2" />
-        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
-        <string name="1"
-            value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
-        <string name="2"
-            value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
-        <int name="area" value="30" />
-    </imgdir>
-    <imgdir name="8859">
-        <string name="name" value="Amoria : Cupid&apos;s Courier - Thief" />
-        <string name="parent" value="Cupid&apos;s Courier - Thief" />
-        <int name="order" value="2" />
-        <string name="0" value="Okay, so now I gotta go see the sailor himself. Where must he be?" />
-        <string name="1"
-            value="I delivered everything to Richard and he asked me delivered his letter to his wife." />
-        <string name="2"
-            value="I delivered everything to Richard and returned to Angelique. She gave me something nice, and I can go back to here anytime for a quick job." />
-        <int name="area" value="30" />
-    </imgdir>
+    <string name="name" value="阿莫利亚：丘比特信使·新手"/>
+    <string name="parent" value="丘比特信使·新手"/>
+    <int name="order" value="1"/>
+    <string name="0" value="水手的妻子？她肯定需要帮助吧。"/>
+    <string name="1" value="我和可爱的#p9201036#交谈后，决定帮她将#b25根#t4003004##k送给在水下世界工作的丈夫理查德。他在太公的船上工作。集齐物品后，我会前往那里交付物品，并告知#p9201036#她的丈夫已收到礼物。"/>
+    <string name="2" value="我将材料交给了理查德，他向我表示感谢。他的妻子一定很开心..."/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8851">
+    <string name="name" value="阿莫利亚：丘比特信使·战士"/>
+    <string name="parent" value="丘比特信使·战士"/>
+    <int name="order" value="1"/>
+    <string name="0" value="水手的妻子？她肯定需要帮助吧。"/>
+    <string name="1" value="我和可爱的#p9201036#交谈后，决定帮她将#b15张#t4000098##k送给在水下世界工作的丈夫理查德。他在太公的船上工作。集齐物品后，我会前往那里交付物品，并告知#p9201036#她的丈夫已收到礼物。"/>
+    <string name="2" value="我将材料交给了理查德，他向我表示感谢。他的妻子一定很开心..."/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8852">
+    <string name="name" value="阿莫利亚：丘比特信使·法师"/>
+    <string name="parent" value="丘比特信使·法师"/>
+    <int name="order" value="1"/>
+    <string name="0" value="水手的妻子？她肯定需要帮助吧。"/>
+    <string name="1" value="我和可爱的#p9201036#交谈后，决定帮她将#b#t4000060##k送给在水下世界工作的丈夫理查德。他在太公的船上工作。集齐物品后，我会前往那里交付物品，并告知#p9201036#她的丈夫已收到礼物。"/>
+    <string name="2" value="我将材料交给了理查德，他向我表示感谢。他的妻子一定很开心..."/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8853">
+    <string name="name" value="阿莫利亚：丘比特信使·弓箭手"/>
+    <string name="parent" value="丘比特信使·弓箭手"/>
+    <int name="order" value="1"/>
+    <string name="0" value="水手的妻子？她肯定需要帮助吧。"/>
+    <string name="1" value="我和可爱的#p9201036#交谈后，决定帮她将#b20只#t4000109##k送给在水下世界工作的丈夫理查德。他在太公的船上工作。集齐物品后，我会前往那里交付物品，并告知#p9201036#她的丈夫已收到礼物。"/>
+    <string name="2" value="我将材料交给了理查德，他向我表示感谢。他的妻子一定很开心..."/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8854">
+    <string name="name" value="阿莫利亚：丘比特信使·飞侠"/>
+    <string name="parent" value="丘比特信使·飞侠"/>
+    <int name="order" value="1"/>
+    <string name="0" value="水手的妻子？她肯定需要帮助吧。"/>
+    <string name="1" value="我和可爱的#p9201036#交谈后，决定帮她将#b20个#t4000095##k送给在水下世界工作的丈夫理查德。他在太公的船上工作。集齐物品后，我会前往那里交付物品，并告知#p9201036#她的丈夫已收到礼物。"/>
+    <string name="2" value="我将材料交给了理查德，他向我表示感谢。他的妻子一定很开心..."/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8855">
+    <string name="name" value="阿莫利亚：丘比特信使·新手"/>
+    <string name="parent" value="丘比特信使·新手"/>
+    <int name="order" value="2"/>
+    <string name="0" value="好了，现在我得去见见那位水手本人。他会在哪儿呢？"/>
+    <string name="1" value="我将所有物品交给理查德后，他托我转交一封信给他的妻子。"/>
+    <string name="2" value="我将所有物品交给理查德后返回#p9201036#处。她给了我一份不错的奖励，而且我随时可以回来接取这类快速任务。"/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8856">
+    <string name="name" value="阿莫利亚：丘比特信使·战士"/>
+    <string name="parent" value="丘比特信使·战士"/>
+    <int name="order" value="2"/>
+    <string name="0" value="好了，现在我得去见见那位水手本人。他会在哪儿呢？"/>
+    <string name="1" value="我将所有物品交给理查德后，他托我转交一封信给他的妻子。"/>
+    <string name="2" value="我将所有物品交给理查德后返回#p9201036#处。她给了我一份不错的奖励，而且我随时可以回来接取这类快速任务。"/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8857">
+    <string name="name" value="阿莫利亚：丘比特信使·法师"/>
+    <string name="parent" value="丘比特信使·法师"/>
+    <int name="order" value="2"/>
+    <string name="0" value="好了，现在我得去见见那位水手本人。他会在哪儿呢？"/>
+    <string name="1" value="我将所有物品交给理查德后，他托我转交一封信给他的妻子。"/>
+    <string name="2" value="我将所有物品交给理查德后返回#p9201036#处。她给了我一份不错的奖励，而且我随时可以回来接取这类快速任务。"/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8858">
+    <string name="name" value="阿莫利亚：丘比特信使·弓箭手"/>
+    <string name="parent" value="丘比特信使·弓箭手"/>
+    <int name="order" value="2"/>
+    <string name="0" value="好了，现在我得去见见那位水手本人。他会在哪儿呢？"/>
+    <string name="1" value="我将所有物品交给理查德后，他托我转交一封信给他的妻子。"/>
+    <string name="2" value="我将所有物品交给理查德后返回#p9201036#处。她给了我一份不错的奖励，而且我随时可以回来接取这类快速任务。"/>
+    <int name="area" value="30"/>
+</imgdir>
+<imgdir name="8859">
+    <string name="name" value="阿莫利亚：丘比特信使·飞侠"/>
+    <string name="parent" value="丘比特信使·飞侠"/>
+    <int name="order" value="2"/>
+    <string name="0" value="好了，现在我得去见见那位水手本人。他会在哪儿呢？"/>
+    <string name="1" value="我将所有物品交给理查德后，他托我转交一封信给他的妻子。"/>
+    <string name="2" value="我将所有物品交给理查德后返回#p9201036#处。她给了我一份不错的奖励，而且我随时可以回来接取这类快速任务。"/>
+    <int name="area" value="30"/>
+</imgdir>
     <imgdir name="8860">
         <string name="name" value="阿莫里亚：美丽还是野兽！" />
         <string name="0" value="我听说在阿莫里亚发廊有一个漂亮女孩，她需要材料来制作新的发胶。我想知道她会提供什么作为回报？" />

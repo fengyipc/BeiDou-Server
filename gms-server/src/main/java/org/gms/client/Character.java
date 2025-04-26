@@ -9633,4 +9633,11 @@ public class Character extends AbstractCharacterObject {
     public void enableActions() {
         sendPacket(PacketCreator.enableActions());
     }
+
+    /**
+     * 获取已经收集满的怪物卡数量
+     */
+    public long getFullMonsterCards() {
+        return monsterBook.getFullCards();
+    }
 }
