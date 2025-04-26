@@ -27877,29 +27877,29 @@
     </imgdir>
     <imgdir name="3648">
         <imgdir name="1">
-            <string name="0" value="嘿，年轻人，在这里~你能成功抓住#r#o4230124##k吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你~谢谢你~没有你我能做什么?是的,是的...这一个看起来很丰满。现在我可以在我丈夫不知道的情况下偷偷吃#b#t04000157##k了。我怎么能足够感谢你呢?"/>
+          <string name="0" value="年轻人~过来一下~ 你成功抓到#r#o4230124##k了吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢啦~ 没有你我该怎么办呀？嗯嗯...这只看起来肥美多汁。这样我就能偷偷享用#b#t04000157##k，不用被丈夫发现啦~该怎么谢你才好呢...嘻嘻。"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="item">
+              <string name="0" value="没关系~我可以慢慢等，别在意~"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="item">
-                    <string name="0" value="没关系~我可以一直等，所以不用担心~"/>
-                </imgdir>
-            </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我太饿了……我希望能够有一些#b#t04000157##k…你认为你能帮我，让我一些#b#t04000157##k吗?我通常不要求这样的好处，但我不要求这样的长时间。"/>
-            <imgdir name="stop">
-            </imgdir>
-            <imgdir name="yes">
-                <string name="0" value="我的丈夫得到了我#b#t04000166##k一旦在那里。当我年轻的时候，我更喜欢它，但出于某种原因，现在#b#t04000157##k味道好多了。我通常有一些#b#t04000157##k隐藏…但现在我完蛋了。"/>
-                <string name="1" value="我不能问我的丈夫，因为我会感觉不好，所以我希望你能给我一些东西#b#t04000157##k。#r#o4230124##k比它看起来更强大，所以我不确定你是否能处理它…你认为你能吗?"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="好吧~我不应该问你这样一个困难的恩惠。这只是我没有#b#t04000157##k这么长时间。祝你有愉快的一天~"/>
-            </imgdir>
+          <string name="0" value="我好饿啊...真想再尝尝#b#t04000157##k...你能帮我弄些#b#t04000157##k来吗？平时不会这样麻烦别人，可我已经好久没吃到了..."/>
+          <imgdir name="stop">
+          </imgdir>
+          <imgdir name="yes">
+            <string name="0" value="丈夫偶尔会给我带#b#t04000166##k。年轻时还挺喜欢的，现在不知怎么的，#b#t04000157##k更合胃口。本来还藏着些#b#t04000157##k...可惜都吃光啦。"/>
+            <string name="1" value="不好意思向丈夫开口，就想拜托你找#b#t04000157##k。#r#o4230124##k可比看起来凶悍多了，不知道你能不能应付...有把握吗？"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="没关系~本就不该让你做这么难的事。只是太久没吃到#b#t04000157##k了...祝你今天愉快~"/>
+          </imgdir>
         </imgdir>
-    </imgdir>
+      </imgdir>
     <imgdir name="3700">
         <imgdir name="0">
             <string name="0" value="你好？我叫#b#p2081002##k。我正在孵蛋呢。可是蛋太大了，我抱不好。如果用温暖的莱西毛球把蛋盖起来就好了..帮我找莱西毛球好吗？"/>
@@ -45615,257 +45615,264 @@
     </imgdir>
     <imgdir name="8850">
         <imgdir name="0">
-            <string name="0" value="大家好!如果你有时间的话，我可以请你帮个忙吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你！我的丈夫，理查德，是阿奎路那边泰公船上的一名水手。他一直在工作，我也很爱他，但我很少见到他。我想送一些东西给他，但我不知道怎么打。我需要你收集#b25硬羽毛#k，把它们和我给他写的信一起带到船上给他。如果你这样做了，等你回来的时候我会给你准备好东西的。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="该死的……哦。我想我得找另一个勇敢的战士来帮我了……"/>
-            </imgdir>
+          <string name="0" value="你好！能请你帮个忙吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了...我丈夫理查德是水下世界太公船上的水手。他整天工作，虽然我很爱他，但很少能见到他。我想给他送些东西，但我不懂战斗。希望你能帮我收集#b25根#t4003004##k，连同我写的信一起送到船上。完成后我会给你一份谢礼。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哎呀...好吧。那我只能找其他勇敢的冒险者帮忙了..."/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你好，我在工作，所以我只有一秒钟的时间说话。哦……你是从安吉丽来的吗?我的毛茛总是喜欢送我东西。让我看看你拿的是什么。"/>
-            <string name="1" value="太棒了!安吉丽总是给我送货色。这是什么…一封信吗?啊…这么多年过去了，你还是个浪漫主义者。正是这样的事情给我平凡的工作生活带来了快乐。谢谢!"/>
-            <imgdir name="yes">
-                <string name="0" value="非常感谢!"/>
+          <string name="0" value="嗨，我正在工作，只能聊一小会儿。哦...你是#p9201036#派来的？我的小甜心总爱给我送东西。让我看看你带了什么。"/>
+          <string name="1" value="太棒了！#p9201036#总是给我送好东西。这是...一封信？啊...这么多年了她还是这么浪漫。正是这些让我的工作生活不再单调。谢谢！"/>
+          <imgdir name="yes">
+            <string name="0" value="真的太感谢你了！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="奇怪，你好像还没集齐物品。能快点吗？我想让理查德早点收到。"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="真有趣，看起来你还没准备好一切。你能快点吗?我想让理查德尽快拿到。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="我妻子会希望我拥有比你包里的东西更多的东西……你什么都有了再回来!"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="我妻子希望我收到的应该不止这些...集齐后再来吧！"/>
             </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="8851">
         <imgdir name="0">
-            <string name="0" value="大家好!如果你有时间的话，我可以请你帮个忙吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你！我的丈夫，理查德，是阿奎路那边泰公船上的一名水手。他一直在工作，我也很爱他，但我很少见到他。我想送一些东西给他，但我不知道怎么打。我需要你收集#b15粘蜘蛛网#k，把它们和我写给他的信一起带到船上给他。如果你这样做了，等你回来的时候我会给你准备好东西的。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="该死的……哦。我想我得找另一个勇敢的战士来帮我了……"/>
-            </imgdir>
+          <string name="0" value="你好！能请你帮个忙吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了...我丈夫理查德是水下世界太公船上的水手。他整天工作，虽然我很爱他，但很少能见到他。我想给他送些东西，但我不懂战斗。希望你能帮我收集#b15张#t4000098##k，连同我写的信一起送到船上。完成后我会给你一份谢礼。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哎呀...好吧。那我只能找其他勇敢的冒险者帮忙了..."/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你好，我在工作，所以我只有一秒钟的时间说话。哦……你是从安吉丽来的吗?我的毛茛总是喜欢送我东西。让我看看你拿的是什么。"/>
-            <string name="1" value="太棒了!安吉丽总是给我送货色。这是什么…一封信吗?啊…这么多年过去了，你还是个浪漫主义者。正是这样的事情给我平凡的工作生活带来了快乐。谢谢!"/>
-            <imgdir name="yes">
-                <string name="0" value="非常感谢!"/>
+          <string name="0" value="嗨，我正在工作，只能聊一小会儿。哦...你是#p9201036#派来的？我的小甜心总爱给我送东西。让我看看你带了什么。"/>
+          <string name="1" value="太棒了！#p9201036#总是给我送好东西。这是...一封信？啊...这么多年了她还是这么浪漫。正是这些让我的工作生活不再单调。谢谢！"/>
+          <imgdir name="yes">
+            <string name="0" value="真的太感谢你了！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="奇怪，你好像还没集齐物品。能快点吗？我想让理查德早点收到。"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="真有趣，看起来你还没准备好一切。你能快点吗?我想让理查德尽快拿到。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="我妻子会希望我拥有比你包里的东西更多的东西……你什么都有了再回来!"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="我妻子希望我收到的应该不止这些...集齐后再来吧！"/>
             </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
+
     <imgdir name="8852">
         <imgdir name="0">
-            <string name="0" value="大家好!如果你有时间的话，我可以请你帮个忙吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你！我的丈夫，理查德，是阿奎路那边泰公船上的一名水手。他一直在工作，我也很爱他，但我很少见到他。我想送一些东西给他，但我不知道怎么打。我需要你收集#布伦纳小精灵的月片#k，把它们和我写给他的信一起带到船上给他。如果你这样做了，等你回来的时候我会给你准备好东西的。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="该死的……哦。我想我得找另一个勇敢的战士来帮我了……"/>
-            </imgdir>
+          <string name="0" value="你好！能请你帮个忙吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了...我丈夫理查德是水下世界太公船上的水手。他整天工作，虽然我很爱他，但很少能见到他。我想给他送些东西，但我不懂战斗。希望你能帮我收集#b#t4000060##k，连同我写的信一起送到船上。完成后我会给你一份谢礼。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哎呀...好吧。那我只能找其他勇敢的冒险者帮忙了..."/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你好，我在工作，所以我只有一秒钟的时间说话。哦……你是从安吉丽来的吗?我的毛茛总是喜欢送我东西。让我看看你拿的是什么。"/>
-            <string name="1" value="太棒了!安吉丽总是给我送货色。这是什么…一封信吗?啊…这么多年过去了，你还是个浪漫主义者。正是这样的事情给我平凡的工作生活带来了快乐。谢谢!"/>
-            <imgdir name="yes">
-                <string name="0" value="非常感谢！"/>
+          <string name="0" value="嗨，我正在工作，只能聊一小会儿。哦...你是#p9201036#派来的？我的小甜心总爱给我送东西。让我看看你带了什么。"/>
+          <string name="1" value="太棒了！#p9201036#总是给我送好东西。这是...一封信？啊...这么多年了她还是这么浪漫。正是这些让我的工作生活不再单调。谢谢！"/>
+          <imgdir name="yes">
+            <string name="0" value="真的太感谢你了！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="奇怪，你好像还没集齐物品。能快点吗？我想让理查德早点收到。"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="真有趣，看起来你还没准备好一切。你能快点吗?我想让理查德尽快拿到。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="我妻子会希望我拥有比你包里的东西更多的东西……你什么都有了再回来!"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="我妻子希望我收到的应该不止这些...集齐后再来吧！"/>
             </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8853">
         <imgdir name="0">
-            <string name="0" value="大家好!如果你有时间的话，我可以请你帮个忙吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你！我的丈夫，理查德，是阿奎路那边泰公船上的一名水手。他一直在工作，我也很爱他，但我很少见到他。我想送一些东西给他，但我不知道怎么打。我需要你收集#b20只玩具小鸭#k，把它们和我给他写的信一起带到船上给他。如果你这样做了，等你回来的时候我会给你准备好东西的。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="该死的……哦。我想我得找另一个勇敢的战士来帮我了……"/>
-            </imgdir>
+          <string name="0" value="你好！能请你帮个忙吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了...我丈夫理查德是水下世界太公船上的水手。他整天工作，虽然我很爱他，但很少能见到他。我想给他送些东西，但我不懂战斗。希望你能帮我收集#b20只#t4000109##k，连同我写的信一起送到船上。完成后我会给你一份谢礼。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哎呀...好吧。那我只能找其他勇敢的冒险者帮忙了..."/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你好，我在工作，所以我只有一秒钟的时间说话。哦……你是从安吉丽来的吗?我的毛茛总是喜欢送我东西。让我看看你拿的是什么。"/>
-            <string name="1" value="太棒了!安吉丽总是给我送货色。这是什么…一封信吗?啊…这么多年过去了，你还是个浪漫主义者。正是这样的事情给我平凡的工作生活带来了快乐。谢谢!"/>
-            <imgdir name="yes">
-                <string name="0" value="非常感谢！"/>
+          <string name="0" value="嗨，我正在工作，只能聊一小会儿。哦...你是#p9201036#派来的？我的小甜心总爱给我送东西。让我看看你带了什么。"/>
+          <string name="1" value="太棒了！#p9201036#总是给我送好东西。这是...一封信？啊...这么多年了她还是这么浪漫。正是这些让我的工作生活不再单调。谢谢！"/>
+          <imgdir name="yes">
+            <string name="0" value="真的太感谢你了！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="奇怪，你好像还没集齐物品。能快点吗？我想让理查德早点收到。"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="真有趣，看起来你还没准备好一切。你能快点吗?我想让理查德尽快拿到。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="我妻子会希望我拥有比你包里的东西更多的东西……你什么都有了再回来!"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="我妻子希望我收到的应该不止这些...集齐后再来吧！"/>
             </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8854">
         <imgdir name="0">
-            <string name="0" value="大家好!如果你有时间的话，我可以请你帮个忙吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="谢谢你！我的丈夫，理查德，是阿奎路那边泰公船上的一名水手。他一直在工作，我也很爱他，但我很少见到他。我想送一些东西给他，但我不知道怎么打。我需要你收集#b20捕鼠器#k，把它们和我给他写的信一起带到船上给他。如果你这样做了，等你回来的时候我会给你准备好东西的。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="该死的……哦。我想我得找另一个勇敢的战士来帮我了……"/>
-            </imgdir>
+          <string name="0" value="你好！能请你帮个忙吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了...我丈夫理查德是水下世界太公船上的水手。他整天工作，虽然我很爱他，但很少能见到他。我想给他送些东西，但我不懂战斗。希望你能帮我收集#b20个#t4000095##k，连同我写的信一起送到船上。完成后我会给你一份谢礼。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哎呀...好吧。那我只能找其他勇敢的冒险者帮忙了..."/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你好，我在工作，所以我只有一秒钟的时间说话。哦……你是从安吉丽来的吗?我的毛茛总是喜欢送我东西。让我看看你拿的是什么。"/>
-            <string name="1" value="太棒了!安吉丽总是给我送货色。这是什么…一封信吗?啊…这么多年过去了，你还是个浪漫主义者。正是这样的事情给我平凡的工作生活带来了快乐。谢谢!"/>
-            <imgdir name="yes">
-                <string name="0" value="非常感谢！"/>
+          <string name="0" value="嗨，我正在工作，只能聊一小会儿。哦...你是#p9201036#派来的？我的小甜心总爱给我送东西。让我看看你带了什么。"/>
+          <string name="1" value="太棒了！#p9201036#总是给我送好东西。这是...一封信？啊...这么多年了她还是这么浪漫。正是这些让我的工作生活不再单调。谢谢！"/>
+          <imgdir name="yes">
+            <string name="0" value="真的太感谢你了！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="奇怪，你好像还没集齐物品。能快点吗？我想让理查德早点收到。"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="真有趣，看起来你还没准备好一切。你能快点吗?我想让理查德尽快拿到。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="我妻子会希望我拥有比你包里的东西更多的东西……你什么都有了再回来!"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="我妻子希望我收到的应该不止这些...集齐后再来吧！"/>
             </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8855">
         <imgdir name="1">
-            <string name="0" value="你回来!他什么都准备好了吗?和…这是什么……哦，一封信?哇……每当我给他写信时，他总是接着给我写一封温馨的信。太好了~说好的，这是你的奖励。它会在你的冒险中派上用场的。"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢您的帮助。祝你一路平安。祝你好运!"/>
+          <string name="0" value="你回来啦！他都收到了吗？太好了。这是...哦一封信？哇...每次我给他写信，他总会回一封甜蜜的信。太棒了~按照约定，这是给你的奖励，对你的冒险应该很有帮助。"/>
+          <imgdir name="yes">
+            <string name="0" value="再次衷心感谢你的帮助。祝你一路平安，好运相伴！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="你还没见到我妻子吗？快去...抓紧时间！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="你还没见过我妻子吗?继续……快点!"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="你一定错过了什么，对吧?"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="你是不是漏掉了什么？"/>
             </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我一直在写这封写给安吉丽的情书，你能帮我把它交给她吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢!别受伤!"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="哦,真的吗?嗯,好吧。我得回去工作了，如果你需要我，我就在这。"/>
-            </imgdir>
+          <string name="0" value="我写了封情书给#p9201036#，能麻烦你帮我送给她吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="再次感谢！路上小心！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哦，是吗？那好吧。我得回去工作了，有需要随时可以来找我。"/>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8856">
         <imgdir name="1">
-            <string name="0" value="你回来!他什么都准备好了吗?和…这是什么……哦，一封信?哇……每当我给他写信时，他总是接着给我写一封温馨的信。太好了~说好的，这是你的奖励。它会在你的冒险中派上用场的。"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢您的帮助。祝你一路平安。祝你好运!"/>
+          <string name="0" value="你回来啦！他都收到了吗？太好了。这是...哦一封信？哇...每次我给他写信，他总会回一封甜蜜的信。太棒了~按照约定，这是给你的奖励，对你的冒险应该很有帮助。"/>
+          <imgdir name="yes">
+            <string name="0" value="再次衷心感谢你的帮助。祝你一路平安，好运相伴！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="你还没见到我妻子吗？快去...抓紧时间！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="你还没见过我妻子吗?继续……快点!"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="你一定错过了什么，对吧?"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="你是不是漏掉了什么？"/>
             </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我一直在写这封写给安吉丽的情书，你能帮我把它交给她吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢!别受伤!"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="哦,真的吗?嗯,好吧。我得回去工作了，如果你需要我，我就在这。"/>
-            </imgdir>
+          <string name="0" value="我写了封情书给#p9201036#，能麻烦你帮我送给她吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="再次感谢！路上小心！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哦，是吗？那好吧。我得回去工作了，有需要随时可以来找我。"/>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8857">
         <imgdir name="1">
-            <string name="0" value="你回来!他什么都准备好了吗?和…这是什么……哦，一封信?哇……每当我给他写信时，他总是接着给我写一封温馨的信。太好了~说好的，这是你的奖励。它会在你的冒险中派上用场的。"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢您的帮助。祝你一路平安。祝你好运!"/>
+          <string name="0" value="你回来啦！他都收到了吗？太好了。这是...哦一封信？哇...每次我给他写信，他总会回一封甜蜜的信。太棒了~按照约定，这是给你的奖励，对你的冒险应该很有帮助。"/>
+          <imgdir name="yes">
+            <string name="0" value="再次衷心感谢你的帮助。祝你一路平安，好运相伴！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="你还没见到我妻子吗？快去...抓紧时间！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="你还没见过我妻子吗?继续……快点!"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="你一定错过了什么，对吧?"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="你是不是漏掉了什么？"/>
             </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我一直在写这封写给安吉丽的情书，你能帮我把它交给她吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢!别受伤!"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="哦,真的吗?嗯,好吧。我得回去工作了，如果你需要我，我就在这。"/>
-            </imgdir>
+          <string name="0" value="我写了封情书给#p9201036#，能麻烦你帮我送给她吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="再次感谢！路上小心！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="哦，是吗？那好吧。我得回去工作了，有需要随时可以来找我。"/>
+          </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="8858">
         <imgdir name="1">
-            <string name="0" value="你回来!他什么都准备好了吗?和…这是什么……哦，一封信?哇……每当我给他写信时，他总是接着给我写一封温馨的信。太好了~说好的，这是你的奖励。它会在你的冒险中派上用场的。"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢您的帮助。祝你一路平安。祝你好运!"/>
+          <string name="0" value="你回来啦！东西都送到了吗？太好了！这是...啊，还有封信？每次我给他写信，他总会回一封甜蜜的情书呢~给，这是答应你的奖励，冒险路上应该用得上。"/>
+          <imgdir name="yes">
+            <string name="0" value="再次感谢你的帮助！祝你一路顺风，好运常伴！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="你还没见到我妻子吗？快去吧...抓紧时间！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="你还没见过我妻子吗?继续……快点!"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="你一定错过了什么，对吧?"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="你是不是漏带了什么东西？"/>
             </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我一直在写这封写给安吉丽的情书，你能帮我把它交给她吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢!别受伤!"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="哦,真的吗?嗯,好吧。我得回去工作了，如果你需要我，我就在这。"/>
-            </imgdir>
+          <string name="0" value="我写了封情书给#p9201036#，能麻烦你帮我送给她吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了！路上小心别受伤！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="这样啊...那好吧。我得继续工作了，需要帮忙随时来找我。"/>
+          </imgdir>
         </imgdir>
     </imgdir>
+    
     <imgdir name="8859">
         <imgdir name="1">
-            <string name="0" value="你回来!他什么都准备好了吗?和…这是什么……哦，一封信?哇……每当我给他写信时，他总是接着给我写一封温馨的信。太好了~说好的，这是你的奖励。它会在你的冒险中派上用场的。"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢您的帮助。祝你一路平安。祝你好运!"/>
+          <string name="0" value="你回来啦！东西都送到了吗？太好了！这是...啊，还有封信？每次我给他写信，他总会回一封甜蜜的情书呢~给，这是答应你的奖励，冒险路上应该用得上。"/>
+          <imgdir name="yes">
+            <string name="0" value="再次感谢你的帮助！祝你一路顺风，好运常伴！"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="你还没见到我妻子吗？快去吧...抓紧时间！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="你还没见过我妻子吗?继续……快点!"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="你一定错过了什么，对吧?"/>
-                </imgdir>
+            <imgdir name="item">
+              <string name="0" value="你是不是漏带了什么东西？"/>
             </imgdir>
+          </imgdir>
         </imgdir>
         <imgdir name="0">
-            <string name="0" value="我一直在写这封写给安吉丽的情书，你能帮我把它交给她吗?"/>
-            <imgdir name="yes">
-                <string name="0" value="再次感谢!别受伤!"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="哦,真的吗?嗯,好吧。我得回去工作了，如果你需要我，我就在这。"/>
-            </imgdir>
+          <string name="0" value="我写了封情书给#p9201036#，能麻烦你帮我送给她吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="太感谢了！路上小心别受伤！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="这样啊...那好吧。我得继续工作了，需要帮忙随时来找我。"/>
+          </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="8860">
@@ -60332,24 +60339,24 @@
     </imgdir>
     <imgdir name="28331">
         <imgdir name="0">
-            <string name="0" value="问候，旅行者。我的名字是汉娜，目前我正在为节日筹办一场“光之节”活动。如果你可以帮助我，我将非常感激！"/>
-            <imgdir name="yes">
-                <string name="0" value="很好。我想为节日建造一个祭坛，所以我们需要 25 个祭坛零件。有些人尝试帮助我，但他们的斧子卡在了木头上。战胜那些怪物应该会给你所需的零件。谢谢并赶快回来！"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="真是遗憾，我想我得找另一个善良的灵魂来帮助我...祝你一路顺风！"/>
-            </imgdir>
+          <string name="0" value="你好啊，冒险者。我叫汉娜，正在筹备节日的光明庆典。如果你能帮忙就太好啦！"/>
+          <imgdir name="yes">
+            <string name="0" value="太好啦！我想为庆典搭建一座祭坛，需要25个#z4031445#。之前也有人来帮忙，结果斧头都卡在木头里了。只要击败那些怪物就能获得部件。拜托你啦，快去快回哦！"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="真遗憾...看来我得另寻帮手了...愿光明与你同在！"/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="太棒了！这些零件应该足够建造祭坛了。谢谢你的帮助！等你有时间的时候我还有另一件事要交代给你..."/>
-            <imgdir name="yes">
-                <string name="0" value="“好的，我开始搭建祭坛。与此同时，我需要你收集9根安息日蜡烛，这样我们就可以正式开始节日了。它们可以在那些奇怪有角的蘑菇生物身上找到。”"/>
+          <string name="0" value="太棒了！这些部件足够搭建祭坛了。对了，等你方便的时候还有件事要拜托..."/>
+          <imgdir name="yes">
+            <string name="0" value="好的，我这就开始搭建祭坛。在此期间，需要你收集9根安息蜡烛来正式开启庆典。那些长角的奇怪蘑菇怪身上就能找到。"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="item">
+              <string name="0" value="哎呀，看来#z4031445#还不够呢。集齐之后记得赶快回来哦！"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="item">
-                    <string name="0" value="哦，看起来你还没有足够的零件来建造祭坛。一定要在你准备好的时候尽快回来！"/>
-                </imgdir>
-            </imgdir>
+          </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="28332">
