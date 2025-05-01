@@ -34,17 +34,17 @@ function level0() {
 function level1() {
     const questNum = cm.getPlayer().getCompletedQuests().length;
     const level = Math.floor(questNum / 100);
-    const itemID = RING_ITEM.find(item => hasItem(item))
-    if (!itemID) {
+    const itemID_index = RING_ITEM.findIndex(item => hasItem(item))
+    if (itemID_index === -1) {
         cm.sendOk("你还没有任务达人戒指，请先领取初始任务达人戒指吧");
-        return;
-    }
-    if (itemID === RING_ITEM[level]) {
+    } else if (itemID_index === 8) {
+        cm.sendOk("你已经升级满星任务达人戒指，继续努力战斗吧！")
+    } else if (itemID_index === level) {
         cm.sendOk("你当前完成任务"+questNum+"个，已拥有#e#z" + itemID + "##n，暂时不可升级，请努力完成任务升级它吧！");
-    } else if (cm.getPlayer().haveItemEquipped(itemID)) {
+    } else if (cm.getPlayer().haveItemEquipped(RING_ITEM[itemID_index])) {
         cm.sendOk("请先取下你的任务达人戒指放置在背包后再尝试升级！");
     } else {
-        cm.gainItem(itemID, -1);
+        cm.gainItem(RING_ITEM[itemID_index], -1);
         cm.gainItem(RING_ITEM[level], 1);
         cm.sendOk("已成功将你的戒指升级为#e#z" + RING_ITEM[level] + "##n,请继续努力！");
     }
