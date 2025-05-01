@@ -40,11 +40,11 @@ var maxEqp = 0;
 
 function start() {
     const GameConfig = Java.type('org.gms.config.GameConfig');
-    if (!GameConfig.getServerBoolean("use_enable_custom_npc_script")) {
+//    if (!GameConfig.getServerBoolean("use_enable_custom_npc_script")) {
         cm.sendOk("嗨，我是 #b#p" + cm.getNpc() + "##k。");
         cm.dispose();
         return;
-    }
+//    }
 
     cm.getPlayer().setCS(true);
     var selStr = "你好，我是#b饰品制作大师#k！我的作品以精良著称，不仅能完美复刻外观，连属性都能完全重现！只需要一些制作材料和少许服务费。您对哪种装备感兴趣呢？#b";
