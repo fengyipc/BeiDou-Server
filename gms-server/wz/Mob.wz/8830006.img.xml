@@ -131,7 +131,7 @@
     </canvas>
     <imgdir name="speak">
       <int name="prob" value="100"/>
-      <string name="0" value="Haha...trying to seal me up again?  Not a chance. I will show you my power! "/>
+      <string name="0" value="哈哈…又想封印我？休想！让你们见识下我的真正力量！"/>
     </imgdir>
   </imgdir>
 </imgdir>

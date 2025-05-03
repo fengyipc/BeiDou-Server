@@ -1360,19 +1360,19 @@ public class MapleMap {
     }
 
     public void broadcastBalrogVictory(String leaderName) {
-        getWorldServer().dropMessage(6, "[Victory] " + leaderName + "'s party has successfully defeated the Balrog! Praise to them, they finished with " + countAlivePlayers() + " players alive.");
+        getWorldServer().dropMessage(6, "[系统公告] " + leaderName + "的队伍成功击败了巨魔蝙蝠怪！他们以" + countAlivePlayers() + "名幸存队员完成了这场壮举！");
     }
 
     public void broadcastHorntailVictory() {
-        getWorldServer().dropMessage(6, "[Victory] To the crew that have finally conquered Horned Tail after numerous attempts, I salute thee! You are the true heroes of Leafre!!");
+        getWorldServer().dropMessage(6, "[系统公告] 致敬这支历经多次挑战最终征服暗黑龙王的队伍！你们是林中之城真正的英雄！！");
     }
 
     public void broadcastZakumVictory() {
-        getWorldServer().dropMessage(6, "[Victory] At last, the tree of evil that for so long overwhelmed Ossyria has fallen. To the crew that managed to finally conquer Zakum, after numerous attempts, victory! You are the true heroes of Ossyria!!");
+        getWorldServer().dropMessage(6, "[系统公告] 长久笼罩天空之城的邪恶之树终于倒下。这支历经多次尝试最终征服扎昆的队伍，胜利属于你们！你们是天空之城真正的英雄！！");
     }
 
     public void broadcastPinkBeanVictory(int channel) {
-        getWorldServer().dropMessage(6, "[Victory] In a swift stroke of sorts, the crew that has attempted Pink Bean at channel " + channel + " has ultimately defeated it. The Temple of Time shines radiantly once again, the day finally coming back, as the crew that managed to finally conquer it returns victoriously from the battlefield!!");
+        getWorldServer().dropMessage(6, "[系统公告] 在" + channel + "频道挑战品克缤的队伍最终取得了胜利！时间神殿重现光芒，白昼终于归来，这支凯旋而归的队伍从战场荣耀归来！！");
     }
 
     private boolean removeKilledMonsterObject(Monster monster) {
