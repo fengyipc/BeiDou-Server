@@ -1,39 +1,39 @@
 /*
-	NPC Name: 		Insiginificant Being
-	Map(s): 		Dungeon : Another Entrance
-	Description: 		Takes you to another Dimension
+	NPC 名称: 		虚无存在
+	所在地图: 		地城：异界入口
+	功能描述: 		将你传送至另一个维度
 */
 
 function start() {
     if (cm.getQuestStatus(6107) == 1 || cm.getQuestStatus(6108) == 1) {
         var ret = checkJob();
         if (ret == -1) {
-            cm.sendOk("请组建一个队伍，然后再和我交谈。");
+            cm.sendOk("请组建队伍后再来与我对话。");
         } else if (ret == 0) {
-            cm.sendOk("请确保你的队伍人数是2人。");
+            cm.sendOk("请确保队伍人数为2人。");
         } else if (ret == 1) {
-            cm.sendOk("你的团队成员之一的职业不符合进入另一个世界的资格。");
+            cm.sendOk("队伍中有成员的职业不符合进入异界的条件。");
         } else if (ret == 2) {
-            cm.sendOk("你的队伍成员之一的等级不符合进入另一个世界的条件。");
+            cm.sendOk("队伍中有成员的等级不符合进入异界的要求。");
         } else {
             var em = cm.getEventManager("s4aWorld");
             if (em == null) {
-                cm.sendOk("由于未知原因，您不被允许进入。请再试一次。");
+                cm.sendOk("因未知原因无法进入，请重试。");
             } else if (em.getProperty("started") === "true") {
-                cm.sendOk("另外一个世界已经有其他人在尝试击败小巴尔洛格了。");
+                cm.sendOk("已有其他队伍正在异界挑战小巨魔蝙蝠怪。");
             } else {
                 var eli = em.getEligibleParty(cm.getParty());
                 if (eli.size() > 0) {
                     if (!em.startInstance(cm.getParty(), cm.getPlayer().getMap(), 1)) {
-                        cm.sendOk("“以你的名义注册的派对已经在此实例中注册。”");
+                        cm.sendOk("该副本已存在以你命名的队伍记录。");
                     }
                 } else {
-                    cm.sendOk("你目前无法开始这个组队任务，因为你的队伍可能不符合人数要求，有些队员可能不符合尝试条件，或者他们不在这张地图上。如果你找不到队员，可以尝试使用组队搜索功能。");
+                    cm.sendOk("当前无法开启任务，可能因为：\n1. 队伍人数不符\n2. 成员不符合条件\n3. 成员不在当前地图\n如需组队可尝试使用队伍搜寻功能。");
                 }
             }
         }
     } else {
-        cm.sendOk("你不被允许以未知的原因进入另一个世界。");
+        cm.sendOk("因未知原因无法进入异界。");
     }
 
     cm.dispose();

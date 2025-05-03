@@ -40,7 +40,7 @@ function level1() {
     } else if (itemID_index === 8) {
         cm.sendOk("你已经升级满星任务达人戒指，继续努力战斗吧！")
     } else if (itemID_index === level) {
-        cm.sendOk("你当前完成任务"+questNum+"个，已拥有#e#z" + itemID + "##n，暂时不可升级，请努力完成任务升级它吧！");
+        cm.sendOk("你当前完成任务"+questNum+"个，已拥有#e#z" + RING_ITEM[itemID_index] + "##n，暂时不可升级，请努力完成任务升级它吧！");
     } else if (cm.getPlayer().haveItemEquipped(RING_ITEM[itemID_index])) {
         cm.sendOk("请先取下你的任务达人戒指放置在背包后再尝试升级！");
     } else {

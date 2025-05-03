@@ -25,7 +25,7 @@
 
 var isPq = true;
 var minPlayers = 4, maxPlayers = 6;
-var minLevel = 44, maxLevel = 55;
+var minLevel = 44, maxLevel = 100;
 var entryMap = 930000000;
 var exitMap = 930000800;
 var recruitMap = 300030100;
@@ -69,7 +69,7 @@ function setEventRequirements() {
         reqStr += minLevel;
     }
 
-    reqStr += "\r\n    For #radventurers only#k.";
+    reqStr += "\r\n    仅限#冒险家职业#k.";
 
     reqStr += "\r\n   时间限制: ";
     reqStr += eventTime + " 分钟";
