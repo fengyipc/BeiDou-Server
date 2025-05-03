@@ -21,11 +21,11 @@ function action(mode, type, selection) {
 
         if (status == 0) {
             if (cm.getEventInstance().isEventCleared()) {
-                cm.sendOk("哇！你打败了巴尔洛格。");
+                cm.sendOk("太厉害了！你们成功击败了巨魔蝙蝠怪。");
             } else if (cm.getPlayer().getMap().getCharacters().size() > 1) {
-                cm.sendYesNo("你真的要离开这场战斗，让你的同伴们去死吗？");
+                cm.sendYesNo("你确定要临阵脱逃，抛弃你的队友吗？");
             } else {
-                cm.sendYesNo("如果你是个懦夫，你会离开。");
+                cm.sendYesNo("如果你是个懦夫，现在就可以离开。");
             }
         } else if (status == 1) {
             if (cm.getEventInstance().isEventCleared()) {
