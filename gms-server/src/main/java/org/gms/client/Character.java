@@ -2920,7 +2920,7 @@ public class Character extends AbstractCharacterObject {
             if (show) {
                 announceExpGain(gain, equip, party, inChat, white);
             }
-            while (exp.get() >= ExpTable.getExpNeededForLevel(level)) {
+            while (exp.get() >= ExpTable.getExpNeededForLevel(level) && (GameConfig.getServerInt("lock_level") == 0 || GameConfig.getServerInt("lock_level") > level)) {
                 levelUp(true);
 
                 String msg = I18nUtil.getMessage("Character.levelUp.globalNotice", getName(), getMap().getMapName(), getLevel());

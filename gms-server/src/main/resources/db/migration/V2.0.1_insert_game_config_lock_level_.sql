@@ -1,0 +1,3 @@
+INSERT INTO `game_config` ( `config_type`, `config_sub_type`, `config_clazz`, `config_code`, `config_value`, `config_desc`) VALUES ( 'server', 'Game Mechanics', 'java.lang.Integer', 'lock_level', '200', 'lock_level');
+INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('zh-CN', 'game_config', 'lock_level', '高于n级时无法升级,可正常获取经验,为0时不开启');
+INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('en-US', 'game_config', 'lock_level', 'lock level');
