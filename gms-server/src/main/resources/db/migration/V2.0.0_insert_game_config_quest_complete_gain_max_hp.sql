@@ -1,3 +1,3 @@
 INSERT INTO `game_config` ( `config_type`, `config_sub_type`, `config_clazz`, `config_code`, `config_value`, `config_desc`) VALUES ( 'server', 'Game Mechanics', 'java.lang.Integer', 'quest_complete_gain_max_hp', '0', 'quest_complete_gain_max_hp');
-INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('zh-CN', 'game_config', 'allow_steal_quest_item', '每完成一个任务增加多少生命值');
-INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('en-US', 'game_config', 'allow_steal_quest_item', 'Gain N maxHP when quest completed.');
+INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('zh-CN', 'game_config', 'quest_complete_gain_max_hp', '每完成一个任务增加多少生命值');
+INSERT INTO `lang_resources` (`lang_type`, `lang_base`, `lang_code`, `lang_value`) VALUES ('en-US', 'game_config', 'quest_complete_gain_max_hp', 'Gain N maxHP when quest completed.');
