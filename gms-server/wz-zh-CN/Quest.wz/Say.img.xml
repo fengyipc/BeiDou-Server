@@ -63905,24 +63905,24 @@
     </imgdir>
     <imgdir name="3719">
         <imgdir name="0">
-            <string name="0" value="要想进行时间旅行，必须通过时间守护兽努克斯的考验。时间守护兽努克斯就住在塔拉森林的塔拉古树上。只有击败它的人才能获得时间旅行的资格。你先去击败它吧。"/>
+            <string name="0" value="要想进行时间旅行，必须通过时间守护兽布索的考验。时间守护兽布索就住在塔拉森林的塔拉古树上。只有击败它的人才能获得时间旅行的资格。你先去击败它吧。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2021年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2021年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第一次考验。你获得了通过时间门，前往2021年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第一次考验。你获得了通过时间门，前往2021年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -64047,24 +64047,24 @@
     </imgdir>
     <imgdir name="3724">
         <imgdir name="0">
-            <string name="0" value="要想进行第二次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第二次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2099年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2099年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第二次考验。你获得了通过时间门，前往2099年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第二次考验。你获得了通过时间门，前往2099年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -64178,24 +64178,24 @@
     </imgdir>
     <imgdir name="3730">
         <imgdir name="0">
-            <string name="0" value="要想进行第三次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第三次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2215年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2215年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第三次考验。你获得了通过时间门，前往2215年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第三次考验。你获得了通过时间门，前往2215年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -64341,24 +64341,24 @@
     </imgdir>
     <imgdir name="3736">
         <imgdir name="0">
-            <string name="0" value="要想进行第四次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第四次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2216年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2216年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第四次考验。你获得了通过时间门，前往2216年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第四次考验。你获得了通过时间门，前往2216年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -64464,24 +64464,24 @@
     </imgdir>
     <imgdir name="3742">
         <imgdir name="0">
-            <string name="0" value="要想进行第五次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第五次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2230年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2230年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第五次考验。你获得了通过时间门，前往2230年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第五次考验。你获得了通过时间门，前往2230年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -64547,24 +64547,24 @@
     </imgdir>
     <imgdir name="3748">
         <imgdir name="0">
-            <string name="0" value="要想进行第六次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第六次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2503年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2503年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第六次考验。你获得了通过时间门，前往2503年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第六次考验。你获得了通过时间门，前往2503年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -66203,25 +66203,25 @@
     </imgdir>
     <imgdir name="3715">
         <imgdir name="0">
-            <string name="0" value="哎呀，好久不见。啊......我知道你为什么来找我。别人来找我的理由只有一个，那就是#e情报#n。新的情报嘛......让我想想......最近没有什么新情报。我的记忆力不太好，这你也知道，为什么还来问我呢？哈哈哈，虽然我的记忆力不好，但如果你能给我#b5000金币#k，说不定我就能想起什么好的情报了。"/>
+            <string name="0" value="哎呀，好久不见。啊……我知道你为什么来找我。别人找我的理由只有一个，那就是#e情报#n。新情报嘛……让我想想……最近没什么新情报。你也知道我记性不太好，干嘛还来问我呢？哈哈哈，虽说我记性不好，但要是你能给我#b5000金币#k，说不定我就能想起什么有用的情报了。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="I knew you&apos;d understand! Now then, let me tell you about this wanderer I met a little while ago."/>
-                <string name="1" value="One night, not too long ago, the stars stopped twinkling. The next day, a suspicious visitor arrived in Magatia. He wore a cape that covered his features, and I could tell he was from out of town. I started a conversation with him, hoping to get information."/>
-                <string name="2" value="He was just plain strange. He kept mumbling to himself, some weird phrase over and over. &quot;#bI&apos;ve come too far. It&apos;s too soon...&quot;#k\nBefore I could question him, he gave Humanoid A the stink eye and disappeared in the alley near the Alcadno Society."/>
-                <string name="3" value="Late that night, there was a explosion near the Alcadno Society. There were no witnesses, but after that, no one saw the strange man again. The Alcadno Society blames the Zenumists, of course, but they&apos;re wrong. I&apos;m pretty sure that man was responsible. He&apos;s got a huge secret. I can just feel it."/>
-                <string name="4" value="I can see in your eyes that you want to pursue that man. Let me offer you some advice. I think he&apos;s already left Nihal Desert, so he must have passed through Ariant Station. Go ask #bSyras#k the ticket agent at Ariant Station if he saw anything."/>
+                <string name="0" value="我就知道你能明白！那我给你讲讲我前不久遇到的那个流浪者吧。"/>
+                <string name="1" value="不久前的一个晚上，星星不再闪烁。第二天，一个可疑的访客来到了玛加提亚。他披着一件遮住脸的披风，我能看出他是外地人。我跟他搭话，想获取点信息。"/>
+                <string name="2" value="他可太奇怪了。一直在自言自语，反复念叨着一些奇怪的话。“#b我走得太远了。时机还太早……”#k\n我还没来得及问他，他就狠狠地瞪了人造人 A 一眼，然后消失在了卡帕莱特协会附近的小巷里。"/>
+                <string name="3" value="那天深夜，卡帕莱特协会附近发生了爆炸。没有目击者，从那以后，就再也没人见过那个奇怪的人了。当然，卡帕莱特协会把责任归咎于蒙特鸠信徒，但他们错了。我敢肯定就是那个人干的。他肯定藏着一个天大的秘密。我能感觉到。"/>
+                <string name="4" value="从你的眼神里我能看出你想追查那个人。我给你提些建议吧。我觉得他已经离开尼哈沙漠了，所以肯定经过了阿里安特车站。你去问问阿里安特车站的售票员#b西拉斯#k，看他有没有看到什么。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="Hey, business is business. Scram if you aren&apos;t interested. I&apos;m a busy guy, you know."/>
+                <string name="0" value="嘿，公事公办。如果你没兴趣就滚蛋。你要知道，我很忙。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
             <int name="ask" value="1"/>
-            <string name="0" value="你......是在启动钟表吗？！\r\n#L0##b......你就是刚刚打落这只钟表的人......？这是哪里？现在是什么情况？#l\n#k"/>
-            <string name="1" value="我说，这里每天都有很多外地人来来往往。要说奇怪的话，所有人都很奇怪啊。包括你，你也很奇怪啊。\r\n#b#L0#我在找一个浑身围着披风，很少说话的人。#l\n#k"/>
-            <string name="2" value="让我想想......几天前好像见到了2个那样的人。上午10点有个看上去非常奢侈的魔法师裹着非常华丽的披风，下午5点有个年轻的战士围着破破烂烂的披风过来，问我怎么去金银岛......除此之外......啊！还有一个人。在天蒙蒙亮的时候来过一个人。"/>
+            <string name="0" value="你……是在启动钟表吗？！\r\n#L0##b……你就是刚刚打落这只钟表的人……？这是哪儿？现在是什么情况？#l\n#k"/>
+            <string name="1" value="我说，这儿每天都有好多外地人来来往往。要说奇怪，所有人都挺奇怪的。包括你，你也挺奇怪的。\r\n#b#L0#我在找一个浑身裹着披风、很少说话的人。#l\n#k"/>
+            <string name="2" value="让我想想……几天前好像见过两个那样的人。上午 10 点有个看上去很阔气的魔法师裹着非常华丽的披风，下午 5 点有个年轻的战士裹着破破烂烂的披风过来，问我怎么去金银岛……除此之外……啊！还有一个人。天蒙蒙亮的时候来过一个人。"/>
             <imgdir name="stop">
                 <imgdir name="0">
                     <int name="answer" value="1"/>
@@ -66230,7 +66230,7 @@
                     <int name="answer" value="1"/>
                 </imgdir>
                 <imgdir name="npc">
-                    <string name="0" value="Talk to Syras at the Ariant ticket box desk."/>
+                    <string name="0" value="去阿里安特车站售票窗口找西拉斯聊聊。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -66338,24 +66338,24 @@
     </imgdir>
     <imgdir name="3719">
         <imgdir name="0">
-            <string name="0" value="要想进行时间旅行，必须通过时间守护兽努克斯的考验。时间守护兽努克斯就住在塔拉森林的塔拉古树上。只有击败它的人才能获得时间旅行的资格。你先去击败它吧。"/>
+            <string name="0" value="要想进行时间旅行，必须通过时间守护兽布索的考验。时间守护兽布索就住在塔拉森林的塔拉古树上。只有击败它的人才能获得时间旅行的资格。你先去击败它吧。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2021年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2021年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第一次考验。你获得了通过时间门，前往2021年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第一次考验。你获得了通过时间门，前往2021年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -66480,24 +66480,24 @@
     </imgdir>
     <imgdir name="3724">
         <imgdir name="0">
-            <string name="0" value="要想进行第二次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第二次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2099年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2099年的时间门就会打开。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第二次考验。你获得了通过时间门，前往2099年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第二次考验。你获得了通过时间门，前往2099年的资格。你做的比我想象的更好。"/>
             <imgdir name="yes">
                 <string name="0" value="你带着时间旅行者的怀表，到时间门那里去吧。"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -66611,21 +66611,21 @@
     </imgdir>
     <imgdir name="3730">
         <imgdir name="0">
-            <string name="0" value="要想进行第三次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第三次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2215年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2215年的时间门就会打开。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第三次考验。你获得了通过时间门，前往2215年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第三次考验。你获得了通过时间门，前往2215年的资格。你做的比我想象的更好。"/>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
             <imgdir name="yes">
@@ -66774,21 +66774,21 @@
     </imgdir>
     <imgdir name="3736">
         <imgdir name="0">
-            <string name="0" value="要想进行第四次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第四次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2216年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2216年的时间门就会打开。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第四次考验。你获得了通过时间门，前往2216年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第四次考验。你获得了通过时间门，前往2216年的资格。你做的比我想象的更好。"/>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
             <imgdir name="yes">
@@ -66983,21 +66983,21 @@
     </imgdir>
     <imgdir name="3748">
         <imgdir name="0">
-            <string name="0" value="要想进行第六次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第六次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2503年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2503年的时间门就会打开。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第六次考验。你获得了通过时间门，前往2503年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第六次考验。你获得了通过时间门，前往2503年的资格。你做的比我想象的更好。"/>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
             <imgdir name="yes">
@@ -67007,21 +67007,21 @@
     </imgdir>
     <imgdir name="3742">
         <imgdir name="0">
-            <string name="0" value="要想进行第五次时间旅行，必须再次通过努克斯的考验。千万不要大意。这次你见到的努克斯，要比上次强得多。"/>
+            <string name="0" value="要想进行第五次时间旅行，必须再次通过布索的考验。千万不要大意。这次你见到的布索，要比上次强得多。"/>
             <imgdir name="no">
-                <string name="0" value="不打败时间守护兽努克斯，是无法获得时间旅行的资格的。"/>
+                <string name="0" value="不打败时间守护兽布索，是无法获得时间旅行的资格的。"/>
             </imgdir>
             <imgdir name="stop">
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="击败努克斯之后，通往2230年的时间门就会打开。"/>
+                <string name="0" value="击败布索之后，通往2230年的时间门就会打开。"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="你通过了努克斯的第五次考验。你获得了通过时间门，前往2230年的资格。你做的比我想象的更好。"/>
+            <string name="0" value="你通过了布索的第五次考验。你获得了通过时间门，前往2230年的资格。你做的比我想象的更好。"/>
             <imgdir name="stop">
                 <imgdir name="mob">
-                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽努克斯的考验吧。"/>
+                    <string name="0" value="你先去通过生活在塔拉古树上的时间守护兽布索的考验吧。"/>
                 </imgdir>
             </imgdir>
             <imgdir name="yes">
