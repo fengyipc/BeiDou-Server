@@ -6,7 +6,7 @@
  */
 
 const RING_ITEM = [1112320, 1112321, 1112322, 1112323, 1112324, 1112325, 1112326, 1112327, 1112328];
-
+let Server;
 function start() {
     let text = '#e通过完成任务可以升级你的任务达人戒指#n\r\n';
     text += '当前已完成任务数：' + cm.getPlayer().getCompletedQuests().length + '个\r\n\r\n';
@@ -47,6 +47,9 @@ function level1() {
         cm.gainItem(RING_ITEM[itemID_index], -1);
         cm.gainItem(RING_ITEM[level], 1);
         cm.sendOk("已成功将你的戒指升级为#e#z" + RING_ITEM[level] + "##n,请继续努力！");
+        if (!Server) Server = Java.type("org.gms.net.server.Server");
+        const msg = "[任务达人戒指]" + " : 恭喜玩家" + player.getName() + "将任务达人戒指升级至" + level + "星";
+        Server.getInstance().broadcastMessage(player.getWorld(), PacketCreator.serverNotice(2, player.getClient().getChannel(), msg));
     }
     cm.dispose();
 }
