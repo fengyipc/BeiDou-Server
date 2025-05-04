@@ -14,6 +14,7 @@ const Other_ITEM = [4021000, 4021001, 4021003, 4021004, 4021005];
 const Other_ITEM_NUM = [2, 4, 6, 8, 10];
 let currentRingItemIndex = -1;
 let currentCardNum = 0;
+let Server;
 function start() {
     currentCardNum = cm.getPlayer().getFullMonsterCards();
     let text = '#e通过完成收集怪物卡可以升级你的怪物达人戒指#n\r\n';
@@ -96,7 +97,9 @@ function level3() {
         if (Other_ITEM[currentRingItem]) cm.gainItem(Other_ITEM[currentRingItem], -Other_ITEM_NUM[currentRingItem]);
         cm.gainItem(RING_ITEM[currentRingItem], -1);
         cm.gainItem(RING_ITEM[currentRingItem + 1], 1);
+        if (!Server) Server = Java.type("org.gms.net.server.Server");
         cm.sendOk("已成功将你的戒指升级为#e#z" + RING_ITEM[currentRingItem + 1] + "##n,请继续努力！");
+        const msg = "[怪物达人戒指]" + " : 恭喜玩家" + player.getName() + "将怪物达人戒指升级至" + (currentRingItem + 1) + "星";
     }
 }
 function hasItem(item) {
