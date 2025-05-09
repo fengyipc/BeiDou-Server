@@ -1521,13 +1521,13 @@ function level1() {
 
 function levelExchange(choose) {
     exchangeItem = canExchangeItem[choose];
-    let text = '你选择了合成#b#z'+exchangeItem+'##k,每合成1张需要 #r' + (data[exchangeItem][1] > 5 ? 10 : 15) + '#n张#b#z4001136##n#k\r\n\r\n';
+    let text = '你选择了合成#b#z'+exchangeItem+'##k,每合成1张需要 #r' + (data[exchangeItem][1] > 5 ? 30 : 45) + '#n张#b#z4001136##n#k\r\n\r\n';
     text += '请输入要合成的数量:\r\n\r\n';
     cm.getInputNumberLevel("ExchangeNum", text, 1, 0, 999);
 }
 
 function levelExchangeNum(inputNum) {
-    const fragmentNum = (data[exchangeItem][1] > 5 ? 10 : 15) * inputNum;
+    const fragmentNum = (data[exchangeItem][1] > 5 ? 30 : 45) * inputNum;
     if (!cm.hasItem(4001136, fragmentNum)) {
          let text = '你没有#e' + fragmentNum + '#n张#b#z4001136##k\r\n\r\n';
             text += '请确认后重新输入要合成的数量:\r\n\r\n';

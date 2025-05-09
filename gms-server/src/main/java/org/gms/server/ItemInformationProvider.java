@@ -2244,6 +2244,28 @@ public class ItemInformationProvider {
         return list;
     }
 
+    public Map<Integer, Integer> getDropperIdAndRates(Integer itemId) {
+        Map<Integer, Integer> map = new HashMap<>();
+        try (Connection con = DatabaseConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement("SELECT dropperid, chance FROM drop_data WHERE itemid = ? LIMIT 50")) {
+            ps.setInt(1, itemId);
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Integer dropperid = rs.getInt("dropperid");
+                    Integer chance = rs.getInt("chance");
+                    if (dropperid > 0 && chance > 0) {
+                        map.put(dropperid, chance);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return map;
+    }
+
     private boolean canUseSkillBook(Character player, Integer skillBookId) {
         Map<String, Integer> skilldata = getSkillStats(skillBookId, player.getJob().getId());
         if (skilldata == null || skilldata.get("skillid") == 0) {

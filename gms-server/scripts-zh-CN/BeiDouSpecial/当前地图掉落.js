@@ -85,8 +85,8 @@ function levelShowDropList(mobId) {
     const mob = List_Mob_All.find(mob => mob.getId() == mobId);		 //根据怪物ID获取已缓存的怪物对象
     const table = {
         '物品名称' : 0,
-        '基础掉率' : 0,
-        '你的掉率' : 0,
+        '基础爆率' : 0,
+        '你的爆率' : 0,
     }
     let msgtext = `当前查询的怪物ID [ ${mobId} ] 不存在。`;
 
@@ -116,8 +116,8 @@ function levelShowDropList(mobId) {
                     let itemChance = (drop.chance / 10000).toFixed(4);
                     // 更新 table 中对应的键值以记录最大长度
                     table['物品名称'] = Math.max(table['物品名称'], itemName.length);
-                    table['基础掉率'] = Math.max(table['基础掉率'], itemChance.length / 2);
-                    table['你的掉率'] = Math.max(table['你的掉率'], itemChance.length / 2);
+                    table['基础爆率'] = Math.max(table['基础爆率'], itemChance.length / 2);
+                    table['你的爆率'] = Math.max(table['你的爆率'], itemChance.length / 2);
                     // 确保 itemName 在结果对象中是唯一的键
                     // 如果 itemName 可能重复，可以添加索引或其它唯一标识
                     dropitemlist[drop.itemId] = {name : itemName , chance : itemChance , questid : drop.questid};
@@ -129,7 +129,11 @@ function levelShowDropList(mobId) {
             msgtext += Object.entries(dropitemlist).map(([itemId, { name, chance ,questid}]) => {
                     let msg = `#L${itemId}##v${itemId}#\r\n#b#z${itemId}##k#n\t`;
 //                    let msg = `#L${itemId}##v${itemId}#\r\n#b#e${name.padEnd(table['物品名称'] + countAllSymbols(name), '\t')}#k#n\t`;
-                    msg += `${(chance + '%').padEnd(table['基础掉率'], '\t')}\t#d${(chance * player.getDropRate() * player.getFamilyDrop() + '%').padEnd(table['你的掉率'], '\t')}#k\r\n`;
+                    const rate = mob.isBoss() ?
+                                (chance * player.getBossDropRate() * player.getFamilyDrop()).toFixed(4) :
+                                (chance * player.getDropRate() * player.getFamilyDrop()).toFixed(4);
+
+                    msg += `${(chance + '%').padEnd(table['基础爆率'], '\t')}\t#d${(rate+'%').padEnd(table['你的爆率'], '\t')}#k\r\n`;
                     msg += questid > 0 ? '#r[任务道具]#k '+QuestInfo.getInstance(questid).getName()+'\r\n' : '';
                     msg += '#l';
                     return msg;
@@ -158,7 +162,7 @@ function getMobImage(mob){
     let type = [null,'stand','fly']
         type = type[mob.getStats().getMovetype() + 1];    //-1=未知类型，0=陆地类型，1=飞天类型
     if(type == null) {
-        return `#fUI/UIWindow.img/Maker/randomRecipe#`;     //没有怪物图片时显示一个问号。
+        return null;     //没有怪物图片时不显示
     } else if (mob.getStats().getImgwidth() > 160 && mob.getStats().getImgheight() > 250) { //如果图片超过指定范围会造成客户端假死，因此这里需要替换成别的图片或者干脆不要。
         return `#fMap/Obj/Tdungeon.img/mushCatle/npc/0/0#\r\n(形象过大，不能展示)`;
     } else {
