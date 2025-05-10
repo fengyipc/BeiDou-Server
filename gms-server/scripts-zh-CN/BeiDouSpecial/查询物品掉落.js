@@ -25,6 +25,10 @@ function levelMain() {
 }
 
 function levelInput(inputText) {
+    if (!inputText || inputText === ' ') {
+        cm.sendLastLevel("Main", "输入为空,请重新输入！")
+        return;
+    }
     const jsItemList = getItemListByName(inputText);
     if (jsItemList.length === 0) {
         cm.sendLastLevel("Main", "未找到物品,请重新输入！")
@@ -105,7 +109,7 @@ function getDropperAndRates(itemID) {
     let result = [];
     for (const dropper of droppers) {
         const mob = LifeFactory.getMonster(dropper.getKey());
-
+        if (!mob) continue;
         const rate = mob.isBoss() ?
             (dropper.getValue() * player.getBossDropRate() * player.getFamilyDrop() / 10000).toFixed(4) :
             (dropper.getValue() * player.getDropRate() * player.getFamilyDrop() / 10000).toFixed(4);
