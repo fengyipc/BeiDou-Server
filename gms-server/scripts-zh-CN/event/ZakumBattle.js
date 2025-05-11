@@ -81,13 +81,13 @@ function setEventExclusives(eim) {
     eim.setExclusiveItems(itemSet);
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages, mesoStages;
 
     evLevel = 1;    //Rewards at clear PQ
     itemSet = [];
     itemQty = [];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [];    //bonus exp given on CLEAR stage signal
     eim.setEventClearStageExp(expStages);
@@ -109,7 +109,7 @@ function setup(channel) {
     eim.getInstanceMap(280030000).resetPQ(level);
 
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
 
     return eim;

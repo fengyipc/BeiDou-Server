@@ -81,13 +81,13 @@ function setEventExclusives(eim) {
  * 设置所有可能的奖励，随机给予玩家作为事件结束时的奖品。
  * @param {EventInstanceManager} eim - 事件实例管理器。
  */
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages;
 
     evLevel = 1;    // 清晰PQ奖励
     itemSet = [2000005]; // 奖励物品列表，这里填入物品ID
     itemQty = [5]; // 每个物品的数量，这里填入每个ID对应的数量
-    if (itemSet.length > 0 && itemQty.length > 0)  eim.setEventRewards(evLevel, itemSet, itemQty);
+    if (itemSet.length > 0 && itemQty.length > 0)  eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [];    // 完成阶段时给予的经验值奖励
     if (expStages.length > 0)  eim.setEventClearStageExp(expStages);
@@ -135,7 +135,7 @@ function setup(level, lobbyid) {
 
     respawnStages(eim);
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
 
     /**

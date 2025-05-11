@@ -57,13 +57,13 @@ function setEventExclusives(eim) {
     eim.setExclusiveItems(itemSet);
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages;
 
     evLevel = 1;    //清晰PQ奖励
     itemSet = [];
     itemQty = [];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [];    //CLEAR舞台信号提供额外体验
     eim.setEventClearStageExp(expStages);
@@ -99,7 +99,7 @@ function setup(level, lobbyid) {
 
     respawnStages(eim);
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
     return eim;
 }

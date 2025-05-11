@@ -30,7 +30,7 @@ function setEventExclusives(eim) {
     // sets all items that should exist only for the event instance, and that should be removed from inventory at the end of the run.
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     // sets all possible treasures that can be given, randomly, to a player at the end of the event.
 }
 

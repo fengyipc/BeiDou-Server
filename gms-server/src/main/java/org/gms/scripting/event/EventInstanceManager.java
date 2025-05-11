@@ -106,8 +106,10 @@ public class EventInstanceManager {
     private boolean eventStarted = false; // 事件是否开始
 
     // 奖励相关配置
-    private final Map<Integer, List<Integer>> collectionSet = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
-    private final Map<Integer, List<Integer>> collectionQty = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
+    private final Map<Integer, List<Integer>> randomRewardSets = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
+    private final Map<Integer, List<Integer>> randomRewardQtys = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
+    private final Map<Integer, List<Integer>> fixedRewardSets = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
+    private final Map<Integer, List<Integer>> fixedRewardQtys = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
     private final Map<Integer, Integer> collectionExp = new HashMap<>(GameConfig.getServerInt("max_event_levels"));
 
     // 清理阶段奖励
@@ -984,19 +986,38 @@ public class EventInstanceManager {
         }
     }
 
-    public final void setEventRewards(List<Object> rwds, List<Object> qtys, int expGiven) {
-        setEventRewards(1, rwds, qtys, expGiven);
+    public final void setEventRandomRewards(List<Object> rwds, List<Object> qtys, int expGiven) {
+        setEventRandomRewards(1, rwds, qtys, expGiven);
     }
 
-    public final void setEventRewards(List<Object> rwds, List<Object> qtys) {
-        setEventRewards(1, rwds, qtys);
+    public final void setEventRandomRewards(List<Object> rwds, List<Object> qtys) {
+        setEventRandomRewards(1, rwds, qtys);
     }
 
-    public final void setEventRewards(int eventLevel, List<Object> rwds, List<Object> qtys) {
-        setEventRewards(eventLevel, rwds, qtys, 0);
+    public final void setEventRandomRewards(int eventLevel, List<Object> rwds, List<Object> qtys) {
+        setEventRandomRewards(eventLevel, rwds, qtys, 0);
+    }
+    
+    public final void setEventFixedRewards(int eventLevel, List<Object> rwds, List<Object> qtys) {
+        if (eventLevel <= 0 || eventLevel > GameConfig.getServerInt("max_event_levels")) {
+            return;
+        }
+        eventLevel--;    //event level starts from 1
+
+        List<Integer> rewardIds = convertToIntegerList(rwds);
+        List<Integer> rewardQtys = convertToIntegerList(qtys);
+
+        //rewardsSet and rewardsQty hold temporary values
+        writeLock.lock();
+        try {
+            fixedRewardSets.put(eventLevel, rewardIds);
+            fixedRewardQtys.put(eventLevel, rewardQtys);
+        } finally {
+            writeLock.unlock();
+        }
     }
 
-    public final void setEventRewards(int eventLevel, List<Object> rwds, List<Object> qtys, int expGiven) {
+    public final void setEventRandomRewards(int eventLevel, List<Object> rwds, List<Object> qtys, int expGiven) {
         // fixed EXP will be rewarded at the same time the random item is given
 
         if (eventLevel <= 0 || eventLevel > GameConfig.getServerInt("max_event_levels")) {
@@ -1010,8 +1031,8 @@ public class EventInstanceManager {
         //rewardsSet and rewardsQty hold temporary values
         writeLock.lock();
         try {
-            collectionSet.put(eventLevel, rewardIds);
-            collectionQty.put(eventLevel, rewardQtys);
+            randomRewardSets.put(eventLevel, rewardIds);
+            randomRewardQtys.put(eventLevel, rewardQtys);
             collectionExp.put(eventLevel, expGiven);
         } finally {
             writeLock.unlock();
@@ -1019,12 +1040,12 @@ public class EventInstanceManager {
     }
 
     private byte getRewardListRequirements(int level) {
-        if (level >= collectionSet.size()) {
+        if (level >= randomRewardSets.size()) {
             return 0;
         }
 
         byte rewardTypes = 0;
-        List<Integer> list = collectionSet.get(level);
+        List<Integer> list = randomRewardSets.get(level);
 
         for (Integer itemId : list) {
             rewardTypes |= (1 << ItemConstants.getInventoryType(itemId).getType());
@@ -1035,6 +1056,15 @@ public class EventInstanceManager {
 
     private boolean hasRewardSlot(Character player, int eventLevel) {
         byte listReq = getRewardListRequirements(eventLevel);   //gets all types of items present in the event reward list
+
+        AbstractPlayerInteraction api = player.getAbstractPlayerInteraction();
+        if (fixedRewardSets.get(eventLevel) != null) {
+            for (Integer i = 0; i < fixedRewardSets.get(eventLevel).size(); i++) {
+                if (!api.canHold(fixedRewardSets.get(eventLevel).get(i), fixedRewardQtys.get(eventLevel).get(i).shortValue())) {
+                    return false;
+                }
+            }
+        }
 
         //iterating over all valid inventory types
         for (byte type = 1; type <= 5; type++) {
@@ -1052,19 +1082,20 @@ public class EventInstanceManager {
 
     //gives out EXP & a random item in a similar fashion of when clearing KPQ, LPQ, etc.
     public final boolean giveEventReward(Character player, int eventLevel) {
-        List<Integer> rewardsSet, rewardsQty;
+        List<Integer> randomRewardsSet, randomRewardsQty, fixedRewardsSet, fixedRewardsQty;
         Integer rewardExp;
 
         readLock.lock();
         try {
             eventLevel--;       //event level starts counting from 1
-            if (eventLevel >= collectionSet.size()) {
+            if (eventLevel >= randomRewardSets.size()) {
                 return true;
             }
 
-            rewardsSet = collectionSet.get(eventLevel);
-            rewardsQty = collectionQty.get(eventLevel);
-
+            randomRewardsSet = randomRewardSets.get(eventLevel);
+            randomRewardsQty = randomRewardQtys.get(eventLevel);
+            fixedRewardsSet = fixedRewardSets.get(eventLevel);
+            fixedRewardsQty = fixedRewardQtys.get(eventLevel);
             rewardExp = collectionExp.get(eventLevel);
         } finally {
             readLock.unlock();
@@ -1074,7 +1105,7 @@ public class EventInstanceManager {
             rewardExp = 0;
         }
 
-        if (rewardsSet == null || rewardsSet.isEmpty()) {
+        if (randomRewardsSet == null || randomRewardsSet.isEmpty()) {
             if (rewardExp > 0) {
                 player.gainExp(rewardExp);
             }
@@ -1086,9 +1117,11 @@ public class EventInstanceManager {
         }
 
         AbstractPlayerInteraction api = player.getAbstractPlayerInteraction();
-        int rnd = (int) Math.floor(Math.random() * rewardsSet.size());
-
-        api.gainItem(rewardsSet.get(rnd), rewardsQty.get(rnd).shortValue());
+        int rnd = (int) Math.floor(Math.random() * randomRewardsSet.size());
+        for (Integer i = 0; i < fixedRewardsSet.size(); i++) {
+            api.gainItem(fixedRewardsSet.get(i), fixedRewardsQty.get(i).shortValue());
+        }
+        api.gainItem(randomRewardsSet.get(rnd), randomRewardsQty.get(rnd).shortValue());
         if (rewardExp > 0) {
             player.gainExp(rewardExp);
         }

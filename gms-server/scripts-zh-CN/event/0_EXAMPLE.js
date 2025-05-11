@@ -30,7 +30,7 @@ function setEventExclusives(eim) {
     // 设置仅在事件实例中存在的物品，并在事件结束时从库存中移除这些物品。
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     // 设置所有可能的奖励，随机给予玩家作为事件结束时的奖品。
 }
 
