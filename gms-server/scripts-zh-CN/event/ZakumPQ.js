@@ -94,11 +94,11 @@ function setEventExclusives(eim) {
  * 设置事件奖励
  * @param {EventInstanceManager} eim - 事件实例管理器
  */
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var evLevel = 1;    // 清除PQ时的奖励等级
     itemSet = [];
     itemQty = [];
-    eim.setEventRewards(evLevel, itemSet, itemQty);  // 空物品奖励
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);  // 空物品奖励
 
     expStages = [];
     eim.setEventClearStageExp(expStages);         // 空经验奖励
@@ -177,7 +177,7 @@ function setup(level, lobbyid) {
     respawnStages(eim);
 
     eim.startEventTimer(eventTime * 60000);  // 启动事件计时器
-    setEventRewards(eim);                   // 设置奖励
+    setEventRandomRewards(eim);                   // 设置奖励
     setEventExclusives(eim);                // 设置专属物品
     return eim;
 }

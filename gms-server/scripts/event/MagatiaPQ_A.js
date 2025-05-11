@@ -74,13 +74,13 @@ function setEventExclusives(eim) {
     eim.setExclusiveItems(itemSet);
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages;
 
     evLevel = 1;    //Rewards at clear PQ
     itemSet = [2000003, 2000002, 2000004, 2000005, 2022003, 1032016, 1032015, 1032014, 2041212, 2041020, 2040502, 2041016, 2044701, 2040301, 2043201, 2040501, 2040704, 2044001, 2043701, 2040803, 1102026, 1102028, 1102029];
     itemQty = [100, 100, 20, 10, 50, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [0, 10000, 20000, 0, 20000, 20000, 0, 0];    //bonus exp given on CLEAR stage signal
     eim.setEventClearStageExp(expStages);
@@ -161,7 +161,7 @@ function setup(level, lobbyid) {
 
     respawnStages(eim);
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
     return eim;
 }

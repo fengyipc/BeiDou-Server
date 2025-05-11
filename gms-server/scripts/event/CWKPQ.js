@@ -74,13 +74,13 @@ function setEventExclusives(eim) {
     eim.setExclusiveItems(itemSet);
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages, mesoStages;
 
     evLevel = 1;    //Rewards at clear PQ
     itemSet = [];
     itemQty = [];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [2500, 8000, 18000, 25000, 30000, 40000];    //bonus exp given on CLEAR stage signal
     eim.setEventClearStageExp(expStages);
@@ -217,7 +217,7 @@ function setup(channel) {
     }
 
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
 
     eim.schedule("spawnGuardians", 60000);

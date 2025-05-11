@@ -39,7 +39,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<组队任务：时空裂缝>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n由于上方有极其危险的生物，你无法再往上走。你想要和队友合作完成任务吗？如果是，请让你的#b队长#k和我交谈。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多详情。");
+            cm.sendSimple("#e#b<组队任务：时空裂缝>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n由于上方有极其危险的生物，你无法再往上走。你想要和队友合作完成任务吗？如果是，请让你的#b队长#k和我交谈。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多详情。\r\n#L3#我想兑换划痕眼镜");
         } else if (status == 1) {
             if (selection == 0) {
                 if (cm.getParty() == null) {
@@ -64,9 +64,18 @@ function action(mode, type, selection) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
                 cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
-            } else {
+            } else if (selection == 2) {
                 cm.sendOk("#e#b<组队任务：时空裂缝>#k#n\r\n#b#m220000000#!#k出现了时空裂缝！我们迫切需要勇敢的冒险家来击败入侵的怪物。请和一些可靠的盟友组队，拯救#m220000000#! 你必须通过击败怪物和解决谜题来通过各个阶段，最终击败#r#o9300012##k。");
                 cm.dispose();
+            } else {
+                if (cm.hasItem(4001201, 35) && cm.canHold(1022073, 1)) {
+                    cm.gainItem(1022073, 1);
+                    cm.sendOk("#v1022073#划痕眼镜已经发放到你的背包了，感谢你为玩具城做出的贡献！");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你可能没有收集35个#v4001201#，或者背包装备栏没有足够的空间，请再确认一下！");
+                    cm.dispose();
+                }
             }
         }
     }

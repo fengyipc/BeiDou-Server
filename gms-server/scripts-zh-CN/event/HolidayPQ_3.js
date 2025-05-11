@@ -82,23 +82,23 @@ function setEventExclusives(eim) {
     eim.setExclusiveItems(itemSet);
 }
 
-function setEventRewards(eim) {
+function setEventRandomRewards(eim) {
     var itemSet, itemQty, evLevel, expStages;
 
     evLevel = 3;    //Rewards at Hard difficulty
     itemSet = [1302080, 1002033, 2022153, 2022042, 2020006, 2020009, 2020016, 2020024, 4010006, 4010007, 4020004, 4020005, 4003002];
     itemQty = [1, 1, 1, 5, 20, 15, 10, 10, 2, 4, 4, 4, 1];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     evLevel = 2;    //Rewards at Normal difficulty
     itemSet = [1302080, 1002033, 2012005, 2012006, 2020002, 2020025, 2020026, 4010003, 4010004, 4010005, 4020002, 4020003, 4020007];
     itemQty = [1, 1, 15, 15, 15, 10, 10, 3, 3, 3, 3, 3, 3];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     evLevel = 1;    //Rewards at Easy difficulty
     itemSet = [1002033, 2012005, 2012006, 2020002, 2022006, 2022002, 4010000, 4010001, 4010002, 4020000, 4020001, 4020006];
     itemQty = [1, 15, 15, 10, 5, 5, 2, 2, 2, 2, 2, 2];
-    eim.setEventRewards(evLevel, itemSet, itemQty);
+    eim.setEventRandomRewards(evLevel, itemSet, itemQty);
 
     expStages = [210, 620, 500, 1400, 950, 2200];    //bonus exp given on CLEAR stage signal
     eim.setEventClearStageExp(expStages);
@@ -145,7 +145,7 @@ function setup(level, lobbyid) {
 
     respawnStages(eim);
     eim.startEventTimer(eventTime * 60000);
-    setEventRewards(eim);
+    setEventRandomRewards(eim);
     setEventExclusives(eim);
     return eim;
 }

@@ -58,7 +58,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<组队任务：毒雾森林>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n你想要组建或加入一个队伍来解决#b毒雾森林#k的谜题吗？让你的#b队伍领袖#k和我交谈或者自己组建一个队伍。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多细节。\r\n#L3#我想要领取奖励。");
+            cm.sendSimple("#e#b<组队任务：毒雾森林>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n你想要组建或加入一个队伍来解决#b毒雾森林#k的谜题吗？让你的#b队伍领袖#k和我交谈或者自己组建一个队伍。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多细节。\r\n#L3#我想要领取阿尔泰耳环。");
         } else if (status == 1) {
             if (selection == 0) {
                 if (cm.getParty() == null) {
@@ -84,10 +84,10 @@ function action(mode, type, selection) {
                 cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "启用" : "禁用") + "#k。想要改变状态时随时找我谈谈。");
                 cm.dispose();
             } else if (selection == 2) {
-                cm.sendOk("#e#b<组队任务：毒雾森林>#k#n\r\n在这个组队任务中，你的任务是逐步穿越森林，对抗路上的所有坏家伙，解决你遇到的许多谜题，并团结一致，充分发挥团队合作的优势，以克服时间限制和强大的生物。击败最终BOSS后，你的团队有机会获得一个大理石，#b当它被喷泉在出口地图上掉落时#k，将会确保团队获得额外的奖励。祝你好运。");
+                cm.sendOk("#e#b<组队任务：毒雾森林>#k#n\r\n在这个组队任务中，你的任务是逐步穿越森林，对抗路上的所有坏家伙，解决你遇到的许多谜题，并团结一致，充分发挥团队合作的优势，以克服时间限制和强大的生物。击败最终BOSS后，你的团队会获得一个石珠，#b当它被放置在喷泉上石#k，你们会获得额外的奖励。祝你好运。");
                 cm.dispose();
             } else {
-                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#给我阿尔泰耳环。\r\n#L1#给我闪亮的阿尔泰耳环。\r\n#L2#给我闪耀的阿尔泰耳环。");
+                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#给我阿尔泰耳环。\r\n#L1#给我闪亮的阿尔泰耳环。");
             }
         } else if (status == 2) {
             if (selection == 0) {
@@ -110,15 +110,14 @@ function action(mode, type, selection) {
                     cm.dispose();
                 }
             } else if (selection == 2) {
-                if (cm.haveItem(1032061) && !cm.haveItem(1032072) && cm.haveItem(4001198, 10)) {
-                    cm.gainItem(1032061, -1);
-                    cm.gainItem(1032072, 1);    // thanks yuxaij for noticing unexpected itemid here
-                    cm.gainItem(4001198, -10);
-                    cm.dispose();
-                } else {
-                    cm.sendOk("你要么还没有闪耀的阿尔泰尔耳环，要么没有10个阿尔泰尔碎片。");
-                    cm.dispose();
-                }
+//                if (cm.haveItem(1032061) && !cm.haveItem(1032072) && cm.haveItem(4001198, 10)) {
+//                    cm.gainItem(1032061, -1);
+//                    cm.gainItem(1032072, 1);    // thanks yuxaij for noticing unexpected itemid here
+//                    cm.gainItem(4001198, -10);
+//                    cm.dispose();
+//                } else {
+                cm.sendOk("暂时不可兑换闪耀的阿尔泰耳环，等待后续更新吧！");
+                cm.dispose();
             }
         }
     }

@@ -21,7 +21,7 @@
   <string name="pio" value="这个城镇有哪些商店？"/>
   <string name="begin4" value="我想在不完成这个任务的情况下前往下一个地方..."/>
   <string name="library" value="我已经上交了多少本书？"/>
-  <string name="davyJohn_enter" value="海盗领主行动开始！！"/>
+  <string name="davyJohn_enter" value="开始海盗船组队任务！！"/>
   <string name="go_xmas" value="欢乐镇的突发新闻"/>
   <string name="florina2" value="弗洛里纳海滩之旅"/>
   <string name="easter" value="复活节：金蛋"/>
@@ -100,7 +100,7 @@
   <string name="ludi027" value="阅读文件。"/>
   <string name="ludi028" value="我想用宠物散步道。"/>
   <string name="minigame00" value="如何开始小游戏。"/>
-  <string name="moonrabbit" value="让我们开始保护月兔吧。"/>
+  <string name="moonrabbit" value="让我们开始保护月妙吧。"/>
   <string name="getAboard" value="我想去站台"/>
   <string name="guild_proc" value="我想创建公会或增加公会成员。"/>
   <string name="guild_mark" value="我想为我的公会制作标志。"/>
