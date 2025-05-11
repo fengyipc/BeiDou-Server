@@ -25,7 +25,7 @@
 
 var isPq = true;
 var minPlayers = 3, maxPlayers = 6;
-var minLevel = 21, maxLevel = 200;
+var minLevel = 21, maxLevel = 30;
 var entryMap = 103000800;
 var exitMap = 103000890;
 var recruitMap = 103000000;
@@ -40,8 +40,8 @@ const maxLobbies = 1;
 
 const GameConfig = Java.type('org.gms.config.GameConfig');
 minPlayers = GameConfig.getServerBoolean("use_enable_solo_expeditions") ? 1 : minPlayers;  //如果解除远征队人数限制，则最低人数改为1人
-if(GameConfig.getServerBoolean("use_enable_party_level_limit_lift")) {  //如果解除远征队等级限制，则最低1级，最高999级。
-    minLevel = 1 , maxLevel = 999;
+if(GameConfig.getServerBoolean("use_enable_party_level_limit_lift")) {  //如果解除远征队等级限制，则最低不变，最高200级。
+    maxLevel = 200;
 }
 
 function init() {
