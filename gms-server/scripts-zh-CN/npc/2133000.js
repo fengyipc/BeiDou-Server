@@ -87,20 +87,23 @@ function action(mode, type, selection) {
                 cm.sendOk("#e#b<组队任务：毒雾森林>#k#n\r\n在这个组队任务中，你的任务是逐步穿越森林，对抗路上的所有坏家伙，解决你遇到的许多谜题，并团结一致，充分发挥团队合作的优势，以克服时间限制和强大的生物。击败最终BOSS后，你的团队会获得一个石珠，#b当它被放置在喷泉上石#k，你们会获得额外的奖励。祝你好运。");
                 cm.dispose();
             } else {
-                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#给我阿尔泰耳环。\r\n#L1#给我闪亮的阿尔泰耳环。");
+                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#给我阿尔泰耳环。\r\n#L1#给我发光的阿尔泰耳环。\r\n#L2#给我闪耀的阿尔泰耳环。");
             }
         } else if (status == 2) {
+            const enoughItem = cm.haveItem(4001198, 10);
+            const items = [1032060, 1032061, 1032101];
+            const hasOne = items.findIndex(id => cm.haveItem(id));
             if (selection == 0) {
-                if (!cm.haveItem(1032060) && cm.haveItem(4001198, 10)) {
+                if (hasOne === -1 && enoughItem) {
                     cm.gainItem(1032060, 1);
                     cm.gainItem(4001198, -10);
                     cm.dispose();
                 } else {
-                    cm.sendOk("你要么已经有了阿尔泰耳环，要么没有10个阿尔泰碎片。");
+                    cm.sendOk("你要么已经有了一个阿尔泰耳环，要么没有10个阿尔泰碎片。");
                     cm.dispose();
                 }
             } else if (selection == 1) {
-                if (cm.haveItem(1032060) && !cm.haveItem(1032061) && cm.haveItem(4001198, 10)) {
+                if (hasOne === 0 && enoughItem) {
                     cm.gainItem(1032060, -1);
                     cm.gainItem(1032061, 1);
                     cm.gainItem(4001198, -10);
@@ -110,14 +113,15 @@ function action(mode, type, selection) {
                     cm.dispose();
                 }
             } else if (selection == 2) {
-//                if (cm.haveItem(1032061) && !cm.haveItem(1032072) && cm.haveItem(4001198, 10)) {
-//                    cm.gainItem(1032061, -1);
-//                    cm.gainItem(1032072, 1);    // thanks yuxaij for noticing unexpected itemid here
-//                    cm.gainItem(4001198, -10);
-//                    cm.dispose();
-//                } else {
-                cm.sendOk("暂时不可兑换闪耀的阿尔泰耳环，等待后续更新吧！");
-                cm.dispose();
+                if((hasOne === 1 || hasOne === 2) && enoughItem) {
+                    cm.gainItem(items[hasOne], -1);
+                    cm.gainItem(4001198, -10);
+                    cm.gainItem(1032101, 1, true, true);
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你未拥有发光的阿尔泰耳环或者闪耀的阿尔泰耳环，或者没有10个阿尔泰碎片");
+                    cm.dispose();
+                }
             }
         }
     }
