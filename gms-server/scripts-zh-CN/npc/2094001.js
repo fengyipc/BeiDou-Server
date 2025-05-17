@@ -56,60 +56,17 @@ function action(mode, type, selection) {
             }
         } else {
             if (status == 0) {
-                cm.sendSimple("谢谢你救了我！我能帮你什么忙吗？\r\n#b#L0#带我离开这里。\r\n#L1#给我海盗帽子。");
+                cm.sendSimple("谢谢你救了我！我能帮你什么忙吗？\r\n#b#L0#带我离开这里。");
             } else if (status == 1) {
                 if (selection == 0) {
                     if (!cm.canHold(4001158, 1)) {
-                        cm.sendOk("请在杂项栏中腾出空间。");
+                        cm.sendOk("请在其它栏中腾出空间。");
                         cm.dispose();
                         return;
                     }
-                    cm.gainItem(4001158, 1);
+                    cm.gainItem(4001455, 1);
                     cm.warp(251010404, 0);
-                } else {
-                    if (cm.haveItem(1003267, 1)) {
-                        cm.sendOk("你有最好的帽子。");
-                    } else if (cm.haveItem(1002573, 1)) {
-                        if (cm.haveItem(4001158, 20)) {
-                            if (cm.canHold(1003267, 1)) {
-                                cm.gainItem(1002573, -1);
-                                cm.gainItem(4001158, -20);
-                                cm.gainItem(1003267, 1);
-                                cm.sendOk("我已经给你帽子了。");
-                            } else {
-                                cm.sendOk("在收到帽子之前，请在您的装备物品栏中腾出空间。");
-                            }
-                        } else {
-                            cm.sendOk("你需要20个#t4001158#来获得下一个帽子。");
-                        }
-                    } else if (cm.haveItem(1002572, 1)) {
-                        if (cm.haveItem(4001158, 20)) {
-                            if (cm.canHold(1002573, 1)) {
-                                cm.gainItem(1002572, -1);
-                                cm.gainItem(4001158, -20);
-                                cm.gainItem(1002573, 1);
-                                cm.sendOk("我已经给你帽子了。");
-                            } else {
-                                cm.sendOk("在收到帽子之前，请在您的装备物品栏中腾出空间。");
-                            }
-                        } else {
-                            cm.sendOk("你需要20个#t4001158#来获得下一个帽子。");
-                        }
-                    } else {
-                        if (cm.haveItem(4001158, 20)) {
-                            if (cm.canHold(1002572, 1)) {
-                                cm.gainItem(4001158, -20);
-                                cm.gainItem(1002572, 1);
-                                cm.sendOk("我已经给你帽子了。");
-                            } else {
-                                cm.sendOk("在收到帽子之前，请在您的装备物品栏中腾出空间。");
-                            }
-                        } else {
-                            cm.sendOk("你需要20个#t4001158#来获得下一个帽子。");
-                        }
-                    }
                 }
-
                 cm.dispose();
             }
         }

@@ -10229,7 +10229,6 @@
         <imgdir name="0">
             <int name="npc" value="9020000"/>
             <int name="lvmin" value="21"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
         <imgdir name="1"></imgdir>
     </imgdir>
@@ -10237,7 +10236,6 @@
         <imgdir name="0">
             <int name="npc" value="2040034"/>
             <int name="lvmin" value="35"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
         <imgdir name="1"></imgdir>
     </imgdir>
@@ -10246,7 +10244,6 @@
         <imgdir name="0">
             <int name="npc" value="2013000"/>
             <int name="lvmin" value="51"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="1204">
@@ -10254,7 +10251,6 @@
         <imgdir name="0">
             <int name="npc" value="2094000"/>
             <int name="lvmin" value="55"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="1205">
@@ -10262,14 +10258,12 @@
         <imgdir name="0">
             <int name="npc" value="2112018"/>
             <int name="lvmin" value="71"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="1206">
         <imgdir name="0">
             <int name="npc" value="2133000"/>
             <int name="lvmin" value="45"/>
-            <int name="lvmax" value="200"/>
             <imgdir name="job">
                 <int name="0" value="0"/>
                 <int name="1" value="100"/>
@@ -10322,7 +10316,6 @@
         <imgdir name="0">
             <int name="npc" value="2101014"/>
             <int name="lvmin" value="21"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="1301">
@@ -10330,7 +10323,6 @@
         <imgdir name="0">
             <int name="npc" value="2042000"/>
             <int name="lvmin" value="30"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="1302">
@@ -10338,7 +10330,6 @@
         <imgdir name="0">
             <int name="npc" value="2042000"/>
             <int name="lvmin" value="51"/>
-            <int name="lvmax" value="200"/>
         </imgdir>
     </imgdir>
     <imgdir name="19000">
