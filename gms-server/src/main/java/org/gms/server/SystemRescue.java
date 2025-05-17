@@ -68,6 +68,10 @@ public class SystemRescue {
             if (MapObj.getTimeLimit() != -1 || MapObj.isEventMap() || MapObj.getEventInstance() != null) player.changeMap(MapId_ret);  //为迷你地图或者事件地图，先转移到返回地图
             player.saveLocation("FREE_MARKET");    //如果传送的地图时自由市场则保存当前地图，方便下次出来。
         }
+
+        if (GameConfig.getServerBoolean("rescue_same_map") && !player.getWarpMap(MapId_error).getMapName().isEmpty()) {
+            MapId = MapId_error;
+        }
         //考虑到可能会出现地图文件改错改坏造成的闪退，因此不判定地图是否存在再进行转移。
         player.changeMap(MapId);    // 更改角色地图ID，之后才可以执行下方的读取转移后的地图信息。
         String MapName = MapObj.getMapName();
