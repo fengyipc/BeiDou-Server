@@ -4476,23 +4476,39 @@ public class Character extends AbstractCharacterObject {
         return expRate;
     }
 
+    // 经验逐渐增长至slowLevel
     public float getLevelExpRate() {
         if (hasNoviceExpRate()) return 1; // 新手经验保护
 
-        return 1f + GameConfig.getWorldFloat(getWorld(), "level_exp_rate") * level;
+        int lv = Math.min(level, GameConfig.getServerInt("slow_min_level"));
+        return 1f + GameConfig.getWorldFloat(getWorld(), "level_exp_rate") * lv;
     }
 
+    // 经验追赶机制
     public float getQuickLevelExpRate() {
-        if (hasNoviceExpRate()) return 1; // 新手经验保护
+        if (hasNoviceExpRate()) return 0; // 新手经验保护
 
         int quickLv = GameConfig.getWorldInt(getWorld(), "quick_level");
-        if (level >= quickLv) return 1;
+        if (level >= quickLv) return 0;
 
-        return 1f + (quickLv - level) * GameConfig.getWorldFloat(getWorld(), "quick_level_exp_rate");
+        return (quickLv - level) * GameConfig.getWorldFloat(getWorld(), "quick_level_rate");
+    }
+
+    // 高于slowMinLevel后经验逐步减慢,直到达到slowMaxLevel
+    public float getSlowLevelExpRate() {
+        if (hasNoviceExpRate()) return 0; // 新手经验保护
+
+        int slowMinLv = GameConfig.getServerInt("slow_min_level");
+        int slowMaxLv = GameConfig.getServerInt("slow_max_level");
+        if (level <= slowMinLv) return 0;
+
+        int disLv = Math.min(slowMaxLv, level) - slowMinLv;
+
+        return disLv * GameConfig.getServerFloat("slow_level_exp_rate");
     }
 
     public void updateMobExpRate() {
-        mobExpRate = getLevelExpRate() * getQuickLevelExpRate();
+        mobExpRate = getLevelExpRate() + getQuickLevelExpRate() - getSlowLevelExpRate(); // 还是加法吧,乘法算麻了
     }
 
     public float getMobExpRate() {
