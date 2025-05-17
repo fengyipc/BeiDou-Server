@@ -58,7 +58,7 @@ function action(mode, type, selection) {
             if (status == 0) {
                 em = cm.getEventManager("MagatiaPQ_Z");
                 if (em == null) {
-                    cm.sendOk("玛加提亚组队任务（泽尼姆斯特）遇到了一个错误。");
+                    cm.sendOk("玛加提亚组队任务（罗密欧与朱丽叶）遇到了一个错误。");
                     cm.dispose();
                     return;
                 } else if (cm.isUsingOldPqNpcStyle()) {
@@ -66,11 +66,11 @@ function action(mode, type, selection) {
                     return;
                 }
 
-                cm.sendSimple("#e#b<组队任务：罗密欧与朱丽叶>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n我心爱的朱丽叶被绑架了！虽然她是阿尔卡德诺家的人，但我不能坐视她因这场愚蠢的冲突而受苦。我需要你和你的同事们帮助我救她！拜托，帮帮我们！！请让你的#b队伍领袖#k和我谈谈。#b\r\n#L0#我想参加这个组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多细节。");
+                cm.sendSimple("#e#b<组队任务：罗密欧与朱丽叶>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n我心爱的朱丽叶被绑架了！虽然她是卡帕莱特的人，但我不能坐视她因这场愚蠢的冲突而受苦。我需要你和你的伙伴们帮助我救她！拜托，帮帮我们！！请让你的#b队长#k和我谈谈。#b\r\n#L0#我想参加这个组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多细节。");
             } else if (status == 1) {
                 if (selection == 0) {
                     if (cm.getParty() == null) {
-                        cm.sendOk("只有当你加入一个队伍时，你才能参加派对任务。");
+                        cm.sendOk("只有当你加入一个队伍时，你才能参加组队任务。");
                         cm.dispose();
                     } else if (!cm.isLeader()) {
                         cm.sendOk("你的队长必须与我交谈才能开始这个组队任务。");
@@ -92,7 +92,7 @@ function action(mode, type, selection) {
                     cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
                     cm.dispose();
                 } else {
-                    cm.sendOk("不久前，一位名叫尤利特的科学家因为他对阿尔卡德诺和泽尼玛斯的合成炼金术的研究而被这个城镇放逐。由于这种组合所带来的巨大力量，根据法律是禁止研究的。然而，他无视了这项法律，并且参与了这两项研究。结果，他被流放了。\r\n他现在在报复，已经带走了我心爱的人，下一个目标是我，因为我们是玛加提亚的重要人物，是这两个社会的继承者。但我不害怕。我们必须不惜一切代价把她夺回来！");
+                    cm.sendOk("不久前，一位名叫犹泰的科学家因为他对卡帕莱特和蒙特鸠的合成炼金术的研究而被这个城镇放逐。由于这种组合所带来的巨大力量，根据法律是禁止研究的。然而，他无视了这项法律，并且参与了这两项研究。结果，他被流放了。\r\n他现在在报复，已经带走了我心爱的人，下一个目标是我，因为我们是玛加提亚的重要人物，是这两个社会的继承者。但我不害怕。我们必须不惜一切代价把她夺回来！");
                     cm.dispose();
                 }
             }

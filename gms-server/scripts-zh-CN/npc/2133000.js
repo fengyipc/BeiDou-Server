@@ -87,7 +87,7 @@ function action(mode, type, selection) {
                 cm.sendOk("#e#b<组队任务：毒雾森林>#k#n\r\n在这个组队任务中，你的任务是逐步穿越森林，对抗路上的所有坏家伙，解决你遇到的许多谜题，并团结一致，充分发挥团队合作的优势，以克服时间限制和强大的生物。击败最终BOSS后，你的团队会获得一个石珠，#b当它被放置在喷泉上石#k，你们会获得额外的奖励。祝你好运。");
                 cm.dispose();
             } else {
-                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#给我阿尔泰耳环。\r\n#L1#给我发光的阿尔泰耳环。\r\n#L2#给我闪耀的阿尔泰耳环。");
+                cm.sendSimple("那么，你想要获得什么奖品？\r\n#b#L0#想要#z1032060#\r\n#L1#想要#z1032061#\r\n#L2#想要#z1032101# (随机属性)");
             }
         } else if (status == 2) {
             const enoughItem = cm.haveItem(4001198, 10);

@@ -58,7 +58,13 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<组队任务：海盗船>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n救命啊！我的儿子被绑在可怕的#r海盗领主#k手中。我需要你的帮助... 你能组建或加入一个队伍来救他吗？请让你的#b队伍领袖#k与我交谈或者组建一个队伍。#b\r\n#L0#我想参加这个组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多详情。");
+            let text = "#e#b<组队任务：海盗船>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n";
+            text += "救命啊！我的儿子被绑在可怕的#r老海盗#k手中。我需要你的帮助... 你能组建或加入一个队伍来救他吗？请让你的#b队伍领袖#k与我交谈或者组建一个队伍\r\n";
+            text += "#b#L0#我想参加这个组队任务\r\n";
+            text += "#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索\r\n";
+            text += "#L2#我想了解更多详情。\r\n";
+            text += "#L3#我想要兑换海盗船长帽";
+            cm.sendSimple(text);
         } else if (status == 1) {
             if (selection == 0) {
                 if (cm.getParty() == null) {
@@ -83,9 +89,60 @@ function action(mode, type, selection) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
                 cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
+            } else if (selection == 3) {
+                let text = "你想要兑换什么帽子？\r\n\r\n#L0##b#z1002571#\r\n#L1##b#z1002572#\r\n#L2##b#z1002573#\r\n#L3##b#z1002574# (随机属性)"
+                cm.sendSimple(text);
             } else {
-                cm.sendOk("#e#b<组队任务：海盗船>#k#n\r\n在这个组队任务中，你的任务是逐步穿过船舱，与途中的所有海盗和坏蛋战斗。当你到达#r海盗领主#k时，根据之前阶段打开的宝箱数量，boss会变得更加强大，所以要保持警惕。如果打开了这些宝箱，将会给你的船员带来许多额外的奖励，值得一试！祝你好运。");
+                cm.sendOk("#e#b<组队任务：海盗船>#k#n\r\n在这个组队任务中，你的任务是逐步穿过船舱，与途中的所有海盗们战斗。当你到达#r老海盗#k处时，根据之前阶段打开的宝箱数量，boss会变得更加强大，所以要保持警惕。如果打开了这些宝箱，将会给你的船员带来许多额外的奖励，值得一试！祝你好运。");
                 cm.dispose();
+            }
+        } else if (status == 2) {
+            const enoughItem = cm.haveItem(4001455, 10);
+            const items = [1002571, 1002572, 1002573, 1002574];
+            const hasOne = items.findIndex(id => cm.haveItem(id));
+            if (selection == 0) {
+                if (hasOne === -1 && enoughItem) {
+                    cm.gainItem(1002571, 1);
+                    cm.gainItem(4001455, -10);
+                    cm.sendOk("感谢你为救出无恙做的贡献，帽子已经给你啦！");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你要么已经有了一个海盗船长帽了，要么没有10个#z4001455#");
+                    cm.dispose();
+                }
+            } else if (selection == 1) {
+                if (hasOne === 0 && enoughItem) {
+                    cm.gainItem(1002571, -1);
+                    cm.gainItem(1002572, 1);
+                    cm.gainItem(4001455, -10);
+                    cm.sendOk("感谢你为救出无恙做的贡献，帽子已经给你啦！");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你要么还没有#z1002571#，要么没有10个#z4001455#");
+                    cm.dispose();
+                }
+            } else if (selection == 2) {
+                if (hasOne === 1 && enoughItem) {
+                    cm.gainItem(1002572, -1);
+                    cm.gainItem(1002573, 1);
+                    cm.gainItem(4001455, -10);
+                    cm.sendOk("感谢你为救出无恙做的贡献，帽子已经给你啦！");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你要么还没有#z1002572#，要么没有10个#z4001455#");
+                    cm.dispose();
+                }
+            } else if (selection == 3) {
+                if((hasOne === 2 || hasOne === 3) && enoughItem) {
+                    cm.gainItem(items[hasOne], -1);
+                    cm.gainItem(4001455, -10);
+                    cm.gainItem(1002574, 1, true, true);
+                    cm.sendOk("感谢你为救出无恙做的贡献，帽子已经给你啦！");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("你未拥有#z1002573#或者#z1002574#，或者没有10个#z4001455#");
+                    cm.dispose();
+                }
             }
         }
     }
