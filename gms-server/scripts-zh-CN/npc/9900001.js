@@ -156,3 +156,10 @@ function openNpc(scriptName) {
     cm.dispose();
     cm.openNpc(9900001, scriptName);
 }
+
+/**
+ * 当部分cm.sendLevel方法没有指定下一个跳转方法时会自动跳入null，也就是这里。
+ */
+function levelnull() {
+    cm.dispose();
+}
