@@ -54,9 +54,7 @@ function action(mode, type, selection) {
         text += "当前已收集怪物卡数：" + cm.getPlayer().getFullMonsterCards() + "张\r\n";
         text += " \r\n\r\n";
         text += "经验倍率：" + expRate + "倍" + (player.hasNoviceExpRate() ? " - 新人倍率" : "") + "\r\n";
-        if (player.getMobExpRate() > 1) {
-            text += "怪物经验倍率：" + mobRate + "倍#k#n" + "\r\n";
-        }
+        text += "怪物经验倍率：" + mobRate + "倍#k#n" + "\r\n";
         text += "金币倍率：" + player.getMesoRate() +"倍\r\n";
         text += "掉落倍率：" + player.getDropRate() * player.getFamilyDrop() +"倍\r\n";
         text += "BOSS掉落倍率：" + player.getBossDropRate() +"倍\r\n";
