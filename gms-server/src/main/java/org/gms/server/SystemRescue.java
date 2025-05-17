@@ -68,6 +68,10 @@ public class SystemRescue {
                 MapId = filteredList.get(random.nextInt(filteredList.size()));
             }
         }
+
+        if (GameConfig.getServerBoolean("rescue_same_map") && !player.getWarpMap(MapId_error).getMapName().isEmpty()) {
+            MapId = MapId_error;
+        }
         //考虑到可能会出现地图文件改错改坏造成的闪退，因此不判定地图是否存在再进行转移。
         player.changeMap(MapId);    // 更改角色地图ID，之后才可以执行下方的读取转移后的地图信息。
         String MapName = player.getMap().getMapName();
