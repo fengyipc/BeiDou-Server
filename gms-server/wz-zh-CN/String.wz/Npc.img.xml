@@ -2292,7 +2292,7 @@
         <string name="n2" value="这里是蘑菇村的出口，可以到外面的世界。"/>
         <string name="w0" value="增加智力可以提高魔法攻击力、魔法防御力和手技，是魔法师关键属性；增加运气可以提高命中率、回避率以及手技，对所有职业都有益处，特别是飞侠。"/>
         <string name="w1" value="按Alt键－跳跃，用方向键→ ←－移动角色，Ctrl－攻击。"/>
-        <string name="w2" value="左上角小地图说明：蓝点－地图跳转点、黄点－自己的位置、红点－其他玩家、绿点－NCP位置、橙色点－与你组队的玩家"/>
+        <string name="w2" value="左上角小地图说明：蓝点－地图跳转点、黄点－自己的位置、红点－其他玩家、绿点－NPC位置、橙色点－与你组队的玩家"/>
     </imgdir>
     <imgdir name="2002000">
         <string name="name" value="鲁皮"/>
@@ -4246,11 +4246,11 @@
     </imgdir>
     <imgdir name="2090004">
         <string name="name" value="陈道人"/>
-        <string name="d0" value="你好，我的名叫金大亨， 我是国际有名的商人。 "/>
-        <string name="d1" value="哈啰. 风正向着北, 表示是上商船的好时机."/>
         <string name="func" value="药水制造师"/>
         <string name="s0" value="咦？你不是取采药的人吗？"/>
         <string name="s1" value="哎呀？怎么都长的一个模样？"/>
+        <string name="d0" value="过去，陈道人因其智慧而受人尊敬。每个人都认识他，武陵的天才陈道人！"/>
+        <string name="d1" value="唉，我的师傅有时候极其固执。他就是不肯承认，研究草药的作用有限。学习炼金术也未尝不是个好主意……"/>
     </imgdir>
     <imgdir name="2090005">
         <string name="name" value="鹤"/>
@@ -5219,7 +5219,7 @@
         <string name="n1" value="怪人的目的到底是什么呢……"/>
     </imgdir>
     <imgdir name="2133002">
-        <string name="name" value="暗黑龙王的里程碑"/>
+        <string name="name" value="艾琳森林的里程碑"/>
     </imgdir>
     <imgdir name="2133003">
         <string name="name" value="木台"/>
@@ -5713,7 +5713,7 @@
     </imgdir>
     <imgdir name="9001101">
         <string name="name" value="佳佳"/>
-        <string name="d0" value="欢迎来到月球时界！"/>
+        <string name="d0" value="欢迎来到月球世界！"/>
         <string name="d1" value="尝一块可口的月妙的年糕!"/>
         <string name="n0" value="16年来精于制做年糕! 耶, 那就是我!"/>
         <string name="n1" value="17年来精于制做年糕! 耶, 那就是我!"/>
@@ -7267,7 +7267,7 @@
         <string name="n1" value="...."/>
     </imgdir>
     <imgdir name="9201123">
-        <string name="name" value="勇士雕像"/>
+        <string name="name" value="战士雕像"/>
         <string name="d0" value="你要成为战士么?"/>
         <string name="d1" value="你要成为战士么?"/>
         <string name="n0" value="假如你要成为战士,我将把你送到勇士部落."/>
