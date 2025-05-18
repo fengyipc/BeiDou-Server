@@ -1253,29 +1253,31 @@ public class ItemInformationProvider {
         return nEquip.copy();
     }
 
-    private static short getRandStat(short defaultValue, int maxRange) {
+    private static short getRandStat(short defaultValue, int maxRange, boolean godStat) {
         if (defaultValue == 0) {
             return 0;
         }
         int lMaxRange = (int) Math.min(Math.ceil(defaultValue * 0.1), maxRange);
-        return (short) ((defaultValue - lMaxRange) + Math.floor(Randomizer.nextDouble() * (lMaxRange * 2 + 1)));
+        int godStatNum =godStat ? (short) Math.floor(Randomizer.nextDouble() * 6) : 0; // 触发神装属性时，随机增加0~5
+        return (short) ((defaultValue - lMaxRange) + Math.floor(Randomizer.nextDouble() * (lMaxRange * 2 + 1)) + godStatNum);
     }
 
     public Equip randomizeStats(Equip equip) {
-        equip.setStr(getRandStat(equip.getStr(), 5));
-        equip.setDex(getRandStat(equip.getDex(), 5));
-        equip.setInt(getRandStat(equip.getInt(), 5));
-        equip.setLuk(getRandStat(equip.getLuk(), 5));
-        equip.setMatk(getRandStat(equip.getMatk(), 5));
-        equip.setWatk(getRandStat(equip.getWatk(), 5));
-        equip.setAcc(getRandStat(equip.getAcc(), 5));
-        equip.setAvoid(getRandStat(equip.getAvoid(), 5));
-        equip.setJump(getRandStat(equip.getJump(), 5));
-        equip.setSpeed(getRandStat(equip.getSpeed(), 5));
-        equip.setWdef(getRandStat(equip.getWdef(), 10));
-        equip.setMdef(getRandStat(equip.getMdef(), 10));
-        equip.setHp(getRandStat(equip.getHp(), 10));
-        equip.setMp(getRandStat(equip.getMp(), 10));
+        boolean godStat = Randomizer.nextDouble() < 0.1;
+        equip.setStr(getRandStat(equip.getStr(), 5, godStat));
+        equip.setDex(getRandStat(equip.getDex(), 5, godStat));
+        equip.setInt(getRandStat(equip.getInt(), 5, godStat));
+        equip.setLuk(getRandStat(equip.getLuk(), 5, godStat));
+        equip.setMatk(getRandStat(equip.getMatk(), 5, godStat));
+        equip.setWatk(getRandStat(equip.getWatk(), 5, godStat));
+        equip.setAcc(getRandStat(equip.getAcc(), 5, godStat));
+        equip.setAvoid(getRandStat(equip.getAvoid(), 5, godStat));
+        equip.setJump(getRandStat(equip.getJump(), 5, godStat));
+        equip.setSpeed(getRandStat(equip.getSpeed(), 5, godStat));
+        equip.setWdef(getRandStat(equip.getWdef(), 10, godStat));
+        equip.setMdef(getRandStat(equip.getMdef(), 10, godStat));
+        equip.setHp(getRandStat(equip.getHp(), 10, godStat));
+        equip.setMp(getRandStat(equip.getMp(), 10, godStat));
         return equip;
     }
 
