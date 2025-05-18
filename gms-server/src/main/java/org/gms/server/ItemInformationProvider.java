@@ -1264,6 +1264,10 @@ public class ItemInformationProvider {
 
     public Equip randomizeStats(Equip equip) {
         boolean godStat = Randomizer.nextDouble() < 0.1;
+        int id = equip.getItemId();
+
+        // 阿尔泰耳环、女神手镯、划痕眼镜、海盗帽、何露斯之眼 副本装备不带神装属性
+        if (id == 1032101 || id == 1082232 || id == 1022073 || id == 1002574 || id == 1122010) godStat = false;
         equip.setStr(getRandStat(equip.getStr(), 5, godStat));
         equip.setDex(getRandStat(equip.getDex(), 5, godStat));
         equip.setInt(getRandStat(equip.getInt(), 5, godStat));
