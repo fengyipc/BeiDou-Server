@@ -39,8 +39,8 @@ var stimID = 4130001;
 
 function start() {
     cm.getPlayer().setCS(true);
-    var selStr = "Hello, and welcome to the Ludibrium Shoe Store. How can I help you today??#b"
-    var options = ["What's a stimulator?", "Create Warrior shoes", "Create Bowman shoes", "Create Magician shoes", "Create Thief shoes", "Create Warrior shoes with a Stimulator", "Create Bowman shoes with a Stimulator", "Create Magician shoes with a Stimulator", "Create Thief shoes with a Stimulator"];
+    var selStr = "你好，欢迎来到玩具城鞋店。今天我能为你做些什么？#b"
+    var options = ["什么是促进剂？", "制作战士鞋子", "制作弓箭手鞋子", "制作魔法师鞋子", "制作飞侠鞋子", "使用促进剂制作战士鞋子", "使用促进剂制作弓箭手鞋子", "使用促进剂制作魔法师鞋子", "使用促进剂制作飞侠鞋子"];
     for (var i = 0; i < options.length; i++) {
         selStr += "\r\n#L" + i + "# " + options[i] + "#l";
     }
@@ -57,38 +57,42 @@ function action(mode, type, selection) {
         selectedType = selection;
         var selStr;
         var shoes;
+        var itemSet;
         if (selectedType > 4) {
             stimulator = true;
             selectedType -= 4;
         } else {
             stimulator = false;
         }
-        if (selectedType == 0) { // what is stim
-            cm.sendNext("A stimulator is a special potion that I can add into the process of creating certain items. It gives it stats as though it had dropped from a monster. However, it is possible to have no change, and it is also possible for the item to be below average. There's also a 10% chance of not getting any item when using a stimulator, so please choose wisely.")
+        if (selectedType == 0) { // 什么是促进剂
+            cm.sendNext("促进剂是一种特殊药剂，我可以在制作某些物品的过程中加入它。它能让物品拥有类似怪物掉落物品的属性。不过，也有可能没有任何变化，甚至物品属性低于平均水平。使用促进剂还有10%的几率得不到任何物品，所以请谨慎选择。")
             cm.dispose();
-        } else if (selectedType == 1) { //warrior shoe
-            selStr = "Warrior shoes? Sure thing, which kind?#b";
-            shoes = ["Emerald Battle Grieve#k - Warrior Lv. 30#b", "Mithril Battle Grieve#k - Warrior Lv. 30#b", "Silver Battle Grieve#k - Warrior Lv. 30#b", "Blood Battle Grieve#k - Warrior Lv. 30#b", "Steel Trigger#k - Warrior Lv. 35#b", "Mithril Trigger#k - Warrior Lv. 35#b", "Dark Trigger#k - Warrior Lv. 35#b", "Brown Jangoon Boots#k - Warrior Lv. 40#b", "Maroon Jangoon Boots#k - Warrior Lv. 40#b", "Blue Jangoon Boots#k - Warrior Lv. 40#b", "Emerald Hildon Boots#k - Warrior Lv. 50#b", "Mithril Hildon Boots#k - Warrior Lv. 50#b", "Orihalcon Hildon Boots#k - Warrior Lv. 50#b", "Gold Hildon Boots#k - Warrior Lv. 50#b"];
-
-        } else if (selectedType == 2) { //bowman shoe
-            selStr = "Bowman shoes? Sure thing, which kind?#b";
-            shoes = ["Red Hunter Boots#k - Bowman Lv. 30#b", "Blue Hunter Boots#k - Bowman Lv. 30#b", "Green Hunter Boots#k - Bowman Lv. 30#b", "Black Hunter Boots#k - Bowman Lv. 30#b", "Brown Hunter Boots#k - Bowman Lv. 30#b", "Blue Silky Boots#k - Bowman Lv. 35#b", "Green Silky Boots#k - Bowman Lv. 35#b", "Red Silky Boots#k - Bowman Lv. 35#b", "Red Pierre Shoes#k - Bowman Lv. 40#b", "Yellow Pierre Shoes#k - Bowman Lv. 40#b", "Brown Pierre Shoes#k - Bowman Lv. 40#b", "Blue Pierre Shoes#k - Bowman Lv. 40#b", "Brown Steel-Tipped Boots#k - Bowman Lv. 50#b", "Green Steel-Tipped Boots#k - Bowman Lv. 50#b", "Blue Steel-Tipped Boots#k - Bowman Lv. 50#b", "Purple Steel-Tipped Boots#k - Bowman Lv. 50#b"];
-        } else if (selectedType == 3) { //magician shoe
-            selStr = "Magician shoes? Sure thing, which kind?#b";
-            shoes = ["Red Magicshoes#k - Magician Lv. 30#b", "Blue Magicshoes#k - Magician Lv. 30#b", "White Magicshoes#k - Magician Lv. 30#b", "Black Magicshoes#k - Magician Lv. 30#b", "Purple Salt Shoes#k - Magician Lv. 35#b", "Red Salt Shoes#k - Magician Lv. 35#b", "Black Salt Shoes#k - Magician Lv. 35#b", "Red Moon Shoes#k - Magician Lv. 40#b", "Blue Moon Shoes#k - Magician Lv. 40#b", "Gold Moon Shoes#k - Magician Lv. 40#b", "Dark Moon Shoes#k - Magician Lv. 40#b", "Pink Goldwind Shoes#k - Magician Lv. 50#b", "Blue Goldwind Shoes#k - Magician Lv. 50#b", "Purple Goldwind Shoes#k - Magician Lv. 50#b", "Green Goldwind Shoes#k - Magician Lv. 50#b"];
-        } else if (selectedType == 4) { //thief shoe
-            selStr = "Thief shoes? Sure thing, which kind?#b";
-            shoes = ["Bronze Chain Boots#k - Thief Lv. 30#b", "Iron Chain Boots#k - Thief Lv. 30#b", "Silver Chain Boots#k - Thief Lv. 30#b", "Gold Chain Boots#k - Thief Lv. 30#b", "Red White-Line Boots#k - Thief Lv. 35#b", "Green White-Line Boots#k - Thief Lv. 35#b", "Blue White-Line Boots#k - Thief Lv. 35#b", "Black Red-Lined Shoes#k - Thief Lv. 40#b", "Black Green-Lined Shoes#k - Thief Lv. 40#b", "Black Yellow-Lined Shoes#k - Thief Lv. 40#b", "Black Blue-Lined Shoes#k - Thief Lv. 40#b", "Blue Goni Shoes#k - Thief Lv. 50#b", "Red Goni Shoes#k - Thief Lv. 50#b", "Green Goni Shoes#k - Thief Lv. 50#b", "Purple Goni Shoes#k - Thief Lv. 50#b"];
+        } else if (selectedType == 1) { // 战士鞋子
+            selStr = "战士鞋子？没问题，要哪种呢#b";
+            itemSet = [1072003, 1072039, 1072040, 1072041, 1072002, 1072112, 1072113, 1072000, 1072126, 1072127, 1072132, 1072133, 1072134, 1072135];
+            shoes = [" - 战士 30 级#b", " - 战士 30 级#b", " - 战士 30 级#b", " - 战士 30 级#b", " - 战士 35 级#b", " - 战士 35 级#b", " - 战士 35 级#b", " - 战士 40 级#b", " - 战士 40 级#b", " - 战士 40 级#b", " - 战士 50 级#b", " - 战士 50 级#b", " - 战士 50 级#b", " - 战士 50 级#b"];
+        } else if (selectedType == 2) { // 弓箭手鞋子
+            selStr = "弓箭手鞋子？没问题，要哪种呢？#b";
+            itemSet = [1072079, 1072080, 1072081, 1072082, 1072083, 1072101, 1072102, 1072103, 1072118, 1072119, 1072120, 1072121, 1072122, 1072123, 1072124, 1072125];
+            shoes = [" - 弓箭手 30 级#b", " - 弓箭手 30 级#b", " - 弓箭手 30 级#b", " - 弓箭手 30 级#b", " - 弓箭手 30 级#b", " - 弓箭手 35 级#b", " - 弓箭手 35 级#b", " - 弓箭手 35 级#b", " - 弓箭手 40 级#b", " - 弓箭手 40 级#b", " - 弓箭手 40 级#b", " - 弓箭手 40 级#b", " - 弓箭手 50 级#b", " - 弓箭手 50 级#b", " - 弓箭手 50 级#b", " - 弓箭手 50 级#b"];
+        } else if (selectedType == 3) { // 魔法师鞋子
+            selStr = "魔法师鞋子？没问题，要哪种呢？#b";
+            itemSet = [1072075, 1072076, 1072077, 1072078, 1072089, 1072090, 1072091, 1072114, 1072115, 1072116, 1072117, 1072140, 1072141, 1072142, 1072143, 1072136, 1072137, 1072138, 1072139];
+            shoes = [" - 魔法师 30 级#b", " - 魔法师 30 级#b", " - 魔法师 30 级#b", " - 魔法师 30 级#b", " - 魔法师 35 级#b", " - 魔法师 35 级#b", " - 魔法师 35 级#b", " - 魔法师 40 级#b", " - 魔法师 40 级#b", " - 魔法师 40 级#b", " - 魔法师 40 级#b", " - 魔法师 50 级#b", " - 魔法师 50 级#b", " - 魔法师 50 级#b", " - 魔法师 50 级#b"];
+        } else if (selectedType == 4) { // 飞侠鞋子
+            selStr = "飞侠鞋子？没问题，要哪种呢？#b";
+            itemSet = [1072032, 1072033, 1072035, 1072036, 1072104, 1072105, 1072106, 1072107, 1072108, 1072109, 1072110, 1072128, 1072130, 1072129, 1072131];
+            shoes = [" - 飞侠 30 级#b", " - 飞侠 30 级#b", " - 飞侠 30 级#b", " - 飞侠 30 级#b", " - 飞侠 35 级#b", " - 飞侠 35 级#b", " - 飞侠 35 级#b", " - 飞侠 40 级#b", " - 飞侠 40 级#b", " - 飞侠 40 级#b", " - 飞侠 40 级#b", " - 飞侠 50 级#b", " - 飞侠 50 级#b", " - 飞侠 50 级#b", " - 飞侠 50 级#b"];
         }
         if (selectedType != 0) {
             for (var i = 0; i < shoes.length; i++) {
-                selStr += "\r\n#L" + i + "# " + shoes[i] + "#l";
+                selStr += "\r\n#L" + i + "# #z" + itemSet[i] + "#" + shoes[i] + "#l";
             }
             cm.sendSimple(selStr);
         }
     } else if (status == 2) {
         selectedItem = selection;
-        if (selectedType == 1) { //warrior shoe
+        if (selectedType == 1) { // 战士鞋子
             var itemSet = [1072003, 1072039, 1072040, 1072041, 1072002, 1072112, 1072113, 1072000, 1072126, 1072127, 1072132, 1072133, 1072134, 1072135];
             var matSet = [[4021003, 4011001, 4000021, 4003000], [4011002, 4011001, 4000021, 4003000],
                 [4011004, 4011001, 4000021, 4003000], [4021000, 4011001, 4000021, 4003000], [4011001, 4021004, 4000021, 4000030, 4003000], [4011002, 4021004, 4000021, 4000030, 4003000], [4021008, 4021004, 4000021, 4000030, 4003000],
@@ -101,7 +105,7 @@ function action(mode, type, selection) {
             mats = matSet[selectedItem];
             matQty = matQtySet[selectedItem];
             cost = costSet[selectedItem];
-        } else if (selectedType == 2) { //bowman shoe
+        } else if (selectedType == 2) { // 弓箭手鞋子
             var itemSet = [1072079, 1072080, 1072081, 1072082, 1072083, 1072101, 1072102, 1072103, 1072118, 1072119, 1072120, 1072121, 1072122, 1072123, 1072124, 1072125];
             var matSet = [[4000021, 4021000, 4003000], [4000021, 4021005, 4003000], [4000021, 4021003, 4003000],
                 [4000021, 4021004, 4003000], [4000021, 4021006, 4003000], [4021002, 4021006, 4000030, 4000021, 4003000], [4021003, 4021006, 4000030, 4000021, 4003000], [4021000, 4021006, 4000030, 4000021, 4003000],
@@ -115,7 +119,7 @@ function action(mode, type, selection) {
             mats = matSet[selectedItem];
             matQty = matQtySet[selectedItem];
             cost = costSet[selectedItem];
-        } else if (selectedType == 3) { //magician shoe
+        } else if (selectedType == 3) { // 魔法师鞋子
             var itemSet = [1072075, 1072076, 1072077, 1072078, 1072089, 1072090, 1072091, 1072114, 1072115, 1072116, 1072117, 1072140, 1072141, 1072142, 1072143, 1072136, 1072137, 1072138, 1072139];
             var matSet = [[4021000, 4000021, 4003000], [4021002, 4000021, 4003000], [4011004, 4000021, 4003000], [4021008, 4000021, 4003000], [4021001, 4021006, 4000021, 4000030, 4003000], [4021000, 4021006, 4000021, 4000030, 4003000],
                 [4021008, 4021006, 4000021, 4000030, 4003000], [4021000, 4000030, 4000110, 4003000], [4021005, 4000030, 4000111, 4003000], [4011006, 4021007, 4000030, 4000100, 4003000], [4021008, 4021007, 4000030, 4000112, 4003000],
@@ -127,7 +131,7 @@ function action(mode, type, selection) {
             mats = matSet[selectedItem];
             matQty = matQtySet[selectedItem];
             cost = costSet[selectedItem];
-        } else if (selectedType == 4) { //thief shoe
+        } else if (selectedType == 4) { // 飞侠鞋子
             var itemSet = [1072032, 1072033, 1072035, 1072036, 1072104, 1072105, 1072106, 1072107, 1072108, 1072109, 1072110, 1072128, 1072130, 1072129, 1072131];
             var matSet = [[4011000, 4000021, 4003000], [4011001, 4000021, 4003000], [4011004, 4000021, 4003000], [4011006, 4000021, 4003000], [4021000, 4021004, 4000021, 4000030, 4003000], [4021003, 4021004, 4000021, 4000030, 4003000],
                 [4021002, 4021004, 4000021, 4000030, 4003000], [4021000, 4000030, 4000113, 4003000], [4021003, 4000030, 4000095, 4003000], [4021006, 4000030, 4000096, 4003000], [4021005, 4000030, 4000097, 4003000], [4011007, 4021005, 4000030, 4000114, 4003000],
@@ -140,9 +144,9 @@ function action(mode, type, selection) {
             matQty = matQtySet[selectedItem];
             cost = costSet[selectedItem];
         }
-        //Ludi fee is -10%, array not changed unlike 2040016 and 2040020
+        // 玩具城费用减免 10%，与 2040016 和 2040020 不同，数组未改变
         cost *= 0.9;
-        var prompt = "You want me to make a #t" + item + "#? In that case, I'm going to need specific items from you in order to make it. Make sure you have room in your inventory, though!#b";
+        var prompt = "你想让我制作一个 #t" + item + "#？那样的话，我需要你提供特定的物品来制作它。不过，请确保你的背包有足够的空间！#b";
         if (stimulator) {
             prompt += "\r\n#i" + stimID + "# 1 #t" + stimID + "#";
         }
@@ -154,7 +158,7 @@ function action(mode, type, selection) {
             prompt += "\r\n#i" + mats + "# " + matQty + " #t" + mats + "#";
         }
         if (cost > 0) {
-            prompt += "\r\n#i4031138# " + cost + " meso";
+            prompt += "\r\n#i4031138# " + cost + " 金币";
         }
         cm.sendYesNo(prompt);
     } else if (status == 3) {
@@ -165,7 +169,7 @@ function action(mode, type, selection) {
             cm.dispose();
             return;
         } else if (cm.getMeso() < cost) {
-            cm.sendOk("抱歉，我们只接受黄金币。");
+            cm.sendOk("抱歉，我们只接受金币。");
             cm.dispose();
             return;
         } else {
@@ -179,13 +183,13 @@ function action(mode, type, selection) {
                 complete = false;
             }
         }
-        if (stimulator) { //check for stimulator
+        if (stimulator) { // 检查促进剂
             if (!cm.haveItem(stimID)) {
                 complete = false;
             }
         }
         if (!complete) {
-            cm.sendOk("抱歉，但我必须拥有这些物品才能完全正确。也许下次吧。");
+            cm.sendOk("抱歉，但我必须拥有这些物品才能完成制作。也许下次吧。");
         } else {
             if (mats instanceof Array) {
                 for (var i = 0; i < mats.length; i++) {
@@ -195,14 +199,14 @@ function action(mode, type, selection) {
                 cm.gainItem(mats, -matQty);
             }
             cm.gainMeso(-cost);
-            if (stimulator) { //check for stimulator
+            if (stimulator) { // 检查促进剂
                 cm.gainItem(stimID, -1);
                 var deleted = Math.floor(Math.random() * 10);
                 if (deleted != 0) {
                     cm.gainItem(item, 1, true, true);
                     cm.sendOk("鞋子已经准备好了。小心，它们还很烫。");
                 } else {
-                    cm.sendOk("哎呀！我想我不小心加了太多的刺激剂，嗯，整个东西现在都不能用了……抱歉，但我不能退款。");
+                    cm.sendOk("哎呀！我想我不小心加了太多的促进剂，嗯，整个东西现在都不能用了……抱歉，但我不能退款。");
                 }
             } else {
                 cm.gainItem(item, 1);

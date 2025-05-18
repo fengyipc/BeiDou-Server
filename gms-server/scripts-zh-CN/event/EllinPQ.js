@@ -69,7 +69,7 @@ function setEventRequirements() {
         reqStr += minLevel;
     }
 
-    reqStr += "\r\n    仅限#冒险家职业#k.";
+    reqStr += "\r\n    仅限#b冒险家职业#k.";
 
     reqStr += "\r\n   时间限制: ";
     reqStr += eventTime + " 分钟";

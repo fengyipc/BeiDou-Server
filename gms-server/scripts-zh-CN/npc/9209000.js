@@ -49,17 +49,17 @@ function action(mode, type, selection) {
         }
 
         if (status == 0) {
-            var greeting = "Hello, I'm #p9209000#, the Skill & Mastery Book announcer! ";
+            var greeting = "你好，我是 #p9209000#，技能书与精通书播报员！ ";
 
             if (cm.getPlayer().isCygnus()) {
-                cm.sendOk(greeting + "There are no skill or mastery books available for Cygnus Knights.");
+                cm.sendOk(greeting + "骑士团职业暂无可用的技能书或精通书。");
                 cm.dispose();
                 return;
             }
 
             var jobrank = cm.getJob().getId() % 10;
             if (jobrank < 2) {
-                cm.sendOk(greeting + "Keep training yourself until you reach the #r4th job#k of your class. New opportunities for improvement will arrive when you reach that feat!");
+                cm.sendOk(greeting + "请继续修炼，直到达到你职业的 #r四转#k。当你达成这一成就时，将会有新的提升机会！");
                 cm.dispose();
                 return;
             }
@@ -68,25 +68,25 @@ function action(mode, type, selection) {
             masterybook = cm.getAvailableMasteryBooks();
 
             if (skillbook.length == 0 && masterybook.length == 0) {
-                cm.sendOk(greeting + "There are no books available to further improve your job skills for now. Either you #bmaxed out everything#k or #byou didn't reach the minimum requisites to use some skill books#k yet.");
+                cm.sendOk(greeting + "目前暂无可用的书籍来进一步提升你的职业技能。要么你已经 #b将所有技能提升到上限#k，要么 #b你还未达到使用某些技能书的最低要求#k。");
                 cm.dispose();
             } else if (skillbook.length > 0 && masterybook.length > 0) {
-                var sendStr = greeting + "New opportunities for skill improvement have been located for you to improve your skills! Pick a type to take a look onto.\r\n\r\n#b";
+                var sendStr = greeting + "已为你找到提升技能的新机会！请选择一种类型查看。\r\n\r\n#b";
 
-                sendStr += "#L1# Skill Book#l\r\n";
-                sendStr += "#L2# Mastery Book#l\r\n";
+                sendStr += "#L1# 技能书#l\r\n";
+                sendStr += "#L2# 精通书#l\r\n";
 
                 cm.sendSimple(sendStr);
             } else if (skillbook.length > 0) {
                 selected = 1;
-                cm.sendNext(greeting + "New opportunities for skill improvement have been located for you to improve your skills! Only skill learns available for now.");
+                cm.sendNext(greeting + "已为你找到提升技能的新机会！目前仅有技能学习书可用。");
             } else {
                 selected = 2;
-                cm.sendNext(greeting + "New opportunities for skill improvement have been located for you to improve your skills! Only skill upgrades available.");
+                cm.sendNext(greeting + "已为你找到提升技能的新机会！目前仅有技能升级书可用。");
             }
 
         } else if (status == 1) {
-            var sendStr = "The following books are currently available:\r\n\r\n";
+            var sendStr = "目前可用的书籍如下：\r\n\r\n";
             if (selected == 0) {
                 selected = selection;
             }
@@ -120,9 +120,9 @@ function action(mode, type, selection) {
                 var mobList = cm.getNamesWhoDropsItem(table[selected]);
 
                 if (mobList.length == 0) {
-                    sendStr = "No mobs drop '#b#t" + table[selected] + "##k'.\r\n\r\n";
+                    sendStr = "没有怪物掉落 '#b#t" + table[selected] + "##k'。\r\n\r\n";
                 } else {
-                    sendStr = "The following mobs drop '#b#t" + table[selected] + "##k':\r\n\r\n";
+                    sendStr = "以下怪物会掉落 '#b#t" + table[selected] + "##k'：\r\n\r\n";
 
                     for (var i = 0; i < mobList.length; i++) {
                         sendStr += "  #L" + i + "# " + mobList[i] + "#l\r\n";
@@ -135,7 +135,6 @@ function action(mode, type, selection) {
             }
 
             sendStr += cm.getSkillBookInfo(table[selected]);
-
             cm.sendNext(sendStr);
             cm.dispose();
         }

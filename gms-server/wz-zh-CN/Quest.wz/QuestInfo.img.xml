@@ -2306,64 +2306,64 @@
         <int name="area" value="20" />
     </imgdir>
     <imgdir name="10410">
-        <string name="name" value="Hunter&apos;s Luck - Week 1" />
+        <string name="name" value="猎人的好运 - 第1周" />
         <int name="area" value="50" />
         <int name="autoStart" value="1" />
         <int name="autoPreComplete" value="1" />
         <string name="0"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 19, 2010 - February 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月19日 - 2010年2月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="1"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 19, 2010 - February 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月19日 - 2010年2月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="2"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 19, 2010 - February 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月19日 - 2010年2月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
     </imgdir>
     <imgdir name="10411">
-        <string name="name" value="Hunter&apos;s Luck - Week 2" />
+        <string name="name" value="猎人的好运 - 第2周" />
         <int name="area" value="50" />
         <int name="autoStart" value="1" />
         <int name="autoPreComplete" value="1" />
         <string name="0"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 22, 2010 - February 28, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月22日 - 2010年2月28日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="1"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 22, 2010 - February 28, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月22日 - 2010年2月28日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="2"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nFebruary 22, 2010 - February 28, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年2月22日 - 2010年2月28日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
     </imgdir>
     <imgdir name="10412">
-        <string name="name" value="Hunter&apos;s Luck - Week 3" />
+        <string name="name" value="猎人的好运 - 第3周" />
         <int name="area" value="50" />
         <int name="autoStart" value="1" />
         <int name="autoPreComplete" value="1" />
         <string name="0"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 1, 2010 - March 7, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月1日 - 2010年3月7日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="1"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 1, 2010 - March 7, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月1日 - 2010年3月7日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="2"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 1, 2010 - March 7, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月1日 - 2010年3月7日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
     </imgdir>
     <imgdir name="10413">
-        <string name="name" value="Hunter&apos;s Luck - Week 4" />
+        <string name="name" value="猎人的好运 - 第4周" />
         <int name="area" value="50" />
         <int name="autoStart" value="1" />
         <int name="autoPreComplete" value="1" />
         <string name="0"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 8, 2010 - March 14, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月8日 - 2010年3月14日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="1"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 8, 2010 - March 14, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月8日 - 2010年3月14日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="2"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 8, 2010 - March 14, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月8日 - 2010年3月14日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
     </imgdir>
     <imgdir name="10414">
-        <string name="name" value="Hunter&apos;s Luck - Week 5" />
+        <string name="name" value="猎人的好运 - 第5周" />
         <int name="area" value="50" />
         <int name="autoStart" value="1" />
         <int name="autoPreComplete" value="1" />
         <string name="0"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 15, 2010 - March 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月15日 - 2010年3月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="1"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 15, 2010 - March 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月15日 - 2010年3月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
         <string name="2"
-            value="The time between February and March is what many call the prime hunting season! Receive some hunting pointers from Scadur and become the best hunter on the block!#b\n\n&lt;Event Period&gt;\nMarch 15, 2010 - March 21, 2010\n\n&lt;How to Join the Event&gt;\n1. Receive the 2x EXP item that Scadur hands out once a week.\n2. Use the item when in need of an extra boost of Luck.\n3. Hunt away!\n\n&lt;Notes&gt;\n1. 2x EXP item will expire at midnight on Sunday.\n2. New 2x item will become available the following Monday." />
+            value="二月到三月这段时间，被很多人称为狩猎黄金季！从斯卡杜尔那里获取一些狩猎技巧，成为街区里最棒的猎人吧！#b\n\n&lt;活动时间&gt;\n2010年3月15日 - 2010年3月21日\n\n&lt;参与活动方式&gt;\n1. 领取斯卡杜尔每周发放一次的双倍经验道具。\n2. 在需要额外运气加成时使用该道具。\n3. 尽情狩猎吧！\n\n&lt;注意事项&gt;\n1. 双倍经验道具将在周日午夜过期。\n2. 新的双倍经验道具将在下周周一发放。" />
     </imgdir>
     <imgdir name="10415">
         <string name="name" value="Winter Bingo" />
@@ -10711,14 +10711,14 @@
         <int name="autoStart" value="1" />
     </imgdir>
     <imgdir name="28344">
-        <string name="name" value="Hunter&apos;s Profission" />
+        <string name="name" value="狩猎的秘诀" />
         <int name="area" value="50" />
         <string name="0"
-            value="Scadur seems up to something big this time. I should move to El Nath and see what he is looking for..." />
+            value="斯卡德这次似乎在筹划什么大事。我应该前往冰峰雪域，看看他在找什么..." />
         <string name="1"
-            value="So Scadur is going to set-up a &quot;Leather Festival&quot; on El Nath... I&apos;m out to find and collect all these items for him. Hope the reward of this mission is really worth it...\n\n#i4000021# #t4000021# #c4000021# / #r60#k\n#i4000264# #t4000264# #c4000264# / #r30#k\n#i4000281# #t4000281# #c4000281# / #r30#k\n#i4000295# #t4000295# #c4000295# / #r30#k\n#i4000030# #t4000030# #c4000030# / #r15#k\n#i4032475# #t4032475# #c4032475# / #r10#k" />
+            value="原来斯卡德打算在冰峰雪域举办一场“皮革节”... 我要为他寻找并收集这些物品。希望这次任务的奖励真的值得...\n\n#i4000021# #t4000021# #c4000021# / #r60#k\n#i4000264# #t4000264# #c4000264# / #r30#k\n#i4000281# #t4000281# #c4000281# / #r30#k\n#i4000295# #t4000295# #c4000295# / #r30#k\n#i4000030# #t4000030# #c4000030# / #r15#k\n#i4032475# #t4032475# #c4032475# / #r10#k" />
         <string name="2"
-            value="I helped Scadur in his &quot;Leather Festival&quot;, held on El Nath." />
+            value="我帮助斯卡德在冰峰雪域举办了“皮革节”。" />
     </imgdir>
     <imgdir name="29000">
         <string name="name" value="挑战勋章-组队任务狂人勋章" />
@@ -18354,13 +18354,13 @@
         <int name="area" value="50" />
     </imgdir>
     <imgdir name="4962">
-        <string name="name" value="Smores No More" />
+        <string name="name" value="再也没有烤棉花糖了" />
         <string name="0"
-            value="MBI (Maple Bureau of Investigation) Agent Falcon has been standing in front of the Prendergast Mansion for quite some time.  Maybe I should go see why he&apos;s still loitering around." />
+            value="枫叶调查局（MBI）的法肯探员已经在普伦德加斯特宅邸前站了好一会儿了。也许我该去看看他为什么还在那儿闲逛。" />
         <string name="1"
-            value="Looks like the bumbling MBI Agent Falcon just can&apos;t get a break.  Just when he was ready to pack up and leave to report the findings for his Halloween mission, a mysterious little boy appeared and stole all the Smores Falcon had cooked up for his colleagues!  Falcon has agreed to pay you 100,000 mesos (from his Agency discretionary account) if you recover #b25#k of his #bSmores#k for him.  Easy money - or is it?  The Smores look pretty tasty... I guess I&apos;ll have to try not to eat them myself as I collect them!" />
+            value="看来笨手笨脚的枫叶调查局法肯探员就是没法消停。就在他准备收拾东西离开，去汇报他万圣节任务的调查结果时，一个神秘小男孩出现了，偷走了法肯为同事们做的所有烤棉花糖！如果你能帮他找回#b25个#k烤棉花糖，法肯同意从他所在机构的自由支配账户里付给你10万金币。这钱好赚——真的吗？烤棉花糖看起来挺好吃的……我想我在收集的时候得尽量忍住别自己吃掉！" />
         <string name="2"
-            value="I collected Agent Falcon&apos;s #bSmores#k for him... they were a bit dirty but still good, so his colleagues back at the MBI Agency should be happy!  In return, Falcon paid me the 100,000 mesos he promised.  He also gave me some old medicine bottles that he&apos;d found lying outside the house.  They look pretty potent..." />
+            value="我帮法肯探员收集了他的#b烤棉花糖#k……虽然有点脏，但味道还不错，所以他在枫叶调查局的同事们应该会很高兴！作为回报，法肯付给了我他承诺的10万金币。他还把在房子外面找到的一些旧药瓶给了我。这些药瓶里的东西看起来挺强效的……" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="4963">
@@ -20781,7 +20781,7 @@
         <string name="name" value="怪物传闻坊" />
         <string name="parent" value="怪物传闻坊" />
         <int name="order" value="1" />
-        <string name="0" value="我听说埃尔纳斯的斯卡杜尔被怪物袭击了。我得去找他聊聊。" />
+        <string name="0" value="我听说埃尔纳斯的斯卡德尔被怪物袭击了。我得去找他聊聊。" />
         <string name="1" value="显然，狐狸，也就是珀斯上尉也遭遇了那个臭名昭著的怪物。我得去了解一下情况。" />
         <string name="2" value="为了收集有关这个怪物的信息，我得帮珀斯上尉一个忙。你在开玩笑吗？" />
         <int name="area" value="34" />
@@ -21242,51 +21242,51 @@
         <int name="area" value="50" />
     </imgdir>
     <imgdir name="8219">
-        <string name="name" value="Finding Jack" />
+        <string name="name" value="寻找杰克" />
         <string name="0"
-            value="I heard that John Barricade has received news from his brother Jack!  I should go find John in Bigger Ben and see what he&apos;s learned." />
+            value="我听说约翰·巴里凯德收到了他弟弟杰克的消息！我应该去大本钟找约翰，看看他了解到了什么。" />
         <string name="1"
-            value="Apparently, Jack Barricade is in Masteria and has discovered Crimsonwood Keep deep in the Phantom Forest.  However, the last letter John received from his brother was dated over a month ago.  John wants me to head to Crimsonwood after him and see why Jack&apos;s communiques have stopped.  Looks like I need to make my way through the Phantom Forest... I&apos;d better stock up on potions!" />
+            value="显然，杰克·巴里凯德在马莱尼西亚岛，并且在幻影森林深处发现了绯红要塞。然而，约翰收到他弟弟的最后一封信已经是一个多月前的事了。约翰希望我去绯红要塞找他，看看杰克为什么不再联系了。看来我得穿过幻影森林……我最好多备些药水！" />
         <string name="2"
-            value="I found Jack Barricade resting in a cave on Crimsonwood Mountain.  It turns out that after exploring the Masterian wilderness for weeks, Jack finally came across the ancient stronghold - only it wasn&apos;t deserted.  Jack was captured and imprisoned in the Keep by the evil soldiers I&apos;ve been seeing around, but luckily managed to escape.  John will be relieved that Jack is okay." />
+            value="我在绯红峡谷上的一个洞穴里找到了正在休息的杰克·巴里凯德。原来，在探索了马莱尼西亚岛荒野数周后，杰克终于找到了这座古老的据点——只是它并非无人居住。杰克被我在附近见过的邪恶士兵俘虏并囚禁在了城堡里，但幸运的是他成功逃脱了。约翰知道杰克没事一定会松一口气的。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8220">
-        <string name="name" value="Translated Communique" />
+        <string name="name" value="翻译后的通讯" />
         <string name="0"
-            value="I lost the translated communique, then Let&apos;s go to Elpam Gorlab!" />
-        <string name="1" value="I told Elpam Gorlab what I want." />
-        <string name="2" value="I got the translated communique from Elpam Gorlab again. Thank You!" />
+            value="我弄丢了翻译后的通讯，那我们去艾尔潘 葛拉博那里吧！" />
+        <string name="1" value="我告诉了艾尔潘 葛拉博我的需求。" />
+        <string name="2" value="我又从艾尔潘 葛拉博那里拿到了翻译后的通讯。谢谢！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8221">
-        <string name="name" value="The Mark of Heroism" />
+        <string name="name" value="英雄印记" />
         <string name="0"
-            value="Lukan told me about the Valley of Heroes and the giant Menhir columns barring the way through.  He mentioned that the Heroic Statues that line the valley would also act as teleporters, for only someone who had an artifact known as the Marker of Heroism.  Perhaps someone well-versed in ancient artifacts would know something about these Markers of Heroism... I think I may have an idea on who to ask.  Otherwise, it&apos;s time for some ledge hopping!" />
+            value="卢坎跟我说起了英雄山谷和阻挡道路的巨大巨石柱。他提到，山谷两旁的英雄雕像对于拥有名为“英雄印记”神器的人来说，还可以充当传送装置。也许精通古代神器的人会知道一些关于这些英雄印记的事情……我想我可能知道该去问谁。否则，就只能开始在悬崖间跳跃了！" />
         <string name="1"
-            value="I was right: John Barricade&apos;s extensive knowledge about ancient civilizations and items has paid off again!  He&apos;ll give me the Barricades&apos; Marker of Heroism if I reimburse him for the materials they had to acquire to recreate it: #b1 Power Crystal#k, #b10 Gold Ores#k and #b4 Typhon Feathers#k.  The only problem: Typhons nest in the upper reaches of the mountain!  To get up the mountain, I&apos;ll have to go through the Valley first!  Ugh!  Looks like a catch-22!  Hmmm, I guess I could see if someone else might have these feathers... I wonder if anyone else has already made it through the Valley on their own?" />
+            value="我猜对了：约翰·巴里凯德对古代文明和物品的渊博知识再次派上了用场！如果我补偿他们重新制作所需的材料：#b1颗能量水晶#k、#b10块金矿#k和#b4根泰丰羽毛#k，他就会把巴里凯德家族的英雄印记给我。唯一的问题是：泰丰在山顶筑巢！要上山，我得先穿过山谷！唉！看来陷入了两难境地！嗯，我想我可以看看是否其他人有这些羽毛……不知道是否有人已经独自穿过山谷了？" />
         <string name="2"
-            value="John gave me the Marker of Heroism artifact after I brought him the hard-to-find Typhon feathers and the other materials.  Now I&apos;ll be able to the Heroic Statues to get through the Valley.  However, it&apos;s not all candy and cake yet; I still need to figure out the correct statues to use, but at least it&apos;ll make it easier for me to move around.  Guess I&apos;ll try each statue as I go along and see where they lead!" />
+            value="在我给约翰带来了难找的泰丰羽毛和其他材料后，他把英雄印记神器给了我。现在我就能借助英雄雕像穿过山谷了。然而，事情还没那么轻松；我仍然需要找出正确使用的雕像，但至少这会让我行动起来更容易。我想我会边走边尝试每个雕像，看看它们会把我传送到哪里！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8222">
-        <string name="name" value="The Brewing Storm" />
+        <string name="name" value="风暴将至" />
         <string name="0"
-            value="I&apos;ve heard tell that many travelers get lost in the spooky Phantom Forest.  If I come across any of them, perhaps one of them will have an interesting tale to tell about the area.  I should search them out, but I better make sure I don&apos;t become one of these lost travelers myself... yikes!" />
+            value="我听说很多旅行者在阴森的幻影森林中迷路了。如果我遇到其中任何一个人，也许他们会有关于这个地区的有趣故事可讲。我应该去寻找他们，但我最好确保自己不会也成为这些迷路的旅行者之一……哎呀！" />
         <string name="1"
-            value="I met a knight lost in the Phantom Forest named #bLukan de Vrisien#k.  His armor is very ancient-looking, and he seems to be from another era.  Lukan asked if I knew anything about the unfriendly #bStormbreaker#k warriors wandering the forest.  He seems to hate them, though strangely, his armor looks almost exactly like theirs... lightning bolts and all!  Regarding this, Lukan remains tight-lipped... at least until I prove I&apos;m not in league with them.  To gain his trust, and prove my fighting prowess, I need to #bdefeat these Stormbreakers#k and #bcollect 10 of their badges#k to bring to him.  " />
+            value="我在幻影森林中遇到了一位迷路的骑士，名叫#b卢坎·德·弗里森#k。他的盔甲看起来非常古老，他似乎来自另一个时代。卢坎问我是否了解在森林中徘徊的不友好的#b碎风战士#k。他似乎很讨厌他们，不过奇怪的是，他的盔甲看起来和他们的几乎一模一样……连闪电标志都一样！关于这一点，卢坎守口如瓶……至少在我证明自己没有和他们勾结之前是这样。为了赢得他的信任，并证明我的战斗能力，我需要#b击败这些碎风战士#k并#b收集他们的10枚徽章#k交给他。" />
         <string name="2"
-            value="After defeating the Stormbreakers as he requested, Lukan explained that he is a #bStormcaster Knight#k from Crimsonwood Keep.  When I told him that Crimsonwood Keep was ancient history, and that Masteria had been lost for a millenium, he seemed at a loss for words.  Somehow, he has been transported to this time period, his future.  Strange things are brewing indeed." />
+            value="在按照他的要求击败碎风战士后，卢坎解释说他是绯红要塞的一名#b风暴法师骑士#k。当我告诉他绯红要塞已经成为历史，马莱尼西亚岛已经失落了一千年时，他似乎一时语塞。不知怎么的，他被传送到了这个时代，他的未来。确实有奇怪的事情正在酝酿。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8223">
-        <string name="name" value="Storming the Castle" />
+        <string name="name" value="攻占城堡" />
         <string name="0"
-            value="To enter the Grandmaster Hall of Crimsonwood Keep and find the new twisted Masters, Jack Barricade says I&apos;ll need to find some way to open the gate to the Keep&apos;s Inner Sanctum.  Perhaps someone who has firsthand knowledge of the Keep will know what I need... and I know just who to ask!" />
+            value="杰克·巴里凯德说，要进入绯红要塞的大师大厅并找到新的堕落大师们，我需要找到打开城堡内殿大门的方法。也许有城堡第一手资料的人会知道我需要什么……而且我知道该去问谁！" />
         <string name="1"
-            value="I asked Lukan about the Inner Sanctum Gate, and as I surmised, he knew how to get in.  Being a well-respected Stormcaster Knight, he was given a #bCrimsonwood Keystone#k by the Keep&apos;s Grandmasters.  However, Lukan thinks that I&apos;m mad to assault the castle and refuses to give me the key, calling it a suicide mission.  However, if I can whittle down the Keep&apos;s defenders, he&apos;ll relent and give me the Keystone.  I&apos;ve already put the hurt on the Stormbreakers, but I&apos;ll need to defeat at least #b75 Windraiders, 75 Firebrands#k, and #b75 Nightshadows#k more to put a sizeable enough dent in this evil army!" />
+            value="我向卢坎询问了内殿大门的事，正如我所料，他知道怎么进去。作为一位备受尊敬的风暴法师骑士，城堡的大师们给了他一枚#b红木钥匙石#k。然而，卢坎认为我攻打城堡是疯了，拒绝把钥匙给我，称这是自杀任务。不过，如果我能削弱城堡的守卫力量，他就会改变主意，把钥匙石给我。我已经给碎风战士造成了打击，但我还需要至少再击败#b75名风袭者、75名火烙者#k和#b75名夜影者#k，才能给这支邪恶军队造成足够大的损失！" />
         <string name="2"
-            value="I defeated the twisted Crimsonwood warriors!  And true to his word, Lukan gave me his #bCrimsonwood Keystone#k.  He also said that although the Keystone will physically unlock the Inner Sanctum Gate, the red energy field that surrounds them is foreign to him, and likely a new addition by the Keep&apos;s new Masters.  I should take the key back to Jack Barricade and let him know what I&apos;ve discovered." />
+            value="我击败了堕落的红木战士！卢坎也信守承诺，把他的#b红木钥匙石#k给了我。他还说，虽然钥匙石能从物理上打开内殿大门，但围绕着大门的红色能量场他并不熟悉，很可能是城堡新主人的新布置。我应该把钥匙带回给杰克·巴里凯德，让他知道我的发现。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8224">
@@ -21299,60 +21299,60 @@
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8225">
-        <string name="name" value="The Right Path" />
+        <string name="name" value="正确的选择" />
         <string name="0"
-            value="Jack Barricade has given me the #bMap of Phantom Forest#k that he took from Taggrin.  He explained that he was forced to steal it from Taggrin, who had refused to give it to him even after he&apos;d won it in a bet fair and square.  Now that Jack&apos;s made it up to the Crimsonwood Mountain, he&apos;s given the map to me for my own use.  Perhaps I should return it to Taggrin?  If I keep it, the map will come in handy while navigating the tricky Phantom Forest, #ballowing me to use the marked shortcuts#k and save time traveling.  But at the same time, there&apos;s a part of me that feels that this map still rightfully belongs to Taggrin.  What should I do?  It&apos;s a dilemma..." />
+            value="杰克·巴里凯德把他从塔格林那里拿到的#b幻影森林地图#k给了我。他解释说，他是被迫从塔格林那里偷走这张地图的，即使他光明正大地在打赌中赢了，塔格林也拒绝把地图给他。现在杰克已经到了绯红峡谷，他把地图给了我自己使用。或许我应该把地图还给塔格林？如果我留着它，这张地图在穿越复杂的幻影森林时会很有用，#b能让我使用标记的捷径#k，节省旅行时间。但与此同时，我心里有一部分觉得这张地图仍然理应属于塔格林。我该怎么做呢？这真是个难题……" />
         <string name="1"
-            value="I told Taggrin that I&apos;d found Jack up the Crimsonwood Mountain, and explained Jack&apos;s purpose.  Taggrin was surprised when I offered to return his Map of Phantom Forest to him... and was moved by my gesture. He seems to have warmed up to me, and ask that I return and speak to him. What could he want?" />
+            value="我告诉塔格林我在绯红峡谷上找到了杰克，并解释了杰克的目的。当我提出把他的幻影森林地图还给他时，塔格林很惊讶……而且被我的举动所感动。他似乎对我态度变好了，并让我回去和他谈谈。他会有什么事呢？" />
         <string name="2"
-            value="In return for making the honorable gesture of returning his map, Taggrin let me in on a secret of his own: he and his band are not bandits at all, but are actually #bRaven Ninjas#k, descendants of the ancient #bShadowknights#k!  They&apos;re here to discover what happened to their ancestral Keep and the reason behind the disappearance of Masteria.  As such, Taggrin is offering a bounty on the Keep&apos;s unrightful occupiers.  I can now speak to Joko to redeem any #rBadges#k I find off these corrupted warriors (the #rWindraiders#k, the #rStormbreakers#k, the #rFirebrands#k, and the #rNightshadowsRk) for #bmeso bounties#k, and possibly even #bRaven Ninja gear#k!  I can make #bone Badge Bounty Redemption per day#k" />
+            value="作为归还他地图这一高尚举动的回报，塔格林向我透露了他自己的一个秘密：他和他的团伙根本不是强盗，实际上是#b渡鸦忍者#k，古代#b暗影骑士#k的后裔！他们来这里是为了弄清楚他们祖先的城堡发生了什么，以及马莱尼西亚岛消失的原因。因此，塔格林悬赏捉拿城堡的非法占领者。我现在可以和乔科谈谈，用我从这些堕落战士（#r风袭者#k、#r碎风战士#k、#r火烙者#k和#r夜影者#k）身上找到的任何#r徽章#k兑换#b金币赏金#k，甚至可能兑换#b渡鸦忍者装备#k！我#b每天可以兑换一次徽章赏金#k" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8226">
-        <string name="name" value="The Fallen Warriors" />
-        <string name="0" value="I should speak to Taggrin to see if he has another task for me." />
+        <string name="name" value="堕落的战士" />
+        <string name="0" value="我应该和塔格林谈谈，看看他是否还有其他任务给我。" />
         <string name="1"
-            value="Taggrin has one more task for me: he wants me to hunt down the #bElder Wraiths#k and collect #b50 of their Elder Ashes#k.  Warning me that this would be no easy task, he explained that the wraiths are the souls of brave Crimsonwood Keep warriors who fell in battle in the forest, protecting the Keep from the invading Krakians.  Never given a proper burial, they have become mindless undead, threatening the Keep&apos;s foes and innocent travelers alike.  With these ashes, Taggrin intends to give these noble lost souls the final rest they so rightfully deserve." />
+            value="塔格林还有一项任务给我：他希望我追捕#b古老怨灵#k，并收集#b50份它们的古老灰烬#k。他警告我这可不是件容易的事，并解释说这些怨灵是绯红要塞勇敢的战士的灵魂，他们在森林中的战斗中倒下，保护城堡免受克拉基安人的入侵。由于从未得到妥善安葬，他们变成了没有意识的不死生物，威胁着城堡的敌人和无辜的旅行者。有了这些灰烬，塔格林打算让这些高贵的失落灵魂得到他们应得的安息。" />
         <string name="2"
-            value="Taggrin was impressed that I manage to collect the ashes from the Elder Wraiths.  I can now speak to #bFiona#k about #bupgrading any Raven Ninja gear#k I may have!  Taggrin also mentioned that the talented ninja smith has experimented with some weapon designs of her own; I should speak to her about the possibility of #bcrafting new items#k from scratch. " />
+            value="塔格林对我成功收集到古老怨灵的灰烬印象深刻。我现在可以和#b菲奥娜#k谈谈#b升级我可能拥有的任何渡鸦忍者装备#k的事了！塔格林还提到，这位才华横溢的忍者铁匠已经尝试设计了一些自己的武器；我应该和她谈谈#b从头开始制作新物品#k的可能性。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8227">
-        <string name="name" value="Lost in Translation 1" />
-        <string name="0" value="I should see if Jack Barricade needs my help with anything..." />
+        <string name="name" value="翻译困境 1" />
+        <string name="0" value="我应该看看杰克·巴里凯德是否需要我帮忙做些什么……" />
         <string name="1"
-            value="Jack needs John&apos;s help, and needs me to be the go-between.  He wants me to deliver a letter to his brother in NLC; the #bCoded Communique#k contains a transcription of some strange symbol code that he saw while being held in Crimsonwood Keep.  Hopefully, with his expertise in ancient languages, John should be able to decipher it.  I should hop to it!  I have a feeling some serious events are unfolding..." />
+            value="杰克需要约翰的帮助，并且需要我充当中间人。他希望我把一封信送到新叶城给他的弟弟；#b加密通讯#k包含了他被囚禁在绯红要塞时看到的一些奇怪符号代码的转录。希望凭借约翰在古代语言方面的专长，他能够破译这些代码。我得赶紧行动了！我有种感觉，一些重大事件正在发生……" />
         <string name="2"
-            value="Looks like Jack was right about the symbols he saw in the Grandmaster Council Hall; the Versalian code seems to indicate that the new Masters are planning to attack NLC with the soldiers they&apos;re training!  It&apos;s going to be up to us to stop them!" />
+            value="看来杰克在大师议会大厅看到的符号是正确的；维萨利安代码似乎表明，新的大师们正计划用他们训练的士兵进攻新叶城！阻止他们就靠我们了！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8228">
-        <string name="name" value="Lost in Translation 2" />
-        <string name="0" value="I should see if John needs my help with anything..." />
+        <string name="name" value="翻译困境 2" />
+        <string name="0" value="我应该看看约翰是否需要我帮忙做些什么……" />
         <string name="1"
-            value="After showing John the #bCoded Communique#k that Jack gave me, John used a Hyper Glyph to try to decipher the symbols... to no avail.  While John attempts to fix and recalibrate the Hyper Glyphs to work on these symbols, he asked me to show the letter around to the #bother experts in town#k.  Maybe they can shine some light on all this..." />
+            value="在我把杰克给我的#b加密通讯#k拿给约翰看后，约翰用了一个超符文试图破译这些符号……但没有成功。在约翰尝试修复并重新校准超符文以破解这些符号的同时，他让我把信拿给#b城里的其他专家#k看看。也许他们能对此有所启发……" />
         <string name="2"
-            value="I told John about Elpam&apos;s translation, and John was able to fill in some more of the blanks for me.  I need to get this new information Jack and see what else he knows..." />
+            value="我把埃尔帕姆的翻译告诉了约翰，约翰又帮我补充了一些信息。我需要把这些新信息带给杰克，看看他还知道些什么……" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8229">
-        <string name="name" value="Lost in Translation 3" />
+        <string name="name" value="翻译困境 3" />
         <string name="0"
-            value="I showed the #bCoded Communique#k to Elpam Gorlab, and he recognized the symbols as being #bVersalian#k!  Elpam translated what he could and gave me a #bTranslated Communique#k.  I should show this to John immediately!" />
+            value="我把#b加密通讯#k拿给艾尔潘 葛拉博看，他认出这些符号是#b维萨利安语#k！埃尔帕姆尽可能地进行了翻译，并给了我一份#b翻译后的通讯#k。我应该立刻把这个给约翰看！" />
         <string name="1"
-            value="I must traverse Crimsonwood Mountain and get this new information Jack and see what else he knows...!" />
+            value="我必须穿越绯红峡谷，把这些新信息带给杰克，看看他还知道些什么……！" />
         <string name="2"
-            value="I reached Jack and gave him the info-he&apos;s going through it all now..." />
+            value="我找到了杰克，并把信息给了他——他现在正在查看这些信息……" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8230">
-        <string name="name" value="Stemming the Tide" />
+        <string name="name" value="遏制攻势" />
         <string name="0"
-            value="The Versalian code that Jack uncovered and that Elpam translated points to some sort of imminent attack on New Leaf City by the Twisted Masters&apos; army.  It&apos;s up to us to stop them!  I should talk to John..." />
+            value="杰克发现并由埃尔帕姆翻译的维萨利安代码表明，堕落大师们的军队即将对新叶城发动某种攻击。阻止他们就靠我们了！我应该和约翰谈谈……" />
         <string name="1"
-            value="Someone who has firsthand knowledge of the Keep.  I think I have an idea who might be able to help." />
+            value="某个对城堡有第一手了解的人。我想我知道谁可能会帮上忙。" />
         <string name="2"
-            value="I brought Lukan&apos;s #bCrimsonwood Keystone#k to Jack.  I explained what Lukan told me: that this would unlock the gate mechanically, but the red energy field was a new development. Jack thinks he can figure out a solution for the magical barrier, but he&apos;ll need some time.  I should check in with him later and see if he&apos;s made any progress." />
+            value="我把卢坎的#b红木钥匙石#k带给了杰克。我向他解释了卢坎告诉我的话：这把钥匙能从机械上打开大门，但红色能量场是新出现的情况。杰克认为他能想出解决魔法屏障的办法，但他需要一些时间。我稍后应该再去看看他，看他是否有进展。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8231">
@@ -21360,107 +21360,107 @@
         <string name="parent" value="赏金猎人" />
         <int name="order" value="1" />
         <string name="0"
-            value="在马斯特利亚和新叶城发生了这么多奇怪的事情，Lita Lawless肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="我与Lita交谈过，她提到幻影森林里有个捣蛋鬼在游荡。这给她带来了不少麻烦——对于像她这样的战士来说，这实在让人感到惊讶。我已同意帮助她清除这些恶劣生物，作为证明，我需要带回#b30#k颗她所称的#b幸运符#k，这些奇怪的银苜蓿。我会提高警惕——据说那片森林闹鬼……" />
+            value="我与莉塔交谈过，她提到幻影森林里有个捣蛋鬼在游荡。这给她带来了不少麻烦——对于像她这样的战士来说，这实在让人感到惊讶。我已同意帮助她清除这些恶劣生物，作为证明，我需要带回#b30#k颗她所称的#b幸运符#k，这些奇怪的银苜蓿。我会提高警惕——据说那片森林闹鬼……" />
         <string name="2"
-            value="我深入疯狂的幻影森林，遇到了一些小妖精，并经过一番战斗后收集到了30颗幸运符。我将它们带回给Lita以领取赏金！她对我的帮助表示感谢，并提到我可以回来找她进行更多的赏金工作！" />
+            value="我深入疯狂的幻影森林，遇到了一些小妖精，并经过一番战斗后收集到了30颗幸运符。我将它们带回给莉塔以领取赏金！她对我的帮助表示感谢，并提到我可以回来找她进行更多的赏金工作！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8232">
-        <string name="name" value="Fool&apos;s Gold." />
-        <string name="parent" value="Bounty Hunter " />
+        <string name="name" value="愚者的黄金" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="2" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with Lita, and it looks like there a trickster roaming about the Phantom Forest. It caused her quite a bit of trouble-surprising for a warrion of her caliber. I&apos;ve agreed to help rid the Forest of these nefarious creatures, and as proof, I have to bring her#b 30 of the strange silver clovers#k-she called them #bLucky Charms#k. I&apos;ll be on guard-that forest is haunted...or so I&apos;ve heard..." />
+            value="我和莉塔谈过了，看来幻影森林里有个捣蛋鬼在四处游荡。这给她带来了不少麻烦——以她的实力，这还挺让人意外的。我已经答应帮她清除这些邪恶的生物，并且作为证明，我得给她带回#b30颗奇怪的银苜蓿#k——她称它们为#b幸运符#k。我得提高警惕——听说那片森林闹鬼……" />
         <string name="2"
-            value="I ventured into the maddening Phantom Forest and came into contact with a number of the Leprechauns and after a series of battles, got 30 Lucky Charms. I returned them to Lita for the Bounty! She thanked me for my help, and mentioned that I can return to her for more bounty work!" />
+            value="我冒险进入了疯狂的幻影森林，遇到了一些小妖精，经过一系列战斗后，收集到了30颗幸运符。我把它们带回给莉塔领赏金！她感谢我的帮助，并说我可以再去找她做更多赏金任务！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8233">
-        <string name="name" value="Rags to Riches" />
-        <string name="parent" value="Bounty Hunter." />
+        <string name="name" value="白手起家" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="1" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with LIta, and it seems that there strange, powerful spirits drifting about the Phantom Forest. These strange spirits seemingly have no desire, save for tormenting others. I&apos;ve agreed to eliminate 30 of them, and bring their soiled rags to Lita as proof of valor. I&apos;d better keep sharp-that forest has driven quite a few travelers mad with its confusion..." />
+            value="我和莉塔谈过了，似乎幻影森林里有一些奇怪而强大的灵魂在飘荡。这些奇怪的灵魂似乎没有别的欲望，只是喜欢折磨别人。我已经答应消灭30个这样的灵魂，并把它们脏兮兮的破布带给莉塔，以证明我的英勇。我最好保持警觉——那片森林的混乱已经让不少旅行者发疯了……" />
         <string name="2"
-            value="I navigated the Phantom Forest and collected 30 of the Soiled Rags the Elder Wraiths had upon them. It was strange to finally fight one, they were eerily quiet for being so vicious. I wonder if there&apos;s more to their story...perhaps someone in the Phantom Forest would know..." />
+            value="我在幻影森林中穿行，收集了古老怨灵身上的30块脏兮兮的破布。终于和其中一个怨灵战斗时，感觉很奇怪，它们虽然很凶残，但却出奇地安静。我想知道它们的故事是否还有更多……也许幻影森林里的某个人会知道。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8234">
-        <string name="name" value="Rags to Riches." />
-        <string name="parent" value="Bounty Hunter." />
+        <string name="name" value="白手起家" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="2" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with LIta, and it seems that there strange, powerful spirits drifting about the Phantom Forest. These strange spirits seemingly have no desire, save for tormenting others. I&apos;ve agreed to eliminate 30 of them, and bring their soiled rags to Lita as proof of valor. I&apos;d better keep sharp-that forest has driven quite a few travelers mad with its confusion..." />
+            value="我和莉塔谈过了，似乎幻影森林里有一些奇怪而强大的灵魂在飘荡。这些奇怪的灵魂似乎没有别的欲望，只是喜欢折磨别人。我已经答应消灭30个这样的灵魂，并把它们脏兮兮的破布带给莉塔，以证明我的英勇。我最好保持警觉——那片森林的混乱已经让不少旅行者发疯了……" />
         <string name="2"
-            value="I navigated the Phantom Forest and collected 30 of the Soiled Rags the Elder Wraiths had upon them. It was strange to finally fight one, they were eerily quiet for being so vicious. I wonder if there&apos;s more to their story...perhaps someone in the Phantom Forest would know..." />
+            value="我在幻影森林中穿行，收集了古老怨灵身上的30块脏兮兮的破布。终于和其中一个怨灵战斗时，感觉很奇怪，它们虽然很凶残，但却出奇地安静。我想知道它们的故事是否还有更多……也许幻影森林里的某个人会知道。" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8235">
-        <string name="name" value="One Step A-Head" />
-        <string name="parent" value="Bounty Hunter.." />
+        <string name="name" value="领先一步" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="1" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with Lita, and she told me the tragic origin of the Headless Horseman. He was a former warrior of Crimsonwood Keep that was experimented on the mysterious Alchemist, the same one who corrupted the Krakians. He now roams the Phantom Forest, and I must bring his Jack O&apos;Lantern head to Lita as proof of my triumph! " />
+            value="我和莉塔谈过了，她给我讲了无头骑士悲惨的起源。他曾经是绯红要塞的一名战士，被神秘的炼金术士进行了实验，就是那个腐化了克拉基安人的炼金术士。他现在在幻影森林中游荡，我必须把他的南瓜灯头带给莉塔，以证明我的胜利！" />
         <string name="2"
-            value="It was a tough fight, but I brought down the mighty horseman and returned his Jack O&apos;Lantern to Lita. I wonder how many other lives the mysterious Alchemist has ruined..." />
+            value="这是一场艰苦的战斗，但我击败了强大的骑士，并把他的南瓜灯还给了莉塔。我想知道那个神秘的炼金术士还毁了多少人的生活……" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8236">
-        <string name="name" value="One Step A-Head." />
-        <string name="parent" value="Bounty Hunter.." />
+        <string name="name" value="领先一步" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="2" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with Lita, and she told me the tragic origin of the Headless Horseman. He was a former warrior of Crimsonwood Keep that was experimented on the mysterious Alchemist, the same one who corrupted the Krakians. He now roams the Phantom Forest, and I must bring his Jack O&apos;Lantern head to Lita as proof of my triumph! " />
+            value="我和莉塔谈过了，她给我讲了无头骑士悲惨的起源。他曾经是绯红要塞的一名战士，被神秘的炼金术士进行了实验，就是那个腐化了克拉基安人的炼金术士。他现在在幻影森林中游荡，我必须把他的南瓜灯头带给莉塔，以证明我的胜利！" />
         <string name="2"
-            value="It was a tough fight, but I brought down the mighty horseman and returned his Jack O&apos;Lantern to Lita. I wonder how many other lives the mysterious Alchemist has ruined..." />
+            value="这是一场艰苦的战斗，但我击败了强大的骑士，并把他的南瓜灯还给了莉塔。我想知道那个神秘的炼金术士还毁了多少人的生活……" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8237">
-        <string name="name" value="Catch a Bigfoot by the Toe" />
-        <string name="parent" value="Bounty Hunter..." />
+        <string name="name" value="抓住大脚怪的脚趾" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="1" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with Lita, and I&apos;m pretty sure I&apos;m getting the short end of the stick on this one. I have to venture into the Phantom Forest and find this creature they&apos;ve named Bigfoot and claim its toe as the proof of bounty. Everyone else who&apos;s gone after this thing has never come back-I&apos;d better stock up on potions and keep my guard up-who knows when it could appear?" />
+            value="我和莉塔谈过了，我很确定这次我接了个棘手的任务。我得冒险进入幻影森林，找到他们称为大脚怪的生物，并取下它的脚趾作为赏金的证明。之前去追捕这个家伙的人都没回来——我最好多备些药水，提高警惕——谁知道它什么时候会出现呢？" />
         <string name="2"
-            value="I found this mysterious creature, and Lita wasn&apos;t kidding when she said it wrecked everyone that came after it! Although, when I was fighting it, I got the feeling that the Leprechaun on its back was just luring him into things...maybe it just doesn&apos;t know better? At any rate, I returned the Toe to Lita and claimed the Bounty.  The more mesos, the better!" />
+            value="我找到了这个神秘的生物，莉塔说它会打败所有追捕它的人，这话一点不假！不过，我在和它战斗的时候，感觉它背上的小妖精只是在引诱它……也许它只是不懂事？不管怎样，我把脚趾带回去给莉塔，领了赏金。钱越多越好！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8238">
-        <string name="name" value="Catch a Bigfoot by the Toe." />
-        <string name="parent" value="Bounty Hunter..." />
+        <string name="name" value="抓住大脚怪的脚趾" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="2" />
         <string name="0"
-            value="With all the strange occurrences in Masteria and New Leaf City, Lita Lawless must be busy! I&apos;ll bet that she&apos;s willing to accept my help...maybe I can earn some mesos in the process! A quick jaunt to the Kerning City subway and I&apos;ll be on my way to New Leaf City!" />
+            value="在马莱尼西亚岛和新叶城发生了这么多奇怪的事情，莉塔·劳利斯肯定忙得不可开交！我敢打赌她一定乐意接受我的帮助……或许我还能借此赚些梅索！只需快速前往克尔宁市地铁站，我就能出发去新叶城！" />
         <string name="1"
-            value="I spoke with Lita, and I&apos;m pretty sure I&apos;m getting the short end of the stick on this one. I have to venture into the Phantom Forest and find this creature they&apos;ve named Bigfoot and claim its toe as the proof of bounty. Everyone else who&apos;s gone after this thing has never come back-I&apos;d better stock up on potions and keep my guard up-who knows when it could appear?" />
+            value="我和莉塔谈过了，我很确定这次我接了个棘手的任务。我得冒险进入幻影森林，找到他们称为大脚怪的生物，并取下它的脚趾作为赏金的证明。之前去追捕这个家伙的人都没回来——我最好多备些药水，提高警惕——谁知道它什么时候会出现呢？" />
         <string name="2"
-            value="I found this mysterious creature, and Lita wasn&apos;t kidding when she said it wrecked everyone that came after it! Although, when I was fighting it, I got the feeling that the Leprechaun on its back was just luring him into things...maybe it just doesn&apos;t know better? At any rate, I returned the Toe to Lita and claimed the Bounty.  The more mesos, the better!" />
+            value="我找到了这个神秘的生物，莉塔说它会打败所有追捕它的人，这话一点不假！不过，我在和它战斗的时候，感觉它背上的小妖精只是在引诱它……也许它只是不懂事？不管怎样，我把脚趾带回去给莉塔，领了赏金。钱越多越好！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8239">
-        <string name="name" value="Bounty Master" />
-        <string name="parent" value="Bounty Hunter...." />
+        <string name="name" value="赏金大师" />
+        <string name="parent" value="赏金猎人" />
         <int name="order" value="1" />
         <string name="0"
-            value="I&apos;ve completed all Bounty Hunter bounties for Lita Lawless! I think its about time I&apos;m deputized!  I should head to New Leaf City and find out more!" />
+            value="我已经为莉塔·劳利斯完成了所有赏金猎人的赏金任务！我觉得是时候让我成为正式成员了！我应该去新叶城了解更多情况！" />
         <string name="1"
-            value="I spoke with Lita, and she&apos;s all set to deputize me whenever I&apos;m ready!  Completing all those quests was hard, but well worth the effort!" />
+            value="我和莉塔谈过了，只要我准备好了，她随时都能让我成为正式成员！完成所有那些任务很辛苦，但一切都是值得的！" />
         <string name="2"
-            value="I&apos;ve been deputized by Lita Lawless as an official protector of New Leaf City!  I&apos;ve sworn to defend the area, and Masteria in general from all future threats...and from what it looks like, there&apos;s going to be a lot of them!" />
+            value="我已经被莉塔·劳利斯任命为新叶城的正式守护者！我发誓要保护这个地区，以及整个马莱尼西亚岛免受未来的一切威胁……从目前的情况来看，威胁还会有很多！" />
         <int name="area" value="36" />
     </imgdir>
     <imgdir name="8245">
@@ -21525,28 +21525,28 @@
         <int name="autoStart" value="1" />
     </imgdir>
     <imgdir name="8255">
-        <string name="name" value="Lost Spirits" />
-        <string name="parent" value="Lost Spirits" />
+        <string name="name" value="迷失的灵魂" />
+        <string name="parent" value="迷失的灵魂" />
         <int name="order" value="1" />
         <string name="0"
-            value="A new traveler is in the town of El Nath, I wonder what his story is...perhaps something to do with Zakum? I should pay him a visit; I heard his name is Adonis." />
+            value="冰峰雪域小镇来了一位新旅人，我好奇他有什么故事……或许和扎昆有关？我应该去拜访他；我听说他叫阿多尼斯。" />
         <string name="1"
-            value="I visited El Nath, and found Adonis. He&apos;s speaking to me now..." />
+            value="我去了冰峰雪域，找到了阿多尼斯。他正在和我说话……" />
         <string name="2"
-            value="Adonis and I had an enlightening conversation about Zakum, and the residents of the former town. It appears that Zakum gains additional power from what Adonis calls &quot;Zakum Diamonds&quot;.  They are souls of those who fell in battle against the mighty Zakum.  As they were fellow warriors and adventurers like me, their souls must be released.  If I can find a relic of the old town, such as a Crystal Blade, Miner&apos;s Hat, El Nathian Cape or Cloak of Corruption and combine it with a Zakum Diamond, I can perform a &apos;Liberation Ritual&quot; that will free the soul by transferring their power into that item.  I can then wear the enchanted item for extra strength in battle!  Only thing is, Zakum Diamonds only come from one place, Zakum himself.  This won&apos;t be easy..." />
-        <int name="area" value="50" />
+            value="我和阿多尼斯就扎昆以及昔日小镇的居民进行了一番启发性的交谈。看来扎昆能从阿多尼斯所说的“扎昆钻石”中获得额外的力量。这些钻石是那些在与强大的扎昆战斗中牺牲之人的灵魂。他们和我一样都是战士与冒险家，他们的灵魂必须得到释放。如果我能找到旧镇的一件遗物，比如水晶之刃、矿工帽、冰峰雪域披风或堕落披风，并将其与一颗扎昆钻石结合，我就能进行一场“解放仪式”，将他们的力量转移到那件物品中，从而释放灵魂。然后我就可以穿戴这件附魔物品，在战斗中获得额外的力量！唯一的问题是，扎昆钻石只来自一个地方，那就是扎昆本身。这可不容易……" />
+        <int name="area" value="34" />
     </imgdir>
     <imgdir name="8256">
-        <string name="name" value="Lost Spirits." />
-        <string name="parent" value="Lost Spirits" />
+        <string name="name" value="迷失的灵魂。" />
+        <string name="parent" value="迷失的灵魂" />
         <int name="order" value="2" />
         <string name="0"
-            value="A new traveler is in the town of El Nath, I wonder what his story is...perhaps something to do with Zakum? I should pay him a visit; I heard his name is Adonis. " />
+            value="冰峰雪域小镇来了一位新旅人，我好奇他有什么故事……或许和扎昆有关？我应该去拜访他；我听说他叫阿多尼斯。" />
         <string name="1"
-            value="I visited El Nath, and found Adonis. He&apos;s speaking to me now..." />
+            value="我去了冰峰雪域，找到了阿多尼斯。他正在和我说话……" />
         <string name="2"
-            value="Adonis and I had an enlightening conversation about Zakum, and the residents of the former town. It appears that Zakum gains additional power from what Adonis calls &quot;Zakum Diamonds&quot;.  They are souls of those who fell in battle against the mighty Zakum.  As they were fellow warriors and adventurers like me, their souls must be released.  If I can find a relic of the old town, such as a Crystal Blade, Miner&apos;s Hat, El Nathian Cape or Cloak of Corruption and combine it with a Zakum Diamond, I can perform a &apos;Liberation Ritual&quot; that will free the soul by transferring their power into that item.  I can then wear the enchanted item for extra strength in battle!  Only thing is, Zakum Diamonds only come from one place, Zakum himself.  This won&apos;t be easy..." />
-        <int name="area" value="50" />
+            value="我和阿多尼斯就扎昆以及昔日小镇的居民进行了一番启发性的交谈。看来扎昆能从阿多尼斯所说的“扎昆钻石”中获得额外的力量。这些钻石是那些在与强大的扎昆战斗中牺牲之人的灵魂。他们和我一样都是战士与冒险家，他们的灵魂必须得到释放。如果我能找到旧镇的一件遗物，比如水晶之刃、矿工帽、冰峰雪域披风或堕落披风，并将其与一颗扎昆钻石结合，我就能进行一场“解放仪式”，将他们的力量转移到那件物品中，从而释放灵魂。然后我就可以穿戴这件附魔物品，在战斗中获得额外的力量！唯一的问题是，扎昆钻石只来自一个地方，那就是扎昆本身。这可不容易……" />
+        <int name="area" value="34" />
     </imgdir>
     <imgdir name="8257">
         <string name="name" value="Dinner Fixins&apos;" />

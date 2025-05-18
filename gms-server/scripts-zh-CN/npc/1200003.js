@@ -38,7 +38,7 @@ function action(mode, type, selection) {
 		    cm.sendOk("什么？你说你想搭免费的船？ 你真是个怪人！");
 		    cm.dispose();
 		} else {
-		    cm.sendNext("哇! #e80#n 金币我收到了！ 好，准备触发去明珠港喽！");
+		    cm.sendNext("哇! #e80#n 金币我收到了！ 好，准备出发去明珠港喽！");
 		}
 	    } else {
 		cm.sendOk("让我看看... 我觉得你还不够强。 你至少要达到7级我才能让你到明珠港哦。");
