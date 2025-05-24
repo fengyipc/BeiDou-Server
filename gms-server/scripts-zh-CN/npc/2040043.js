@@ -32,11 +32,13 @@
 @	Description: Used to find the combo to unlock the next door. Players stand on 5 different crates to guess the combo.
 */
 
-function generateCombo() {
+function generateCombo(needPlayersOnCombo) {
     var countPicked = 0;
+    // 3人 5选3、4人 7选4、5人9选5
     var positions = Array(0, 0, 0, 0, 0, 0, 0, 0, 0);
-    while (countPicked < 5) {
-        var picked = Math.floor(Math.random() * positions.length);
+    const pickRange = needPlayersOnCombo * 2 - 1;
+    while (countPicked < needPlayersOnCombo) {
+        var picked = Math.floor(Math.random() * pickRange);
         if (positions[picked] == 1) // Don't let it pick one its already picked.
         {
             continue;
@@ -125,10 +127,11 @@ function action(mode, type, selection) {
                         }
                     }
 
-                    if (playersOnCombo == 5 || cm.getPlayer().gmLevel() > 1) {
+                    const needPlayersOnCombo = Math.min(5, party.size());
+                    if (playersOnCombo == needPlayersOnCombo || cm.getPlayer().gmLevel() > 1) {
                         var comboStr = eim.getProperty("stage" + stage + "combo");
                         if (comboStr == null) {
-                            comboStr = generateCombo();
+                            comboStr = generateCombo(needPlayersOnCombo);
                             eim.setProperty("stage" + stage + "combo", comboStr);
                         }
 
@@ -149,7 +152,7 @@ function action(mode, type, selection) {
                             cm.dispose();
                         }
                     } else {
-                        cm.sendNext("看起来你还没有找到5个箱子。请考虑不同的箱子组合。只允许站在箱子上的数量为5个，如果你移动箱子可能不算作答案，请记住这一点。继续加油！");
+                        cm.sendNext("看起来你还没有找到" + needPlayersOnCombo + "个箱子。请考虑不同的箱子组合。只允许站在箱子上的数量为" + needPlayersOnCombo + "个，如果你移动箱子可能不算作答案，请记住这一点。继续加油！");
                         cm.dispose();
                     }
                 }
