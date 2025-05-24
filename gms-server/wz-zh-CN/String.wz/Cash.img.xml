@@ -1852,8 +1852,8 @@
         <string name="desc" value="借此高级万能钥匙打开白银版箱\n子，可以获得稀有物品！"/>
     </imgdir>
     <imgdir name="5150044">
-        <string name="name" value="皇家理发券"/>
-        <string name="desc" value="拿给#c射手村美发店的比克·爱德\n华#的话，可以#c随机#变更一次前卫\n的发型。"/>
+        <string name="name" value="高级皇家理发券"/>
+        <string name="desc" value="拿给#c射手村美发店的比克·爱德\n华#的话，可以#c选择#变更一次前卫\n的发型。"/>
     </imgdir>
     <imgdir name="5010070">
         <string name="name" value="森林妖精的翅膀"/>
