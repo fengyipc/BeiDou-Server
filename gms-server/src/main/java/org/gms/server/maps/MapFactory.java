@@ -403,6 +403,8 @@ public class MapFactory {
             } else {
                 builder.append("jp");
             }
+        } else if (mapid >= 500000000 && mapid <= 501020200 ) {
+            builder.append("thai");
         } else {
             builder.append("etc");
         }
