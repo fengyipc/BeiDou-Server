@@ -1204,42 +1204,42 @@
     </imgdir>
     <imgdir name="1072000">
         <string name="name" value="战士转职教官"/>
-        <string name="n0" value="想转到战士第二阶段职业吗? 首先去拜访勇士部落的 武术教练 。"/>
+        <string name="n0" value="想转到战士第二阶段职业吗? 首先去拜访勇士部落的武术教练 。"/>
         <string name="n1" value="只有通过我的考试的人才能专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072001">
         <string name="name" value="魔法师转职教官"/>
-        <string name="n0" value="想转到魔法师第二阶段职业吗? 先去拜访魔法密林的 ‘汉斯’先生吧。"/>
+        <string name="n0" value="想转到魔法师第二阶段职业吗? 先去拜访魔法密林的汉斯吧。"/>
         <string name="n1" value="只有通过我的考试的人才能专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072002">
         <string name="name" value="弓箭手转职教官"/>
-        <string name="n0" value="想转到弓箭手第二阶段职业吗? 先去拜访射手村的 ‘赫勒纳’先生吧。"/>
+        <string name="n0" value="想转到弓箭手第二阶段职业吗? 先去拜访射手村的赫丽娜吧。"/>
         <string name="n1" value="只有通过我的试验的人才能够专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072003">
         <string name="name" value="飞侠转职教官"/>
-        <string name="n0" value="想转到飞侠第二阶段职业吗? 先去拜访废弃之都的‘达克鲁’先生吧。"/>
+        <string name="n0" value="想转到飞侠第二阶段职业吗? 先去拜访废弃之都的达克鲁吧。"/>
         <string name="n1" value="只有通过我的试验的人才能够转职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072004">
         <string name="name" value="战士转职教官"/>
-        <string name="n0" value="想转到战士第二阶段职业吗? 首先去拜访勇士部落的 武术教练 。"/>
+        <string name="n0" value="想转到战士第二阶段职业吗? 首先去拜访勇士部落的武术教练 。"/>
         <string name="n1" value="只有通过我的考试的人才能专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072005">
         <string name="name" value="魔法师转职教官"/>
-        <string name="n0" value="想转到魔法师第二阶段职业吗? 先去拜访魔法密林的 ‘汉斯’先生吧。"/>
+        <string name="n0" value="想转到魔法师第二阶段职业吗? 先去拜访魔法密林的汉斯吧。"/>
         <string name="n1" value="只有通过我的考试的人才能专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072006">
         <string name="name" value="弓箭手转职教官"/>
-        <string name="n0" value="想转到弓箭手第二阶段职业吗? 先去拜访射手村的 ‘赫丽娜’先生吧。"/>
+        <string name="n0" value="想转到弓箭手第二阶段职业吗? 先去拜访射手村的赫丽娜吧。"/>
         <string name="n1" value="只有通过我的试验的人才能够转职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072007">
         <string name="name" value="飞侠转职教官"/>
-        <string name="n0" value="想转到飞侠第二阶段职业吗? 先去拜访废弃之都的‘达克鲁’先生吧。"/>
+        <string name="n0" value="想转到飞侠第二阶段职业吗? 先去拜访废弃之都的达克鲁吧。"/>
         <string name="n1" value="只有通过我的考试的人才能专职到第二阶段。"/>
     </imgdir>
     <imgdir name="1072008">

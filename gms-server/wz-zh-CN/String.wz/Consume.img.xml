@@ -524,6 +524,10 @@
         <string name="name" value="果汁糖"/>
         <string name="desc" value="用果汁做的糖果。"/>
     </imgdir>
+    <imgdir name="2022034">
+        <string name="name" value="粽子"/>
+        <string name="desc" value="看来很好吃的粽子。\n恢复血量50"/>
+    </imgdir>
     <imgdir name="2022035">
         <string name="name" value="百事可乐"/>
         <string name="desc" value="很爽快的百事可乐\n恢复HP250，MP100"/>
@@ -847,6 +851,10 @@
     <imgdir name="2022132">
         <string name="name" value="桔梗浓缩液"/>
         <string name="desc" value="桔梗精的浓缩液体\nHP和MP各恢复200"/>
+    </imgdir>
+    <imgdir name="2022138">
+        <string name="name" value="纳米粽子"/>
+        <string name="desc" value="高科技手段生产出来的新食品，\n吃一个魔量全恢复"/>
     </imgdir>
     <imgdir name="2022142">
         <string name="name" value="熊掌汤"/>
@@ -1438,6 +1446,22 @@
     <imgdir name="2022538">
         <string name="name" value="Red Easter Egg"/>
         <string name="desc" value="A freshly boiled egg colored in red. Recovers 400 HP and MP."/>
+    </imgdir>
+    <imgdir name="2022784">
+        <string name="name" value="原味粽子"/>
+        <string name="desc" value="用糯米制作，手法俐落的粽子。\n可食用，恢复血量、魔量各400。"/>
+    </imgdir>
+    <imgdir name="2022785">
+        <string name="name" value="栗子味粽子"/>
+        <string name="desc" value="用栗子粉和高档糯米做的栗子味粽子。\n可食用，恢复血量、魔量各800。"/>
+    </imgdir>
+    <imgdir name="2022786">
+        <string name="name" value="枣子味粽子"/>
+        <string name="desc" value="用枣子粉和东北糯米做的枣子味粽子。\n可食用，恢复血量、魔量各1200。"/>
+    </imgdir>
+    <imgdir name="2022787">
+        <string name="name" value="大豆味粽子"/>
+        <string name="desc" value="用大豆和有机糯米做的大豆味粽子。\n可食用，恢复血量、魔量各1600。"/>
     </imgdir>
     <imgdir name="2030000">
         <string name="name" value="回城卷轴"/>
