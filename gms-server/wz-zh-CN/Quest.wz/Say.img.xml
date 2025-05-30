@@ -20625,45 +20625,47 @@
     </imgdir>
     <imgdir name="3242">
         <imgdir name="0">
-            <string name="0" value="想不想测试你的胆量？#m220000000#为与新发现的#m240000000#建立友好关系决定派去亲善使者。想不想成为代表#m220000000#的亲善使者？"/>
-            <imgdir name="yes">
-                <string name="0" value="要成为#m220000000#的亲善使者，需要几种资格条件。为证明做长期旅行对身体无妨的健康程度，请抓来栖息在塔里的#r#o3110102#10只，#o3210205#10只，#o3210208#10只#k。"/>
-            </imgdir>
-            <imgdir name="no">
-                <string name="0" value="成为#m220000000#的代表是一件很荣幸的事情。当然#m220000000#会给你最大的援助。"/>
-            </imgdir>
+          <string name="0" value="你在寻找新的挑战吗？你对冒险感兴趣吗？听着，#m220000000# 正试图与新发现的 #m240000000# 建立友好关系，我们想派一名信使前往那里。你愿意成为代表 #m220000000# 的信使吗？"/>
+          <imgdir name="yes">
+            <string name="0" value="要成为 #m220000000# 的信使，你需要通过一项测试。为了证明你有足够的体力承受长途跋涉，请消灭 #r10 只 #o3110102#、10 只 #o3210205# 和 10 只 #o3210208# #k。它们都能在塔里找到。"/>
+          </imgdir>
+          <imgdir name="no">
+            <string name="0" value="代表 #m220000000# 将是你一生中最大的荣耀！当然，#m220000000# 会在你执行任务的每一步都给予支持。"/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="很优秀。你具备了能成为使者的资格。那么给你#m220000000#提供的援助物品。"/>
+          <string name="0" value="难以置信。你完全有资格成为我们的信使。现在我将把 #m220000000# 要给你的物品交给你。"/>
         </imgdir>
-    </imgdir>
-    <imgdir name="3243">
+      </imgdir>
+      <imgdir name="3243">
         <imgdir name="0">
-            <string name="0" value="作为#m220000000#的亲善使者，任务是把#m220000000#准备的礼物交给#m240000000#的#p2081000#。此箱子里装有#m220000000#精心准备的礼物，所以要特别注意。"/>
-            <imgdir name="no">
-                <string name="0" value="怎么？突然改变主意了？这可是非常荣幸的事耶！！"/>
-            </imgdir>
+          <string name="0" value="作为 #m220000000# 的信使，你的职责是将 #m220000000# 里善良的人们准备的这份礼物，送到 #m240000000# 的 #p2081000# 手中。这个盒子里装着我们用心准备的众多礼物，请小心保管。"/>
+          <imgdir name="no">
+            <string name="0" value="为什么？你打算在最后一刻退缩吗？这是一项光荣的任务，你应该为能完成它而感到骄傲！"/>
+          </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="呵呵呵。你是从哪里来了？为什么来找我？\r\n#L0##b我从玩具城来。玩具城为了与神木村建立友好关系送来了礼物。"/>
-            <string name="1" value="哦哦~真是热心的人。呵呵。能成为好朋友是一件高兴的事。让你亲自跑一趟，真是辛苦你了。这是我对你的小报答。"/>
+          <string name="0" value="哦……你是谁，从哪里来？我能为你做些什么？ \r\n#L0# #b我是来自玩具城的信使。玩具城希望与神木村建立友好关系，并让我代表他们把这份礼物送给你。"/>
+          <string name="1" value="哦呵~ 那里的人肯定都非常友好。开启一段友好关系总是让人感觉很棒。你能来到这里，做得很棒。请收下这个，以表我的谢意。"/>
+          <imgdir name="yes">
+            <string name="0" value="这颗魔法种子是一颗充满神秘力量的花种，蕴含着传送魔法。任何持有这颗魔法种子的人都能进入凡人无法进入的森林入口。有人说这个村庄的西部就有这样一个入口。去看看吧。"/>
+          </imgdir>
+          <imgdir name="stop">
+            <imgdir name="npc">
+              <string name="0" value="请将这个物品作为友谊的象征，交给神木村的村长塔塔曼。"/>
+            </imgdir>
+            <imgdir name="item">
+              <string name="0" value="在这片广袤森林之外，肯定有许多我从未去过的村庄。如果我们能和它们建立友好关系就好了……"/>
+            </imgdir>
+            <imgdir name="0">
+              <int name="answer" value="1"/>
+            </imgdir>
+          </imgdir>
+          <imgdir name="lost">
+            <string name="0" value="这份礼物包含了玩具城善良人们的心血，请不要再把它弄丢了，明白了吗？"/>
             <imgdir name="yes">
-                <string name="0" value="魔法种子是蕴含神奇魔力的植物种子，有着连结两个空间的魔力。如带着此魔法种子，可进入他人无法进入的森林通道。听说在村庄西边的某个地方里看到森林通道了...去看看怎么样？"/>
             </imgdir>
-            <imgdir name="stop">
-                <imgdir name="npc">
-                    <string name="0" value="请把我给的物品交给神木村的村长塔塔曼。"/>
-                </imgdir>
-                <imgdir name="item">
-                    <string name="0" value="丛林外有很多没去过的村庄吧？能与它们建立起好的关系，那也是不错的事。"/>
-                </imgdir>
-                <imgdir name="0">
-                    <int name="answer" value="1"/>
-                </imgdir>
-            </imgdir>
-            <imgdir name="lost">
-                <string name="0" value="此礼物是装有玩具城居民心意的礼物。所以不能再遗失。知道了吗？"/>
-                <imgdir name="yes"/></imgdir>
+          </imgdir>
             <int name="ask" value="1"/>
         </imgdir>
     </imgdir>
@@ -32654,10 +32656,10 @@
     </imgdir>
     <imgdir name="4928">
         <imgdir name="0">
-            <string name="0" value="哦，嗨！对不起。我没看见你站在那里。我刚刚在读你回来的枫树历史书。\n\n#L0##b我以为你都读过了。#k#l"/>
-            <string name="1" value="是的，我做到了。由于我父亲是亨利家族的首领，他非常严格地记住了枫树历史上发生的每一件事。我仍然记得所有的名字和数字。\n\n#L0###b那你为什么要读它呢？为什么你看起来如此烦恼？#k#l"/>
-            <string name="2" value="这本书中的一些东西一直困扰着我。#b鲍勃·斯奈尔#k这个名字写满了这本书，但没有任何图片，也没有对这个人进行太多描述，只是神奇地出现了，然后消失了，没有任何解释。如果我知道...\n\n#L0##b听起来我可以帮你#l\n#L1###b祝你好运！（书呆子…）#k#l"/>
-            <string name="3" value="真正地你真的会为我这么做吗？"/>
+            <string name="0" value="哦，你好！不好意思，我刚才没看到你站在这儿。我刚才在看你还回来的冒险岛古书呢。\n\n#L0##b我还以为你都看完了呢。#k#l"/>
+            <string name="1" value="我确实都看完了。因为我爸爸是射手村的村长，他要求我把冒险岛历史上发生的每一件事都记下来，所以我现在还记得所有的名字和事件。\n\n#L0##b那你怎么还在看呢？而且你看起来怎么这么烦恼？#k#l"/>
+            <string name="2" value="这本书里有件事一直困扰着我。书里到处都提到一个叫 #b鲍勃·斯奈尔#k 的名字，但却没有他的图片，也没怎么描述这个人，他就这么神奇地出现，然后又毫无缘由地消失了。要是我能知道就好了……\n\n#L0##b听起来我能帮上忙。#l\n#L1##b祝你好运！（书呆子……）#k#l"/>
+            <string name="3" value="真的吗？你真的愿意帮我？"/>
             <int name="ask" value="1"/>
             <imgdir name="stop">
                 <imgdir name="0">
@@ -32668,36 +32670,36 @@
                 </imgdir>
                 <imgdir name="2">
                     <int name="answer" value="1"/>
-                    <string name="1" value="感谢您的来访~"/>
+                    <string name="1" value="感谢来访~"/>
                 </imgdir>
             </imgdir>
             <imgdir name="yes">
-                <string name="0" value="那会很有帮助的！我去过维多利亚岛周围的任何地方，寻找写在枫树历史书上的鲍勃·斯内尔的踪迹。我和很多人交谈过，但似乎没有人知道这个#b人#k！"/>
-                <string name="1" value="到目前为止，我从这本书中了解到，他最后一次被看到是在地牢深处。我会自己去那里，但对我来说太危险了。你能帮我看看周围有什么吗？非常感谢。"/>
+                <string name="0" value="那可太有帮助了！我已经跑遍了金银岛，寻找冒险岛古书里提到的鲍勃·斯奈尔的踪迹。我和很多人聊过，但似乎没人知道这个 #b人#k！"/>
+                <string name="1" value="到目前为止，我从这本书里了解到的是，他最后一次出现是在林中之城深处。我自己也想去那儿看看，但对我来说太危险了。你能帮我去那儿看看情况吗？非常感谢。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="感谢您的来访~"/>
+                <string name="0" value="感谢来访~"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="欢迎回来！我等你已经很久了。寻找鲍勃的工作进展如何？\r\n\r\n#L0#我把他带来了。#k#l"/>
-            <string name="1" value="什么你是什么意思？传说中的鲍勃在哪里？\r\n\r\n#L0##b他是只蜗牛。事实上，这种特殊的蜗牛。。。（给他看鲍勃的蜗牛壳）"/>
-            <string name="2" value="我明白了。。。你现在在开玩笑，不是吗？你本可以告诉我你一开始就不想帮忙的，你知道的...\r\n\r\n#L0##b不是这样！这就是我第一次发现这只蜗牛是鲍勃时不能告诉你的确切原因。我很难相信，所以我遇到了一群人来证明这就是鲍勃·斯内尔本人！#k#l"/>
-            <string name="3" value="哦，真的吗？所以你是认真地告诉我这是鲍勃。。。等一下。。。对他就是鲍勃！枫树历史书从未说过鲍勃是一个人。我只是从来没有想到他其实是蜗牛，一只绿色的蜗牛。\r\n\r\n#L0##b是的，现在我们正在讨论。#k#l"/>
-            <string name="4" value="但他怎么就在蜗牛壳里不出来了？\r\n\r\n#L0##b哦，那。我不得不把他吓死才把他带到这里...#k#l"/>
-            <string name="5" value="什么多么危险！这只蜗牛看起来可能只是另一只普通的蜗牛，但他就是从《MapleStory》开始就一直伴随着我们的真实存在！\r\n\r\n#L0##b好吧，冷静，冷静。至少，他在这里。#k#l"/>
-            <string name="6" value="我想你应该向他道歉。你应该告诉他你很抱歉。\r\n\r\n#L0##b我真希望我能，但他还没从他的壳里出来。至少我在的时候不会...#k#l"/>
-            <string name="7" value="我认为这是因为他仍然很害怕，害怕你可能会试图杀死他。嗯…我也许能帮你。我在这里见过一个地方，看起来就像枫树岛的一号蜗牛狩猎场。众所周知，他出生在那个地方，如果他在那里，他可能会觉得出来更安全。"/>
+            <string name="0" value="欢迎回来！我等你好久了。寻找鲍勃的情况怎么样了？\r\n\r\n#L0##b我把他带来了。#k#l"/>
+            <string name="1" value="什么？你什么意思？传奇的鲍勃在哪儿？\r\n\r\n#L0##b他是只蜗牛。实际上，就是这只蜗牛……（给他看鲍勃的蜗牛壳）#k#l"/>
+            <string name="2" value="我明白了……你在开玩笑吧？你一开始不想帮忙的话，直接告诉我就好了……\r\n\r\n#L0##b不是这样的！我一开始发现这只蜗牛就是鲍勃的时候没告诉你，就是因为这个原因。我自己都很难相信，所以我还找了很多人来证明这就是鲍勃·斯奈尔本人！#k#l"/>
+            <string name="3" value="哦，真的吗？这么说你是认真的，这就是鲍勃……等一下……没错！他就是鲍勃！冒险岛古书里从没说过鲍勃是个人。我就是没想到他居然是只蜗牛，一只绿色的蜗牛。\r\n\r\n#L0##b没错，这就对了。#k#l"/>
+            <string name="4" value="但他怎么缩在蜗牛壳里不出来呢？\r\n\r\n#L0##b哦，那个啊。我为了把他带到这儿，有点把他吓得够呛……#k#l"/>
+            <string name="5" value="什么？太危险了！这只蜗牛看起来可能只是只普通的蜗牛，但他可是从冒险岛诞生之初就和我们在一起的存在！\r\n\r\n#L0##b好了，冷静点，冷静点。至少，他现在在这儿了。#k#l"/>
+            <string name="6" value="我觉得你应该向他道歉。你应该跟他说对不起。\r\n\r\n#L0##b我也希望能道歉，但他就是不出来。至少在我在的时候不出来……#k#l"/>
+            <string name="7" value="我觉得他是因为还害怕你会杀了他。嗯……我或许能帮你解决这个问题。我在这附近见过一个地方，和彩虹岛的蜗牛打猎场很像。大家都知道他出生在那个地方，如果他在那儿，可能会觉得更安全，就会出来了。"/>
             <int name="ask" value="1"/>
             <imgdir name="yes">
-                <string name="0" value="谢谢你找到鲍勃并照顾他！我现在要带他去一个地方，在那里他可以得到他应得的休息！"/>
+                <string name="0" value="感谢你找到鲍勃并照顾他！我现在要带他去一个他能好好休息的地方了！"/>
             </imgdir>
             <imgdir name="stop">
                 <imgdir name="item">
-                    <string name="0" value="哦，嗨！欢迎回来！有消息吗。。。？不\n叹气\n好吧如果发生任何事情，请随时通知我。"/>
+                    <string name="0" value="哦，你好！欢迎回来！有什么消息吗？……？没有？\n唉……\n好吧。如果有什么情况，记得告诉我。"/>
                 </imgdir>
                 <imgdir name="quest">
-                    <string name="0" value="哦，嗨！欢迎回来！好的，关于鲍勃·斯奈尔，我终于收到了一些好消息。到目前为止，我已经给#b布鲁斯、格温、格伦德尔 #k发了信，他们告诉我，他们在鲍勃活着的时候见过他！他们中的一些人还说，他可能还在外面游荡。你能和他们核实一下吗？为了寻找蜗牛先生的踪迹，我发出了越来越多的信件，我的手都被绑住了！"/>
+                    <string name="0" value="哦，你好！欢迎回来！关于鲍勃·斯奈尔，我终于得到了一些好消息。到目前为止，我已经给 #b布鲁斯、葛温、汉斯、记忆者#k 寄了信，他们告诉我他们以前见过活着的鲍勃！他们有些人还说他可能现在还在外面游荡呢。你能好心去和他们核实一下吗？我实在抽不出身了，因为我还在不断寄信去寻找斯奈尔先生的踪迹呢！"/>
                 </imgdir>
                 <imgdir name="0">
                     <int name="answer" value="1"/>
@@ -32707,7 +32709,7 @@
                 </imgdir>
                 <imgdir name="2">
                     <int name="answer" value="1"/>
-                    <string name="1" value="感谢您的来访~"/>
+                    <string name="1" value="感谢来访~"/>
                 </imgdir>
                 <imgdir name="3">
                     <int name="answer" value="1"/>
@@ -32717,11 +32719,11 @@
                 </imgdir>
                 <imgdir name="5">
                     <int name="answer" value="1"/>
-                    <string name="1" value="感谢您的来访~"/>
+                    <string name="1" value="感谢来访~"/>
                 </imgdir>
                 <imgdir name="6">
                     <int name="answer" value="1"/>
-                    <string name="1" value="感谢您的来访~"/>
+                    <string name="1" value="感谢来访~"/>
                 </imgdir>
             </imgdir>
         </imgdir>
@@ -41265,68 +41267,68 @@
     </imgdir>
     <imgdir name="8072">
         <imgdir name="0">
-            <string name="0" value="哦~ !这简直太完美了。嘿，陌生人，你能帮我一把吗?"/>
-            <string name="1" value="我很抱歉。我在打扫卫生的时候发现了这个。我能读懂这个，但我不知道这是什么意思…"/>
-            <string name="2" value="(收到了木野河野寄来的一张旧纸。它看起来很模糊，但上面写了些什么。)"/>
-            <string name="3" value="上面写着“K H H L P□”……最后一个字母是空的。那封信一定是什么?？"/>
-            <string name="4" value="(上面清楚地写着“K H E L P”，加上P后面的空白，除此之外，没有任何字母或图画的迹象。)"/>
-            <string name="5" value="我能感觉到那张纸有些不寻常。你能帮我解这个代码吗?"/>
+            <string name="0" value="嗨~陌生人，今天天气很不错呢，你能帮我个小忙吗？"/>
+            <string name="1" value="不好意思，是这样的。我刚才在打扫的时候发现了这个。尽管每个字都认识，但连在一起就看不懂是什么意思……"/>
+            <string name="2" value="从亚希子那里收到了一张旧纸。纸看起来很模糊，但上面写了些东西。（盛产草药的地方）"/>
+            <string name="3" value="（危险的丛林迷宫）"/>
+            <string name="4" value="（怪异的人面木雕）"/>
+            <string name="5" value="我感觉这张纸有些不寻常。你能帮我解开这个密码吗？"/>
             <imgdir name="yes">
-                <string name="0" value="祝你好运。我等你的答复。"/>
+                <string name="0" value="加油，我等着你的好消息。"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="我明白了。我看得出来你是个大忙人。哦…!"/>
+                <string name="0" value="我明白了。看得出来你很忙。唉……！"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="(根据从木野Konoko那里学到的代码，我去了第7-2节，然后……的什么?雕像上好像刻了什么东西。"/>
+            <string name="0" value="（根据从亚希子那看到的密码我去了林中之城，然后……什么情况？雕像上好像刻了些东西。）"/>
             <imgdir name="stop">
                 <imgdir name="npc">
-                    <string name="0" value="你破解代码了吗?我将等待好消息……"/>
+                    <string name="0" value="你解开密码了吗？我等着听好消息呢……"/>
                 </imgdir>
             </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="8073">
         <imgdir name="0">
-            <string name="0" value="(雕像上刻着什么。它看起来像一个句子。我应该试着读读这个…)"/>
+            <string name="0" value="（雕像上刻了些东西。看起来像是一句话。我应该试着读一读……）"/>
             <imgdir name="yes">
-                <string name="0" value="我是你的救世主。\n从千百万种可能中被选中，从那时起，我就一直默默地陪伴着你。 \n取我健壮的身躯，把你的印记刻在我的胸前。如果你站着不动，对着我吹。人们需要你，聚集在我面前，他们只能祈祷……\n\n我是谁?"/>
-                <string name="1" value="(这…第二法典是什么?这是什么意思?？这之后我该去哪里?)"/>
+                <string name="0" value="我作为你的救世主而来。\n从无数可能性中被选中，\n从那以后就一直默默地陪伴着你。\n取我健壮的身躯，在我的胸膛上刻下你的印记。\n 如果你静止不动时对着我吹气。\n 人们需要你，会聚集在我面前，然后只能祈祷……\n\n我是谁？"/>
+                <string name="1" value="（这……是第二个密码？这是什么意思……？之后我该去哪里呢？）"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="(嗯…我还不该读这篇文章吗?)"/>
+                <string name="0" value="（嗯……我现在是不是不该读这个？）"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="(根据代码，我发现自己站在雪谷中央的一个小坟墓前。如果我破译的代码是正确的，这里应该有东西…)"/>
+            <string name="0" value="（根据密码，我发现自己站在雪谷中央的一座小坟墓前。如果我密码破解正确的话，这里应该有什么东西……）"/>
             <imgdir name="stop">
                 <imgdir name="npc">
-                    <string name="0" value="(第二法典的含义是什么?)"/>
+                    <string name="0" value="（第二个密码是什么意思？）"/>
                 </imgdir>
             </imgdir>
         </imgdir>
     </imgdir>
     <imgdir name="8074">
         <imgdir name="0">
-            <string name="0" value="(在积雪覆盖的群山中间，有一个没有人注意到的小坟墓。)"/>
+            <string name="0" value="（在白雪覆盖的群山之中，有一座无人注意的小坟墓。）"/>
             <imgdir name="yes">
-                <string name="0" value="(墓碑上刻着一些东西，但由于多年的风化，几乎无法辨认。)"/>
-                <string name="1" value="(这个代码似乎暗示着被安葬在这里的人的存在，但是……现在甚至不可能找出他到底是谁。)"/>
-                <string name="2" value="(首先，我要回到木野子神社，让木野子谈谈这件事。)"/>
+                <string name="0" value="（墓碑上刻了些东西，但由于多年的风化，几乎看不清了。）"/>
+                <string name="1" value="（这个密码似乎暗示着长眠于此的人的存在，但是……现在甚至都不可能确切知道那个人是谁了。）"/>
+                <string name="2" value="（首先，我得回到蘑菇神社，把这件事告诉亚希子。）"/>
             </imgdir>
             <imgdir name="no">
-                <string name="0" value="(这里有一座白雪覆盖的小坟墓，几乎看不出来。)"/>
+                <string name="0" value="（这里有一座被雪覆盖的小坟墓，几乎难以察觉。）"/>
             </imgdir>
         </imgdir>
         <imgdir name="1">
-            <string name="0" value="哦,你回来了!代码怎么了?"/>
-            <string name="1" value="(我把暗号的含义告诉了木野子)"/>
-            <string name="2" value="我明白了…我看到!很难理解，在积雪覆盖的山中央有一个小坟墓。 \n很难找出代码的意思，但我肯定它有什么意思…"/>
-            <string name="3" value="但是你知道，最终解开这些令人费解的代码感觉很好，因为它已经困扰我很长时间了。干得好。谢谢。希望能再见到你。"/>
+            <string name="0" value="哦，你回来了！密码破解得怎么样了？"/>
+            <string name="1" value="（我把密码的含义告诉了亚希子。）"/>
+            <string name="2" value="我明白了……我明白了！很难想象，在积雪覆盖的山脉中央有一座小坟墓。\n很难弄清楚密码的含义，但我肯定它有意义……"/>
+            <string name="3" value="不过你知道吗，终于解开这个令人费解的密码感觉真好，因为它困扰我很久了。干得不错。谢谢。希望以后还能见到你。"/>
             <imgdir name="stop">
                 <imgdir name="npc">
-                    <string name="0" value="(我发现了一个小坟墓。我需要回到木之子神社，让木之子知道发生的事情。)"/>
+                    <string name="0" value="（我发现了一座小坟墓。我得回蘑菇神社，把事情的经过告诉亚希子。）"/>
                 </imgdir>
             </imgdir>
         </imgdir>

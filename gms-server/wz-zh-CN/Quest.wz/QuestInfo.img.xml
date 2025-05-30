@@ -13055,27 +13055,23 @@
         <int name="area" value="37" />
     </imgdir>
     <imgdir name="3242">
-        <string name="name" value="玩具城的使命1" />
-        <string name="parent" value="玩具城的使命" />
-        <int name="order" value="1" />
-        <string name="0" value="#m220000000#的卫兵#p2041004#委托的任务，寻找 #p2041004#" />
-        <string name="1"
-            value="找到#m220000000#的卫兵#p2041004#，他委托我代表 #m220000000#到一个叫 #m240000000#的地方，如果我愿意成为玩具城#m220000000#的使者到 #m240000000#，他可以得到10只玩具白鼠、10只玩具黑鼠和10只水老鼠。\n\n玩具白鼠#r#a32421##k\n玩具黑鼠#r#a32422##k\n水老鼠#r#a32423##k" />
-        <string name="2"
-            value="接受#m220000000#的卫兵 #p2041004#的委托，作为#m220000000#的使者到 #m240000000#。#p2041004#给了我#m220000000#提供的 #b#t4161013##k.。 他要我传递什么物品呢？" />
-        <int name="area" value="37" />
-    </imgdir>
-    <imgdir name="3243">
-        <string name="name" value="玩具城的使命2" />
-        <string name="parent" value="玩具城的使命" />
-        <int name="order" value="2" />
-        <string name="0"
-            value="接受#m220000000#的卫兵 #p2041004#的委托，作为#m220000000#的使者到 #m240000000#。#p2041004#给了我#m220000000#提供的 #b#t4161013##k.。 他要我传递什么物品呢？" />
-        <string name="1"
-            value="接受#m220000000#的卫兵的 #p2041004#的委托，作为#m220000000#的使者到 #m240000000#。#m240000000#是一个位于神秘岛塔林中央的村庄，将 #m220000000#给予的礼物转交给村长塔塔曼，并将 #p2041004#给予的物品转交给 #m240000000#的 #p2081000#。\n\n#t4031347#  #b#c4031347##k / 1" />
-        <string name="2" value="将#m220000000#的礼物转交给村长塔塔曼，作为报酬，塔塔曼会给我往返魔法森林与神木村的魔法种子。" />
-        <int name="area" value="37" />
-    </imgdir>
+        <string name="name" value="玩具城信使 1"/>
+        <string name="parent" value="玩具城信使"/>
+        <int name="order" value="1"/>
+        <string name="0" value="#p2041004#，#m220000000# 的守卫，似乎有事情要找我。我应该去拜访一下 #p2041004#。"/>
+        <string name="1" value="我前往 #m220000000# 拜访 #p2041004#，也就是 #m220000000# 的守卫，因为他有事找我。#p2041004# 要求我作为 #m220000000# 的代表，前往一个名为 #m240000000# 的地方。如果我真的有兴趣作为 #m220000000# 的信使前往那里，那么我得先消灭 #r10 只玩具白鼠、10 只玩具黑鼠和 10 只水老鼠#k。\n\n玩具白鼠 #r#a32421##k\n玩具黑鼠 #r#a32422##k\n水老鼠 #r#a32423##k"/>
+        <string name="2" value="在 #m220000000# 的守卫 #p2041004# 的建议下，我作为 #m220000000# 的信使前往 #m240000000#。#p2041004# 慷慨地给了我 #b#t4161013##k。不过，我应该给他什么物品呢？"/>
+        <int name="area" value="37"/>
+      </imgdir>
+      <imgdir name="3243">
+        <string name="name" value="玩具城信使 2"/>
+        <string name="parent" value="玩具城信使"/>
+        <int name="order" value="2"/>
+        <string name="0" value="在 #m220000000# 的守卫 #p2041004# 的建议下，我作为 #m220000000# 的信使前往 #m240000000#。#p2041004# 慷慨地给了我 #t神木村地图册# 以及一张由 #m220000000# 提供的机票。不过，我应该给他什么物品呢？"/>
+        <string name="1" value="我收到了 #m220000000# 的守卫 #p2041004# 的请求，让我作为 #m220000000# 的信使前往一个名为 #m240000000# 的地方。#m240000000# 是位于神秘岛某处米纳尔森林中的一个村庄，我被告知要将一件来自 #m220000000# 的物品交给村庄的村长塔塔曼。我最好把 #p2041004# 给我的物品交给 #m240000000# 的 #p2081000#。\n\n#t4031347#  #b#c4031347##k / 1"/>
+        <string name="2" value="我成功地作为玩具城的信使，将一份来自 #m220000000# 的礼物交给了神木村的村长塔塔曼。作为感谢，塔塔曼给了我一颗魔法种子，它能让我在魔法密林和神木村之间传送。"/>
+        <int name="area" value="37"/>
+      </imgdir>
     <imgdir name="3244">
         <string name="name" value="玩具工人的不满" />
         <string name="0" value="#p2040013#每天都吃不到午饭，只能饿着肚子工作…" />
@@ -18059,13 +18055,13 @@
         <int name="area" value="30" />
     </imgdir>
     <imgdir name="4928">
-        <string name="name" value="Jay&apos;s Curiosity" />
+        <string name="name" value="亚华的好奇心" />
         <string name="0"
-            value="It&apos;s weird... When I walked passed #bJay from Henesys#k the other day, he didn&apos;t answer my greetings and didn&apos;t even notice me there. It looked like he was working on some kind of riddle by himself. Let&apos;s find out what Jay is up to these days." />
+            value="真奇怪……前几天我路过#b射手村的亚华#k时，他没回应我的问候，甚至都没注意到我在那儿。看起来他好像在独自研究某个谜题。咱们来看看亚华最近在忙什么吧。" />
         <string name="1"
-            value="I don&apos;t believe I actually offered to help him on finding a historical figure just out of curiosity! I guess it won&apos;t hurt to check out the dungeon as #p1012109# requested... But I really doubt I would find anything there. It&apos;s a legend, myth, a fairy tale." />
+            value="我真不敢相信，我居然仅仅出于好奇就主动提出帮他寻找一位历史人物！我想按照#p1012109#的要求去探索一下地牢也没什么坏处……但我真怀疑在那儿能找到什么。那不过是个传说、神话，一个童话故事罢了。" />
         <string name="2"
-            value="I found Bob from #m105090300# and talked with bunch of people about him. He is famous around this world." />
+            value="我找到了来自#m105090300#的鲍勃，还和很多人聊起过他。他在这个世界很有名。" />
         <int name="area" value="30" />
     </imgdir>
     <imgdir name="4929">
@@ -20698,7 +20694,7 @@
         <string name="name" value="碰碰战争" />
         <string name="0" value="来自昭和村的嘉美似乎遇到了麻烦。趁着还有时间，我去看看吧。" />
         <string name="1"
-            value="我不知道碰碰战争到底是怎么回事，但为了削铅笔，我需要收集 #b30 #t04000110#s#k。我得赶快把它们收集起来交给嘉美。\n#t04000110#  #b#c04000110##k/30" />
+            value="我不知道碰碰战争到底是怎么回事，但为了削铅笔，我需要收集 #b30个 #t04000110##k。我得赶快把它们收集起来交给嘉美。\n#t04000110#  #b#c04000110##k/30" />
         <string name="2" value="对了，那把塑料刀真的能削铅笔吗？算了，嘉美声称他明天会在碰碰战争中获胜，所以……" />
         <int name="area" value="40" />
     </imgdir>
@@ -20932,7 +20928,7 @@
         <string name="name" value="美代子与她的泰迪熊" />
         <string name="0" value="我应该去和 #b#p9120011##k 这个在警察局前面哭泣的人谈谈。" />
         <string name="1"
-            value="#b#p9120011##k 请我收集 #b50 #t04000106#s#k，以便她可以修理她的玩偶。\n\n#t04000106# #b#c04000106#/50#k" />
+            value="#b#p9120011##k 请我收集 #b50个 #t04000106##k，以便她可以修理她的玩偶。\n\n#t04000106# #b#c04000106#/50#k" />
         <string name="2" value="我给了 #b#p9120011##k #b50 #t04000106#s#k。她似乎很高兴收到这些。希望这对她修理玩偶足够了。" />
         <int name="area" value="40" />
     </imgdir>
@@ -21041,40 +21037,31 @@
         <int name="area" value="40" />
     </imgdir>
     <imgdir name="8072">
-        <string name="name" value="古老密码" />
-        <string name="parent" value="费解的密码" />
-        <int name="order" value="1" />
-        <string name="0"
-            value="蘑菇神社的亚希子似乎发现了什么。我应该去查看一下。" />
-        <string name="1"
-            value="亚希子问我是否能解开这个费解的密码。这个密码是什么意思呢……？" />
-        <string name="2"
-            value=" 我成功解开了亚希子给我的密码——答案就在林中之城。" />
-        <int name="area" value="40" />
+        <string name="name" value="一份旧密码"/>
+        <string name="parent" value="费解的密码"/>
+        <int name="order" value="1"/>
+        <string name="0" value="蘑菇神社的亚希子貌似发现了什么。我应该去看看。"/>
+        <string name="1" value="亚希子问我是否能解开这个费解的密码。这个密码究竟是什么意思呢……？"/>
+        <string name="2" value=" 我成功解开了亚希子给我的密码——答案就在林中之城。"/>
+        <int name="area" value="48"/>
     </imgdir>
     <imgdir name="8073">
-        <string name="name" value="2nd Code" />
-        <string name="parent" value="A Puzzling Code" />
-        <int name="order" value="2" />
-        <string name="0"
-            value="After solving the code, I found out there&apos;s a clue in Sleepywood! I better go there immediately." />
-        <string name="1"
-            value="Based on the bizarre-looking statue in Sleepywood, I was enable to find another code. What would this code imply?" />
-        <string name="2"
-            value="After solving the code written on the bizarre-looking statue, I headed over to a small grave." />
-        <int name="area" value="30" />
+        <string name="name" value="第二份密码"/>
+        <string name="parent" value="费解的密码"/>
+        <int name="order" value="2"/>
+        <string name="0" value="解开密码后，我发现林中之城里有一条线索！我最好马上过去。"/>
+        <string name="1" value="根据林中之城里那座外形奇特的雕像，我找到了另一份密码。这份密码又意味着什么呢？"/>
+        <string name="2" value="解开刻在那座外形奇特雕像上的密码后，我前往了一座小坟墓。"/>
+        <int name="area" value="30"/>
     </imgdir>
     <imgdir name="8074">
-        <string name="name" value="The Meaning of the Code" />
-        <string name="parent" value="A Puzzling Code" />
-        <int name="order" value="3" />
-        <string name="0"
-            value="Should I head over to the small grave that serves as the answer to the code written on the bizarre-looking statue? I should--knowing is better than not knowing." />
-        <string name="1"
-            value="Solving the code took me to this small grave. I better let Kinokonoko knowof this." />
-        <string name="2"
-            value="I told Kinokonoko everything I knew in regards to this puzzling code." />
-        <int name="area" value="30" />
+        <string name="name" value="密码的含义"/>
+        <string name="parent" value="费解的密码"/>
+        <int name="order" value="3"/>
+        <string name="0" value="我应该前往那座作为刻在外形奇特雕像上密码答案的小坟墓吗？我应该去——知道总比不知道好。"/>
+        <string name="1" value="解开密码后我来到了这座小坟墓。我最好把这件事告诉亚希子。"/>
+        <string name="2" value="我把我所知道的关于这个费解的密码的一切都告诉了亚希子。"/>
+        <int name="area" value="30"/>
     </imgdir>
     <imgdir name="8076">
         <string name="name" value="委员会的挑战" />
