@@ -8499,8 +8499,9 @@
     </imgdir>
     <imgdir name="9330015">
         <string name="name" value="屈原"/>
-        <string name="n0" value="我叫屈原。别人叫我爱国之士。"/>
-        <string name="n1" value="我叫屈原。别人叫我爱国之士。"/>
+        <string name="n0" value="路漫漫其修远兮，吾将上下而求索！"/>
+        <string name="n1" value="冒险岛世界的朋友们，端午节快乐！"/>
+        <string name="n2" value="你今天吃粽子了吗？"/>
     </imgdir>
     <imgdir name="9330016">
         <string name="name" value="요리사 아종"/>

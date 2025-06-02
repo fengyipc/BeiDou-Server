@@ -1360,7 +1360,7 @@
     </imgdir>
     <imgdir name="3010078">
         <string name="name" value="大熊猫椅子"/>
-        <string name="desc" value="依偎在国宝大熊猫的怀抱，很暖和很开心。"/>
+        <string name="desc" value="依偎在国宝大熊猫的怀抱，\n很暖和很开心。"/>
     </imgdir>
     <imgdir name="3010079">
         <string name="name" value="Fuzzy Kitty Chair"/>
