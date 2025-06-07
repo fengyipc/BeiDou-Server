@@ -40852,7 +40852,6 @@
         </imgdir>
         <imgdir name="1">
             <int name="npc" value="2111000"/>
-            <string name="endscript" value="q3311e"/>
         </imgdir>
     </imgdir>
     <imgdir name="3312">

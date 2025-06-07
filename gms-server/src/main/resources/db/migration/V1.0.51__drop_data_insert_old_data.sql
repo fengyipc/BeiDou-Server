@@ -33965,7 +33965,7 @@ FROM drop_data
 WHERE dropperid = 9500100;
 DELETE
 FROM drop_data
-where dropperid >= 9300141
+where dropperid > 9300141
   AND dropperid <= 9300154
   AND (itemid < 4001130 OR itemid >= 4001136);
 
