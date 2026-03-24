@@ -58,7 +58,7 @@ function action(mode, type, selection) {
             cm.dispose();
         } else {
             if (cm.getMeso() < 1500 && selection == 0) {
-                cm.sendNext("我觉得你缺少冒险币。有很多方法可以赚钱，比如...卖掉你的盔甲...打败怪物...做任务...你知道我在说什么。");
+                cm.sendNext("我觉得你缺少金币。有很多方法可以赚钱，比如...卖掉你的盔甲...打败怪物...做任务...你知道我在说什么。");
             } else if (!cm.haveItem(4031134) && selection != 0) {
                 cm.sendNext("嗯，你的 #bVIP通行证#k 到黄金海滩到底在哪里？你确定你有吗？请再检查一遍。");
             } else {

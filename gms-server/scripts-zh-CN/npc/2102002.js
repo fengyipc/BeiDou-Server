@@ -45,7 +45,7 @@ function action(mode, type, selection) {
                 cm.gainItem(4031045, 1);
                 cm.gainMeso(-cost);
             } else {
-                cm.sendOk("你确定你有 #b" + cost + " 冒险币#k 吗？如果是的话，请检查你的杂项物品栏，看看是否已经满了。");
+                cm.sendOk("你确定你有 #b" + cost + " 金币#k 吗？如果是的话，请检查你的杂项物品栏，看看是否已经满了。");
             }
             cm.dispose();
         }

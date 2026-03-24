@@ -61,7 +61,7 @@ function action(mode, type, selection) {
         if (spawnPnpc) {
             if (mode > 0) {
                 if (cm.getMeso() < spawnPnpcFee) {
-                    cm.sendOk("抱歉，您没有足够的冒险币购买在名人堂上的位置。");
+                    cm.sendOk("抱歉，您没有足够的金币购买在名人堂上的位置。");
                     cm.dispose();
                     return;
                 }

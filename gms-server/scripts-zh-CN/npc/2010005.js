@@ -37,7 +37,7 @@ var check;
 var status = 0;
 
 function start() {
-    cm.sendSimple("你听说过那个可以欣赏到壮观海景的海滩吗，它叫做 #b#m110000000##k，离 #m" + cm.getPlayer().getMapId() + "# 有一点距离。我可以带你去那里，只需要 #b" + pay + " 冒险币#k，或者如果你带了 #b#t" + ticket + "##k，那就可以免费进去。\r\n\r\n#L0##b我付 " + pay + " 冒险币.#k#l\r\n#L1##b我有 #t" + ticket + "##k#l\r\n#L2##b#t" + ticket + "# 是什么？#k#l");
+    cm.sendSimple("你听说过那个可以欣赏到壮观海景的海滩吗，它叫做 #b#m110000000##k，离 #m" + cm.getPlayer().getMapId() + "# 有一点距离。我可以带你去那里，只需要 #b" + pay + " 金币#k，或者如果你带了 #b#t" + ticket + "##k，那就可以免费进去。\r\n\r\n#L0##b我付 " + pay + " 金币.#k#l\r\n#L1##b我有 #t" + ticket + "##k#l\r\n#L2##b#t" + ticket + "# 是什么？#k#l");
 }
 
 function action(mode, type, selection) {
@@ -70,7 +70,7 @@ function action(mode, type, selection) {
         } else if (status == 2) {
             if (check == 0) {
                 if (cm.getMeso() < pay) {
-                    cm.sendOk("我觉得你缺少冒险币。你知道，有很多方法可以赚钱，比如……卖掉你的盔甲……打败怪物……做任务……你知道我在说什么。");
+                    cm.sendOk("我觉得你缺少金币。你知道，有很多方法可以赚钱，比如……卖掉你的盔甲……打败怪物……做任务……你知道我在说什么。");
                     cm.dispose();
                 } else {
                     cm.gainMeso(-pay);

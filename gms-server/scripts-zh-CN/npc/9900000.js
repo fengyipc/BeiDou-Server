@@ -91,7 +91,7 @@ function action(mode, type, selection) {
                 cm.sendStyle("Pick one?", colors);
             }
         } else {
-            cm.sendNext("你的冒险币不够。很抱歉，没有" + price + "个冒险币，你将无法改变你的外观！");
+            cm.sendNext("你的金币不够。很抱歉，没有" + price + "个金币，你将无法改变你的外观！");
             cm.dispose();
         }
 

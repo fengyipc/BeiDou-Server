@@ -9,7 +9,7 @@
  ---------------------------------------------------------------------------------------------------
  **/
 
-var menu = new Array("桃花仙境", "天空之城", "灵药幻境", "桃花仙境");
+var menu = new Array("武陵桃园", "天空之城", "百草堂", "武陵桃园");
 var cost = new Array(1500, 1500, 1500, 1500);
 var hak;
 var slct;
@@ -47,9 +47,9 @@ function action(mode, type, selection) {
                 }
             }
             if (cm.getPlayer().getMapId() == 200000141 || cm.getPlayer().getMapId() == 251000000) {
-                btwmsg = "#b天空之城#k 到 #b桃花仙境#k";
+                btwmsg = "#b天空之城#k 到 #b武陵桃园#k";
             } else if (cm.getPlayer().getMapId() == 250000100) {
-                btwmsg = "#b桃花仙境#k 到 #b天空之城#k";
+                btwmsg = "#b武陵桃园#k 到 #b天空之城#k";
             }
             if (cm.getPlayer().getMapId() == 251000000) {
                 cm.sendYesNo("你好。旅行进行得怎么样？我一直在像你这样的旅行者运送到#b" + menu[3] + "#k，而且……你有兴趣吗？这种方式没有船稳定，所以你得紧紧抓住，但我可以比船快得多地到达那里。只要你支付#b" + cost[3] + "金币#k，我就会带你去那里。");
@@ -65,7 +65,7 @@ function action(mode, type, selection) {
         } else if (status == 2) {
             if (slct == 2) {
                 if (cm.getMeso() < cost[2]) {
-                    cm.sendNext("你确定你有足够的冒险币吗？");
+                    cm.sendNext("你确定你有足够的金币吗？");
                     cm.dispose();
                 } else {
                     cm.gainMeso(-cost[2]);
@@ -74,7 +74,7 @@ function action(mode, type, selection) {
                 }
             } else {
                 if (cm.getMeso() < cost[slct]) {
-                    cm.sendNext("你确定你有足够的冒险币吗？");
+                    cm.sendNext("你确定你有足够的金币吗？");
                     cm.dispose();
                 } else {
                     if (cm.getPlayer().getMapId() == 251000000) {

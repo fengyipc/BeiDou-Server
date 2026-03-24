@@ -21,7 +21,7 @@ function action(mode, type, selection) {
                 cm.gainMeso(-cost);
                 cm.dispose();
             } else {
-                cm.sendOk("你确定你有 #b" + cost + " 冒险币#k 吗？如果是的话，请检查你的其它物品栏，看看是否已经满了。");
+                cm.sendOk("你确定你有 #b" + cost + " 金币#k 吗？如果是的话，请检查你的其它物品栏，看看是否已经满了。");
                 cm.dispose();
             }
         }

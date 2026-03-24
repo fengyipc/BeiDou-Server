@@ -39,7 +39,7 @@ function action(mode, type, selection) {
 
         } else if (status == 1) {
             if (cm.getMeso() < 1000) {
-                cm.sendNext("嗯... 你确定你有 #b1000#k 冒险币吗？检查一下你的背包，确保你有足够的冒险币。你必须支付费用，否则我不能让你上船...");
+                cm.sendNext("嗯... 你确定你有 #b1000#k 金币吗？检查一下你的背包，确保你有足够的金币。你必须支付费用，否则我不能让你上船...");
                 cm.dispose();
             } else {
                 cm.gainMeso(-1000);

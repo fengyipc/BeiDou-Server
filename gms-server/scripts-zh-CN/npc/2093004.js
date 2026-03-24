@@ -24,7 +24,7 @@ var menu;
 var cost = 10000;
 
 function start() {
-    cm.sendYesNo("你现在要移动到 #b#m230000000##k 吗？价格是 #b" + cost + " 冒险币#k。");
+    cm.sendYesNo("你现在要移动到 #b#m230000000##k 吗？价格是 #b" + cost + " 金币#k。");
 }
 
 function action(mode, type, selection) {

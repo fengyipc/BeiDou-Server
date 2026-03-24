@@ -71,7 +71,7 @@ function action(mode, type, selection) {
                         state = 0;
                         cm.sendNext("所以你想要制作订婚戒指，是吗？好的，当你从#b#p9201003##k那里得到#rblessings#k后，我可以提供一个。");
                     } else {
-                        cm.sendOk("在尝试制作订婚戒指之前，先从#b#p9201003#k那里得到祝福。他们一定在你家等着你，就在#r射手村狩猎场#k的那边。");
+                        cm.sendOk("在尝试制作订婚戒指之前，先从#b#p9201003##k那里得到祝福。他们一定在你家等着你，就在#r射手村训练场#k的那边。");
                         cm.dispose();
                     }
                 } else {

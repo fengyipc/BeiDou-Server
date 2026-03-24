@@ -54,7 +54,7 @@ function action(mode, type, selection) {
                 }
 
                 if (cm.getMeso() < mesos) {
-                    cm.sendNext("你的冒险币不够。很抱歉，但没有足够的冒险币，你将无法搭乘出租车。");
+                    cm.sendNext("你的金币不够。很抱歉，但没有足够的金币，你将无法搭乘出租车。");
                     cm.dispose();
                     return;
                 }

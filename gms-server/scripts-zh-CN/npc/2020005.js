@@ -78,7 +78,7 @@ function action(mode, type, selection) {
             cm.sendOk("如果你不打算买任何东西，那我也没有东西可以卖给你。");
             cm.dispose();
         }
-        cm.sendYesNo("你确定要购买 #r" + amount + " #t" + item[selected] + "(s)##k 吗？每个 #t" + item[selected] + "# 的价格是 " + cost[selected] + " 冒险币，总共需要支付 #r" + totalcost + " 冒险币#k。");
+        cm.sendYesNo("你确定要购买 #r" + amount + " #t" + item[selected] + "(s)##k 吗？每个 #t" + item[selected] + "# 的价格是 " + cost[selected] + " 金币，总共需要支付 #r" + totalcost + " 金币#k。");
     } else if (status == 3) {
         if (cm.getMeso() < totalcost || !cm.canHold(item[selected])) {
             cm.sendNext("你确定你有足够的金币吗？请检查一下你的杂项或使用的物品栏是否已满，或者你至少有 #r" + totalcost + "#k 金币。");
