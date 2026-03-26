@@ -1,5 +1,7 @@
 # 开发指南
 
+> **重要**: 本项目采用 **Spec-Driven Development** 工作流。所有开发任务应遵循 `spec/` 目录下的规范流程：Constitution → Spec → Plan → Tasks → Implement → Review。详见 [Spec 规范环境](../spec/README.md)。
+
 ## 1. 开发规范
 
 ### 1.1 代码规范

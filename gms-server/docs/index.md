@@ -34,6 +34,14 @@
 - [API 文档](./19-api-documentation.md)
 - [测试指南](./20-testing-guide.md)
 
+### 5.1 Spec 规范环境
+- [Spec 工作流](../spec/README.md)
+- [项目原则](../spec/00-constitution/constitution.md)
+- [Spec 模板](../spec/templates/spec-template.md)
+- [Plan 模板](../spec/templates/plan-template.md)
+- [Tasks 模板](../spec/templates/tasks-template.md)
+- [Review 模板](../spec/templates/review-template.md)
+
 ### 6. 运维部署
 - [部署方案](./21-deployment.md)
 - [监控告警](./22-monitoring.md)
