@@ -54,8 +54,7 @@
 
 ### 8. 扩展开发
 - [WZ 数据解析](./27-wz-data-parsing.md)
-- [自定义脚本](./28-custom-scripts.md)
-- [插件开发](./29-plugin-development.md)
+- [脚本开发指南](./28-scripting-development.md)
 
 ### 9. 性能优化
 - [性能分析](./30-performance-analysis.md)
