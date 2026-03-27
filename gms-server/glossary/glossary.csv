@@ -13818,3 +13818,229 @@ Skill.img,勇士的意志,Chair Mastery,skill,name,String.wz\Skill.img.xml
 21121000,一定时间内把组队成员的所有属性点提高\n一定的百分比。,Temporarily boosts the stats of everyone in the party.,skill,desc,String.wz\Skill.img.xml
 21121003,战神的意志,Freeze Standing,skill,name,String.wz\Skill.img.xml
 21121008,可以摆脱特定的异常状态。等级越高，冷却时间越短。,"Allows one to snap out of abnormal conditions. The higher the character&apos;s level, the less the character has to wait.",skill,desc,String.wz\Skill.img.xml
+ToolTipHelp.img,跳跃力,Check Points,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Mapobject,用饼干做成的Studio,Tera Forest,tooltip,Title,String.wz\ToolTipHelp.img.xml
+10000,传送点 移动(↑),Use Portal (Up),tooltip,Title,String.wz\ToolTipHelp.img.xml
+30000,蜗牛狩猎场,Snail Hunting Ground,tooltip,Title,String.wz\ToolTipHelp.img.xml
+1000000,向南港,Toward Southperry,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+1010000,修炼场,Adventurer Training Center,tooltip,Title,String.wz\ToolTipHelp.img.xml
+100000000,迷宫通道（通向林中之城的方向）,Dungeon (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+6,手技,Ereve Studio,tooltip,Title,String.wz\ToolTipHelp.img.xml
+7,移动速度,Cookie Studio,tooltip,Title,String.wz\ToolTipHelp.img.xml
+101000300,售票处,Ticket Booth,tooltip,Title,String.wz\ToolTipHelp.img.xml
+102020000,                     危险！,             DANGER!             ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+103000000,世界旅游向导处,World Tour Info Desk,tooltip,Title,String.wz\ToolTipHelp.img.xml
+103030000,三叉路 (射手村/南港方向),Three-Way Road,tooltip,Title,String.wz\ToolTipHelp.img.xml
+104010000,危险地区,Danger Zone,tooltip,Title,String.wz\ToolTipHelp.img.xml
+105040000,黑森林打猎场1,Deep Forest Hunting Ground I,tooltip,Title,String.wz\ToolTipHelp.img.xml
+200000120,码头&lt;开往玩具城&gt; ,Orbis Station - Waiting Room,tooltip,Title,String.wz\ToolTipHelp.img.xml
+200082100,通天塔地下,Orbis Tower - Basement,tooltip,Title,String.wz\ToolTipHelp.img.xml
+211000000,冰封雪域山脉,El Nath Mountain Range,tooltip,Title,String.wz\ToolTipHelp.img.xml
+15,阿里安特升降场,"Tree Dungeon, Forest Up North VIII",tooltip,Title,String.wz\ToolTipHelp.img.xml
+17,赫丽奥斯塔,Helios Tower,tooltip,Title,String.wz\ToolTipHelp.img.xml
+220000300,前往玩具塔的路,On the Way to Eos Tower,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+220000400,民宅,Townstreet,tooltip,Title,String.wz\ToolTipHelp.img.xml
+220050300,时间消失之路,Forgotten Path of Time,tooltip,Title,String.wz\ToolTipHelp.img.xml
+221000200,防具补给站,Armor Provider,tooltip,Title,String.wz\ToolTipHelp.img.xml
+221000400,玩具塔,Eos Tower,tooltip,Title,String.wz\ToolTipHelp.img.xml
+221030000,库尔兰草原Ⅰ,Kulan  Field I,tooltip,Title,String.wz\ToolTipHelp.img.xml
+230000001,水下世界商店街,Aquarium Department Store,tooltip,Title,String.wz\ToolTipHelp.img.xml
+230000002,仓库,Storage,tooltip,Title,String.wz\ToolTipHelp.img.xml
+230000003,水世界动物园,Aquarium Zoo,tooltip,Title,String.wz\ToolTipHelp.img.xml
+230010000,通天塔,Orbis Tower,tooltip,Title,String.wz\ToolTipHelp.img.xml
+240030100,秘密森林,Disappeared Forest,tooltip,Title,String.wz\ToolTipHelp.img.xml
+500020100,小丛林,Small Jungle,tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030103,遗迹发掘地Ⅱ(金银岛方向),Excavation Site,tooltip,Title,String.wz\ToolTipHelp.img.xml
+540000300,郊区1,Surburban Area 1,tooltip,Title,String.wz\ToolTipHelp.img.xml
+541000300,小型地牢：船只的残留记忆,Ghost Ship 1,tooltip,Title,String.wz\ToolTipHelp.img.xml
+101040001,魔精灵石板,Stone plate of Boogi,tooltip,Title,String.wz\ToolTipHelp.img.xml
+104030000,射手村西部树林 (南港/废气都市方向),Henesys Western forest,tooltip,Title,String.wz\ToolTipHelp.img.xml
+211041100,死亡之林 II,Dead Tree&apos;s Forest II,tooltip,Title,String.wz\ToolTipHelp.img.xml
+211041200,利马窦出没地区! 无法从利马窦那边逃走的话就把僵尸的牙齿给到死者的墓地上.利马窦拥有的力的源泉就在那下面…,"Lich area!! If you cannot escape from lich, dedicate teeth of zombie to grave!! Resource of lich&apos;s power is underneath.....grave..",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+211041300,小心利玛窦!,lich -alert-,tooltip,Title,String.wz\ToolTipHelp.img.xml
+222010102,※无法进去.,※Prohibited to proceed ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+260000200,阿里安特市场,Ariant Market,tooltip,Title,String.wz\ToolTipHelp.img.xml
+260020000,骆驼TAXI,Camel Taxi,tooltip,Title,String.wz\ToolTipHelp.img.xml
+260020700,阿里安特 1500冒险币,Ariant 1500 Mesos,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+120000100,凯琳的航海室,Kyrin&apos;s Control Room,tooltip,Title,String.wz\ToolTipHelp.img.xml
+211010000,猎人的祭坛,Hunter&apos;s Altar,tooltip,Title,String.wz\ToolTipHelp.img.xml
+211020000,冰峰雪域的猎人制作的小祭坛。是为了消去雪山魔女的怒气而制作的。据说把雪山打猎获得的战利品交给魔女，就可以消去她的怒气。,"A small altar setup by the hunters in El Nath. This was made to appease the Snow Witch when she appears enraged. If a dropped item from the snowfield is used as the sacrifice, then the witch will be appeased.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+229010000,返回的路,On the Way Back,tooltip,Title,String.wz\ToolTipHelp.img.xml
+261020200,毒喷射器,Poison Spray,tooltip,Title,String.wz\ToolTipHelp.img.xml
+261020400,击退陆陆猫时使用的毒喷射器。卡帕莱特的炼金术士只能在击退陆陆猫时使用。到底是谁偷走了喷射器里的毒啊？！,A poison sprayer used to defeat Rurumo. All alchemists from Alcadno should only use this to eliminate Rurumo. Who keeps taking the poison from the spray bottle?,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+300000000,结界石,Barrier Stone,tooltip,Title,String.wz\ToolTipHelp.img.xml
+300010000,苔藓树丛,Mossy Tree Forest ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+300010200,迷路的探险家请往这边走……,"If you&apos;re a lost adventurer, go this way...",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+300010300,石头山方向,Toward the Boulder Mountain,tooltip,Title,String.wz\ToolTipHelp.img.xml
+300030000,危险地带，禁止探险！,Danger Zone.  Explorations Not Allowed!,tooltip,Title,String.wz\ToolTipHelp.img.xml
+500010000,水上市场,Floating Market,tooltip,Title,String.wz\ToolTipHelp.img.xml
+500010100,青蛙莲花池/水上市场,Frog Pond/Floating Market,tooltip,Title,String.wz\ToolTipHelp.img.xml
+100040105,腐树通道,Dead Tree Path,tooltip,quest00,String.wz\ToolTipHelp.img.xml
+261000000,自由市场,Free Market,tooltip,market0,String.wz\ToolTipHelp.img.xml
+100000002,主题战场：蘑菇城,Theme Dungeon: Mushroom Castle,tooltip,Title,String.wz\ToolTipHelp.img.xml
+100010000,射手村,Henesys,tooltip,Title,String.wz\ToolTipHelp.img.xml
+100020000,迷你地图：射手村猪猪地盘,Mini Dungeon: Henesys Pig Farm,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+100040000,射手村东部树林（射手村/诺特勒斯方向）,The Forest East of Henesys (Towards Henesys/Nautilus),tooltip,Title,String.wz\ToolTipHelp.img.xml
+100040100,魔法密林战斗地图（魔法密林方向）,The Field South of Ellinia (Towards Ellinia),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101010100,魔法密林北部(勇士部落方向）,The Forest North of Ellinia (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101010103,&lt;警告&gt;,             &lt;Warning&gt;             ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030000,魔法密林北部（魔法密林方向）,The Forest North of Ellinia (Towards Ellinia),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030101,岩石路3（金银岛方向）,Rocky Road III (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030102,遗迹发掘地3（遗迹发掘队营地方向）,Excavation Site III (Towards Excavation Site),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030200,岩石路3 (魔法密林方向),Rocky Road III (Towards Ellinia),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101030300,岩石路2 (魔法密林方向),Rocky Road II (Towards Ellinia),tooltip,Title,String.wz\ToolTipHelp.img.xml
+101040000,东部岩山1 (魔法密林方向),East Rocky Mountain I (Towards Ellinia),tooltip,Title,String.wz\ToolTipHelp.img.xml
+102030000,西部岩山1 (勇士部落方向),West Rocky Mountain I (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
+102050000,废都北方工地 (勇士部落方向),Construction Site North of Kerning City (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
+103010000,逆恩森林3 (射手村/南港方向),L Forest III (Towards Henesys/Lith Harbor),tooltip,Title,String.wz\ToolTipHelp.img.xml
+103020000,逆恩森林2 (射手村/南港方向),L Forest II (Towards Henesys/Lith Harbor),tooltip,Title,String.wz\ToolTipHelp.img.xml
+103020200,逆恩森林2 (废气都市方向),L Forest II (Towards Kerning City),tooltip,Title,String.wz\ToolTipHelp.img.xml
+104000200,海岸草丛2 (金银岛方向),Thicket Around the Beach II (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
+104000300,海岸草丛3 (金银岛方向),Thicket Around the Beach III (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
+104000400,三叉路 (金银岛方向),3-Way Road-Split (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
+104020000,射手村西部小山 (射手村方向),Hill West of Henesys (Towards Henesys),tooltip,Title,String.wz\ToolTipHelp.img.xml
+105030000,黑森林通道 (林中之城方向),Swampy Land in a Deep Forest (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+105040304,迷你地图:倒塌石人的圣地,Mini Dungeon: The Ruins of the Fallen Golem,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+105050100,迷你地图:蘑菇洞,Mini Dungeon: Cave Where Mushrooms Grow,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+106000000,幽深的峡谷2 (林中之城方向),Deep Valley II (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106000100,幽深的峡谷1 (勇士部落方向),Deep Valley I (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106000200,勇士部落迷宫通道 (林中之城方向),Path to Perion Dungeon (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106000300,幽深的峡谷3 (勇士部落方向),Deep Valley III (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106010000,射手村迷宫入口 (林中之城方向),Entrance to Henesys Dungeon (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106010100,黑森林打猎场2 (林中之城方向),Hunting Ground in the Deep Forest II (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+107000500,黑森林 (林中之城方向),Deep Forest (Towards Sleepywood),tooltip,Title,String.wz\ToolTipHelp.img.xml
+120010000,诺特勒斯,Nautilus,tooltip,Title,String.wz\ToolTipHelp.img.xml
+130000000,神兽沉睡之林,Spot where Shinsoo fell asleep,tooltip,Title,String.wz\ToolTipHelp.img.xml
+200090500,天空之路 : 时间神殿方向,Sky Road : Toward the Temple of Time,tooltip,Title,String.wz\ToolTipHelp.img.xml
+200090510,天空之路 : 神木村方向,Sky Road : Toward Leafre,tooltip,Title,String.wz\ToolTipHelp.img.xml
+221023400,迷你地图:打鼓兔子隐身处,Mini Dungeon: Drummer Bunny&apos;s Lair,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+240020500,迷你地图:半人马的隐身处,Mini Dungeon: The Round Table of Kentaurus,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+240040511,迷你地图:复活的记忆,Mini Dungeon: The Restoring Memory,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+240040520,迷你地图:小蜥蜴保护区域,Mini Dungeon: Newt Secured Zone,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+260020600,迷你地图:风沙小山,Mini Dungeon: Hill of Sandstorms,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+261020300,迷你地图:致命的错误,Mini Dungeon: Critical Error,tooltip,MD00,String.wz\ToolTipHelp.img.xml
+270000000,过去之路,Road to the Past,tooltip,Title,String.wz\ToolTipHelp.img.xml
+270010000,过去之路 : 追忆,Road to the Past : Memory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+270010111,时间展望台,Time Observatory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+270020000,后悔之门,Door of Regrets,tooltip,Title,String.wz\ToolTipHelp.img.xml
+270030000,忘却之门,Door of Oblivion,tooltip,Title,String.wz\ToolTipHelp.img.xml
+270030500,神殿废墟方向,Toward the Temple Ruins,tooltip,Title,String.wz\ToolTipHelp.img.xml
+200000160,圣地升降场,Station to Ereve,tooltip,Title,String.wz\ToolTipHelp.img.xml
+551030000,电缆车站2,Mini Dungeon: Longest Ride on ByeBye Station,tooltip,Title,String.wz\ToolTipHelp.img.xml
+551020000,电缆车,Cable Car,tooltip,Title,String.wz\ToolTipHelp.img.xml
+551010000,电缆车站1,Cable Car Station 1,tooltip,Title,String.wz\ToolTipHelp.img.xml
+2000000,南港→ 往金银岛明珠港,Southperry → Lith Harbor of Victoria Island,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020000,空房子(射手村方向),Empty House (To Henesys),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020100,蘑菇王的城,Mushking Castle,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020300,魔法孢子结界,Barrier of the Magic Spore ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020400,城墙正中,Edge of Castle Wall,tooltip,right00,String.wz\ToolTipHelp.img.xml
+106020403,蘑菇王的城(注意悬崖),Mushking Castle (Beware of Cliff),tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020500,蘑菇城外墙   ,Outside the Wall of Mushroom Castle,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106020501,        进入蘑菇王的城        ,Entering Mushking Castle,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106021800,离开蘑菇城的路,Mushroom Castle Exit,tooltip,Title,String.wz\ToolTipHelp.img.xml
+106021000,城市保安室,Castle Security Room,tooltip,in00,String.wz\ToolTipHelp.img.xml
+140000000,里恩西部地区,Field West of Rien,tooltip,west00,String.wz\ToolTipHelp.img.xml
+140010000,里恩修炼场入口,Entrance to Rien Training Center,tooltip,west00,String.wz\ToolTipHelp.img.xml
+140010100,里恩修炼场,Rien Training Center,tooltip,in00,String.wz\ToolTipHelp.img.xml
+140020000,企鹅港口,Penguin Port,tooltip,Title,String.wz\ToolTipHelp.img.xml
+100000004,蘑菇公园1（射手村方向）,Pig Park (Towards Henesys),tooltip,Title,String.wz\ToolTipHelp.img.xml
+100000005,蘑菇公园2（射手村方向）,Pig Park II (Towards Henesys),tooltip,Title,String.wz\ToolTipHelp.img.xml
+930000800,                净化之泉,          Spring of Purification            ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+60000,南港→ 开往明珠港,Southperry --&gt; Lith Harbor (Victoria Island),tooltip,Title,String.wz\ToolTipHelp.img.xml
+740010200,西门町街头Ⅳ,Streets of TaipeiⅣ,tooltip,Title,String.wz\ToolTipHelp.img.xml
+741000000,护肤中心,Skin Care,tooltip,Title,String.wz\ToolTipHelp.img.xml
+741010200,夜市Ⅴ,In Between the Road of Night Market I,tooltip,Title,String.wz\ToolTipHelp.img.xml
+800020101,乌鸦树林Ⅰ,Crow Forest I,tooltip,Title,String.wz\ToolTipHelp.img.xml
+990000200,遗迹挖掘现场,Shelenian Ruins,tooltip,Title,String.wz\ToolTipHelp.img.xml
+60002,这里是港口城市南港。,Southperry is a port city.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+800020110,小心青竹武士！,Watch Out for the Bamboo Warrior!,tooltip,Title,String.wz\ToolTipHelp.img.xml
+800020120,在竹林中吹过一阵凉风，青竹武士就会出现！小心满心怨恨的青竹武士！想击倒青竹武士，就要把竹林的竹子砍倒……,"If a cold breeze blows through the Bamboo Forest, that&apos;s when Bamboo Warrior appears! Watch out for the Bamboo Warrior that&apos;s holding a grudge. To eliminate the warrior, slash the bamboo trees in the Forest...",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+980020000,          金利奇的迷宫入口                  ,Entrance of the Goldrich maze,tooltip,Title,String.wz\ToolTipHelp.img.xml
+PortalTooltip,皮亚努斯洞穴,Manon Forest,tooltip,boss00,String.wz\ToolTipHelp.img.xml
+103000310,前往废弃都市,To Kerning City,tooltip,out00,String.wz\ToolTipHelp.img.xml
+140030000,心愿之镜,Mirror of Desire,tooltip,in00,String.wz\ToolTipHelp.img.xml
+130010200,演武场入口,Drill Hall Entrance,tooltip,west00,String.wz\ToolTipHelp.img.xml
+240020401,偏僻的森林,Remote Forest,tooltip,in00,String.wz\ToolTipHelp.img.xml
+211042300,扎昆祭坛,Zakum Altar,tooltip,ps00,String.wz\ToolTipHelp.img.xml
+222020400,通往过去的路,To the Past,tooltip,in00,String.wz\ToolTipHelp.img.xml
+910000000,自由市场出口,Entrance to Free Market,tooltip,out00,String.wz\ToolTipHelp.img.xml
+Shop,冒险岛ONLINE商城,Gift Token,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Button,选择发送悄悄话的对象\n再次点击按钮就解除悄悄话状态。,Checking the remaining points.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+BuyAvatar,购买试穿商品,Buying Equipped Items,tooltip,Title,String.wz\ToolTipHelp.img.xml
+DefaultAvatar,取消预览,Back to Default,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Rebate,商品退购,Deleting Items,tooltip,Title,String.wz\ToolTipHelp.img.xml
+ExEquip,增加装备窗,Extending Equip. Inventory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+ExConsume,增加消耗窗,Extending Use Inventory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+ExInstall,增加设置窗,Extending Set-Up Inventory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+ExEtc,增加其他窗,Extending Etc. Inventory,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Charge,点券充值,Recharging Cash,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Coupon,道具卡兑换,Using Coupon,tooltip,Title,String.wz\ToolTipHelp.img.xml
+TakeoffAvatar,原型,Remove All,tooltip,Title,String.wz\ToolTipHelp.img.xml
+GiftToken,查看何赠送礼物的详细信息,Click to see &quot;How to Gift&quot; Details,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+Game,可能跳跃的最大数值\n随着道具装备情况和技能的不同而改变。,A character&apos;s jump ability can increase upto 123%. \nCan be changed through equipment item options or skills.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+Chat,聊天窗,Messenger Window,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Claim,申告,Alert GM,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Equip,装备窗,Equipment Window (E),tooltip,Title,String.wz\ToolTipHelp.img.xml
+Item,物品窗,Item Inventory (I),tooltip,Title,String.wz\ToolTipHelp.img.xml
+KeySet,键盘设定,Key Config.,tooltip,Title,String.wz\ToolTipHelp.img.xml
+MapTransfer,纪录地图,Move,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Register,增加,Register Map,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Delete,删除,Delete Map,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Move,移动到指定图。如果指定的玩家和你在同一频道，可以移动到该玩家当前所在图，部分特殊地图和跨岛移动不能进行。,"Teleports to the map of your choice, or to the map where the chosen character is.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+RegisterEx,把目前角色所在地区纪录到瞬间移动列表。最多可以纪录10个。,Registers the map where the character is located into the Teleport List. Can register upto 10 different places.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+Menu,目录,Menu,tooltip,Title,String.wz\ToolTipHelp.img.xml
+QuestAlarm,想要把进行中的任务登记到任务公告栏里，请点击任务公告栏按钮。最多可登记5个任务。,Click on Quest Alarm button if you wish to register the current quest into the Quest Alarm. Up to 5 quests can be registered in this alarm.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+QuickSlot,打开快捷键,Show Quick Slot,tooltip,Title,String.wz\ToolTipHelp.img.xml
+QuickSlotD,关闭快捷键,Hide Quick Slot,tooltip,Title,String.wz\ToolTipHelp.img.xml
+Skill,SP(技能点),Skill Window (K),tooltip,Title,String.wz\ToolTipHelp.img.xml
+Stat,AP(能力点),AP(Ability Point),tooltip,Title,String.wz\ToolTipHelp.img.xml
+StatAuto,自动提升属性值,Stat Auto-Assign,tooltip,Title,String.wz\ToolTipHelp.img.xml
+StatAuto1,属性值自动上升（拳手）,Stat Auto-Assign (Brawler),tooltip,Title,String.wz\ToolTipHelp.img.xml
+StatAuto2,属性值自动上升（枪手）,Stat Auto-Assign (Gunslinger),tooltip,Title,String.wz\ToolTipHelp.img.xml
+Whisper,悄悄话,Whisper,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,用现金可以购买既可爱又好看的装饰类道具、\n聊天道具、美发店会员卡、整形手术卡等多种\n的物品。,"It&apos;s a place where, armed with Cash, you&apos;ll be able to purchase accessories, clothes, messenger item, hair salon coupons, coupons for plastic surgery, and other various items.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,看所有物品列表的界面\n背包（物品窗）里有装备、消耗品、设置、其他道具。,"The window that allows the character to see the items it owns.\nThe items are categorized under Equip., Use, Set-Up, and Etc. items.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,察看道具装备情况，穿、脱道具的界面\n和物品栏一起使用可装备道具。,"The window that shows the equipped items, and allowing the character to equip/unequip them.\nOpen the item inventory alongside it to use the equip. items.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,状态窗,Ability Window (S),tooltip,Title,String.wz\ToolTipHelp.img.xml
+,察看角色的详细情况和能力值的界面\n用AP可以提高多种能力值。,The window that shows detailed character info and its abilities.\nUse AP to enhance many different kinds of abilities. ,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,可以察看各种技能的详细内容\n通过消耗技能点可以学习专门的技能。,The window that shows the detailed look of the skillbook owned by the character.\nUse skill points to learn the skills available.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,与同区好友进行交流的界面。,The window that lets you chat with buddies within a world.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,更改游戏设置和察看游戏情况的界面。\n可以更改游戏设置，系统参数可以察看\n任务情报，组队情况，社区信息。,"The window that lets you change the options or game infos.\nCan change game and system option.\nCan also see quest info, party info, and the community info.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,增加地图，最多增加5个。使用缩地石可以瞬间移动到目录中的地图。,Registers the map the character is at to the teleport list. Can save up to 5 maps.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,删除目录内的地图。,Delete the chosen map from the list.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,根据目前的等级和职业，适当地分配属性值。,Distributes the remaining AP according to your level and class.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,根据拳手职业自动分配剩余的属性值,Distributes the remaining AP according to Brawler requirements.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,根据枪手职业自动分配剩余的属性值,Distributes the remaining AP according to Gunslinger requirements.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,攻击力,Name of the Character,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,是决定物理攻击的破坏的能力值。可以决定战\n士和魔法师的力量，弓箭手的敏捷性，飞侠的\n力量、敏捷性和运气，海盗的力量和敏捷性。\n上面的能力值和装备的物理攻击力合起来决定\n了物理攻击力。,"Once the name is made,\nthe name can&apos;t be changed.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,防御力,Job of the Character,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,防御一般攻击的能力值\n由角色装备的所有防御道具的防御能力来\n决定。,"Can make the job advancement to Warrior, Bowman, Thief, Magician, or Pirate. \nWarrior : Minimum of Level 10, Perion\nBowman : Minimum of Level 10, Henesys\nMagician : Minimum of Level 8, Ellinia\nThief : Minimum of Level 10, Kerning City\nPirate : Minimum of Level 10, The Nautilus",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,魔法力,Level,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,使用魔法成功率和魔法攻击力的能力值\n由角色装备道具的魔力和智力来决定。,Accumulate enough EXP to raise the level of the character.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,魔法防御力,Main Guild,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,防御魔法攻击的能力值\n由角色装备的所有魔法防御道具魔法防御力来\n决定。,The main community of the communities the account belongs to. Press &quot;G&quot; to check guild info.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,命中率,Health Point,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,决定一般攻击命中率的能力值\n命中率高一般攻击更有效\n由敏捷度和所装备的道具来决定。,"It&apos;s a health stat, and if it reaches 0, the character dies.\nHP decreases if either attacked by an enemy or if a certain skill is used.\nIt can go up to the maximum of 30,000 points.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,回避率,Mana Point,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,回避一般攻击的能力值\n数值越高，回避攻击率越高\n由敏捷度，运气，道具装备的情况来决定。,"The stat needed to use various skills.\nIt can go up to the maximum of 30,000 points.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,影响攻击、技能的熟练度，使得输出伤害更加\n稳定精准。,The amount of experience gained. \nObtained by killing a monster or completing a quest.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,随着道具装备情况和技能的不同而改变。,"The level of fame can be increased or decreased, based on other users. Some equipments and quests require the character reach a certain level of fame.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,敏捷,Dexterity (DEX),tooltip,Title,String.wz\ToolTipHelp.img.xml
+,随着这个能力值升高命中率和回血率都会增加\n。是决定弓箭手和海盗（火枪手）的攻击力的\n最重要的能力值。该值通过AP加点获得最大\n值为999。,This stat is vital to making direct attacks using a weapon. This is the most significant stat when it comes to the strength of the attacks for warriors and pirates (Gunslingers). ,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,智力,Intelligence (INT),tooltip,Title,String.wz\ToolTipHelp.img.xml
+,智力值越高，魔法攻击的威力就越高\n是决定魔法师魔力的关键。该值通过AP加点\n获得最大值为999。,"The higher this stat, the higher the accuracy and strenghth of your magic attack. The most important stat that determines the magic attacks for mages.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,运气,Luck (LUK),tooltip,Title,String.wz\ToolTipHelp.img.xml
+,运气值越高，敏捷也会增加。\n是决定飞侠攻击力和技能的关键\n这个值越高死亡时下降的经验值越少。\n该值通过AP加点获得最大值为999。,"The higher it is, the higher the avoidability is. \nIt determines the Thief&apos;s attacking ability and the Mage&apos;s magic attack accuracy. \nAlso, the higher it is, the less EXP a character loses by dying.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,提高力量，敏捷，智力，运气和HP，MP等的\n数值。提高力量，敏捷，智力，运气时使用能\n力值1，增加的能力也是1，但提高HP，MP与\n各角色的状态有关。每个角色都不同。升级的\n时候给玩家5点能力值，累积满255点后将无\n法获得更多点数。,"Amount to increase STR, DEX, INT,LUK, HP and MP. For STR, DEX, INT and LUK, every 1 AP used will increase the stats by 1.  For HP and MP, it differs pending on the jobs and characters.  5 Points will be given upon level up.",tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,阿里安特美发店,Pet Walkway,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,武器商店·杂货商店·玩具城车站,Weapon Store·Department Store·Ludibrium Station,tooltip,Title,String.wz\ToolTipHelp.img.xml
+,购买角色已装备的物品\n不包括原来所有的物品.,Buying the items that are equipped by the character. The existing items are not\nincluded in the purchase.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,恢复到进入商城前的状态.,Character being put back into the state of default before walking into the cash shop.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,退购用点券购买的道具可按一定比率增加抵用券.,Deleting cash items and saving a percentage of its price as MaplePoints,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,扩展4个(一行)装备栏的格子.\n8000点券,Extending an equip. inventory by 4 slots (1 line)\n8000 A-Cash,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,增加4个(一行)消耗栏格子.\n8000点券,Extending a use inventory by 4 slots (1 line)\n8000 A-Cash,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,增加4个(一行)设置栏格子.\n8000点券,Extending a set-up inventory by 4 slots (1 line)\n8000 A-Cash,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,增加4个(一行)其他栏的格子.\n8000点券,Extending an etc. inventory by 4 slots (1 line)\n8000 A-Cash,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,请访问网站充值您的帐户.,Please visit the website to charge your account.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,用持有的道具优惠券兑换道具.,Exchanging the item coupon into an item.,tooltip,Desc,String.wz\ToolTipHelp.img.xml
+,脱去角色穿着的所有道具.,Remove all the items that the character is wearing.,tooltip,Desc,String.wz\ToolTipHelp.img.xml

@@ -22,7 +22,8 @@ const FILE_MAPPINGS = {
     'Eqp.img': { category: 'equipment', priorityFields: ['name'] },
     'Etc.img': { category: 'etc', priorityFields: ['name'] },
     'Npc.img': { category: 'npc', priorityFields: ['name', 'func'] },
-    'QuestInfo.img': { category: 'quest', priorityFields: ['name'] }
+    'QuestInfo.img': { category: 'quest', priorityFields: ['name'] },
+    'ToolTipHelp.img': { category: 'tooltip', priorityFields: ['Title', 'Desc'] }
 };
 
 // 排除的文件
@@ -55,6 +56,175 @@ class GlossaryExtractor {
         this.seenZhTerms = new Set();   // 已见过的中文术语（用于去重）
         this.seenEnTerms = new Set();    // 已见过的英文术语（用于去重）
         this.stats = new GlossaryStats();
+    }
+
+    /**
+     * 从 XML 内容中递归提取所有嵌套的 string 节点
+     * @param {string} xmlContent - XML 字符串
+     * @returns {Array} [{path, name, value}, ...]
+     */
+    extractNestedStrings(xmlContent) {
+        const results = [];
+        // 匹配 imgdir 标签
+        const imgdirRegex = /<imgdir\s+name="([^"]+)"[^>]*>/g;
+        // 匹配 string 标签
+        const stringRegex = /<string\s+name="([^"]+)"\s+value="([^"]*)"\s*\/>/g;
+
+        let imgdirMatch;
+        const imgdirPositions = [];
+
+        // 找到所有 imgdir 的位置
+        while ((imgdirMatch = imgdirRegex.exec(xmlContent)) !== null) {
+            imgdirPositions.push({
+                name: imgdirMatch[1],
+                start: imgdirMatch.index,
+                end: imgdirMatch.index + imgdirMatch[0].length
+            });
+        }
+
+        // 对每个 imgdir，提取其闭合标签之间的所有 string
+        for (let i = 0; i < imgdirPositions.length; i++) {
+            const current = imgdirPositions[i];
+            const next = imgdirPositions[i + 1];
+
+            // 找到当前 imgdir 的结束位置（下一个同级或父级 imgdir 的开始之前，或 </imgdir>）
+            let endPos = next ? next.start : xmlContent.lastIndexOf('</imgdir>', xmlContent.length - 10);
+
+            // 找到当前 imgdir 的内容区域（跳过开始标签）
+            const contentStart = xmlContent.indexOf('>', current.start) + 1;
+            const contentEnd = endPos;
+            const content = xmlContent.substring(contentStart, contentEnd);
+
+            // 在内容中查找所有 string
+            let stringMatch;
+            while ((stringMatch = stringRegex.exec(content)) !== null) {
+                results.push({
+                    path: current.name,
+                    name: stringMatch[1],
+                    value: stringMatch[2]
+                });
+            }
+
+            // 递归处理子 imgdir
+            const childContent = content;
+            const childResults = this.extractNestedStringsFromContent(childContent, current.name);
+            results.push(...childResults);
+        }
+
+        return results;
+    }
+
+    /**
+     * 从内容中递归提取嵌套的 string（带路径前缀）
+     */
+    extractNestedStringsFromContent(content, parentPath) {
+        const results = [];
+        const imgdirRegex = /<imgdir\s+name="([^"]+)"[^>]*>/g;
+        const stringRegex = /<string\s+name="([^"]+)"\s+value="([^"]*)"\s*\/>/g;
+
+        let imgdirMatch;
+        const imgdirs = [];
+
+        while ((imgdirMatch = imgdirRegex.exec(content)) !== null) {
+            imgdirs.push({
+                name: imgdirMatch[1],
+                start: imgdirMatch.index,
+                end: imgdirMatch.index + imgdirMatch[0].length
+            });
+        }
+
+        for (let i = 0; i < imgdirs.length; i++) {
+            const current = imgdirs[i];
+            const next = imgdirs[i + 1];
+            let endPos = next ? next.start : content.indexOf('</imgdir>', content.length - 10);
+            if (endPos === -1) endPos = content.length;
+
+            const childStart = content.indexOf('>', current.start) + 1;
+            const childContent = content.substring(childStart, endPos);
+
+            // 提取当前层的 string
+            let stringMatch;
+            while ((stringMatch = stringRegex.exec(childContent)) !== null) {
+                results.push({
+                    path: `${parentPath}/${current.name}`,
+                    name: stringMatch[1],
+                    value: stringMatch[2]
+                });
+            }
+
+            // 递归子层
+            const grandchildResults = this.extractNestedStringsFromContent(childContent, `${parentPath}/${current.name}`);
+            results.push(...grandchildResults);
+        }
+
+        return results;
+    }
+
+    /**
+     * 特殊提取 ToolTipHelp.img（嵌套结构）
+     */
+    extractToolTipHelp() {
+        const zhPath = path.join(this.wzZhRoot, 'String.wz', 'ToolTipHelp.img.xml');
+        const enPath = path.join(this.wzEnRoot, 'String.wz', 'ToolTipHelp.img.xml');
+
+        if (!fs.existsSync(zhPath) || !fs.existsSync(enPath)) {
+            console.warn(`ToolTipHelp.img.xml 文件不存在`);
+            return;
+        }
+
+        const zhContent = fs.readFileSync(zhPath, 'utf-8');
+        const enContent = fs.readFileSync(enPath, 'utf-8');
+
+        // 提取嵌套的字符串
+        const zhStrings = this.extractNestedStrings(zhContent);
+        const enStrings = this.extractNestedStrings(enContent);
+
+        // 构建中文映射: path:name -> value
+        const zhMap = new Map();
+        for (const item of zhStrings) {
+            const key = `${item.path}:${item.name}`;
+            zhMap.set(key, item.value);
+        }
+
+        // 构建英文映射并匹配
+        const category = 'tooltip';
+        const sourceFile = 'String.wz\\ToolTipHelp.img.xml';
+
+        for (const item of enStrings) {
+            const key = `${item.path}:${item.name}`;
+            const zhValue = zhMap.get(key);
+            const enValue = item.value;
+
+            if (!zhValue || !enValue) continue;
+
+            // 跳过空值
+            if (zhValue === 'empty' || enValue === 'empty') continue;
+
+            // 验证条目
+            const validation = this.validateEntry(zhValue, enValue, item.name);
+            if (!validation.valid) continue;
+
+            // 检查重复
+            if (this.isDuplicate(zhValue, enValue)) continue;
+
+            // 标记为已见过
+            this.markAsSeen(zhValue, enValue);
+
+            // 创建术语条目，id 设为空字符串
+            const entry = new TermEntry(
+                zhValue,
+                enValue,
+                '',  // id 为空
+                category,
+                item.name,  // fieldType 为 Title/Desc
+                sourceFile
+            );
+
+            this.entries.push(entry);
+            this.stats.addEntry(entry);
+        }
+
+        console.log(`提取 ToolTipHelp: ${enStrings.length} 条`);
     }
 
     /**
@@ -276,6 +446,10 @@ class GlossaryExtractor {
 
         // 处理 Etc.wz（排除 QuestCategory.img）
         this.extractFromDirectory('Etc.wz');
+
+        // 特殊处理 ToolTipHelp.img（嵌套结构）
+        console.log('处理文件: String.wz/ToolTipHelp.img.xml');
+        this.extractToolTipHelp();
 
         console.log(`\n提取完成! 共 ${this.entries.length} 条术语`);
         return this.entries;

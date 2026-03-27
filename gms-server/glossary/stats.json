@@ -1,5 +1,5 @@
 {
-  "totalEntries": 13819,
+  "totalEntries": 14045,
   "categoryStats": {
     "cash": 446,
     "consume": 2037,
@@ -10,7 +10,8 @@
     "monsterbook": 342,
     "npc": 1280,
     "pet": 54,
-    "skill": 591
+    "skill": 591,
+    "tooltip": 226
   },
   "fieldTypeStats": {
     "desc": 684,
@@ -43,7 +44,18 @@
     "h15": 1,
     "h16": 1,
     "h17": 1,
-    "h18": 1
+    "h18": 1,
+    "Title": 153,
+    "Desc": 49,
+    "quest00": 1,
+    "market0": 1,
+    "MD00": 9,
+    "right00": 1,
+    "in00": 5,
+    "west00": 3,
+    "boss00": 1,
+    "out00": 2,
+    "ps00": 1
   },
   "missingTranslations": 0,
   "missingList": []

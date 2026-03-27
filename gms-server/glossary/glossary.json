@@ -1,5 +1,5 @@
 {
-  "totalCount": 13819,
+  "totalCount": 14045,
   "entries": [
     {
       "zh": "双击后可以获得200个超级药水\\n。",
@@ -110552,6 +110552,1814 @@
       "category": "skill",
       "fieldType": "desc",
       "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "跳跃力",
+      "en": "Check Points",
+      "id": "ToolTipHelp.img",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "用饼干做成的Studio",
+      "en": "Tera Forest",
+      "id": "Mapobject",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "传送点 移动(↑)",
+      "en": "Use Portal (Up)",
+      "id": "10000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蜗牛狩猎场",
+      "en": "Snail Hunting Ground",
+      "id": "30000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "向南港",
+      "en": "Toward Southperry",
+      "id": "1000000",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "修炼场",
+      "en": "Adventurer Training Center",
+      "id": "1010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷宫通道（通向林中之城的方向）",
+      "en": "Dungeon (Towards Sleepywood)",
+      "id": "100000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "手技",
+      "en": "Ereve Studio",
+      "id": "6",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "移动速度",
+      "en": "Cookie Studio",
+      "id": "7",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "售票处",
+      "en": "Ticket Booth",
+      "id": "101000300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "                     危险！",
+      "en": "             DANGER!             ",
+      "id": "102020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "世界旅游向导处",
+      "en": "World Tour Info Desk",
+      "id": "103000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "三叉路 (射手村/南港方向)",
+      "en": "Three-Way Road",
+      "id": "103030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "危险地区",
+      "en": "Danger Zone",
+      "id": "104010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "黑森林打猎场1",
+      "en": "Deep Forest Hunting Ground I",
+      "id": "105040000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "码头&lt;开往玩具城&gt; ",
+      "en": "Orbis Station - Waiting Room",
+      "id": "200000120",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "通天塔地下",
+      "en": "Orbis Tower - Basement",
+      "id": "200082100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "冰封雪域山脉",
+      "en": "El Nath Mountain Range",
+      "id": "211000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "阿里安特升降场",
+      "en": "Tree Dungeon, Forest Up North VIII",
+      "id": "15",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "赫丽奥斯塔",
+      "en": "Helios Tower",
+      "id": "17",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "前往玩具塔的路",
+      "en": "On the Way to Eos Tower",
+      "id": "220000300",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "民宅",
+      "en": "Townstreet",
+      "id": "220000400",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "时间消失之路",
+      "en": "Forgotten Path of Time",
+      "id": "220050300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "防具补给站",
+      "en": "Armor Provider",
+      "id": "221000200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "玩具塔",
+      "en": "Eos Tower",
+      "id": "221000400",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "库尔兰草原Ⅰ",
+      "en": "Kulan  Field I",
+      "id": "221030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "水下世界商店街",
+      "en": "Aquarium Department Store",
+      "id": "230000001",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "仓库",
+      "en": "Storage",
+      "id": "230000002",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "水世界动物园",
+      "en": "Aquarium Zoo",
+      "id": "230000003",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "通天塔",
+      "en": "Orbis Tower",
+      "id": "230010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "秘密森林",
+      "en": "Disappeared Forest",
+      "id": "240030100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "小丛林",
+      "en": "Small Jungle",
+      "id": "500020100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "遗迹发掘地Ⅱ(金银岛方向)",
+      "en": "Excavation Site",
+      "id": "101030103",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "郊区1",
+      "en": "Surburban Area 1",
+      "id": "540000300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "小型地牢：船只的残留记忆",
+      "en": "Ghost Ship 1",
+      "id": "541000300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔精灵石板",
+      "en": "Stone plate of Boogi",
+      "id": "101040001",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "射手村西部树林 (南港/废气都市方向)",
+      "en": "Henesys Western forest",
+      "id": "104030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "死亡之林 II",
+      "en": "Dead Tree&apos;s Forest II",
+      "id": "211041100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "利马窦出没地区! 无法从利马窦那边逃走的话就把僵尸的牙齿给到死者的墓地上.利马窦拥有的力的源泉就在那下面…",
+      "en": "Lich area!! If you cannot escape from lich, dedicate teeth of zombie to grave!! Resource of lich&apos;s power is underneath.....grave..",
+      "id": "211041200",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "小心利玛窦!",
+      "en": "lich -alert-",
+      "id": "211041300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "※无法进去.",
+      "en": "※Prohibited to proceed ",
+      "id": "222010102",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "阿里安特市场",
+      "en": "Ariant Market",
+      "id": "260000200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "骆驼TAXI",
+      "en": "Camel Taxi",
+      "id": "260020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "阿里安特 1500冒险币",
+      "en": "Ariant 1500 Mesos",
+      "id": "260020700",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "凯琳的航海室",
+      "en": "Kyrin&apos;s Control Room",
+      "id": "120000100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "猎人的祭坛",
+      "en": "Hunter&apos;s Altar",
+      "id": "211010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "冰峰雪域的猎人制作的小祭坛。是为了消去雪山魔女的怒气而制作的。据说把雪山打猎获得的战利品交给魔女，就可以消去她的怒气。",
+      "en": "A small altar setup by the hunters in El Nath. This was made to appease the Snow Witch when she appears enraged. If a dropped item from the snowfield is used as the sacrifice, then the witch will be appeased.",
+      "id": "211020000",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "返回的路",
+      "en": "On the Way Back",
+      "id": "229010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "毒喷射器",
+      "en": "Poison Spray",
+      "id": "261020200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "击退陆陆猫时使用的毒喷射器。卡帕莱特的炼金术士只能在击退陆陆猫时使用。到底是谁偷走了喷射器里的毒啊？！",
+      "en": "A poison sprayer used to defeat Rurumo. All alchemists from Alcadno should only use this to eliminate Rurumo. Who keeps taking the poison from the spray bottle?",
+      "id": "261020400",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "结界石",
+      "en": "Barrier Stone",
+      "id": "300000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "苔藓树丛",
+      "en": "Mossy Tree Forest ",
+      "id": "300010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷路的探险家请往这边走……",
+      "en": "If you&apos;re a lost adventurer, go this way...",
+      "id": "300010200",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "石头山方向",
+      "en": "Toward the Boulder Mountain",
+      "id": "300010300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "危险地带，禁止探险！",
+      "en": "Danger Zone.  Explorations Not Allowed!",
+      "id": "300030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "水上市场",
+      "en": "Floating Market",
+      "id": "500010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "青蛙莲花池/水上市场",
+      "en": "Frog Pond/Floating Market",
+      "id": "500010100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "腐树通道",
+      "en": "Dead Tree Path",
+      "id": "100040105",
+      "category": "tooltip",
+      "fieldType": "quest00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "自由市场",
+      "en": "Free Market",
+      "id": "261000000",
+      "category": "tooltip",
+      "fieldType": "market0",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "主题战场：蘑菇城",
+      "en": "Theme Dungeon: Mushroom Castle",
+      "id": "100000002",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "射手村",
+      "en": "Henesys",
+      "id": "100010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图：射手村猪猪地盘",
+      "en": "Mini Dungeon: Henesys Pig Farm",
+      "id": "100020000",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "射手村东部树林（射手村/诺特勒斯方向）",
+      "en": "The Forest East of Henesys (Towards Henesys/Nautilus)",
+      "id": "100040000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法密林战斗地图（魔法密林方向）",
+      "en": "The Field South of Ellinia (Towards Ellinia)",
+      "id": "100040100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法密林北部(勇士部落方向）",
+      "en": "The Forest North of Ellinia (Towards Perion)",
+      "id": "101010100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "&lt;警告&gt;",
+      "en": "             &lt;Warning&gt;             ",
+      "id": "101010103",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法密林北部（魔法密林方向）",
+      "en": "The Forest North of Ellinia (Towards Ellinia)",
+      "id": "101030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "岩石路3（金银岛方向）",
+      "en": "Rocky Road III (Towards Victoria Road)",
+      "id": "101030101",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "遗迹发掘地3（遗迹发掘队营地方向）",
+      "en": "Excavation Site III (Towards Excavation Site)",
+      "id": "101030102",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "岩石路3 (魔法密林方向)",
+      "en": "Rocky Road III (Towards Ellinia)",
+      "id": "101030200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "岩石路2 (魔法密林方向)",
+      "en": "Rocky Road II (Towards Ellinia)",
+      "id": "101030300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "东部岩山1 (魔法密林方向)",
+      "en": "East Rocky Mountain I (Towards Ellinia)",
+      "id": "101040000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "西部岩山1 (勇士部落方向)",
+      "en": "West Rocky Mountain I (Towards Perion)",
+      "id": "102030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "废都北方工地 (勇士部落方向)",
+      "en": "Construction Site North of Kerning City (Towards Perion)",
+      "id": "102050000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "逆恩森林3 (射手村/南港方向)",
+      "en": "L Forest III (Towards Henesys/Lith Harbor)",
+      "id": "103010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "逆恩森林2 (射手村/南港方向)",
+      "en": "L Forest II (Towards Henesys/Lith Harbor)",
+      "id": "103020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "逆恩森林2 (废气都市方向)",
+      "en": "L Forest II (Towards Kerning City)",
+      "id": "103020200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "海岸草丛2 (金银岛方向)",
+      "en": "Thicket Around the Beach II (Towards Victoria Road)",
+      "id": "104000200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "海岸草丛3 (金银岛方向)",
+      "en": "Thicket Around the Beach III (Towards Victoria Road)",
+      "id": "104000300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "三叉路 (金银岛方向)",
+      "en": "3-Way Road-Split (Towards Victoria Road)",
+      "id": "104000400",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "射手村西部小山 (射手村方向)",
+      "en": "Hill West of Henesys (Towards Henesys)",
+      "id": "104020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "黑森林通道 (林中之城方向)",
+      "en": "Swampy Land in a Deep Forest (Towards Sleepywood)",
+      "id": "105030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:倒塌石人的圣地",
+      "en": "Mini Dungeon: The Ruins of the Fallen Golem",
+      "id": "105040304",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:蘑菇洞",
+      "en": "Mini Dungeon: Cave Where Mushrooms Grow",
+      "id": "105050100",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "幽深的峡谷2 (林中之城方向)",
+      "en": "Deep Valley II (Towards Sleepywood)",
+      "id": "106000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "幽深的峡谷1 (勇士部落方向)",
+      "en": "Deep Valley I (Towards Perion)",
+      "id": "106000100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "勇士部落迷宫通道 (林中之城方向)",
+      "en": "Path to Perion Dungeon (Towards Sleepywood)",
+      "id": "106000200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "幽深的峡谷3 (勇士部落方向)",
+      "en": "Deep Valley III (Towards Perion)",
+      "id": "106000300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "射手村迷宫入口 (林中之城方向)",
+      "en": "Entrance to Henesys Dungeon (Towards Sleepywood)",
+      "id": "106010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "黑森林打猎场2 (林中之城方向)",
+      "en": "Hunting Ground in the Deep Forest II (Towards Sleepywood)",
+      "id": "106010100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "黑森林 (林中之城方向)",
+      "en": "Deep Forest (Towards Sleepywood)",
+      "id": "107000500",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "诺特勒斯",
+      "en": "Nautilus",
+      "id": "120010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "神兽沉睡之林",
+      "en": "Spot where Shinsoo fell asleep",
+      "id": "130000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "天空之路 : 时间神殿方向",
+      "en": "Sky Road : Toward the Temple of Time",
+      "id": "200090500",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "天空之路 : 神木村方向",
+      "en": "Sky Road : Toward Leafre",
+      "id": "200090510",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:打鼓兔子隐身处",
+      "en": "Mini Dungeon: Drummer Bunny&apos;s Lair",
+      "id": "221023400",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:半人马的隐身处",
+      "en": "Mini Dungeon: The Round Table of Kentaurus",
+      "id": "240020500",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:复活的记忆",
+      "en": "Mini Dungeon: The Restoring Memory",
+      "id": "240040511",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:小蜥蜴保护区域",
+      "en": "Mini Dungeon: Newt Secured Zone",
+      "id": "240040520",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:风沙小山",
+      "en": "Mini Dungeon: Hill of Sandstorms",
+      "id": "260020600",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "迷你地图:致命的错误",
+      "en": "Mini Dungeon: Critical Error",
+      "id": "261020300",
+      "category": "tooltip",
+      "fieldType": "MD00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "过去之路",
+      "en": "Road to the Past",
+      "id": "270000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "过去之路 : 追忆",
+      "en": "Road to the Past : Memory",
+      "id": "270010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "时间展望台",
+      "en": "Time Observatory",
+      "id": "270010111",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "后悔之门",
+      "en": "Door of Regrets",
+      "id": "270020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "忘却之门",
+      "en": "Door of Oblivion",
+      "id": "270030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "神殿废墟方向",
+      "en": "Toward the Temple Ruins",
+      "id": "270030500",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "圣地升降场",
+      "en": "Station to Ereve",
+      "id": "200000160",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "电缆车站2",
+      "en": "Mini Dungeon: Longest Ride on ByeBye Station",
+      "id": "551030000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "电缆车",
+      "en": "Cable Car",
+      "id": "551020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "电缆车站1",
+      "en": "Cable Car Station 1",
+      "id": "551010000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "南港→ 往金银岛明珠港",
+      "en": "Southperry → Lith Harbor of Victoria Island",
+      "id": "2000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "空房子(射手村方向)",
+      "en": "Empty House (To Henesys)",
+      "id": "106020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蘑菇王的城",
+      "en": "Mushking Castle",
+      "id": "106020100",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法孢子结界",
+      "en": "Barrier of the Magic Spore ",
+      "id": "106020300",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "城墙正中",
+      "en": "Edge of Castle Wall",
+      "id": "106020400",
+      "category": "tooltip",
+      "fieldType": "right00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蘑菇王的城(注意悬崖)",
+      "en": "Mushking Castle (Beware of Cliff)",
+      "id": "106020403",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蘑菇城外墙   ",
+      "en": "Outside the Wall of Mushroom Castle",
+      "id": "106020500",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "        进入蘑菇王的城        ",
+      "en": "Entering Mushking Castle",
+      "id": "106020501",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "离开蘑菇城的路",
+      "en": "Mushroom Castle Exit",
+      "id": "106021800",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "城市保安室",
+      "en": "Castle Security Room",
+      "id": "106021000",
+      "category": "tooltip",
+      "fieldType": "in00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "里恩西部地区",
+      "en": "Field West of Rien",
+      "id": "140000000",
+      "category": "tooltip",
+      "fieldType": "west00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "里恩修炼场入口",
+      "en": "Entrance to Rien Training Center",
+      "id": "140010000",
+      "category": "tooltip",
+      "fieldType": "west00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "里恩修炼场",
+      "en": "Rien Training Center",
+      "id": "140010100",
+      "category": "tooltip",
+      "fieldType": "in00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "企鹅港口",
+      "en": "Penguin Port",
+      "id": "140020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蘑菇公园1（射手村方向）",
+      "en": "Pig Park (Towards Henesys)",
+      "id": "100000004",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "蘑菇公园2（射手村方向）",
+      "en": "Pig Park II (Towards Henesys)",
+      "id": "100000005",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "                净化之泉",
+      "en": "          Spring of Purification            ",
+      "id": "930000800",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "南港→ 开往明珠港",
+      "en": "Southperry --&gt; Lith Harbor (Victoria Island)",
+      "id": "60000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "西门町街头Ⅳ",
+      "en": "Streets of TaipeiⅣ",
+      "id": "740010200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "护肤中心",
+      "en": "Skin Care",
+      "id": "741000000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "夜市Ⅴ",
+      "en": "In Between the Road of Night Market I",
+      "id": "741010200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "乌鸦树林Ⅰ",
+      "en": "Crow Forest I",
+      "id": "800020101",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "遗迹挖掘现场",
+      "en": "Shelenian Ruins",
+      "id": "990000200",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "这里是港口城市南港。",
+      "en": "Southperry is a port city.",
+      "id": "60002",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "小心青竹武士！",
+      "en": "Watch Out for the Bamboo Warrior!",
+      "id": "800020110",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "在竹林中吹过一阵凉风，青竹武士就会出现！小心满心怨恨的青竹武士！想击倒青竹武士，就要把竹林的竹子砍倒……",
+      "en": "If a cold breeze blows through the Bamboo Forest, that&apos;s when Bamboo Warrior appears! Watch out for the Bamboo Warrior that&apos;s holding a grudge. To eliminate the warrior, slash the bamboo trees in the Forest...",
+      "id": "800020120",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "          金利奇的迷宫入口                  ",
+      "en": "Entrance of the Goldrich maze",
+      "id": "980020000",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "皮亚努斯洞穴",
+      "en": "Manon Forest",
+      "id": "PortalTooltip",
+      "category": "tooltip",
+      "fieldType": "boss00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "前往废弃都市",
+      "en": "To Kerning City",
+      "id": "103000310",
+      "category": "tooltip",
+      "fieldType": "out00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "心愿之镜",
+      "en": "Mirror of Desire",
+      "id": "140030000",
+      "category": "tooltip",
+      "fieldType": "in00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "演武场入口",
+      "en": "Drill Hall Entrance",
+      "id": "130010200",
+      "category": "tooltip",
+      "fieldType": "west00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "偏僻的森林",
+      "en": "Remote Forest",
+      "id": "240020401",
+      "category": "tooltip",
+      "fieldType": "in00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "扎昆祭坛",
+      "en": "Zakum Altar",
+      "id": "211042300",
+      "category": "tooltip",
+      "fieldType": "ps00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "通往过去的路",
+      "en": "To the Past",
+      "id": "222020400",
+      "category": "tooltip",
+      "fieldType": "in00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "自由市场出口",
+      "en": "Entrance to Free Market",
+      "id": "910000000",
+      "category": "tooltip",
+      "fieldType": "out00",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "冒险岛ONLINE商城",
+      "en": "Gift Token",
+      "id": "Shop",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "选择发送悄悄话的对象\\n再次点击按钮就解除悄悄话状态。",
+      "en": "Checking the remaining points.",
+      "id": "Button",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "购买试穿商品",
+      "en": "Buying Equipped Items",
+      "id": "BuyAvatar",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "取消预览",
+      "en": "Back to Default",
+      "id": "DefaultAvatar",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "商品退购",
+      "en": "Deleting Items",
+      "id": "Rebate",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加装备窗",
+      "en": "Extending Equip. Inventory",
+      "id": "ExEquip",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加消耗窗",
+      "en": "Extending Use Inventory",
+      "id": "ExConsume",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加设置窗",
+      "en": "Extending Set-Up Inventory",
+      "id": "ExInstall",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加其他窗",
+      "en": "Extending Etc. Inventory",
+      "id": "ExEtc",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "点券充值",
+      "en": "Recharging Cash",
+      "id": "Charge",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "道具卡兑换",
+      "en": "Using Coupon",
+      "id": "Coupon",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "原型",
+      "en": "Remove All",
+      "id": "TakeoffAvatar",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "查看何赠送礼物的详细信息",
+      "en": "Click to see &quot;How to Gift&quot; Details",
+      "id": "GiftToken",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "可能跳跃的最大数值\\n随着道具装备情况和技能的不同而改变。",
+      "en": "A character&apos;s jump ability can increase upto 123%. \\nCan be changed through equipment item options or skills.",
+      "id": "Game",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "聊天窗",
+      "en": "Messenger Window",
+      "id": "Chat",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "申告",
+      "en": "Alert GM",
+      "id": "Claim",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "装备窗",
+      "en": "Equipment Window (E)",
+      "id": "Equip",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "物品窗",
+      "en": "Item Inventory (I)",
+      "id": "Item",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "键盘设定",
+      "en": "Key Config.",
+      "id": "KeySet",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "纪录地图",
+      "en": "Move",
+      "id": "MapTransfer",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加",
+      "en": "Register Map",
+      "id": "Register",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "删除",
+      "en": "Delete Map",
+      "id": "Delete",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "移动到指定图。如果指定的玩家和你在同一频道，可以移动到该玩家当前所在图，部分特殊地图和跨岛移动不能进行。",
+      "en": "Teleports to the map of your choice, or to the map where the chosen character is.",
+      "id": "Move",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "把目前角色所在地区纪录到瞬间移动列表。最多可以纪录10个。",
+      "en": "Registers the map where the character is located into the Teleport List. Can register upto 10 different places.",
+      "id": "RegisterEx",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "目录",
+      "en": "Menu",
+      "id": "Menu",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "想要把进行中的任务登记到任务公告栏里，请点击任务公告栏按钮。最多可登记5个任务。",
+      "en": "Click on Quest Alarm button if you wish to register the current quest into the Quest Alarm. Up to 5 quests can be registered in this alarm.",
+      "id": "QuestAlarm",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "打开快捷键",
+      "en": "Show Quick Slot",
+      "id": "QuickSlot",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "关闭快捷键",
+      "en": "Hide Quick Slot",
+      "id": "QuickSlotD",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "SP(技能点)",
+      "en": "Skill Window (K)",
+      "id": "Skill",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "AP(能力点)",
+      "en": "AP(Ability Point)",
+      "id": "Stat",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "自动提升属性值",
+      "en": "Stat Auto-Assign",
+      "id": "StatAuto",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "属性值自动上升（拳手）",
+      "en": "Stat Auto-Assign (Brawler)",
+      "id": "StatAuto1",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "属性值自动上升（枪手）",
+      "en": "Stat Auto-Assign (Gunslinger)",
+      "id": "StatAuto2",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "悄悄话",
+      "en": "Whisper",
+      "id": "Whisper",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "用现金可以购买既可爱又好看的装饰类道具、\\n聊天道具、美发店会员卡、整形手术卡等多种\\n的物品。",
+      "en": "It&apos;s a place where, armed with Cash, you&apos;ll be able to purchase accessories, clothes, messenger item, hair salon coupons, coupons for plastic surgery, and other various items.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "看所有物品列表的界面\\n背包（物品窗）里有装备、消耗品、设置、其他道具。",
+      "en": "The window that allows the character to see the items it owns.\\nThe items are categorized under Equip., Use, Set-Up, and Etc. items.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "察看道具装备情况，穿、脱道具的界面\\n和物品栏一起使用可装备道具。",
+      "en": "The window that shows the equipped items, and allowing the character to equip/unequip them.\\nOpen the item inventory alongside it to use the equip. items.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "状态窗",
+      "en": "Ability Window (S)",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "察看角色的详细情况和能力值的界面\\n用AP可以提高多种能力值。",
+      "en": "The window that shows detailed character info and its abilities.\\nUse AP to enhance many different kinds of abilities. ",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "可以察看各种技能的详细内容\\n通过消耗技能点可以学习专门的技能。",
+      "en": "The window that shows the detailed look of the skillbook owned by the character.\\nUse skill points to learn the skills available.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "与同区好友进行交流的界面。",
+      "en": "The window that lets you chat with buddies within a world.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "更改游戏设置和察看游戏情况的界面。\\n可以更改游戏设置，系统参数可以察看\\n任务情报，组队情况，社区信息。",
+      "en": "The window that lets you change the options or game infos.\\nCan change game and system option.\\nCan also see quest info, party info, and the community info.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加地图，最多增加5个。使用缩地石可以瞬间移动到目录中的地图。",
+      "en": "Registers the map the character is at to the teleport list. Can save up to 5 maps.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "删除目录内的地图。",
+      "en": "Delete the chosen map from the list.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "根据目前的等级和职业，适当地分配属性值。",
+      "en": "Distributes the remaining AP according to your level and class.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "根据拳手职业自动分配剩余的属性值",
+      "en": "Distributes the remaining AP according to Brawler requirements.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "根据枪手职业自动分配剩余的属性值",
+      "en": "Distributes the remaining AP according to Gunslinger requirements.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "攻击力",
+      "en": "Name of the Character",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "是决定物理攻击的破坏的能力值。可以决定战\\n士和魔法师的力量，弓箭手的敏捷性，飞侠的\\n力量、敏捷性和运气，海盗的力量和敏捷性。\\n上面的能力值和装备的物理攻击力合起来决定\\n了物理攻击力。",
+      "en": "Once the name is made,\\nthe name can&apos;t be changed.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "防御力",
+      "en": "Job of the Character",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "防御一般攻击的能力值\\n由角色装备的所有防御道具的防御能力来\\n决定。",
+      "en": "Can make the job advancement to Warrior, Bowman, Thief, Magician, or Pirate. \\nWarrior : Minimum of Level 10, Perion\\nBowman : Minimum of Level 10, Henesys\\nMagician : Minimum of Level 8, Ellinia\\nThief : Minimum of Level 10, Kerning City\\nPirate : Minimum of Level 10, The Nautilus",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法力",
+      "en": "Level",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "使用魔法成功率和魔法攻击力的能力值\\n由角色装备道具的魔力和智力来决定。",
+      "en": "Accumulate enough EXP to raise the level of the character.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "魔法防御力",
+      "en": "Main Guild",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "防御魔法攻击的能力值\\n由角色装备的所有魔法防御道具魔法防御力来\\n决定。",
+      "en": "The main community of the communities the account belongs to. Press &quot;G&quot; to check guild info.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "命中率",
+      "en": "Health Point",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "决定一般攻击命中率的能力值\\n命中率高一般攻击更有效\\n由敏捷度和所装备的道具来决定。",
+      "en": "It&apos;s a health stat, and if it reaches 0, the character dies.\\nHP decreases if either attacked by an enemy or if a certain skill is used.\\nIt can go up to the maximum of 30,000 points.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "回避率",
+      "en": "Mana Point",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "回避一般攻击的能力值\\n数值越高，回避攻击率越高\\n由敏捷度，运气，道具装备的情况来决定。",
+      "en": "The stat needed to use various skills.\\nIt can go up to the maximum of 30,000 points.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "影响攻击、技能的熟练度，使得输出伤害更加\\n稳定精准。",
+      "en": "The amount of experience gained. \\nObtained by killing a monster or completing a quest.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "随着道具装备情况和技能的不同而改变。",
+      "en": "The level of fame can be increased or decreased, based on other users. Some equipments and quests require the character reach a certain level of fame.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "敏捷",
+      "en": "Dexterity (DEX)",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "随着这个能力值升高命中率和回血率都会增加\\n。是决定弓箭手和海盗（火枪手）的攻击力的\\n最重要的能力值。该值通过AP加点获得最大\\n值为999。",
+      "en": "This stat is vital to making direct attacks using a weapon. This is the most significant stat when it comes to the strength of the attacks for warriors and pirates (Gunslingers). ",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "智力",
+      "en": "Intelligence (INT)",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "智力值越高，魔法攻击的威力就越高\\n是决定魔法师魔力的关键。该值通过AP加点\\n获得最大值为999。",
+      "en": "The higher this stat, the higher the accuracy and strenghth of your magic attack. The most important stat that determines the magic attacks for mages.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "运气",
+      "en": "Luck (LUK)",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "运气值越高，敏捷也会增加。\\n是决定飞侠攻击力和技能的关键\\n这个值越高死亡时下降的经验值越少。\\n该值通过AP加点获得最大值为999。",
+      "en": "The higher it is, the higher the avoidability is. \\nIt determines the Thief&apos;s attacking ability and the Mage&apos;s magic attack accuracy. \\nAlso, the higher it is, the less EXP a character loses by dying.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "提高力量，敏捷，智力，运气和HP，MP等的\\n数值。提高力量，敏捷，智力，运气时使用能\\n力值1，增加的能力也是1，但提高HP，MP与\\n各角色的状态有关。每个角色都不同。升级的\\n时候给玩家5点能力值，累积满255点后将无\\n法获得更多点数。",
+      "en": "Amount to increase STR, DEX, INT,LUK, HP and MP. For STR, DEX, INT and LUK, every 1 AP used will increase the stats by 1.  For HP and MP, it differs pending on the jobs and characters.  5 Points will be given upon level up.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "阿里安特美发店",
+      "en": "Pet Walkway",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "武器商店·杂货商店·玩具城车站",
+      "en": "Weapon Store·Department Store·Ludibrium Station",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Title",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "购买角色已装备的物品\\n不包括原来所有的物品.",
+      "en": "Buying the items that are equipped by the character. The existing items are not\\nincluded in the purchase.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "恢复到进入商城前的状态.",
+      "en": "Character being put back into the state of default before walking into the cash shop.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "退购用点券购买的道具可按一定比率增加抵用券.",
+      "en": "Deleting cash items and saving a percentage of its price as MaplePoints",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "扩展4个(一行)装备栏的格子.\\n8000点券",
+      "en": "Extending an equip. inventory by 4 slots (1 line)\\n8000 A-Cash",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加4个(一行)消耗栏格子.\\n8000点券",
+      "en": "Extending a use inventory by 4 slots (1 line)\\n8000 A-Cash",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加4个(一行)设置栏格子.\\n8000点券",
+      "en": "Extending a set-up inventory by 4 slots (1 line)\\n8000 A-Cash",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "增加4个(一行)其他栏的格子.\\n8000点券",
+      "en": "Extending an etc. inventory by 4 slots (1 line)\\n8000 A-Cash",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "请访问网站充值您的帐户.",
+      "en": "Please visit the website to charge your account.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "用持有的道具优惠券兑换道具.",
+      "en": "Exchanging the item coupon into an item.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
+    },
+    {
+      "zh": "脱去角色穿着的所有道具.",
+      "en": "Remove all the items that the character is wearing.",
+      "id": "",
+      "category": "tooltip",
+      "fieldType": "Desc",
+      "source": "String.wz\\ToolTipHelp.img.xml"
     }
   ]
 }
