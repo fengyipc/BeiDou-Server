@@ -1,0 +1,62 @@
+{
+  "category": "etc",
+  "count": 7,
+  "entries": [
+    {
+      "zh": "木之主题公园证明书",
+      "en": "Certificate of Great Tester",
+      "id": "4000492",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "五色福袋(7级)",
+      "en": "Relic Weapon Blueprint",
+      "id": "4031762",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "五色福袋(6级)",
+      "en": "Materia Weapon Blueprint",
+      "id": "4031763",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "锻造介绍书海外用",
+      "en": "Santa Encyclopedia No.6",
+      "id": "4161042",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "黄金鱼 ",
+      "en": "Sophilia&apos;s Favorite Doll",
+      "id": "4000517",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "锻造介绍书",
+      "en": "Santa Encyclopedia No.1",
+      "id": "4161043",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    },
+    {
+      "zh": "扎昆钻石",
+      "en": "Zakum Diamond",
+      "id": "4032133",
+      "category": "etc",
+      "fieldType": "name",
+      "source": "String.wz\\Etc.img.xml"
+    }
+  ]
+}

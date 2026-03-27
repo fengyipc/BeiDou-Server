@@ -1,0 +1,438 @@
+{
+  "category": "pet",
+  "count": 54,
+  "entries": [
+    {
+      "zh": "可爱梼杌宠物",
+      "en": "Baby Tiger",
+      "id": "Pet.img",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "褐色小猫",
+      "en": "Brown Kitty",
+      "id": "5000000",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "褐色小狗",
+      "en": "Brown Puppy",
+      "id": "5000001",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "粉红兔子",
+      "en": "Pink Bunny",
+      "id": "5000002",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "小怪猫",
+      "en": "Mini Kargo",
+      "id": "5000003",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "黑色小猫",
+      "en": "Black Kitty",
+      "id": "5000004",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "白色兔子",
+      "en": "White Bunny",
+      "id": "5000005",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "雪犬",
+      "en": "Husky",
+      "id": "5000006",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "黑小猪",
+      "en": "Black Pig",
+      "id": "5000007",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "性格温顺,又有点懒懒的稀有宠\\n物,而且经常会开玩笑,可是固执\\n起来谁也没办法,由于经常出国,\\n还会几句洋文! ",
+      "en": "Calm, relaxed, and gentle. A very rare creature.",
+      "id": "5000008",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "恐龙王子",
+      "en": "Dino Boy",
+      "id": "5000009",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "恐龙公主",
+      "en": "Dino Girl",
+      "id": "5000010",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "生性开朗,好奇心强,但有时我行\\n我素...",
+      "en": "The always-curious monkey never rests, wanders around.",
+      "id": "5000011",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "小白虎",
+      "en": "White Tiger",
+      "id": "5000012",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "大象",
+      "en": "Elephant",
+      "id": "5000013",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "圣诞鹿",
+      "en": "Rudolph",
+      "id": "5000014",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "性格有点文静.但圣诞老人选择\\n它以后性格变得很活泼了.是一\\n个很善良而且可爱的小驯鹿...",
+      "en": "They are smart and obedient by nature, picking up commands faster than other pets, but they also can get hungry in a hurry.",
+      "id": "5000015",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "天才博士制作的机器人. 虽然是\\n机器但是拥有人类的情感...",
+      "en": "A hyper-active robot that always changes its mind on everything. Very unpredictable, yet easy to please.",
+      "id": "5000017",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "性格开朗.但有时候比较文静.饭\\n量不多.聪明,很听话...",
+      "en": "Active, yet calm at times. Can be moderately fed. Very smart in general. ",
+      "id": "5000018",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "小白雪人会默默地陪在主人身边\\n,是个值得信赖的好伙伴!它会默\\n默地为主人完成很多事情喔!",
+      "en": "A trustworthy pet that quietly watches everyone&apos;s back. Quiet, but smart and gets a lot of things done.",
+      "id": "5000020",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "生性开朗,好奇心很重,带有自己\\n的聊天窗口与名牌...",
+      "en": "Very charming who is also very intuitive, but not as obedient as some of the others",
+      "id": "5000021",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": " 又淘气又活泼的总能让人快乐\\n的小火鸡.搞笑的表情是它的特\\n技...",
+      "en": "Somewhat active, quiet and not well-behaved in nature. It is not very obedient, but isn&apos;t hungry very often.",
+      "id": "5000022",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "小企企",
+      "en": "Penguin",
+      "id": "5000023",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "可以信赖的活泼的蝙蝠怪,虽然\\n长的一副BOSS样,但经常会害羞.\\n ",
+      "en": "A trustworthy pet who is equally quick-witted. Unlike its masculine appearance, it is prone to insecurity and shyness.",
+      "id": "5000024",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "闪闪发出金色光芒的小金猪.拥\\n有它说不定会有意外的好运. ",
+      "en": "This designed Golden Pig will definately bring you a Good Luck! Use the Meso Magnet and Item Pouch to pick up the mesos and items on the ground.",
+      "id": "5000025",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "齐天大圣",
+      "en": "Sun Wu Kong",
+      "id": "5000026",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "进化龙",
+      "en": "Dragon",
+      "id": "5000028",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "宝贝龙",
+      "en": "Baby Dragon",
+      "id": "5000029",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "绿龙",
+      "en": "Green Dragon",
+      "id": "5000030",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "红龙",
+      "en": "Red Dragon",
+      "id": "5000031",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "透过魔法之力,进化而成为蓝龙!\\n",
+      "en": "Mysterious magical powers aligned and sucessfully evolved the Baby Dragon into a Blue Dragon!",
+      "id": "5000032",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "黑龙",
+      "en": "Black Dragon",
+      "id": "5000033",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "黑兔",
+      "en": "Black Bunny",
+      "id": "5000034",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "鬼灵精怪",
+      "en": "Jr. Reaper",
+      "id": "5000036",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "刺猬",
+      "en": "Porcupine",
+      "id": "5000039",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "可爱又活泼的小雪娃娃．虽然有\\n时比较默但宠着它的话,它也会\\n撒娇．",
+      "en": "An adorable Snowman that is also very active. May seem a little rude at times, but the more it is loved, the more affable it becomes.",
+      "id": "5000041",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "花蘑菇仔",
+      "en": "Kino",
+      "id": "5000042",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "橙色老虎",
+      "en": "Orange tiger",
+      "id": "5000044",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "臭鼬",
+      "en": "Skunk",
+      "id": "5000045",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "机器人所赋予的胶囊,即将会孵\\n化出娃娃机器人...",
+      "en": "A special egg that becomes a mythical Robo upon hatching.",
+      "id": "5000047",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "娃娃机器人",
+      "en": "Baby Robo",
+      "id": "5000048",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "机器人(蓝色)",
+      "en": "Blue Robo",
+      "id": "5000049",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "机器人(红色)",
+      "en": "Red Robo",
+      "id": "5000050",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "机器人(绿色)",
+      "en": "Green Robo",
+      "id": "5000051",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "机器人(金色)",
+      "en": "Gold Robo",
+      "id": "5000052",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "大猩猩机器人",
+      "en": "Gorilla Robo",
+      "id": "5000053",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "实在是不知道在想什么的蜗牛..\\n.",
+      "en": "A snail that is really hard to figure out.",
+      "id": "5000054",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "水晶银圣诞鹿",
+      "en": "Crys.Rudolph",
+      "id": "5000055",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "潜水玩具鸭",
+      "en": "White Duck",
+      "id": "5000058",
+      "category": "pet",
+      "fieldType": "name",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "一只通过女神镜子召唤而来的宠\\n物.矮矮胖胖却喜怒无常.#c拥有永\\n恒的生命#",
+      "en": "A short and chubby pet summoned through the Goddess&apos; mirror. It is temperamental.\\n#cA pet whose life will never expire.#",
+      "id": "5000060",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "幸运宠,全身上下散发着金色光\\n芒的小老虎啊呜啊呜. ",
+      "en": "Baby Tiger, the big star of 2010. ",
+      "id": "5000066",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "特别喜欢闪烁的石头,性格开朗\\n的花蘑菇仔.#c拥有永恒的生命.#",
+      "en": "A happy-go-lucky, orange mushroom that loves shiny stones.\\n#cA pet whose life will never expire.#",
+      "id": "5000100",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "性格温顺的小白虎,即使是陌生\\n人也会马上变得很亲密.#c拥有永\\n恒的生命.#",
+      "en": "They are very gentle and obedient in nature, easily becoming friendly with the owner, which in turn speeds up the level-up process.\\n#cA pet whose life will never expire.#",
+      "id": "5000101",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    },
+    {
+      "zh": "受到威舍的魔法,而诞生的#c小白\\n雪人#.#c拥有永恒的生命.#",
+      "en": "A trustworthy pet that quietly watches everyone&apos;s back. Quiet, but smart and gets a lot of things done.\\n#cA pet whose life will never expire.#",
+      "id": "5000102",
+      "category": "pet",
+      "fieldType": "desc",
+      "source": "String.wz\\Pet.img.xml"
+    }
+  ]
+}

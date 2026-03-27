@@ -1,0 +1,4734 @@
+{
+  "category": "skill",
+  "count": 591,
+  "entries": [
+    {
+      "zh": "勇士的意志",
+      "en": "Chair Mastery",
+      "id": "Skill.img",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冒险的技术",
+      "en": "Beginner&apos;s Basics",
+      "id": "000",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "群宠",
+      "en": "Follow the Lead",
+      "id": "0000008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精灵的祝福",
+      "en": "Blessing of the Fairy",
+      "id": "0000012",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n在使用地图椅时获得额外的恢复收益",
+      "en": "[Master Level : 1]\\nBonus recovery gain from using map chairs throughout the world.",
+      "id": "0000100",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战士技能",
+      "en": "Warrior Basics",
+      "id": "100",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "剑客技能",
+      "en": "Fighter Techniques",
+      "id": "110",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "勇士技能",
+      "en": "Crusader&apos;s Guide",
+      "id": "111",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极英雄",
+      "en": "Ultimate Hero",
+      "id": "112",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "准骑士技能",
+      "en": "Page&apos;s Path",
+      "id": "120",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "骑士技能",
+      "en": "White Knight&apos;s Code",
+      "id": "121",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "光之圣骑士",
+      "en": "Paladin of Light",
+      "id": "122",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "枪战士技能",
+      "en": "Spearman Techniques",
+      "id": "130",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "龙骑士技能",
+      "en": "Dragon Knight&apos;s Path",
+      "id": "131",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "暗之黑骑士",
+      "en": "Dark Knight of Darkness",
+      "id": "132",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法师技能",
+      "en": "Intro. to Magic",
+      "id": "200",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火毒魔法技能",
+      "en": "Fire &amp; Poison Basics",
+      "id": "210",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "巫师（火毒）技能",
+      "en": "Adv. Fire &amp; Poison",
+      "id": "211",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "最高级火, 毒魔法",
+      "en": "Highest class of Magic (F,P)",
+      "id": "212",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰雷魔法技能",
+      "en": "Ice &amp; Lightning Basics",
+      "id": "220",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "巫师（冰雷）技能",
+      "en": "Adv. Ice &amp; Lightning",
+      "id": "221",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "最高级冷气,雷电魔法",
+      "en": "Highest class of Magic (I,L)",
+      "id": "222",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神圣魔法技能",
+      "en": "Holy Magic Basics",
+      "id": "230",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "祭司技能",
+      "en": "Adv. Holy Magic",
+      "id": "231",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "最高级神圣魔法",
+      "en": "Highest class of Holy Magic",
+      "id": "232",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "弓箭手技能",
+      "en": "Bowman Basics",
+      "id": "300",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "猎人技能",
+      "en": "Hunter&apos;s Guide",
+      "id": "310",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "射手技能",
+      "en": "Path of the Ranger",
+      "id": "311",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神射手",
+      "en": "Bow master",
+      "id": "312",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "弩弓手技能",
+      "en": "Crossbowman Guide",
+      "id": "320",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "游侠技能",
+      "en": "Sniper&apos;s Scope",
+      "id": "321",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "弩箭神",
+      "en": "Marksman",
+      "id": "322",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "飞侠技能",
+      "en": "Thief Skills",
+      "id": "400",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "刺客技能",
+      "en": "Assassin Skills",
+      "id": "410",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "无影人技能",
+      "en": "The Way of Hermit",
+      "id": "411",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "隐之侠士",
+      "en": "Secret Skills of Nights Lord",
+      "id": "412",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "侠客技能",
+      "en": "Bandit&apos;s Tricks",
+      "id": "420",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "独行客技能",
+      "en": "Chief Bandit&apos;s Tricks",
+      "id": "421",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "盗之侠客",
+      "en": "Secret Skills of Shadower",
+      "id": "422",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "海盗入门书",
+      "en": "Pirate Beginner Guide",
+      "id": "500",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "拳手介绍书",
+      "en": "Brawler Guide",
+      "id": "510",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "斗士之路",
+      "en": "The Path of the Marauder",
+      "id": "511",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冲锋队长的达成",
+      "en": "The Perfect Buccaneer",
+      "id": "512",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火枪手介绍书",
+      "en": "Gunslinger Guide",
+      "id": "520",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "大副之路",
+      "en": "The Path of the Outlaw",
+      "id": "521",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "船长的完成",
+      "en": "The Perfect Corsair",
+      "id": "522",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "管理员技能书",
+      "en": "매니저 스킬북",
+      "id": "800",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "运营者技能书",
+      "en": "Admin. Skill Book (Normal)",
+      "id": "900",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "管理员技能书(超级)",
+      "en": "Admin. Skill Book (Super)",
+      "id": "910",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "蜗牛投掷术",
+      "en": "Three Snails",
+      "id": "0001000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "高级职业技能",
+      "en": "Noblesse Techniques",
+      "id": "1000",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "团队治疗",
+      "en": "Recovery",
+      "id": "0001001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "疾风步",
+      "en": "Nimble Feet",
+      "id": "0001002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "匠人之魂",
+      "en": "Legendary Spirit",
+      "id": "0001003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "骑兽技能",
+      "en": "Monster Rider",
+      "id": "0001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "英雄之回声",
+      "en": "Echo of Hero",
+      "id": "0001005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "向下跳跃",
+      "en": "Jump Down",
+      "id": "0001006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "锻造",
+      "en": "Maker",
+      "id": "0001007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "流星竹雨",
+      "en": "Bamboo Rain",
+      "id": "0001009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金刚霸体",
+      "en": "Invincibility",
+      "id": "0001010",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "狂暴战魂",
+      "en": "Power Explosion",
+      "id": "0001011",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：2]\\n搭乘宇宙船。搭乘后连按两次左右方向键\\n之一就能瞬间提高移动速度和跳跃力。#c\\n有效时间：2009年6月8日00点#",
+      "en": "[Master Level : 2]\\nYou board a spaceship. While aboard, you can increase your movement and jump abilities by pressing the right/left direction key twice. #Available until: 06-08-2009 at 00 hour#",
+      "id": "0001013",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超时空冲锋",
+      "en": "Space Dash",
+      "id": "0001014",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "太空射线",
+      "en": "Space Beam",
+      "id": "0001015",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "白雪人骑宠",
+      "en": "Yeti Rider",
+      "id": "0001017",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以骑着白雪人移动。\\n#c有效时间：20XX年XX月XX日00时#",
+      "en": "[Master Level : 1]\\nAllows you to move around while being mounted on a Yeti.",
+      "id": "0001018",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以骑着魔女的扫把移动。",
+      "en": "[Master Level : 1]\\nAllows you to move around while being mounted on a Broomstick.",
+      "id": "0001019",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "法老王的愤怒",
+      "en": "Rage of Pharaoh",
+      "id": "0001020",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以骑着蝙蝠怪移动。",
+      "en": "[Master Level : 1]\\nAllows you to move around while being mounted on a Barlog.",
+      "id": "0001031",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魂骑士的基本",
+      "en": "The Basics of a Dawn Warrior",
+      "id": "1100",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魂骑士之路",
+      "en": "Path of the Dawn Warrior",
+      "id": "1110",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魂骑士的一切",
+      "en": "Dawn Warrior&apos;s Guide",
+      "id": "1111",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魂骑士的完成",
+      "en": "Completion of the Dawn Warrior",
+      "id": "1112",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "炎术士入门书",
+      "en": "The Blaze Wizard Guide",
+      "id": "1200",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "炎术士守护",
+      "en": "Blaze Wizard Guide",
+      "id": "1210",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "高级火焰魔法",
+      "en": "Adv. Flame Magic",
+      "id": "1211",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "最高级火焰魔法",
+      "en": "Premium Flame Magic",
+      "id": "1212",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风灵使者的基础",
+      "en": "Intro of the Wind Archer",
+      "id": "1300",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风灵使者的技能",
+      "en": "Skill of the Wind Archer",
+      "id": "1310",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风灵使者之路",
+      "en": "Path of the Wind Archer",
+      "id": "1311",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风灵使者的完成",
+      "en": "Completion of the Wind Archer",
+      "id": "1312",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "夜行者入门书",
+      "en": "The Night Walker Guide",
+      "id": "1400",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "夜行者守护",
+      "en": "Night Walker Guide",
+      "id": "1410",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "夜行者之路",
+      "en": "Night Walker&apos;s Path",
+      "id": "1411",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "奇袭者秘技",
+      "en": "Secret skill of the Night Walker",
+      "id": "1412",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "奇袭者入门书",
+      "en": "Intro to the Thunder Breaker",
+      "id": "1500",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "奇袭者守护",
+      "en": "Thunder Breaker guide",
+      "id": "1510",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "奇袭者之路",
+      "en": "Path of the Thunder Breaker",
+      "id": "1511",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "奇袭者完成",
+      "en": "Completion of Thunder Breaker",
+      "id": "1512",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战童技能",
+      "en": "Legendary Skill",
+      "id": "2000",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战神",
+      "en": "Aran",
+      "id": "2100",
+      "category": "skill",
+      "fieldType": "bookName",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "猪猪的弱点",
+      "en": "Pig&apos;s Weakness",
+      "id": "0009000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "木妖的弱点",
+      "en": "Stump&apos;s Weakness",
+      "id": "0009001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "绿水灵的弱点",
+      "en": "Slime&apos;s Weakness",
+      "id": "0009002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "生命恢复",
+      "en": "Improved HP Recovery",
+      "id": "1000000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "生命加强",
+      "en": "Improved MaxHP Increase",
+      "id": "1000001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "恢复术",
+      "en": "Endure",
+      "id": "1000002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣甲术",
+      "en": "Iron Body",
+      "id": "1001003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强力攻击",
+      "en": "Power Strike",
+      "id": "1001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "群体攻击",
+      "en": "Slash Blast",
+      "id": "1001005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准剑",
+      "en": "Sword Mastery",
+      "id": "1100000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准斧",
+      "en": "Axe Mastery",
+      "id": "1100001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极剑",
+      "en": "Final Attack : Sword",
+      "id": "1100002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极斧",
+      "en": "Final Attack : Axe",
+      "id": "1100003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速剑",
+      "en": "Sword Booster",
+      "id": "1101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速斧",
+      "en": "Axe Booster",
+      "id": "1101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "愤怒之火",
+      "en": "Rage",
+      "id": "1101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "伤害反击",
+      "en": "Power Guard",
+      "id": "1101007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔力恢复",
+      "en": "Improving MP Recovery",
+      "id": "1110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "盾防精通",
+      "en": "Shield Mastery",
+      "id": "1110001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "斗气集中",
+      "en": "Combo Attack",
+      "id": "1111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "狂乱之剑",
+      "en": "Panic : Sword",
+      "id": "1111003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "狂乱之斧",
+      "en": "Panic : Axe",
+      "id": "1111004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "气绝剑",
+      "en": "Coma: Sword",
+      "id": "1111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "气绝斧",
+      "en": "Coma: Axe",
+      "id": "1111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "防御崩坏",
+      "en": "Armor Crash",
+      "id": "1111007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "虎咆哮",
+      "en": "Shout",
+      "id": "1111008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "进阶斗气",
+      "en": "Advanced Combo Attack",
+      "id": "1120003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "阿基里斯",
+      "en": "Achilles",
+      "id": "1120004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "寒冰掌",
+      "en": "Guardian",
+      "id": "1120005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冒险岛勇士",
+      "en": "Maple Warrior",
+      "id": "1121000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "磁石",
+      "en": "Monster Magnet",
+      "id": "1121001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "稳如泰山",
+      "en": "Power Stance",
+      "id": "1121002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "突进",
+      "en": "Rush",
+      "id": "1121006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "轻舞飞扬",
+      "en": "Brandish",
+      "id": "1121008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "使用10个斗气能量，一定时间内提高攻击力。\\n需要技能：#c进阶斗气25级以上\\n冷却时间 : 4分钟#",
+      "en": "Temporarily increases the attacking ability by using up the 10 combo counters.",
+      "id": "1121010",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "从异常状态中恢复。\\n随着等级的上升，冷却时间缩短。\\n#c冷却时间 : 10分#",
+      "en": "Enables one to shrug off abnormal conditions. The higher the skill level, the more types of abnormal conditions one can nullify.",
+      "id": "1121011",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n增加使用剑系武器的命中率及熟练度\\n(必须装备单手剑，双手剑)",
+      "en": "[Master Level : 20]\\nIncreases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
+      "id": "1200000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准钝器",
+      "en": "BW Mastery",
+      "id": "1200001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 30]\\n第一次攻击后发动连续攻击\\n(必须装备单手剑，双手剑)\\n必需技能: #c精准剑等级3以上#",
+      "en": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
+      "id": "1200002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极钝器",
+      "en": "Final Attack : BW",
+      "id": "1200003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n攻击速度提升两个等级\\n(装备单手剑，双手剑)\\n必需技能: #c精准剑等级5以上#",
+      "en": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
+      "id": "1201004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速钝器",
+      "en": "BW Booster",
+      "id": "1201005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "压制术",
+      "en": "Threaten",
+      "id": "1201006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 30]\\n按怪物对自身伤害的一定量反击怪物\\n(怪物所受的伤害以最大HP10%为限度)\\n必需技能：#c压制术等级3以上#",
+      "en": "[Master Level : 30]\\nReturns a portion of the damage received from the enemy. Can&apos;t return more than 10% of the enemy&apos;s Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Threaten#",
+      "id": "1201007",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n增加每10秒的MP恢复量",
+      "en": "[Master Level : 20]\\nRecovering even more MP every 10 sec. ",
+      "id": "1210000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n盾牌的物理防御力增加,必需装备盾牌.",
+      "en": "[Master Level : 20]\\nShield Defense increases. However, it does not affect if the character does not equip the shield.",
+      "id": "1210001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "属性攻击",
+      "en": "Charged Blow",
+      "id": "1211002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "烈焰之剑",
+      "en": "Fire Charge: Sword",
+      "id": "1211003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "烈焰钝器",
+      "en": "Flame Charge: BW",
+      "id": "1211004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "寒冰之剑",
+      "en": "Ice Charge: Sword",
+      "id": "1211005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "寒冰钝器",
+      "en": "Blizzard Charge: BW",
+      "id": "1211006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "雷电之击：剑",
+      "en": "Thunder Charge: Sword",
+      "id": "1211007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "雷电之击：钝器",
+      "en": "Lightning Charge: BW",
+      "id": "1211008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n取消周围怪物的物理防御\\n冷却时间随着技能等级的增加而减少\\n必需技能: #c属性攻击等级3以上#\\n对#c暗黑龙王#无效",
+      "en": "[Master Level : 20]\\n Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
+      "id": "1211009",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "永久强化盔甲,减弱伤害值.",
+      "en": "Permanently increases the weapon defense of one&apos;s armor",
+      "id": "1220005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定概率下用盾牌挡住敌人的攻击，近\\n距离攻击防御成功的话，攻击自己的敌人\\n2秒内处于昏迷状态，需装备盾牌。",
+      "en": "Blocks the monster&apos;s attack by using the shield with a given success rate. Additionally, if the close-range attack is blocked, the attacking monster will be stunned for 2 seconds. The skill only works when equipped with a shield",
+      "id": "1220006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "万佛归一破",
+      "en": "Advanced Charge",
+      "id": "1220010",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内把组队成员的所有属性点提高\\n一定的百分比.",
+      "en": "Increase all players&apos; stats within a party by certain percentage ",
+      "id": "1221000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "把远处的敌人最多能6只吸到自己面前.",
+      "en": "Pulls a monster from afar up close.",
+      "id": "1221001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "凭借着强韧的精神，\\n受到敌人的攻击仍不会后退。",
+      "en": "Enables one to stay at the same spot after being struck, resisting knock-back effects.",
+      "id": "1221002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣灵之剑",
+      "en": "Holy Charge : Sword",
+      "id": "1221003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣灵之锤",
+      "en": "Divine Charge : BW",
+      "id": "1221004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "向前攻击，把自己前面的敌人推开。",
+      "en": "Makes a mad dash forward, pushing off up to 10 monsters.",
+      "id": "1221007",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "连环环破",
+      "en": "Blast",
+      "id": "1221009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣域",
+      "en": "Heaven&apos;s Hammer",
+      "id": "1221011",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 解除诱惑异常状态, 冷却时间10分钟                    ",
+      "en": "MP - 30 escape from abnormal condition, Terms between skills 600secs",
+      "id": "1221012",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准枪",
+      "en": "Spear Mastery",
+      "id": "1300000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准矛",
+      "en": "Pole Arm Mastery",
+      "id": "1300001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极枪",
+      "en": "Final Attack : Spear",
+      "id": "1300002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极矛",
+      "en": "Final Attack : Pole Arm",
+      "id": "1300003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速枪",
+      "en": "Spear Booster",
+      "id": "1301004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速矛",
+      "en": "Pole Arm Booster",
+      "id": "1301005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "极限防御",
+      "en": "Iron Will",
+      "id": "1301006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神圣之火",
+      "en": "Hyper Body",
+      "id": "1301007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法抗性",
+      "en": "Elemental Resistance",
+      "id": "1310000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "枪连击",
+      "en": "Spear Crusher",
+      "id": "1311001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "矛连击",
+      "en": "Pole Arm Crusher",
+      "id": "1311002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "无双枪",
+      "en": "Dragon Fury: Spear",
+      "id": "1311003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "无双矛",
+      "en": "Dragon Fury: Pole Arm",
+      "id": "1311004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "龙之献祭",
+      "en": "Sacrifice",
+      "id": "1311005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "龙咆哮",
+      "en": "Dragon Roar",
+      "id": "1311006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n取消周围怪物的魔法防御\\n冷却时间随着技能等级的增加而减少\\n必需技能: #c龙之魂等级3以上#\\n对#c暗黑龙王#无效",
+      "en": "[Master Level : 20]\\n Nullifies &quot;power-up&quot; skills of multiple monsters with a given success rate.\\nRequired Skill : #cAt least Level 3 on Dragon Blood#",
+      "id": "1311007",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "龙之魂",
+      "en": "Dragon Blood",
+      "id": "1311008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "减少伤害 5.5%                    ",
+      "en": "  Damage taken from enemy - 0.5% .",
+      "id": "1320005",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "恶龙附身",
+      "en": "Berserk",
+      "id": "1320006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂治愈",
+      "en": "Aura of the Beholder",
+      "id": "1320008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂祝福",
+      "en": "Hex of the Beholder",
+      "id": "1320009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 10, 30秒内所有的属性点提高 1%                    ",
+      "en": "MP - 10 ,  For 30Secs, all stats + 1% ",
+      "id": "1321000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 10 , 范围 100%, 成功率 42%                    ",
+      "en": "MP - 10, Range 100%, pulls up to 3 enemies.",
+      "id": "1321001",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30，10秒内有42%的几率不会出现退后现象                    ",
+      "en": "MP - 30 ,For 10secs, prevent from getting knock-backed  with success rate  42%.",
+      "id": "1321002",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 22, 伤害 72%, 范围 80%                    ",
+      "en": "MP - 22 , Damage 72%, Range 80%",
+      "id": "1321003",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂助力",
+      "en": "Beholder",
+      "id": "1321007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 解除诱惑异常状态, 冷却时间9分钟                    ",
+      "en": "MP - 30 escape from abnormal condition, Terms between skills 540secs",
+      "id": "1321010",
+      "category": "skill",
+      "fieldType": "h2",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 16]\\n增加每10秒的MP恢复量.",
+      "en": "[Master Level : 16]\\nRecovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
+      "id": "2000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔力强化",
+      "en": "Improved MaxMP Increase",
+      "id": "2000001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法盾",
+      "en": "Magic Guard",
+      "id": "2001002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法铠甲",
+      "en": "Magic Armor",
+      "id": "2001003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法弹",
+      "en": "Energy Bolt",
+      "id": "2001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法双击",
+      "en": "Magic Claw",
+      "id": "2001005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔力吸收",
+      "en": "MP Eater",
+      "id": "2100000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精神力",
+      "en": "Meditation",
+      "id": "2101001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速移动",
+      "en": "Teleport",
+      "id": "2101002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n降低怪物的移动速度.\\n无法重复使用,最多一次攻击8个.\\n必需技能: #c快速移动等级５以上# ",
+      "en": "[Master Level : 20]\\nTemporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
+      "id": "2101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火焰箭",
+      "en": "Fire Arrow",
+      "id": "2101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "毒雾术",
+      "en": "Poison Breath",
+      "id": "2101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火毒抗性",
+      "en": "Partial Resistance",
+      "id": "2110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔力激化",
+      "en": "Element Amplification",
+      "id": "2110001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "末日烈焰",
+      "en": "Explosion",
+      "id": "2111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "致命毒雾",
+      "en": "Poison Mist",
+      "id": "2111003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "封印术",
+      "en": "Seal",
+      "id": "2111004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法狂暴",
+      "en": "Spell Booster",
+      "id": "2111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火毒合击",
+      "en": "Element Composition",
+      "id": "2111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 20, 300秒内所有的属性点提高 5%                    ",
+      "en": "MP - 20 ,  For 300Secs, all stats + 5% ",
+      "id": "2121000",
+      "category": "skill",
+      "fieldType": "h10",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "创世之破",
+      "en": "Big Bang",
+      "id": "2121001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魔法反击",
+      "en": "Mana Reflection",
+      "id": "2121002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火凤球",
+      "en": "Fire Demon",
+      "id": "2121003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极无限",
+      "en": "Infinity",
+      "id": "2121004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰破魔兽",
+      "en": "Elquines",
+      "id": "2121005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "连环爆破",
+      "en": "Paralyze",
+      "id": "2121006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "天降落星",
+      "en": "Meteor Shower",
+      "id": "2121007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 解除诱惑异常状态, 冷却时间8分钟                    ",
+      "en": "MP - 30 escape from abnormal condition, Terms between skills 480secs",
+      "id": "2121008",
+      "category": "skill",
+      "fieldType": "h3",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n使用魔法攻击时，吸收怪物的MP。\\n怪物的MP为0时无效.",
+      "en": "[Master Level : 20]\\nAbsorbs the enemy&apos;s MP when attacking with Magic skills, until it reaches 0.",
+      "id": "2200000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n通过精神交流提高周围所有队员的魔力，\\n并且受到敌人的攻击仍不会后退。\\n必要技能 : #c魔力吸收等级3以上#",
+      "en": "[Master Level : 20]\\nMeditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
+      "id": "2201001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n用方向键可以瞬间移动一定的距离。",
+      "en": "[Master Level : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
+      "id": "2201002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP8，怪物移动速度-4(持续时间4秒)                    ",
+      "en": "MP -8; enemy&apos;s moving speed -2 for 2 sec.",
+      "id": "2201003",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰冻术",
+      "en": "Cold Beam",
+      "id": "2201004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "雷电术",
+      "en": "Thunder Bolt",
+      "id": "2201005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n提高对冰雷属性的魔法抗性.",
+      "en": "[Master Level : 20]\\n Gains resistance against Magic attacks of Ice and Lightning.",
+      "id": "2210000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:30]\\n消耗更多的MP,提高自己的魔法攻击力",
+      "en": "[Master Level : 30]\\n Boosts the capacity for all Magic attacks by using additional MP.",
+      "id": "2210001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰咆哮",
+      "en": "Ice Strike",
+      "id": "2211002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "落雷枪",
+      "en": "Thunder Spear",
+      "id": "2211003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n对周围多个的怪物进行封印。成为封印状\\n态的怪物不能使用技能, 对BOSS无效\\n必需技能: #c魔力激化等级3以上#",
+      "en": "[Master Level : 20]\\nSeals up the enemies around you for a certain amount of time. Once sealed up, the monsters can&apos;t use attacking skills, but the skill does not work on boss monsters.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
+      "id": "2211004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n消耗更多的HP和MP,提高魔法攻击速度。\\n必需技能: #c魔力激化等级3以上#",
+      "en": "[Master Level : 20]\\nUses up a significant amount of HP and MP to increase the attacking speed for spells.",
+      "id": "2211005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:30]\\n混合冰和雷属性的魔法攻击一个怪物。\\n一定的几率怪物被冻结。",
+      "en": "[Master Level : 30]\\nAttacks a single monster with Magic attack of Ice and Lightning features combined.  Very effective to the monsters vulnerable to ice and lightning, and if struck, the monster will freeze.",
+      "id": "2211006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 330秒内所有的属性点提高 6%                    ",
+      "en": "MP - 30 ,  For 330Secs, all stats + 6% ",
+      "id": "2221000",
+      "category": "skill",
+      "fieldType": "h11",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内搜集周围离子的力量,\\n引起一次性大爆炸",
+      "en": "Gathers up numerous particles from the surrounding area to form an energy vortex, culminating in a powerful explosion.",
+      "id": "2221001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "改变魔法的流向来攻击敌人.\\n一次最多返还敌人的20%体力",
+      "en": "By drawing on incredible inner strength, enables one to reverse the flow of Mana back to the monster, returning the damage received from the monster. The returned damage cannot exceed 20% of maxHP of the monster.",
+      "id": "2221002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰凤球",
+      "en": "Ice Demon",
+      "id": "2221003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内搜集周围的魔力,不消耗魔法值 \\n#c冷却时间 : 3分#",
+      "en": "Enables one to temporarily draw magic powers from sources surrounding the mage and use it in place of one&apos;s own MP.",
+      "id": "2221004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火魔兽",
+      "en": "Ifrit",
+      "id": "2221005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "链环闪电",
+      "en": "Chain Lightning",
+      "id": "2221006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "落霜冰破",
+      "en": "Blizzard",
+      "id": "2221007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 解除诱惑异常状态, 冷却时间7分钟                    ",
+      "en": "MP - 30 escape from abnormal condition, Terms between skills 420secs",
+      "id": "2221008",
+      "category": "skill",
+      "fieldType": "h4",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "按攻击时的11%的比率吸收，最高不超过MP的21%                    ",
+      "en": "For every attack, 11% Success rate,\\r\\nabsorb 21% of the enemy&apos;s MaxMP.",
+      "id": "2300000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP60，移动距离162                    ",
+      "en": "MP -60; teleport, with 130 in distance",
+      "id": "2301001",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "群体治愈",
+      "en": "Heal",
+      "id": "2301002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神之保护",
+      "en": "Invincible",
+      "id": "2301003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "祝福",
+      "en": "Bless",
+      "id": "2301004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣箭术",
+      "en": "Holy Arrow",
+      "id": "2301005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n提高对所有属性魔法攻击的抗性。",
+      "en": "[Master Level : 20]\\nGains a higher tolerance for all element-based spell attacks from the enemy.",
+      "id": "2310000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "净化",
+      "en": "Dispel",
+      "id": "2311001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "时空门",
+      "en": "Mystic Door",
+      "id": "2311002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神圣祈祷",
+      "en": "Holy Symbol",
+      "id": "2311003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣光",
+      "en": "Shining Ray",
+      "id": "2311004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "巫毒术",
+      "en": "Doom",
+      "id": "2311005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣龙召唤",
+      "en": "Summon Dragon",
+      "id": "2311006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 360秒内所有的属性点提高 6%                    ",
+      "en": "MP - 30 ,  For 360Secs, all stats + 6% ",
+      "id": "2321000",
+      "category": "skill",
+      "fieldType": "h12",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 25, 最大攻击力 160, 熟练度 35                    ",
+      "en": "MP - 25 , Max attack 160, Mastery 35",
+      "id": "2321001",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 26 , 10秒间 100%的几率将魔法伤害的275%反还给敌人.                    ",
+      "en": "MP - 26 , success rate 10secs 31%, Return 55%of magic damage received to enemy..",
+      "id": "2321002",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强化圣龙",
+      "en": "Bahamut",
+      "id": "2321003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "11秒 内不消耗MP                    ",
+      "en": "For 11secs, Mana is left intacted.",
+      "id": "2321004",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣灵之盾",
+      "en": "Holy Shield",
+      "id": "2321005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "复活术",
+      "en": "Resurrection",
+      "id": "2321006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "光芒飞箭",
+      "en": "Angel Ray",
+      "id": "2321007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "圣光普照",
+      "en": "Genesis",
+      "id": "2321008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 解除诱惑异常状态, 冷却时间6分钟                    ",
+      "en": "MP - 30 escape from abnormal condition, Terms between skills 360secs",
+      "id": "2321009",
+      "category": "skill",
+      "fieldType": "h5",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准箭",
+      "en": "The Blessing of Amazon",
+      "id": "3000000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强力箭",
+      "en": "Critical Shot",
+      "id": "3000001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "远程箭",
+      "en": "The Eye of Amazon",
+      "id": "3000002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "集中术",
+      "en": "Focus",
+      "id": "3001003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "断魂箭",
+      "en": "Arrow Blow",
+      "id": "3001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "二连射",
+      "en": "Double Shot",
+      "id": "3001005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准弓",
+      "en": "Bow Mastery",
+      "id": "3100000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极弓",
+      "en": "Final Attack : Bow",
+      "id": "3100001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速箭",
+      "en": "Bow Booster",
+      "id": "3101002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强弓",
+      "en": "Power Knock-Back",
+      "id": "3101003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "无形箭",
+      "en": "Soul Arrow : Bow",
+      "id": "3101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "爆炸箭",
+      "en": "Arrow Bomb : Bow",
+      "id": "3101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n增加移动速度。",
+      "en": "[Master Level : 20]\\nBoosts up the moving speed.",
+      "id": "3110000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "贯穿箭",
+      "en": "Mortal Blow",
+      "id": "3110001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "替身术",
+      "en": "Puppet",
+      "id": "3111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "烈火箭",
+      "en": "Inferno",
+      "id": "3111003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "箭雨",
+      "en": "Arrow Rain",
+      "id": "3111004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "银鹰召唤",
+      "en": "Silver Hawk",
+      "id": "3111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "箭扫射",
+      "en": "Strafe",
+      "id": "3111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神箭手",
+      "en": "Bow Expert",
+      "id": "3120005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 390秒内所有的属性点提高 7%                    ",
+      "en": "MP - 30 ,  For 390Secs, all stats + 7% ",
+      "id": "3121000",
+      "category": "skill",
+      "fieldType": "h13",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火眼晶晶",
+      "en": "Sharp Eyes",
+      "id": "3121002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "飞龙冲击波",
+      "en": "Dragon&apos;s Breath",
+      "id": "3121003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "暴风箭雨",
+      "en": "Hurricane",
+      "id": "3121004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内召唤火属性的火凤凰. \\n最多攻击4只怪物.\\n必要技能 : #c银鹰召唤 15级 以上#",
+      "en": "Temporarily summons the Phoenix, who is a fire-based ally. Attacks up to 4 monsters.",
+      "id": "3121006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "击退箭",
+      "en": "Hamstring",
+      "id": "3121007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "集中精力",
+      "en": "Concentrate",
+      "id": "3121008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准弩",
+      "en": "Crossbow Mastery",
+      "id": "3200000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极弩",
+      "en": "Final Attack : Crossbow",
+      "id": "3200001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速弩",
+      "en": "Crossbow Booster",
+      "id": "3201002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n用弩攻击时，使怪物后退的比率增加，\\n随着等级上升击退怪物数量会增加",
+      "en": "[Master Level : 20]\\nIncreases the success rate for pushing off the monsters when swinging a crossbow.  As the level rises, the number of monsters that one can push off with one swing increases.",
+      "id": "3201003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n一定时间内，攻击时不消耗箭\\n必需技能 : #c快速弩等级5以上#",
+      "en": "[Master Level : 20]\\nTemporarily allows the character to fire crossbow arrows without using up the arrows. Only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
+      "id": "3201004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "穿透箭",
+      "en": "Iron Arrow : Crossbow",
+      "id": "3201005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "移动速度 +2                    ",
+      "en": "Speed + 2",
+      "id": "3210000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n即使怪物靠得很近的时候也能发射弩，\\n一定几率必杀怪物。",
+      "en": "[Master Level : 20]\\nFor a certain rate, allows you to fire crossbow arrows even at a very close range. Even kills a monster with one shot every once in a while.",
+      "id": "3210001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n一定时间制造自己的分身。\\n分身存在的时候, 怪物攻击分身。",
+      "en": "[Master Level : 20]\\nSummons a puppet (your other self) for a certain amount of time. While the puppet is around, the monsters will attack the puppet, not you.",
+      "id": "3211002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:30]\\n用冰属性的箭攻击多个怪物，属性纯度50%。\\n最多攻击6个怪物，只有装备弩弓才能使用.",
+      "en": "[Master Level : 30]\\nUses ice-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
+      "id": "3211003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "升龙弩",
+      "en": "Arrow Eruption",
+      "id": "3211004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金鹰召唤",
+      "en": "Golden Eagle",
+      "id": "3211005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:30]\\n向单个怪物连续射5支箭。",
+      "en": "[Master Level : 30]\\nFires 4 arrows at an enemy.",
+      "id": "3211006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神弩手",
+      "en": "Marksman Boost",
+      "id": "3220004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 420秒内所有的属性点提高 7%                    ",
+      "en": "MP - 30 ,  For 420Secs, all stats + 7% ",
+      "id": "3221000",
+      "category": "skill",
+      "fieldType": "h14",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "复活龙的灵魂射箭.\\n穿越敌人时吸收能量,变的更强.",
+      "en": "Fires a special arrow that penetrates through monsters. The arrow&apos;s power increases with each monster it pierces, inflicting more damage to each consecutive monster.",
+      "id": "3221001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "赋予组队成员针对敌人寻找弱点\\n并给予敌人致命伤的能力.",
+      "en": "Grants party members the ability to locate enemy weaknesses, and in turn inflict more damage by exploiting them.",
+      "id": "3221002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "召唤龙的灵魂发射强有力的箭. \\n被箭射中的敌人被退后很远",
+      "en": "Drawing upon the spirit of the dragon, fires a powerful arrow of tremendous force that will knock back the target a long distance.",
+      "id": "3221003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰凤凰",
+      "en": "Frostprey",
+      "id": "3221005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "刺眼箭",
+      "en": "Blind",
+      "id": "3221006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一击要害箭",
+      "en": "Snipe",
+      "id": "3221007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n增加命中率和回避率.",
+      "en": "[Master Level : 20]\\nIncreases accuracy and avoidability.",
+      "id": "4000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "远程暗器",
+      "en": "Keen Eyes",
+      "id": "4000001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "诅咒术",
+      "en": "Disorder",
+      "id": "4001002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "隐身术",
+      "en": "Dark Sight",
+      "id": "4001003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "二连击",
+      "en": "Double Stab",
+      "id": "4001334",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "双飞斩",
+      "en": "Lucky Seven",
+      "id": "4001344",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准暗器",
+      "en": "Claw Mastery",
+      "id": "4100000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强力投掷",
+      "en": "Critical Throw",
+      "id": "4100001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n在梯子和绳索上也能恢复HP/ MP.",
+      "en": "[Master Level : 20]\\nRecovers additional amount of HP and MP.",
+      "id": "4100002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速暗器",
+      "en": "Claw Booster",
+      "id": "4101003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "轻功",
+      "en": "Haste",
+      "id": "4101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "生命吸收",
+      "en": "Drain",
+      "id": "4101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "药剂精通",
+      "en": "Alchemist",
+      "id": "4110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "聚财术",
+      "en": "Meso Up",
+      "id": "4111001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "影分身",
+      "en": "Shadow Partner",
+      "id": "4111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "影网术",
+      "en": "Shadow Web",
+      "id": "4111003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金钱攻击",
+      "en": "Shadow Meso",
+      "id": "4111004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "多重飞镖",
+      "en": "Avenger",
+      "id": "4111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "二段跳",
+      "en": "Flash Jump",
+      "id": "4111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "假动作",
+      "en": "Shadow Shifter",
+      "id": "4120002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "武器用毒液",
+      "en": "Venomous Star",
+      "id": "4120005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 30, 450秒内所有的属性点提高 8%                    ",
+      "en": "MP - 30 ,  For 450Secs, all stats + 8% ",
+      "id": "4121000",
+      "category": "skill",
+      "fieldType": "h15",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "挑衅",
+      "en": "Taunt",
+      "id": "4121003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "忍者伏击",
+      "en": "Ninja Ambush",
+      "id": "4121004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "暗器伤人",
+      "en": "Shadow Stars",
+      "id": "4121006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "三连环光击破",
+      "en": "Triple Throw",
+      "id": "4121007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "忍者冲击",
+      "en": "Ninja Storm",
+      "id": "4121008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准短刀",
+      "en": "Dagger Mastery",
+      "id": "4200000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "每29秒恢复HP3, MP1                    ",
+      "en": "Additional recovery of HP +3, MP +1 every 29 sec.",
+      "id": "4200001",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快速短刀",
+      "en": "Dagger Booster",
+      "id": "4201002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n提高所有队员的移动速度和跳跃力.",
+      "en": "[Master Level : 20]\\nTemporarily boosts the speed and jumping ability of everyone in the party.",
+      "id": "4201003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "神通术",
+      "en": "Steal",
+      "id": "4201004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "回旋斩",
+      "en": "Savage Blow",
+      "id": "4201005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n提高盾牌的物理防御力,必须装备盾牌。",
+      "en": "[Master Level : 20]\\nIncreases the def. of the equipped shield. Only works when the shield is equipped.",
+      "id": "4210000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "转化术",
+      "en": "Chakra",
+      "id": "4211001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "落叶斩",
+      "en": "Assaulter",
+      "id": "4211002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "敛财术",
+      "en": "Pickpocket",
+      "id": "4211003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "分身术",
+      "en": "Band of Thieves",
+      "id": "4211004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金钱护盾",
+      "en": "Meso Guard",
+      "id": "4211005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金钱炸弹",
+      "en": "Meso Explosion",
+      "id": "4211006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "以极快的反射神经躲避敌人的攻击.",
+      "en": "With great reflexes, enables one to avoid the monster&apos;s attack.",
+      "id": "4220002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "在短刀上涂抹毒药攻击敌人使它一定几率\\n中毒受持续伤害.最多可重复3次,\\n敌人的HP不会掉落1以下.",
+      "en": "Stab a monster with a dagger that&apos;s been smeared with poison; the monster struck has a chance of being poisoned.  Usable up to 3 times against each monster.",
+      "id": "4220005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 40, 480秒内所有的属性点提高 8%                    ",
+      "en": "MP - 40 ,  For 480Secs, all stats + 8% ",
+      "id": "4221000",
+      "category": "skill",
+      "fieldType": "h16",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "暗杀",
+      "en": "Assassinate",
+      "id": "4221001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "最多可以把6只敌人陷入挑衅状态，随着敌人\\n的防御力上升而提高其经验值和物品掉落率。\\n必需技能: #c假动作等级10以上#",
+      "en": "Provokes a monster, causing its general defense to increase. As a result, EXP earned and drop rate for items will increase for this monster.",
+      "id": "4221003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "躲藏的同伴突然出现,在一定时间内持续攻击敌人.\\n一次无法攻击6只以上,HP不会掉到1以下.\\n必要技能 : #c假动作等级5以上#",
+      "en": "For a set period of time, a group of ninjas hiding around the bushes will periodically ambush up to 6 monsters at once. : #cShadow Shifter level 5 and above#",
+      "id": "4221004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "烟雾弹",
+      "en": "Smokescreen",
+      "id": "4221006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一出双击",
+      "en": "Boomerang Step",
+      "id": "4221007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快动作",
+      "en": "Bullet Time",
+      "id": "5000000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "百裂拳",
+      "en": "Flash Fist",
+      "id": "5001001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "半月踢",
+      "en": "Sommersault Kick",
+      "id": "5001002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n同时发射二颗子弹，攻击敌人.",
+      "en": "[Master Level : 20]\\nFires two bullets at once to apply double damage to monsters.",
+      "id": "5001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "疾驰",
+      "en": "Dash",
+      "id": "5001005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "强体术",
+      "en": "Improve MaxHP",
+      "id": "5100000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "精准拳",
+      "en": "Knuckler Mastery",
+      "id": "5100001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "回马",
+      "en": "Backspin Blow",
+      "id": "5101002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "升龙连击",
+      "en": "Double Uppercut",
+      "id": "5101003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "贯骨击",
+      "en": "Corkscrew Blow",
+      "id": "5101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "生命分流",
+      "en": "MP Recovery",
+      "id": "5101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "急速拳",
+      "en": "Knuckler Booster",
+      "id": "5101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "橡木伪装",
+      "en": "Oak Barrel",
+      "id": "5101007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "迷惑攻击",
+      "en": "Stun Mastery",
+      "id": "5110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "能量获得",
+      "en": "Energy Charge",
+      "id": "5110001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "能量爆破",
+      "en": "Energy Blast",
+      "id": "5111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "能量耗转",
+      "en": "Energy Drain",
+      "id": "5111004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超人变形",
+      "en": "Transformation",
+      "id": "5111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "碎石乱击",
+      "en": "Shockwave",
+      "id": "5111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP40  510秒内所有的属性点提高9%                    ",
+      "en": "MP - 40 ,  For 510Secs, all stats + 9% ",
+      "id": "5121000",
+      "category": "skill",
+      "fieldType": "h17",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "潜龙出渊",
+      "en": "Dragon Strike",
+      "id": "5121001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超能量",
+      "en": "Energy Orb",
+      "id": "5121002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超级变身",
+      "en": "Super Transformation",
+      "id": "5121003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金手指",
+      "en": "Demolition",
+      "id": "5121004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "索命",
+      "en": "Snatch",
+      "id": "5121005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "光速拳",
+      "en": "Barrage",
+      "id": "5121007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "从异常状态中恢复. \\n随着等级的上升,冷却时间逐渐缩短.",
+      "en": "Allows you to break out of an abnormal state. As its level increases, the number of abnormal states that can be broken out increases. \\n#cWaiting time : 10 min.#",
+      "id": "5121008",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "极速领域",
+      "en": "Speed Infusion",
+      "id": "5121009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "伺机待发",
+      "en": "Time Leap",
+      "id": "5121010",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n提升枪系武器的熟练度和命中率。\\n只适用于有装备枪的时候。",
+      "en": "[Master Level : 20]\\nBoosts the accuracy and the mastery of your Guns. This skill only applies when you equip a Gun.",
+      "id": "5200000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "快枪手",
+      "en": "Invisible Shot",
+      "id": "5201001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "投弹攻击",
+      "en": "Grenade",
+      "id": "5201002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "速射",
+      "en": "Gun Booster",
+      "id": "5201003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "迷惑射击",
+      "en": "Blank Shot",
+      "id": "5201004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "轻羽鞋",
+      "en": "Wings",
+      "id": "5201005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "激退射杀",
+      "en": "Recoil Shot",
+      "id": "5201006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "三连射杀",
+      "en": "Burst Fire",
+      "id": "5210000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 30]\\n召唤帮助攻击的章鱼。但召唤的章鱼不会动。\\n#c冷却时间 : 10秒#",
+      "en": "[Master Level : 30]\\nSummons a loyal octopus that&apos;ll aid your attacks. The summoned octopus will not move, however.\\n#cWaiting time until the next summon : 10 sec#",
+      "id": "5211001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "海鸥空袭",
+      "en": "Gaviota",
+      "id": "5211002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "烈焰喷射",
+      "en": "Flamethrower",
+      "id": "5211004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "寒冰喷射",
+      "en": "Ice Splitter",
+      "id": "5211005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "导航",
+      "en": "Homing Beacon",
+      "id": "5211006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "属性强化",
+      "en": "Elemental Boost",
+      "id": "5220001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超级章鱼炮台",
+      "en": "Wrath of the Octopi",
+      "id": "5220002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "导航辅助",
+      "en": "Bullseye",
+      "id": "5220011",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP 40  540秒内所有的属性提升 9%                    ",
+      "en": "MP - 40 ,  For 540Secs, all stats + 9% ",
+      "id": "5221000",
+      "category": "skill",
+      "fieldType": "h18",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "地毯式空袭",
+      "en": "Aerial Strike",
+      "id": "5221003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金属风暴",
+      "en": "Rapid Fire",
+      "id": "5221004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "武装",
+      "en": "Battleship",
+      "id": "5221006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "急速射",
+      "en": "Battleship Cannon",
+      "id": "5221007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "重量炮击",
+      "en": "Battleship Torpedo",
+      "id": "5221008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "心灵控制",
+      "en": "Hypnotize",
+      "id": "5221009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "从异常状态中恢复。\\n随着等级的上升，冷却时间逐渐缩短。",
+      "en": "Uses HP and MP to temporarily increase the attacking speed of a weapon. This can be combined with other boosters, and everyone in the party will be positively affected by this.\\nRequired Skill : #cLevel 20 of Knuckler Booster#",
+      "id": "5221010",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "宏指令测试",
+      "en": "매크로 테스트",
+      "id": "8001000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n利用上下左右方向键，每隔一定时间移动\\n到同一地图的不同位置。",
+      "en": "[마스터 레벨 : 1]\\n상, 하, 좌, 우 방향키를 이용하여 같은 맵 상의 다른 위치로 일정 간격으로 이동할 수 있다.",
+      "id": "8001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "治愈+魔法无效",
+      "en": "Haste (Normal)",
+      "id": "9001000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n增加周边角色的移动速度和跳跃力。",
+      "en": "[Master Level : 1]\\n GM Super Dragon Roar",
+      "id": "9001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n周边角色打怪时，取得更多经验值。",
+      "en": "[Master Level : 1]\\n GM Teleport",
+      "id": "9001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n15分内周边角色的各种能力值大幅增加。",
+      "en": "[Master Level:1]\\n GM Bless",
+      "id": "9001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "隐藏术",
+      "en": "Hide",
+      "id": "9001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n使得死亡的角色复活。",
+      "en": "[Master Level : 1]\\n GM Resurrection",
+      "id": "9001005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "超级狂龙斩",
+      "en": "Super Dragon Roar",
+      "id": "9001006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "瞬间移动, 移动距离150                    ",
+      "en": "Teleport yourself.",
+      "id": "9001007",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:1]15分钟内,强化肉体全体最大HP和最大MP提升60%",
+      "en": "[Master Level:1]\\n GM Hyper Body",
+      "id": "9001008",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "测试外挂",
+      "en": "ADMIN_ANTIMACRO",
+      "id": "9001009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n敌人的魔法效果无效化，\\n治愈自己和周边角色的状态异常，恢复HP。",
+      "en": "[Master Level : 1]\\n GM Heal + Dispel",
+      "id": "9101000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "轻功(超级)",
+      "en": "Haste (Super)",
+      "id": "9101001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n周边角色打怪时，获得更多经验值。",
+      "en": "[Master Level : 1]\\n GM Holy Symbol",
+      "id": "9101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n周边角色的各种能力值大幅增加。",
+      "en": "[Master Level : 1]\\n GM Bless",
+      "id": "9101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 1]\\n隐藏自己，其他角色看不见。\\n使用技能会被解除。",
+      "en": "[Master Level : 1]\\n GM Hide",
+      "id": "9101004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "复活",
+      "en": "Ressurect nearby players.",
+      "id": "9101005",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:1]全体最大HP和最大MP提升60%",
+      "en": "[Master Level : 1]\\n GM Hyper Body",
+      "id": "9101008",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n 本帐号其他角色等级每提高10级增加1点技能点数。",
+      "en": "[Master Level : 20]\\nSkill Point will increase by 1 when the related character reaches above Lv.10.",
+      "id": "10000012",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战精灵",
+      "en": "Helper",
+      "id": "10000013",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]可携带多只宠物，最多携带3只。",
+      "en": "Allows one to lead up to 3 pets at once. (Passive skill)",
+      "id": "10000018",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "在地图椅上休息，被动地恢复额外的HP和MP                    ",
+      "en": "Passively recover extra amounts of HP and MP by resting on map chairs.",
+      "id": "10000100",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：3]\\n投掷蜗牛壳来攻击远距离的怪物。",
+      "en": "[Master Level : 3]\\nHurls snail shells to attack monsters from long distance.",
+      "id": "10001000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：3]\\n30秒内持续时间恢复HP。\\n#c再次使用时间间隔 : 2分#",
+      "en": "[Master Level : 3]\\nEnables the user to recover HP constantly for 30 sec. \\n#cTerms between skills : 10 min.#",
+      "id": "10001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：3]\\n瞬间迅速的移动。 \\n#c再次使用时间间隔 ： 1分#",
+      "en": "[Master Level : 3]\\nEnables the character to move around quickly for a short amount of time. \\n#cTerms between skills : 1 min.#",
+      "id": "10001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n不能装备的道具也能使用符咒",
+      "en": "[Master Level : 1]\\nUses the spirit of a legend to use a scroll on an item that cannot be equipped with your character.",
+      "id": "10001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n能够坐骑怪物并移动",
+      "en": "[Master Level : 1]\\nEnables one to ride on a tamed monster and use it as a method of transportation.",
+      "id": "10001004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n增加周边角色的物理攻击力和魔法攻击力。 \\n#c冷却时间 : 2小时#",
+      "en": "[Master Lever : 1]\\n Increase weapon attack and magic attack on all players around. \\n#cTerms between skills : 2hours#",
+      "id": "10001005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以向下跳跃。",
+      "en": "[Master Level:1]\\nJump down.",
+      "id": "10001006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：3]\\n可以使用炼金术制作物品。\\n根据自身角色等级的不同，可制作物品不同。",
+      "en": "[Master Level : 3]\\nCan create item by using alchemy. Created item is different by level.",
+      "id": "10001007",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "使用千万个竹子攻击敌人",
+      "en": "Use bamboo as weapon and attack.",
+      "id": "10001009",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内变成无敌状态",
+      "en": "Become invincible for certain period of time.",
+      "id": "10001010",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内增加伤害值",
+      "en": "Damage will increase for certain period of time.",
+      "id": "10001011",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "MP消耗10，防御力增加10，移动速度150，跳跃力120                    ",
+      "en": "Consumes 10 MP. Weapon and Magic Defense +10, Speed 150, Jump 120",
+      "id": "10001014",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n连续按左右方向键两次，可以瞬间提高移\\n动速度和跳跃力。 #c有效时间：2009\\n年6月8日00时#",
+      "en": "[Master Level : 1]\\nIncrease your movement and jump abilities by pressing the right/left direction key twice. #cAvailable until 06-08-2009 at 00 hour# ",
+      "id": "10001015",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以改变宇宙矿山的氪晶体的状态。#c\\n有效时间：20XX年X月X日00时#",
+      "en": "[Master Level : 1]\\nChanges the condition of the Krypto found at the Space Mine. #cAvailable until: 06-08-2009 at 00 hour# ",
+      "id": "10001016",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n可以骑着白雪人移动。\\n#c有效时间：2009年9月7日00点#",
+      "en": "[Master Level : 1]\\nAllows one to ride on a Yeti.\\n#cAvailable until : 7/9/2009 at 00:00#",
+      "id": "10001019",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n利用法老的愤怒进行攻击。",
+      "en": "[Master Level : 1]\\nUtilizes the rage of Pharaoh as an attack.",
+      "id": "10001020",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "MP消耗10，防御力增加10，移动速度120，跳跃力120                    ",
+      "en": "Consumes 10 MP, Weapon and Magic Defense +10, Speed 120, Jump 120",
+      "id": "10001022",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n给猪猪造成150%的伤害。",
+      "en": "[Master Level : 1]\\n Inflicts 150% damage on Pigs.",
+      "id": "10009000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n给木妖造成150%的伤害。",
+      "en": "[Master Level : 1]\\n Inflicts 150% damage on Stumps.",
+      "id": "10009001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n给绿水灵造成150%的伤害。",
+      "en": "[Master Level : 1]\\n Inflicts 150% damage on Slimes.",
+      "id": "10009002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n升级时，最大HP上使用AP时，提高最大Hp的增加量。",
+      "en": "[Master Level : 10]\\nIncreases the Max HP when AP is applied during the Level Up. ",
+      "id": "11000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n一定时间内物理防御力增加。",
+      "en": "[Master Level : 10]\\nTemporarily increases your Weapon Defense.",
+      "id": "11001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗MP，用所装备的武器给怪物以致命一击。",
+      "en": "[Master Level : 20]\\nInflict damage on the opponent using the weapon with which the character used MP to equip. ",
+      "id": "11001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP和MP，在装备的武器同时攻击周围的多个怪物。\\n必需技能：#c强力攻击等级1以上#",
+      "en": "[Master Level : 20]\\nInflict damage on all nearby opponents using the weapon with which the character used HP and MP to equip.\\nRequired Skill : #cAt least Level 1 on Power Strike#",
+      "id": "11001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "魂精灵",
+      "en": "Soul",
+      "id": "11001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n增加使用剑系武器的命中率及熟练度(必须装备单手剑或双手剑)",
+      "en": "[Master Level : 20]\\nIncreases the Sword Mastery and Accuracy. It only applies when either a one-handed or a two-handed Sword is in hand.",
+      "id": "11100000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP和MP，攻击速度提升一个等级。(必须装备单手剑，双手剑)\\n必需技能 : #c精准剑等级5以上#",
+      "en": "[Master Level : 20]\\nUses HP and MP to temporarily boost the attack speed of the Sword. It only applies when either a one-handed or a two-handed Sword is in hand.\\nRequired Skill : \\n#cAt least Level 5 on Sword Mastery#",
+      "id": "11101001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n只有装备单手剑或双手剑时，才能在发动一次攻击技能后有一定几率发动连续攻击并消耗一定MP值。\\n必需技能 : #c精准剑等级3以上#",
+      "en": "[Master Level : 30]\\nEnables consecutive attacks when an attack skill is applied at a regular interval and pre-established amount of MP is used. It only applies when a one-handed or a two-handed Sword is in hand. \\nRequired Skill : #c At least Lv.3 on Sword Mastery#",
+      "id": "11101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n提升周围组队成员的物理攻击力，降低物理防御力。",
+      "en": "[Master Level : 20]\\nTemporarily enhances the Weapon Attack rate of everyone in the party nearby, while decreasing the rate of Weapon Defense.",
+      "id": "11101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂之刃",
+      "en": "Soul Blade",
+      "id": "11101004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂迅移",
+      "en": "Soul Rush",
+      "id": "11101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n增加每10秒的MP恢复量。",
+      "en": "[Master Level : 20]\\nCan recover more MP every 10 sec. ",
+      "id": "11110000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n最大斗气值增加为10，有一定概率增加2个斗气点数。斗气集中必须达到最高级，才可以学习此技能。\\n需要技能：#c斗气集中20级#",
+      "en": "[Master Level : 20]\\nIncreases max Combo Counter stats to 10 and charges 2 Combo Counts at a pre-established rate. It only applies when the Combo Attack is mastered. \\nRequired Skill: #cCombo Attack Lv.20# ",
+      "id": "11110005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n可以累积斗气，每次攻击时，斗气点数上升，可以使用决定打击。斗气点数最大为5，造成伤害以斗气点数为3时为基准。",
+      "en": "[Master Level : 20]\\nCan build up one’s Comb Attack. The Finish Attack is enabled when the Combo Counter increases every time the attack is used. The Max Combo Counter is 5 and the standard Damage inflicted is when the Combo Counter is at 3. ",
+      "id": "11111001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "恐慌",
+      "en": "Panic",
+      "id": "11111002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "昏迷",
+      "en": "Coma",
+      "id": "11111003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n攻击前面的多个敌人。",
+      "en": "[Master Level : 30]\\nEnables two attacks on multiple monsters nearby.",
+      "id": "11111004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂突刺",
+      "en": "Soul Driver",
+      "id": "11111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵魂属性",
+      "en": "Soul Charge",
+      "id": "11111007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n升级时，在Max MP上使用AP时，\\n提高Max MP的增加量。",
+      "en": "[Master Level : 10]\\nIncreases the Max MP when AP is applied to Max MP at the time of Level Up. ",
+      "id": "12000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n一定时间内用MP代替一定的伤害。\\n但MP为0时，消耗HP。",
+      "en": "[Master Level : 10]\\nTemporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
+      "id": "12001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n一定时间内在盔甲上凝聚魔力，\\n提高物理防御力。\\n需要技能：#c魔法盾3级以上#",
+      "en": "[Master Level : 10]\\nTemporarily enhances the Weapon Def. of the armor by applying magic for a given duration.\\nRequired Skill : \\n#cAt least Level 3 on Magic Guard#",
+      "id": "12001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗MP，攻击两次。",
+      "en": "[Master Level : 20]\\nUse MP to attack an enemy twice.",
+      "id": "12001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "炎精灵",
+      "en": "Flame",
+      "id": "12001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n进行冥想，暂时提高周围的队员的魔力。",
+      "en": "[Master Level : 20]\\nTemporarily enhances the Magic Attack of all party members nearby by Meditation. ",
+      "id": "12101000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n降低怪物的移动速度。无法重复使用，\\n最多一次攻击8个。\\n必需技能: #c快速移动等级5以上# ",
+      "en": "[Master Level : 20]\\nTemporrily slows down the enemies around you. Can&apos;t use it on them twice at once, and affects only 6 enemies per say.\\nRequired Skill : \\n#cAt least Level 5 on Teleport#",
+      "id": "12101001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n用魔法的力量制造火箭，射向一个敌人。\\n可以给冰属性的敌人造成巨大的伤害。",
+      "en": "[Master Level : 20]\\nA Fire Arrow is generated using magic and is shot at an enemy. It is especially effective on enemies with ice attribute.",
+      "id": "12101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n用‘上下左右’方向键可以瞬间移动一定的\\n距离。",
+      "en": "[Master Level : 20]\\nCan move a pre-established distance to other locations within the map using the arrow keys. ",
+      "id": "12101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗大量的HP和MP，提高攻击速度。",
+      "en": "[Master Level : 20]\\nConsumes a significant amount of HP and MP to enhance the speed of Magic Attack. ",
+      "id": "12101004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "自然力重置",
+      "en": "Elemental Reset",
+      "id": "12101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火柱",
+      "en": "Fire Pillar",
+      "id": "12101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n拥有对抗所有属性魔法攻击的抗性。",
+      "en": "[Master Level : 20]\\nGains a higher tolerance for all Elemental Attacks from the enemy.",
+      "id": "12110000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗更多的MP，增强自己使用的所有攻击\\n魔法。",
+      "en": "[Master Level : 20]\\nIncrease all Magic Attacks by using more MP. ",
+      "id": "12110001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级:20]\\n对周围多个怪物进行封印。\\n成为封印状态的怪物不能使用技能，对BOSS无效。\\n必需技能: #c魔力激化等级3以上#",
+      "en": "[Master Level : 20]\\nSeals multiple enemies nearby for a given duration. Once sealed, the monsters will not be able to use their skills to attack. This does not apply to the Boss Monsters. \\nRequired Skill : #c At least Level 3 on Element Amplification #",
+      "id": "12111002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n从天上召唤陨石，对15个以下的多个敌人\\n造成强力火焰伤害。\\n#c冷却时间: 10秒#",
+      "en": "[Master Level : 20]\\nInflicts significant fire damages on up to 15 monsters at once via the meteor shower.",
+      "id": "12111003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n在一定时间内召唤具有火属性的火魔兽。\\n最多攻击6个敌人。",
+      "en": "[Master Level : 20]\\nTemporarily summons Ifrit of Fire Attribute for a given duration. Attacks up to 3 monsters.",
+      "id": "12111004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火牢术屏障",
+      "en": "Flame Gear",
+      "id": "12111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "火风暴",
+      "en": "Fire Strike",
+      "id": "12111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n可以增加箭的攻击力。",
+      "en": "[Master Level : 20]\\nEnables Critical Attack at a pre-established success rate. ",
+      "id": "13000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：8]\\n提高弓和石弓的射程。",
+      "en": "[Master Level : 8]\\nIncreases the range of attack for bows and crossbows.",
+      "id": "13000001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n集中精神，在一定时间内提高命中率和回避率。\\n需要技能：#c远程箭5级以上#",
+      "en": "[Master Level : 10]\\nEnhances Accuracy and Avoidability for a given duration. \\nRequired Skill : #c At least Level 3 on the Eye of Amazon #",
+      "id": "13001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗两支箭矢，两次攻击敌人。",
+      "en": "[Master Level : 20]\\nAttacks an enemy twice using two arrows at once. ",
+      "id": "13001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风精灵",
+      "en": "Storm",
+      "id": "13001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n增加使用弓系武器的命中率及熟练度。(必须装备弓)",
+      "en": "[Master Level : 20]\\nEnhnaces Mastery and Accuracy of bow-type weapons. It only applies when the bow is in hand. ",
+      "id": "13100000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n增加移动速度。",
+      "en": "[Master Level : 20]\\nEnhances Speed.",
+      "id": "13100004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n攻击速度提升一个等级。(必须装备弓)\\n必需技能 : #c精准弓等级5以上#",
+      "en": "[Master Level : 20]\\nEnhances the Speed of bow attack for a given duration using HP and MP. It only applies when the bow is in hand. \\nRequired Skill : #c At least Level 5 on Bow Mastery #",
+      "id": "13101001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n只有装备有弓时，才能在发动一次攻击技能后有一定几率发动连续攻击并消耗一定MP值。\\n必要技能 : #c精准弓3级以上#",
+      "en": "[Master Level : 30]\\nConsecutive attack is activated by using a pre-established amount of MP after applying the attack skill at a regular interval. It only applies when the bow is equipped in hand. \\nRequired Skill : #c At least Level 3 on Bow Mastery #",
+      "id": "13101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n一定时间内，攻击时不消耗箭。\\n必需技能 : #c快速箭等级5以上#",
+      "en": "[Master Level : 20]\\nTemporarily allows the character to fire bow arrows without using up the arrows. It only applies when the bow is equipped in hand.\\nRequired Skill : #c At least Level 5 on Bow Booster  #",
+      "id": "13101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "暴风射击",
+      "en": "Storm Break",
+      "id": "13101005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风影漫步",
+      "en": "Wind Walk",
+      "id": "13101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n提高弓系列武器的熟练度和攻击力（必须装备弓）。\\n需要技能：#c精准弓20级#",
+      "en": "[Master Level : 20]\\nEnhances Mastery and Attack Rate of bow-type weapons. It can only be applied when the character is equipped with a bow. \\nRequired Skill:  #c Bow Mastery level 20 #",
+      "id": "13110003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n从天上射下多发箭矢，攻击周围的多个敌人。最多攻击6个敌人，必须装备弓才可以使用。",
+      "en": "[Master Level : 20]\\nFires a number of arrows into the sky, attacking up to 6 monsters at once. It can only be applied when the character is equipped with a bow. ",
+      "id": "13111000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n向一个怪物连续射4支箭。",
+      "en": "[Master Level : 30]\\nFires 4 arrows at a single enemy.",
+      "id": "13111001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n以狂风暴雨般的速度发射箭矢。按住技能键，可以持续发射箭矢。",
+      "en": "[Master Level : 20]\\nLaunches arrows at a tremendous speed like a catastrophic rainstorm. Pressing the skill key will launch the arrows continuously.",
+      "id": "13111002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n一定时间制造自己的分身。分身存在的时候，怪物攻击分身。",
+      "en": "[Master Level : 20]\\nSummons a Puppet (a doppelganger) for a given duration. When the Puppet is summoned, the monsters will attack the Puppet instead of the actual character.",
+      "id": "13111004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "信天翁",
+      "en": "Eagle Eye",
+      "id": "13111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "风灵穿越",
+      "en": "Wind Piercing",
+      "id": "13111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "疾风扫射",
+      "en": "Wind Shot",
+      "id": "13111007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n提高命中率和回避率。",
+      "en": "[Master Level : 10]\\nIncreases accuracy and avoidability.",
+      "id": "14000000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：8]\\n增加拳套系武器的射程距离。\\n必需技能 : #c集中术等级3以上#",
+      "en": "[Master Level : 8]\\nIncreases the range of attack for throwing weapons such as the Throwing Stars and Knives.\\nRequired Skill : #cAt least Level 3 on Nimble Body#",
+      "id": "14000001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n一定时间内降低敌人的物理防御力和攻击力，使其不攻击自己。但无法对同一个敌人重复使用。",
+      "en": "[Master Level : 10]\\nTemporarily decreases the enemy’s Weapon Attack and Defense, eventually disabling the monster’s attack.  It cannot be used on the same monster repeatedly.",
+      "id": "14001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n消耗MP，将自己隐藏在阴影中。不受敌人的攻击，但也无法攻击敌人。\\n需要技能：#c诅咒术3级以上#",
+      "en": "[Master Level : 10]\\nUses MP  to hide behind the shadows. With this skill activated, the character can neither attack nor be attacked.\\nRequired Skill : #c At least Level 3 on Disorder # ",
+      "id": "14001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级 : 20]\\n消耗MP，使用飞镖对怪物连续攻击2次，攻击力受LUK数值的影响，和精准飞镖无关。",
+      "en": "[Master Level : 20]\\nUses MP to throw 2 Throwing Stars and inflict damage according to the LUK stats regardless of the character&apos;s level of Claw Mastery.",
+      "id": "14001004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n召唤出守护自己的精灵。攻击近身的敌人。",
+      "en": "[Master Level : 20]\\nSummons the Guardian Fairy to attack monsters nearby.",
+      "id": "14001005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n增加使用拳套系武器的命中率及熟练度。(必须装备飞镖)",
+      "en": "[Master Level : 20]\\nIncreases the character’s skill in using the Throwing Stars, and enhances the max number of charges. It only applies when the character is equipped with Throwing Stars.",
+      "id": "14100000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n发挥更强力的攻击。(装备拳套系类武器)\\n必需技能 : #c精准暗器等级3以上#",
+      "en": "[Master Level : 30]\\nEnables Critical Attack with Throwing Stars at a pre-established success rate.\\nRequired Skill: #c At least Level 3 on Claw Mastery # ",
+      "id": "14100001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "驱逐",
+      "en": "Vanish",
+      "id": "14100005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP，MP，一定时间内攻击速度提升一个等级。(必需装备拳套，使用飞镖)\\n必需技能 : #c精准暗器等级5以上#",
+      "en": "[Master Level : 20]\\nUse HP and MP to temporarily boost up the attack speed of the claw. It only applies when the character is equipped with a claw Throwing Stars.\\nRequired Skill : \\n#cAt least Level 5 on Claw Mastery#",
+      "id": "14101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n一定时间内提高所有队员的移动速度和跳跃力。",
+      "en": "[Master Level : 20]\\nTemporarily enhances Speed and Jump stats of every member in the party.",
+      "id": "14101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n跳跃到空中时使用，可以向前再跳跃一次。技能等级越高，跳跃的距离越长。",
+      "en": "[Master Level : 20]\\nAllows a second Jump toward the direction which the character was headed when used while the character is in the air. The distance of the Jump increases in accordance with the advancement of the character’s skill level.",
+      "id": "14101004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "吸血",
+      "en": "Vampire",
+      "id": "14101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n提升使用各种恢复药水的效果，对按百分比恢复的道具不适用。",
+      "en": "[Master Level : 20]\\nEnhances the effects of recovery items including potions or lengthens the duration of items applied to the status of the character, with an exception of recovery items such as the Elixir that provide recovery based on %. ",
+      "id": "14110003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n在标枪上涂毒，进行攻击。有一定概率使敌人中毒，造成伤害。最多重复3次，敌人的HP不会掉落到1以下。",
+      "en": "[Master Level : 20]\\nThrows a poisonous Throwing Star. Monsters that have been struck will be poisoned according to the pre-established success rate. It can be used against one monster up to 3 times during which the monster&apos;s HP will not go any lower than 1.",
+      "id": "14110004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n召唤影分身。没有HP，和角色做一样的动作，会自动消失。",
+      "en": "[Master Level : 30]\\nSummons a shadow, which repeats the character’s every move, for a given duration. It has no special strength.",
+      "id": "14111000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n以自身的影子做成蜘蛛网，缠住6个以下的多个怪物。被缠住的怪物无法动弹。",
+      "en": "[Master Level : 20]\\nMakes a spider web of the character’s shadow, and holds up to 6 enemies in one spot at once. Mobility of the monsters caught in the spider web will be disabled.",
+      "id": "14111001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：30]\\n消耗MP制作大飞镖，攻击怪物。",
+      "en": "[Master Level : 30]\\nUses MP to make an enormous Throwing Star for attack. The Throwing Star will penetrate the enemy, and attack the ones behind it, too.",
+      "id": "14111002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n一次投掷3个标枪进行攻击。",
+      "en": "[Master Level : 20]\\nAttacks monsters by throwing 3 stars at once.",
+      "id": "14111005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "毒炸弹",
+      "en": "Poison Bomb",
+      "id": "14111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "命中率+2，回避率+2                    ",
+      "en": "Accuracy +2, Avoidability +2",
+      "id": "15000000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗MP，用拳头快速攻击敌人。",
+      "en": "[Master Level : 20]\\nUses MP to speed up the punch to rapidly attack enemies.",
+      "id": "15001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n后旋跳，用腿给周围多数的敌人击退攻击。",
+      "en": "[Master Level : 20]\\nA devastating kick that accompanies a backward somersault. Attacks all enemies in the vicinity.",
+      "id": "15001002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n连续两次敲打左右方向键中的某一个，瞬间提高移动速度和跳跃力。",
+      "en": "[Master Level : 10]\\nPress left or right arrow twice to temporarily boost your speed and jump.",
+      "id": "15001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "雷精灵",
+      "en": "Lightning",
+      "id": "15001004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "升级时，MaxHP额外提高3，分配AP时额外提高2                    ",
+      "en": "If Level UP, +3 more; if AP applied, +2 more on top of MaxHP",
+      "id": "15100000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n提高拳甲系武器的熟练度和命中率。只有佩戴拳甲时才可适用。",
+      "en": "[Master Level : 20]\\nBoosts the accuracy and the mastery of Knuckles. This skill only applies when you equip a Knuckle.",
+      "id": "15100001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n每次攻击时，补充一定量的能量。能量充满后，有一定概率发动身体冲击效果和眩晕效果，可以使用消耗能量的技能。",
+      "en": "[Master Level : 20]\\nA set amount of energy is charged after every attack. When the energy is full charged, this will automatically trigger the effects of the Body Attack and Stance, and will allow you to use energy-related skills.",
+      "id": "15100004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP，MP，一定时间内使拳的攻击速度提升。只有佩戴指节时才可发动技能。\\n必要技能 : #c精准拳5级以上",
+      "en": "[Master Level : 20]\\nUses parts of HP and MP to temporarily boost the speed of a Knuckle. This skill can only be triggered when a Knuckle is equipped. \\nRequired Skill : #cLevel 5 or above on Knuckle Mastery",
+      "id": "15101002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n向前方的多数敌人施加拳击。",
+      "en": "[Master Level : 20]\\nThis skill allows you to run forward and punch multiple monsters in front at once.",
+      "id": "15101003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n能量爆炸，攻击近身的多个敌人。只能在#c能量充满#的状态下使用。\\n需要技能：#c能量获得1级以上#",
+      "en": "[Master Level : 20]\\nBlasts a ball of energy to attack multiple monsters at once. This skill can only be used when #cthe energy is full charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
+      "id": "15101005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "雷鸣",
+      "en": "Lightning Charge",
+      "id": "15101006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "必杀拳",
+      "en": "Critical Punch",
+      "id": "15110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n利用能量，使敌人的一些HP变为自己的HP。只有#c能量充沛#的状态下才可以使用。\\n必要技能 : #c能量获得1级以上#",
+      "en": "[Master Level : 20]\\nUses energy to convert the lost HP of a monster into your own HP. This skill can only be used when #cthe energy is full charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
+      "id": "15111001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：10]\\n在120秒内保持超人变形状态。",
+      "en": "[Master Level : 10]\\nTransforms you into a more powerful state for 120 seconds.",
+      "id": "15111002",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n用力击打地面，用碎石乱击对多个敌人造成伤害。只能在#c超人变形#状态下使用。\\n需要技能：#c超人变形1级以上#",
+      "en": "[Master Level : 20]\\nStrikes the ground with tremendous force, affecting multiple monsters. This skill can only be used during #cTransformation#.\\nRequired Skill : #cLevel 1 of Transformation#",
+      "id": "15111003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n快速对近身的敌人发动6次攻击。",
+      "en": "[Master Level : 20]\\nAttacks a monster nearby 6 times in quick succession.",
+      "id": "15111004",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP和MP，在一定时间内提高武器的攻击速度。可以和“快速”技能重复使用，所有队员都可以获得效果。\\n需要技能：#c急速拳20级以上#",
+      "en": "Uses HP and MP to temporarily increase the attacking speed of a weapon. This can be combined with other boosters, and everyone in the party will have their attacking speed increased.\\nRequired Skill : #cLevel 20 of Knuckle Booster#",
+      "id": "15111005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "闪光击",
+      "en": "Spark",
+      "id": "15111006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "鲨鱼波",
+      "en": "Shark Wave",
+      "id": "15111007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "物理攻击力增加1，魔法攻击力增加2，命中率和回避率增加 1                    ",
+      "en": "WA +1, MA +2, Accuracy and Avoidability +1",
+      "id": "20000012",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "教程技能",
+      "en": "Tutorial Skill",
+      "id": "20000014",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP10，造成伤害10                    ",
+      "en": "MP -3; Damage 10",
+      "id": "20001000",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：3]\\n30秒内持续恢复HP。\\n#c再次使用时间间隔：2分#",
+      "en": "[Master Level : 3]\\nEnables the user to recover HP constantly for 30 sec. \\n#cTerms between skills : 2 min.#",
+      "id": "20001001",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "消耗MP4，4秒之内增加10的移动速度                    ",
+      "en": "MP -4; Speed +10 in 4 sec",
+      "id": "20001002",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n不能装备的道具也能使用卷轴",
+      "en": "[Master Level : 1]\\nUses the spirit of a legend to use a scroll on an item that cannot be normally equipped by the character.",
+      "id": "20001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n增加周边角色的物理攻击力和魔法攻击力。 \\n#c冷却时间：2小时#",
+      "en": "[Master Level : 1]\\n Increase weapon attack and magic attack on all players around. \\n#cTerms between skills : 2hours#",
+      "id": "20001005",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：1]\\n向下方跳跃。",
+      "en": "[Master Level : 1]nJump downward.",
+      "id": "20001006",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "75级以下可以制作的物品                    ",
+      "en": "Can create item under level 75.",
+      "id": "20001007",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "BOSS怪物的体力减少30%                    ",
+      "en": "Decrease HP of boss monster by 30%",
+      "id": "20001009",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "30秒内无敌                    ",
+      "en": "Invincible for 30 sec.",
+      "id": "20001010",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "30秒内，伤害增加100%                    ",
+      "en": "Damage increased by 100% for 30 sec.",
+      "id": "20001011",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内增加伤害。",
+      "en": "Damage increases for a fixed time period.",
+      "id": "20001013",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "金字塔内的所有怪物一击必杀                    ",
+      "en": "Eliminates all monsters inside the Pyramid with a single blow.",
+      "id": "20001020",
+      "category": "skill",
+      "fieldType": "h1",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "矛连击强化",
+      "en": "Combo Ability",
+      "id": "21000000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "双重重击",
+      "en": "Double Swing",
+      "id": "21000002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战斗步伐",
+      "en": "Combat Step",
+      "id": "21001001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n消耗HP、MP，在一定时间内提高矛的攻击速度。必须装备矛才可以发动。\\n\\n需要技能：#c战斗步伐5级以上#",
+      "en": "[Master Level : 20]\\n\\nUses HP and MP to temporarily boost up the attacking speed of the equipped polearm. It only applies when either a one-handed or a two-handed polearm is in hand.\\nRequired Skill : \\n#cAt least Level 5 on Polearm Mastery#\\n\\nRequired Skill : #cCombat Step Level 5#",
+      "id": "21001003",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "[最高等级：20]\\n提高矛系列武器的熟练度和命中率。必须装备矛才可以使用。\\n需要技能：#c三重重击3级以上#",
+      "en": "[Master Level : 20]\\nIncreases the mastery of pole arms and accuracy. It only applies when a pole arm is in hand. This skill only gets triggered when the owner is carrying the secuity stuff.\\nRequired Skill : #cTriple Swing Level 3#",
+      "id": "21100000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "三重重击",
+      "en": "Triple Swing",
+      "id": "21100001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战神突进",
+      "en": "Final Charge",
+      "id": "21100002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "斗气爆裂",
+      "en": "Combo Smash",
+      "id": "21100004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "连环吸血",
+      "en": "Combo Drain",
+      "id": "21100005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "抗压",
+      "en": "Body Pressure",
+      "id": "21101003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "爆击强化",
+      "en": "Combo Critical",
+      "id": "21110000",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "全力挥击",
+      "en": "Full Swing",
+      "id": "21110002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "终极投掷",
+      "en": "Final Cross",
+      "id": "21110003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "幻影狼牙",
+      "en": "Combo Fenrir",
+      "id": "21110004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "旋风",
+      "en": "Rolling Spin",
+      "id": "21110006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "（隐藏）全力挥击- 双重重击",
+      "en": "(hidden) Full Swing - Double Swing",
+      "id": "21110007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "(hidden) 全力挥击 - 三重重击",
+      "en": "(hidden) Full Swing - Triple Swing",
+      "id": "21110008",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "灵巧击退",
+      "en": "Smart Knockback",
+      "id": "21111001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "冰雪矛",
+      "en": "Snow Charge",
+      "id": "21111005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "攻击策略",
+      "en": "High Mastery",
+      "id": "21120001",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战神之舞",
+      "en": "Over Swing",
+      "id": "21120002",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "防守策略",
+      "en": "High Defense",
+      "id": "21120004",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "巨熊咆哮",
+      "en": "Final Blow",
+      "id": "21120005",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "钻石星辰",
+      "en": "Combo Tempest",
+      "id": "21120006",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战神之盾",
+      "en": "Combo Barrier",
+      "id": "21120007",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "(隐藏) 战神之舞- 双重重击",
+      "en": "(hidden) Over Swing - Double Swing",
+      "id": "21120009",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "(隐藏) 战神之舞 - 三重重击",
+      "en": "(hidden) Over Swing - Triple Swing",
+      "id": "21120010",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "一定时间内把组队成员的所有属性点提高\\n一定的百分比。",
+      "en": "Temporarily boosts the stats of everyone in the party.",
+      "id": "21121000",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "战神的意志",
+      "en": "Freeze Standing",
+      "id": "21121003",
+      "category": "skill",
+      "fieldType": "name",
+      "source": "String.wz\\Skill.img.xml"
+    },
+    {
+      "zh": "可以摆脱特定的异常状态。等级越高，冷却时间越短。",
+      "en": "Allows one to snap out of abnormal conditions. The higher the character&apos;s level, the less the character has to wait.",
+      "id": "21121008",
+      "category": "skill",
+      "fieldType": "desc",
+      "source": "String.wz\\Skill.img.xml"
+    }
+  ]
+}

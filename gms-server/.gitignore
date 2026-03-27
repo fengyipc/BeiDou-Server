@@ -7,3 +7,4 @@ docker-db-data
 .idea
 .codebuddy/plans/
 .codebuddy/teams/
+node_modules/
