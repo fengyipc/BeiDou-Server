@@ -1,12 +1,14 @@
 # 任务系统模块
 
+**相关文档：** WZ 中 `QuestInfo.img` / `Check.img` / `Act.img` / `Say.img` 的结构与节点含义见 [27-wz-data-parsing.md · §8 Quest.wz](27-wz-data-parsing.md#quest-wz-data)。
+
 ## 1. 任务系统概述
 
 任务系统是 MapleStory 游戏服务器的核心模块之一，负责管理玩家的任务流程。本服务器实现了一套完整的任务生命周期管理，包括任务触发、条件判断、奖励发放和进度追踪。
 
 ### 1.1 核心特性
 
-- **任务数据加载**: 从 WZ 资源文件（QuestInfo.img, Act.img, Check.img）加载任务配置
+- **任务数据加载**: 从 WZ 资源文件（QuestInfo.img, Act.img, Check.img）加载任务配置（[§8](27-wz-data-parsing.md#quest-wz-data)）
 - **条件检测**: 支持多种任务前置条件（等级、物品、怪物、完成其他任务等）
 - **奖励机制**: 支持经验、金币、物品、技能、荣誉值等多种奖励类型
 - **脚本集成**: 支持 JavaScript 脚本实现复杂的任务对话和流程控制

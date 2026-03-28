@@ -537,6 +537,8 @@ function levelYes() {
 
 ## 5. 任务脚本 API
 
+官方客户端任务对话数据在 WZ 的 `Say.img` 中；本服务端通过本节所述脚本实现对话与流程。WZ 四文件结构与任务 ID 关系见 [27-wz-data-parsing.md · §8 Quest.wz](27-wz-data-parsing.md#quest-wz-data)。
+
 `qm` 是 `QuestActionManager` 的实例，继承自 `NPCConversationManager`，专门用于任务脚本。
 
 ### 4.1 任务特定方法

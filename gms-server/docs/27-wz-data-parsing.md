@@ -1,5 +1,7 @@
 # WZ 数据解析
 
+**文档内导航：** [§1 概述](#1-wz文件概述) · [§2 结构](#2-wz文件结构) · [§3 解析器](#3-wz解析器架构) · [§4 类型](#4-常见wz类型) · [§5 DataTool](#5-数据提取方法) · [§6 示例](#6-相关代码示例) · [§7 架构图](#7-mermaid架构图) · [**§8 Quest.wz**](#quest-wz-data)
+
 ## 1. WZ文件概述
 
 WZ文件是MapleStory（冒险岛）游戏中用于存储游戏数据的一种专有格式。WZ文件包含了游戏客户端所需的各类资源数据，如地图信息、怪物数据、NPC数据、道具数据、技能数据等。
@@ -19,7 +21,7 @@ wz/
 ├── Mob.wz/           # 怪物数据
 ├── Morph.wz/         # 变身数据
 ├── Npc.wz/           # NPC数据
-├── Quest.wz/          # 任务数据
+├── Quest.wz/          # 任务数据（核心 XML 结构见 [§8](#quest-wz-data)）
 ├── Reactor.wz/        # 反应堆数据
 ├── Skill.wz/          # 技能数据
 ├── Sound.wz/         # 声音数据
@@ -555,3 +557,136 @@ classDiagram
     DataType <|-- 基本类型
     DataType <|-- 复杂类型
     DataType <|-- 特殊类型
+```
+
+<a id="quest-wz-data"></a>
+
+## 8. Quest.wz 任务数据
+
+本节说明 `Quest.wz/` 下与任务逻辑最相关的四个 XML 文件（`QuestInfo.img.xml`、`Check.img.xml`、`Act.img.xml`、`Say.img.xml`）的结构，以及它们如何通过**任务 ID**（根下 `imgdir` 的 `name`，十进制字符串）互相关联。通用 WZ 节点类型见 [§2](#2-wz文件结构)。
+
+**交叉引用（建议配合阅读）：**
+
+- 服务端任务生命周期、条件/奖励枚举与脚本入口： [11-quest-module.md](11-quest-module.md)
+- 任务脚本（`scripts/quest/{QuestID}.js`）、`qm` API： [28-scripting-development.md](28-scripting-development.md) 中「任务脚本」相关章节
+- 通过数字 ID 反查 NPC / 地图 / 怪物 / 物品名称：仓库根目录 [`glossary/`](../glossary/) 下各 JSON（如 `npc.json`、`map.json`、`mob.json`、物品分类 JSON）
+
+### 8.1 四份数据的分工与任务 ID
+
+同一 `questId` 在四份文件中各出现一次（同为 `imgdir name="{questId}"`），合起来描述该任务的展示文案、条件、奖励与（客户端）对话。
+
+| 文件 | 服务端是否加载 | 作用概要 |
+|------|----------------|----------|
+| QuestInfo.img | 是 | 任务名称、分组、自动标记、时限、任务栏多行摘要等 |
+| Check.img | 是 | 子目录 `0` = 接受条件，`1` = 完成条件 |
+| Act.img | 是 | 子目录 `0` = 接受时动作，`1` = 完成时动作 |
+| Say.img | 否（本仓库 Java 未引用） | NPC 任务对话树，供官方客户端使用 |
+
+`Quest` 在 [`Quest.java`](../src/main/java/org/gms/server/quest/Quest.java) 中读取前三者；`loadAllQuests()` 遍历 **`QuestInfo.img` 的子节点** 作为任务清单并构造缓存。若某 ID 在 `Check.img` 中不存在，`Quest` 构造函数会提前返回，该 ID 可能仅用于 info 类或其它扩展逻辑（见源码注释 `most likely infoEx`）。
+
+```mermaid
+flowchart LR
+  subgraph ids [按任务 ID 索引]
+    Q[QuestInfo.img]
+    C[Check.img]
+    A[Act.img]
+    S[Say.img]
+  end
+  questId["questId 字符串"]
+  questId --> Q
+  questId --> C
+  questId --> A
+  questId --> S
+```
+
+### 8.2 QuestInfo.img.xml
+
+- **根节点**：`QuestInfo.img`。
+- **每个任务**：`imgdir name="{questId}"`。
+- **常用字段**（与 [`Quest` 构造函数](../src/main/java/org/gms/server/quest/Quest.java) 一致）：
+  - `name`：任务名称。
+  - `parent`、`order`：父任务名与组内顺序（客户端任务 UI 分组）。
+  - `area`：区域分类（客户端）。
+  - `timeLimit`：**秒**；接受任务时过期时间 = 当前时间 + `timeLimit` 秒（见 `forceStart` 中 `SECONDS.toMillis`）。
+  - `timeLimit2`：**毫秒**；若大于 0，直接加到当前时间戳上作为过期时间（与 `timeLimit` 单位不同）。
+  - `autoStart`、`autoPreComplete`、`autoComplete`：自动开始/预完成/自动完成，含义见 [11-quest-module.md](11-quest-module.md) 与源码。
+  - `viewMedalItem`：勋章物品 ID；非 0 时登记到全局 `medals` 映射。
+- **编号字符串** `string name="0"`, `"1"`, `"2"` …：任务日志/任务栏多行说明，客户端展示用；文中常含富文本标记（如 `#b`/`#k` 颜色、`#p` NPC、`#m` 地图、`#t`/`#i`/`#c` 物品等），与客户端一致。
+
+### 8.3 Check.img.xml（条件，对应「开始 / 完成」）
+
+- **根节点**：`Check.img`；**每个任务**：`imgdir name="{questId}"`。
+- **`imgdir name="0"`**：**开始条件**（服务端 `startReqs`）。子节点名映射到 [`QuestRequirementType`](../src/main/java/org/gms/server/quest/QuestRequirementType.java)（`getByWZName`）。
+- **`imgdir name="1"`**：**完成条件**（服务端 `completeReqs`）。映射方式相同。
+
+常见 WZ 子节点名与含义（完整列表以源码 `getByWZName` 为准）：
+
+| WZ 名 | 含义 |
+|--------|------|
+| `npc` | 指定 NPC ID |
+| `item` | 物品列表（子项含 `id`、`count` 等） |
+| `mob` | 击杀要求（子项 `id` 等） |
+| `job` | 可接职业列表 |
+| `lvmin` / `lvmax` | 等级上下限 |
+| `quest` | 前置任务；子项 `id` + `state`，`state` 对应 [`QuestStatus.Status`](../src/main/java/org/gms/client/QuestStatus.java)：`0` 未开始、`1` 进行中、`2` 已完成 |
+| `interval` | 重复间隔（与可重复任务相关） |
+| `start` / `end` | 活动期时间字符串（如 `YYYYMMDDHH`） |
+| `startscript` / `endscript` | 脚本名；用于 `SCRIPT` 类型及 `hasScriptRequirement` |
+| `infoNumber` / `infoex` | 与 info 进度、`canQuestByInfoProgress` 联动 |
+| `money` / `buff` / `exceptbuff` | 金币、Buff 状态要求等 |
+
+同一类型在 `startReqs`/`completeReqs` 中通常各至多一条（`EnumMap` 覆盖）；`INTERVAL` 会标记任务可重复。
+
+### 8.4 Act.img.xml（动作，对应「接受 / 完成」时效果）
+
+- **根节点**：`Act.img`；**每个任务**：`imgdir name="{questId}"`。
+- **`imgdir name="0"`**：**接受任务时执行**（`startActs`）。
+- **`imgdir name="1"`**：**完成任务时执行**（`completeActs`）。
+
+子节点名映射到 [`QuestActionType`](../src/main/java/org/gms/server/quest/QuestActionType.java)（`getByWZName`），例如：
+
+| WZ 名 | 类型 | 说明 |
+|--------|------|------|
+| `exp` | 经验 | |
+| `item` | 物品 | `count` 为负表示扣除；可有 `prop`、`job`、`gender`、`period` 等（见 [`ItemAction`](../src/main/java/org/gms/server/quest/actions/ItemAction.java)） |
+| `money` | 金币 | |
+| `nextQuest` | 下一任务 | |
+| `skill` | 技能 | |
+| `pop` | 人气 | |
+| `buffItemID` | Buff 道具 | |
+| `petskill` / `pettameness` / `petspeed` | 宠物相关 | |
+| `info` | 任务 info 记录 | |
+
+`Act.img` 中也可能出现 **`string` 节点或 `yes`/`no` 目录** 等对话类数据，映射为 `QuestActionType` 的 `ZERO` 等时，[`getAction`](../src/main/java/org/gms/server/quest/Quest.java) **不会生成可执行动作**，服务端实际对话由 [任务脚本](28-scripting-development.md) 驱动；这类节点更偏**客户端**或历史结构。
+
+### 8.5 Say.img.xml（NPC 对话）
+
+- **根节点**：`Say.img`；**每个任务**：`imgdir name="{questId}"`。
+- 习惯上 **`0`** / **`1`** 仍表示与「开始 / 完成」相关的对话阶段（与 Check/Act 编号一致）。
+- 常见结构：`string name="n"` 多轮台词；`imgdir name="yes"` / `no` 分支；`stop` 下再分 `npc`、`item` 等，表示**条件不满足时的提示**；`ask` 等整型控制是否进入提问类对话。
+
+本仓库服务端**不加载** `Say.img`。实现 NPC 任务对话与 `forceStartQuest` / `forceCompleteQuest` 时，应使用 [`scripts/quest/`](../scripts/) 下脚本，见 [28-scripting-development.md](28-scripting-development.md)。
+
+### 8.6 小结：数据流与文档索引
+
+```mermaid
+flowchart TB
+  subgraph wz [Quest.wz XML]
+    QI[QuestInfo]
+    CH[Check 0/1]
+    AC[Act 0/1]
+  end
+  subgraph srv [服务端]
+    QuestClass[Quest.java]
+    Req[AbstractQuestRequirement]
+    Act[AbstractQuestAction]
+  end
+  QI --> QuestClass
+  CH --> Req
+  AC --> Act
+```
+
+- WZ 解析通用方式仍遵循 [§3](#3-wz解析器架构)、[§5](#5-数据提取方法)。
+- 任务条件与奖励的**业务语义**（枚举、流程图）以 [11-quest-module.md](11-quest-module.md) 为准。
+- **脚本与 WZ 的关系**：有 `startscript`/`endscript` 或复杂分支时，行为以脚本 + `Quest` 检查共同为准；`Say.img` 可视为客户端侧默认文案参考。
+

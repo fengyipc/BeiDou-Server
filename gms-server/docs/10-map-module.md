@@ -141,11 +141,11 @@ map.setMapPointBoundings(bounds[0], bounds[1], bounds[2], bounds[3]);
 | 地图ID范围 | 区域名称 |
 |-----------|---------|
 | < 100000000 | maple（楓之谷） |
-| 100000000 ~ ORBIS | victoria（维多利亚港） |
-| ORBIS ~ ELLIN_FOREST | ossyria（奧西亞） |
+| 100000000 ~ ORBIS | victoria（金银岛） |
+| ORBIS ~ ELLIN_FOREST | ossyria（神秘岛） |
 | ELLIN_FOREST ~ 400000000 | elin（艾琳森林） |
 | SINGAPORE ~ 560000000 | singapore（新加坡） |
-| NEW_LEAF_CITY ~ 620000000 | MasteriaGL（神秘島） |
+| NEW_LEAF_CITY ~ 620000000 | MasteriaGL（克拉齐亚） |
 
 ---
 

@@ -8,3 +8,7 @@ docker-db-data
 .codebuddy/plans/
 .codebuddy/teams/
 node_modules/
+
+# Python
+__pycache__/
+*.pyc

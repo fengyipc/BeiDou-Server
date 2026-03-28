@@ -5229,7 +5229,7 @@
         <string name="d0" value="森林被污染之后，朋友们全都中了毒！"/>
         <string name="d1" value="森林被污染之后，朋友们全都中了毒！"/>
         <string name="n0" value="请你救救污染的森林！"/>
-        <string name="n1" value="是从奥西利亚来的勇士们！"/>
+        <string name="n1" value="是从神秘岛来的勇士们！"/>
     </imgdir>
     <imgdir name="2140000">
         <string name="name" value="神殿管理人"/>

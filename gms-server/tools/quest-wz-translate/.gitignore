@@ -1,0 +1,3 @@
+# 全量扫描 JSON 体积大时可取消下一行，避免提交
+quest-translation-memory.json
+batches
