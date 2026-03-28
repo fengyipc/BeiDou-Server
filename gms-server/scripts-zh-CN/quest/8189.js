@@ -45,7 +45,7 @@ function end(mode, type, selection) {
 
             qm.sendYesNo("好的，那么，让我们再来一次吧，好吗？和往常一样，这将是随机的，我将拿走你的一个进化之石。\r\n\r #r#e准备好了吗？#n#k");
         } else if (status == 1) {
-            qm.sendNextPrev("Then here we go...! #rHYAHH!#k");
+            qm.sendNextPrev("那就来吧……！#r喝呀！#k");
         } else if (status == 2) {
             var petidx = -1;
             var petItemid;

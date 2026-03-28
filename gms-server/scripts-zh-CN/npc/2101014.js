@@ -82,7 +82,7 @@ function action(mode, type, selection) {
                 if (expedicao != null) {
                     enterArena(-1);
                 } else {
-                    cm.sendGetText("Up to how many partipants can join in this match? (2~5 people)");
+                    cm.sendGetText("这场比赛最多允许多少人参加？（2～5人）");
                 }
             } else if (status == 2) {
                 var players = parseInt(cm.getText());   // AriantPQ option limit found thanks to NarutoFury (iMrSiN)

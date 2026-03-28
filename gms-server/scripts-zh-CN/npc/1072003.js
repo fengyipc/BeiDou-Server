@@ -61,7 +61,7 @@ function action(mode, type, selection) {
         } else if (status == 1) {
             cm.sendNextPrev("所以你想证明你的技能？好吧...");
         } else if (status == 2) {
-            cm.sendAcceptDecline("I will give you a chance if you're ready.");
+            cm.sendAcceptDecline("如果你准备好了，我就给你一个机会。");
         } else if (status == 3) {
             cm.sendOk("你需要收集 #b30 个 #t4031013#。祝你好运。");
             cm.completeQuest(100009);

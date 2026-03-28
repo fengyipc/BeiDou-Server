@@ -48,7 +48,7 @@ function end(mode, type, selection) {
                 qm.forceCompleteQuest();
                 qm.dispose();
             } else {
-                qm.sendNext("Please make room in your inventory");//NOT GMS LIKE
+                qm.sendNext("请腾出背包空间。");//NOT GMS LIKE
             }
         } else if (status == 2) {
             qm.dispose();

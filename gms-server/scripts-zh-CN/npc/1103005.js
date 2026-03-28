@@ -29,7 +29,7 @@
  */
 
 function start() {
-    cm.sendAcceptDecline("Becoming a Knight of Cygnus requires talent, faith, courage, and will power... and it looks like you are more than qualified to become a Knight of Cygnus. What do you think? If you wish to become one right this minute, I'll take you straight to Erev. Would you like to head over to Erev right now?");
+    cm.sendAcceptDecline("成为希纳斯的骑士需要天赋、信念、勇气和毅力……看来你已经完全有资格成为希纳斯的骑士了。你觉得如何？若想此刻就动身，我可以直接送你去圣地。现在就去圣地吗？");
 }
 
 function action(coded, by, Moogra) {

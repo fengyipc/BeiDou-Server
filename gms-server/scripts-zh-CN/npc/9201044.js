@@ -260,10 +260,10 @@ function action(mode, type, selection) {
 
                                         if (guessedRight == 6) { //6 unused slots on this stage
                                             cm.sendNext("所有的绳子重量都不同。考虑你接下来的行动，然后再试一次。");
-                                            cm.mapMessage(5, "Amos: Hmm... All ropes weigh differently.");
+                                            cm.mapMessage(5, "阿莫斯：嗯……每根绳子的重量都不一样。");
                                         } else {
                                             cm.sendNext("一根绳子重量相同。考虑你接下来的行动，然后再试一次。");
-                                            cm.mapMessage(5, "Amos: Hmm... One rope weigh the same.");
+                                            cm.mapMessage(5, "阿莫斯：嗯……两根绳子一样重。");
                                         }
                                     } else {
                                         spawnMobs(playersRight);
@@ -272,7 +272,7 @@ function action(mode, type, selection) {
                                             eim.setProperty("stage2combo", "");
 
                                             cm.sendNext("你已经未能发现正确的组合，现在将被重置。重新开始吧！");
-                                            cm.mapMessage(5, "Amos: You have failed to discover the right combination, now it shall be reset. Start over again!");
+                                            cm.mapMessage(5, "阿莫斯：你没能找出正确的组合，现在将被重置。从头再来！");
                                         }
                                     }
 

@@ -98,7 +98,7 @@ function action(mode, type, selection) {
                         cm.dispose();
                     }
                 } else if (selection == 4) {
-                    cm.mapMessage(5, "The Leader of the arena left.");
+                    cm.mapMessage(5, "竞技场负责人已离开。");
                     expedicao.warpExpeditionTeam(980010000);
                     cm.endExpedition(expedicao);
                     cm.dispose();

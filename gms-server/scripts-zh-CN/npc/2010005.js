@@ -92,7 +92,7 @@ function action(mode, type, selection) {
         } else if (status == 3) {
             cm.sendNext("你一定对#b#t" + ticket + "##k很好奇。是的，我能理解。#t" + ticket + "#是一种物品，只要你拥有它，就可以免费前往#m110000000#。这是一种非常稀有的物品，我们甚至不得不购买，但不幸的是，我在几个星期前的一个长周末丢失了我的。");
         } else if (status == 4) {
-            cm.sendPrev("I came back without it, and it just feels awful not having it. Hopefully someone picked it up and put it somewhere safe. Anyway this is my story and who knows, you may be able to pick it up and put it to good use. If you have any questions, feel free to ask");
+            cm.sendPrev("我没把它找回来，心里特别难受。希望有人捡到它并好好收起来了。总之这就是我的故事，说不定你也能捡到它，派上大用场。有任何问题尽管问。");
         } else if (status == 5) {
             cm.dispose();
         }

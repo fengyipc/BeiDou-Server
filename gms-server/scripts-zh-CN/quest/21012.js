@@ -69,7 +69,7 @@ function end(mode, type, selection) {
 	qm.sendOk("嗯...看您的表情，似乎什么都没有想起来...可是请不要担心。总有一天会好起来的。来，请您喝下这些药水打起精神来!\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v2000022# 10 #t2000022#\r\n#v2000023# 10 #t2000023#\r\n\r\n#fUI/UIWindow.img/QuestIcon/8/0# 57 exp");
     } else if (status == 1) {
         if (qm.isQuestCompleted(21012)) {
-            qm.dropMessage(1, "Unknown Error");
+            qm.dropMessage(1, "未知错误");
         } else if (qm.canHold(2000022) && qm.canHold(2000023)) {
             qm.forceCompleteQuest();
             qm.gainExp(57);

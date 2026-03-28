@@ -13,7 +13,7 @@ function action(mode, type, selection) {
         return;
     }
     if (status == 0) {
-        cm.sendSimple("So many injuries, so little medicine...#b\r\n#L0#Hey, take these black spores. You can make better medicine with them.#l");
+        cm.sendSimple("伤员这么多，药却不够……#b\r\n#L0#喂，把这些黑色孢子拿去吧。用它们能做出更好的药。#l");
     } else if (status == 1) {
         if (!cm.haveItem(exchangeItem, 100)) {
             cm.sendNext("你没有足够的... 我至少需要100个。");

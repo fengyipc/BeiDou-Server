@@ -12,3 +12,6 @@ node_modules/
 # Python
 __pycache__/
 *.pyc
+
+# scripts-zh-translate: batch export / Subagent done JSON (regenerated)
+tools/scripts-zh-translate/batches/

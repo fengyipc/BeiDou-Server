@@ -61,7 +61,7 @@ function action(mode, type, selection) {
                         cm.getPlayer().sendPacket(PacketCreator.showEffect("quest/party/wrong_kor"));
                         cm.getPlayer().sendPacket(PacketCreator.playSound("Party1/Failed"));
 
-                        cm.message("You've missed the note... Start over again.");
+                        cm.message("你漏掉了音符……从头再来吧。");
                     } else {
                         nextNote = harpSong[idx + 1];
 
@@ -69,7 +69,7 @@ function action(mode, type, selection) {
                             idx++;
 
                             if (idx == 45) {     // finished lullaby
-                                cm.message("Twinkle, twinkle, little star, how I wonder what you are.");
+                                cm.message("一闪一闪小星星，我多么想知道你是什么。");
                                 cm.setQuestProgress(3114, 42);
 
                                 cm.getPlayer().sendPacket(PacketCreator.showEffect("quest/party/clear"));
@@ -79,11 +79,11 @@ function action(mode, type, selection) {
                                 return;
                             } else {
                                 if (idx == 14) {
-                                    cm.message("Twinkle, twinkle, little star, how I wonder what you are!");
+                                    cm.message("一闪一闪小星星，我多么想知道你是什么！");
                                 } else if (idx == 22) {
-                                    cm.message("Up above the world so high,");
+                                    cm.message("高高挂在天空之上，");
                                 } else if (idx == 30) {
-                                    cm.message("like a diamond in the sky.");
+                                    cm.message("像天空中的钻石一样。");
                                 }
                             }
                         }

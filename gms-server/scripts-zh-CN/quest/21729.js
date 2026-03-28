@@ -36,7 +36,7 @@ function start(mode, type, selection) {
         }
 
         if (status == 0) {
-            qm.sendNext("Okay, you should not return to #bTru#k for further details on your next steps. ... Oh wait!! I remembered something. See the #rMysterious Statue#k over there? That statue has it's origins unknwown, and there's something scribbled onto it that resembles something big, it probably is the password for the cave? #rGet the password there#k, it may help you on your journey.");
+            qm.sendNext("好吧，你不必再回去找#b特鲁#k打听下一步该怎么做了。……等等！！我想起一件事。看到那边那座#r神秘雕像#k了吗？那座雕像来历不明，上面还刻着些什么，看起来很不得了，说不定就是洞窟的密码？#r去那里取得密码#k，也许对你的旅途会有帮助。");
         } else if (status == 1) {
             qm.forceStartQuest();
             qm.dispose();

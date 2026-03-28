@@ -70,25 +70,25 @@ function action(mode, type, selection) {
         beauty = selection + 1;
         if (cm.getMeso() > price) {
             if (selection == 0) {
-                cm.sendStyle("Pick one?", skin);
+                cm.sendStyle("选一个？", skin);
             } else if (selection == 1 || selection == 5) {
                 (selection == 1 ? hair : fhair).forEach(i => pushIfItemExists(hairnew, i));
-                cm.sendStyle("Pick one?", hairnew);
+                cm.sendStyle("选一个？", hairnew);
             } else if (selection == 2) {
                 var baseHair = parseInt(cm.getPlayer().getHair() / 10) * 10;
                 for (var k = 0; k < 8; k++) {
                     pushIfItemExists(haircolor, baseHair + k);
                 }
-                cm.sendStyle("Pick one?", haircolor);
+                cm.sendStyle("选一个？", haircolor);
             } else if (selection == 3 || selection == 6) {
                 (selection == 3 ? face : fface).forEach(j => pushIfItemExists(facenew, j));
-                cm.sendStyle("Pick one?", facenew);
+                cm.sendStyle("选一个？", facenew);
             } else if (selection == 4) {
                 var baseFace = parseInt(cm.getPlayer().getFace() / 1000) * 1000 + parseInt(cm.getPlayer().getFace() % 100);
                 for (var i = 0; i < 9; i++) {
                     pushIfItemExists(colors, baseFace + (i * 100));
                 }
-                cm.sendStyle("Pick one?", colors);
+                cm.sendStyle("选一个？", colors);
             }
         } else {
             cm.sendNext("你的金币不够。很抱歉，没有" + price + "个金币，你将无法改变你的外观！");

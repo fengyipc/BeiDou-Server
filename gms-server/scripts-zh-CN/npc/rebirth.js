@@ -57,7 +57,7 @@ function action(mode, type, selection) {
                 cm.dispose();
             }
         } else if (selection === 1) {
-            cm.sendOk("See you soon!")
+            cm.sendOk("回头见！")
             cm.dispose();
         }
     } else if (status === 3) {

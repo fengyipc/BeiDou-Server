@@ -55,7 +55,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendAcceptDecline("Hahahahaha! This place's Empress is already under my domain, that's surely a great advance on the #bBlack Wings#k' overthrow towards Maple World... And you, there? Still wants to face us? Or, better yet, since you seem strong enough to be quite a supplementary reinforcement at our service, #rwill you meet our expectations and fancy joining us#k since there's nothing more you can do?");
+            cm.sendAcceptDecline("哈哈哈哈！这里的女皇已经在我的掌控之中，这对#b黑色之翼#k颠覆冒险岛世界来说，无疑是巨大的进展……那边的你，还想与我们为敌吗？还是说，看你似乎强得足以当我们的得力援军，#r你是否愿意不负所望、加入我们#k？反正你也已经无能为力了。");
         } else if (status == 1) {
             cm.sendOk("“哈，懦夫在#r黑魔法师#k的军队中没有立足之地。滚吧！”");
             cm.dispose();

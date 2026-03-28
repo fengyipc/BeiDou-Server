@@ -12,7 +12,7 @@ function start(mode, type, selection) {
 	if (status == 0) {
 		qm.sendNext("我终于来了！*吸气啊，这一定是我呼吸的空气。那，那一定是太阳！还有，一棵树！还有，一株植物！还有，一朵花！哇哈哈哈！太不可思议了！这比我被困在蛋壳里时想象的世界要好得多。和你。。。你是我的主人吗？嗯，我对你的印象不太一样.");
 	} else if (status == 1) {
-		qm.sendNextPrev("#bWhoooooa, it talks!", 2);
+		qm.sendNextPrev("#b哇——它会说话！", 2);
 	} else if (status == 2) {
 		qm.sendNextPrev("我的主人很奇怪。我想我现在无能为力了，因为任务已经完成了。*很高兴见到你。我们会经常见面的.");
 	} else if (status == 3) {

@@ -76,7 +76,7 @@ function end(mode, type, selection) {
 	qm.sendYesNo("这还不足以替换你的武器，但是 #b你先拿着这把剑#k. 这是我给你的礼物英雄不可能空手而归.\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v1302000# 1 #t1302000#\r\n\r\n#fUI/UIWindow.img/QuestIcon/8/0# 35 exp");	
     } else if (status == 5) {
         if (qm.isQuestCompleted(21011)) {
-            qm.dropMessage(1, "Unknown Error");
+            qm.dropMessage(1, "未知错误");
         } else if (qm.canHold(1302000)) {
             qm.gainItem(1302000, 1);
             qm.gainExp(35);

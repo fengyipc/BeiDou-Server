@@ -63,7 +63,7 @@ function action(mode, type, selection) {
                 cm.sendSimple("你这些不知道尼特之怒的愚蠢家伙，现在是选择你们命运的时刻！\r\n\r\n#b#L0# 独自进入。#l\r\n#L1# 与2人或更多的队伍一起进入。#l");
             } else if (selection == 2) {
                 cm.openUI(0x16);
-                cm.showInfoText("Use the Party Search (Hotkey O) window to search for a party to join anytime and anywhere!");
+                cm.showInfoText("随时随地在队伍搜索（快捷键 O）窗口里寻找要加入的队伍吧！");
                 cm.dispose();
             } else if (selection == 3) {
                 cm.sendSimple("你带来了什么宝石？\r\n\r\n#L0##i4001322# #t4001322##l\r\n#L1##i4001323# #t4001323##l\r\n#L2##i4001324# #t4001324##l\r\n#L3##i4001325# #t4001325##l");
@@ -189,7 +189,7 @@ function action(mode, type, selection) {
                 cm.gainItem(itemid);
                 cm.warp(926010000);
             } else {
-                cm.showInfoText("You must have at least 1 empty slot in your Etc window to receive the reward.");
+                cm.showInfoText("领取奖励时，「其他」栏至少需要保留1个空位。");
             }
 
             cm.dispose();

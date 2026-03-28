@@ -66,7 +66,7 @@ function action(mode, type, selection) {
             stimulator = false;
         }
         if (selectedType == 0) { //What's a stim?
-            cm.sendNext("A stimulator is a special potion that I can add into the process of creating certain items. It gives it stats as though it had dropped from a monster. However, it is possible to have no change, and it is also possible for the item to be below average. There's also a 10% chance of not getting any item when using a stimulator, so please choose wisely.")
+            cm.sendNext("催化剂是一种特殊的药水，我可以在制作特定物品时把它加进流程里。那样做出来的属性会像是从怪物身上掉落的一样。不过也有可能毫无变化，或者属性低于平均。使用催化剂时还有10%几率得不到任何物品，请慎重选择。")
             cm.dispose();
         } else if (selectedType == 1) { //warrior weapon
             selStr = "Very well, then which Warrior weapon shall I work on?#b";

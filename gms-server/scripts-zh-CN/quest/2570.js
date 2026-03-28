@@ -23,7 +23,7 @@ function end(mode, type, selection) {
         qm.sendAcceptDecline("现在，你现在就决定吧。你想加入海盗队吗？如果你成为一名炮手，我会很高兴的。");
     } else if (status == 6) {
         if (mode == 0 && qm.isQuestCompleted(2570)) { //decline
-            qm.sendNext("Oh. So...you want to be something else? I understand...but Cutter might not...");
+            qm.sendNext("哦。所以……你想换别的？我明白……但卡特那边可能就不好说了……");
             qm.dispose();
         } else {
             if (!qm.isQuestCompleted(2570)) {

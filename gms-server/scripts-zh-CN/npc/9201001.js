@@ -125,7 +125,7 @@ function action(mode, type, selection) {
                     cm.dispose();
                 } else {
                     state = 0;
-                    cm.sendAcceptDecline("Are you searching for #k#t4031367#'s#k? I can share one with you, but you must do a favor for me, is that ok?");
+                    cm.sendAcceptDecline("你在找#k#t4031367#的#k吗？我可以分你一个，但你得帮我个忙，可以吗？");
                 }
             } else {
                 cm.sendOk("嘿，你好。你已经从其他娜娜那里得到#t4031367#了吗？");

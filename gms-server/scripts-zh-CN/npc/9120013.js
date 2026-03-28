@@ -65,10 +65,10 @@ function action(mode, type, selection) {
             }
         } else if (status == 7 && mode == 1) { //2-6 are the questions
             if (selection != correctAnswer.pop()) {
-                cm.sendNext("Hmmm...all humans make mistakes anyway! If you want to take another crack at it, then bring me 300 Fried Chicken.")
+                cm.sendNext("嗯……人总会犯错嘛！想再试一次的话，就给我带300份炸鸡来。")
                 cm.dispose();
             } else {
-                cm.sendNext("Dang, you answered all the questions right. I may not like humans in general, but I HATE breaking a promise, so, as promised, here's the Orange Marble.")
+                cm.sendNext("可恶，你居然全部答对了。我虽然不怎么喜欢人类，但最讨厌说话不算数，所以，如约给你，这颗橘色大理石拿好。")
             }
         } else if (status == 8 && mode == 1) { //gain marble
             cm.gainItem(4031064, 1);
@@ -78,7 +78,7 @@ function action(mode, type, selection) {
             var cont = true;
             if (status > 2) {
                 if (selection != correctAnswer.pop()) {
-                    cm.sendNext("Hmmm...all humans make mistakes anyway! If you want to take another crack at it, then bring me 300 Fried Chicken.")
+                    cm.sendNext("嗯……反正人类都会犯错！要是还想再试一次，就再给我带300份炸鸡来。")
                     cm.dispose();
                     cont = false;
                 }

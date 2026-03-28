@@ -17,7 +17,7 @@ function action(mode, type, selection) {
 
 
     if (status == 0) {
-        cm.sendGetText("The entrance of the Sealed Shrine... #bPassword#k!");
+        cm.sendGetText("封印寺院入口……#b密码#k！");
     } else if (status == 1) {
         if (cm.getWarpMap(925040100).countPlayers() > 0) {
             cm.sendOk("有人已经在前往封印神殿的路上了。");
@@ -28,7 +28,7 @@ function action(mode, type, selection) {
             if (cm.isQuestStarted(21747) && cm.getQuestProgressInt(21747, 9300351) == 0) {
                 cm.warp(925040100, 0);
             } else {
-                cm.playerMessage(5, "Although you said the right answer, some mysterious forces are blocking the way in.");
+                cm.playerMessage(5, "虽然你答对了，但有股神秘力量挡住了去路。");
             }
 
             cm.dispose();

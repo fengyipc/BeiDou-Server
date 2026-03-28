@@ -45,7 +45,7 @@ function action(mode, type, selection) {
                 cm.dispose();
             }
         } else if (status == 1) {
-            cm.sendGetText("Please input your desired name below.");
+            cm.sendGetText("请在下方输入你想要的名字。");
         } else if (status == 2) {
             var text = cm.getText();
 

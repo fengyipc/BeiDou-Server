@@ -231,7 +231,7 @@ function action(mode, type, selection) {
             cm.dispose();
         } else if (selectedMenu == 1) { //I want to leave
             if (status == 0) {
-                cm.sendAcceptDecline("So, you're giving up? You're really going to leave?");
+                cm.sendAcceptDecline("怎么，你要放弃？真的要离开吗？");
             } else {
                 if (mode == 1) {
                     cm.warp(925020002, "st00");

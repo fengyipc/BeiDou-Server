@@ -76,9 +76,9 @@ function action(mode, type, selection) {
         }
     } else if (status == 2) {
         if (sel == 0) {
-            cm.sendGetNumber("How many would you like to sell?", 0, 0, 200);
+            cm.sendGetNumber("你想出售多少个？", 0, 0, 200);
         } else {
-            cm.sendPrev("Oh, and the prices are subject to change. I can't get the short end of the stick, I have to stay in business! Check back with me frequently, my prices change by the hour!");
+            cm.sendPrev("哦，价格也可能随时变动。我可不能吃亏，还得做生意呢！记得常来找我，我的价格可是按小时变的！");
         }
     } else if (status == 3) {
         if (sel == 0) {

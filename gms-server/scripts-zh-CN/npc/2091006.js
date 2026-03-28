@@ -44,7 +44,7 @@ function action(mode, type, selection) {
                 readNotice = 1;
                 cm.sendNext("#e< 注意：接受挑战！ >#n\r\n我的名字是慕容，慕龙道场的主人。自古以来，我一直在慕龙修炼，直到我的技能达到了巅峰。从今天开始，我将接受所有对慕龙道场的申请者。慕龙道场的权利将只赋予最强大的人。\r\n如果有人希望向我学习，随时来挑战吧！如果有人希望挑战我，也欢迎。我会让你充分意识到自己的弱点。");
             } else if (status == 0) {
-                cm.sendPrev("PS:You can challenge me on your own. But if you don't have that kind of courage, go ahead and call all your friends.");
+                cm.sendPrev("附注：你可以独自挑战我。要是没那份胆量，就把朋友们都叫来吧。");
             } else {
                 cm.dispose();
             }

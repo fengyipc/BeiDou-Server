@@ -66,7 +66,7 @@ function end(mode, type, selection) {
 	qm.sendYesNo("啊，你把所有的部件都带来了。给我几秒钟把它们组装起来..像这样。..就像那样。..还有...\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v3010062# 1 #t3010062#\r\n\r\n#fUI/UIWindow.img/QuestIcon/8/0# 95 exp");
     } else if (status == 1) {
         if (qm.isQuestCompleted(21013)) {
-            qm.dropMessage(1, "Unknown Error");
+            qm.dropMessage(1, "未知错误");
         }
         qm.forceCompleteQuest();
         qm.gainExp(95);

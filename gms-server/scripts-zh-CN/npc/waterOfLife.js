@@ -30,7 +30,7 @@ function start() {
     status = -1;
     dList = cm.getDriedPets();
     if (dList.size() == 0) {
-        cm.playerMessage(5, "You currently do not own a pet that needs to be treated with Water of Life.");
+        cm.playerMessage(5, "你目前没有需要用生命之水治疗的宠物。");
         cm.dispose();
         return;
     }

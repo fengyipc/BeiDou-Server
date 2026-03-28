@@ -32,7 +32,7 @@ function action(mode, type, selection) {
                 cm.sendNext("今晚，我们有一群冒险岛玩家的盛宴.. 哈哈哈...");
             } else if (status == 2) {
                 cm.sendNext("让我们经过特别训练的守护大师护送你！");
-                cm.mapMessage(6, "Engarde! Master Guardians approach!");
+                cm.mapMessage(6, "预备！大师守护者们来了！");
                 for (var i = 0; i < 10; i++) {
                     var mob = eim.getMonster(9400594);
                     const xPos = Math.floor(-1337 + (Math.random() * 1337))
@@ -52,7 +52,7 @@ function action(mode, type, selection) {
                     cm.sendOk("嗯，这是什么？你打败了它们？");
                 } else if (status == 1) {
                     cm.sendNext("好吧，无论如何！扭曲之主将很高兴欢迎你。");
-                    cm.mapMessage(6, "Twisted Masters approach!");
+                    cm.mapMessage(6, "扭曲大师正在逼近！");
 
                     //Margana
                     var mob = eim.getMonster(9400590);
@@ -80,7 +80,7 @@ function action(mode, type, selection) {
         } else if (eim.getIntProperty("glpq6") == 2) {
             if (cm.getMap().countMonsters() == 0) {
                 cm.sendOk("什么？呃...这不可能发生。");
-                cm.mapMessage(5, "The portal to the next stage has opened!");
+                cm.mapMessage(5, "通往下一关的传送口已开启！");
                 eim.setIntProperty("glpq6", 3);
 
                 eim.showClearEffect(true);

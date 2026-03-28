@@ -120,7 +120,7 @@ function action(mode, type, selection) {
                                 }
 
                                 cm.sendNext("干得好！现在让我为你打开大门。");
-                                cm.mapMessage(5, "Amos: The time runs short now. Your objective is to open the gates and gather together on the other side of the next map. Good luck!");
+                                cm.mapMessage(5, "阿莫斯：时间不多了。你的目标是打开大门，在下一张地图的另一侧集合。祝你好运！");
                                 clearStage(stage, eim, curMap);
                             } else {
                                 cm.sendNext("嘿，你没听清楚吗？我要求 #r50 #t4031597##k 作为这次试炼的成功报酬。");
@@ -157,7 +157,7 @@ function action(mode, type, selection) {
 
                                     cm.sendNext("好的，你的团队已经集合好了。当你们感觉准备好与 #rGeist Balrog#k 战斗时，和我交谈。");
 
-                                    cm.mapMessage(5, "Amos: Now only the boss fight remains! Once inside, talk to me only if you want to join the boss fight, you will be transported to action immediately.");
+                                    cm.mapMessage(5, "阿莫斯：现在只剩首领战了！进去之后，只有想参加首领战的时候再跟我说，你会立刻被传送进场。");
                                     clearStage(stage, eim, curMap);
                                 } else {
                                     cm.sendNext("你们是通过传送到达这里的，是吗？我能感觉到。真是遗憾，所有的门都必须打开才能完成这个阶段。如果你们还有时间的话，回头走一遍你们的路，把那些门都关掉。");
@@ -187,7 +187,7 @@ function action(mode, type, selection) {
                             clearStage(stage, eim, curMap);
                             eim.clearPQ();
                         } else {
-                            cm.sendNext("How is it? Are you going to retrieve me the #b#t4031594##k? That's your last trial, hold on!")
+                            cm.sendNext("怎么样？愿意帮我取来#b#t4031594##k吗？那是你最后的试炼，坚持住！")
                         }
                     } else {
                         cm.sendNext("请告诉你的#b队长#k来找我谈话。");

@@ -44,7 +44,7 @@ function action(mode, type, selection) {
     }
     status++;
     if (status == 1) {
-        cm.sendGetNumber("Okay, so how many do you want me to make?", 1, 1, 100);
+        cm.sendGetNumber("好，那你要我做几个？", 1, 1, 100);
     } else if (status == 2) {
         var complete = true;
 

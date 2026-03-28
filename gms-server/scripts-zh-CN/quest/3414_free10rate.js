@@ -11,7 +11,7 @@ function end(mode, type, selection) {
     status++;
 
     if (status == 0) {
-        qm.sendNext("Whoa... this is it!!! With this sample, the studies that are taking place in Omega Sector will be reinvigorated with results! I am also at a loss for words for finding someone that is more talented than me at hunting. I'll have to get back on track! Anyway, for your job well done, I'll have to reward you accordingly.");
+        qm.sendNext("哇……就是这个！！！有了这份样本，欧米茄地带正在进行的研究终于能出成果了！能找到狩猎本领比我还强的人，我都不知道该说什么好。我也得重新振作！总之，你干得漂亮，我会好好奖励你的。");
     } else if (status == 1) {
         var talkStr = "Here, please select the scroll of your choice. All success rates are at 10%. \r\n\r\n#rSELECT A ITEM\r\n#b"
         stance = qm.getPlayer().getJobStyle();

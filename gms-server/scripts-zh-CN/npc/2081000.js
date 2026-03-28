@@ -46,7 +46,7 @@ function action(mode, type, selection) {
             cm.dispose();
         }
     } else if (status == 2) {
-        cm.sendGetNumber("#b#t4031346##k is a precious iteml I cannot give it to you just like that. How about doing me a little favor? Then I'll give it to you. I'll sell the #b#t4031346##k to you for #b30,000 mesos#k each. Are you willing to make the purchase? How many would you like, then?", 0, 0, 99);
+        cm.sendGetNumber("#b#t4031346##k是珍贵的物品！我不能就这样给你。帮我一个小忙怎么样？那我就给你。我会以每件#b30,000 金币#k的价格把#b#t4031346##k卖给你。你愿意购买吗？那么，要买几件？", 0, 0, 99);
     } else if (status == 3) {
         if (selection == 0) {
             cm.sendOk("我不能卖给你0。");

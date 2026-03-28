@@ -49,7 +49,7 @@ function end(mode, type, selection) {
 	} else if (status == 6) {
 		qm.sendNextPrev("再见了! 母亲!");	
 	} else if (status == 7) {
-		qm.sendNextPrev("#b...", 2);	
+		qm.sendNextPrev("#b……", 2);	
 	} else if (status == 8) {
 		qm.sendNextPrev("...");	
 	} else if (status == 9) {

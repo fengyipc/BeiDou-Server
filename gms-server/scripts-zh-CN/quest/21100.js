@@ -25,7 +25,7 @@ function start(mode, type, selection) {
 	qm.sendYesNo("是，就是那个。根据纪录英雄的武器会认主人。假如您是使用 #p1201001#的英雄，抓住 #p1201001#时应该会有什么反应。快点去按#b#p1201001#吧。#k");
     } else if (status == 7) {
         if (mode == 0 && type == 15) {
-            qm.sendNext("What's stopping you? I promise, I won't be disappointed even if the #p1201001# shows no reaction to you. Please, rush over there and grab the #p1201001#. Just #bclick#k on it.", 8);
+            qm.sendNext("还在犹豫什么？我保证，就算#p1201001#对你毫无反应，我也不会失望。拜托，快过去找#p1201001#。只要#b点击#k它就行。", 8);
         } else {
             qm.forceCompleteQuest();
             qm.sendOk("假如 #p1201001#有反应的话，您就使用#p1201001#的英雄 #b狂狼勇士#k.", 8);

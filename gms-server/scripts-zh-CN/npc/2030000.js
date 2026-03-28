@@ -59,7 +59,7 @@ function action(mode, type, selection) {
             if (cm.getLevel() > 49) {
                 cm.sendYesNo("如果你打算进去，我建议你改变主意。但如果你真的想进去……我只会让那些足够强大以在那里生存下来的人进去。我不希望看到其他人死去。让我看看……嗯……！你看起来相当强壮。好吧，你想进去吗？");
             } else {
-                cm.sendPrev("If you are thinking of going in, I suggest you change your mind. But if you really want to go in... I'm only letting in the ones that are strong enough to stay alive in there. I do not wish to see anyone else die. Let's see... Hmmm... You haven't reached Level 50 yet. I can't let you in, then, so forget it.");
+                cm.sendPrev("如果你打算进去，我建议你还是打消念头。但若你执意要进……我只放足够强、能在里面活下来的人进去。我不想再看到任何人送命。让我想想……嗯……你还没到50级，那就不能让你进去，算了吧。");
             }
         } else if (status == 2) {
             if (cm.getLevel() >= 50) {

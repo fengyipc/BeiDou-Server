@@ -50,7 +50,7 @@ function action(mode, type, selection) {
                             % 10));
                     }
                 }
-                cm.sendStyle("Hahaha~all you need is #bAriant hair style coupon(VIP)#k to change up your hairstyle. Choose the new style, and let me do the rest.", hairnew);
+                cm.sendStyle("哈哈哈～只要#b阿里安特美发行礼券（VIP）#k就能换发型。选好新样式，剩下的交给我。", hairnew);
             } else if (selection == 1) {
                 beauty = 2;
                 haircolor = Array();
@@ -59,7 +59,7 @@ function action(mode, type, selection) {
                 for (var i = 0; i < 8; i++) {
                     pushIfItemExists(haircolor, current + i);
                 }
-                cm.sendStyle("Every once in a while, it doesn't hurt to change up your hair color... it's fun. Allow me, the great Mazra, to dye your hair, so you just bring me #bAriant hair color coupon(VIP)#k, and choose your new hair color.", haircolor);
+                cm.sendStyle("偶尔换换发色也不坏，挺有意思的。让我，伟大的马扎拉，来替你染发吧；你只要带来#b阿里安特染色高级会员卡#k，再选好你的新发色就行。", haircolor);
             }
         } else if (status == 2) {
             cm.dispose();

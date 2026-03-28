@@ -62,9 +62,9 @@ function action(mode, type, selection) {
         } else if (status == 1) {
             state = selection;
             if (selection == 0) {
-                cm.sendGetText("In order to start the Zakum Battle, you need to choose a name for your instance.  This is the password that lets your members join, so tell it to everybody who wants to participate in the battle.");
+                cm.sendGetText("要开启扎昆战斗，你需要为自己的副本取一个名字。这就是让队员加入时输入的密码，所以请告诉所有想参加战斗的人。");
             } else if (selection == 1) {
-                cm.sendGetText("In order to join a Zakum Battle, you need to enter the password.  If you don't know what it is, please ask the person leading the battle.");
+                cm.sendGetText("要加入扎昆战斗，你必须输入密码。若不知道密码，请向带队的人询问。");
             }
 
         } else if (status == 2) {
