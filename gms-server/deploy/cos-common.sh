@@ -64,6 +64,13 @@ cos_uri() {
   printf 'cos://%s/%s' "$COS_BUCKET" "$(object_key "$key")"
 }
 
+# Logical object path under a local mount of the bucket (same layout as cos://bucket/COS_PREFIX+key).
+local_cos_path() {
+  local key="$1"
+  local root="${COS_LOCAL_ROOT%/}"
+  printf '%s/%s' "$root" "$(object_key "$key")"
+}
+
 require_coscli() {
   command -v "$COSCLI_BIN" >/dev/null 2>&1 || {
     echo "coscli not found. Install from https://github.com/tencentyun/coscli/releases and set COSCLI=/path/to/coscli if needed." >&2
@@ -88,6 +95,16 @@ cos_cp_up() {
 cos_cp_down() {
   local key="$1"
   local dest="$2"
+  if [[ -n "${COS_LOCAL_ROOT:-}" ]]; then
+    local src
+    src="$(local_cos_path "$key")"
+    if [[ ! -r "$src" ]]; then
+      echo "COS_LOCAL_ROOT: object not readable: $src (key=$key)" >&2
+      return 1
+    fi
+    cp -f "$src" "$dest"
+    return 0
+  fi
   require_coscli
   cos_cli cp "$(cos_uri "$key")" "$dest"
 }

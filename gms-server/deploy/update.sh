@@ -20,6 +20,8 @@ Options:
 Environment / cos.env:
   COS_BUCKET, COS_REGION (or COS_ENDPOINT), COS_PREFIX
   COS_SECRET_ID, COS_SECRET_KEY (optional if coscli is pre-configured)
+  COS_LOCAL_ROOT      If set (e.g. /cos), read objects from this directory instead of coscli
+                      (layout: \$COS_LOCAL_ROOT/\$COS_PREFIX/version.json, same as bucket keys).
   BEIDOU_STATE_FILE   Override state file (default: deploy/.beidou-deploy-state)
 EOF
 }
@@ -76,11 +78,18 @@ if [[ -n "$INIT_COMMIT" ]]; then
   exit 0
 fi
 
-require_coscli
+if [[ -n "${COS_LOCAL_ROOT:-}" ]]; then
+  if [[ ! -d "$COS_LOCAL_ROOT" ]]; then
+    echo "COS_LOCAL_ROOT is not a directory: $COS_LOCAL_ROOT" >&2
+    exit 1
+  fi
+else
+  require_coscli
+fi
 require_helper_py
 
-if [[ -z "${COS_BUCKET:-}" ]]; then
-  echo "COS_BUCKET is required" >&2
+if [[ -z "${COS_LOCAL_ROOT:-}" && -z "${COS_BUCKET:-}" ]]; then
+  echo "COS_BUCKET is required unless COS_LOCAL_ROOT is set (local mirror)" >&2
   exit 1
 fi
 

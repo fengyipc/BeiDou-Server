@@ -30,9 +30,18 @@ if ($InitCommit) {
     exit 0
 }
 
-Assert-CosCli
+if ($env:COS_LOCAL_ROOT) {
+    if (-not (Test-Path -LiteralPath $env:COS_LOCAL_ROOT -PathType Container)) {
+        throw "COS_LOCAL_ROOT is not a directory: $($env:COS_LOCAL_ROOT)"
+    }
+}
+else {
+    Assert-CosCli
+}
 Assert-HelperPy
-if (-not $env:COS_BUCKET) { throw "COS_BUCKET is required" }
+if (-not $env:COS_LOCAL_ROOT -and -not $env:COS_BUCKET) {
+    throw "COS_BUCKET is required unless COS_LOCAL_ROOT is set (local mirror)"
+}
 
 $versionLocal = [System.IO.Path]::GetTempFileName()
 try {

@@ -69,6 +69,13 @@ function Get-CosUri {
     return "cos://$($env:COS_BUCKET)/$full"
 }
 
+function Get-LocalCosPath {
+    param([string]$Key)
+    $root = $env:COS_LOCAL_ROOT.TrimEnd('/', '\')
+    $rel = (Get-ObjectKey $Key) -replace '\\', '/'
+    return "$root/$rel"
+}
+
 function Assert-CosCli {
     $cmd = Get-Command $CosCliBin -ErrorAction SilentlyContinue
     if (-not $cmd) {
@@ -100,11 +107,25 @@ function Copy-CosUp {
 
 function Copy-CosDown {
     param([string]$Key, [string]$Dest)
+    if ($env:COS_LOCAL_ROOT) {
+        $src = Get-LocalCosPath $Key
+        if (-not (Test-Path -LiteralPath $src -PathType Leaf)) {
+            throw "COS_LOCAL_ROOT: object not found: $src (key=$Key)"
+        }
+        Copy-Item -LiteralPath $src -Destination $Dest -Force
+        return
+    }
     Invoke-CosCli cp (Get-CosUri $Key) $Dest
 }
 
 function Test-CopyCosDown {
     param([string]$Key, [string]$Dest)
+    if ($env:COS_LOCAL_ROOT) {
+        $src = Get-LocalCosPath $Key
+        if (-not (Test-Path -LiteralPath $src -PathType Leaf)) { return $false }
+        Copy-Item -LiteralPath $src -Destination $Dest -Force
+        return $true
+    }
     Assert-CosCli
     $auth = Get-CosCliAuthArgs
     $bin = $CosCliBin

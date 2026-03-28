@@ -27,6 +27,10 @@
 ## 配置
 
 1. 复制 [`cos.env.example`](cos.env.example) 为 `cos.env` 并填写 `COS_BUCKET`、`COS_PREFIX`、`COS_REGION`（或 `COS_ENDPOINT`）。
+
+### 本地挂载（免 coscli 更新）
+
+若已将 COS 桶挂载到本机目录（例如 `/cos`），可在 `cos.env` 中设置 **`COS_LOCAL_ROOT=/cos`**。此时 **`update.sh` / `update.ps1`** 会从本地路径读取对象，规则与线上键一致：`$COS_LOCAL_ROOT` + `COS_PREFIX` + 逻辑键（与 `version.json` 里 `artifact.key` / 补丁 `key` 拼成的完整路径相同，例如 `/cos/ms-server-updates/version.json`）。**仍需保留 `COS_PREFIX`**，以便与发布端路径一致；**可不配置 `COS_BUCKET`**（仅更新脚本）。**`publish.sh` 仍走 coscli 上传**，不受此项影响。
 2. 认证二选一：
    - 本机执行过一次 `coscli config init`；
    - 或在 `cos.env` 中设置 `COS_SECRET_ID` / `COS_SECRET_KEY`（脚本会通过 `--init-skip` 传入 coscli）。

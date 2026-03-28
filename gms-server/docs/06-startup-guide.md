@@ -650,6 +650,8 @@ sed -n '/2026-03-26 10:00:00/,/2026-03-26 11:00:00/p' logs/beidou.log
 
 Windows 原生环境可使用 [`deploy/publish.ps1`](../deploy/publish.ps1)、[`deploy/update.ps1`](../deploy/update.ps1)、[`deploy/run-with-update.ps1`](../deploy/run-with-update.ps1)（见 [`deploy/README.md`](../deploy/README.md)）。
 
+若运行机已将 COS 桶挂载到本地目录（如 `/cos`），可在 `cos.env` 中设置 **`COS_LOCAL_ROOT`**，`update.sh` / `update.ps1` 将从该目录按与线上一致的键路径读取文件，无需本机安装或调用 coscli；详见 [`deploy/README.md`](../deploy/README.md) 中「本地挂载」小节。
+
 配置模板见 [`deploy/cos.env.example`](../deploy/cos.env.example)，详细步骤与首装说明见 [`deploy/README.md`](../deploy/README.md)。
 
 ---
