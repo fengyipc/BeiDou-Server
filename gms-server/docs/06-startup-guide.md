@@ -638,7 +638,21 @@ tail -f logs/beidou.log
 sed -n '/2026-03-26 10:00:00/,/2026-03-26 11:00:00/p' logs/beidou.log
 ```
 
+## 10. COS 自动更新（可选）
+
+在已配置腾讯云 COS 与 [coscli](https://github.com/tencentyun/coscli/releases) 的前提下，可使用 `deploy/` 下脚本做增量资源发布与运行机自动更新：
+
+| 脚本 | 说明 |
+|------|------|
+| [`deploy/publish.sh`](../deploy/publish.sh) | 对比上次发布的 `headCommit` 与当前 `HEAD`，将 `scripts`、`scripts-zh-CN`、`wz`、`wz-zh-CN` 变更打成 zip，连同 `target/BeiDou.jar` 上传到 COS，并更新 `version.json`。 |
+| [`deploy/update.sh`](../deploy/update.sh) | 拉取 COS 上的 `version.json`，按 `patches` 链下载 zip 解压到服务端根目录，再下载并校验 jar 覆盖 `BeiDou.jar`。 |
+| [`deploy/run-with-update.sh`](../deploy/run-with-update.sh) | 若存在运行中的 `BeiDou.jar` 进程则先结束，再执行 `update.sh`，最后启动服务（默认后台写 `logs/beidou.log`）。 |
+
+Windows 原生环境可使用 [`deploy/publish.ps1`](../deploy/publish.ps1)、[`deploy/update.ps1`](../deploy/update.ps1)、[`deploy/run-with-update.ps1`](../deploy/run-with-update.ps1)（见 [`deploy/README.md`](../deploy/README.md)）。
+
+配置模板见 [`deploy/cos.env.example`](../deploy/cos.env.example)，详细步骤与首装说明见 [`deploy/README.md`](../deploy/README.md)。
+
 ---
 
 *文档版本: 1.0*
-*最后更新: 2026-03-26*
+*最后更新: 2026-03-28*

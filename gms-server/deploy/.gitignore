@@ -1,0 +1,4 @@
+cos.env
+.beidou-deploy-state
+.last-publish
+*.log
