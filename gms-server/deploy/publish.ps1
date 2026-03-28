@@ -64,6 +64,14 @@ try {
 
     $gitArgs = @("diff", "--name-only", "$from..$to", "--") + $resourcePaths
     & git @gitArgs | Set-Content -LiteralPath $filesTmp -Encoding UTF8
+    # Monorepo: paths are repo-relative (e.g. gms-server/scripts/...); zip uses ServerRoot.
+    $gitPrefix = ((git rev-parse --show-prefix 2>$null) | Out-String).Trim().TrimEnd('/', '\')
+    if ($gitPrefix) {
+        $p = "$gitPrefix/"
+        Get-Content -LiteralPath $filesTmp -Encoding UTF8 | ForEach-Object {
+            if ($_.StartsWith($p)) { $_.Substring($p.Length) } else { $_ }
+        } | Set-Content -LiteralPath $filesTmp -Encoding UTF8
+    }
     $hasResources = (Get-Item -LiteralPath $filesTmp).Length -gt 0
 
     if ($RequireResourceChange -and -not $hasResources) {
@@ -136,7 +144,7 @@ try {
     Invoke-PythonHelper @("json_validate", $newVer)
 
     Copy-CosUp $newVer "version.json.new"
-    Invoke-CosCli cp (Get-CosUri "version.json.new") (Get-CosUri "version.json") -f
+    Invoke-CosCli cp (Get-CosUri "version.json.new") (Get-CosUri "version.json")
     $auth = Get-CosCliAuthArgs
     $bin = $CosCliBin
     if ($auth.Count -gt 0) {

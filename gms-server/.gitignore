@@ -1,5 +1,6 @@
 target
 build
+coscli_output/
 out
 logs
 src/main/resources/static

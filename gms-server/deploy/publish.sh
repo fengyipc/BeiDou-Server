@@ -60,9 +60,10 @@ fi
 PREV_FILE="$(mktemp)"
 NEW_VER="$(mktemp)"
 FILES_TMP="$(mktemp)"
+FILES_RAW="$(mktemp)"
 PATCH_ZIP=""
 cleanup() {
-  rm -f "$PREV_FILE" "$NEW_VER" "$FILES_TMP"
+  rm -f "$PREV_FILE" "$NEW_VER" "$FILES_TMP" "$FILES_RAW"
   [[ -n "$PATCH_ZIP" && -f "$PATCH_ZIP" ]] && rm -f "$PATCH_ZIP"
 }
 trap cleanup EXIT
@@ -91,7 +92,15 @@ if [[ "$from" == "$to" ]]; then
 fi
 
 # shellcheck disable=SC2086
-git diff --name-only "$from..$to" -- $RESOURCE_PATHS > "$FILES_TMP"
+git diff --name-only "$from..$to" -- $RESOURCE_PATHS > "$FILES_RAW"
+# Monorepo: paths are repo-relative (e.g. gms-server/scripts/...); zip uses SERVER_ROOT.
+git_prefix="$(git rev-parse --show-prefix 2>/dev/null || true)"
+git_prefix="${git_prefix%/}"
+if [[ -n "$git_prefix" ]]; then
+  sed "s|^${git_prefix}/||" "$FILES_RAW" > "$FILES_TMP"
+else
+  cp "$FILES_RAW" "$FILES_TMP"
+fi
 has_resources=false
 if [[ -s "$FILES_TMP" ]]; then
   has_resources=true
@@ -193,7 +202,7 @@ PY
 python3 "$HELPER_PY" json_validate "$NEW_VER"
 
 cos_cp_up "$NEW_VER" "version.json.new"
-cos_cli cp "$(cos_uri "version.json.new")" "$(cos_uri "version.json")" -f
+cos_cli cp "$(cos_uri "version.json.new")" "$(cos_uri "version.json")"
 cos_cli rm "$(cos_uri "version.json.new")" -f 2>/dev/null || true
 
 echo "Published head=$to artifact=$artifact_key patch=$patch_type"
