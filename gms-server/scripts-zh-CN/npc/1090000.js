@@ -68,7 +68,7 @@ function start() {
     } else if (parseInt(cm.getJobId() / 100) == jobType && cm.canSpawnPlayerNpc(GameConstants.getHallOfFameMapid(cm.getJob()))) {
         spawnPnpc = true;
 
-        var sendStr = "You have walked a long way to reach the power, wisdom and courage you hold today, haven't you? What do you say about having right now #ra NPC on the Hall of Fame holding the current image of your character#k? Do you like it?";
+        var sendStr = "一路走来，你已经拥有了如今的力量、智慧与勇气，不是吗？要不要现在就#r在英雄公馆里立一尊以你当前角色形象为准的NPC#k？你觉得怎么样？";
         if (spawnPnpcFee > 0) {
             sendStr += " I can do it for you, for the fee of #b " + cm.numberWithCommas(spawnPnpcFee) + " mesos.#k";
         }
@@ -87,13 +87,13 @@ function start() {
             }
         } else if (actionx["3thJobI"] || (cm.getPlayer().gotPartyQuestItem("JB3") && cm.getLevel() >= 70 && cm.getJobId() % 10 == 0 && parseInt(cm.getJobId() / 100) == 5 && !cm.getPlayer().gotPartyQuestItem("JBP"))) {
             actionx["3thJobI"] = true;
-            cm.sendNext("你来了。几天前，奥西里亚的#b#p2020013##k跟我谈到了你。我看到你对于成为海盗职业的第三次转职很感兴趣。为了实现这个目标，我需要测试一下你的实力，看看你是否配得上这个晋升。金银岛上有一个洞穴中的开口，会通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败他，并带着#b#t4031059##k回来。");
+            cm.sendNext("你来了。几天前，神秘岛的#b#p2020013##k跟我谈到了你。我看到你对于成为海盗职业的第三次转职很感兴趣。为了实现这个目标，我需要测试一下你的实力，看看你是否配得上这个晋升。金银岛上有一个洞穴中的开口，会通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败他，并带着#b#t4031059##k回来。");
         } else if (cm.getPlayer().gotPartyQuestItem("JBP") && !cm.haveItem(4031059)) {
             cm.sendNext("请把#b#t4031059##k带给我。");
             cm.dispose();
         } else if (cm.haveItem(4031059) && cm.getPlayer().gotPartyQuestItem("JBP")) {
             actionx["3thJobC"] = true;
-            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次转职。现在你应该把这条项链交给在奥西里亚的#b#p2020013##k，以进行测试的第二部分。祝你好运。你会需要的。");
+            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次转职。现在你应该把这条项链交给在神秘岛的#b#p2020013##k，以进行测试的第二部分。祝你好运。你会需要的。");
         } else {
             cm.sendOk("你选择得很明智。");
             cm.dispose();

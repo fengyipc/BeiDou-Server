@@ -34,7 +34,7 @@ var status = 0;
 var cost = 30000;
 
 function start() {
-    cm.sendYesNo("你好，我负责出售前往奥西里亚奥比斯站的船票。前往奥比斯的船每10分钟出发一次，从整点开始，票价为#b" + cost + "金币#k。你确定要购买#b#t4031045##k吗？");
+    cm.sendYesNo("你好，我负责出售前往神秘岛奥比斯站的船票。前往奥比斯的船每10分钟出发一次，从整点开始，票价为#b" + cost + "金币#k。你确定要购买#b#t4031045##k吗？");
 }
 
 function action(mode, type, selection) {

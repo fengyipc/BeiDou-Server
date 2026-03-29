@@ -55,7 +55,7 @@ function action(mode, type, selection) {
         cm.sendSimple(selStr);
     } else if (status == 1) {
         item = items[selection];
-        var recHpMp = ["300 HP.", "1000 HP.", "800 MP", "1000 HP and MP."];
+        var recHpMp = ["300 点 HP。", "1000 点 HP。", "800 点 MP。", "1000 点 HP 与 MP。"];
         cm.sendGetNumber("你想买 #b#t" + item[0] + "##k? #t" + item[0] + "# 允许您恢复 " + recHpMp[selection] + " 你想买多少个?", 1, 1, 100);
     } else if (status == 2) {
         cm.sendYesNo("你将购买这些 #r" + selection + "#k #b#t" + item[0] + "#(s)#k 吗？#t" + item[0] + "# 一个需要 " + item[1] + " 金币，所以总共需要 #r" + (item[1] * selection) + "#k 金币。");

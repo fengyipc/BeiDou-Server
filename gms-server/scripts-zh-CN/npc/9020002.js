@@ -55,7 +55,7 @@ function action(mode, type, selection) {
         if (status == 0) {
             var outText = "Once you leave the map, you'll have to restart the whole quest if you want to try it again.  Do you still want to leave this map?";
             if (mapId == 103000805) {
-                outText = "Are you ready to leave this map?";
+                outText = "你准备好离开这张地图了吗？";
             }
             cm.sendYesNo(outText);
         } else if (mode == 1) {

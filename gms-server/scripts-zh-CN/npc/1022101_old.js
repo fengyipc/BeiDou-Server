@@ -66,7 +66,7 @@ function action(mode, type, selection) {
                 cm.dispose();
                 return;
             }
-            var outStr = "Hello, I am the Vote Point exchanger for #rMapleSolaxia#k!\r\n";
+            var outStr = "你好，我是#rMapleSolaxia#k的投票点兑换员！\r\n";
             outStr += "You currently have #r#c" + itemToUse + "##k #t" + itemToUse + "# and #r" + vp + "#k Vote Points.#b\r\n\r\n";
             outStr += "#L0#I would like to exchange my vote points for Maple Leaves#l\r\n";
             outStr += "#L1#I would like to exchange 1 #t" + itemToUse + "# for " + nxAmount + " NX Cash#l\r\n";

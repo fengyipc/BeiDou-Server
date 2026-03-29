@@ -29,7 +29,7 @@ var questionNum;
 
 function start() {
     status = -1;
-    questions = ["Which of these items does the Flaming Raccoon NOT drop?", "Which NPC is responsible for transporting travellers from Kerning City to Zipangu, and back?", "Which of the items sold at the Mushroom Shrine increases your attack power?", "Which of these items do the Extras NOT drop?", "Which of these items DO NOT exist??", "What's the name of the vegetable store owner in Showa Town?", "Which of these items DO exist?", "What is the name of the strongest boss in the Mushroom Shrine?", "Which one of these items has a mis-matched class or level description?", "Which of these noodles are NOT being sold by Robo at the Mushroom Shrine?", "Which of these NPCs do NOT stand in front of Showa Movie Theater?"]
+    questions = ["云彩狐狸不会掉落下列哪件道具？", "哪位NPC负责在废弃都市与江户村之间运送旅客往返？", "在蘑菇神社出售的物品中，哪一种能提升你的攻击力？", "下列物品中，群众演员不会掉落哪一种？", "以下哪些道具并不存在？？", "昭和村的蔬菜店老板叫什么名字？", "下列哪些物品确实存在？", "蘑菇神社最强的首领叫什么名字？", "下列哪一件道具的职业或等级描述不匹配？", "以下哪种面条不是蘑菇神社的罗博在卖的？", "以下哪位NPC不在昭和电影院门口？"]
     answers = [["Raccoon Firewood", "Solid Horn", "Red Brick"], ["Peli", "Spinel", "Poli"], ["Takoyaki", "Yakisoba", "Tempura"], ["Extra A's Badge", "Extra B's Corset", "Extra C's Necklace"], ["Frozen Tuna", "Fan", "Fly Swatter"], ["Sami", "Kami", "Umi"], ["Cloud Fox's Tooth", "Ghost's Bouquet", "Dark Cloud Fox's Tail"], ["Black Crow", "Blue Mushmom", "Himegami"], ["Bamboo Spear - Warrior-only Weapon", "Pico-Pico Hammer - One-handed Sword", "Mystic Cane - Level 51 equip"], ["Kinoko Ramen (Pig Skull)", "Kinoko Ramen (Salt)", "Mushroom Miso Ramen"], ["Skye", "Furano", "Shinta"]];
     correctAnswer = [1, 1, 0, 1, 2, 2, 2, 0, 0, 2, 2];
     action(1, 0, 0);

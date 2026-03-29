@@ -99,7 +99,7 @@ function action(mode, type, selection) {
             cm.dispose();
         } else if (hasGoldenLeaf && hasRing) {
             var choice = Array("Go to the Afterparty", "What should I be doing");
-            var msg = "What can I help you with?#b";
+            var msg = "需要我帮你什么？#b";
             for (i = 0; i < choice.length; i++) {
                 msg += "\r\n#L" + i + "#" + choice[i] + "#l";
             }

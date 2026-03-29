@@ -23,7 +23,7 @@
 
 var status;
 var harpNote = 'F';
-var harpSounds = ["do", "re", "mi", "pa", "sol", "la", "si"];   // musical order detected thanks to Arufonsu
+var harpSounds = ["哆", "来", "咪", "发", "嗦", "啦", "西"];   // musical order detected thanks to Arufonsu
 var harpSong = "CCGGAAGFFEEDDC|GGFFEED|GGFFEED|CCGGAAGFFEEDDC|";
 
 function start() {

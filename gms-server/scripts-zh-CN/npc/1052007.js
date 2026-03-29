@@ -1,6 +1,6 @@
 var status = 0;
 var ticketSelection = -1;
-var text = "Here's the ticket reader.";
+var text = "验票机在这边。";
 var hasTicket = false;
 var NLC = false;
 var em;

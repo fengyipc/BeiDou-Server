@@ -29,7 +29,7 @@ var ambientSong = "Bgm04/Shinin'Harbor";
 var feature_tree = [];
 var feature_cursor;
 
-var tabs = ["PQs", "Skills", "Quests", "Player Social Network", "Cash & Items", "Monsters, Maps & Reactors", "PQ potentials", "Player potentials", "Server potentials", "Commands", "Custom NPCs", "Localhost edits", "Project"];
+var tabs = ["组队任务", "技能", "任务", "玩家社交网络", "现金与道具", "怪物、地图与反应堆", "组队任务潜能", "玩家潜能", "服务器潜能", "指令", "自定义NPC", "本地修改", "项目"];
 
 function addFeature(feature) {
     feature_cursor.push(feature);
@@ -329,7 +329,7 @@ function action(mode, type, selection) {
         }
 
         if (status == 0) {
-            var sendStr = "HeavenMS was developed on the timespan of 4 years, based on where Solaxia left. I'm glad to say the development itself had continuously been agraciated by dozens of contributors and cheerers (truly thanks for the trusting vow, guys & gals!).\r\n\r\nTalking about results: many nice features emerged, development aimed to get back the old GMS experience. Now many of these so-long missing features are gracefully presented to you in the shape of this server. Long live MapleStory!!\r\n\r\nThese are the features from #bHeavenMS#k:\r\n\r\n";
+            var sendStr = "HeavenMS 在约四年的时间里持续发展，承接自 Solaxia 所留下的基础。我很欣慰的是，开发工作一直得到许多贡献者与支持者的鼓励（真心感谢大家的信任与支持，各位！）\r\n\r\n说到成果：许多优秀的功能陆续诞生，开发目标之一便是找回早期 GMS 的游玩体验。如今，不少久违的功能都以本服务器的形态呈现在你眼前。冒险岛万岁！！\r\n\r\n以下功能来自 #bHeavenMS#k：\r\n\r\n";
             for (var i = 0; i < tabs.length; i++) {
                 sendStr += "#L" + i + "##b" + tabs[i] + "#k#l\r\n";
             }

@@ -45,7 +45,7 @@ var itemQty_lv2 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 60, 60, 60, 60, 60,
 var itemSet_lv1 = [1122004, 1012078, 1432008, 1432009, 1032040, 1032009, 1102166, 2070001, 2040002, 2040310, 2040400, 2040600, 2040825, 2040902, 2010000, 2010001, 2010002, 2010003, 2010004, 2020001, 2020002, 2020003, 2022020, 2022022, 4010000, 4010001, 4010002, 4010003, 4010004, 4010005, 4010006, 4010007, 4003000];
 var itemQty_lv1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 2, 2, 2, 2, 2, 2, 2, 2, 2];
 
-var levels = ["#m970030001#", "#m970030002#", "#m970030003#", "#m970030004#", "#m970030005#", "Final stage"];
+var levels = ["#m970030001#", "#m970030002#", "#m970030003#", "#m970030004#", "#m970030005#", "最终关卡"];
 
 function start() {
     status = -1;
@@ -67,7 +67,7 @@ function action(mode, type, selection) {
         }
 
         if (status == 0) {
-            var sendStr = "The #bBoss Rush Party Quest#k rewards players accordingly to how far the team went on the boss huntings. Take note that each player #bcan only claim a reward if they leave through a portal inside a Resting Spot#k. Challenging stronger bosses will require the team to commit to more fightings until the next Resting Spot is reached, or until the final boss is defeated.\r\n\r\nThe possible rewards for those leaving in the selected Resting Spot are depicted here:\r\n\r\n#b";
+            var sendStr = "#b首领突袭组队任务#k会根据队伍讨伐首领的进度发放奖励。请注意：每名玩家#b只有在休息地点内通过传送门离开#k才能领取奖励。若要挑战更强的首领，队伍需要持续战斗直到抵达下一处休息地点，或击败最终首领。\r\n\r\n在选定休息地点离开的玩家可获得的奖励如下：\r\n\r\n#b";
             for (var i = 0; i < 6; i++) {
                 sendStr += "#L" + i + "#" + levels[i] + "#l\r\n";
             }

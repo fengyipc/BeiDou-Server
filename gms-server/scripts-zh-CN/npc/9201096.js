@@ -48,10 +48,10 @@ function action(mode, type, selection) {
     }
 
     if (status == 0) {
-        var selStr = "Hey, are you aware about the expeditions running right now at the Crimsonwood Keep? So, there is a great opportunity for one to improve themselves, one can rack up experience and loot pretty fast there.";
+        var selStr = "嘿，你知道绯红巢穴现在正在进行的远征吗？那可是个提升自己的好机会，在那里能快速积累经验、打到不少战利品。";
         cm.sendNext(selStr);
     } else if (status == 1) {
-        var selStr = "Said so, methinks making use of some strong utility potions can potentially create some differential on the front, and by this I mean to start crafting #b#t2022284##k's to help on the efforts. So, getting right down to business, I'm currently pursuing #rplenty#k of those items: #r#t4032010##k, #r#t4032011##k, #r#t4032012##k, and some funds to support the cause. Would you want to get some of these boosters?";
+        var selStr = "这么说吧，我觉得用一些强力的功能药水说不定能在战线上拉开差距，也就是开始做#b#t2022284##k的来助一臂之力。那就开门见山：我眼下正急需#r大量#k这些东西：#r#t4032010##k、#r#t4032011##k、#r#t4032012##k，再加上一点资金支持。你想来一些这种强化药吗？";
         cm.sendYesNo(selStr);
     } else if (status == 2) {
         //selectedItem = selection;
@@ -72,7 +72,7 @@ function action(mode, type, selection) {
         qty = (selection > 0) ? selection : (selection < 0 ? -selection : 1);
         last_use = false;
 
-        var prompt = "So, you want me to make ";
+        var prompt = "那么，你要我为你制作";
         if (qty == 1) {
             prompt += "a #t" + item + "#?";
         } else {

@@ -13,7 +13,7 @@ function end(mode, type, selection) {
     if (status == 0) {
         qm.sendNext("哇……就是这个！！！有了这份样本，欧米茄地带正在进行的研究终于能出成果了！能找到狩猎本领比我还强的人，我都不知道该说什么好。我也得重新振作！总之，你干得漂亮，我会好好奖励你的。");
     } else if (status == 1) {
-        var talkStr = "Here, please select the scroll of your choice. All success rates are at 10%. \r\n\r\n#rSELECT A ITEM\r\n#b"
+        var talkStr = "请在这里选择你想要的卷轴，所有成功率均为10%。\r\n\r\n#r请选择一件道具\r\n#b"
         stance = qm.getPlayer().getJobStyle();
 
         const Job = Java.type('org.gms.client.Job');

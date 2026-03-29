@@ -60,13 +60,13 @@ function start() {
             }
         } else if (actionx["3thJobI"] || (cm.getPlayer().gotPartyQuestItem("JB3") && cm.getLevel() >= 70 && cm.getJobId() % 10 == 0 && parseInt(cm.getJobId() / 100) == 3 && !cm.getPlayer().gotPartyQuestItem("JBP"))) {
             actionx["3thJobI"] = true;
-            cm.sendNext("你来了。几天前，奥西里亚的#b#p2020010##k跟我谈到了你。我看到你对成为弓箭手职业的第三次转职很感兴趣。为了实现这个目标，我需要测试你的实力，看看你是否配得上这个晋升。在金银岛的深林中有一个开口，会带你通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败她，并带着#b#t4031059##k回来。");
+            cm.sendNext("你来了。几天前，神秘岛的#b#p2020010##k跟我谈到了你。我看到你对成为弓箭手职业的第三次转职很感兴趣。为了实现这个目标，我需要测试你的实力，看看你是否配得上这个晋升。在金银岛的深林中有一个开口，会带你通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败她，并带着#b#t4031059##k回来。");
         } else if (cm.getPlayer().gotPartyQuestItem("JBP") && !cm.haveItem(4031059)) {
             cm.sendNext("请把#b#t4031059##k带给我。");
             cm.dispose();
         } else if (cm.haveItem(4031059) && cm.getPlayer().gotPartyQuestItem("JBP")) {
             actionx["3thJobC"] = true;
-            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次职业转职。现在你应该把这条项链交给在奥西里亚的#b#p2020011##k，以进行测试的第二部分。祝你好运。你会需要的。");
+            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次职业转职。现在你应该把这条项链交给在神秘岛的#b#p2020011##k，以进行测试的第二部分。祝你好运。你会需要的。");
         } else {
             cm.sendOk("你选择得很明智。");
             cm.dispose();

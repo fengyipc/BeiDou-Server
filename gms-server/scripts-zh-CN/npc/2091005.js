@@ -68,7 +68,7 @@ function action(mode, type, selection) {
 
         if (status == 0) {
             if (isRestingSpot(cm.getPlayer().getMap().getId())) {
-                var text = "I'm surprised you made it this far! But it won't be easy from here on out. You still want the challenge?\r\n\r\n#b#L0#I want to continue#l\r\n#L1#I want to leave#l\r\n";
+                var text = "真没想到你能走到这里！不过接下来也不会轻松。你还想继续挑战吗？\r\n\r\n#b#L0#我要继续#l\r\n#L1#我要离开#l\r\n";
 
                 const MapId = Java.type('org.gms.constants.id.MapId');
                 if (!MapId.isPartyDojo(cm.getPlayer().getMapId())) {

@@ -24,7 +24,7 @@ function action(mode, type, selection) {
             return;
         }
 
-        var selStr = "Would you like to go into the Training Center?";
+        var selStr = "要进入修炼场吗？";
         for (var i = 0; i < num; i++) {
             selStr += "\r\n#b#L" + i + "#Training Center " + i + " (" + cm.getPlayerCount(map + i) + "/" + maxp + ")#l#k";
         }

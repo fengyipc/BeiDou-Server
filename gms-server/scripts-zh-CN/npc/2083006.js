@@ -4,7 +4,7 @@
 */
 
 var quests = [3719, 3724, 3730, 3736, 3742, 3748];
-var array = ["Year 2021 - Average Town Entrance", "Year 2099 - Midnight Harbor Entrance", "Year 2215 - Bombed City Center Retail District", "Year 2216 - Ruined City Intersection", "Year 2230 - Dangerous Tower Lobby", "Year 2503 - Air Battleship Bow"/*, "Year 2227 - Dangerous City Intersection"*/];
+var array = ["2021年 - 普通城镇入口", "2099年深夜港口入口", "2215年 - 遭轰炸的市中心商业区", "2216年 - 荒废都市十字路口", "2230年 - 危险的塔大厅", "2503年 - 飞空战舰弓"/*, "Year 2227 - Dangerous City Intersection"*/];
 var limit;
 
 function start() {

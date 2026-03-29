@@ -29,7 +29,7 @@ function action(mode, type, selection) {
             } else if (cm.getMapId() >= 922240000 && cm.getMapId() <= 922240019) {
                 cm.sendYesNo("如果你失败了也不要担心。你还有3次机会。你还想放弃吗？");
             } else if (cm.getMapId() >= 922240100 && cm.getMapId() <= 922240119) {
-                var text = "You went through so much trouble to rescue Gaga, but it looks like we're back to square one. ";
+                var text = "你费了这么大劲救出佳佳，但看来我们又回到原点了。";
                 var rgaga = cm.getPlayer().getEvents().get("rescueGaga");
                 if (rgaga.getCompleted() > 10) {
                     text += "Please don't give up until Gaga is rescued. To show you my appreciation for what you've accomplished thus far, I've given you a Spaceship. It's rather worn out, but it should still be operational. Check your #bSkill Window#k.";

@@ -52,7 +52,7 @@ function action(mode, type, selection) {
                     break;
                 }
             }
-            cm.sendNext("你好！这辆出租车会比箭头飞得更快，把你带到奥西里亚的危险地方！我们从#m" + inMap[location] + "#到奥西里亚大陆上的#b#m" + toMap[location] + "##k去！费用是#b" + cost[location] + " 枚金币#k。我知道有点贵，但能避开所有危险区域，绝对物有所值！");
+            cm.sendNext("你好！这辆出租车会比箭头飞得更快，把你带到神秘岛的危险地方！我们从#m" + inMap[location] + "#到神秘岛上的#b#m" + toMap[location] + "##k去！费用是#b" + cost[location] + " 枚金币#k。我知道有点贵，但能避开所有危险区域，绝对物有所值！");
         } else if (status == 1) {
             cm.sendYesNo("你想支付 #b" + cost[location] + " 金币#k 前往 #b#m" + toMap[location] + "##k 吗？");
         } else if (status == 2) {

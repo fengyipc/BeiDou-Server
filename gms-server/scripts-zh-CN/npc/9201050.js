@@ -53,8 +53,8 @@ function action(mode, type, selection) {
                 cm.sendNext("嘿，注意一下，我要考你另一个问题，伙计！");
                 cm.dispose();
             } else {
-                var selStr = "What up! Name's Icebyrd Slimm, mayor of New Leaf City! Happy to see you accepted my invite. So, what can I do for you?#b"
-                var info = ["What is this place?", "Who is Professor Foxwit?", "What's a Foxwit Door?", "Where are the MesoGears?", "What is the Krakian Jungle?", "What's a Gear Portal?", "What do the street signs mean?", "What's the deal with Jack Masque?", "Lita Lawless looks like a tough cookie, what's her story?", "When will new boroughs open up in the city?", "I want to take the quiz!"];
+                var selStr = "嘿！你好啊！我叫艾斯比亚德·史林姆，新叶城的市长！很高兴你接受了我的邀请。那么，需要我帮你什么？#b"
+                var info = ["这里是什么地方？", "福斯魏德教授是谁？", "福斯魏德之门是什么？", "内部齿轮装置在哪里？", "克兰卡丛林是什么？", "齿轮传送门是什么？", "街上的路牌都是什么意思？", "蒙面杰克是怎么回事？", "莉塔·罗莉丝看起来不好惹，她有什么来历？", "城里的新区什么时候会开放？", "我要参加测验！"];
                 for (var i = 0; i < info.length; i++) {
                     selStr += "\r\n#L" + i + "# " + info[i] + "#l";
                 }

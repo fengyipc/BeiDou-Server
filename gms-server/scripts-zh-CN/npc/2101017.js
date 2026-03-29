@@ -54,14 +54,14 @@ function action(mode, type, selection) {
                     cm.sendSimple("你想做什么？#b\r\n#L1#查看当前成员#l\r\n#L2#禁止成员#l\r\n#L3#开始战斗#l\r\n#L4#离开竞技场#l");
                     status = 1;
                 } else {
-                    var toSend = "Current members inside this arena:\r\n#b";
+                    var toSend = "当前竞技场内的成员：\r\n#b";
                     toSend += cm.getExpeditionMemberNames(exped);
                     cm.sendOk(toSend);
                     cm.dispose();
                 }
             } else if (status == 1) {
                 if (selection == 1) {
-                    var toSend = "Current members inside this arena:\r\n#b";
+                    var toSend = "当前此竞技场内的成员：\r\n#b";
                     toSend += cm.getExpeditionMemberNames(exped);
                     cm.sendOk(toSend);
                     cm.dispose();

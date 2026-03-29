@@ -99,6 +99,93 @@ function getStringFromNode(node) {
   return null;
 }
 
+/**
+ * Pure string initializers: var/let/const x = "..." or x = "..." (no + / ${}).
+ * bindEnd: source character offset after the binding is complete (declarator / assignment end).
+ */
+function collectStringBindings(ast) {
+  const bindings = [];
+  walk(ast, (node) => {
+    if (node.type === "VariableDeclarator") {
+      const id = node.id;
+      const init = node.init;
+      if (id?.type === "Identifier" && init) {
+        const got = getStringFromNode(init);
+        if (got?.value != null && !got.hasInterpolation) {
+          bindings.push({
+            name: id.name,
+            bindEnd: node.end,
+            litStart: init.start,
+            litEnd: init.end,
+            value: got.value,
+            template: got.template,
+            line: init.loc?.start?.line ?? 0,
+            column: init.loc?.start?.column ?? 0,
+          });
+        }
+      }
+    }
+    if (node.type === "AssignmentExpression" && node.operator === "=") {
+      const left = node.left;
+      if (left?.type === "Identifier") {
+        const got = getStringFromNode(node.right);
+        if (got?.value != null && !got.hasInterpolation) {
+          bindings.push({
+            name: left.name,
+            bindEnd: node.end,
+            litStart: node.right.start,
+            litEnd: node.right.end,
+            value: got.value,
+            template: got.template,
+            line: node.right.loc?.start?.line ?? 0,
+            column: node.right.loc?.start?.column ?? 0,
+          });
+        }
+      }
+    }
+  });
+  return bindings;
+}
+
+/** Latest binding for `name` that finishes before `callStart` (0-based source offset). */
+function resolveStringBinding(name, callStart, bindings) {
+  let best = null;
+  for (const b of bindings) {
+    if (b.name !== name) continue;
+    if (b.bindEnd > callStart) continue;
+    if (!best || b.bindEnd > best.bindEnd) best = b;
+  }
+  return best;
+}
+
+/**
+ * Menu / list text often uses `var opts = ["a","b"]; selStr += ... + opts[i] + ...; cm.sendSimple(selStr)`.
+ * Emit one unit per string element (byte span = that literal) so each line can be translated in place.
+ */
+function addUnitsFromArrayExpression(arrNode, arrayName, source, addUnit) {
+  if (arrNode.type !== "ArrayExpression") return;
+  const elements = arrNode.elements || [];
+  for (let i = 0; i < elements.length; i++) {
+    const el = elements[i];
+    if (!el || el.type === "SpreadElement") continue;
+    const got = getStringFromNode(el);
+    if (got?.value == null || got.hasInterpolation) continue;
+    const start = el.start;
+    const end = el.end;
+    if (start == null || end == null) continue;
+    addUnit({
+      callee: `array:${arrayName}[${i}]`,
+      sourceText: got.value,
+      template: got.template,
+      hasInterpolation: false,
+      byteStart: utf8ByteOffset(source, start),
+      byteEnd: utf8ByteOffset(source, end),
+      line: el.loc?.start?.line ?? 0,
+      column: el.loc?.start?.column ?? 0,
+    });
+  }
+}
+
 function extractFromSource(relativePath, source) {
   let ast;
   try {
@@ -113,7 +200,33 @@ function extractFromSource(relativePath, source) {
     return { error: String(e.message || e), units: [] };
   }
 
+  const bindings = collectStringBindings(ast);
+  const seenLiteralSpan = new Set();
   const units = [];
+
+  function addUnit(unit) {
+    const key = `${unit.byteStart}|${unit.byteEnd}`;
+    if (seenLiteralSpan.has(key)) return;
+    seenLiteralSpan.add(key);
+    units.push(unit);
+  }
+
+  walk(ast, (node) => {
+    if (node.type === "VariableDeclarator") {
+      const id = node.id;
+      const init = node.init;
+      if (id?.type === "Identifier" && init?.type === "ArrayExpression") {
+        addUnitsFromArrayExpression(init, id.name, source, addUnit);
+      }
+    }
+    if (node.type === "AssignmentExpression" && node.operator === "=") {
+      const left = node.left;
+      const right = node.right;
+      if (left?.type === "Identifier" && right?.type === "ArrayExpression") {
+        addUnitsFromArrayExpression(right, left.name, source, addUnit);
+      }
+    }
+  });
 
   walk(ast, (node) => {
     if (node.type !== "CallExpression") return;
@@ -131,28 +244,42 @@ function extractFromSource(relativePath, source) {
     if (idx < 0 || idx >= args.length) return;
 
     const argNode = args[idx];
+    const callStart = node.start ?? 0;
+
     const got = getStringFromNode(argNode);
-    if (!got || got.value === null) return;
+    if (got && got.value !== null && !got.hasInterpolation) {
+      const start = argNode.start;
+      const end = argNode.end;
+      if (start == null || end == null) return;
 
-    const start = argNode.start;
-    const end = argNode.end;
-    if (start == null || end == null) return;
+      addUnit({
+        callee: `${obj.name}.${method}`,
+        sourceText: got.value,
+        template: got.template,
+        hasInterpolation: got.hasInterpolation,
+        byteStart: utf8ByteOffset(source, start),
+        byteEnd: utf8ByteOffset(source, end),
+        line: argNode.loc?.start?.line ?? 0,
+        column: argNode.loc?.start?.column ?? 0,
+      });
+      return;
+    }
 
-    const byteStart = utf8ByteOffset(source, start);
-    const byteEnd = utf8ByteOffset(source, end);
-    const line = argNode.loc?.start?.line ?? 0;
-    const column = argNode.loc?.start?.column ?? 0;
+    if (argNode.type === "Identifier") {
+      const b = resolveStringBinding(argNode.name, callStart, bindings);
+      if (!b) return;
 
-    units.push({
-      callee: `${obj.name}.${method}`,
-      sourceText: got.value,
-      template: got.template,
-      hasInterpolation: got.hasInterpolation,
-      byteStart,
-      byteEnd,
-      line,
-      column,
-    });
+      addUnit({
+        callee: `${obj.name}.${method}`,
+        sourceText: b.value,
+        template: b.template,
+        hasInterpolation: false,
+        byteStart: utf8ByteOffset(source, b.litStart),
+        byteEnd: utf8ByteOffset(source, b.litEnd),
+        line: b.line,
+        column: b.column,
+      });
+    }
   });
 
   return { error: null, units };

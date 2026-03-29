@@ -37,7 +37,7 @@ var amount;
 var totalcost;
 var item = [2050003, 2050004, 4006000, 4006001];
 var cost = [300, 400, 5000, 5000];
-var msg = ["that cures the state of being sealed and cursed", "that cures all", ", possessing magical power, that is used for high-quality skills", ", possessing the power of summoning that is used for high-quality skills"];
+var msg = ["可解除封印与诅咒状态", "包治百病", "，蕴含魔力，可用于高品质技能", "，蕴含着用于高品质技能的召唤之力"];
 var status;
 
 function start() {

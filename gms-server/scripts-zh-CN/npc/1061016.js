@@ -14,7 +14,7 @@ function action(mode, type, selection) {
     if (status == 0) {
         cm.sendSimple("你好，#h0#。我可以交换你的巴尔洛克皮革。\r\n\r\n#r#L1#兑换物品#l#k");
     } else if (status == 1) {
-        var selStr = "Well, okay. These are what you can redeem...\r\n\r\n#b";
+        var selStr = "好吧。你可以兑换下面这些物品……\r\n\r\n#b";
         for (var i = 0; i < itemids.length; i++) {
             selStr += "#L" + i + "##i" + itemids[i] + "##z" + itemids[i] + "##l\r\n";
         }

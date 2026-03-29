@@ -37,7 +37,7 @@ function start() {
     if (jobType >= minJobType && jobType <= maxJobType && cm.canSpawnPlayerNpc(GameConstants.getHallOfFameMapid(cm.getJob()))) {
         spawnPnpc = true;
 
-        var sendStr = "You have walked a long way to reach the power, wisdom and courage you hold today, haven't you? What do you say about having right now #ra NPC on the Hall of Fame holding the current image of your character#k? Do you like it?";
+        var sendStr = "你一路走来，才有了今天的力量、智慧与勇气，不是吗？要不要现在就#r在英雄公馆里放置一个以你角色当前形象示人的NPC#k？你喜欢这样吗？";
         if (spawnPnpcFee > 0) {
             sendStr += " I can do it for you, for the fee of #b " + cm.numberWithCommas(spawnPnpcFee) + " mesos.#k";
         }

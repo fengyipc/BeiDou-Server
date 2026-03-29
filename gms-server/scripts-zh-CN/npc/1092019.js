@@ -38,7 +38,7 @@ var status;
 
 var seagullProgress;
 var seagullIdx = -1;
-var seagullQuestion = ["One day, I went to the ocean and caught 62 Octopi for dinner. But then some kid came by and gave me 10 Octopi as a gift! How many Octopi do I have then, in total?"];
+var seagullQuestion = ["有一天，我到海边抓了62只三眼章鱼当晚饭。后来有个小孩路过，又送了我10只三眼章鱼当礼物！那我一共有多少只三眼章鱼呢？"];
 var seagullAnswer = ["72"];
 
 function start() {

@@ -21,7 +21,7 @@
 */
 status = -1;
 //Need more questions.
-quest = ["Which of these NPC's will you NOT see at Ellinia of Victoria Island#b\r\n#L0#Shane\r\n#L1#Francois\r\n#L2#Grendel the Really Old\r\n#L3#Arwen the Fairy\r\n#L4#Roel", "Which of these monsters will you NOT be facing at Ossyria...?#b\r\n#L0#White Fang\r\n#L1#Croco\r\n#L2#Yeti\r\n#L3#Lycanthrope\r\n#L4#Luster Pixie", "Which of these monsters have the highest level...?#b\r\n#L0#Octopus\r\n#L1#Ribbon Pig\r\n#L2#Green Mushroom\r\n#L3#Axe Stump\r\n#L4#Bubbling", "In MapleStory, which of these pairings of potion/results doesn't match...?#b\r\n#L0#Holy Water - Recover from the state of being cursed or sealed up.\r\n#L1#Sunrise Dew - Recover MP 3000\r\n#L2#Hamburger - Recover HP 400\r\n#L3#Salad - Recover MP 200\r\n#L4#Blue Potion - Recover MP 100", "Which of these NPC's have NOTHING to do with pets...?#b\r\n#L0#Cloy\r\n#L1#Mar the Fairy\r\n#L2#Trainer Frod\r\n#L3#Vicious\r\n#L4#Doofus"];
+quest = ["在金银岛魔法密林，下列 NPC 中你不会见到谁？#b\r\n#L0#Shane\r\n#L1#Francois\r\n#L2#汉斯\r\n#L3#妖精 艾温\r\n#L4#Roel", "在神秘岛，下列哪一种怪物你不会遇到……？#b\r\n#L0#白狼\r\n#L1#黑鳄鱼\r\n#L2#白雪人\r\n#L3#白狼人\r\n#L4#日光精灵", "以下哪种怪物的等级最高……？#b\r\n#L0#三眼章鱼\r\n#L1#漂漂猪\r\n#L2#绿蘑菇\r\n#L3#斧木妖\r\n#L4#蓝水灵", "在冒险岛中，以下哪一组药水与效果的搭配是错误的……？#b\r\n#L0#圣水 - 解除诅咒或封印状态。\r\n#L1#清晨之露 - 恢复 MP 3000\r\n#L2#汉堡 - 恢复 HP 400\r\n#L3#沙拉 - 恢复 MP 200\r\n#L4#蓝色药水 - 恢复 MP 100", "下列哪些NPC与宠物毫无关系……？#b\r\n#L0#科洛伊\r\n#L1#妖精 玛丽\r\n#L2#巴罗德\r\n#L3#比休斯\r\n#L4#科尔"];
 ans = [4, 1, 3, 1, 3];
 rand = parseInt(Math.random() * quest.length);
 

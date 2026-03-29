@@ -38,7 +38,7 @@ function start() {
     if (parseInt(cm.getJobId() / 100) == jobType && cm.canSpawnPlayerNpc(GameConstants.getHallOfFameMapid(cm.getJob()))) {
         spawnPnpc = true;
 
-        var sendStr = "You have walked a long way to reach the power, wisdom and courage you hold today, haven't you? What do you say about having right now #ra NPC on the Hall of Fame holding the current image of your character#k? Do you like it?";
+        var sendStr = "一路走来，今天的力量、智慧与勇气都是你一点一滴积累起来的吧？要不要现在在#r英雄公馆#k里，用你角色当前的形象立一名展示NPC？你愿意吗？";
         if (spawnPnpcFee > 0) {
             sendStr += " I can do it for you, for the fee of #b " + cm.numberWithCommas(spawnPnpcFee) + " mesos.#k";
         }
@@ -60,13 +60,13 @@ function start() {
             }
         } else if (actionx["3thJobI"] || (cm.getPlayer().gotPartyQuestItem("JB3") && cm.getLevel() >= 70 && cm.getJobId() % 10 == 0 && parseInt(cm.getJobId() / 100) == 4 && !cm.getPlayer().gotPartyQuestItem("JBP"))) {
             actionx["3thJobI"] = true;
-            cm.sendNext("你来了。几天前，奥西里亚的#b#p2020011##k跟我谈到了你。我看到你对于成为盗贼职业的第三次转职很感兴趣。为了实现这个目标，我需要测试一下你的实力，看看你是否配得上这个晋升。在金银岛的一个深水沼泽中有一个洞口，会带你通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败他，并带着#b#t4031059##k回来。");
+            cm.sendNext("你来了。几天前，神秘岛的#b#p2020011##k跟我谈到了你。我看到你对于成为盗贼职业的第三次转职很感兴趣。为了实现这个目标，我需要测试一下你的实力，看看你是否配得上这个晋升。在金银岛的一个深水沼泽中有一个洞口，会带你通往一个秘密通道。一旦进入，你将面对我的分身。你的任务是打败他，并带着#b#t4031059##k回来。");
         } else if (cm.getPlayer().gotPartyQuestItem("JBP") && !cm.haveItem(4031059)) {
             cm.sendNext("请把#b#t4031059##k带给我。");
             cm.dispose();
         } else if (cm.haveItem(4031059) && cm.getPlayer().gotPartyQuestItem("JBP")) {
             actionx["3thJobC"] = true;
-            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次职业转职。现在你应该把这条项链交给在奥西里亚的#b#p2020011##k，以进行测试的第二部分。祝你好运。你会需要的。");
+            cm.sendNext("干得好。你打败了我的分身，并安全地带回了#b#t4031059##k。你现在已经从物理角度证明了自己配得上进行第三次职业转职。现在你应该把这条项链交给在神秘岛的#b#p2020011##k，以进行测试的第二部分。祝你好运。你会需要的。");
         } else if (cm.isQuestStarted(6141)) {
             cm.warp(910300000, 3);
         } else {

@@ -12,7 +12,7 @@ var role_tree = [];
 var name_cursor, role_cursor;
 
 // 请将新的服务器名称将被添加到在servers数组里，按照构建的时间顺序。
-var servers = ["BeiDou", "Cosmic", "HeavenMS", "MapleSolaxia", "MoopleDEV", "BubblesDEV", "MetroMS", "OdinMS", "Contributors"];
+var servers = ["北斗", "Cosmic", "HeavenMS", "MapleSolaxia", "MoopleDEV", "BubblesDEV", "MetroMS", "OdinMS", "贡献者"];
 var servers_history = [];
 
 function addPerson(name, role) {

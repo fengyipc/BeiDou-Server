@@ -25,7 +25,7 @@ function action(mode, type, selection) {
         if (zones == 0) {
             cm.dispose();
         } else {
-            var selStr = "Which ticket would you like?#b";
+            var selStr = "需要哪种票？#b";
             for (var i = 0; i < zones; i++) {
                 selStr += "\r\n#L" + i + "#Construction site B" + (i + 1) + " (" + cost + " mesos)#l";
             }
