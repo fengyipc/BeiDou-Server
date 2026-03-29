@@ -50,9 +50,9 @@ function action(mode, type, selection) {
                 var branchJobName = GameConstants.getJobName(pnpc.getJob());
 
                 var rankStr = "Hi, I am #b" + pnpc.getName() + "#k, #r" + GameConstants.ordinal(pnpc.getWorldJobRank()) + "#k in the #r" + branchJobName + "#k class to reach the max level and obtain a statue on " + GameConstants.WORLD_NAMES[cm.getPlayer().getWorld()] + ".\r\n";
-                rankStr += "\r\n    World rank: #e#b" + GameConstants.ordinal(pnpc.getWorldRank()) + "#k#n";
-                rankStr += "\r\n    Overall " + branchJobName + " rank: #e#b" + GameConstants.ordinal(pnpc.getOverallJobRank()) + "#k#n";
-                rankStr += "\r\n    Overall rank: #e#b" + GameConstants.ordinal(pnpc.getOverallRank()) + "#k#n";
+                rankStr += "\r\n    全服排名：#e#b" + GameConstants.ordinal(pnpc.getWorldRank()) + "#k#n";
+                rankStr += "\r\n    综合 " + branchJobName + " 排名：#e#b" + GameConstants.ordinal(pnpc.getOverallJobRank()) + "#k#n";
+                rankStr += "\r\n    综合排名：#e#b" + GameConstants.ordinal(pnpc.getOverallRank()) + "#k#n";
 
                 cm.sendOk("排名字符串");
             } else {

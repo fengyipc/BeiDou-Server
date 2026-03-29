@@ -65,7 +65,7 @@ function action(mode, type, selection) {
             while (dIter.hasNext()) {
                 var dPet = dIter.next();
 
-                listStr += "#b#L" + i + "# " + dPet.getName() + " #k - Lv " + dPet.getLevel() + " Closeness " + dPet.getTameness();
+                listStr += "#b#L" + i + "# " + dPet.getName() + " #k - 等级 " + dPet.getLevel() + " 亲密度 " + dPet.getTameness();
                 listStr += "#l\r\n";
 
                 i++;

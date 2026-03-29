@@ -177,7 +177,7 @@ function action(mode, type, selection) {
                     }
                 } else if (selection == 1) {
                     var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已禁用") + "#k。想要改变状态时随时找我。");
                     cm.dispose();
                 } else {
                     cm.sendOk("#e#b<组队任务：Boss Rush>#k#n\r\n来自世界各地的勇敢冒险者来到这里，测试他们在战斗中的技能和能力，面对来自冒险岛的更强大的boss。与其他冒险者联手或者独自承担所有的压力并获得所有的荣耀，这取决于你。奖励根据冒险者们的进展程度给予，而额外奖品可能会随机给予队伍中的一名成员，所有这些都在远征结束时进行分配。\r\n\r\n这个任务还支持#b多个大厅，以匹配不同团队等级的玩家#k：如果你想更快地为你的团队设置boss rush，可以与等级较低的玩家组队。");

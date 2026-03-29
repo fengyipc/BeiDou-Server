@@ -146,7 +146,7 @@ function action(mode, type, selection) {
         }
         var prompt = "你需要我帮你做 ";
         if (qty == 1) {
-            prompt += "a #t" + item + "#?";
+            prompt += "一件#t" + item + "#?";
         } else {
             prompt += qty + " #t" + item + "#?";
         }

@@ -157,7 +157,7 @@ function action(mode, type, selection) {
         }
         var prompt = "你想让我制作";
         if (qty == 1) {
-            prompt += "一个 #i" + item + "##t" + item + "#?";
+            prompt += "一个 #i" + item + "#?" + item + "#?";
         } else {
             prompt += qty + " #t" + item + "#?";
         }
@@ -170,7 +170,7 @@ function action(mode, type, selection) {
             prompt += "\r\n#i" + mats + "# " + matQty * qty + " #t" + mats + "#";
         }
         if (cost > 0) {
-            prompt += "\r\n#i4031138# " + cost * qty + " meso";
+            prompt += "\r\n#i4031138# " + cost * qty + " 金币";
         }
         cm.sendYesNo(prompt);
     } else if (status == 4 && mode == 1) {

@@ -67,13 +67,13 @@ function action(mode, type, selection) {
                 return;
             }
             var outStr = "你好，我是#rMapleSolaxia#k的投票点兑换员！\r\n";
-            outStr += "You currently have #r#c" + itemToUse + "##k #t" + itemToUse + "# and #r" + vp + "#k Vote Points.#b\r\n\r\n";
-            outStr += "#L0#I would like to exchange my vote points for Maple Leaves#l\r\n";
-            outStr += "#L1#I would like to exchange 1 #t" + itemToUse + "# for " + nxAmount + " NX Cash#l\r\n";
-            outStr += "#L2#I would like to exchange 1 #t" + itemToUse + "# for " + chairAmount + " Random Chair" + (chairAmount > 1 ? "s" : "") + "#l\r\n";
-            outStr += "#L3#I would like to exchange 1 #t" + itemToUse + "# for " + weaponAmount + " Maple Weapons#l\r\n";
-            outStr += "#L4#I would like to exchange 1 #t" + itemToUse + "# for " + buffAmount + " #t" + buff1ID + "#s and " + buffAmount + " #t" + buff2ID + "#s#l\r\n";
-            outStr += "#L5#I would like to exchange 1 #t" + itemToUse + "# for a " + hiredMerchantLength + " Day Hired Merchant#l\r\n";
+            outStr += "你目前有 #r#c" + itemToUse + "##k #t" + itemToUse + "# 与 #r" + vp + "#k 投票点数。#b\r\n\r\n";
+            outStr += "#L0#我想用投票点兑换枫叶#l\r\n";
+            outStr += "#L1#我想兑换1个#t" + itemToUse + "# 换 " + nxAmount + " 点券#l\r\n";
+            outStr += "#L2#我想兑换 1 个#t" + itemToUse + "# 换取 " + chairAmount + " 随机椅子" + (chairAmount > 1 ? "s" : "") + "#l\r\n";
+            outStr += "#L3#我想用 1 个#t兑换" + itemToUse + "# 换 " + weaponAmount + " 枫叶武器#l\r\n";
+            outStr += "#L4#我想用1个#t" + itemToUse + "# 兑换 " + buffAmount + " #t" + buff1ID + "#s和 " + buffAmount + " #t" + buff2ID + "#s#l\r\n";
+            outStr += "#L5#我想兑换 1 #t" + itemToUse + "# 兑换为期 " + hiredMerchantLength + " 天雇佣商人#l\r\n";
             cm.sendSimple(outStr);
         } else if (status == 1) {
             choice = selection;

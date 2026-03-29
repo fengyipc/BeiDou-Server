@@ -62,7 +62,7 @@ function action(mode, type, selection) {
                 }
             } else if (selection == 1) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已禁用") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
             } else if (selection == 2) {
                 cm.sendOk("#e#b<组队任务：时空裂缝>#k#n\r\n#b#m220000000#!#k出现了时空裂缝！我们迫切需要勇敢的冒险家来击败入侵的怪物。请和一些可靠的盟友组队，拯救#m220000000#! 你必须通过击败怪物和解决谜题来通过各个阶段，最终击败#r#o9300012##k。");

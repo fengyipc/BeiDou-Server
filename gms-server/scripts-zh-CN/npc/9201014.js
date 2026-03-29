@@ -56,7 +56,7 @@ function action(mode, type, selection) {
     }
     if (marriageRoom) {
         if (status == 0) {
-            var talk = "Hi there, welcome to the wedding's Gift Registry. From which spouse's wishlist would you like to take a look?";
+            var talk = "你好，欢迎来到婚礼礼品登记处。你想查看哪位新人的愿望清单？";
             var options = ["新郎", "新娘"];
 
             cm.sendSimple(talk + "\r\n\r\n#b" + generateSelectionMenu(options) + "#k");

@@ -82,7 +82,7 @@ function action(mode, type, selection) {
                     }
                 } else if (selection == 1) {
                     var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已停用") + "#k。想要改变状态时随时找我。");
                     cm.dispose();
                 } else {
                     cm.sendOk("#e#b<组队任务：拯救戴利>#k#n\r\n 一场伏击正在进行中！我必须在战场上站立大约6分钟才能完成解放，请在此期间保护我，以便完成我的任务。");

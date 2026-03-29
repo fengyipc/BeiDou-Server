@@ -33,7 +33,7 @@ function action(mode, type, selection) {
         if (status == 0) {
             var display = "";
             for (var i = 0; i < menu.length; i++) {
-                display += "\r\n#L" + i + "##b Rien (800 mesos)#k";
+                display += "\r\n#L" + i + "##b里恩（800 金币）#k";
             }
             cm.sendNext("你考虑离开金银岛前往我们的城镇吗？如果你登上这艘船，我可以带你从#b明珠港#k到#b里恩#k，然后再返回。但你必须支付#b800#k金币的费用。你想去利恩吗？");
 

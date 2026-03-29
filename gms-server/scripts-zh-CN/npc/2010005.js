@@ -62,7 +62,7 @@ function action(mode, type, selection) {
                 } else if (selection == 1) {
                     msg = "So you have #b#t" + ticket + "##k? You can always head over to #m110000000# with that.";
                 }
-                cm.sendYesNo(msg + " Okay!! Please beware that you may be running into some monsters around there though, so make sure not to get caught off-guard. Okay, would you like to head over to #m110000000# right now?");
+                cm.sendYesNo(msg + " 好的！！请注意，这一带可能会有怪物出没，千万别掉以轻心。你现在要前往#m110000000#吗？");
             } else if (selection == 2) {
                 cm.sendNext("你一定对#b#t" + ticket + "##k很好奇。是的，我能理解。#t" + ticket + "#是一种物品，只要你拥有它，就可以免费前往#m110000000#。这是一种非常稀有的物品，我们甚至不得不购买，但不幸的是，我在几个星期前的一个长周末丢失了我的。");
                 status = 3;

@@ -88,7 +88,7 @@ function action(mode, type, selection) {
                     }
                 } else if (selection == 1) {
                     var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                    cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已禁用") + "#k。想要改变状态时随时找我。");
                     cm.dispose();
                 } else {
                     cm.sendOk("#e#b<组队任务：暴君之地>#k#n\r\n作为暴君巢穴的守门人，我只会允许值得的人进入。即使是对于那些人来说，内部的路径也像迷宫一样，充满了分支和考验。然而，那些擅长与团队BOSS战斗的人有更好的机会站在我们的领袖面前，尽管我们这种人也有机会。");

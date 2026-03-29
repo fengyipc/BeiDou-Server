@@ -32,7 +32,7 @@ function action(mode, type, selection) {
         if (status == 0) {
             var display = "";
             for (var i = 0; i < menu.length; i++) {
-                display += "\r\n#L" + i + "##b Orbis (1000 mesos)#k";
+                display += "\r\n#L" + i + "##b天空之城（1000金币）#k";
             }
             cm.sendNext("嗯...风势正好。你是不是想离开圣地去别的地方？这艘渡船开往神秘岛的天空之城。你在圣地需要办的事情都处理好了吗？如果你正好要去#b天空之城#k，我可以带你去那里。你怎么样？要去天空之城吗？\r\n");
 

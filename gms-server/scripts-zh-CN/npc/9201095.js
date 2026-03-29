@@ -109,12 +109,12 @@ function action(mode, type, selection) {
 
         var prompt = "你要我制作";
         if (qty == 1) {
-            prompt += "a #t" + item + "#?";
+            prompt += "一个 #t" + item + "#?";
         } else {
             prompt += qty + " #t" + item + "#?";
         }
 
-        prompt += " In that case, I'm going to need specific items from you in order to make it. Make sure you have room in your inventory, though!#b";
+        prompt += " 那样的话，我需要你提供特定的材料才能制作。请确保背包里还有空位！#b";
 
         if (mats instanceof Array) {
             for (var i = 0; i < mats.length; i++) {
@@ -125,7 +125,7 @@ function action(mode, type, selection) {
         }
 
         if (cost > 0) {
-            prompt += "\r\n#i4031138# " + cost * qty + " meso";
+            prompt += "\r\n#i4031138# " + cost * qty + " 金币";
         }
 
         cm.sendYesNo(prompt);

@@ -33,7 +33,7 @@ function action(mode, type, selection) {
         if (status == 0) {
             var display = "";
             for (var i = 0; i < menu.length; i++) {
-                display += "\r\n#L" + i + "##b Victoria Island (1000 mesos)#k";
+                display += "\r\n#L" + i + "##b 维多利亚岛（1000 金币）#k";
             }
             cm.sendNext("嗯，你好...又来了。你想离开圣地去别的地方吗？如果是的话，你来对地方了。我经营着一艘渡船，从#b圣地#k到#b金银岛#k，如果你愿意的话，我可以带你去#b金银岛#k...你需要支付#b1000#k金币的费用。\r\n");
         } else if (status == 1) {

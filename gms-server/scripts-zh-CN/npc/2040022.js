@@ -69,16 +69,16 @@ function action(mode, type, selection) {
             cm.sendNext("催化剂是一种特殊的药水，我可以在制作特定物品时把它加进流程里。那样做出来的属性会像是从怪物身上掉落的一样。不过也有可能毫无变化，或者属性低于平均。使用催化剂时还有10%几率得不到任何物品，请慎重选择。")
             cm.dispose();
         } else if (selectedType == 1) { //warrior weapon
-            selStr = "Very well, then which Warrior weapon shall I work on?#b";
+            selStr = "很好，那要我处理哪件战士武器呢？#b";
             weapon = ["战剑#k - Lv. 30 单手剑#b", "弯刀#k - Lv. 35 单手剑#b", "黄沙之剑#k - Lv. 40 单手剑#b", "树灵之剑#k - Lv.50 单手剑#b", "赤斧#k - Lv. 30 单手斧#b", "大斧#k - Lv. 35 单手斧#b", "青光斧#k - Lv. 40 单手斧#b", "树灵之斧#k - Lv. 50 单手斧#b",
                 "大战斗锤#k - Lv. 30 单手钝器#b", "骑士锤#k - Lv.35 单手钝器#b", "重锤#k - Lv. 40 单手钝器#b", "旋风锤#k - Lv. 50 单手钝器#b", "大刀#k - Lv. 30 双手剑#b", "高原之剑#k - Lv. 35 双手剑#b", "半月巨刀#k - Lv. 40 双手剑#b", "狮牙#k - Lv. 50 双手剑#b",
                 "重型巨斧#k - Lv. 30 双手斧#b", "绿蛇刀#k - Lv. 35 双手斧#b", "格斗斧#k - Lv. 40 双手斧#b", "太阳之斧#k - Lv.50 双手斧#b", "锂矿锤#k - Lv. 30 双手钝器#b", "大锤#k - Lv. 35 双手钝器#b", "巨人锤#k - Lv.40 双手钝器#b", "黄金锤#k - Lv.50 双手钝器#b",
                 "三支枪#k - Lv. 30 枪#b", "纳基玛基#k - Lv. 35 枪#b", "双天戟#k - Lv. 40 长枪#b", "蛇舌之枪#k - Lv. 50 长枪#b", "特鲁的秘银矛#k - Lv. 30 长柄武器#b", "企鹅王的斧戟#k - Lv. 35 长柄武器#b", "月牙戟#k - Lv. 40 长柄武器#b", "九龙刀#k - Lv. 50 矛#b"];
         } else if (selectedType == 2) { //bowman weapon
-            selStr = "Very well, then which Bowman weapon shall I work on?#b";
+            selStr = "很好，那么让我打造哪把弓箭手武器？#b";
             weapon = ["雷电#k - Lv. 30 弓#b", "火焰之弓#k - Lv. 35 弓#b", "暴风弓#k - Lv. 40 弓#b", "天弓#k - Lv. 50 弓#b", "鹰弩#k - 弓箭手 Lv.32#b", "双弦弩#k - 弓箭手 Lv. 38#b", "白银弩#k - 弓箭手 Lv.42#b", "炎弩#k - 弓箭手 Lv. 50#b"];
         } else if (selectedType == 3) { //magician weapon
-            selStr = "Very well, then which Magician weapon shall I work on?#b";
+            selStr = "很好，那么您想让我打造哪件魔法师武器？#b";
             weapon = ["锂矿短杖#k - Lv. 28 短杖#b", "法师短杖#k - Lv. 33 短杖#b", "妖精短杖#k - Lv. 38 短杖#b", "大魔法师短杖#k - Lv.48 长杖#b", "法师长杖#k - Lv. 25 长杖#b", "精灵长杖#k - Lv. 45 长杖#b", "白龙之杖#k - Lv. 55 长杖#b"];
         } else if (selectedType == 4) { //thief weapon; claws vary depending if stimulator is being used
             selStr = "很好，那么要我打造哪件飞侠武器？#b";
@@ -180,7 +180,7 @@ function action(mode, type, selection) {
         }
 
         if (cost > 0) {
-            prompt += "\r\n#i4031138# " + cost + " meso";
+            prompt += "\r\n#i4031138# " + cost + " 金币";
         }
 
         cm.sendYesNo(prompt);

@@ -32,10 +32,10 @@ function action(mode, type, selection) {
                 var text = "你费了这么大劲救出佳佳，但看来我们又回到原点了。";
                 var rgaga = cm.getPlayer().getEvents().get("rescueGaga");
                 if (rgaga.getCompleted() > 10) {
-                    text += "Please don't give up until Gaga is rescued. To show you my appreciation for what you've accomplished thus far, I've given you a Spaceship. It's rather worn out, but it should still be operational. Check your #bSkill Window#k.";
+                    text += "在嘎嘎获救之前请不要放弃。为感谢你至今的付出，我送你一艘宇宙飞船。虽然有点破旧，但应该还能用。请到#b技能栏#k查看。";
                     rgaga.giveSkill(cm.getPlayer());
                 } else {
-                    text += "Let's go back now.";
+                    text += "我们现在回去吧。";
                 }
 
                 cm.sendNext(text);

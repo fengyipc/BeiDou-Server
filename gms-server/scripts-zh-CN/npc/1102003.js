@@ -39,7 +39,7 @@ function start() {
 
         var sendStr = "你一路走来，才有了今天的力量、智慧与勇气，不是吗？要不要现在就#r在英雄公馆里放置一个以你角色当前形象示人的NPC#k？你喜欢这样吗？";
         if (spawnPnpcFee > 0) {
-            sendStr += " I can do it for you, for the fee of #b " + cm.numberWithCommas(spawnPnpcFee) + " mesos.#k";
+            sendStr += " 我可以帮你制作，手续费为 #b " + cm.numberWithCommas(spawnPnpcFee) + " 金币。#k";
         }
 
         cm.sendYesNo(sendStr);

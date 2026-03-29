@@ -72,7 +72,7 @@ function action(mode, type, selection) {
 
                 const MapId = Java.type('org.gms.constants.id.MapId');
                 if (!MapId.isPartyDojo(cm.getPlayer().getMapId())) {
-                    text += "#L2#I want to record my score up to this point#l";
+                    text += "#L2#我想记录目前的分数#l";
                 }
                 cm.sendSimple(text);
             } else if (cm.getPlayer().getLevel() >= 25) {
@@ -205,7 +205,7 @@ function action(mode, type, selection) {
                             var selStr = "You have #b" + cm.getPlayer().getDojoPoints() + "#k training points. Master prefers those with great talent. If you obtain more points than the average, you can receive a belt depending on your score.\r\n";
                             for (var i = 0; i < belts.length; i++) {
                                 if (belt_on_inventory[i]) {
-                                    selStr += "\r\n#L" + i + "##i" + belts[i] + "# #t" + belts[i] + "# (Already on inventory)";
+                                    selStr += "\r\n#L" + i + "##i" + belts[i] + "# #t" + belts[i] + "#（已在背包中）";
                                 } else {
                                     selStr += "\r\n#L" + i + "##i" + belts[i] + "# #t" + belts[i] + "#";
                                 }

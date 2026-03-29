@@ -15,6 +15,7 @@ Usage: $(basename "$0") [options]
 Options:
   --init-commit SHA   Write local state with appliedCommit=SHA (no COS download).
   --bootstrap KEY     Download zip at KEY (relative to COS_PREFIX), extract to server root, then continue.
+  --replay-patch-zips Re-apply every resource patch zip listed in version.json (order preserved), then continue.
   -h, --help          Show this help.
 
 Environment / cos.env:
@@ -28,6 +29,7 @@ EOF
 
 INIT_COMMIT=""
 BOOTSTRAP_KEY=""
+REPLAY_PATCH_ZIPS=false
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --init-commit)
@@ -37,6 +39,10 @@ while [[ $# -gt 0 ]]; do
     --bootstrap)
       BOOTSTRAP_KEY="${2:?}"
       shift 2
+      ;;
+    --replay-patch-zips)
+      REPLAY_PATCH_ZIPS=true
+      shift
       ;;
     -h|--help)
       usage
@@ -98,6 +104,8 @@ cleanup() { rm -f "$VERSION_LOCAL" "${TMP_JAR:-}" "${TMP_ZIP:-}"; }
 trap cleanup EXIT
 
 cos_cp_down "version.json" "$VERSION_LOCAL"
+
+python3 "$HELPER_PY" json_validate "$VERSION_LOCAL"
 
 export BEIDOU_VER_JSON="$VERSION_LOCAL"
 schema="$(python3 -c "import json,os; d=json.load(open(os.environ['BEIDOU_VER_JSON'],encoding='utf-8')); print(d.get('schema',''))")"
@@ -163,10 +171,13 @@ PY
     artifact_only="$(python3 -c "import json,sys; print(json.loads(sys.argv[1]).get('artifactOnly', False))" "$patch_json")"
     to_commit="$(python3 -c "import json,sys; print(json.loads(sys.argv[1])['toCommit'])" "$patch_json")"
 
-    if [[ "$artifact_only" != "True" ]]; then
+    if [[ "$artifact_only" == "True" ]]; then
+      echo "Patch $(short_sha "$current") -> $(short_sha "$to_commit"): artifactOnly (jar updated at end; no resource zip for this step)"
+    else
       local pkey psha
       pkey="$(python3 -c "import json,sys; print(json.loads(sys.argv[1])['key'])" "$patch_json")"
       psha="$(python3 -c "import json,sys; print(json.loads(sys.argv[1])['sha256'])" "$patch_json")"
+      echo "Patch $(short_sha "$current") -> $(short_sha "$to_commit"): applying resource zip $pkey"
       TMP_ZIP="$(mktemp)"
       cos_cp_down "$pkey" "$TMP_ZIP"
       got="$(sha256_file "$TMP_ZIP" | tr -d '\n')"
@@ -183,8 +194,68 @@ PY
   done
 }
 
+replay_resource_zips_from_manifest() {
+  local ver_path="$1"
+  local n
+  n="$(python3 -c "
+import json, sys
+with open(sys.argv[1], encoding='utf-8') as f:
+    v = json.load(f)
+print(sum(1 for p in (v.get('patches') or []) if p.get('key') and p.get('sha256')))
+" "$ver_path")"
+  if [[ "${n:-0}" -eq 0 ]]; then
+    echo "No resource patch zips in version.json; nothing to replay." >&2
+    return 0
+  fi
+  echo "Replaying $n resource patch zip(s) from version.json..."
+  while IFS=$'\t' read -r pkey psha; do
+    [[ -n "$pkey" && -n "$psha" ]] || continue
+    echo "Replay: $pkey"
+    TMP_ZIP="$(mktemp)"
+    cos_cp_down "$pkey" "$TMP_ZIP"
+    got="$(sha256_file "$TMP_ZIP" | tr -d '\n')"
+    if [[ "$got" != "$psha" ]]; then
+      echo "SHA256 mismatch for replay $pkey (expected $psha got $got)" >&2
+      exit 1
+    fi
+    python3 "$HELPER_PY" unzip "$TMP_ZIP" "$SERVER_ROOT"
+    rm -f "$TMP_ZIP"
+    TMP_ZIP=""
+  done < <(python3 -c "
+import json, sys
+with open(sys.argv[1], encoding='utf-8') as f:
+    v = json.load(f)
+for p in v.get('patches') or []:
+    k, s = p.get('key'), p.get('sha256')
+    if k and s:
+        print(k + chr(9) + s)
+" "$ver_path")
+}
+
+if [[ "$REPLAY_PATCH_ZIPS" == true ]]; then
+  replay_resource_zips_from_manifest "$VERSION_LOCAL"
+fi
+
 if [[ "$applied" != "$head_commit" ]]; then
   apply_patch_chain "$applied" "$head_commit"
+elif [[ "$REPLAY_PATCH_ZIPS" != true ]]; then
+  echo "Patch chain skipped: local appliedCommit already equals headCommit (only the jar is refreshed below)."
+  first_from="$(
+    python3 -c "
+import json, os, sys
+with open(os.environ['BEIDOU_VER_JSON'], encoding='utf-8') as f:
+    v = json.load(f)
+for p in v.get('patches') or []:
+    if p.get('key') and p.get('sha256'):
+        print(p['fromCommit'])
+        sys.exit(0)
+" 2>/dev/null || true
+  )"
+  if [[ -n "$first_from" ]]; then
+    echo "If scripts/wz were never unpacked, state may match head while the tree does not." >&2
+    echo "Fix A: $0 --replay-patch-zips" >&2
+    echo "Fix B (when disk matches that commit): $0 --init-commit $first_from && $0" >&2
+  fi
 fi
 
 jar_dest="$SERVER_ROOT/BeiDou.jar"

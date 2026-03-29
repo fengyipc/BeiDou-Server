@@ -75,41 +75,41 @@ function start() {
                             //cm.playerMessage("Results - Correct: " + results[0] + " | Incorrect: " + results[1] + " | Unknown: " + results[2]);
                             if (correct != 0) {
                                 if (correct == 1) {
-                                    string += "1 vassal is pleased with their offering.\r\n";
+                                    string += "有 1 名成员对你的供品感到满意。\r\n";
                                 } else {
-                                    string += correct + " vassals are pleased with their offerings.\r\n";
+                                    string += correct + " 名家臣对供品很满意。\r\n";
                                 }
                             }
                             if (incorrect != 0) {
                                 if (incorrect == 1) {
-                                    string += "1 vassal has received an incorrect offering.\r\n";
+                                    string += "有 1 位家臣收到了错误的贡品。\r\n";
                                 } else {
-                                    string += incorrect + " vassals have received incorrect offerings.\r\n";
+                                    string += incorrect + " 名眷属收到了错误的供品。\r\n";
                                 }
                             }
                             if (unknown != 0) {
                                 if (unknown == 1) {
-                                    string += "1 vassal has received an unknown offering.\r\n";
+                                    string += "1 名家臣收到了来历不明的供品。\r\n";
                                 } else {
-                                    string += unknown + " vassals have received unknown offerings.\r\n";
+                                    string += unknown + " 名家臣收到了来历不明的供品。\r\n";
                                 }
                             }
-                            string += "This is your ";
+                            string += "这是你的 ";
                             switch (attempt) {
                                 case 1:
-                                    string += "1st";
+                                    string += "第1";
                                     break;
                                 case 2:
-                                    string += "2nd";
+                                    string += "二转";
                                     break;
                                 case 3:
-                                    string += "3rd";
+                                    string += "三转";
                                     break;
                                 default:
-                                    string += attempt + "th";
+                                    string += attempt + "日";
                                     break;
                             }
-                            string += " attempt.";
+                            string += " 次尝试。";
 
                             //spawn one black and one myst knight
                             spawnMob(9300036, -350, 150, cm.getPlayer().getMap());

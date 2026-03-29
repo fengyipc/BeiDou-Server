@@ -45,7 +45,7 @@ function action(mode, type, selection) {
         return;
     }
     if (status === 0) {
-        cm.sendNext("当你想要再次重生时，来找我吧。你目前总共有 #r" + cm.getChar().getReborns() + " #krebirths。");
+        cm.sendNext("当你想要再次重生时，来找我吧。你目前总共有 #r" + cm.getChar().getReborns() + " #k次重生。");
     } else if (status === 1) {
         cm.sendSimple("你今天想让我做什么呢：\r\n\r\n#L0##b我想转生！#l\r\n#L1##b现在什么都不想做...#k#l");
     } else if (status === 2) {

@@ -32,7 +32,7 @@ function action(mode, type, selection) {
 
         } else if (selection == 1) {
             if (cm.haveItem(4031036) || cm.haveItem(4031037) || cm.haveItem(4031038)) {
-                text += " You will be brought in immediately. Which ticket you would like to use?#b";
+                text += " 你将立刻被传送进去。要使用哪张入场券？#b";
                 for (var i = 0; i < 3; i++) {
                     if (cm.haveItem(4031036 + i)) {
                         text += "\r\n#b#L" + (i + 1) + "##t" + (4031036 + i) + "#";

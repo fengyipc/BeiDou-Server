@@ -41,9 +41,9 @@ function action(mode, type, selection) {
         if (status == 0) {
             for (var i = 0; i < menu.length; i++) {
                 if (cm.getPlayer().getMapId() == 200000141 && i < 1) {
-                    display += "\r\n#L" + i + "##b" + menu[i] + "(" + cost[i] + " mesos)#k";
+                    display += "\r\n#L" + i + "##b" + menu[i] + "(" + cost[i] + " 金币)#k";
                 } else if (cm.getPlayer().getMapId() == 250000100 && i > 0 && i < 3) {
-                    display += "\r\n#L" + i + "##b" + menu[i] + "(" + cost[i] + " mesos)#k";
+                    display += "\r\n#L" + i + "##b" + menu[i] + "(" + cost[i] + " 金币)#k";
                 }
             }
             if (cm.getPlayer().getMapId() == 200000141 || cm.getPlayer().getMapId() == 251000000) {

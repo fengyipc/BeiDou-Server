@@ -97,6 +97,30 @@ def zh_cn_to_scripts_ref(zh_path: str) -> str | None:
     return "scripts/" + zh_path[len("scripts-zh-CN/") :]
 
 
+def script_file_suffix(relative_path: str) -> str:
+    """`npc/9201135.js` — same for scripts/ and scripts-zh-CN/ paths."""
+    for prefix in ("scripts-zh-CN/", "scripts/"):
+        if relative_path.startswith(prefix):
+            return relative_path[len(prefix) :]
+    return relative_path
+
+
+def build_ast_reference_lookup(en_files: list[dict[str, Any]]) -> dict[tuple[str, str], str]:
+    """Map (file suffix, referenceKey) -> English sourceText from scripts/ extract."""
+    m: dict[tuple[str, str], str] = {}
+    for ent in en_files:
+        rel = ent.get("relativePath", "")
+        suf = script_file_suffix(rel)
+        for u in ent.get("units", []):
+            rk = u.get("referenceKey")
+            if not rk:
+                continue
+            st = u.get("sourceText")
+            if isinstance(st, str):
+                m[(suf, str(rk))] = st
+    return m
+
+
 def reference_string_at_bytes(scripts_root: Path, ref_rel: str, byte_start: int, byte_end: int) -> str | None:
     ref_path = scripts_root / ref_rel.replace("/", os.sep)
     if not ref_path.is_file():
@@ -180,11 +204,14 @@ def merge_unit_fields(new_u: dict[str, Any], queues: dict[tuple[str, str, str], 
         new_u["needsTranslation"] = False
 
 
-def run_extractor(base: Path) -> dict[str, Any]:
+def run_extractor(base: Path, subdirs: str | None = None) -> dict[str, Any]:
     if not EXTRACTOR.is_file():
         raise FileNotFoundError(f"Extractor not found: {EXTRACTOR}")
+    cmd = ["node", str(EXTRACTOR), "--base", str(base)]
+    if subdirs:
+        cmd.extend(["--subdirs", subdirs])
     proc = subprocess.run(
-        ["node", str(EXTRACTOR), "--base", str(base)],
+        cmd,
         cwd=str(base),
         capture_output=True,
         text=True,
@@ -220,10 +247,14 @@ def main() -> int:
     mem_path.parent.mkdir(parents=True, exist_ok=True)
 
     try:
-        raw = run_extractor(base)
+        raw_zh = run_extractor(base)
+        raw_en = run_extractor(base, "scripts/npc,scripts/quest,scripts/reactor")
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         return 1
+
+    ref_lookup = build_ast_reference_lookup(raw_en.get("files", []))
+    raw = raw_zh
 
     old_units: list[dict[str, Any]] = []
     if args.merge and mem_path.is_file():
@@ -262,7 +293,10 @@ def main() -> int:
             need = needs_translation(source_text)
 
             ref_text: str | None = None
-            if ref_rel:
+            rk = u.get("referenceKey")
+            if ref_rel and rk:
+                ref_text = ref_lookup.get((script_file_suffix(rel), str(rk)))
+            if ref_text is None and ref_rel:
                 raw_seg = reference_string_at_bytes(base, ref_rel, byte_start, byte_end)
                 if raw_seg is not None:
                     dec = decode_js_string_literal(raw_seg)
@@ -287,6 +321,8 @@ def main() -> int:
                 "glossaryRefs": None,
                 "updatedAt": now,
             }
+            if rk:
+                row["referenceKey"] = str(rk)
             if not need:
                 row["targetZh"] = source_text
 

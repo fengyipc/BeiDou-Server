@@ -48,7 +48,7 @@ function start() {
 
         const GameConstants = Java.type('org.gms.constants.game.GameConstants');
         if (!GameConstants.isDojoPartyArea(cm.getPlayer().getMapId())) {
-            text += "#L2#I want to record my score up to this point#l";
+            text += "#L2#我想记录到目前为止的分数#l";
         }
         cm.sendSimple("抱歉，我无法完成你的要求。");
     } else if (cm.getPlayer().getLevel() >= 25) {
@@ -158,7 +158,7 @@ function action(mode, type, selection) {
                     var selStr = "You have #b" + cm.getPlayer().getDojoPoints() + "#k training points. Master prefers those with great talent. If you obtain more points than the average, you can receive a belt depending on your score.\r\n";
                     for (var i = 0; i < belts.length; i++) {
                         if (cm.haveItemWithId(belts[i], true)) {
-                            selStr += "\r\n     #i" + belts[i] + "# #t" + belts[i] + "#(Obtain)";
+                            selStr += "\r\n     #i" + belts[i] + "# #t" + belts[i] + "#(获得)";
                         } else {
                             selStr += "\r\n#L" + i + "##i" + belts[i] + "# #t" + belts[i] + "#l";
                         }

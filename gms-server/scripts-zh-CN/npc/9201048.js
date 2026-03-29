@@ -81,7 +81,7 @@ function action(mode, type, selection) {
                 }
             } else if (selection == 1) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已禁用") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
             } else {
                 cm.sendOk("#e#b<组队任务：阿莫利亚挑战>#k#n\r\n我是阿莫斯，主办了备受赞誉的阿莫利亚挑战。这个副本包含许多团队谜题，合作是取得进展的基本关键。与其他玩家组队尝试挑战奖励阶段，在副本结束时可以获得许多好东西。如果组成全是情侣的队伍，他们可以在额外的奖励阶段获得更好的奖品。");

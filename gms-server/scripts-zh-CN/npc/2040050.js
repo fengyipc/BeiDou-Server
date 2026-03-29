@@ -73,7 +73,7 @@ function action(mode, type, selection) {
         set = selection;
         makeitem = makeditem[set];
         for (i = 0; i < reqset[set].length; i++) {
-            menu += "\r\n#L" + i + "##bMake it using #t" + reqset[set][i][0][0] + "# and #t" + reqset[set][i][1][0] + "##k#l";
+            menu += "\r\n#L" + i + "##b使用 #t 制作" + reqset[set][i][0][0] + "# 和 #t" + reqset[set][i][1][0] + "##k#l";
         }
         cm.sendSimple("哈哈... #b#t" + makeitem + "##k 是一种神秘的岩石，只有我才能制造。许多旅行者似乎需要它来获得比魔法值和生命值更强大的技能。有5种方法可以制作 #t" + makeitem + "#。你想用哪种方法制作？" + menu);
     } else if (status == 3) {
@@ -85,7 +85,7 @@ function action(mode, type, selection) {
         for (i = 0; i < reqitem.length; i++) {
             menu += "\r\n#v" + reqitem[i][0] + "# #b" + reqitem[i][1] + " #t" + reqitem[i][0] + "#s#k";
         }
-        menu += "\r\n#i4031138# #b" + cost + " mesos#k";
+        menu += "\r\n#i4031138# #b" + cost + " 金币#k";
         cm.sendYesNo("为了制作#b5 #t" + makeitem + "##k，我需要以下物品。其中大部分可以通过打猎获得，所以对你来说并不是非常困难。你觉得怎么样？你想要一些吗？\r\n" + menu);
     } else if (status == 4) {
         for (i = 0; i < reqitem.length; i++) {

@@ -113,7 +113,7 @@ function action(mode, type, selection) {
                 }
 
                 if (cm.haveItem(5251100)) {
-                    text += "\r\n#L" + x + "##bMake additional invitation cards#l";
+                    text += "\r\n#L" + x + "##b制作额外的请柬#l";
                 }
 
                 cm.sendSimple(text);

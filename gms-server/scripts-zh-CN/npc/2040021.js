@@ -148,7 +148,7 @@ function action(mode, type, selection) {
         cost *= 0.9;
         var prompt = "你想让我制作一个 #t" + item + "#？那样的话，我需要你提供特定的物品来制作它。不过，请确保你的背包有足够的空间！#b";
         if (stimulator) {
-            prompt += "\r\n#i" + stimID + "# 1 #t" + stimID + "#";
+            prompt += "\r\n#i" + stimID + "# 1个#t" + stimID + "#";
         }
         if (mats instanceof Array) {
             for (var i = 0; i < mats.length; i++) {

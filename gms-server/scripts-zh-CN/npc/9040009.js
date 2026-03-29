@@ -86,7 +86,7 @@ function action(mode, type, selection) {
                             } else {
                                 cm.sendOk("很好。不过你还有更多任务要完成。当你准备好的时候再和我交谈。");
                                 eim.setProperty("stage1phase", stage + 1);
-                                cm.mapMessage(5, "You have completed part " + stage + " of the Gatekeeper Test.");
+                                cm.mapMessage(5, "你已完成第 " + stage + " （守门人试炼）。");
                             }
 
                         } else {

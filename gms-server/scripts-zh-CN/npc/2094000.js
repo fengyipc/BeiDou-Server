@@ -87,7 +87,7 @@ function action(mode, type, selection) {
                 }
             } else if (selection == 1) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已禁用") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
             } else if (selection == 3) {
                 let text = "你想要兑换什么帽子？\r\n\r\n#L0##b#z1002571#\r\n#L1##b#z1002572#\r\n#L2##b#z1002573#\r\n#L3##b#z1002574# (随机属性)"

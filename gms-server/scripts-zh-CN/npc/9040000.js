@@ -85,7 +85,7 @@ function action(mode, type, selection) {
                         cm.dispose();
                     } else {
                         var qsize = em.getQueueSize();
-                        cm.sendYesNo(((qsize > 0) ? "There is currently #r" + qsize + "#k guilds queued on. " : "") + "Do you wish for your guild to join this queue?");
+                        cm.sendYesNo(((qsize > 0) ? "目前有 #r" + qsize + "#k 个公会正在排队。" : "") + "是否要让你们公会加入此队列？");
                     }
                 }
             } else if (selection == 1) {
@@ -108,12 +108,12 @@ function action(mode, type, selection) {
                 cm.dispose();
             } else {
                 var reqStr = "";
-                reqStr += "\r\n\r\n    Team requirements:\r\n\r\n";
-                reqStr += "     - 1 team member #rbelow or equal level 30#k.\r\n";
-                reqStr += "     - 1 team member who is a #rThief with Dark Sight#k skill and #rmaxed Haste#k.\r\n";
-                reqStr += "     - 1 team member who is a Magician with #rmaxed Teleport#k.\r\n";
-                reqStr += "     - 1 team member who is a #rlong ranged attacker#k like Bowman, Assassin, or Gunslinger.\r\n";
-                reqStr += "     - 1 team member with #rgood jumping skills#k like Assassin with maxed Flash Jump or Gunslinger with Wings.\r\n";
+                reqStr += "\r\n\r\n    队伍要求：\r\n\r\n";
+                reqStr += "     - 需要 1 名队员#r等级为 30 或以下#k。\r\n";
+                reqStr += "     - 1名#r飞侠#k队员，需拥有#r黑暗潜行#k与#r已满级的疾驰#k。\r\n";
+                reqStr += "     - 1 名队友须为魔法师，且已#r点满瞬移#k。\r\n";
+                reqStr += "     - 1 名队员需为#r远程攻击#k职业，例如弓箭手、飞侠或枪手。\r\n";
+                reqStr += "     - 1 名队友须具备#r良好的跳跃能力#k，例如已将二段跳点满的刺客，或拥有翅膀的火枪手。\r\n";
 
                 cm.sendOk("#e#b<公会任务：沙连尼安遗迹>#k#n\r\n与你的公会成员一起合作，试图从骷髅的掌控中夺回鲁比安，通过团队合作克服沙连尼安墓穴内等待的许多谜题和挑战。完成任务实例后可以获得丰厚的奖励，并为你的公会积累公会点数。");
                 cm.dispose();

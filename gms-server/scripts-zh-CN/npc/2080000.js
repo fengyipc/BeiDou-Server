@@ -167,7 +167,7 @@ function action(mode, type, selection) {
         var prompt = "你想让我制作一把 #t"+ item +"# 吗？这样的话，我需要你提供一些特定的材料才能制作。不过要确保你的背包里有足够的空间哦！#b";
         if (stimulator) {
             stimID = getStimID(item);
-            prompt += "\r\n#i" + stimID + "# 1 #t" + stimID + "#";
+            prompt += "\r\n#i" + stimID + "# 1个#t" + stimID + "#";
         }
         if (mats instanceof Array) {
             for (var i = 0; i < mats.length; i++) {
@@ -177,7 +177,7 @@ function action(mode, type, selection) {
             prompt += "\r\n#i" + mats + "# " + matQty + " #t" + mats + "#";
         }
         if (cost > 0) {
-            prompt += "\r\n#i4031138# " + cost + " meso";
+            prompt += "\r\n#i4031138# " + cost + " 金币";
         }
         cm.sendYesNo(prompt);
     } else if (status == 3) {

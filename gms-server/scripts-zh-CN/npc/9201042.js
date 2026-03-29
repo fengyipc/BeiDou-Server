@@ -80,7 +80,7 @@ function action(mode, type, selection) {
             var listStr = "";
             for (var i = 0; i < wishPrizes.length; i++) {
                 listStr += "#b#L" + i + "#" + wishPrizesQty[i] + " #z" + wishPrizes[i] + "##k";
-                listStr += " - " + wishPrizesCst[i] + " wish tickets";
+                listStr += " - " + wishPrizesCst[i] + " 张许愿券";
                 listStr += "#l\r\n";
             }
 
@@ -89,7 +89,7 @@ function action(mode, type, selection) {
             sel = selection;
 
             if (amntTicket < wishPrizesCst[selection]) {
-                cm.sendPrev("You will need #b" + wishPrizesCst[selection] + " #t" + slctTicket + "##k to purchase that! If you want this, come back another time when you have all the tickets at hand.");
+                cm.sendPrev("你需要 #b" + wishPrizesCst[selection] + " #t" + slctTicket + "##k 才能购买！如果想要，请集齐所有兑换券后再来。");
                 advance = false;
             } else {
                 cm.sendYesNo("您已选择#b" + wishPrizesQty[selection] + " #z" + wishPrizes[selection] + "##k，这将需要#b" + wishPrizesCst[selection] + " #t" + slctTicket + "##k。您要购买吗？");

@@ -68,6 +68,22 @@ function textArgIndex(method, argc) {
   return fn(argc);
 }
 
+/** @returns {{ objName: string, method: string, argNode: any, callNode: any } | null} */
+function getTextCallInfo(node) {
+  if (node.type !== "CallExpression") return null;
+  const callee = node.callee;
+  if (callee?.type !== "MemberExpression" || callee.computed) return null;
+  const obj = callee.object;
+  const prop = callee.property;
+  if (obj?.type !== "Identifier" || prop?.type !== "Identifier") return null;
+  if (!RECEIVERS.has(obj.name)) return null;
+  const method = prop.name;
+  const args = node.arguments || [];
+  const idx = textArgIndex(method, args.length);
+  if (idx < 0 || idx >= args.length) return null;
+  return { objName: obj.name, method, argNode: args[idx], callNode: node };
+}
+
 function walk(node, visitor) {
   if (!node || typeof node !== "object") return;
   visitor(node);
@@ -158,6 +174,113 @@ function resolveStringBinding(name, callStart, bindings) {
   return best;
 }
 
+function isFunctionNode(node) {
+  return (
+    node?.type === "FunctionDeclaration" ||
+    node?.type === "FunctionExpression" ||
+    node?.type === "ArrowFunctionExpression"
+  );
+}
+
+/** Innermost function body that contains character offset `pos`. */
+function containingFunction(ast, pos) {
+  let best = null;
+  let bestSize = Infinity;
+  walk(ast, (node) => {
+    if (!isFunctionNode(node)) return;
+    const s = node.start;
+    const e = node.end;
+    if (s == null || e == null) return;
+    if (pos < s || pos > e) return;
+    const size = e - s;
+    if (size < bestSize) {
+      bestSize = size;
+      best = node;
+    }
+  });
+  return best;
+}
+
+/**
+ * Every `name = "..."` / `var name = "..."` in the same function as the call, finishing before the call.
+ * Fixes `if { text = EN } else { text = ZH } cm.sendSimple(text)` where "latest binding" was only the else branch.
+ */
+function collectLiteralAssignsToVarBeforeCall(ast, funcNode, varName, callStart, source) {
+  const out = [];
+  walk(ast, (node) => {
+    if (node.type === "AssignmentExpression" && node.operator === "=") {
+      const left = node.left;
+      if (left?.type !== "Identifier" || left.name !== varName) return;
+      if (node.end == null || node.end > callStart) return;
+      if (containingFunction(ast, node.start ?? 0) !== funcNode) return;
+      const got = getStringFromNode(node.right);
+      if (got?.value == null || got.hasInterpolation) return;
+      const start = node.right.start;
+      const end = node.right.end;
+      if (start == null || end == null) return;
+      out.push({
+        value: got.value,
+        template: got.template,
+        byteStart: utf8ByteOffset(source, start),
+        byteEnd: utf8ByteOffset(source, end),
+        line: node.right.loc?.start?.line ?? 0,
+        column: node.right.loc?.start?.column ?? 0,
+      });
+      return;
+    }
+    if (node.type === "VariableDeclarator") {
+      const id = node.id;
+      const init = node.init;
+      if (id?.type !== "Identifier" || id.name !== varName || !init) return;
+      if (node.end == null || node.end > callStart) return;
+      if (containingFunction(ast, node.start ?? 0) !== funcNode) return;
+      const got = getStringFromNode(init);
+      if (got?.value == null || got.hasInterpolation) return;
+      const start = init.start;
+      const end = init.end;
+      if (start == null || end == null) return;
+      out.push({
+        value: got.value,
+        template: got.template,
+        byteStart: utf8ByteOffset(source, start),
+        byteEnd: utf8ByteOffset(source, end),
+        line: init.loc?.start?.line ?? 0,
+        column: init.loc?.start?.column ?? 0,
+      });
+    }
+  });
+  return out;
+}
+
+/** String / template (no ${}) literals inside `a + b + (cond ? "x" : "")` trees. */
+function forEachStringLiteralInConcatTree(expr, fn) {
+  if (!expr) return;
+  if (expr.type === "StringLiteral" || expr.type === "TemplateLiteral") {
+    const got = getStringFromNode(expr);
+    fn(expr, got);
+    return;
+  }
+  if (expr.type === "BinaryExpression" && expr.operator === "+") {
+    forEachStringLiteralInConcatTree(expr.left, fn);
+    forEachStringLiteralInConcatTree(expr.right, fn);
+    return;
+  }
+  if (expr.type === "ConditionalExpression") {
+    forEachStringLiteralInConcatTree(expr.consequent, fn);
+    forEachStringLiteralInConcatTree(expr.alternate, fn);
+    return;
+  }
+  if (expr.type === "LogicalExpression") {
+    forEachStringLiteralInConcatTree(expr.left, fn);
+    forEachStringLiteralInConcatTree(expr.right, fn);
+    return;
+  }
+  if (expr.type === "ParenthesizedExpression") {
+    forEachStringLiteralInConcatTree(expr.expression, fn);
+    return;
+  }
+}
+
 /**
  * Menu / list text often uses `var opts = ["a","b"]; selStr += ... + opts[i] + ...; cm.sendSimple(selStr)`.
  * Emit one unit per string element (byte span = that literal) so each line can be translated in place.
@@ -175,6 +298,7 @@ function addUnitsFromArrayExpression(arrNode, arrayName, source, addUnit) {
     if (start == null || end == null) continue;
     addUnit({
       callee: `array:${arrayName}[${i}]`,
+      referenceKey: `arr:${arrayName}:${i}`,
       sourceText: got.value,
       template: got.template,
       hasInterpolation: false,
@@ -201,14 +325,32 @@ function extractFromSource(relativePath, source) {
   }
 
   const bindings = collectStringBindings(ast);
+
+  const textCallNodes = [];
+  walk(ast, (node) => {
+    if (getTextCallInfo(node)) textCallNodes.push(node);
+  });
+  const callIndex = new Map();
+  textCallNodes.forEach((n, i) => callIndex.set(n, i));
+
+  const plusNodes = [];
+  walk(ast, (node) => {
+    if (node.type === "AssignmentExpression" && node.operator === "+=" && node.left?.type === "Identifier") {
+      plusNodes.push(node);
+    }
+  });
+  const plusIndex = new Map();
+  plusNodes.forEach((n, i) => plusIndex.set(n, i));
+
   const seenLiteralSpan = new Set();
   const units = [];
 
   function addUnit(unit) {
     const key = `${unit.byteStart}|${unit.byteEnd}`;
-    if (seenLiteralSpan.has(key)) return;
+    if (seenLiteralSpan.has(key)) return false;
     seenLiteralSpan.add(key);
     units.push(unit);
+    return true;
   }
 
   walk(ast, (node) => {
@@ -229,22 +371,11 @@ function extractFromSource(relativePath, source) {
   });
 
   walk(ast, (node) => {
-    if (node.type !== "CallExpression") return;
-    const callee = node.callee;
-    if (callee?.type !== "MemberExpression") return;
-    if (callee.computed) return;
-    const obj = callee.object;
-    const prop = callee.property;
-    if (obj?.type !== "Identifier" || prop?.type !== "Identifier") return;
-    if (!RECEIVERS.has(obj.name)) return;
-
-    const method = prop.name;
-    const args = node.arguments || [];
-    const idx = textArgIndex(method, args.length);
-    if (idx < 0 || idx >= args.length) return;
-
-    const argNode = args[idx];
-    const callStart = node.start ?? 0;
+    const tc = getTextCallInfo(node);
+    if (!tc) return;
+    const { objName, method, argNode, callNode } = tc;
+    const cid = callIndex.get(callNode);
+    const callStart = callNode.start ?? 0;
 
     const got = getStringFromNode(argNode);
     if (got && got.value !== null && !got.hasInterpolation) {
@@ -253,7 +384,8 @@ function extractFromSource(relativePath, source) {
       if (start == null || end == null) return;
 
       addUnit({
-        callee: `${obj.name}.${method}`,
+        callee: `${objName}.${method}`,
+        referenceKey: `call:${cid}:lit:0`,
         sourceText: got.value,
         template: got.template,
         hasInterpolation: got.hasInterpolation,
@@ -265,12 +397,62 @@ function extractFromSource(relativePath, source) {
       return;
     }
 
+    const callFunc = containingFunction(ast, argNode.start ?? callStart);
+    let litIdx = 0;
+    forEachStringLiteralInConcatTree(argNode, (litNode, g) => {
+      if (g?.value == null || g.hasInterpolation) return;
+      if (g.value === "") return;
+      if (callFunc && containingFunction(ast, litNode.start ?? 0) !== callFunc) return;
+      const start = litNode.start;
+      const end = litNode.end;
+      if (start == null || end == null) return;
+      const rk = `call:${cid}:lit:${litIdx}`;
+      litIdx++;
+      addUnit({
+        callee: `${objName}.${method}`,
+        referenceKey: rk,
+        sourceText: g.value,
+        template: g.template,
+        hasInterpolation: false,
+        byteStart: utf8ByteOffset(source, start),
+        byteEnd: utf8ByteOffset(source, end),
+        line: litNode.loc?.start?.line ?? 0,
+        column: litNode.loc?.start?.column ?? 0,
+      });
+    });
+    if (litIdx > 0) return;
+
     if (argNode.type === "Identifier") {
-      const b = resolveStringBinding(argNode.name, callStart, bindings);
+      const idName = argNode.name;
+      const anchorPos = argNode.start ?? callStart;
+      const funcNode = containingFunction(ast, anchorPos);
+      const fromAssigns =
+        funcNode != null
+          ? collectLiteralAssignsToVarBeforeCall(ast, funcNode, idName, callStart, source)
+          : [];
+      if (fromAssigns.length > 0) {
+        const sorted = [...fromAssigns].sort((a, b) => a.byteStart - b.byteStart);
+        sorted.forEach((a, j) => {
+          addUnit({
+            callee: `${objName}.${method}`,
+            referenceKey: `call:${cid}:lit:${j}`,
+            sourceText: a.value,
+            template: a.template,
+            hasInterpolation: false,
+            byteStart: a.byteStart,
+            byteEnd: a.byteEnd,
+            line: a.line,
+            column: a.column,
+          });
+        });
+        return;
+      }
+      const b = resolveStringBinding(idName, callStart, bindings);
       if (!b) return;
 
       addUnit({
-        callee: `${obj.name}.${method}`,
+        callee: `${objName}.${method}`,
+        referenceKey: `call:${cid}:lit:0`,
         sourceText: b.value,
         template: b.template,
         hasInterpolation: false,
@@ -280,6 +462,37 @@ function extractFromSource(relativePath, source) {
         column: b.column,
       });
     }
+  });
+
+  walk(ast, (node) => {
+    if (node.type !== "AssignmentExpression" || node.operator !== "+=") return;
+    const left = node.left;
+    if (left?.type !== "Identifier") return;
+    const funcNode = containingFunction(ast, node.start ?? 0);
+    if (!funcNode) return;
+    const pid = plusIndex.get(node);
+    let litIdx = 0;
+    forEachStringLiteralInConcatTree(node.right, (litNode, got) => {
+      if (got?.value == null || got.hasInterpolation) return;
+      if (got.value === "") return;
+      if (containingFunction(ast, litNode.start ?? 0) !== funcNode) return;
+      const start = litNode.start;
+      const end = litNode.end;
+      if (start == null || end == null) return;
+      const rk = `plus:${pid}:lit:${litIdx}`;
+      litIdx++;
+      addUnit({
+        callee: `${left.name}+=`,
+        referenceKey: rk,
+        sourceText: got.value,
+        template: got.template,
+        hasInterpolation: false,
+        byteStart: utf8ByteOffset(source, start),
+        byteEnd: utf8ByteOffset(source, end),
+        line: litNode.loc?.start?.line ?? 0,
+        column: litNode.loc?.start?.column ?? 0,
+      });
+    });
   });
 
   return { error: null, units };
@@ -305,17 +518,22 @@ function collectJsFiles(base, subdirs) {
 function main() {
   const args = process.argv.slice(2);
   let base = process.cwd();
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === "--base" && args[i + 1]) {
-      base = path.resolve(args[++i]);
-    }
-  }
-
   const subdirs = [
     "scripts-zh-CN/npc",
     "scripts-zh-CN/quest",
     "scripts-zh-CN/reactor",
   ];
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === "--base" && args[i + 1]) {
+      base = path.resolve(args[++i]);
+    } else if (args[i] === "--subdirs" && args[i + 1]) {
+      subdirs.length = 0;
+      for (const s of args[++i].split(",")) {
+        const t = s.trim();
+        if (t) subdirs.push(t);
+      }
+    }
+  }
   const absFiles = collectJsFiles(base, subdirs);
   const files = [];
 

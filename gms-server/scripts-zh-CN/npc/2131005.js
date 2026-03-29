@@ -19,7 +19,7 @@ function action(mode, type, selection) {
             cm.sendNext("你没有足够的... 我至少需要100个。");
             cm.dispose();
         } else {
-            cm.sendGetNumber("Hey, that's a good idea! I can give you #i4310000#Perfect Pitch for each 100 #i" + exchangeItem + "##t" + exchangeItem + "# you give me. How many do you want? (Current Items: " + cm.itemQuantity(exchangeItem) + ")", Math.min(300, cm.itemQuantity(exchangeItem) / 100), 1, Math.min(300, cm.itemQuantity(exchangeItem) / 100));
+            cm.sendGetNumber("嘿，这主意不错！你每给我100个#i，我就给你#i4310000#完美音准" + exchangeItem + "##t" + exchangeItem + "# 你给我的。你想要多少个？（当前物品： " + cm.itemQuantity(exchangeItem) + ")", Math.min(300, cm.itemQuantity(exchangeItem) / 100), 1, Math.min(300, cm.itemQuantity(exchangeItem) / 100));
         }
     } else if (status == 2) {
         if (selection >= 1 && selection <= cm.itemQuantity(exchangeItem) / 100) {

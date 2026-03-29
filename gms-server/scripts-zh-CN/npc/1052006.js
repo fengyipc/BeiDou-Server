@@ -27,7 +27,7 @@ function action(mode, type, selection) {
         } else {
             var selStr = "需要哪种票？#b";
             for (var i = 0; i < zones; i++) {
-                selStr += "\r\n#L" + i + "#Construction site B" + (i + 1) + " (" + cost + " mesos)#l";
+                selStr += "\r\n#L" + i + "#建筑工地B" + (i + 1) + " (" + cost + " 金币)#l";
             }
             cm.sendSimple(selStr);
         }

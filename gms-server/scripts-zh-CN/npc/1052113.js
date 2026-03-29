@@ -26,7 +26,7 @@ function action(mode, type, selection) {
 
         var selStr = "要进入修炼场吗？";
         for (var i = 0; i < num; i++) {
-            selStr += "\r\n#b#L" + i + "#Training Center " + i + " (" + cm.getPlayerCount(map + i) + "/" + maxp + ")#l#k";
+            selStr += "\r\n#b#L" + i + "#训练中心 " + i + " (" + cm.getPlayerCount(map + i) + "/" + maxp + ")#l#k";
         }
         cm.sendSimple(selStr);
     } else if (status == 1) {

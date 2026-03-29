@@ -132,7 +132,7 @@ function action(mode, type, selection) {
                 }
 
                 if (cost > 0) {
-                    prompt += "\r\n#i4031138# " + cost + " meso";
+                    prompt += "\r\n#i4031138# " + cost + " 金币";
                 }
 
                 cm.sendYesNo(prompt);

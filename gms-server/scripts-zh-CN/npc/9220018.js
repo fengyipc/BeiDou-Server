@@ -80,7 +80,7 @@ function action(mode, type, selection) {
                 }
             } else if (selection == 1) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已停用") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
             } else {
                 cm.sendOk("#e#b<组队任务：MV的巢穴>#k#n\r\nMV再次出现，打乱了新叶城居民的安宁。与其他冒险岛玩家联手抵御这次突如其来的攻击。在击败MV和他的手下之后，到MV的宝藏房间领取你的奖励。");

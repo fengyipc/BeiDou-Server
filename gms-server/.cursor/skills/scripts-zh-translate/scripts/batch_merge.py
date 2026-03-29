@@ -82,7 +82,7 @@ def main() -> int:
             tgt["status"] = p["status"]
         if "glossaryRefs" in p:
             tgt["glossaryRefs"] = p["glossaryRefs"]
-        if p.get("status") == "done" and p.get("targetZh"):
+        if p.get("status") == "done" and "targetZh" in p:
             tgt["needsTranslation"] = False
         tgt["updatedAt"] = p.get("updatedAt") or now
         merged += 1

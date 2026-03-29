@@ -40,7 +40,7 @@ function start() {
 
         var sendStr = "一路走来，今天的力量、智慧与勇气都是你一点一滴积累起来的吧？要不要现在在#r英雄公馆#k里，用你角色当前的形象立一名展示NPC？你愿意吗？";
         if (spawnPnpcFee > 0) {
-            sendStr += " I can do it for you, for the fee of #b " + cm.numberWithCommas(spawnPnpcFee) + " mesos.#k";
+            sendStr += " 我可以帮你，费用为 #b " + cm.numberWithCommas(spawnPnpcFee) + " 金币.#k";
         }
 
         cm.sendYesNo(sendStr);
@@ -212,7 +212,7 @@ function action(mode, type, selection) {
         } else if (status == 5) {
             cm.sendNextPrev("我也给了你一点 #bSP#k。打开左下角的 #b技能菜单#k。你可以提升新获得的二级技能。不过要注意，你不能一次性提升它们。有些技能只有在学会其他技能后才能使用。记得要牢记这一点。");
         } else if (status == 6) {
-            cm.sendNextPrev((job == 410 ? "Assassin" : "Bandit") + " need to be strong. But remember that you can't abuse that power and use it on a weakling. Please use your enormous power the right way, because... for you to use that the right way, that is much harden than just getting stronger. Please find me after you have advanced much further. I'll be waiting for you.");
+            cm.sendNextPrev((job == 410 ? "刺客" : "盗贼") + " 你必须变强。但请记住，不要滥用力量去欺负弱者。请正确运用你强大的力量，因为……正确地运用力量，远比单纯变强要困难得多。等你走得更远之后再来找我吧。我会等着你。");
         }
     } else if (actionx["3thJobI"]) {
         if (status == 0) {

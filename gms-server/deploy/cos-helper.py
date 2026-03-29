@@ -87,8 +87,29 @@ def main() -> None:
     elif cmd == "json_validate":
         if len(sys.argv) != 3:
             sys.exit(2)
-        with open(sys.argv[2], encoding="utf-8") as f:
-            json.load(f)
+        path = sys.argv[2]
+        try:
+            with open(path, encoding="utf-8") as f:
+                json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"Invalid JSON: {path}", file=sys.stderr)
+            print(f"  {e.msg} (line {e.lineno}, column {e.colno})", file=sys.stderr)
+            try:
+                with open(path, encoding="utf-8") as f:
+                    lines = f.readlines()
+                lo = max(0, e.lineno - 3)
+                hi = min(len(lines), e.lineno + 2)
+                for i in range(lo, hi):
+                    prefix = ">" if i + 1 == e.lineno else " "
+                    print(f"  {prefix} {i + 1:4d} | {lines[i].rstrip()}", file=sys.stderr)
+            except OSError:
+                pass
+            print(
+                "  Common fixes: remove trailing commas, use double quotes for keys/strings, "
+                "no // or # comments.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
     else:
         print(f"unknown command: {cmd}", file=sys.stderr)
         sys.exit(2)

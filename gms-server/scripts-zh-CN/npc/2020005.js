@@ -65,12 +65,12 @@ function action(mode, type, selection) {
     if (status == 0) {
         var selStr = "";
         for (var i = 0; i < item.length; i++) {
-            selStr += "\r\n#L" + i + "# #b#t" + item[i] + "# (Price: " + cost[i] + " mesos)#k#l";
+            selStr += "\r\n#L" + i + "# #b#t" + item[i] + "#（价格： " + cost[i] + " 金币）#k#l";
         }
         cm.sendSimple("多亏了你，#b#t4031056##k 已经安全封印了。当然，作为结果，我用掉了我在过去大约800年中积累的一半能量...但现在我可以安心地死去了。哦，顺便问一下... 你是不是在寻找稀有物品？作为对你辛勤工作的感激，我会向你出售一些我拥有的物品，而且只有你可以购买。挑选出你想要的吧！" + selStr);
     } else if (status == 1) {
         selected = selection;
-        cm.sendGetNumber("Is #b#t" + item[selected] + "##k really the item that you need? It's the item " + msg[selected] + ". It may not be the easiest item to acquire, but I'll give you a good deal on it. It'll cost you #b" + cost[selected] + " mesos#k per item. How many would you like to purchase?", 0, 1, 100);
+        cm.sendGetNumber("是 #b#t 吗？" + item[selected] + "##k 真的是你需要的道具吗？就是这件道具 " + msg[selected] + "。这件道具可能不太好入手，不过我会给你个好价钱。需要花费 #b" + cost[selected] + " 金币#k/件。要买几件？", 0, 1, 100);
     } else if (status == 2) {
         amount = selection;
         totalcost = cost[selected] * amount;

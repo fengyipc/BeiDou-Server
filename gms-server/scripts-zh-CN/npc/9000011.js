@@ -61,7 +61,7 @@ function action(mode, type, selection) {
             } else if (selection == 3) {
                 var selStr = "你想兑换哪种连胜证书？";
                 for (var i = 0; i < quantities.length; i++) {
-                    selStr += "\r\n#b#L" + i + "##t" + (4031332 + i) + "# Exchange(" + quantities[i] + ")#l";
+                    selStr += "\r\n#b#L" + i + "##t" + (4031332 + i) + "# 兑换(" + quantities[i] + ")#l";
                 }
                 cm.sendSimple(selStr);
                 status = 9;

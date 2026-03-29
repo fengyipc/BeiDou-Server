@@ -37,7 +37,7 @@ var status = 0;
 
 function start() {
     if (cm.getPlayer().getMap().getId() != 540000000) {
-        text = "Hey I'm #p9201135#, your tour guide here in #rMalaysia#k. Where would you like to travel?\n\n";
+        text = "嘿，我是#p9201135#，在#r马来西亚#k当导游。您想去哪里旅游？\n\n";
     } else {
         text = "嘿，我是#p9201135#，在#r马来西亚#k当导游。由于你还没登记我们与合作方#b枫叶旅行社#k推出的特惠旅游套餐，这次的车费会贵上不少。那么，现在要出发吗？\n\n";
         startedTravel = true;
@@ -62,10 +62,10 @@ function start() {
         var costs = cost[location];
 
         for (var i = 0; i < maps.length; i++) {
-            text += "\t\r\n#b#L" + i + "##m" + maps[i] + "# " + (costs[i] > 0 ? "(" + costs[i] + "mesos)" : "") + "#l";
+            text += "\t\r\n#b#L" + i + "##m" + maps[i] + "# " + (costs[i] > 0 ? "(" + costs[i] + "金币)" : "") + "#l";
         }
     } else {
-        text += "\t\r\n#b#L0##m" + toMap[location] + "# " + (cost[location] > 0 ? "(" + cost[location] + "mesos)" : "") + "#l";
+        text += "\t\r\n#b#L0##m" + toMap[location] + "# " + (cost[location] > 0 ? "(" + cost[location] + "金币)" : "") + "#l";
     }
 
     text += "#k";

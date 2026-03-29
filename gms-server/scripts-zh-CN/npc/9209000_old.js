@@ -55,7 +55,7 @@ function action(mode, type, selection) {
         } else if (selection == 1) {
             var text = "";
             for (var i = 0; i < 5; i++) {
-                text += "The current market price for #t" + (i + 3994090) + "# is #rNOT DONE#k mesos\r\n";
+                text += "当前#t 的市场价格为" + (i + 3994090) + "#是 #r未完成#k 金币\r\n";
             }
             cm.sendNext("抱歉，我无法完成你的要求。");
             cm.dispose();

@@ -6,7 +6,8 @@
 [CmdletBinding()]
 param(
     [string]$InitCommit,
-    [string]$Bootstrap
+    [string]$Bootstrap,
+    [switch]$ReplayPatchZips
 )
 
 $ErrorActionPreference = "Stop"
@@ -76,6 +77,30 @@ try {
     $applied = [string]$st.appliedCommit
     if ($applied -notmatch '^[0-9a-f]{40}$') { throw "Invalid appliedCommit in $StateFile" }
 
+    if ($ReplayPatchZips) {
+        $patchListReplay = $ver.patches
+        if ($null -eq $patchListReplay) { $patchListReplay = @() }
+        elseif ($patchListReplay -isnot [System.Array]) { $patchListReplay = @($patchListReplay) }
+        $zipPatches = @($patchListReplay | Where-Object { $_.key -and $_.sha256 })
+        if ($zipPatches.Count -eq 0) {
+            Write-Host "No resource patch zips in version.json; nothing to replay."
+        }
+        else {
+            Write-Host "Replaying $($zipPatches.Count) resource patch zip(s) from version.json..."
+            foreach ($p in $zipPatches) {
+                Write-Host "Replay: $($p.key)"
+                $tmpZ = [System.IO.Path]::GetTempFileName()
+                try {
+                    Copy-CosDown $p.key $tmpZ
+                    $got = Get-Sha256File $tmpZ
+                    if ($got -ne $p.sha256) { throw "SHA256 mismatch for replay $($p.key)" }
+                    Invoke-PythonHelper @("unzip", $tmpZ, $ServerRoot)
+                }
+                finally { Remove-Item -LiteralPath $tmpZ -Force -ErrorAction SilentlyContinue }
+            }
+        }
+    }
+
     function Apply-PatchChain {
         param([string]$Current, [string]$Target)
         $cur = $Current
@@ -93,9 +118,15 @@ try {
 
             $artifactOnly = $false
             if ($null -ne $patch.artifactOnly) { $artifactOnly = [bool]$patch.artifactOnly }
-            if (-not $artifactOnly) {
+            $shortFrom = $cur.Substring(0, 12)
+            $shortTo = $patch.toCommit.Substring(0, 12)
+            if ($artifactOnly) {
+                Write-Host "Patch $shortFrom -> $shortTo : artifactOnly (jar updated at end; no resource zip for this step)"
+            }
+            else {
                 $pkey = $patch.key
                 $psha = $patch.sha256
+                Write-Host "Patch $shortFrom -> $shortTo : applying resource zip $pkey"
                 $tmpZ = [System.IO.Path]::GetTempFileName()
                 try {
                     Copy-CosDown $pkey $tmpZ
@@ -112,6 +143,21 @@ try {
 
     if ($applied -ne $headCommit) {
         Apply-PatchChain $applied $headCommit
+    }
+    elseif (-not $ReplayPatchZips) {
+        Write-Host "Patch chain skipped: local appliedCommit already equals headCommit (only the jar is refreshed below)."
+        $plHint = $ver.patches
+        if ($null -eq $plHint) { $plHint = @() }
+        elseif ($plHint -isnot [System.Array]) { $plHint = @($plHint) }
+        $firstFrom = $null
+        foreach ($p in $plHint) {
+            if ($p.key -and $p.sha256) { $firstFrom = $p.fromCommit; break }
+        }
+        if ($firstFrom) {
+            Write-Host "If scripts/wz were never unpacked, state may match head while the tree does not."
+            Write-Host "Fix A: .\deploy\update.ps1 -ReplayPatchZips"
+            Write-Host "Fix B (when disk matches that commit): .\deploy\update.ps1 -InitCommit $firstFrom; .\deploy\update.ps1"
+        }
     }
 
     $jarDest = Join-Path $ServerRoot "BeiDou.jar"

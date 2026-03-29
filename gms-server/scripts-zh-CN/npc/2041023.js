@@ -90,7 +90,7 @@ function action(mode, type, selection) {
                 }
             } else if (selection == 1) {
                 var psState = cm.getPlayer().toggleRecvPartySearchInvite();
-                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "enabled" : "disabled") + "#k。想要改变状态时随时找我。");
+                cm.sendOk("你的组队搜索状态现在是：#b" + (psState ? "已启用" : "已停用") + "#k。想要改变状态时随时找我。");
                 cm.dispose();
             } else {
                 cm.sendOk("#e#b<组队任务：元素死神>#k#n\r\n在进入舞台之前，与另一位具有#rdifferent elemental affinity#k的法师组队。这个团队合作对于克服内部的元素非常关键。");
