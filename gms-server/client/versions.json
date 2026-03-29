@@ -1,0 +1,42 @@
+[
+  {
+    "version": "1.0.1",
+    "patch_url": "1.0.1-patch.5.2.zip",
+    "checksum": "7b736463b126392ba3d9eb0c269682ff0e1456537b9a60bfe2357627b8491ed2"
+  },
+  {
+    "version": "1.0.2",
+    "patch_url": "1.0.2-patch-5.3.zip",
+    "checksum": "aac575499562c4894609498016ff940fe7c3f6831c415cef3b3cc39993cf85c1"
+  },
+  {
+    "version": "1.0.3",
+    "patch_url": "1.0.3-patch-5.4.zip",
+    "checksum": "9b94c2a456f4a74722cda76f2beadcce7c67734d80db99ce173bc4affd25d25e"
+  },
+  {
+    "version": "1.0.7",
+    "patch_url": "1.0.7-patch-5.14.zip",
+    "checksum": "ebe04edb14d8d87c874309e9e30970074e8fe0b4a72950e008078384e6b49367"
+  },
+  {
+    "version": "1.0.8",
+    "patch_url": "1.0.8-patch-5.17.zip",
+    "checksum": "94bf81fd34047d488df0a49fd215da95d4aab94297a15b8c69fabcc601c86b9a"
+  },
+  {
+    "version": "1.0.9",
+    "patch_url": "1.0.9-patch-5.18.zip",
+    "checksum": "86afb3b029f64ca4f5403aa6e58b443b2bc0b9ccca75689681dcf16e36037590"
+  },
+  {
+    "version": "1.1.0",
+    "patch_url": "1.1.0-patch-6.2.zip",
+    "checksum": "552ec5cb44103ab4f88abcca2658320724913478e9991905ff9567e686d528a0"
+  },
+  {
+    "version": "1.1.1",
+    "patch_url": "1.1.1-patch-6.7.zip",
+    "checksum": "617750edb533887ff140d868dc6cb50c3f6dee9411f08b507049566e9e27fcf3"
+  }
+]
