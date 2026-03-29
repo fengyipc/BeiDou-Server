@@ -38,5 +38,10 @@
     "version": "1.1.1",
     "patch_url": "1.1.1-patch-6.7.zip",
     "checksum": "617750edb533887ff140d868dc6cb50c3f6dee9411f08b507049566e9e27fcf3"
+  },
+  {
+    "version": "1.1.2",
+    "patch_url": "1.1.2-client-00006d5186d2.zip",
+    "checksum": "429b0c4c60048ab66658f6a55659ea4994541ed3cfaea0091fe3181f6d74c10b"
   }
 ]
