@@ -10,6 +10,9 @@ docker-db-data
 .codebuddy/teams/
 node_modules/
 
+# wz-client-sync: generated loose client .img output (local test / deploy scratch)
+Data/
+
 # Python
 __pycache__/
 *.pyc

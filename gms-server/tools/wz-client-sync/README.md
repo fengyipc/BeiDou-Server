@@ -26,7 +26,21 @@ python3 -m venv .venv
   --wz-zh-cn ../../wz-zh-CN \
   --client-root /path/to/your/client/img/root \
   --verbose
+
+# 仅处理最近 N 次提交里改动过的 *.img.xml（与 git 仓库根目录下的路径对比）
+.venv/bin/python sync_wz_zh_cn_to_client.py \
+  --wz-zh-cn ../../wz-zh-CN \
+  --client-root /path/to/your/client/img/root \
+  --git-last-commits 5
+
+# 自定义 git 区间（等价于 git diff FROM TO --name-only 后再筛 wz-zh-CN）
+.venv/bin/python sync_wz_zh_cn_to_client.py \
+  --wz-zh-cn ../../wz-zh-CN \
+  --client-root /path/to/your/client/img/root \
+  --git-rev-range HEAD~10 HEAD
 ```
+
+若 `--wz-zh-cn` 不在 Git 工作区内，可显式指定 `--git-repo` 为仓库根目录。
 
 映射规则：`wz-zh-CN/String.wz/Foo.img.xml` → `<client-root>/String/Foo.img`。
 
