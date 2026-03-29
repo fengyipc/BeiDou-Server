@@ -1,0 +1,3 @@
+.venv/
+_test_out.img
+__pycache__/
