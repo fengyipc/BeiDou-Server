@@ -1282,6 +1282,9 @@ public class ItemInformationProvider {
         equip.setMdef(getRandStat(equip.getMdef(), 10, godStat));
         equip.setHp(getRandStat(equip.getHp(), 10, godStat));
         equip.setMp(getRandStat(equip.getMp(), 10, godStat));
+        if (godStat) {
+            equip.setOwner("「稀有」");
+        }
         return equip;
     }
 
