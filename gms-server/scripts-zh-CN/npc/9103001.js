@@ -62,7 +62,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<组队任务：鲁塔比迷宫>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n这是通往鲁塔比迷宫的入口。尽情享受吧！\r\n#b#L0#进入鲁塔比迷宫#l\r\n#L1#我想要" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#什么是鲁塔比迷宫？");
+            cm.sendSimple("#e#b<组队任务：鲁塔比迷宫>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n这是通往鲁塔比迷宫的入口。尽情享受吧！\r\n#b#L0#进入鲁塔比迷宫#l\r\n#L1#我想要" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#什么是鲁塔比迷宫？");
         } else if (status == 1) {
             if (selection == 0) {
                 if (cm.getParty() == null) {

@@ -72,7 +72,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<公会任务：沙连尼安遗迹>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n通往沙连尼安的道路就在这里。你想做什么？#b\r\n#L0#注册公会进行公会任务#l\r\n#L1#加入你的公会的公会任务#l\r\n#L2#我想了解更多细节。#l");
+            cm.sendSimple("#e#b<公会任务：沙连尼安遗迹>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n通往沙连尼安的道路就在这里。你想做什么？#b\r\n#L0#注册公会进行公会任务#l\r\n#L1#加入你的公会的公会任务#l\r\n#L2#我想了解更多细节。#l");
         } else if (status == 1) {
             sel = selection;
             if (selection == 0) {

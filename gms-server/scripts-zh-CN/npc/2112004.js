@@ -66,7 +66,7 @@ function action(mode, type, selection) {
                     return;
                 }
 
-                cm.sendSimple("#e#b<组队任务：罗密欧与朱丽叶>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n我心爱的朱丽叶被绑架了！虽然她是卡帕莱特的人，但我不能坐视她因这场愚蠢的冲突而受苦。我需要你和你的伙伴们帮助我救她！拜托，帮帮我们！！请让你的#b队长#k和我谈谈。#b\r\n#L0#我想参加这个组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多细节。");
+                cm.sendSimple("#e#b<组队任务：罗密欧与朱丽叶>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n我心爱的朱丽叶被绑架了！虽然她是卡帕莱特的人，但我不能坐视她因这场愚蠢的冲突而受苦。我需要你和你的伙伴们帮助我救她！拜托，帮帮我们！！请让你的#b队长#k和我谈谈。#b\r\n#L0#我想参加这个组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多细节。");
             } else if (status == 1) {
                 if (selection == 0) {
                     if (cm.getParty() == null) {

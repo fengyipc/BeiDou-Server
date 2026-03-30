@@ -57,7 +57,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            cm.sendSimple("#e#b<组队任务：MV的巢穴>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n由于前方有极其危险的生物，你无法继续前进。你想要和队友合作完成任务吗？如果是的话，请让你的 #b队伍领袖#k 和我交谈。#b\r\n#L0#我想参与组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多详情。");
+            cm.sendSimple("#e#b<组队任务：MV的巢穴>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n由于前方有极其危险的生物，你无法继续前进。你想要和队友合作完成任务吗？如果是的话，请让你的 #b队伍领袖#k 和我交谈。#b\r\n#L0#我想参与组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启") + "组队搜索。\r\n#L2#我想了解更多详情。");
         } else if (status == 1) {
             if (selection == 0) {
                 if (cm.getParty() == null) {

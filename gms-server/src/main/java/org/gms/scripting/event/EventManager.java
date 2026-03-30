@@ -36,7 +36,9 @@ import org.slf4j.LoggerFactory;
 import org.gms.scripting.event.scheduler.EventScriptScheduler;
 import org.gms.server.Marriage;
 import org.gms.server.ThreadManager;
+import org.gms.constants.string.CharsetConstants;
 import org.gms.server.expeditions.Expedition;
+import org.gms.server.partyquest.PartyQuestDailyLog;
 import org.gms.server.life.LifeFactory;
 import org.gms.server.life.Monster;
 import org.gms.server.maps.MapleMap;
@@ -448,6 +450,30 @@ public class EventManager {
     }
 
     /**
+     * NPC 对话用：本 Event 对应 PQ 的每日次数说明（含 # 颜色码），随 {@link CharsetConstants#isZhCN()} 切换简中/英文。
+     */
+    public String getPartyQuestDailyStatusLine(Character chr) {
+        if (chr == null) {
+            return "";
+        }
+        if (!PartyQuestDailyLog.isLimitApplicable(name)) {
+            return CharsetConstants.isZhCN()
+                    ? "\r\n#e每日次数：#b未启用限制#n"
+                    : "\r\n#eDaily PQ limit: #bnot enabled#n";
+        }
+        int used = PartyQuestDailyLog.countAttempts(chr.getId(), name);
+        if (used < 0) {
+            used = 0;
+        }
+        int lim = PartyQuestDailyLog.getEffectiveLimit(name);
+        int rem = Math.max(0, lim - used);
+        if (CharsetConstants.isZhCN()) {
+            return "\r\n#e每日次数：#b已挑战 " + used + " 次#k，#b今日还可 " + rem + " 次#k（上限 " + lim + " 次/日）#n";
+        }
+        return "\r\n#eDaily PQ: #b" + used + " used#k, #b" + rem + " left#k (max " + lim + "/day)#n";
+    }
+
+    /**
      * 获取可用的大厅实例ID
      * @return 大厅ID，如果没有可用则返回-1
      */
@@ -761,6 +787,7 @@ public class EventManager {
                         eim.setLeader(leader);
 
                         eim.registerParty(party, map);
+                        PartyQuestDailyLog.recordAttempts(party.getEligibleMembers(), name);
                         party.setEligibleMembers(null);
 
                         eim.startEvent();
@@ -856,6 +883,7 @@ public class EventManager {
                         eim.setLeader(leader);
 
                         eim.registerParty(party, map);
+                        PartyQuestDailyLog.recordAttempts(party.getEligibleMembers(), name);
                         party.setEligibleMembers(null);
 
                         eim.startEvent();
@@ -984,8 +1012,9 @@ public class EventManager {
 
             if (o instanceof PartyCharacter[] partyChrs) {
                 final List<PartyCharacter> eligibleParty = new ArrayList<>(Arrays.asList(partyChrs));
-                party.setEligibleMembers(eligibleParty);
-                return eligibleParty;
+                List<PartyCharacter> filtered = PartyQuestDailyLog.filterEligible(eligibleParty, name);
+                party.setEligibleMembers(filtered);
+                return filtered;
             }
         } catch (ScriptException | NoSuchMethodException ex) {
             ex.printStackTrace();

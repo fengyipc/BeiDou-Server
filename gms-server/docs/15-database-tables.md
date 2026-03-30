@@ -776,13 +776,13 @@
 
 ### 14.1 bosslog_daily - 每日BOSS挑战日志表
 
-存储角色每日挑战BOSS的记录。
+存储角色每日挑战 BOSS 的记录，以及（可选）组队 PQ 副本参与记录：`bosstype` 为 `PQ_<EventName>` 前缀（与 `scripts/event` 下事件脚本名一致，如 `PQ_LudiPQ`），由 `PartyQuestDailyLog` 写入；与远征 BOSS 条目一同在每日重置任务中按时间清理。
 
 | 字段 | 类型 | 说明 | 约束 |
 |------|------|------|------|
 | id | INT(11) | ID | PK, Auto Increment |
 | characterid | INT(11) | 角色ID | NOT NULL |
-| bosstype | VARCHAR(32) | BOSS类型 | NOT NULL |
+| bosstype | VARCHAR(32) | BOSS 类型或 `PQ_*` | NOT NULL |
 | attempttime | TIMESTAMP | 挑战时间 | NOT NULL |
 
 ### 14.2 bosslog_weekly - 每周BOSS挑战日志表

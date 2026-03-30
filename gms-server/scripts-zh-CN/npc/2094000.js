@@ -58,7 +58,7 @@ function action(mode, type, selection) {
                 return;
             }
 
-            let text = "#e#b<组队任务：海盗船>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n";
+            let text = "#e#b<组队任务：海盗船>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n";
             text += "救命啊！我的儿子被绑在可怕的#r老海盗#k手中。我需要你的帮助... 你能组建或加入一个队伍来救他吗？请让你的#b队伍领袖#k与我交谈或者组建一个队伍\r\n";
             text += "#b#L0#我想参加这个组队任务\r\n";
             text += "#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索\r\n";

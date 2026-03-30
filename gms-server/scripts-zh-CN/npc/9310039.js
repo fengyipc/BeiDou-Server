@@ -42,7 +42,7 @@ function levelnull() {
     level();
 }
 function levelStart() {
-    let msg = `#e#b<组队任务> ${PartyName}#n\r\n${PartyInfo}#k\r\n\r\n`;
+    let msg = `#e#b<组队任务> ${PartyName}#n\r\n${PartyInfo}${em.getPartyQuestDailyStatusLine(cm.getPlayer())}#k\r\n\r\n`;
         msg += `你和你的队伍成员一起完成任务怎么样？\r\n在这里，你会遇到障碍和问题，如果没有出色的团队合作，你是无法完成的。\r\n如果你想尝试，请告诉你的#b队长#k来找我谈谈。#b\r\n`;
         msg += `#L0#我想参加组队任务。#l\r\n`;
         msg += `#L1#我想 ${(cm.getPlayer().isRecvPartySearchInviteEnabled() ? "关闭" : "开启")} 组队搜索。#l\r\n`;

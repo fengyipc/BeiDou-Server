@@ -56,7 +56,7 @@ function action(mode, type, selection) {
                 cm.sendOk("你不符合条件参加枫叶城要塞派对任务！");
                 cm.dispose();
             } else if (expedition == null) { //Start an expedition
-                cm.sendSimple("#e#b<组队任务：红树林要塞>\r\n#k#n" + em.getProperty("party") + "\r\n\r\n你想组建一个队伍来尝试#r红树林要塞组队任务#k吗？\r\n#b#L1#让我们开始吧！#l\r\n\#L2#不，我想再等一会儿...#l");
+                cm.sendSimple("#e#b<组队任务：红树林要塞>\r\n#k#n" + em.getProperty("party") + em.getPartyQuestDailyStatusLine(cm.getPlayer()) + "\r\n\r\n你想组建一个队伍来尝试#r红树林要塞组队任务#k吗？\r\n#b#L1#让我们开始吧！#l\r\n\#L2#不，我想再等一会儿...#l");
                 status = 1;
             } else if (expedition.isLeader(player)) { //If you're the leader, manage the exped
                 if (expedition.isInProgress()) {

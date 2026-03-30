@@ -134,6 +134,12 @@ public class ExpeditionBossLog {
                     ps.executeUpdate();
                 }
             }
+            if (!week) {
+                try (PreparedStatement ps = con.prepareStatement("DELETE FROM bosslog_daily WHERE attempttime <= ? AND bosstype LIKE 'PQ_%'")) {
+                    ps.setTimestamp(1, new Timestamp(c.getTimeInMillis()));
+                    ps.executeUpdate();
+                }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
