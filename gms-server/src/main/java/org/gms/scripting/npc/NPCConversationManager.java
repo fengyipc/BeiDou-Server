@@ -254,13 +254,9 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         getClient().sendPacket(PacketCreator.getNPCTalkText(npc, text, "",speaker));
     }
     /*
-     * 0 = ariant colliseum
-     * 1 = Dojo
-     * 2 = Carnival 1
-     * 3 = Carnival 2
-     * 4 = Ghost Ship PQ?
-     * 5 = Pyramid PQ
-     * 6 = Kerning Subway
+     * Dimensional mirror (9010022.js) indices:
+     * 0 = Ludibrium PQ, 1 = Ellin PQ, 2 = Monster Carnival 1, 3 = Monster Carnival 2,
+     * 4 = Orbis PQ, 5 = Pirate PQ, 6 = Magatia PQ (Romeo & Juliet).
      */
     public void sendDimensionalMirror(String text) {
         nextLevelContext.clear();
