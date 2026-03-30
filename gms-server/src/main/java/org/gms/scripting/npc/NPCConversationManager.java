@@ -95,6 +95,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     private final Map<Integer, String> npcDefaultTalks = new HashMap<>();
     @Getter
     private final NextLevelContext nextLevelContext = new NextLevelContext();
+    private boolean dialogSent = false;
 
     private String getDefaultTalk(int npcid) {
         String talk = npcDefaultTalks.get(npcid);
@@ -145,6 +146,14 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         this.itemScript = false;
     }
 
+    public void resetDialogFlag() {
+        this.dialogSent = false;
+    }
+
+    public boolean wasDialogSent() {
+        return this.dialogSent;
+    }
+
     public void dispose() {
         nextLevelContext.clear();
         NPCScriptManager.getInstance().dispose(this);
@@ -153,21 +162,25 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 
     public void sendNext(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "00 01", (byte) 0));
     }
 
     public void sendPrev(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "01 00", (byte) 0));
     }
 
     public void sendNextPrev(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "01 01", (byte) 0));
     }
 
     public void sendOk(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "00 00", (byte) 0));
     }
 
@@ -177,57 +190,68 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 
     public void sendYesNo(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 1, text, "", (byte) 0));
     }
 
     public void sendAcceptDecline(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0x0C, text, "", (byte) 0));
     }
 
     public void sendSimple(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 4, text, "", (byte) 0));
     }
 
     public void sendNext(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "00 01", speaker));
     }
 
     public void sendPrev(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "01 00", speaker));
     }
 
     public void sendNextPrev(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "01 01", speaker));
     }
 
     public void sendOk(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0, text, "00 00", speaker));
     }
 
     public void sendYesNo(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 1, text, "", speaker));
     }
 
     public void sendAcceptDecline(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 0x0C, text, "", speaker));
     }
 
     public void sendSimple(String text, byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalk(npc, (byte) 4, text, "", speaker));
     }
 
     public void sendStyle(String text, int[] styles) {
         if (styles.length > 0) {
             nextLevelContext.clear();
+            this.dialogSent = true;
             getClient().sendPacket(PacketCreator.getNPCTalkStyle(npc, text, styles));
         } else {    // thanks Conrad for noticing empty styles crashing players
             sendOk("Sorry, there are no options of cosmetics available for you here at the moment.");
@@ -237,20 +261,24 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 
     public void sendGetNumber(String text, int def, int min, int max) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalkNum(npc, text, def, min, max));
     }
 
     public void sendGetText(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalkText(npc, text, ""));
     }
     public void sendGetNumber(String text, int def, int min, int max,byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalkNum(npc, text, def, min, max,speaker));
     }
 
     public void sendGetText(String text,byte speaker) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getNPCTalkText(npc, text, "",speaker));
     }
     /*
@@ -260,6 +288,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
      */
     public void sendDimensionalMirror(String text) {
         nextLevelContext.clear();
+        this.dialogSent = true;
         getClient().sendPacket(PacketCreator.getDimensionalMirror(text));
     }
 

@@ -175,7 +175,17 @@ public class NPCScriptManager extends AbstractScriptManager {
             try {
                 c.tryacquireClient();
                 c.setClickedNPC();
+                NPCConversationManager cm = getCM(c);
+                if (cm != null) {
+                    cm.resetDialogFlag();
+                }
                 iv.invokeFunction("action", mode, type, selection);
+                cm = getCM(c);
+                if (cm != null && !cm.wasDialogSent()) {
+                    log.warn("NPC script {} (script: {}) action() returned without sending dialog or disposing — auto-disposing to prevent stuck conversation",
+                            cm.getNpc(), cm.getScriptName());
+                    dispose(c, true);
+                }
             } catch (Exception t) {
                 if (getCM(c) != null) {
                     log.error("Error performing NPC script action for npc: {}", getCM(c).getNpc(), t);
@@ -193,6 +203,10 @@ public class NPCScriptManager extends AbstractScriptManager {
             try {
                 c.tryacquireClient();
                 c.setClickedNPC();
+                NPCConversationManager cm = getCM(c);
+                if (cm != null) {
+                    cm.resetDialogFlag();
+                }
                 NextLevelContext nextLevelContext = c.getCM().getNextLevelContext();
                 switch (nextLevelContext.getLevelType()) {
                     case NextLevelType.SEND_SELECT -> {
@@ -232,6 +246,12 @@ public class NPCScriptManager extends AbstractScriptManager {
                         log.error("Unsupported level type: {}", nextLevelContext.getLevelType());
                         dispose(c, true);
                     }
+                }
+                cm = getCM(c);
+                if (cm != null && !cm.wasDialogSent()) {
+                    log.warn("NPC script {} (script: {}) nextLevel() returned without sending dialog or disposing — auto-disposing to prevent stuck conversation",
+                            cm.getNpc(), cm.getScriptName());
+                    dispose(c, true);
                 }
             } catch (Exception t) {
                 if (getCM(c) != null) {
