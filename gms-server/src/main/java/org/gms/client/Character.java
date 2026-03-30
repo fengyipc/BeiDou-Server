@@ -109,6 +109,10 @@ import static java.util.concurrent.TimeUnit.*;
 public class Character extends AbstractCharacterObject {
     private static final Logger log = LoggerFactory.getLogger(Character.class);
 
+    /** Max slots for equip / use / setup / etc (see {@link #canGainSlots(int, int)}). */
+    private static final int NEW_CHARACTER_INVENTORY_SLOTS = 96;
+    private static final int NEW_CHARACTER_NX_CREDIT_BONUS = 10_000;
+
     @Getter
     @Setter
     private int world;
@@ -541,10 +545,10 @@ public class Character extends AbstractCharacterObject {
         ret.accountId = c.getAccID();
         ret.buddylist = new BuddyList(20);
         ret.mapleMount = null;
-        ret.getInventory(InventoryType.EQUIP).setSlotLimit(24);
-        ret.getInventory(InventoryType.USE).setSlotLimit(24);
-        ret.getInventory(InventoryType.SETUP).setSlotLimit(24);
-        ret.getInventory(InventoryType.ETC).setSlotLimit(24);
+        ret.getInventory(InventoryType.EQUIP).setSlotLimit(NEW_CHARACTER_INVENTORY_SLOTS);
+        ret.getInventory(InventoryType.USE).setSlotLimit(NEW_CHARACTER_INVENTORY_SLOTS);
+        ret.getInventory(InventoryType.SETUP).setSlotLimit(NEW_CHARACTER_INVENTORY_SLOTS);
+        ret.getInventory(InventoryType.ETC).setSlotLimit(NEW_CHARACTER_INVENTORY_SLOTS);
 
         // Select a keybinding method
         boolean useCustomKeySet = GameConfig.getServerBoolean("use_custom_keyset");
@@ -7232,7 +7236,7 @@ public class Character extends AbstractCharacterObject {
 
             try {
                 // Character info
-                try (PreparedStatement ps = con.prepareStatement("INSERT INTO characters (str, dex, luk, `int`, gm, skincolor, gender, job, hair, face, map, meso, spawnpoint, accountid, name, world, hp, mp, maxhp, maxmp, level, ap, sp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS)) {
+                try (PreparedStatement ps = con.prepareStatement("INSERT INTO characters (str, dex, luk, `int`, gm, skincolor, gender, job, hair, face, map, meso, spawnpoint, accountid, name, world, hp, mp, maxhp, maxmp, level, ap, sp, equipslots, useslots, setupslots, etcslots) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS)) {
                     ps.setInt(1, attrStr);
                     ps.setInt(2, attrDex);
                     ps.setInt(3, attrLuk);
@@ -7263,6 +7267,10 @@ public class Character extends AbstractCharacterObject {
                     }
                     String sp = sps.toString();
                     ps.setString(23, sp.substring(0, sp.length() - 1));
+                    ps.setInt(24, getInventory(InventoryType.EQUIP).getSlotLimit());
+                    ps.setInt(25, getInventory(InventoryType.USE).getSlotLimit());
+                    ps.setInt(26, getInventory(InventoryType.SETUP).getSlotLimit());
+                    ps.setInt(27, getInventory(InventoryType.ETC).getSlotLimit());
 
                     int updateRows = ps.executeUpdate();
                     if (updateRows < 1) {
@@ -7278,6 +7286,15 @@ public class Character extends AbstractCharacterObject {
                             return false;
                         }
                     }
+                }
+
+                // 仅账号下第一个角色送抵用券（插入后该 account 仅 1 条 character）
+                try (PreparedStatement ps = con.prepareStatement(
+                        "UPDATE accounts SET nxCredit = COALESCE(nxCredit, 0) + ? WHERE id = ? AND (SELECT COUNT(*) FROM characters WHERE accountid = ?) = 1")) {
+                    ps.setInt(1, NEW_CHARACTER_NX_CREDIT_BONUS);
+                    ps.setInt(2, accountId);
+                    ps.setInt(3, accountId);
+                    ps.executeUpdate();
                 }
 
                 // Select a keybinding method
