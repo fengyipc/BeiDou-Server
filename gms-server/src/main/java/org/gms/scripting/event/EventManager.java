@@ -456,10 +456,11 @@ public class EventManager {
         if (chr == null) {
             return "";
         }
+        // 与 event 脚本 setProperty("party") 中人数/等级/时间行一致：\r\n + 缩进 + "标签: 值"，无颜色码
         if (!PartyQuestDailyLog.isLimitApplicable(name)) {
             return CharsetConstants.isZhCN()
-                    ? "\r\n#e每日次数：#b未启用限制#n"
-                    : "\r\n#eDaily PQ limit: #bnot enabled#n";
+                    ? "\r\n   每日次数: 未启用限制"
+                    : "\r\n    Daily attempts: not enabled";
         }
         int used = PartyQuestDailyLog.countAttempts(chr.getId(), name);
         if (used < 0) {
@@ -468,9 +469,9 @@ public class EventManager {
         int lim = PartyQuestDailyLog.getEffectiveLimit(name);
         int rem = Math.max(0, lim - used);
         if (CharsetConstants.isZhCN()) {
-            return "\r\n#e每日次数：#b已挑战 " + used + " 次#k，#b今日还可 " + rem + " 次#k（上限 " + lim + " 次/日）#n";
+            return "\r\n   每日次数: 已挑战 " + used + " 次，今日还可 " + rem + " 次（每日上限 " + lim + " 次）";
         }
-        return "\r\n#eDaily PQ: #b" + used + " used#k, #b" + rem + " left#k (max " + lim + "/day)#n";
+        return "\r\n    Daily attempts: " + used + " used, " + rem + " remaining today (max " + lim + " per day)";
     }
 
     /**
