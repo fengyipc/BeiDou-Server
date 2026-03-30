@@ -8,6 +8,10 @@ function start() {
 }
 
 function action(mode, type, selection) {
+    if (mode == -1) {
+        cm.dispose();
+        return;
+    }
     if (mode == 1) {
         status++;
     } else {
@@ -74,6 +78,8 @@ function action(mode, type, selection) {
         cm.dispose();
     } else if (status == 100) {
         cm.warp(910320000, 0);
+        cm.dispose();
+    } else {
         cm.dispose();
     }
 }

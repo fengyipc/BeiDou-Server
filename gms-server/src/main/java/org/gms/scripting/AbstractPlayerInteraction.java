@@ -723,6 +723,10 @@ public class AbstractPlayerInteraction {
         c.sendPacket(PacketCreator.showIntro(path));
     }
 
+    public void showWZEffect(String path) {
+        c.sendPacket(PacketCreator.showIntro(path));
+    }
+
     public void showInfo(String path) {
         c.sendPacket(PacketCreator.showInfo(path));
         c.sendPacket(PacketCreator.enableActions());
