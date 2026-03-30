@@ -37,11 +37,11 @@ function action(mode, type, selection) {
             if (lv >= 51) {
                 selStr += "#3# 怪物嘉年华2";
             }
-            if (lv >= 51) {
-                selStr += "#4# 女神塔组队任务";
-            }
             if (lv >= 55) {
-                selStr += "#5# 海盗船";
+                selStr += "#4# 海盗船";
+            }
+            if (lv >= 51) {
+                selStr += "#5# 女神塔组队任务";
             }
             if (lv >= 71) {
                 selStr += "#6# 罗密欧与朱丽叶";
@@ -57,7 +57,7 @@ function action(mode, type, selection) {
             cm.getPlayer().saveLocation("MIRROR");
             switch (selection) {
                 case 0:
-                    cm.warp(922010100, 0);
+                    cm.warp(221024500, 0);
                     break;
                 case 1:
                     cm.warp(300030100, 0);
@@ -71,10 +71,10 @@ function action(mode, type, selection) {
                     cm.warp(980030000, 3);
                     break;
                 case 4:
-                    cm.warp(200080101, 0);
+                    cm.warp(251010404, 0);
                     break;
                 case 5:
-                    cm.warp(251010404, 0);
+                    cm.warp(200080101, 0);
                     break;
                 case 6:
                     cm.warp(261000021, 0);

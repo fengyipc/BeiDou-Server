@@ -256,7 +256,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     /*
      * Dimensional mirror (9010022.js) indices:
      * 0 = Ludibrium PQ, 1 = Ellin PQ, 2 = Monster Carnival 1, 3 = Monster Carnival 2,
-     * 4 = Orbis PQ, 5 = Pirate PQ, 6 = Magatia PQ (Romeo & Juliet).
+     * 4 = Pirate PQ, 5 = Orbis PQ, 6 = Magatia PQ (Romeo & Juliet).
      */
     public void sendDimensionalMirror(String text) {
         nextLevelContext.clear();

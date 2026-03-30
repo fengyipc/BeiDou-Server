@@ -37,11 +37,11 @@ function action(mode, type, selection) {
             if (lv >= 51) {
                 selStr += "#3# Monster Carnival 2";
             }
-            if (lv >= 51) {
-                selStr += "#4# Orbis PQ (Goddess Tower)";
-            }
             if (lv >= 55) {
-                selStr += "#5# Pirate Ship";
+                selStr += "#4# Pirate Ship";
+            }
+            if (lv >= 51) {
+                selStr += "#5# Orbis PQ (Goddess Tower)";
             }
             if (lv >= 71) {
                 selStr += "#6# Romeo and Juliet";
@@ -57,7 +57,7 @@ function action(mode, type, selection) {
             cm.getPlayer().saveLocation("MIRROR");
             switch (selection) {
                 case 0:
-                    cm.warp(922010100, 0);
+                    cm.warp(221024500, 0);
                     break;
                 case 1:
                     cm.warp(300030100, 0);
@@ -71,10 +71,10 @@ function action(mode, type, selection) {
                     cm.warp(980030000, 3);
                     break;
                 case 4:
-                    cm.warp(200080101, 0);
+                    cm.warp(251010404, 0);
                     break;
                 case 5:
-                    cm.warp(251010404, 0);
+                    cm.warp(200080101, 0);
                     break;
                 case 6:
                     cm.warp(261000021, 0);
