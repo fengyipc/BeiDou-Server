@@ -73,7 +73,7 @@ public final class PartyQuestDailyLog {
         }
         int def = GameConfig.getServerInt("pq_daily_limit_default");
         if (def <= 0) {
-            def = 3;
+            def = 5;
         }
         Map<String, Integer> overrides = GameConfig.getServerObject("pq_daily_limit_overrides", new TypeReference<Map<String, Integer>>() {
         });

@@ -6,11 +6,11 @@ ALTER TABLE `bosslog_weekly`
     MODIFY COLUMN `bosstype` VARCHAR(32) NOT NULL;
 
 INSERT INTO `game_config`(`config_type`, `config_sub_type`, `config_clazz`, `config_code`, `config_value`, `config_desc`, `update_time`)
-SELECT 'server', 'Game Mechanics', 'java.lang.Boolean', 'pq_daily_limit_enabled', 'false', 'pq_daily_limit_enabled', NOW()
+SELECT 'server', 'Game Mechanics', 'java.lang.Boolean', 'pq_daily_limit_enabled', 'true', 'pq_daily_limit_enabled', NOW()
 WHERE NOT EXISTS (SELECT 1 FROM `game_config` WHERE `config_code` = 'pq_daily_limit_enabled');
 
 INSERT INTO `game_config`(`config_type`, `config_sub_type`, `config_clazz`, `config_code`, `config_value`, `config_desc`, `update_time`)
-SELECT 'server', 'Game Mechanics', 'java.lang.Integer', 'pq_daily_limit_default', '3', 'pq_daily_limit_default', NOW()
+SELECT 'server', 'Game Mechanics', 'java.lang.Integer', 'pq_daily_limit_default', '5', 'pq_daily_limit_default', NOW()
 WHERE NOT EXISTS (SELECT 1 FROM `game_config` WHERE `config_code` = 'pq_daily_limit_default');
 
 INSERT INTO `game_config`(`config_type`, `config_sub_type`, `config_clazz`, `config_code`, `config_value`, `config_desc`, `update_time`)

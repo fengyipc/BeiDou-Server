@@ -23,7 +23,7 @@
 
 - 按**角色**（character id）统计每个 PQ（以 Event 脚本名为准）的每日参与次数。
 - 支持**全局开关**、**默认次数**、**按副本名单独覆盖**；可选**排除名单**不参与限制。
-- 默认关闭限制，避免影响现有服务器行为。
+- 默认开启限制，默认每日 5 次（可在 `game_config` 关闭或调整）。
 
 ### 1.3 范围
 
@@ -90,8 +90,8 @@
 
 ### 5.2 配置项（server）
 
-- `pq_daily_limit_enabled`（boolean，默认 false）
-- `pq_daily_limit_default`（int）
+- `pq_daily_limit_enabled`（boolean，默认 true）
+- `pq_daily_limit_default`（int，默认 5）
 - `pq_daily_limit_overrides`（JSON 对象，键为 Event 名）
 - `pq_daily_limit_excluded`（JSON 字符串数组，可选）
 
