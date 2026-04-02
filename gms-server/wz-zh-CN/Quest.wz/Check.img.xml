@@ -37360,7 +37360,13 @@
     <imgdir name="3042">
         <imgdir name="0">
             <int name="npc" value="1032106"/>
-            <int name="lvmin" value="40"/>
+            <int name="lvmin" value="30"/>
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="30040"/>
+                    <int name="state" value="2"/>
+                </imgdir>
+            </imgdir>
         </imgdir>
         <imgdir name="1">
             <int name="npc" value="2012011"/>
@@ -76468,6 +76474,21 @@
         <imgdir name="1">
             <string name="endscript" value="q30004e"/>
             <int name="npc" value="2101"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="30040">
+        <imgdir name="0">
+            <int name="npc" value="1061011" />
+            <int name="lvmin" value="30" />
+            <imgdir name="quest">
+                <imgdir name="0">
+                    <int name="id" value="28283" />
+                    <int name="state" value="2" />
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <int name="npc" value="1032106" />
         </imgdir>
     </imgdir>
     <imgdir name="4100">
