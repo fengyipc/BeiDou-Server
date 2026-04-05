@@ -64,7 +64,9 @@ FILES_RAW="$(mktemp)"
 PATCH_ZIP=""
 cleanup() {
   rm -f "$PREV_FILE" "$NEW_VER" "$FILES_TMP" "$FILES_RAW"
-  [[ -n "$PATCH_ZIP" && -f "$PATCH_ZIP" ]] && rm -f "$PATCH_ZIP"
+  if [[ -n "$PATCH_ZIP" && -f "$PATCH_ZIP" ]]; then
+    rm -f "$PATCH_ZIP"
+  fi
 }
 trap cleanup EXIT
 
