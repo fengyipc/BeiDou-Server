@@ -162,7 +162,7 @@ public class CashShop {
                         .price(price)
                         .bonus(bonus)
                         .priority(priority)
-                        .period(period == 0 ? 90 : period)
+                        .period(period == 0 ? -1 : period)
                         .maplePoint(maplePoint)
                         .meso(meso)
                         .forPremiumUser(forPremiumUser)
