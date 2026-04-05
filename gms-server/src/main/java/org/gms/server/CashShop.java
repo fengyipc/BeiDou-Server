@@ -130,6 +130,13 @@ public class CashShop {
         @Getter
         private static final Map<Integer, ModifiedCashItemDO> modifiedCashItems = new HashMap<>();
 
+        /**
+         * Commodity.img 里 Period 常为 0（旧服映射为 90 天）或直接为 90（时装等默认三个月），统一成无期限。
+         */
+        private static long normalizeCommodityPeriod(long period) {
+            return (period == 0 || period == 90) ? -1 : period;
+        }
+
         public static void loadAllCashItems() {
             DataProvider etc = DataProviderFactory.getDataProvider(WZFiles.ETC);
 
@@ -162,7 +169,7 @@ public class CashShop {
                         .price(price)
                         .bonus(bonus)
                         .priority(priority)
-                        .period(period == 0 ? -1 : period)
+                        .period(normalizeCommodityPeriod(period))
                         .maplePoint(maplePoint)
                         .meso(meso)
                         .forPremiumUser(forPremiumUser)
@@ -232,7 +239,12 @@ public class CashShop {
             if (dbItemDO != null) {
                 returnDo.setItemId(Optional.ofNullable(dbItemDO.getItemId()).orElse(cashItemDO.getItemId()));
                 returnDo.setPrice(Optional.ofNullable(dbItemDO.getPrice()).orElse(cashItemDO.getPrice()));
-                returnDo.setPeriod(Optional.ofNullable(dbItemDO.getPeriod()).orElse(cashItemDO.getPeriod()));
+                // DB 里若曾写入 90（与旧 WZ 默认一致），视为未覆盖，使用 WZ 规范化后的周期
+                Long dbPeriod = dbItemDO.getPeriod();
+                if (dbPeriod != null && dbPeriod == 90L) {
+                    dbPeriod = null;
+                }
+                returnDo.setPeriod(Optional.ofNullable(dbPeriod).orElse(cashItemDO.getPeriod()));
                 returnDo.setPriority(Optional.ofNullable(dbItemDO.getPriority()).orElse(cashItemDO.getPriority()));
                 returnDo.setCount(Optional.ofNullable(dbItemDO.getCount()).orElse(cashItemDO.getCount()));
                 returnDo.setOnSale(Optional.ofNullable(dbItemDO.getOnSale()).orElse(cashItemDO.getOnSale()));
