@@ -129,7 +129,33 @@ if [[ "$has_resources" == true ]]; then
 fi
 
 if [[ "$SKIP_MAVEN" != true ]]; then
-  mvn -q -f "$SERVER_ROOT/pom.xml" package -DskipTests
+  # Ensure JDK 21 is used for compilation (macOS Homebrew path as fallback)
+  if [[ -z "${JAVA_HOME:-}" ]]; then
+    for candidate in \
+      /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home \
+      /usr/lib/jvm/java-21-openjdk-amd64 \
+      /usr/lib/jvm/java-21; do
+      if [[ -d "$candidate" ]]; then
+        export JAVA_HOME="$candidate"
+        break
+      fi
+    done
+  fi
+  if [[ -n "${JAVA_HOME:-}" ]]; then
+    echo "Using JAVA_HOME=$JAVA_HOME"
+  fi
+  mvn -q -f "$SERVER_ROOT/pom.xml" package -Dmaven.test.skip=true
+
+  # Workaround: maven-jar-plugin on macOS may produce an incomplete JAR.
+  # Patch the fat JAR with the full set of compiled classes.
+  CLASSES_DIR="$SERVER_ROOT/target/classes"
+  if [[ -d "$CLASSES_DIR" ]]; then
+    FIX_TMP="$(mktemp -d)"
+    mkdir -p "$FIX_TMP/BOOT-INF"
+    cp -a "$CLASSES_DIR" "$FIX_TMP/BOOT-INF/classes"
+    jar uf "$SERVER_ROOT/target/BeiDou.jar" -C "$FIX_TMP" BOOT-INF/classes
+    rm -rf "$FIX_TMP"
+  fi
 fi
 
 JAR_PATH="$SERVER_ROOT/target/BeiDou.jar"
