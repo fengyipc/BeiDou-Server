@@ -2314,7 +2314,7 @@
                 <string name="Title" value="射手村"/>
             </imgdir>
             <imgdir name="2">
-                <string name="Title" value="射手村西部小山 (南港/废气都市方向)"/>
+                <string name="Title" value="射手村西部小山 (南港/废弃都市方向)"/>
             </imgdir>
             <imgdir name="3">
                 <string name="Title" value="射手训练场II"/>
@@ -2338,7 +2338,7 @@
         </imgdir>
         <imgdir name="105030000">
             <imgdir name="0">
-                <string name="Title" value="潮湿的沼泽地 (废气都市方向)"/>
+                <string name="Title" value="潮湿的沼泽地 (废弃都市方向)"/>
             </imgdir>
             <imgdir name="1">
                 <string name="Title" value="勇士部落迷宫通道 (勇士部落方向)"/>
@@ -3554,7 +3554,7 @@
             </imgdir>
             <imgdir name="102010000">
                 <imgdir name="0">
-                    <string name="Title" value="西部岩山1 (废气都市方向)"/>
+                    <string name="Title" value="西部岩山1 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="勇士部落"/>
@@ -3562,7 +3562,7 @@
             </imgdir>
             <imgdir name="102020000">
                 <imgdir name="0">
-                    <string name="Title" value="勇士部落西部 (废气都市方向)"/>
+                    <string name="Title" value="勇士部落西部 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="西部岩山2 (西部岩山方向)"/>
@@ -3571,7 +3571,7 @@
                     <string name="Title" value="勇士村西入口 (勇士部落方向)"/>
                 </imgdir>
                 <imgdir name="3">
-                    <string name="Title" value="勇士部落西部 (废气都市方向)"/>
+                    <string name="Title" value="勇士部落西部 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="4">
                     <string name="Title" value="西部岩山2 (西部岩山方向)"/>
@@ -3586,7 +3586,7 @@
             </imgdir>
             <imgdir name="102030000">
                 <imgdir name="0">
-                    <string name="Title" value="废都北方工地 (废气都市方向)"/>
+                    <string name="Title" value="废都北方工地 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="西部岩山1 (勇士部落方向)"/>
@@ -3594,7 +3594,7 @@
             </imgdir>
             <imgdir name="102040000">
                 <imgdir name="0">
-                    <string name="Title" value="废都北入口 (废气都市方向)"/>
+                    <string name="Title" value="废都北入口 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="勇士部落西部 (勇士部落方向)"/>
@@ -3665,7 +3665,7 @@
             </imgdir>
             <imgdir name="103020000">
                 <imgdir name="0">
-                    <string name="Title" value="废弃都市工地 (废气都市方向)"/>
+                    <string name="Title" value="废弃都市工地 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="逆恩森林2 (射手村/南港方向)"/>
@@ -3673,7 +3673,7 @@
             </imgdir>
             <imgdir name="103020100">
                 <imgdir name="0">
-                    <string name="Title" value="逆恩森林1 (废气都市方向)"/>
+                    <string name="Title" value="逆恩森林1 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="逆恩森林3 (射手村/南港方向)"/>
@@ -3684,7 +3684,7 @@
                     <string name="Title" value="废都森林1 (射手村/南港方向)"/>
                 </imgdir>
                 <imgdir name="1">
-                    <string name="Title" value="逆恩森林2 (废气都市方向)"/>
+                    <string name="Title" value="逆恩森林2 (废弃都市方向)"/>
                 </imgdir>
             </imgdir>
             <imgdir name="103030000">
@@ -3692,7 +3692,7 @@
                     <string name="Title" value="废都森林2"/>
                 </imgdir>
                 <imgdir name="1">
-                    <string name="Title" value="逆恩森林3 (废气都市方向)"/>
+                    <string name="Title" value="逆恩森林3 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="2">
                     <string name="Title" value="三叉路 (射手村/南港方向)"/>
@@ -3732,7 +3732,7 @@
             </imgdir>
             <imgdir name="104010000">
                 <imgdir name="0">
-                    <string name="Title" value="废都森林1 (废气都市方向)"/>
+                    <string name="Title" value="废都森林1 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="射手村西部树林 (射手村方向)"/>
@@ -3741,7 +3741,7 @@
                     <string name="Title" value="海岸草丛3 (南港方向)"/>
                 </imgdir>
                 <imgdir name="3">
-                    <string name="Title" value="海岸草丛3 (南港)/废都森林1 (废气都市方向)"/>
+                    <string name="Title" value="海岸草丛3 (南港)/废都森林1 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="4">
                     <string name="Title" value="射手村西部树林 (射手村方向)"/>
@@ -3767,7 +3767,7 @@
                     <string name="Title" value="射手训练场1 (射手村方向)"/>
                 </imgdir>
                 <imgdir name="1">
-                    <string name="Title" value="射手村西部树林 (南港/废气都市方向)"/>
+                    <string name="Title" value="射手村西部树林 (南港/废弃都市方向)"/>
                 </imgdir>
             </imgdir>
             <imgdir name="104000100">
@@ -3818,7 +3818,7 @@
                     <string name="Title" value="射手村"/>
                 </imgdir>
                 <imgdir name="2">
-                    <string name="Title" value="射手村西部小山 (南港/废气都市方向)"/>
+                    <string name="Title" value="射手村西部小山 (南港/废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="3">
                     <string name="Title" value="射手训练场2"/>
@@ -3842,7 +3842,7 @@
             </imgdir>
             <imgdir name="105030000">
                 <imgdir name="0">
-                    <string name="Title" value="潮湿的沼泽地 (废气都市方向)"/>
+                    <string name="Title" value="潮湿的沼泽地 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="勇士部落迷宫通道 (勇士部落方向)"/>
@@ -4015,7 +4015,7 @@
             </imgdir>
             <imgdir name="107000500">
                 <imgdir name="0">
-                    <string name="Title" value="鳄鱼潭2 (废气都市方向)"/>
+                    <string name="Title" value="鳄鱼潭2 (废弃都市方向)"/>
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="黑森林 (林中之城方向)"/>
@@ -7536,7 +7536,7 @@
                 </imgdir>
                 <imgdir name="1">
                     <string name="Title" value="职业分类"/>
-                    <string name="Desc" value="可以转职为战士，弓箭手，魔法师，飞侠，海盗。\n战士：等级10以上，在勇士部落转职。\n弓箭手：等级10以上，在射手村转职。\n魔法师：等级8以上，在魔法密林转职。\n飞侠：等级10以上，在废气都市转职。\n海盗：等级10以上，在诺特勒斯号转职。\r\n可以转职为魂骑士，风灵使者，炎术士，夜行者，\n奇袭者。\n魂骑士：等级10以上，在圣地转职。\n风灵使者：等级10以上，在圣地转职。\n炎术士：等级10以上，在圣地转职。\n夜行者：等级10以上，在圣地转职。\n奇袭者：等级10以上，在圣地转职。\n\n可以转职为战神。\n战神：等级10以上，在里恩转职。"/>
+                    <string name="Desc" value="可以转职为战士，弓箭手，魔法师，飞侠，海盗。\n战士：等级10以上，在勇士部落转职。\n弓箭手：等级10以上，在射手村转职。\n魔法师：等级8以上，在魔法密林转职。\n飞侠：等级10以上，在废弃都市转职。\n海盗：等级10以上，在诺特勒斯号转职。\r\n可以转职为魂骑士，风灵使者，炎术士，夜行者，\n奇袭者。\n魂骑士：等级10以上，在圣地转职。\n风灵使者：等级10以上，在圣地转职。\n炎术士：等级10以上，在圣地转职。\n夜行者：等级10以上，在圣地转职。\n奇袭者：等级10以上，在圣地转职。\n\n可以转职为战神。\n战神：等级10以上，在里恩转职。"/>
                     <vector name="lt" x="8" y="50"/>
                     <vector name="rb" x="55" y="66"/>
                 </imgdir>

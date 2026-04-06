@@ -12923,7 +12923,7 @@ Npc.img,浪漫,NapSleep,npc,name,String.wz\Npc.img.xml
 9201020,白莲,Vivian Boutique,npc,name,String.wz\Npc.img.xml
 9201021,巴黎,Robin The Huntress,npc,name,String.wz\Npc.img.xml
 9201022,维维安,Thomas Swift,npc,name,String.wz\Npc.img.xml
-9201023,废气都市NANA,Nana(K),npc,name,String.wz\Npc.img.xml
+9201023,废弃都市NANA,Nana(K),npc,name,String.wz\Npc.img.xml
 9201024,魔法密林NANA,Nana(E),npc,name,String.wz\Npc.img.xml
 9201025,天空之城NANA,Nana(O),npc,name,String.wz\Npc.img.xml
 9201026,玩具之城NANA,Nana(L),npc,name,String.wz\Npc.img.xml
@@ -13854,7 +13854,7 @@ Mapobject,用饼干做成的Studio,Tera Forest,tooltip,Title,String.wz\ToolTipHe
 540000300,郊区1,Surburban Area 1,tooltip,Title,String.wz\ToolTipHelp.img.xml
 541000300,小型地牢：船只的残留记忆,Ghost Ship 1,tooltip,Title,String.wz\ToolTipHelp.img.xml
 101040001,魔精灵石板,Stone plate of Boogi,tooltip,Title,String.wz\ToolTipHelp.img.xml
-104030000,射手村西部树林 (南港/废气都市方向),Henesys Western forest,tooltip,Title,String.wz\ToolTipHelp.img.xml
+104030000,射手村西部树林 (南港/废弃都市方向),Henesys Western forest,tooltip,Title,String.wz\ToolTipHelp.img.xml
 211041100,死亡之林 II,Dead Tree&apos;s Forest II,tooltip,Title,String.wz\ToolTipHelp.img.xml
 211041200,利马窦出没地区! 无法从利马窦那边逃走的话就把僵尸的牙齿给到死者的墓地上.利马窦拥有的力的源泉就在那下面…,"Lich area!! If you cannot escape from lich, dedicate teeth of zombie to grave!! Resource of lich&apos;s power is underneath.....grave..",tooltip,Desc,String.wz\ToolTipHelp.img.xml
 211041300,小心利玛窦!,lich -alert-,tooltip,Title,String.wz\ToolTipHelp.img.xml
@@ -13894,7 +13894,7 @@ Mapobject,用饼干做成的Studio,Tera Forest,tooltip,Title,String.wz\ToolTipHe
 102050000,废都北方工地 (勇士部落方向),Construction Site North of Kerning City (Towards Perion),tooltip,Title,String.wz\ToolTipHelp.img.xml
 103010000,逆恩森林3 (射手村/南港方向),L Forest III (Towards Henesys/Lith Harbor),tooltip,Title,String.wz\ToolTipHelp.img.xml
 103020000,逆恩森林2 (射手村/南港方向),L Forest II (Towards Henesys/Lith Harbor),tooltip,Title,String.wz\ToolTipHelp.img.xml
-103020200,逆恩森林2 (废气都市方向),L Forest II (Towards Kerning City),tooltip,Title,String.wz\ToolTipHelp.img.xml
+103020200,逆恩森林2 (废弃都市方向),L Forest II (Towards Kerning City),tooltip,Title,String.wz\ToolTipHelp.img.xml
 104000200,海岸草丛2 (金银岛方向),Thicket Around the Beach II (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
 104000300,海岸草丛3 (金银岛方向),Thicket Around the Beach III (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml
 104000400,三叉路 (金银岛方向),3-Way Road-Split (Towards Victoria Road),tooltip,Title,String.wz\ToolTipHelp.img.xml

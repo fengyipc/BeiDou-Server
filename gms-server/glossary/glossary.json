@@ -103394,7 +103394,7 @@
       "source": "String.wz\\Npc.img.xml"
     },
     {
-      "zh": "废气都市NANA",
+      "zh": "废弃都市NANA",
       "en": "Nana(K)",
       "id": "9201023",
       "category": "npc",
@@ -110842,7 +110842,7 @@
       "source": "String.wz\\ToolTipHelp.img.xml"
     },
     {
-      "zh": "射手村西部树林 (南港/废气都市方向)",
+      "zh": "射手村西部树林 (南港/废弃都市方向)",
       "en": "Henesys Western forest",
       "id": "104030000",
       "category": "tooltip",
@@ -111162,7 +111162,7 @@
       "source": "String.wz\\ToolTipHelp.img.xml"
     },
     {
-      "zh": "逆恩森林2 (废气都市方向)",
+      "zh": "逆恩森林2 (废弃都市方向)",
       "en": "L Forest II (Towards Kerning City)",
       "id": "103020200",
       "category": "tooltip",
