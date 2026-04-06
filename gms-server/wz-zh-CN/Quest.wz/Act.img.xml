@@ -12036,7 +12036,6 @@
         <imgdir name="1">
             <int name="exp" value="50000" />
             <int name="fame" value="5" />
-            <int name="nextQuest" value="2047" />
         </imgdir>
     </imgdir>
     <imgdir name="2252">
@@ -13786,14 +13785,12 @@
                     <int name="count" value="50" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28166" />
         </imgdir>
     </imgdir>
     <imgdir name="28166">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28167" />
         </imgdir>
     </imgdir>
     <imgdir name="28167">
@@ -13806,28 +13803,24 @@
                     <int name="count" value="-3" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28168" />
         </imgdir>
     </imgdir>
     <imgdir name="28168">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="800" />
-            <int name="nextQuest" value="28169" />
         </imgdir>
     </imgdir>
     <imgdir name="28169">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28170" />
         </imgdir>
     </imgdir>
     <imgdir name="28170">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1200" />
-            <int name="nextQuest" value="28171" />
             <imgdir name="item">
                 <imgdir name="0">
                     <int name="id" value="4001343" />
@@ -13858,28 +13851,24 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28172" />
         </imgdir>
     </imgdir>
     <imgdir name="28172">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1000" />
-            <int name="nextQuest" value="28173" />
         </imgdir>
     </imgdir>
     <imgdir name="28173">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28174" />
         </imgdir>
     </imgdir>
     <imgdir name="28174">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28175" />
         </imgdir>
     </imgdir>
     <imgdir name="28175">
@@ -13904,13 +13893,11 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28176" />
         </imgdir>
     </imgdir>
     <imgdir name="28176">
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28177" />
         </imgdir>
         <imgdir name="0" />
     </imgdir>
@@ -13918,14 +13905,12 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="2000" />
-            <int name="nextQuest" value="28178" />
         </imgdir>
     </imgdir>
     <imgdir name="28178">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28179" />
             <imgdir name="item">
                 <imgdir name="0">
                     <int name="id" value="4032479" />
@@ -14017,28 +14002,24 @@
                     <int name="count" value="100" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28186" />
         </imgdir>
     </imgdir>
     <imgdir name="28186">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28187" />
         </imgdir>
     </imgdir>
     <imgdir name="28187">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1400" />
-            <int name="nextQuest" value="28188" />
         </imgdir>
     </imgdir>
     <imgdir name="28188">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28189" />
         </imgdir>
     </imgdir>
     <imgdir name="28189">
@@ -14059,13 +14040,11 @@
                     <int name="count" value="-2" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28190" />
         </imgdir>
     </imgdir>
     <imgdir name="28190">
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28191" />
         </imgdir>
         <imgdir name="0">
             <imgdir name="item">
@@ -14086,7 +14065,6 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28192" />
         </imgdir>
     </imgdir>
     <imgdir name="28192">
@@ -14103,21 +14081,18 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28193" />
         </imgdir>
     </imgdir>
     <imgdir name="28193">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28194" />
         </imgdir>
     </imgdir>
     <imgdir name="28194">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="700" />
-            <int name="nextQuest" value="28195" />
         </imgdir>
     </imgdir>
     <imgdir name="28195">
@@ -14130,21 +14105,18 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28196" />
         </imgdir>
     </imgdir>
     <imgdir name="28196">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1200" />
-            <int name="nextQuest" value="28197" />
         </imgdir>
     </imgdir>
     <imgdir name="28197">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28198" />
         </imgdir>
     </imgdir>
     <imgdir name="28198">
@@ -14212,28 +14184,24 @@
                     <int name="count" value="100" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28203" />
         </imgdir>
     </imgdir>
     <imgdir name="28203">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28204" />
         </imgdir>
     </imgdir>
     <imgdir name="28204">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28205" />
         </imgdir>
     </imgdir>
     <imgdir name="28205">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1200" />
-            <int name="nextQuest" value="28206" />
         </imgdir>
     </imgdir>
     <imgdir name="28206">
@@ -14246,21 +14214,18 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28207" />
         </imgdir>
     </imgdir>
     <imgdir name="28207">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28208" />
         </imgdir>
     </imgdir>
     <imgdir name="28208">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1400" />
-            <int name="nextQuest" value="28209" />
         </imgdir>
     </imgdir>
     <imgdir name="28209">
@@ -14285,7 +14250,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28210" />
         </imgdir>
     </imgdir>
     <imgdir name="28210">
@@ -14298,20 +14262,17 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28211" />
         </imgdir>
     </imgdir>
     <imgdir name="28211">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28212" />
         </imgdir>
     </imgdir>
     <imgdir name="28212">
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28213" />
         </imgdir>
         <imgdir name="0">
             <imgdir name="item">
@@ -14326,7 +14287,6 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28214" />
         </imgdir>
     </imgdir>
     <imgdir name="28214">
@@ -14343,27 +14303,23 @@
                     <int name="count" value="-20" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28215" />
         </imgdir>
     </imgdir>
     <imgdir name="28215">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28216" />
         </imgdir>
     </imgdir>
     <imgdir name="28216">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28217" />
         </imgdir>
     </imgdir>
     <imgdir name="28217">
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28218" />
         </imgdir>
         <imgdir name="0" />
     </imgdir>
@@ -14377,7 +14333,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28219" />
         </imgdir>
     </imgdir>
     <imgdir name="28219">
@@ -14445,14 +14400,12 @@
                     <int name="count" value="100" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28224" />
         </imgdir>
     </imgdir>
     <imgdir name="28224">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28225" />
         </imgdir>
     </imgdir>
     <imgdir name="28225">
@@ -14465,7 +14418,6 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28226" />
         </imgdir>
     </imgdir>
     <imgdir name="28226">
@@ -14478,7 +14430,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28227" />
         </imgdir>
     </imgdir>
     <imgdir name="28227">
@@ -14491,14 +14442,12 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28228" />
         </imgdir>
     </imgdir>
     <imgdir name="28228">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28229" />
         </imgdir>
     </imgdir>
     <imgdir name="28229">
@@ -14519,14 +14468,12 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28230" />
         </imgdir>
     </imgdir>
     <imgdir name="28230">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28231" />
         </imgdir>
     </imgdir>
     <imgdir name="28231">
@@ -14543,20 +14490,17 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28232" />
         </imgdir>
     </imgdir>
     <imgdir name="28232">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28233" />
         </imgdir>
     </imgdir>
     <imgdir name="28233">
         <imgdir name="1">
             <int name="exp" value="600" />
-            <int name="nextQuest" value="28234" />
         </imgdir>
         <imgdir name="0">
             <imgdir name="item">
@@ -14571,7 +14515,6 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28235" />
         </imgdir>
     </imgdir>
     <imgdir name="28235">
@@ -14596,14 +14539,12 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28236" />
         </imgdir>
     </imgdir>
     <imgdir name="28236">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28237" />
         </imgdir>
     </imgdir>
     <imgdir name="28237">
@@ -14620,7 +14561,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28238" />
         </imgdir>
     </imgdir>
     <imgdir name="28238">
@@ -14704,7 +14644,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28244" />
         </imgdir>
     </imgdir>
     <imgdir name="28244">
@@ -14717,14 +14656,12 @@
                     <int name="count" value="-20" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28245" />
         </imgdir>
     </imgdir>
     <imgdir name="28245">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="1200" />
-            <int name="nextQuest" value="28246" />
         </imgdir>
     </imgdir>
     <imgdir name="28246">
@@ -14737,14 +14674,12 @@
                     <int name="count" value="-2" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28247" />
         </imgdir>
     </imgdir>
     <imgdir name="28247">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="200" />
-            <int name="nextQuest" value="28248" />
         </imgdir>
     </imgdir>
     <imgdir name="28248">
@@ -14769,14 +14704,12 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28249" />
         </imgdir>
     </imgdir>
     <imgdir name="28249">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28250" />
         </imgdir>
     </imgdir>
     <imgdir name="28250">
@@ -14793,35 +14726,30 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28251" />
         </imgdir>
     </imgdir>
     <imgdir name="28251">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28252" />
         </imgdir>
     </imgdir>
     <imgdir name="28252">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="700" />
-            <int name="nextQuest" value="28253" />
         </imgdir>
     </imgdir>
     <imgdir name="28253">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28254" />
         </imgdir>
     </imgdir>
     <imgdir name="28254">
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="300" />
-            <int name="nextQuest" value="28255" />
         </imgdir>
     </imgdir>
     <imgdir name="28255">
@@ -14834,7 +14762,6 @@
                     <int name="count" value="-1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28256" />
         </imgdir>
     </imgdir>
     <imgdir name="28256">
@@ -14944,7 +14871,6 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="500" />
-            <int name="nextQuest" value="28282" />
         </imgdir>
     </imgdir>
     <imgdir name="28267">
@@ -15082,7 +15008,6 @@
                     <int name="count" value="1" />
                 </imgdir>
             </imgdir>
-            <int name="nextQuest" value="28283" />
         </imgdir>
         <imgdir name="0" />
     </imgdir>
@@ -15092,7 +15017,6 @@
             <int name="exp" value="10000" />
             <int name="money" value="1000" />
             <int name="pop" value="10" />
-            <int name="nextQuest" value="30040" />
         </imgdir>
     </imgdir>
     <imgdir name="28284">
@@ -53127,7 +53051,6 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="8000" />
-            <int name="nextQuest" value="30042" />
             <imgdir name="item">
                 <imgdir name="0">
                     <int name="id" value="4032526" />
@@ -53153,7 +53076,6 @@
         <imgdir name="0" />
         <imgdir name="1">
             <int name="exp" value="3000" />
-            <int name="nextQuest" value="3042" />
         </imgdir>
     </imgdir>
     <imgdir name="4100">
