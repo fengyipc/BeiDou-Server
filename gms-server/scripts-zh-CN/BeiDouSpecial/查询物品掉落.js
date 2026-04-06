@@ -69,7 +69,7 @@ function levelShowDropList(itemID) {
 
     cm.sendOk(text);
     cm.dispose();
-}01
+}
 
 // 根据输入的物品名模糊搜索获取物品列表转换为js数组
 function getItemListByName(name) {

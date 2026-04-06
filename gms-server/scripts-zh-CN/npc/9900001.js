@@ -61,12 +61,11 @@ function action(mode, type, selection) {
         if (GameConfig.getServerBoolean('use_quest_rate')) {
             text += "任务经验倍率：" + expRate * cm.getClient().getWorldServer().getQuestRate() +"倍\r\n";
         }
-//        text += "当前抵用券：" + player.getCashShop().getCash(2) + "\r\n";
-//        text += "当前信用券：" + player.getCashShop().getCash(4) + "\r\n";
+
         text += " \r\n\r\n";
         text += "#L4#查询当前地图爆率#l\t#L5#查询物品掉落怪物#l\r\n\r\n";
         text += "#L6#升级怪物达人戒指#l\t#L7#升级任务达人戒指#l\r\n\r\n";
-        text += "#L8#分解/合成卷轴#l\r\n\r\n";
+        text += "#L8#分解/合成卷轴#l\t#L9#矿石仓库#l\r\n\r\n";
 
 //        text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";
 //        text += "#L3#返回自由市场#l \t #L4#查询当前地图掉落#l\r\n";
@@ -116,6 +115,9 @@ function doSelect(selection) {
             break;
         case 8:
             openNpc("兑换卷轴");
+            break;
+        case 9:
+            openNpc("矿石仓库");
             break;
         // GM功能
         case 61:
