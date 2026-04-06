@@ -4971,7 +4971,7 @@
         <string name="0" value="你虽然转职战士成功，但对应该做些什么事却一无所知... 请到战士转职教官 #b#p1022000##k处咨询. " />
         <string name="1" value="#p1022000#会要你完成简单的怪物狩猎任务，来学习基本的修炼技能, 他要求捕捉#r#o0130100# 20只#k. #o0130100#多出现在 #m102000000# 村庄周边地区，很容易找到... \n\n#o0130100# #r#a21281##k" />
         <string name="2" value="打倒#o0130100# 20只并向 #p1022000#报告. 嗯... 任务很简单吧?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -4981,7 +4981,7 @@
         <string name="0" value="在战士转职教官的帮助下，能力有所增强，但前面要走的路还很长，再次向 #b#p1022000##k请求帮助." />
         <string name="1" value="#p1022000#认为你的基础修炼还不够，所以要你继续完成简单的怪物狩猎任务. 这次是完成捕捉#r#o0130100# 50只#k的任务... \n\n#o0130100# #r#a21291##k" />
         <string name="2" value="捕捉#o0130100# 50只后向 #p1022000#报告. 咻.打倒 50只这么多真的是很了不起吧?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -4991,7 +4991,7 @@
         <string name="0" value="你已经对战士技能有所掌握，但仍有不足之处，再去找 #b#p1022000##k弥补这些缺陷... " />
         <string name="1" value="#p1022000#认为你要具备战士的勇气和耐心还需要更多的修炼，所以要你捕捉 #r#o0130100# 80只#k. #o0130100# 80只啊... 也不是很多吧? \n\n#o0130100# #r#a21301##k" />
         <string name="2" value="捕捉#o0130100# 80只. 呼... 真是不容易. " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5034,7 +5034,7 @@
         <string name="0" value="你已经具备了战士的基本素质，去找#b#p1022000##k完成最后阶段的修炼吧..." />
         <string name="1" value="为了测试之前修炼的成果，#p1022000#要你去捕捉 #r#o1110101# 15只#k回来. #o1110101#虽然与 #o0130100#长相相似，但却更难对付，所以千万不可轻敌... \n\n#o1110101# #r#a21311##k" />
         <string name="2" value="完成捕捉#o1110101# 15只的任务. 费尽力气总算是完成了. 通过这一阶段的修炼，#p1022000#认为你将来一定能成为一名出色的战士. " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5044,7 +5044,7 @@
         <string name="0" value="你已经成功转职成为法师.但对应该做些什么事却一无所知... 去向法师转职教官 #b#p1032001##k寻求帮助吧. " />
         <string name="1" value="#p1032001#认为透过简单的怪物狩猎任务可以进行基础修炼，所以要你去捕捉#r#o0210100# 8只#k回来. #o0210100#大多出现在 #m101000000# 村庄周边的树林里，并不难找到... \n\n#o0210100# #r#a21321##k" />
         <string name="2" value="捕捉  #o0210100# 8只并向 #p1032001#报告 . 嗯... 任务很简单吧?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5054,7 +5054,7 @@
         <string name="0" value="你虽然比以前有所进步但还不是很成熟. 到#b#p1032001##k处进行第二次修炼吧." />
         <string name="1" value="#p1032001#认为基础修炼仍然非常重要，于是要你完成打倒#r#o0210100# 20只#k的任务. #o0210100# 20只么... 有点困难但不要因此而退缩. \n\n#o0210100# #r#a21331##k" />
         <string name="2" value="打倒#o0210100# 20只并向 #p1032001#报告. #p1032001#满意地微笑着." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5064,7 +5064,7 @@
         <string name="0" value="你逐渐变得强大了，看到你如此勤奋地锻炼自身的实力， #b#p1032001##k说要帮你进行第三次修炼." />
         <string name="1" value="#p1032001#的这次修炼任务是打倒 #r#o0210100# 35只#k. 之前已经成功打倒过的怪物了，应该不会很难. 快去打倒 #o0210100#吧. \n\n#o0210100# #r#a21341##k" />
         <string name="2" value="打倒 #o0210100# 35只. 数量虽然不少，任务难度却不高.呼，这样的话总算是个优秀的法师了吗?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5074,7 +5074,7 @@
         <string name="0" value="你成长得很快，#b #p1032001##k说将要给你最后一次考验..." />
         <string name="1" value="#p1032001#要你去捕捉 #r#o1110101#10只#k. #o1110101#比起 #o0210100#更为凶狠，请一定要小心. \n\n#o1110101# #r#a21351##k" />
         <string name="2" value="打倒#o1110101# 10只. 虽然还有很多不足之处，但总算是具有一名法师的素质了." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5084,7 +5084,7 @@
         <string name="0" value="你已经成功转职成为弓箭手. 但对应该做些什么事却一无所知…向弓箭手转职教官 #b#p1012100##k寻求帮助吧. " />
         <string name="1" value="#p1012100#认为透过简单的怪物狩猎任务可以锻炼进行基础修炼，所以要你去捕捉#r#o0210100# 16只#k回来. #o0210100#大多出现在 #m100000000# 村庄周边地区，并不难寻找... \n\n#o0210100# #r#a21361##k" />
         <string name="2" value="捕捉#o0210100# 16只并向 #p1012100#报告. 嗯... 任务很简吧?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5094,7 +5094,7 @@
         <string name="0" value="通过修炼，你获得了一些进步，但要走的路还很长. 再去找 #b#p1012100##k寻求帮助吧." />
         <string name="1" value="#p1012100#认为基础修炼仍然不足，所以要你继续完成简单的怪物狩猎任务. 这次是捕捉 #r#o0210100# 40只#的任务... \n\n#o0210100# #r#a21371##k" />
         <string name="2" value="捕捉到#o0210100# 40只并向 #p1012100#报告. 呼. 40只对你来说也并不很难吧. " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5104,7 +5104,7 @@
         <string name="0" value="你已经初步具备了弓箭手的自信. 但不足之处仍然很多. 关于你的不足之处，请向#b#p1012100##k咨询吧... " />
         <string name="1" value="#p1012100#认为你要具备弓箭手的沉着和意志还需要更多的修炼， 他要你捕捉#r#o0210100# 65只#k. #o0210100# 65只…也不是很难吧? \n\n#o0210100# #r#a21381##k" />
         <string name="2" value="捕捉到#o0210100# 65只. 呼... 真不容易啊. " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5114,7 +5114,7 @@
         <string name="0" value="你已经具备了弓箭手的基本素质. #b#p1012100##k将为你准备最后的考验…" />
         <string name="1" value="为了测试之前修炼的成果， #p1012100#要你去捕捉#r#o1210101# 15只#k回来. #o1210101#可是比 #o0210100#更难缠的怪物，所以不要掉以轻心... \n\n#o1210101# #r#a21391##k" />
         <string name="2" value="完成捕捉#o1210101# 15只的任务. 费尽力气总算成功了. 通过这一阶段的修炼，你已经获得了弓箭手转职教官赫丽娜的认可，成为一名真正的弓箭手." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5124,7 +5124,7 @@
         <string name="0" value="你已经成功转职成为飞侠. 但对于如何修炼却一无所知... 去向飞侠转职教官 #b#p1052001##k寻求帮助吧. " />
         <string name="1" value="#p1052001#认为透过简单的怪物狩猎任务可以进行基础修炼，他要你捕捉#r#o210100# 16只#k. #o210100#多出现在 #m103000000# 周边地区，并不难找... \n\n#o210100# #r#a21401##k" />
         <string name="2" value="捕捉到#o210100# 16只并向 #p1052001#报告. 嗯... 任务很简单吧?" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5151,7 +5151,7 @@
         <string name="0" value="你比以前进步了，但要走的路还很长. 再去找 #b#p1052001##k寻求帮助吧." />
         <string name="1" value="#p1052001#认为基础修炼仍然不足，所以要你继续完成简单的怪物狩猎任务. 这次的任务是捕捉 #r#o130100# 40只#k回来... \n\n#o130100# #r#a21411##k" />
         <string name="2" value="捕捉到#o130100# 40只并向 #p1052001#报告. 呼. 能捕捉到40只确实很不容易…就在你这么想的时候, #p1052001#告诉你这只是一次小考验，要你不要因此骄傲... 确实也是如此." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5161,7 +5161,7 @@
         <string name="0" value="你已经初步具备了飞侠的自信. 但不足之处仍然很多. 关于你的不足之处，请向 #b#p1052001##k咨询吧... " />
         <string name="1" value="#p1052001#认为如果要具备飞侠的集中力和冷静心态，你还需要更多的修炼，所以他要你去捕捉 #r#o130100# 80只#k. #o130100# 80只么... 也不是很难吧？ \n\n#o130100# #r#a21421##k" />
         <string name="2" value="捕捉到#o130100# 65只. 呼... 真是不容易啊. 但还很不够." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -5171,7 +5171,7 @@
         <string name="0" value="你已经具备了飞侠的基本素质.  #b#p1052001##k将为你准备最后的考验..." />
         <string name="1" value="为了测试之前修炼的成果，#p1052001#要你去捕捉 #r#o1120100# 10只#k回来. #o1120100#是 #m103000000#周边区域中最凶猛的怪物，一定要小心些... \n\n#o1120100# #r#a21431##k" />
         <string name="2" value="捕捉到#o1120100# 10只. 费尽力气总算成功了. 总算不会再从#p1052001#口中听到新手之类的话了. " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -6207,7 +6207,7 @@
         <string name="0" value="变成海盗的你。但是要干什么还一无所知……去找海盗全职教官凯琳寻求帮助吧" />
         <string name="1" value="为了完成凯琳的初步训练得先猎杀些好对付的怪兽，所以要猎#r11头猪#k回来。大量的猪栖息在射手村附近，找起来应该挺容易的吧……\n\n#o 1210100# #r#a21931##k" />
         <string name="2" value="向凯琳报告需要用11头猪。恩……这种程度是小菜一碟吧？" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -6217,7 +6217,7 @@
         <string name="0" value="通过修炼虽然变强了一点但是你还差得远呢。再去找#b凯琳#k的帮忙吧。" />
         <string name="1" value="如果说凯琳的基础训练还有不足的话，就继续猎杀怪兽吧。这次在这附近杀26头猪吧……\n\n#o 1210100# #r#a21941##k" />
         <string name="2" value="向凯琳报告已经射杀了26头猪。呼，26头也不是很难搞定嘛。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -6227,7 +6227,7 @@
         <string name="0" value="现在开始你终于开始熟悉身为海盗的自觉了。但是还有很多不足之处。这些部分#b凯琳#k会负责补足。" />
         <string name="1" value="凯琳说想要具备海盗必须的意志的话，还需要更多的修炼。她说这次要猎杀#r43头猪#k。43头猪……不好对付吧？\n\n#o 1210100# #r#a21951##k" />
         <string name="2" value="43头猪全部杀完了。呼……真的不容易啊。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -6237,7 +6237,7 @@
         <string name="0" value="现在你多少有点海盗的样子了。不过为了你，#b凯琳#k还会准备最后一个修炼的。" />
         <string name="1" value="凯琳说为了验收现在的修炼成果，让我去捕捉#r10个绿蘑菇#k。绿蘑菇是比猪更强大的怪物，所以不能松懈。\n\n#o 9101000# #r#a21961##k" />
         <string name="2" value="捕获了10个绿蘑菇。虽然不容易到底还是成功了。到现在为止通过修炼得到了海盗全职教官凯琳的承认，成为了真正的海盗。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <int name="autoComplete" value="1" />
     </imgdir>
@@ -7981,7 +7981,7 @@
         <string name="0" value="#b#m102000000##k的#b#@1022000:##k说，他会帮助你完成培训。" />
         <string name="1" value="他说，#b#m102000000##k的#b#@9201119:##k会对你进行强化培训。" />
         <string name="2" value="战士之路。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="一起去见#b#m102000000##k的#b#p9201119##k。" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘高级培训-1’作为下一个任务。\r\n进行‘高级培训-2’作为下一个任务。\r\n" />
     </imgdir>
@@ -7991,7 +7991,7 @@
         <string name="0" value="#b#m102000000##k的#b#@9201119:#k说要对我进行第一次培训。" />
         <string name="1" value="#b#@9201119:##k的第一次培训是捕捉#r#o1110101##k。\n\n可在#b#m101040000##k和#b#m102010000##k轻松找到它们。一旦完成，即向#b#m102000000##k的#b#@9201119:##k报告结果。" />
         <string name="2" value="#b#p9201119##k的第一次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="怪兽狩猎" />
         <string name="demandSummary" value="#o1110101# #a281631#" />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘报告培训结果’作为下一个任务。\r\n" />
@@ -8002,7 +8002,7 @@
         <string name="0" value="#b#m102000000##k的#b#@9201119:##k说要对我进行第二次培训。" />
         <string name="1" value="#b#@9201119:##k的第二次培训是搜集#r#t4000005##k。\n\n #r#o1110101##k掉落了#r#t4000005##k。\n\n#r#o1110101##k可在#b#m101040000##k和#b#m102010000##k轻松找到。\n\n一旦完成，即向#b#m102000000##k的#b#@9201119:##k报告结果。" />
         <string name="2" value="#b#p9201119##k的第二次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="怪兽狩猎，搜集战利品。" />
         <string name="demandSummary" value="#i4000005:# #t4000005:# #c4000005# / 20 " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘报告培训结果’作为下一个任务。\r\n" />
@@ -8013,7 +8013,7 @@
         <string name="0" value="培训结束后，告诉#b#m102000000##k的#b#@9201119:##k。" />
         <string name="1" value="培训已经结束，向住在#b#m102000000##k最高处的#b#@1022000:##k报告结果。" />
         <string name="2" value="完成全部#b#p9201119##k的培训课程后，向#p1022000#报告结果。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="寻找#b#m102000000##k的b#p1022000##k。" />
         <string name="rewardSummary" value="经验值 300\r\n#Wbasic#\r\n#i2000002:# #t2000002:# 50\r\n#i2000003:# #t2000003:# 50\r\n进行‘会见欧文’作为下一个任务。\r\n" />
     </imgdir>
@@ -8025,7 +8025,7 @@
         <string name="0" value="#b#m102000000##k的#b#@1022000:##k说有事请你帮忙。我们一起去见他。" />
         <string name="1" value="#b#m102000000##k地区由于干旱缺水，所以需要从其他地方引水。\n\n但是直到最近，供水停止，整个勇士部落发生了旱灾。\n\n去告诉#b#m103000000##k的水管工#b#@9201120:##k。" />
         <string name="2" value="#b#m103000000##k的#b#@9201120:##k说，水管好像出了问题。 " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="去会见#b#m103000000##k的#b#p9201120##k。" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘检查水管’作为下一个任务。\r\n" />
     </imgdir>
@@ -8037,7 +8037,7 @@
         <string name="0" value="#b#m103000000##k的#b#@9201120:##k说，水管好像出了问题。" />
         <string name="1" value="检查消防栓，查明问题起因。\n\n前往#b#m102040000##k去检查消防栓，并带回3块#r#t4001340##k。\n(用武器攻击消防栓。)\n\n一旦完成，即向废都的#b#@9201120:##k报告结果。" />
         <string name="2" value="#b#m103000000##k的#b#@9201120:##k说，他知道水管堵塞的原因。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="检查消防栓，并带回3块#r#t4001340##k。" />
         <string name="demandSummary" value="#i4001340:# #t4001340:# #c4001340# / 3 " />
         <string name="rewardSummary" value="经验值 700\r\n进行‘粘连的绿水灵！’作为下一个任务。\r\n" />
@@ -8050,7 +8050,7 @@
         <string name="0" value="#b#m103000000##k的#b#@9201120:##k说，他知道水管堵塞的原因。" />
         <string name="1" value="#r#o210100##k负责修理堵塞的水管。\n前往#b#m103020100##k消灭30个#r#o210100##k！一旦完成，即向#b#m103000000##k的#b#@9201120:##k报告结果。 " />
         <string name="2" value="战士的第一个任务-勇士部落旱灾完成了。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="summary" value="怪兽狩猎" />
         <string name="demandSummary" value="#o210100# #a281681#" />
         <string name="rewardSummary" value="经验值 800\r\n进行‘造访射手村’作为下一个任务。\r\n" />
@@ -8061,7 +8061,7 @@
         <string name="0" value="废都的#b#@9201120:##k说，#b#m100000000##k好像发生了什么事..." />
         <string name="1" value="看来，#b#m100000000##k的#b#@1012003:##k对与勇士部落有关的任何人或事情都会大发雷霆。去和他谈谈，看看到底是怎么回事！" />
         <string name="2" value="#b长老斯坦#k讨厌#b勇士部落.#k" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘长老斯坦喜欢什么？’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28170">
@@ -8071,7 +8071,7 @@
         <int name="order" value="1" />
         <string name="0" value="#b#m100000000##k的#b#@1012106:##k说她知道#b#@1012003:##k喜欢什么。" />
         <string name="1" value="她说如果能搜集到下列材料，她就会为我做出#b#@1012003:##k喜欢的东西。\n\n#r#t4001343:##k-15\n(#r#o1210101##k掉落的物品，可以在#b#m104030000##k轻松找到。)\n\n#r#t4001344:##k-10\n(#r#o1110101##k掉落的物品，可以在#b#m100040000##k地图上轻松找到。)\n\n#r#t4001345:##k-1\n(#r#o1210102##k掉落的物品。)\n\n一旦完成，即向#b#m100000000##k的#b#@1012106:##k报告结果。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="2" value="据说#b#m100000000##k的#b#@1012003:##k非常喜欢弹奏吉他。" />
         <string name="demandSummary" value="#i4001343:# #t4001343:# #c4001343# / 15 #i4001344:# #t4001344:# #c4001344# / 10 #i4001345:# #t4001345:# #c4001345# / 1 " />
         <string name="rewardSummary" value="经验值 1,200\r\n#Wbasic#\r\n#i4032480:# #t4032480:# 1\r\n\r\n" />
@@ -8084,7 +8084,7 @@
         <string name="0" value="据说#b#m100000000##k的#b#@1012003:##k非常喜欢弹奏吉他。" />
         <string name="1" value="告诉#b#m100000000##k的#b#@1012003:##k。" />
         <string name="2" value="#b#m100000000##k的#b#@1012003:##k需要人协助调查此事。我们和他谈谈吧。 " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘寻找线索’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28172">
@@ -8095,7 +8095,7 @@
         <string name="0" value="#b#m100000000##k的#b#@1012003:##k需要人协助调查此事。我们和他谈谈吧。" />
         <string name="1" value="袭击发生时，嫌疑犯掉了一件东西，但是由于自己昏倒，记不起是什么了。\n\n他建议你去#b#m104040002##k查看一下。他说，附近的怪兽可能已经把它吃掉了，所以如果你继续打猎的话，或许多少能发现一些线索。\n\n一旦完成，即向#b#m100000000##k的#b#@1012003:##k报告结果。 " />
         <string name="2" value="你知道了#b#m100000000##k的#b#p1012003##k发火的原因，解除了误会。但不管怎样，嫌疑犯始终还是一个谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001341:# #t4001341:# #c4001341# / 1 " />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘仔细思考诺特勒斯的事情！’作为下一个任务。\r\n" />
     </imgdir>
@@ -8107,7 +8107,7 @@
         <string name="0" value="负责监视#r#t4001341:##k的#b#@1012003:##k说他需要帮助。我们和他谈谈吧。" />
         <string name="1" value="他说，前往#b#m120000200##k的#b#@1092012:##k调查#r#t4001341:##k。" />
         <string name="2" value="#b#m120000200##k#b#@1092012:##k说，他已经分析完线索。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘调查正在进行’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28174">
@@ -8118,7 +8118,7 @@
         <string name="0" value="#b#m120000200##k的#b#@1092012:##k说，他已经分析完线索。我们和他谈谈吧。" />
         <string name="1" value="尽管魔法密林的#b#p1032001##k已接到请求，深入调查此事，但他不想与陌生人交谈。\n\n可是，如果你去见#b#m120000300##k的#b#@1092002:##k，或许能查出他喜欢什么。我们快点赶过去！" />
         <string name="2" value="#b#@1092002:##k说他会做#b#@1032001:##k喜欢的东西。到#b#m120000300##k去找他。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘特殊的酒’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28175">
@@ -8128,7 +8128,7 @@
         <int name="order" value="3" />
         <string name="0" value="#b#@1092002:##k说他会做#b#@1032001:##k喜欢的东西。到诺特勒斯地下室去找他。" />
         <string name="1" value="他说需要下列材料，制作#rV.I.花蘑菇酒#k。\n\n1个#r猪状瓶子#k (漂漂猪掉落的物品)\n1个#r猪蝴蝶结#k (漂漂猪掉落的物品)\n20个#r花蘑菇盖#k (花蘑菇掉落的物品)\n\n搜集到所有物品时，向#b诺特勒斯#k的#b#@1092002:##k报告结果。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="2" value="#b#m101000000##k的#b#@1032001:##k是有名的爱酒之人。去找他吧。" />
         <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20 #i4001342:# #t4001342:# #c4001342# / 1 #i4000002:# #t4000002:# #c4000002# / 1 " />
         <string name="rewardSummary" value="经验值 1,000\r\n#Wbasic#\r\n#i4032478:# #t4032478:# 1\r\n进行‘解开谜团’作为下一个任务。\r\n" />
@@ -8141,7 +8141,7 @@
         <string name="0" value="#b#m101000000##k的#b#@1032001:##k是有名的爱酒之人。去找他吧。" />
         <string name="1" value="嫌疑犯是#b#m106010100##k的#b#@1040000:##k。我们快点赶往#b#m100000000##k，通知#b#@1012003:##k。" />
         <string name="2" value="你已经揭开了隐蔽的铁块碎片，找到了嫌疑犯。他是#b#m106010100##k的#b#@1040000:##k。突然想到一件事，搜集酒的材料真的很麻烦。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘抓住嫌疑犯’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28177">
@@ -8152,7 +8152,7 @@
         <string name="0" value="射手村的#b#@1012003:##k说我们需要抓住嫌疑犯。我们和他谈谈吧。" />
         <string name="1" value="我们去抓获#b#m106010100##k的#b#@1040000:##k。" />
         <string name="2" value="#b#m100000000##k的#b#@1012003:##k说要马上去见#b#m102000000##k的#b#@9201119:##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032479:# #t4032479:# #c4032479# / 1 " />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘谁改变了他？’作为下一个任务。\r\n" />
     </imgdir>
@@ -8164,7 +8164,7 @@
         <string name="0" value="#b#m100000000##k的#b#@1012003:##k说要马上去见#b#m102000000##k的#b#@9201119:##k。" />
         <string name="1" value="找到#b#m102000000##k的#b#@9201119:##k揭晓此事！" />
         <string name="2" value="#b培训导师#k已被恶魔吞噬，使他袭击了#b#p1012003##k。接着，为了填补自己的污点，他与#b#p1040000##k交换了面孔和位置。\n在不懈追捕下，你通过一丝线索就可以揭穿恶魔的邪恶计划。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032479:# #t4032479:# #c4032479# / 1 " />
         <string name="rewardSummary" value="经验值 300\r\n进行‘与印第安老斑鸠共舞！’作为下一个任务。\r\n" />
     </imgdir>
@@ -8174,7 +8174,7 @@
         <string name="0" value="#b#m102000000##k的#b#@1022000:##k说，他知道一些关于#r印第安老斑鸠#k的事情。我们和他谈谈吧。" />
         <string name="1" value="击败恶魔#r印第安老斑鸠#k！\n\n在#b#m102020300##k有一扇黑暗传送口，可持印第安老斑鸠徽章进入。击败印第安老斑鸠后，向#b勇士部落#k的#b#@1022000:##k报告结果。" />
         <string name="2" value="你已经打败了#r印第安老斑鸠#k，封印也被解开。是谁解开了封印却仍然是个谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400609# #a281791#" />
         <string name="rewardSummary" value="经验值 5,000\r\n#Wbasic#\r\n#i1003031:# #t1003031:# 1\r\n#i4032496:# #t4032496:# 1\r\n" />
     </imgdir>
@@ -8184,7 +8184,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说他将帮助你继续培训。我们和他谈谈吧。" />
         <string name="1" value="他说他有一些魔法师的强化培训课程。\n我们和#b魔法密林#k的#b#@9201121:##k谈谈吧。" />
         <string name="2" value="魔法师之路.." />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘严格的培训-1’作为下一个任务。\r\n进行‘严格的培训-2’作为下一个任务。\r\n进行‘严格的培训-3’作为下一个任务。\r\n进行‘严格的培训-4’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28181">
@@ -8193,7 +8193,7 @@
         <string name="0" value="#b#@9201121:##k in #b魔法密林#k说要对我进行第一次培训。" />
         <string name="1" value="#b#@9201121:##k的第一次培训要求你捕捉#r绿水灵#k。\n可在#b#m101010000##k轻松找到它们。\n\n一旦完成，即向报告结果。#b魔法密林#k的#b#@9201121:##k。 " />
         <string name="2" value="#b露西#k的第一次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o210100# #a281811#" />
         <string name="rewardSummary" value="经验值 800\r\n进行‘向汉斯报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8203,7 +8203,7 @@
         <string name="0" value="#b魔法密林#k的#b#@9201121:##k说要对我进行第二次培训。" />
         <string name="1" value="为#b#@9201121:##k第二次培训，必须捕捉#r绿水灵#k，搜集#r绿液球#k。" />
         <string name="2" value="#b露西#k的第二次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000004:# #t4000004:# #c4000004# / 20 " />
         <string name="rewardSummary" value="经验值 800\r\n进行‘向汉斯报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8213,7 +8213,7 @@
         <string name="0" value="#b魔法密林#k的#b#@9201121:##k说他将开始第三次培训。" />
         <string name="1" value="#b#@9201121:##k第三次培训要求你捕捉#r木妖#k。可在#b#m100050000##k轻松找到它们。\n\n一旦完成，回到#b魔法密林#k的#b#@9201121:##k。 " />
         <string name="2" value="#b露西#k的第三次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o130100# #a281831#" />
         <string name="rewardSummary" value="经验值 600\r\n进行‘向汉斯报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8223,7 +8223,7 @@
         <string name="0" value="#b魔法密林#k的#b#@9201121:##k说他将开始第四次培训。" />
         <string name="1" value="For #b#@9201121:##k第四次培训，必须捕捉#r木妖#k，搜集 #r树枝#k。\n\n一旦完成，即向#b魔法密林#k的#b#@9201121:##k报告结果。" />
         <string name="2" value="#b露西#k的第四次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000003:# #t4000003:# #c4000003# / 20 " />
         <string name="rewardSummary" value="经验值 600\r\n进行‘向汉斯报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8233,7 +8233,7 @@
         <string name="0" value="#b魔法密林#k的#b#@9201121:##k说，你必须报告培训结果。" />
         <string name="1" value="前往#b魔法密林#k的#b#@1032001:##k报告培训结果。" />
         <string name="2" value="魔法师的4次严格培训已顺利完成。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n#Wbasic#\r\n#i2000002:# #t2000002:# 100\r\n#i2000003:# #t2000003:# 100\r\n进行‘诺特勒斯的旅途’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28186">
@@ -8242,7 +8242,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k建议你扩大范围，他将告诉你下一个目的地的位置。我们和他谈谈吧。" />
         <string name="1" value="到位于#b魔法密林#k南部海上的#b诺特勒斯#k会见#b#@1072008:##k。" />
         <string name="2" value="已经见到#b诺特勒斯#k的#b#p1072008##k！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘给凯琳看看你的收获！’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28187">
@@ -8251,7 +8251,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说她将对你进行一项测试。去找她。" />
         <string name="1" value="她说要测试看看你是否具有魔法师所必备的素质。\n她说，去捕捉#r猪猪#k和#r漂漂猪#k。\n可在#b#m100030000##k轻松找到它们。\n\n一旦完成，回到#b诺特勒斯#k的#b#@1072008:##k。" />
         <string name="2" value="#b#p1072008##k肯定了你拥有成为魔法师的素质。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210100# #a281871# \r\n#o1210101# #a281872# " />
         <string name="rewardSummary" value="经验值 1,400\r\n进行‘在射手村找到了长老斯坦’作为下一个任务。\r\n" />
     </imgdir>
@@ -8263,7 +8263,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说她有事请你帮忙。我们和她谈谈吧。" />
         <string name="1" value="听听#b射手村#k的#b#@1012003:##k说了些什么。" />
         <string name="2" value="#b射手村#k的#b#@1012003:##k让你去找些配制感冒药所需的材料。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘感冒药配方’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28189">
@@ -8274,7 +8274,7 @@
         <string name="0" value="#b射手村#k的#b#@1012003:##k让你去找些配制感冒药所需的材料。我们和她谈谈吧。" />
         <string name="1" value="#b射手村#k的#b#@1012003:##k让你去找些配制感冒药所需的材料。\n\n#r花蘑菇盖#k(#r花蘑菇#k掉落的物品)\n#r蝴蝶结#k(#r漂漂猪#k掉落的物品)\n#r绿水灵珠#k (#r绿水灵#k掉落的物品)\n\n回到#b射手村#k的#b#@1012003:##k。" />
         <string name="2" value="#b射手村#k的#b#@1012003:##k说，她必须把#r感冒药#k运送到#b#@1012100:##k。前往#b#@1012003:##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20 #i4000002:# #t4000002:# #c4000002# / 10 #i4000010:# #t4000010:# #c4000010# / 2 " />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘运送感冒药’作为下一个任务。\r\n" />
     </imgdir>
@@ -8286,7 +8286,7 @@
         <string name="0" value="#b射手村#k的#b#@1012003:##k说，她必须把#r感冒药#k运送到#b#@1012100:##k。前往#b#@1012003:##k。" />
         <string name="1" value="把感冒药运送到#b射手村#k的#b#@1012100:##k。" />
         <string name="2" value="有了#r感冒药#k，你成功地治好了#b射手村#k的村民。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032490:# #t4032490:# #c4032490# / 1 " />
         <string name="rewardSummary" value="经验值 200\r\n进行‘咳嗽的达克鲁的分身’作为下一个任务。\r\n" />
     </imgdir>
@@ -8298,7 +8298,7 @@
         <string name="0" value="#b射手村#k的#b#@1012100:##k说她有事请你帮忙。我们一起去见她。" />
         <string name="1" value="把感冒药带到#b废都#k的#b#@1052001:##k。" />
         <string name="2" value="#b废都#k的#b#@1052001:##k说，他必须研究病毒传播的可能性。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032490:# #t4032490:# #c4032490# / 1 " />
         <string name="rewardSummary" value="经验值 300\r\n进行‘病毒标本研究’作为下一个任务。\r\n" />
     </imgdir>
@@ -8310,7 +8310,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，他必须研究病毒传播的可能性。我们和他谈谈吧。" />
         <string name="1" value="你必须捕捉#r三眼章鱼#k和#r花蘑菇#k，搜集病毒标本。\n\n在#b#m103010000##k有一个隐蔽的地方，那里有很多#r三眼章鱼#k和#r花蘑菇#k。\n小心黄色的路障。\n\n向#b废都#k的#b#@1052001:##k报告结果。" />
         <string name="2" value="#b废都#k的#b#@1052001:##k说他已经完成了标本分析。我们去他那里看看他有什么发现。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001364:# #t4001364:# #c4001364# / 1\r\n#i4001365:# #t4001365:# #c4001365# / 1\r\n#o1120100# #a281921# \r\n#o1210102# #a281922# " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘病毒通过水传播？’作为下一个任务。\r\n" />
     </imgdir>
@@ -8322,7 +8322,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说他已经完成了标本分析。我们去他那里看看他有什么发现。" />
         <string name="1" value="病毒通过水进行传播。告诉#b废都#k的#b#@9201120:##k。" />
         <string name="2" value="#b废都#k的#b#@9201120:##k说，他好像看到了水管旁边的奇怪东西。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘找到线索！’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28194">
@@ -8333,7 +8333,7 @@
         <string name="0" value="#b废都#k的#b#@9201120:##k说，他好像看到了水管旁边的奇怪东西。" />
         <string name="1" value="他说他好像看到了水管旁边的奇怪东西。\n前往#b废都北入口、废都北方工地#k检查消防栓。一旦发现线索，即向#b废都#k的#b#@9201120:##k报告结果。" />
         <string name="2" value="有人通过水管传播病毒。事件背后一定有一个怪物作祟！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001366:# #t4001366:# #c4001366# / 1 " />
         <string name="rewardSummary" value="经验值 700\r\n进行‘向勇士部落进发！’作为下一个任务。\r\n" />
     </imgdir>
@@ -8345,7 +8345,7 @@
         <string name="0" value="#b废都#k的#b#@9201120:##k说，有些人真的非常了解这个奇怪的徽章。我们和他谈谈吧。" />
         <string name="1" value="我们一起去见#b勇士部落#k的#b#@1022000:##k，查明徽章所包含的意思。" />
         <string name="2" value="#b勇士部落#k的#b#@1022000:##k说他认出了徽章。我们一起去看看他有什么发现。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘背后的罪魁祸首’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28196">
@@ -8356,7 +8356,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022000:##k说他认出了徽章。我们一起去看看他有什么发现。" />
         <string name="1" value="他说，徽章代表的是#r牛魔王#k，他擅长传播疾病。他被关在#b魔法密林#k中，但有人解开了封印。\n\n但是他说，首先，你需要很多树木来阻止病毒传播。\n他说，为了捕捉 #r黑木妖#k和#r大公斧木妖#k。\n（他说，可在#b#m102020100##k轻松找到它们。）\n\n一旦完成，即返回勇士部落的#b#@1022000:##k。" />
         <string name="2" value="徽章代表的是恶魔#r牛魔王#k；病毒通过用树木堵住水管得以制止。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1110101# #a281961# #o1130100# #a281961# " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘返回魔法密林’作为下一个任务。\r\n" />
     </imgdir>
@@ -8366,7 +8366,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022000:##k说，必须消灭#r牛魔王#k。去找他吧。" />
         <string name="1" value="我们一起去见#b魔法密林#k的#b#@1032001:##k，了解一下他对#r牛魔王#k了解多少。" />
         <string name="2" value="封印恶魔#r牛魔王#k的人是#b魔法密林#k的#b#p1032001##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘恶魔牛魔王！！’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28198">
@@ -8375,7 +8375,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说必须击败#r牛魔王#k。我们和他谈谈吧。" />
         <string name="1" value="如果你去#b#m101010103##k，就会找到#r牛魔王#k藏身的黑暗传送口。戴上#r牛魔王徽章#k方可进入。\n\n击败#r牛魔王#k。\n\n击败#r牛魔王#k后，向#b魔法密林#k的#b#@1032001:##k报告结果。 " />
         <string name="2" value="虽然你已经击败了解开封印的#r牛魔王#k，但是，是谁解开了封印，却仍是一个未解之谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400612# #a281981#" />
         <string name="rewardSummary" value="经验值 5,000\r\n#Wbasic#\r\n#i1003032:# #t1003032:# 1\r\n#i4032496:# #t4032496:# 1\r\n" />
     </imgdir>
@@ -8385,7 +8385,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说他会帮你继续培训。我们和他谈谈吧。" />
         <string name="1" value="去寻找#b废都#k的#b#@9201120:##k进行强化培训。" />
         <string name="2" value="飞侠之路。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘更具挑战性的培训-1’作为下一个任务。\r\n进行‘更具挑战性的培训-2’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28200">
@@ -8394,7 +8394,7 @@
         <string name="0" value="#b废都#k的#b#@9201120:##k说要对我进行第一次培训。我们和他谈谈吧。" />
         <string name="1" value="他说去捕捉30个#r花蘑菇#k。\n可在#b#m102040000##k轻松找到它们。一旦完成，即向#b废都#k的#b#@9201120:##k报告结果。" />
         <string name="2" value="#b欧文#k的第一次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210102# #a282001#" />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘向达克鲁的分身报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8404,7 +8404,7 @@
         <string name="0" value="#b废都#k的#b#@9201120:##k说要对我进行第二次培训。我们和他谈谈吧。" />
         <string name="1" value="他说，去捕捉#r花蘑菇#k，并搜集20个#r花蘑菇盖#k。\n他说，可在#b#m102040000##k轻松找到它们。\n\n一旦完成，即向#b废都#k的#b#@9201120:##k报告结果。 " />
         <string name="2" value="#b欧文#k的第二次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20 " />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘向达克鲁的分身报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8414,7 +8414,7 @@
         <string name="0" value="#b废都#k的#b#@9201120:##k说，你已完成全部培训课程，必须向#b#@1052001:##k报告结果。前往#b#@9201120:##k。" />
         <string name="1" value="我们一起去见#b废都#k的#b#@1052001:##k，并报告培训结果。" />
         <string name="2" value="两次#b欧文#k的强化培训课程已经完成了。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n#Wbasic#\r\n#i2000002:# #t2000002:# 100\r\n#i2000003:# #t2000003:# 100\r\n进行‘会见亚华’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28203">
@@ -8424,7 +8424,7 @@
         <int name="order" value="1" />
         <string name="0" value="#b废都#k的#b#@1052001:##k说，#b射手村#k出事了。" />
         <string name="1" value="你必须去问问#b射手村#k的#b#@1012109:##k，查明他丢了什么东西，并帮他找回来。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="2" value="#b射手村#k的#b#@1012109:##k请你帮忙寻找他丢失的书籍。" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘找到丢失的书籍’作为下一个任务。\r\n" />
     </imgdir>
@@ -8435,7 +8435,7 @@
         <int name="order" value="2" />
         <string name="0" value="#b射手村#k的#b#@1012109:##k请你帮忙寻找他失落的书籍。" />
         <string name="1" value="#b#@1012109:##k说，他把书借给#b射手村#k的#b#pHill_ID##k，但并未取回。找出到底发生了什么。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘找寻丢失的书籍’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28205">
@@ -8446,7 +8446,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k需要你的帮助，找到他#r失落的书籍#k。去找他吧。" />
         <string name="1" value="他说，他是在从#b诺特勒斯#k回来的路上把书丢在了#b#m104040001##k和#b#m104040002##k。\n\n他说，如果你在这个地区继续捕捉怪兽，或许能够找到#r失落的书籍#k。" />
         <string name="2" value="#b射手村#k的#b#@9201118:##k说，把#r失落的书籍#k还给#b射手村#k的#b#@1012109:##k。我们一起去见#b#@9201118:##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001352:# #t4001352:# #c4001352# / 1 " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘将书籍还给亚华’作为下一个任务。\r\n" />
     </imgdir>
@@ -8458,7 +8458,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说，把#r失落的书籍#k还给#b射手村#k的#b#@1012109:##k。我们一起去见#b#@9201118:##k。" />
         <string name="1" value="把#r失落的书籍#k转交给#b射手村#k的#b#@1012109:##k，并还给他。" />
         <string name="2" value="#b#p1012109##k的#r失落的书籍#k丢失了，因为是#b#p9201118##k借书后弄丢的，但又在#b#m104040001##k找到了。\n\n但究竟哪个是李费尔的雕像？" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘会见诺特勒斯的凯琳’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28207">
@@ -8469,7 +8469,7 @@
         <string name="0" value="#b射手村#k的#b#@1012109:##k说，#b诺特勒斯#k的#b#p1072008##k需要你的帮助。但首先我们和#b#@1012109:##k谈谈。" />
         <string name="1" value="#b#@1012109:##k说，去#b诺特勒斯#k看看如何帮助#b#@1072008:##k。" />
         <string name="2" value="#b诺特勒斯#k的#b#@1072008:##k说她有事请你帮忙。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘凯琳的要求’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28208">
@@ -8480,7 +8480,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说她有事请你帮忙。我们和她谈谈吧。" />
         <string name="1" value="她说，船附近有很多#r漂漂猪#k，妨碍乘客装卸，希望你捕捉这些#r漂漂猪#k。\n可在#b#m100030000##k轻松找到它们。" />
         <string name="2" value="#b诺特勒斯#k的#b#@1072008:##k说，丢失的东西中有一件物品非常贵重。她说，去问问#b诺特勒斯#k的#b#@1092002:##k，但是首先还有一件事要做。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210101# #a282081#" />
         <string name="rewardSummary" value="经验值 1,400\r\n进行‘贝音喜欢…’作为下一个任务。\r\n" />
     </imgdir>
@@ -8492,7 +8492,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说，丢失的东西中有一件物品非常贵重。她说，去问问#b诺特勒斯#k的#b#@1092002:##k，但是首先还有一件事需要做。" />
         <string name="1" value="#b诺特勒斯#k的#b#@1072008:##k说，你必须为#b#@1092002:##k做一件让人惊叹的事情。\n如果能搜集到下列材料，她答应为贝音制作一件特别的东西。\n\n#r猪血管#k(#r漂漂猪掉落的物品#k，可在#b#m100020000##k轻松找到。)\n#r黑色木板#k(#r黑木妖#k掉落的物品，可在 #b#m100040000##k轻松找到。)\n#r年轻人#k(#r花蘑菇#k掉落的物品。)\n\n搜集到所有物品后，向#b诺特勒斯#k的#b#@1072008:##k报告结果。" />
         <string name="2" value="告诉#b诺特勒斯#k的#b#@1092002:##k去运送#r凯琳亨德里克斯吉他#k，并询问有关#r失落的雕像#k的事情。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001343:# #t4001343:# #c4001343# / 15 #i4001344:# #t4001344:# #c4001344# / 10 #i4001354:# #t4001354:# #c4001354# / 1 " />
         <string name="rewardSummary" value="经验值 1,200\r\n#Wbasic#\r\n#i4032484:# #t4032484:# 1\r\n进行‘舰船上不能再有暴乱了！’作为下一个任务。\r\n" />
     </imgdir>
@@ -8504,7 +8504,7 @@
         <string name="0" value="告诉#b诺特勒斯#k的#b#@1092002:##k去运送#r凯琳?巴纳的吉他#k，并询问有关#r失落的雕像#k的事情。" />
         <string name="1" value="我们和#b诺特勒斯#k的#b#@1092002:##k谈谈。" />
         <string name="2" value="你实现了#b诺特勒斯#k的#b#p1072008##k的要求，并制作好了#r凯琳?巴纳的吉他#k。另外，你已设法把猪造成的损坏降至最小，解决了#r失落的雕像#k背后的谜团。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032484:# #t4032484:# #c4032484# / 1 " />
         <string name="rewardSummary" value="经验值 300\r\n进行‘下一站，魔法密林’作为下一个任务。\r\n" />
     </imgdir>
@@ -8516,7 +8516,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1092002:##k说，在#b魔法密林#k，还有一件飞贼犯罪事件。我们和他谈谈吧。" />
         <string name="1" value="在#b魔法密林#k，发生过一次飞贼犯罪事件。我们一起去见#b魔法密林#k的#b#@1032001:##k。" />
         <string name="2" value="#b魔法密林#k的#b#@1032001:##k说，村里发生过一次重大的飞贼犯罪事件。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘魔法密林飞贼犯罪事件线索’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28212">
@@ -8527,7 +8527,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说，村里发生过一次重大的飞贼犯罪事件。我们和他谈谈吧。" />
         <string name="1" value="去找#b魔法密林#k的#b#@1032104:##k，询问她有关#r金色羽毛#k的事情。" />
         <string name="2" value="#b魔法密林#k的#b#@1032104:##k说，她不太确定#r金色羽毛#k是什么东西。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001355:# #t4001355:# #c4001355# / 1" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘这个羽毛，似乎与勇士部落有关…’作为下一个任务。\r\n" />
     </imgdir>
@@ -8539,7 +8539,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032104:##k说，她不太确定#r金色羽毛#k是什么东西。" />
         <string name="1" value="把#r金色羽毛#k转交给#b勇士部落#k的#b#@9201119:##k。" />
         <string name="2" value="#b勇士部落#k的#b#@9201119:##k说，为了识别#r金色羽毛#k，你需要一样东西。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘金色羽毛的秘密’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28214">
@@ -8550,7 +8550,7 @@
         <string name="0" value="#b勇士部落#k的#b#@9201119:##k说，为了识别#r金色羽毛#k，你需要一样东西。" />
         <string name="1" value="搜集下列材料，以便准确识别#r金色羽毛#k。\n\n20片#r叶子#k (#r黑木妖#k掉落的物品，可在#b#m101040000##k和#b#m102010000##k轻松找到。)\n20块#r燧石#k (#r黑木妖#k掉落的物品。)\n\n搜集完所有物品时，向#b勇士部落#k的#b#@9201119:##k报告结果。" />
         <string name="2" value="#b勇士部落#k的#b#@9201119:##k说，你必须通知#b魔法密林#k的#b#@1032001:##k这件事。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001356:# #t4001356:# #c4001356# / 20 #i4000005:# #t4000005:# #c4000005# / 20 " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘飞贼恶魔’作为下一个任务。\r\n" />
     </imgdir>
@@ -8562,7 +8562,7 @@
         <string name="0" value="#b勇士部落#k的#b#@9201119:##k说，你必须通知#b魔法密林#k的#b#@1032001:##k这件事。" />
         <string name="1" value="去找#b魔法密林#k的#b#@1032001:##k，告诉他恶魔的样子。" />
         <string name="2" value="你发现#b魔法密林#k的飞贼犯罪事件背后有一个名叫#r沃勒福#k的恶魔。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘返回废都’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28216">
@@ -8571,7 +8571,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说，必须马上通知#b废都#k的#b#@1052001:##k有关这个动物。我们和#b#@1032001:##k谈谈吧。" />
         <string name="1" value="封印在#b废都#k的#r沃勒福#k是一个喜欢偷东西的恶魔。\n\n通知#b废都#k的#b#@1052001:##k。" />
         <string name="2" value="告诉#b废都#k的#b#p1052001##k关于恶魔的事情。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘ 恶魔喜欢…’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28217">
@@ -8580,7 +8580,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，他需要一个贵重的物品作为诱饵，抓住#r沃勒福#k。我们和他谈谈吧。" />
         <string name="1" value="你需要一个贵重的诱饵来引诱#r沃勒福#k。到废都的#b地铁入口#k，和#b#@1052102:##k谈谈。" />
         <string name="2" value="为了找到值钱的东西当诱饵，抓住沃勒福，你应找到#b废都#k的#b#p1052102##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘休咪，货币狂人’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28218">
@@ -8589,7 +8589,7 @@
         <string name="0" value="#b废都#k的#b#@1052102:##k说，她愿意给你一件看上去很值钱的东西，但不能白给你。我们先和她谈谈。" />
         <string name="1" value="抓住#b废都地铁#k的#r蓝水灵#k。\n\n一旦完成，即向#b废都#k的#b#@1052102:##k报告结果。" />
         <string name="2" value="你将利用得到的大型#r钱币模型#k当诱饵，抓住#r沃勒福#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210103# #a282181#" />
         <string name="rewardSummary" value="经验值 1,200\r\n#Wbasic#\r\n#i4032485:# #t4032485:# 1\r\n进行‘ 抓住沃勒福！’作为下一个任务。\r\n" />
     </imgdir>
@@ -8599,7 +8599,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，现在是消灭恶魔#r沃勒福#k的时候了。我们和他谈谈吧。" />
         <string name="1" value="如果你去#b#m103030200##k，就会找到#r沃勒福#k藏身的黑暗传送口。利用从#b休咪#k得到的#r大型钱币模型#k方可进入。\n\n击败#r沃勒福#k！\n\n一旦完成，即向#b废都#k的#b#@1052001:##k报告结果。 " />
         <string name="2" value="虽然你已经击败了解开封印的#r沃勒福#k，但是，是谁解开了封印，却仍是一个未解之谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400613# #a282191#" />
         <string name="rewardSummary" value="经验值 5,000\r\n#Wbasic#\r\n#i1003033:# #t1003033:# 1\r\n#i4032496:# #t4032496:# 1\r\n" />
     </imgdir>
@@ -8609,7 +8609,7 @@
         <string name="0" value="#b射手村#k的#b#@1012100:##k说她将帮助你继续培训。去找她。" />
         <string name="1" value="找到#b射手村#k的#b#@9201118:##k进行强化培训。" />
         <string name="2" value="弓箭手之路。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘ 让我看看你的本事-1’作为下一个任务。\r\n进行‘ 让我看看你的本事-2’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28221">
@@ -8618,7 +8618,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说要对我进行第一次培训。我们一起去见她。" />
         <string name="1" value="她请你捕捉30个#r花蘑菇#k。\n可在#b#m104040001##k轻松找到它们。\n\n一旦完成，即向#b射手村#k的#b#@9201118:##k报告结果。  " />
         <string name="2" value="#b#p9201118##k第一次培训完成。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210102# #a282211#" />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘向赫丽娜报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8628,7 +8628,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说要对我进行第二次培训。我们一起去见他。" />
         <string name="1" value="他说你必须捕捉#r花蘑菇#k，并搜集#r花蘑菇盖#k。\n\n#r花蘑菇#k可在#b#m104040001##k轻松找到。\n\n一旦完成，即向#b射手村#k的#b#@9201118:##k报告结果。" />
         <string name="2" value="#b#p9201118##k第二次培训完成！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000001:# #t4000001:# #c4000001# / 20 " />
         <string name="rewardSummary" value="经验值 1,000\r\n进行‘向赫丽娜报告培训结果作为下一个任务。\r\n" />
     </imgdir>
@@ -8638,7 +8638,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说你必须报告培训结果。" />
         <string name="1" value="前往#b射手村#k的#b#@1012100:##k报告结果。" />
         <string name="2" value="你已经顺利完成#b射手村#k的#b#p9201118##k的两次培训课程，并向#b#p1012100##k报告。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n#Wbasic#\r\n#i2000002:# #t2000002:# 100\r\n#i2000003:# #t2000003:# 100\r\n进行‘运送古董’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28224">
@@ -8649,7 +8649,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说，他有事想请你帮忙。我们和他谈谈吧。" />
         <string name="1" value="#b射手村#k的#b#@9201118:##k让你去见#b诺特勒斯#k的#b#@1072008:##k，找回他的#r古董#k。" />
         <string name="2" value="#b诺特勒斯#k的#b#@1072008:##k请你帮她带回#r古董#k。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘古董搜索’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28225">
@@ -8660,7 +8660,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k请你帮她带回#r古董#k。我们和她谈谈吧。" />
         <string name="1" value="检查位于诺特勒斯地下室的箱子#b#m120000300##k来寻找#r古董#k。\n\n一旦完成，即向#b诺特勒斯#k的#b#@1072008:##k报告结果。  " />
         <string name="2" value="#b诺特勒斯#k的#b#@1072008:##k说她一直遭受#r漂漂猪#k的骚扰。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001346:# #t4001346:# #c4001346# / 1 " />
         <string name="rewardSummary" value="经验值 700\r\n进行‘回到希尔那里’作为下一个任务。\r\n" />
     </imgdir>
@@ -8672,7 +8672,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说她一直遭受#r漂漂猪#k的骚扰。我们和她谈谈吧。" />
         <string name="1" value="#b诺特勒斯#k的#b#@1072008:##k说，#r漂漂猪#k太吵，让我帮他消灭#r漂漂猪#k。\n她说，可在#b#m100030000##k轻松找到它们。\n\n一旦完成，即向#b诺特勒斯#k的#b#@1072008:##k报告结果。  " />
         <string name="2" value="把古董带给#b射手村#k的#b#@9201118:##k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210101# #a282261#" />
         <string name="rewardSummary" value="经验值 1,400\r\n#Wbasic#\r\n#i4001353:# #t4001353:# 1\r\n进行‘运送成本’作为下一个任务。\r\n" />
     </imgdir>
@@ -8684,7 +8684,7 @@
         <string name="0" value="把古董带给#b射手村#k的#b#@9201118:##k。" />
         <string name="1" value="把从#b诺特勒斯#k的#b#@1072008:##k收到的古董转交给#b射手村#k的#b#@9201118:##k。" />
         <string name="2" value="在#b射手村#k的#b#p9201118##k的要求下，你去了#b诺特勒斯#k的#b#p1072008##k，并从李费尔那里把#r古董#k带回来了。\n\n但是古董看上去比预期的要更加久远。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘传说…’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28228">
@@ -8695,7 +8695,7 @@
         <string name="0" value="#b射手村#k的#b#@9201118:##k说，他认识一个人，可以给你讲述这个传说。" />
         <string name="1" value="他说仙女知道更多的传说，但她们非常矜持，不会告诉陌生人。\n\n前往#b射手村#k和#b#@1012003:##k谈谈，他知道很多有关仙女的事情。" />
         <string name="2" value="#b射手村#k的#b#@1012003:##k说他会告诉你仙女喜欢什么。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘仙女喜欢…’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28229">
@@ -8706,7 +8706,7 @@
         <string name="0" value="#b射手村#k的#b#@1012003:##k说他会告诉你仙女喜欢什么。我们和他谈谈吧。" />
         <string name="1" value="仙女非常喜欢奥卡利那笛声。\n\n\n\n#b#@1012003:##k说如果能搜集到下列材料，他将做一个奥卡利那笛子。\n\n#r树枝#k(#r木妖#k掉落的物品，可在#b#m100050000##k轻松找到。)\n#r魔法密林木桶#k(#r黑木妖#k掉落的物品，可在#b#m100040000##k轻松找到。)\n\n搜集完所有物品时，向#b射手村#k的#b#@1012003:##k报告结果。" />
         <string name="2" value="如果你送一支奥卡利那笛子给#b魔法密林#k的#b#@1032101:##k，她会欢迎你的。我们一起去见她。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001347:# #t4001347:# #c4001347# / 1 #i4000003:# #t4000003:# #c4000003# / 10 " />
         <string name="rewardSummary" value="经验值 1,200\r\n#Wbasic#\r\n#i4032481:# #t4032481:# 1\r\n进行‘所罗门之弓’作为下一个任务。\r\n" />
     </imgdir>
@@ -8718,7 +8718,7 @@
         <string name="0" value="如果你送一支奥卡利那笛子给#b魔法密林#k的#b#@1032101:##k，她会欢迎你的。我们一起去见她。" />
         <string name="1" value="#r远古之弓#k是用来消灭恶魔的所罗门之弓。据说它被封印在#b#m101010102##k。我们赶往那里吧。" />
         <string name="2" value="#b#m101010102##k的#b#@9201122:##k说，他想恢复自己失去的记忆。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘恢复远古之弓的记忆’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28231">
@@ -8729,7 +8729,7 @@
         <string name="0" value="#b#m101010102##k的#b#@9201122:##k说，他想恢复自己失去的记忆。" />
         <string name="1" value="他说自己的记忆被封印起来，想请你捕捉附近的#r绿蘑菇#k，带回20个#r记忆碎片#k。\n\n一旦完成，即向#b#m101010102##k的#b#@9201122:##k报告结果。 " />
         <string name="2" value="弓的传说是关于#r所罗门之弓#k的，但是事情似乎并不完整。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001348:# #t4001348:# #c4001348# / 20 " />
         <string name="rewardSummary" value="经验值 1,700\r\n#Wbasic#\r\n#i4032483:# #t4032483:# 1\r\n进行‘另一个讲故事的人’作为下一个任务。\r\n" />
     </imgdir>
@@ -8741,7 +8741,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1020000:##k或许也知道一些关于所罗门之弓的事情。我们和他谈谈吧。" />
         <string name="1" value="#b#@1020000:##k说，他以前肯定见过这把弓箭，但是仅此而已。\n\n他建议#b勇士部落#k的#b#@1022000:##k必须要详细地了解它。我们和他谈谈吧。" />
         <string name="2" value="#b勇士部落#k的#b#@1022000:##k说，关于#r所罗门之弓#k，他还有一些话要说。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032483:# #t4032483:# #c4032483# / 1 " />
         <string name="rewardSummary" value="经验值 200\r\n进行‘验证传说的真实性’作为下一个任务。\r\n" />
     </imgdir>
@@ -8752,7 +8752,7 @@
         <int name="order" value="2" />
         <string name="0" value="#b勇士部落#k的#b#@1022000:##k说，关于#r所罗门之弓#k，他还有一些话要说。" />
         <string name="1" value="他说，为了验证弓箭，要捕捉30个#r木妖#k。\n\n他说，可在#b#m101040000##k以及#b#m102010000##k轻松找到它们。\n\n一旦完成，即向#b勇士部落#k的#b#@1022000:##k报告结果。 " />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="2" value="#b勇士部落#k的#b#@1022000:##k想知道更多关于#r所罗门之弓#k的事情。" />
         <string name="demandSummary" value="#o130100# #a282331#" />
         <string name="rewardSummary" value="经验值 600\r\n进行‘恶魔复苏’作为下一个任务。\r\n" />
@@ -8765,7 +8765,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022000:##k想知道更多关于#r所罗门之弓#k的事情。" />
         <string name="1" value="起初，#b#@1022000:##k对这把柔弱的弓有些失望，后来他又更加仔细地看了一遍，发现了一枚封印在弓上的褪色徽章。\n\n这一定意味着恶魔封印已被解开！\n\n于是，他赶往#b废都#k，告诉以可靠情报著称的#b#@1052001:##k。" />
         <string name="2" value="#b废都#k的#b#@1052001:##k说，他已经发现了恶魔的位置，但需要一件特别的东西才能进入。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘这么说来，恶魔喜欢噪音？’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28235">
@@ -8776,7 +8776,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，他已经发现了恶魔的位置，但需要一件特别的东西才能进入。我们和他谈谈吧。" />
         <string name="1" value="为了进入#b#m104040002##k的黑暗传送口，你必须有一个喧闹的乐器。\n他说，如果能搜集到下列材料，他就给你做一个响亮的乐器。\n\n#r花蘑菇盖#k(#r花蘑菇#k掉落的物品)#r三眼章鱼腿#k(#r三眼章鱼#k掉落的物品)。#b#m103010000##k的黄色路障附件有一个门，走过去是一张隐蔽的地图，那里可以找到很多三眼章鱼。)\n#r南瓜头#k(#r漂漂猪#k掉落的物品，可在#b#m103020100##k轻松找到。)\n\n搜集完所有物品时，向#b废都#k的#b#@1052001:##k报告结果。 " />
         <string name="2" value="#b废都#k的#b#@1052001:##k说他已经找到了恶魔的位置，却无法抓住他。先与他谈谈。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001349:# #t4001349:# #c4001349# / 2 #i4001350:# #t4001350:# #c4001350# / 1 #i4000001:# #t4000001:# #c4000001# / 15 " />
         <string name="rewardSummary" value="经验值 1,400\r\n#Wbasic#\r\n#i4032482:# #t4032482:# 1\r\n进行‘抓住恶魔’作为下一个任务。\r\n" />
     </imgdir>
@@ -8788,7 +8788,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说他已经找到了恶魔的位置，却无法抓住他。先与他谈谈。" />
         <string name="1" value="据说#b射手村#k的#b#@1012100:##k是制造#r所罗门之弓#k的勇士的后代。找到她，看看是否能让她告诉你如何恢复所罗门之弓的威力。" />
         <string name="2" value="#b射手村#k的#b#@1012100:##k说，她知道如何恢复所罗门之弓的威力。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘传说般的复苏’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28237">
@@ -8799,7 +8799,7 @@
         <string name="0" value="#b射手村#k的#b#@1012100:##k说，她知道如何恢复所罗门之弓的威力。我们和她谈谈吧。" />
         <string name="1" value="她说，为了恢复#r所罗门之弓#k的威力，你需要一个#r猎魔卷轴#k。\n\n一旦完成，即向#b射手村#k的#b#@1012100:##k报告结果。 " />
         <string name="2" value="你已经恢复了传说中的猎魔#r所罗门之弓#k的威力，确定了#r黑暗独角兽#k！的位置。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i1452083:# #t1452083:# #c1452083# / 1 #i4001351:# #t4001351:# #c4001351# / 1 " />
         <string name="rewardSummary" value="经验值 1,800\r\n#Wbasic#\r\n#i1452084:# #t1452084:# 1\r\n进行‘与黑暗独角兽的最终战役’作为下一个任务。\r\n" />
     </imgdir>
@@ -8809,7 +8809,7 @@
         <string name="0" value="#b射手村#k的#b#@1012100:##k说，是时候击败恶魔#r黑暗独角兽#k了。和她谈谈。" />
         <string name="1" value="她说，如果你去#b#m104040002##k，就能找到#r黑暗独角兽#k藏身的黑暗传送口。使用#r达克韦恩的怪兽鼓#k即可进入。 \n\n击败#r黑暗独角兽#k！\n\n一旦完成，向#b射手村#k的#b#@1012100:##k报告结果。 " />
         <string name="2" value="虽然你已经击败了解开封印的#r黑暗独角兽#k，但是，是谁解开了封印，却仍是一个未解之谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400610# #a282381#" />
         <string name="rewardSummary" value="经验值 5,000\r\n#Wbasic#\r\n#i1003034:# #t1003034:# 1\r\n#i4032496:# #t4032496:# 1\r\n" />
     </imgdir>
@@ -8819,7 +8819,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说她将帮助我继续培训。我们和她谈谈吧。" />
         <string name="1" value="去找#b诺特勒斯#k的#b#@1092007:##k接受强化培训。" />
         <string name="2" value="海盗之路" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘严格的培训！-1’作为下一个任务。\r\n进行‘严格的培训！-2’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28240">
@@ -8828,7 +8828,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1092007:##k说要对我进行第一次培训。我们和他谈谈吧。" />
         <string name="1" value="他说，培训的内容是捕捉#r漂漂猪#k，#b#m100030000##k那里会有很多。\n\n一旦完成，即向#b诺特勒斯#k的#b#@1092007:##k报告结果。" />
         <string name="2" value="#b#p1092007##k的第一次培训已经完成了。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1210101# #a282401#" />
         <string name="rewardSummary" value="经验值 1,400\r\n进行‘向凯琳报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8838,7 +8838,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1092007:##k说要对我进行第二次培训。我们和他谈谈吧。" />
         <string name="1" value="他说，培训的内容是捕捉#r漂漂猪#k，搜集#r蝴蝶结#k。#r漂漂猪#k可在#b#m100030000##k轻松找到。\n\n一旦完成，即向#b诺特勒斯#k的#b#@1092007:##k报告结果。 " />
         <string name="2" value="#b#p1092007##k的第二次培训已经完成了。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000002:# #t4000002:# #c4000002# / 20 " />
         <string name="rewardSummary" value="经验值 1,400\r\n进行‘向凯琳报告培训结果’作为下一个任务。\r\n" />
     </imgdir>
@@ -8848,7 +8848,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1092007:##k说，你必须向#b#@1072008:##k报告结果。先去找#b#@1092007:##k。" />
         <string name="1" value="前往#b诺特勒斯#k的#b#@1072008:##k，报告培训结果。" />
         <string name="2" value="两次#b#p1092007##k的强化培训课程已经顺利完成了。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n#Wbasic#\r\n#i2000002:# #t2000002:# 100\r\n#i2000003:# #t2000003:# 100\r\n进行‘绿色药水的秘密’作为下一个任务。\r\n进行‘ 肮脏的藏宝图’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28243">
@@ -8859,7 +8859,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032104:##k说，她或许知道一种方法，揭示#r肮脏的藏宝图#k覆盖部分的秘密。去找她。" />
         <string name="1" value="#b魔法密林#k的#b#@1032104:##k说，如果你捕捉了#r绿水灵#k，并搜集到#r绿液球s#k，她将揭秘藏宝图的绿色部分。虽然#r绿水灵#k随处可见，但#b#m101010000##k那里会有更多。\n\n一旦完成，即向#b魔法密林#k的#b#@1032104:##k报告结果。 " />
         <string name="2" value="#b魔法密林#k的#b#@1032001:##k说，他或许知道一种方法，揭秘藏宝图余下的部分。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4000004:# #t4000004:# #c4000004# / 20 " />
         <string name="rewardSummary" value="经验值 800\r\n#Wbasic#\r\n#i4032486:# #t4032486:# 1\r\n进行‘蹒跚老人汉斯’作为下一个任务。\r\n" />
     </imgdir>
@@ -8871,7 +8871,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说，他或许知道一种方法，揭秘藏宝图余下的部分。我们和他谈谈吧。" />
         <string name="1" value="#b魔法密林#k的#b#@1032001:##k说，世上没有免费的午餐！它让你给他带一些#r猪肉#k，再配上一瓶好酒。\n他说，这是从#r漂漂猪#k那里得到的掉落的物品，可在#b#m100030000##k轻松找到。\n\n一旦完成，即向#b魔法密林#k的#b#@1032001:##k报告结果。 " />
         <string name="2" value="#b勇士部落#k的#b#@1020000:##k说，他或许能够揭秘#r肮脏的藏宝图#k的红色药水。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001357:# #t4001357:# #c4001357# / 20 " />
         <string name="rewardSummary" value="经验值 1,400\r\n进行‘ 你无法让守旧的人接受新事物’作为下一个任务。\r\n" />
     </imgdir>
@@ -8883,7 +8883,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1020000:##k说，他或许能够揭秘#r肮脏的藏宝图#k的红色药水。我们和他谈谈吧。" />
         <string name="1" value="他建议你不要浪费时间和精力去追求某些虚幻的宝物，而是捕捉#r黑木妖#k让自己冷静下来。可在#b#m101030000##k轻松找到。\n\n一旦完成，即向#b勇士部落#k的#b#@1020000:##k报告结果。 " />
         <string name="2" value="#b勇士部落#k的#b#@1020000:##k说，他或许能够揭秘#r肮脏的藏宝图#k的红色药水。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o1110101# #a282451#" />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘红色药水的秘密’作为下一个任务。\r\n" />
     </imgdir>
@@ -8895,7 +8895,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1020000:##k说，他或许能够揭秘#r肮脏的藏宝图#k的红色药水。我们和他谈谈吧。" />
         <string name="1" value="#b勇士部落#k的#b#@1020000:##k说，如果你带来一块#r燧石#k，他就能恢复覆盖有红色药水的藏宝图。(#r黑木妖#k掉落的物品，可在#b#m102020100##k轻松找到。)\n\n一旦完成，即向#b勇士部落#k的#b#@1020000:##k报告结果。" />
         <string name="2" value="#b勇士部落#k的#b#@1020000:##k建议你去#b勇士部落#k的#b#@1022007:##k搜集更多的情报。但首先我们和#b#@1020000:##k谈谈。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001356:# #t4001356:# #c4001356# / 2 " />
         <string name="rewardSummary" value="经验值 1,200\r\n进行‘缺乏某样东西’作为下一个任务。\r\n" />
     </imgdir>
@@ -8907,7 +8907,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1020000:##k建议你去#b勇士部落#k的#b#@1022007:##k搜集更多的情报。但首先我们和#b#@1020000:##k谈谈。" />
         <string name="1" value="去找#b勇士部落#k的#b#@1022007:##k，搜集更多有关藏宝图红色药水的情报。" />
         <string name="2" value="#b勇士部落#k的#b#@1022007:##k说，藏宝图上有用动物的血施加的诅咒，必须解开它的怨恨。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 200\r\n进行‘用音乐安抚灵魂’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28248">
@@ -8918,7 +8918,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022007:##k说，藏宝图上有用动物的血施加的诅咒，必须解开它的怨恨。我们和她谈谈吧。" />
         <string name="1" value="#b勇士部落#k的#b#@1022007:##k说，你需要用歌声来抚慰冤魂。\n她请你带来以下物品。\n\n#r结实的长棍#k(#r木妖#k掉落的物品。)\n#r小型蜗牛壳#k(#r红蜗牛#k掉落的物品。)\n#r一条白裤子#k(#r黑木妖#k掉落的物品，可在#b#m102020100##k轻松找到。)\n\n搜集完所有物品时，向#b勇士部落#k的#b#@1022007:##k报告结果。" />
         <string name="2" value="#b勇士部落#k的#b#@1022007:##k说，#b废都#k的#b#@1052001:##k能解开最后一个谜团。但首先我们和#b#@1022007:##k谈谈。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001358:# #t4001358:# #c4001358# / 15 #i4001359:# #t4001359:# #c4001359# / 10 #i4001360:# #t4001360:# #c4001360# / 1 " />
         <string name="rewardSummary" value="经验值 1,200\r\n#Wbasic#\r\n#i4032488:# #t4032488:# 1\r\n进行‘前往废都’作为下一个任务。\r\n" />
     </imgdir>
@@ -8930,7 +8930,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022007:##k说，#b废都#k的#b#@1052001:##k能解开最后一个谜团。但首先我们和#b#@1022007:##k谈谈。" />
         <string name="1" value="为了解开#r肮脏的藏宝图#k上白色药水的谜团，去向善于搜集情报的#b废都#k的#b#@1052001:##k寻求帮助。" />
         <string name="2" value="#b废都#k的#b#@1052001:##k说，他或许能够揭秘#r肮脏的藏宝图#k的白色药水。和他谈谈。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘白色药水的秘密’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28250">
@@ -8941,7 +8941,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，他或许能够揭秘#r肮脏的藏宝图#k的白色药水。我们和他谈谈吧。" />
         <string name="1" value="#b废都#k的#b#@1052001:##k请你给他带些#r墨水#k (#r三眼章鱼#k掉落的物品)，以揭开藏宝图的秘密。他说，在#b#m103010000##k的黄色路障附近有一个满是#r三眼章鱼#k的地方，通过暗门你可以到达那里。\n\n一旦完成，即向#b废都#k的#b#@1052001:##k报告结果。 " />
         <string name="2" value="#r肮脏的藏宝图#k上覆盖着绿色、红色、白色。\n\n绿色用绿水灵橡皮擦清除。\n红色通过燧石蒸发，再用阿言蒙塔娜的麦克风解开动物血的诅咒。\n在白色上撒了特殊墨水之后，地图就马上呈现。\n\n藏宝图终于完成了！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001361:# #t4001361:# #c4001361# / 20 " />
         <string name="rewardSummary" value="经验值 1,400\r\n#Wbasic#\r\n#i4032489:# #t4032489:# 1\r\n进行‘完成的藏宝图’作为下一个任务。\r\n" />
     </imgdir>
@@ -8953,7 +8953,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k想看看#r肮脏的藏宝图#k。去找他吧。" />
         <string name="1" value="#b废都#k的#b#@1052001:##k说，他对具体的位置也是没有一点头绪，但是他建议你去一趟#b射手村#k的#b#@1012003:##k。" />
         <string name="2" value="#b射手村#k的#b#@1012003:##k声称知道#r肮脏的藏宝图#k上所示的位置。去找他吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘搜寻宝藏’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28252">
@@ -8964,7 +8964,7 @@
         <string name="0" value="#b射手村#k的#b#@1012003:##k声称知道#r肮脏的藏宝图#k上所示的位置。去找他吧。" />
         <string name="1" value="他说，他敢肯定在造访#b诺特勒斯#k时曾见过它，并建议你去#b#m100030000##k搜寻和调查该地区。\n\n一旦完成，即向#b射手村#k的#b#@1012003:##k报告结果。 " />
         <string name="2" value="#b射手村#k的#b#@1012003:##k说，有必要研究一下#r破旧的纸张#k上的徽章。我们和他谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001363:# #t4001363:# #c4001363# / 1 #i4001362:# #t4001362:# #c4001362# / 1 " />
         <string name="rewardSummary" value="经验值 700\r\n进行‘宝藏在何处？’作为下一个任务。\r\n" />
     </imgdir>
@@ -8976,7 +8976,7 @@
         <string name="0" value="#b射手村#k的#b#@1012003:##k说，有必要研究一下#r破旧的纸张#k上的徽章。我们和他谈谈吧。" />
         <string name="1" value="它让你去找#b诺特勒斯#k的#b#@1072008:##k，以调查#r破旧的纸张#k上的徽章。" />
         <string name="2" value="#b诺特勒斯#k的#b#@1072008:##k说，徽章代表的是恶魔。我们和她谈谈吧。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘根本没有宝藏？！’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28254">
@@ -8987,7 +8987,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说，徽章代表的是恶魔。我们和她谈谈吧。" />
         <string name="1" value="封印在诺特勒斯地下室的#r雪之猫女#k已经跑了。去找地下室的#b#@1092013:##k，把情况弄清楚。" />
         <string name="2" value="藏宝图完成了，但结果却是恶魔开的一个玩笑！" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 300\r\n进行‘搜寻恶魔’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28255">
@@ -8996,7 +8996,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说，必须再次把恶魔封印起来。我们和她谈谈吧。" />
         <string name="1" value="在#b#m120000300##k你将找到一个从未见过的箱子。她说用普通攻击查看箱子，你就会发现恶魔留下的信息。\n\n一旦完成，即向#b诺特勒斯#k的#b#@1072008:##k报告结果。 " />
         <string name="2" value="你已经找到了#r雪之猫女徽章#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4032494:# #t4032494:# #c4032494# / 1 " />
         <string name="rewardSummary" value="经验值 700\r\n进行‘宝藏与恶魔雪之猫女’作为下一个任务。\r\n" />
     </imgdir>
@@ -9006,7 +9006,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说，是时候击败#r雪之猫女#k了。去找她。" />
         <string name="1" value="如果你去#b#m100030000##k，你就会找到#r雪之猫女#k藏身的黑暗传送口。使用#r雪之猫女徽章#k即可进入。击败#r雪之猫女#k！\n\n一旦完成，即向#b诺特勒斯#k的#b#@1072008:##k报告结果。" />
         <string name="2" value="虽然你已经击败了解开封印的#r雪之猫女#k，但是，是谁解开了封印，却仍是一个未解之谜。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400611# #a282561#" />
         <string name="rewardSummary" value="经验值 5,000\r\n#Wbasic#\r\n#i1003035:# #t1003035:# 1\r\n#i4032496:# #t4032496:# 1\r\n" />
     </imgdir>
@@ -9016,7 +9016,7 @@
         <string name="0" value="#b勇士部落#k的#b#@1022000:##k说，是时候弄清是谁解开了#r印第安老斑鸠#k封印的真相了。" />
         <string name="1" value="如果你在#r印第安老斑鸠#k藏身的黑暗传送口(#b#m102020300##k)附近继续捕捉怪兽，就能找到一些线索。\n\n找到线索时，向#b勇士部落#k的#b#@1022000:##k报告结果。" />
         <string name="2" value="你已经在#r印第安老斑鸠#k藏身的黑暗传送口附近找到#r撕裂的纸张(1)#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="demandSummary" value="#i4001367:# #t4001367:# #c4001367# / 1 " />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘揭示的身份’作为下一个任务。\r\n" />
@@ -9027,7 +9027,7 @@
         <string name="0" value="#b废都#k的#b#@1052001:##k说，是时候弄清是谁解开了#r沃勒福#k封印的真相了。" />
         <string name="1" value="如果你在#r沃勒福#k藏身的黑暗传送口(#b#m103030200##k)附近继续捕捉怪兽，就能找到一些线索。\n\n找到线索时，向#b废都#k的#b#@1052001:##k报告结果。" />
         <string name="2" value="你已经在#r沃勒福#k藏身的黑暗传送口附近找到#r撕裂的纸张(2)#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="demandSummary" value="#i4001368:# #t4001368:# #c4001368# / 1" />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘揭示的身份’作为下一个任务。\r\n" />
@@ -9038,7 +9038,7 @@
         <string name="0" value="#b射手村#k的#b#@1012100:##k说，是时候弄清是谁解开了#r黑暗独角兽#k封印的真相了。" />
         <string name="1" value="如果你在#r黑暗独角兽#k藏身的黑暗传送口(#b#m104040002##k)附近继续捕捉怪兽，就能找到一些线索。\n\n找到线索时，向#b射手村#k的#b#@1012100:##k报告结果。" />
         <string name="2" value="你已经在#r黑暗独角兽#k藏身的黑暗传送口附近找到#r撕裂的纸张(3)#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="demandSummary" value="#i4001369:# #t4001369:# #c4001369# / 1 " />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘揭示的身份’作为下一个任务。\r\n" />
@@ -9049,7 +9049,7 @@
         <string name="0" value="#b诺特勒斯#k的#b#@1072008:##k说，是时候弄清是谁解开了#r雪之猫女#k封印的真相了。" />
         <string name="1" value="如果你在#r雪之猫女#k藏身的黑暗传送口(#b#m100030000##k)附近继续捕捉怪兽，就能找到一些线索。\n\n找到线索时，向#b诺特勒斯#k的#b#@1072008:##k报告结果。" />
         <string name="2" value="你已经在#r雪之猫女#k藏身的黑暗传送口附近找到#r撕裂的纸张(4)#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="demandSummary" value="#i4001370:# #t4001370:# #c4001370# / 1 " />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘揭示的身份’作为下一个任务。\r\n" />
@@ -9060,7 +9060,7 @@
         <string name="0" value="#b魔法密林#k的#b#@1032001:##k说，是时候弄清是解开了#r牛魔王#k封印的真相了。" />
         <string name="1" value="如果你在#r牛魔王#k藏身的黑暗传送口(#b#m101010102##k)附近继续捕捉怪兽，就能找到一些线索。\n\n找到线索时，向#b魔法密林#k的#b#@1032001:##k报告结果。" />
         <string name="2" value="你已经在#r牛魔王#k藏身的黑暗传送口附近找到#r撕裂的纸张(5)#k。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="demandSummary" value="#i4001371:# #t4001371:# #c4001371# / 1 " />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘揭示的身份’作为下一个任务。\r\n" />
@@ -9071,7 +9071,7 @@
         <string name="0" value="为#b林中之城#k的#b#@1061011:##k搜集5条线索。" />
         <string name="1" value="从勇士部落、魔法密林、废都、诺特勒斯和射手村搜集5条线索，并转交给#b林中之城#k的#b#@1061011:##k。" />
         <string name="2" value="你已经把所有的线索都带给了#b林中之城#k的#b#p1061011##k。他说，到达#r25级#k后，如果你想继续培训就回去。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <int name="autoStart" value="1" />
         <string name="rewardSummary" value="经验值 5,000\r\n进行‘记忆者培训-1’作为下一个任务。\r\n进行‘记忆者培训-2’作为下一个任务。\r\n进行‘记忆者培训-3’作为下一个任务。\r\n" />
     </imgdir>
@@ -9081,7 +9081,7 @@
         <string name="0" value="#b林中之城#k的#b#@1061011:##k说，他为你准备了特殊培训-1。" />
         <string name="1" value="请捕捉50只#r刺蘑菇#k。" />
         <string name="2" value="#b#p1061011##k的特殊培训-1完成。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o2110200# #a282631#" />
         <string name="rewardSummary" value="经验值 2,000\r\n进行‘地狱大公的秘密’作为下一个任务。\r\n" />
     </imgdir>
@@ -9091,7 +9091,7 @@
         <string name="0" value="#b林中之城#k的#b#@1061011:##k说，他为你准备了特殊培训-2。" />
         <string name="1" value="捕捉50只#r僵尸蘑菇#k。" />
         <string name="2" value="#b记忆者#k的特殊培训-2完成。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o2230101# #a282641#" />
         <string name="rewardSummary" value="经验值 3,000\r\n进行‘地狱大公的秘密’作为下一个任务。\r\n" />
     </imgdir>
@@ -9101,7 +9101,7 @@
         <string name="0" value="#b林中之城#k的#b#@1061011:##k说，他为你准备了特殊培训-3。" />
         <string name="1" value="捕捉50只#r火独眼兽#k。" />
         <string name="2" value="#b#@1061011:##k的特殊培训-3完成。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o2230100# #a282651#" />
         <string name="rewardSummary" value="经验值 4,000\r\n进行‘地狱大公的秘密’作为下一个任务。\r\n" />
     </imgdir>
@@ -9111,7 +9111,7 @@
         <string name="0" value="#b林中之城#k的#b#@1061011:##k说，他已经猜出了神秘的徽章。去找他吧。" />
         <string name="1" value="我们和#b林中之城#k的#b#@1061011:##k谈谈。" />
         <string name="2" value="你从#b林中之城#k的#b#p1061011##k那里听到了地狱大公的秘密。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="rewardSummary" value="经验值 500\r\n进行‘如何躲避斯廷克’作为下一个任务。\r\n" />
     </imgdir>
     <imgdir name="28267">
@@ -9255,7 +9255,7 @@
         <string name="0" value="#b林中之城#k的#b#@1061011:##k说，他已经得到了有关地狱大公的最新情报。" />
         <string name="1" value="他已经找到了#r地狱大公#k所在的位置，但是却说，因为强烈的恶臭，人们无法过去。可是，如果你能搜集到下列材料，他就可以为我做一个防毒面具。\n\n30个#r野猪皮#k, 30个#r火独眼兽的眼睛#k，还有30个#r道符#k\n\n一旦完成，即向#b林中之城#k的#b#@1061011:##k报告结果。" />
         <string name="2" value="#r狂野之眼的防毒面具#k做好了。噢，但是味道太难闻了。如果恶臭不太厉害，你还可以忍受的话，就不要使用。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#i4001372:# #t4001372:# #c4001372# / 30 #i4000008:# #t4000008:# #c4000008# / 30 #i4001373:# #t4001373:# #c4001373# / 30 " />
         <string name="rewardSummary" value="经验值 6,000\r\n#Wbasic#\r\n#i1003036:# #t1003036:# 1\r\n进行‘为了金银岛的和平…’作为下一个任务。\r\n" />
     </imgdir>
@@ -9265,7 +9265,7 @@
         <string name="0" value="战斗的时间到了。请造访#b林中之城#k的#b记忆者#k。" />
         <string name="1" value="穿过#b#m105050400##k中的门，即可到达#r地狱大公#k。里面充满可怕的恶臭，所以需要一个#r狂野之眼的防毒面具#k。击败#r地狱大公！#k。任务一完成，就返回#b林中之城#k的#b记忆者#k。" />
         <string name="2" value="你击败了#r地狱大公#k，这个威胁着金银岛和平的恶魔。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
         <string name="demandSummary" value="#o9400633# #a282831#\r\n" />
         <string name="rewardSummary" value="经验值 10,000\r\n1,000币\r\n" />
     </imgdir>
@@ -10757,7 +10757,7 @@
         <string name="0" value="前往魔法密林去见妖精维英吧！" />
         <string name="1" value="在魔法密林见到了妖精维英，她问我要不要前往全新的世界将自己锻炼的更强大，但妖精维英的目的其实是要我帮他将某样东西转交给住在天空之城的朋友─#b妖精珂丽尔#k。" />
         <string name="2" value="将凯柏洛斯之泪交给妖精维英的朋友─妖精 珂丽尔了。" />
-        <int name="area" value="26" />
+        <int name="area" value="9" />
     </imgdir>
     <imgdir name="3043">
         <string name="name" value="珂丽尔的忙" />
@@ -10767,7 +10767,7 @@
         <string name="0" value="前往天空之城去见妖精珂丽尔。" />
         <string name="1" value="忙碌的妖精珂丽尔请我帮他的忙。她要我在村庄各处收集空瓶子，以及可用在魔法道具的材料。\n\n #t4031198# #b#c4031198##k/20 \n #t4000073# #b#c4000073##k/200 \n #t4000058# #b#c4000058##k/50" />
         <string name="2" value="帮了珂丽尔的忙。" />
-        <int name="area" value="33" />
+        <int name="area" value="9" />
     </imgdir>
     <imgdir name="3044">
         <string name="name" value="食人花蜜" />
@@ -23174,7 +23174,7 @@
         <string name="0" value="击败地狱大公后，记忆者在残留的魔力中发现了异常。前往#b#m101000000##k找#b#p1032106##k了解天空之城的情况。" />
         <string name="1" value="记忆者发现地狱大公的黑暗魔力并非来自金银岛，其源头与远古魔法有关。前往#b#m101000000##k找#b#p1032106##k打听消息。" />
         <string name="2" value="从#p1032106#那里得知天空之城最近确实出现了异常，事态比想象中更严重。" />
-        <int name="area" value="10" />
+        <int name="area" value="9" />
     </imgdir>
     <imgdir name="4100">
         <string name="0" value="最近#b#p9310010##k家家畜变得很暴躁，农活也变得很困难。去找找他吧。" />
