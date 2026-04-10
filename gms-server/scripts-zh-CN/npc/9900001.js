@@ -65,7 +65,7 @@ function action(mode, type, selection) {
         text += " \r\n\r\n";
         text += "#L4#查询当前地图爆率#l\t#L5#查询物品掉落怪物#l\r\n\r\n";
         text += "#L6#升级怪物达人戒指#l\t#L7#升级任务达人戒指#l\r\n\r\n";
-        text += "#L8#分解/合成卷轴#l\t#L9#矿石仓库#l\r\n\r\n";
+        text += "#L8#分解/合成卷轴#l\t#L9#矿石仓库#l\t";
         text += "#L10#装备共享#l\r\n\r\n";
 
 //        text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";

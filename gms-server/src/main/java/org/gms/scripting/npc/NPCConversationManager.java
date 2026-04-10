@@ -1528,7 +1528,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         if (dto.getIsRare() != null && dto.getIsRare() == 1) {
             equip.setOwner(sharerName + "分享的「稀有」");
         } else {
-            equip.setOwner(sharerName + "分享的");
+            equip.setOwner(sharerName + "分享");
         }
 
         if (!InventoryManipulator.checkSpace(c, equip.getItemId(), 1, equip.getOwner())) {
