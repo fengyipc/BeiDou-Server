@@ -32,7 +32,7 @@ var em;
 const ExpeditionType = Java.type('org.gms.server.expeditions.ExpeditionType');
 const exped = ExpeditionType.HORNTAIL;
 var expedName = "Horntail";
-var expedBoss = "mighty Horntail";
+var expedBoss = "暗黑龙王";
 
 var list = "你想做什么？#b\r\n\r\n#L1#查看当前远征队成员#l\r\n#L2#开始战斗！#l\r\n#L3#退出远征队#l";
 
@@ -59,7 +59,7 @@ function action(mode, type, selection) {
                 cm.sendOk("您不符合与" + expedBoss + "战斗的条件！");
                 cm.dispose();
             } else if (expedition == null) { //Start an expedition
-                cm.sendSimple("#e#b<远征：" + expedName + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n你想组建一个队伍来挑战 #r" + expedBoss + "#k 吗？\r\n#b#L1#让我们开始吧！#l\r\n\#L2#不，我想再等一会儿...#l");
+                cm.sendSimple("#e#b<远征：" + expedBoss + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n你想组建一个队伍来挑战 #r" + expedBoss + "#k 吗？\r\n#b#L1#让我们开始吧！#l\r\n\#L2#不，我想再等一会儿...#l");
                 status = 1;
             } else if (expedition.isLeader(player)) { //If you're the leader, manage the exped
                 if (expedition.isInProgress()) {
@@ -80,7 +80,9 @@ function action(mode, type, selection) {
             } else if (expedition.isInProgress()) { //Only if the expedition is in progress
                 if (expedition.contains(player)) { //If you're registered, warp you in
                     var eim = em.getInstance(expedName + player.getClient().getChannel());
-                    if (eim.getIntProperty("canJoin") == 1) {
+                    if (eim == null) {
+                        cm.sendOk("你的远征队已经开始对抗" + expedBoss + "的战斗。让我们为这些勇敢的灵魂祈祷。");
+                    } else if (eim.getIntProperty("canJoin") == 1) {
                         eim.registerPlayer(player);
                     } else {
                         cm.sendOk("你的远征队已经开始对抗" + expedBoss + "的战斗。让我们为这些勇敢的灵魂祈祷。");

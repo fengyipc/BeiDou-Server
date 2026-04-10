@@ -116,10 +116,11 @@ function getEligibleParty(party) {      //selects, from the given party, the tea
     return Java.to(eligible, Java.type('org.gms.net.server.world.PartyCharacter[]'));
 }
 
-function setup(level, lobbyid) {
-    var eim = em.newInstance("Balrog" + lobbyid);
-    eim.setProperty("level", level);
+function setup(channel) {
+    var eim = em.newInstance("Balrog" + channel);
+    eim.setProperty("level", channel);
     eim.setProperty("boss", "0");
+    eim.setProperty("canJoin", 1);
 
     eim.getInstanceMap(105100300).resetPQ(level);
     eim.getInstanceMap(105100301).resetPQ(level);

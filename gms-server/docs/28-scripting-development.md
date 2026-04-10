@@ -624,16 +624,293 @@ function end(mode, type, selection) {
 
 | 函数 | 调用时机 |
 |------|----------|
-| `init()` | 初始化事件数据 |
-| `setup(eim, leaderid)` | 创建事件实例 |
-| `playerEntry(eim, player)` | 玩家进入事件 |
+| `init()` | 服务器启动时初始化事件数据 |
+| `setup(channel)` | 远征类事件：Java 传入 `leader.getClient().getChannel()` |
+| `setup(difficulty, lobbyid)` | 组队副本类事件：Java 传入难度和大厅 ID |
+| `afterSetup(eim)` | `startEvent()` 后立即调用，用于刷怪等初始化 |
+| `playerEntry(eim, player)` | 玩家进入事件（`registerPlayer` 触发） |
+| `playerUnregistered(eim, player)` | 玩家取消注册后 |
 | `playerExit(eim, player)` | 玩家退出事件 |
+| `playerLeft(eim, player)` | 玩家离开事件（可区分主动离开与被动） |
 | `playerDead(eim, player)` | 玩家死亡时 |
-| `monsterKilled(mob, eim)` | 怪物死亡时 |
+| `playerRevive(eim, player)` | 玩家点击复活确认后 |
+| `playerDisconnected(eim, player)` | 玩家断线时 |
+| `changedMap(eim, player, mapid)` | 玩家切换地图后 |
+| `changedLeader(eim, leader)` | 队长变更时 |
+| `scheduledTimeout(eim)` | 事件计时器到期 |
+| `monsterKilled(mob, eim)` | 怪物被击杀时 |
+| `monsterValue(eim, mobId)` | 返回怪物击杀计数增量 |
 | `allMonstersDead(eim)` | 所有怪物死亡时 |
-| `timeOut(eim)` | 事件超时时 |
-| `end(eim)` | 事件结束时 |
-| `clearPQ(eim)` | 通关时 |
+| `end(eim)` | 事件结束，传送玩家并 `eim.dispose()` |
+| `clearPQ(eim)` | 通关时，`setEventCleared()` |
+| `dispose(eim)` | 实例销毁时的清理回调 |
+
+### 5.4 远征系统（Expedition）详解
+
+远征（Expedition）是 BOSS 战的组队机制，区别于普通组队副本（PQ）：
+- **每频道一个**：同一 `ExpeditionType` 在同一频道只能存在一个远征
+- **招募制**：创建后有招募期（默认 5 分钟），到期自动关闭
+- **大规模**：支持最多 30 人参与，适用于世界 BOSS
+- **BOSS 日志**：记录击杀次数，可设置每日挑战上限
+
+#### 5.4.1 远征类型枚举
+
+定义在 `ExpeditionType.java`：
+
+| 枚举值 | 最少人数 | 最多人数 | 等级范围 | 招募时间 |
+|--------|---------|---------|---------|---------|
+| `BALROG_EASY` | 3 | 30 | 50-255 | 5 分钟 |
+| `BALROG_NORMAL` | 6 | 30 | 50-255 | 5 分钟 |
+| `ZAKUM` | 6 | 30 | 50-255 | 5 分钟 |
+| `HORNTAIL` | 6 | 30 | 100-255 | 5 分钟 |
+| `SCARGA` | 6 | 30 | 100-255 | 5 分钟 |
+| `SHOWA` | 3 | 30 | 100-255 | 5 分钟 |
+| `PINKBEAN` | 6 | 30 | 120-255 | 5 分钟 |
+| `CHAOS_ZAKUM` | 6 | 30 | 120-255 | 5 分钟 |
+| `CHAOS_HORNTAIL` | 6 | 30 | 120-255 | 5 分钟 |
+| `CWKPQ` | 6 | 30 | 90-255 | 5 分钟 |
+
+> 当配置 `use_enable_solo_expeditions = true` 时，最少人数降为 1。
+
+#### 5.4.2 远征生命周期
+
+```mermaid
+sequenceDiagram
+    participant P as 玩家
+    participant NPC as NPC 脚本
+    participant API as cm (AbstractPlayerInteraction)
+    participant CH as Channel
+    participant EXP as Expedition
+    participant EM as EventManager
+    participant EIM as EventInstanceManager
+    participant EVT as 事件脚本 (BalrogBattle.js 等)
+
+    Note over P,EVT: 阶段1：创建远征
+    P->>NPC: 对话 NPC
+    NPC->>API: cm.createExpedition(type)
+    API->>EXP: new Expedition(player, type)
+    API->>CH: Channel.addExpedition(exped)
+    CH->>EXP: exped.beginRegistration()
+    EXP-->>P: 显示倒计时、广播招募通知
+
+    Note over P,EVT: 阶段2：招募成员
+    P->>NPC: 其他玩家对话 NPC
+    NPC->>EXP: expedition.addMember(player)
+    Note right of EXP: isRegistering() == true
+
+    Note over P,EVT: 阶段3：队长开始战斗
+    P->>NPC: 队长选择"开始战斗"
+    NPC->>EM: em.startInstance(expedition)
+    EM->>EVT: createInstance("setup", channel)
+    EVT->>EM: setup(channel) → em.newInstance("BossName" + channel) → 返回 eim
+    EM->>EXP: exped.start() → 关闭招募、记录 BOSS 日志
+    EM->>EIM: eim.registerExpedition(exped)
+    EIM->>EVT: 对招募地图上每个成员调用 playerEntry(eim, player)
+    EM->>EIM: eim.startEvent()
+    EIM->>EVT: afterSetup(eim) → 刷出 BOSS
+
+    Note over P,EVT: 阶段4：迟到成员加入（Late Join）
+    P->>NPC: 已注册但未进入副本的成员对话 NPC
+    NPC->>EM: em.getInstance("BossName" + channel)
+    alt eim != null && canJoin == 1
+        NPC->>EIM: eim.registerPlayer(player)
+        EIM->>EVT: playerEntry(eim, player)
+    else eim == null 或 canJoin != 1
+        NPC-->>P: "战斗已开始"
+    end
+
+    Note over P,EVT: 阶段5：战斗与通关
+    EIM->>EVT: monsterKilled(mob, eim)
+    EVT->>EIM: clearPQ → setEventCleared()
+    EIM->>EXP: disposeExpedition() → expedition.dispose(true)
+
+    Note over P,EVT: 阶段6：结束清理
+    EVT->>EIM: end(eim) → 传送所有玩家 → eim.dispose()
+    EIM->>EM: em.disposeInstance(name) → 延迟移除实例
+    EIM->>CH: removeChannelExpedition → 允许创建新远征
+```
+
+#### 5.4.3 NPC 脚本与事件脚本的协作
+
+远征需要 **NPC 脚本** 和 **事件脚本** 配合工作。两者通过**事件实例名称**进行关联，命名必须一致。
+
+**NPC 脚本** 职责（如 `npc/1061014.js`）：
+
+1. 检查玩家等级是否符合要求
+2. 创建远征队（`cm.createExpedition`）
+3. 管理成员加入/踢出
+4. 启动事件（`em.startInstance(expedition)`）
+5. 处理迟到成员的传送（通过 `em.getInstance()` 查找实例）
+6. 解散远征（`cm.endExpedition`）
+
+**事件脚本** 职责（如 `event/BalrogBattle.js`）：
+
+1. `init()` 设置事件描述信息
+2. `setup(channel)` 创建实例、初始化地图、设置计时器
+3. `afterSetup(eim)` 刷出 BOSS
+4. 处理战斗事件（击杀、死亡、断线等）
+5. `clearPQ(eim)` / `end(eim)` 通关或超时清理
+
+#### 5.4.4 实例命名规范（重要）
+
+NPC 脚本通过 `em.getInstance(expedName + channel)` 查找事件实例，事件脚本通过 `em.newInstance(prefix + channel)` 创建实例。**两侧的名称必须完全匹配**，否则迟到加入功能将失效。
+
+**正确的命名对应关系：**
+
+| BOSS 事件脚本 | `setup` 参数 | `newInstance` 名称 | NPC `expedName` 应设为 |
+|--------------|-------------|-------------------|----------------------|
+| `ZakumBattle.js` | `setup(channel)` | `"Zakum" + channel` | `"Zakum"` |
+| `HorntailBattle.js` | `setup(channel)` | `"Horntail" + channel` | `"Horntail"` |
+| `ShowaBattle.js` | `setup(channel)` | `"Showa" + channel` | `"Showa"` |
+| `ScargaBattle.js` | `setup(channel)` | `"Scarga" + channel` | `"Scarga"` |
+| `PinkBeanBattle.js` | `setup(channel)` | `"PinkBean" + channel` | `"PinkBean"` |
+| `BalrogBattle.js` | `setup(channel)` | `"Balrog" + channel` | `"Balrog"` |
+| `CWKPQ.js` | `setup(channel)` | `"CWKPQ" + channel` | `"CWKPQ"` |
+
+> **注意**：`expedName` 仅用于 `em.getInstance()` 实例查找，**不得用于 NPC 对话显示文本**。对话显示统一使用 `expedBoss` 变量（中文），以避免对话框出现中英混排。
+
+#### 5.4.5 远征事件 `setup` 函数参数约定
+
+Java 端 `EventManager.startInstance(Expedition)` 调用链：
+
+```
+startInstance(exped)
+  → startInstance(-1, exped)
+    → startInstance(lobbyId, exped, leader)
+      → createInstance("setup", leader.getClient().getChannel())  // 只传 1 个参数
+```
+
+因此远征类事件脚本的 `setup` 函数**只接收一个参数：频道号（channel）**。
+
+```javascript
+// ✅ 正确：远征类 BOSS 战
+function setup(channel) {
+    let eim = em.newInstance("BossName" + channel);
+    eim.setProperty("canJoin", 1);  // 允许迟到加入
+    // ...
+    return eim;
+}
+
+// ❌ 错误：使用 (level, lobbyid) 会导致 lobbyid 为 undefined
+function setup(level, lobbyid) {
+    let eim = em.newInstance("BossName" + lobbyid);  // → "BossNameundefined"
+    // ...
+}
+```
+
+> 组队副本（PQ）使用不同的 `startInstance` 重载：`createInstance("setup", difficulty, lobbyId)`，传入 2 个参数。
+
+#### 5.4.6 `canJoin` 属性
+
+`canJoin` 属性控制迟到成员能否通过 NPC 传送进入正在进行的远征。事件脚本必须在 `setup` 中设置：
+
+```javascript
+eim.setProperty("canJoin", 1);  // 允许迟到加入
+```
+
+如果不设置，`getIntProperty("canJoin")` 返回默认值 0，迟到成员将无法进入。
+
+#### 5.4.7 NPC 脚本中的 `eim` null 检查
+
+在迟到加入分支中，`em.getInstance()` 可能返回 `null`（实例已销毁、名称不匹配等），**必须先做 null 检查**：
+
+```javascript
+// ✅ 正确：先检查 null
+let eim = em.getInstance(expedName + player.getClient().getChannel());
+if (eim == null) {
+    cm.sendOk("战斗已开始，无法加入。");
+} else if (eim.getIntProperty("canJoin") == 1) {
+    eim.registerPlayer(player);
+} else {
+    cm.sendOk("战斗已开始，无法加入。");
+}
+
+// ❌ 错误：未做 null 检查，直接调用 getIntProperty
+let eim = em.getInstance(expedName + player.getClient().getChannel());
+if (eim.getIntProperty("canJoin") == 1) {  // eim 为 null 时抛异常
+    eim.registerPlayer(player);
+}
+```
+
+#### 5.4.8 `eim` 为 null 的触发条件
+
+以下场景中 `em.getInstance(name)` 会返回 `null`：
+
+1. **实例名称不匹配**：NPC 的 `expedName` 与事件脚本的 `newInstance` 名称前缀不一致
+2. **事件实例已销毁**：战斗已结束，`eim.dispose()` 已被调用，`em.disposeInstance()` 延迟从 map 中移除了实例
+3. **事件脚本加载失败**：`setup()` 执行异常导致实例未创建
+4. **竞态条件**：远征状态已标记为 `inProgress` 但实例尚未完全初始化
+
+#### 5.4.9 远征 NPC 脚本模板
+
+```javascript
+const ExpeditionType = Java.type('org.gms.server.expeditions.ExpeditionType');
+const exped = ExpeditionType.BOSS_TYPE;
+
+// expedName 必须与事件脚本 em.newInstance 的前缀一致（英文，仅用于实例查找）
+let expedName = "BossName";
+// expedBoss 用于所有对话文本显示（中文，需与术语库对齐）
+let expedBoss = "BOSS中文名";
+let expedMap = "副本地图名";
+
+let status = 0;
+let expedition, player, em;
+
+function start() {
+    action(1, 0, 0);
+}
+
+function action(mode, type, selection) {
+    player = cm.getPlayer();
+    expedition = cm.getExpedition(exped);
+    em = cm.getEventManager("EventScriptName");
+
+    if (mode <= 0) { cm.dispose(); return; }
+
+    if (status == 0) {
+        if (player.getLevel() < exped.getMinLevel() || player.getLevel() > exped.getMaxLevel()) {
+            cm.sendOk("等级不符合要求"); cm.dispose();
+        } else if (expedition == null) {
+            // → status=1：创建远征
+        } else if (expedition.isLeader(player)) {
+            if (expedition.isInProgress()) {
+                cm.sendOk("战斗已开始"); cm.dispose();
+            } else {
+                // → status=2：队长管理界面
+            }
+        } else if (expedition.isRegistering()) {
+            // 加入远征或等待
+        } else if (expedition.isInProgress()) {
+            if (expedition.contains(player)) {
+                // 迟到加入：必须检查 eim != null
+                let eim = em.getInstance(expedName + player.getClient().getChannel());
+                if (eim != null && eim.getIntProperty("canJoin") == 1) {
+                    eim.registerPlayer(player);
+                } else {
+                    cm.sendOk("无法加入");
+                }
+                cm.dispose();
+            } else {
+                cm.sendOk("未注册"); cm.dispose();
+            }
+        }
+    }
+    // ... 其他状态处理
+}
+```
+
+#### 5.4.10 cm 远征相关 API
+
+定义在 `AbstractPlayerInteraction.java`，通过 `cm` 对象调用：
+
+| 方法 | 说明 |
+|------|------|
+| `cm.createExpedition(type)` | 创建远征。返回 0=成功，1=次数上限，-1=已存在 |
+| `cm.createExpedition(type, silent, min, max)` | 创建远征（可自定义参数） |
+| `cm.endExpedition(exped)` | 解散远征（`dispose` + `removeChannelExpedition`） |
+| `cm.getExpedition(type)` | 获取当前频道的远征实例，无则返回 null |
+| `cm.getExpeditionMemberNames(type)` | 获取远征成员名称列表 |
+| `cm.isLeaderExpedition(type)` | 当前玩家是否为远征队长 |
 
 ---
 

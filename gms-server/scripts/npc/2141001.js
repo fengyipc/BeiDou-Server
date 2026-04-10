@@ -33,7 +33,7 @@ var player;
 var em;
 const ExpeditionType = Java.type('org.gms.server.expeditions.ExpeditionType');
 var exped = ExpeditionType.PINKBEAN;
-var expedName = "Twilight of the Gods";
+var expedName = "PinkBean";
 var expedBoss = "Pink Bean";
 var expedMap = "Twilight of Gods";
 
@@ -83,7 +83,9 @@ function action(mode, type, selection) {
             } else if (expedition.isInProgress()) { //Only if the expedition is in progress
                 if (expedition.contains(player)) { //If you're registered, warp you in
                     var eim = em.getInstance(expedName + player.getClient().getChannel());
-                    if (eim.getIntProperty("canJoin") == 1) {
+                    if (eim == null) {
+                        cm.sendOk("Your expedition already started the battle against " + expedBoss + ". Lets pray for those brave souls.");
+                    } else if (eim.getIntProperty("canJoin") == 1) {
                         eim.registerPlayer(player);
                     } else {
                         cm.sendOk("Your expedition already started the battle against " + expedBoss + ". Lets pray for those brave souls.");

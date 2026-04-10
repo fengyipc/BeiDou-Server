@@ -24,7 +24,7 @@ var player;
 var em;
 const ExpeditionType = Java.type('org.gms.server.expeditions.ExpeditionType');
 const exped = ExpeditionType.BALROG_NORMAL;
-var expedName = "巨魔蝙蝠怪";
+var expedName = "Balrog";
 var expedBoss = "巨魔蝙蝠怪";
 var expedMap = "蝙蝠怪之墓";
 
@@ -53,7 +53,7 @@ function action(mode, type, selection) {
                 cm.sendOk("你不符合挑战" + expedBoss + "的条件！");
                 cm.dispose();
             } else if (expedition == null) { // 创建远征队
-                cm.sendSimple("#e#b<远征队：" + expedName + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n要组建队伍挑战#r" + expedBoss + "#k吗？\r\n#b#L1#立即创建队伍！#l\r\n\#L2#再考虑一下...#l\r\n\#L3#查看远征队信息...#l");
+                cm.sendSimple("#e#b<远征队：" + expedBoss + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n要组建队伍挑战#r" + expedBoss + "#k吗？\r\n#b#L1#立即创建队伍！#l\r\n\#L2#再考虑一下...#l\r\n\#L3#查看远征队信息...#l");
                 status = 1;
             } else if (expedition.isLeader(player)) { // 队长操作界面
                 if (expedition.isInProgress()) {
@@ -74,7 +74,9 @@ function action(mode, type, selection) {
             } else if (expedition.isInProgress()) { // 远征进行中
                 if (expedition.contains(player)) { // 已注册则传送进入
                     var eim = em.getInstance(expedName + player.getClient().getChannel());
-                    if (eim.getIntProperty("canJoin") == 1) {
+                    if (eim == null) {
+                        cm.sendOk("你的队伍已开始与" + expedBoss + "的战斗，让我们为这些勇士祈祷吧。");
+                    } else if (eim.getIntProperty("canJoin") == 1) {
                         eim.registerPlayer(player);
                     } else {
                         cm.sendOk("你的队伍已开始与" + expedBoss + "的战斗，让我们为这些勇士祈祷吧。");
