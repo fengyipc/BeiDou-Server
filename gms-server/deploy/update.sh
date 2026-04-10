@@ -103,9 +103,23 @@ VERSION_LOCAL="$(mktemp)"
 cleanup() { rm -f "$VERSION_LOCAL" "${TMP_JAR:-}" "${TMP_ZIP:-}"; }
 trap cleanup EXIT
 
-cos_cp_down "version.json" "$VERSION_LOCAL"
-
-python3 "$HELPER_PY" json_validate "$VERSION_LOCAL"
+download_ok=false
+for attempt in 1 2 3; do
+  cos_cp_down "version.json" "$VERSION_LOCAL"
+  if python3 "$HELPER_PY" json_validate "$VERSION_LOCAL" 2>/dev/null; then
+    download_ok=true
+    break
+  fi
+  if [[ $attempt -lt 3 ]]; then
+    echo "version.json validation failed (attempt $attempt/3), retrying in 3s..." >&2
+    sleep 3
+  fi
+done
+if [[ "$download_ok" != true ]]; then
+  echo "version.json validation failed after 3 attempts" >&2
+  python3 "$HELPER_PY" json_validate "$VERSION_LOCAL"
+  exit 1
+fi
 
 export BEIDOU_VER_JSON="$VERSION_LOCAL"
 schema="$(python3 -c "import json,os; d=json.load(open(os.environ['BEIDOU_VER_JSON'],encoding='utf-8')); print(d.get('schema',''))")"
