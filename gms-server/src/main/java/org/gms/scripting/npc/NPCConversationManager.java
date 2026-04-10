@@ -24,9 +24,13 @@ package org.gms.scripting.npc;
 import lombok.Getter;
 import org.gms.client.Character;
 import org.gms.client.*;
+import org.gms.client.inventory.Equip;
+import org.gms.client.inventory.Inventory;
+import org.gms.client.inventory.InventoryType;
 import org.gms.client.inventory.Item;
 import org.gms.client.inventory.ItemFactory;
 import org.gms.client.inventory.Pet;
+import org.gms.client.inventory.manipulator.InventoryManipulator;
 import org.gms.config.GameConfig;
 import org.gms.constants.game.GameConstants;
 import org.gms.constants.game.NextLevelType;
@@ -44,6 +48,7 @@ import org.gms.net.server.guild.Guild;
 import org.gms.net.server.guild.GuildPackets;
 import org.gms.net.server.world.Party;
 import org.gms.net.server.world.PartyCharacter;
+import org.gms.service.EquipmentShareService;
 import org.gms.service.GachaponService;
 import org.gms.util.packets.WeddingPackets;
 import org.slf4j.Logger;
@@ -91,6 +96,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     private boolean itemScript;
     private List<PartyCharacter> otherParty;
     private static final GachaponService gachaponService = ServerManager.getApplicationContext().getBean(GachaponService.class);
+    private static final EquipmentShareService equipmentShareService = ServerManager.getApplicationContext().getBean(EquipmentShareService.class);
 
     private final Map<Integer, String> npcDefaultTalks = new HashMap<>();
     @Getter
@@ -1468,5 +1474,120 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         nextLevelContext.setLevelType(NextLevelType.SEND_YES_NO);
         nextLevelContext.setLastLevel(noLevel);
         nextLevelContext.setNextLevel(yesLevel);
+    }
+
+    // ==================== 装备共享系统 ====================
+
+    public boolean submitSharedEquip(short slot) {
+        Character chr = getPlayer();
+        Inventory inv = chr.getInventory(InventoryType.EQUIP);
+        Item item = inv.getItem(slot);
+        if (item == null || !(item instanceof Equip)) {
+            return false;
+        }
+        Equip equip = (Equip) item;
+
+        if ((equip.getFlag() & ItemConstants.UNTRADEABLE) != 0) {
+            return false;
+        }
+
+        int world = chr.getWorld();
+        String name = chr.getName();
+
+        boolean saved = equipmentShareService.shareEquip(world, name, equip);
+        if (!saved) {
+            return false;
+        }
+
+        InventoryManipulator.removeFromSlot(c, InventoryType.EQUIP, slot, (short) 1, false);
+        return true;
+    }
+
+    public List<?> listSharedEquips() {
+        int world = getPlayer().getWorld();
+        return equipmentShareService.listEquips(world);
+    }
+
+    public List<?> mySharedEquips() {
+        Character chr = getPlayer();
+        return equipmentShareService.listMyEquips(chr.getWorld(), chr.getName());
+    }
+
+    public boolean takeSharedEquip(long shareId) {
+        Character chr = getPlayer();
+        int world = chr.getWorld();
+
+        var optRecord = equipmentShareService.takeEquip(shareId, world);
+        if (optRecord.isEmpty()) {
+            return false;
+        }
+        var dto = optRecord.get();
+
+        Equip equip = buildEquipFromShare(dto);
+        String sharerName = dto.getSharerName();
+        if (dto.getIsRare() != null && dto.getIsRare() == 1) {
+            equip.setOwner(sharerName + "分享的「稀有」");
+        } else {
+            equip.setOwner(sharerName + "分享的");
+        }
+
+        if (!InventoryManipulator.checkSpace(c, equip.getItemId(), 1, equip.getOwner())) {
+            equipmentShareService.reInsert(dto);
+            return false;
+        }
+
+        InventoryManipulator.addFromDrop(c, equip, true);
+        return true;
+    }
+
+    public boolean revokeSharedEquip(long shareId) {
+        Character chr = getPlayer();
+        String name = chr.getName();
+
+        var optRecord = equipmentShareService.revokeEquip(shareId, name);
+        if (optRecord.isEmpty()) {
+            return false;
+        }
+        var dto = optRecord.get();
+
+        Equip equip = buildEquipFromShare(dto);
+        if (dto.getIsRare() != null && dto.getIsRare() == 1) {
+            equip.setOwner("「稀有」");
+        } else {
+            equip.setOwner("");
+        }
+
+        if (!InventoryManipulator.checkSpace(c, equip.getItemId(), 1, equip.getOwner())) {
+            equipmentShareService.reInsert(dto);
+            return false;
+        }
+
+        InventoryManipulator.addFromDrop(c, equip, true);
+        return true;
+    }
+
+    private Equip buildEquipFromShare(org.gms.dao.entity.EquipmentShareDO dto) {
+        Equip equip = (Equip) ItemInformationProvider.getInstance().getEquipById(dto.getItemId());
+        equip.setUpgradeSlots(dto.getUpgradeSlots() != null ? dto.getUpgradeSlots().byteValue() : 0);
+        equip.setLevel(dto.getLevel() != null ? dto.getLevel().byteValue() : 0);
+        equip.setStr(dto.getStr() != null ? dto.getStr().shortValue() : 0);
+        equip.setDex(dto.getDex() != null ? dto.getDex().shortValue() : 0);
+        equip.setInt(dto.getInte() != null ? dto.getInte().shortValue() : 0);
+        equip.setLuk(dto.getLuk() != null ? dto.getLuk().shortValue() : 0);
+        equip.setHp(dto.getHp() != null ? dto.getHp().shortValue() : 0);
+        equip.setMp(dto.getMp() != null ? dto.getMp().shortValue() : 0);
+        equip.setWatk(dto.getWatk() != null ? dto.getWatk().shortValue() : 0);
+        equip.setMatk(dto.getMatk() != null ? dto.getMatk().shortValue() : 0);
+        equip.setWdef(dto.getWdef() != null ? dto.getWdef().shortValue() : 0);
+        equip.setMdef(dto.getMdef() != null ? dto.getMdef().shortValue() : 0);
+        equip.setAcc(dto.getAcc() != null ? dto.getAcc().shortValue() : 0);
+        equip.setAvoid(dto.getAvoid() != null ? dto.getAvoid().shortValue() : 0);
+        equip.setSpeed(dto.getSpeed() != null ? dto.getSpeed().shortValue() : 0);
+        equip.setJump(dto.getJump() != null ? dto.getJump().shortValue() : 0);
+        equip.setHands(dto.getHands() != null ? dto.getHands().shortValue() : 0);
+        equip.setVicious(dto.getVicious() != null ? dto.getVicious().shortValue() : 0);
+        equip.setFlag(dto.getFlag() != null ? dto.getFlag().shortValue() : 0);
+        equip.setExpiration(dto.getExpiration() != null ? dto.getExpiration() : -1);
+        return equip;
     }
 }
