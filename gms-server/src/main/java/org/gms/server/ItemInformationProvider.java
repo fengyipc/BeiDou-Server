@@ -1326,6 +1326,9 @@ public class ItemInformationProvider {
      * 用于对历史装备补充稀有标记。
      */
     public boolean isEquipRare(Equip equip) {
+        if (equip.getLevel() > 0) {
+            return false;
+        }
         Item base = getEquipById(equip.getItemId());
         if (!(base instanceof Equip baseEquip)) {
             return false;

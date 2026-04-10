@@ -60,7 +60,7 @@ function level0() {
         equipSlots.push(pos);
         var owner = item.getOwner();
         var rareTag = (owner != null && String(owner).indexOf("「稀有」") >= 0) ? " #b[稀有]#k" : "";
-        text += "#L" + idx + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
+        text += "#L" + idx + "##v" + itemId + "#" + rareTag + " #z" + itemId + "#";
         text += buildBriefStats(item);
         text += "#l\r\n";
         idx++;
@@ -191,7 +191,7 @@ function showBrowsePage() {
         var dto = filtered[i];
         var itemId = dto.getItemId();
         var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
-        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
+        text += "#L" + i + "##v" + itemId + "#" + rareTag + " #z" + itemId + "#";
         text += buildBriefStatsFromDto(dto);
         text += " #d[" + dto.getSharerName() + "]#k";
         text += "#l\r\n";
@@ -234,11 +234,9 @@ function levelBrowseSelect(sel) {
     selectedShareId = selectedDto.getId();
 
     var itemId = selectedDto.getItemId();
+    var rareTag = (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) ? " #b[稀有]#k" : "";
     var text = TITLE + SEP;
-    if (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) {
-        text += "#b[稀有]#k\r\n";
-    }
-    text += "#v" + itemId + "# #e#z" + itemId + "##n\r\n";
+    text += "#v" + itemId + "#" + rareTag + " #e#z" + itemId + "##n\r\n";
     text += buildFullStatsFromDto(selectedDto);
     text += "\r\n#d分享人: " + selectedDto.getSharerName() + "#k\r\n\r\n";
     text += "是否取用这件装备？";
@@ -270,7 +268,7 @@ function level2() {
         var dto = myShareList.get(i);
         var itemId = dto.getItemId();
         var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
-        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
+        text += "#L" + i + "##v" + itemId + "#" + rareTag + " #z" + itemId + "#";
         text += buildBriefStatsFromDto(dto);
         text += "#l\r\n";
     }
@@ -287,11 +285,9 @@ function levelMineDetail(sel) {
     selectedShareId = selectedDto.getId();
 
     var itemId = selectedDto.getItemId();
+    var rareTag = (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) ? " #b[稀有]#k" : "";
     var text = TITLE + SEP;
-    if (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) {
-        text += "#b[稀有]#k\r\n";
-    }
-    text += "#v" + itemId + "# #e#z" + itemId + "##n\r\n";
+    text += "#v" + itemId + "#" + rareTag + " #e#z" + itemId + "##n\r\n";
     text += buildFullStatsFromDto(selectedDto);
     text += "\r\n\r\n是否撤回该共享？装备将返还到你的背包中。";
 
