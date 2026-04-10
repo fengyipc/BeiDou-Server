@@ -58,7 +58,8 @@ function level0() {
 
         var itemId = item.getItemId();
         equipSlots.push(pos);
-        var rareTag = (item.getOwner() != null && item.getOwner().contains("「稀有」")) ? " #b「稀有」#k" : "";
+        var owner = item.getOwner();
+        var rareTag = (owner != null && String(owner).indexOf("「稀有」") >= 0) ? " #b「稀有」#k" : "";
         text += "#L" + idx + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStats(item);
         text += "#l\r\n";
