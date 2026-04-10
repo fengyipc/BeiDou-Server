@@ -59,7 +59,7 @@ function level0() {
         var itemId = item.getItemId();
         equipSlots.push(pos);
         var owner = item.getOwner();
-        var rareTag = (owner != null && String(owner).indexOf("「稀有」") >= 0) ? " #b「稀有」#k" : "";
+        var rareTag = (owner != null && String(owner).indexOf("「稀有」") >= 0) ? " #b[稀有]#k" : "";
         text += "#L" + idx + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStats(item);
         text += "#l\r\n";
@@ -190,7 +190,7 @@ function showBrowsePage() {
     for (var i = startIdx; i < endIdx; i++) {
         var dto = filtered[i];
         var itemId = dto.getItemId();
-        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b「稀有」#k" : "";
+        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
         text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStatsFromDto(dto);
         text += " #d[" + dto.getSharerName() + "]#k";
@@ -236,7 +236,7 @@ function levelBrowseSelect(sel) {
     var itemId = selectedDto.getItemId();
     var text = TITLE + SEP;
     if (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) {
-        text += "#b「稀有」#k\r\n";
+        text += "#b[稀有]#k\r\n";
     }
     text += "#v" + itemId + "# #e#z" + itemId + "##n\r\n";
     text += buildFullStatsFromDto(selectedDto);
@@ -269,7 +269,7 @@ function level2() {
     for (var i = 0; i < myShareList.size(); i++) {
         var dto = myShareList.get(i);
         var itemId = dto.getItemId();
-        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b「稀有」#k" : "";
+        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
         text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStatsFromDto(dto);
         text += "#l\r\n";
@@ -289,7 +289,7 @@ function levelMineDetail(sel) {
     var itemId = selectedDto.getItemId();
     var text = TITLE + SEP;
     if (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) {
-        text += "#b「稀有」#k\r\n";
+        text += "#b[稀有]#k\r\n";
     }
     text += "#v" + itemId + "# #e#z" + itemId + "##n\r\n";
     text += buildFullStatsFromDto(selectedDto);

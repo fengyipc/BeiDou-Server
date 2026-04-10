@@ -1321,6 +1321,31 @@ public class ItemInformationProvider {
         return equip;
     }
 
+    /**
+     * 判断一件已随机化属性的装备是否为稀有装备（任意属性超过WZ基础值的正常随机上限）。
+     * 用于对历史装备补充稀有标记。
+     */
+    public boolean isEquipRare(Equip equip) {
+        Item base = getEquipById(equip.getItemId());
+        if (!(base instanceof Equip baseEquip)) {
+            return false;
+        }
+        return equip.getStr() > getNormalMax(baseEquip.getStr(), 5)
+                || equip.getDex() > getNormalMax(baseEquip.getDex(), 5)
+                || equip.getInt() > getNormalMax(baseEquip.getInt(), 5)
+                || equip.getLuk() > getNormalMax(baseEquip.getLuk(), 5)
+                || equip.getMatk() > getNormalMax(baseEquip.getMatk(), 5)
+                || equip.getWatk() > getNormalMax(baseEquip.getWatk(), 5)
+                || equip.getAcc() > getNormalMax(baseEquip.getAcc(), 5)
+                || equip.getAvoid() > getNormalMax(baseEquip.getAvoid(), 5)
+                || equip.getJump() > getNormalMax(baseEquip.getJump(), 5)
+                || equip.getSpeed() > getNormalMax(baseEquip.getSpeed(), 5)
+                || equip.getWdef() > getNormalMax(baseEquip.getWdef(), 10)
+                || equip.getMdef() > getNormalMax(baseEquip.getMdef(), 10)
+                || equip.getHp() > getNormalMax(baseEquip.getHp(), 10)
+                || equip.getMp() > getNormalMax(baseEquip.getMp(), 10);
+    }
+
     private static short getRandUpgradedStat(short defaultValue, int maxRange) {
         if (defaultValue == 0) {
             return 0;

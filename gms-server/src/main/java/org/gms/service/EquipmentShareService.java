@@ -22,6 +22,9 @@ public class EquipmentShareService {
 
     public boolean shareEquip(int world, String sharerName, Equip equip) {
         boolean isRare = equip.getOwner() != null && equip.getOwner().contains("「稀有」");
+        if (!isRare) {
+            isRare = ItemInformationProvider.getInstance().isEquipRare(equip);
+        }
 
         Map<String, Integer> wzStats = ItemInformationProvider.getInstance().getEquipStats(equip.getItemId());
         int reqJob = wzStats != null && wzStats.containsKey("reqJob") ? wzStats.get("reqJob") : 0;
