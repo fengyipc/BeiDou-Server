@@ -58,7 +58,8 @@ function level0() {
 
         var itemId = item.getItemId();
         equipSlots.push(pos);
-        text += "#L" + idx + "##v" + itemId + "# #z" + itemId + "#";
+        var rareTag = (item.getOwner() != null && item.getOwner().contains("「稀有」")) ? " #b「稀有」#k" : "";
+        text += "#L" + idx + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStats(item);
         text += "#l\r\n";
         idx++;
@@ -188,7 +189,8 @@ function showBrowsePage() {
     for (var i = startIdx; i < endIdx; i++) {
         var dto = filtered[i];
         var itemId = dto.getItemId();
-        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#";
+        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b「稀有」#k" : "";
+        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStatsFromDto(dto);
         text += " #d[" + dto.getSharerName() + "]#k";
         text += "#l\r\n";
@@ -266,7 +268,8 @@ function level2() {
     for (var i = 0; i < myShareList.size(); i++) {
         var dto = myShareList.get(i);
         var itemId = dto.getItemId();
-        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#";
+        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b「稀有」#k" : "";
+        text += "#L" + i + "##v" + itemId + "# #z" + itemId + "#" + rareTag;
         text += buildBriefStatsFromDto(dto);
         text += "#l\r\n";
     }

@@ -1258,8 +1258,16 @@ public class ItemInformationProvider {
             return 0;
         }
         int lMaxRange = (int) Math.min(Math.ceil(defaultValue * 0.1), maxRange);
-        int godStatNum =godStat ? (short) Math.floor(Randomizer.nextDouble() * 6) : 0; // 触发神装属性时，随机增加0~5
+        int godStatNum = godStat ? (short) Math.floor(Randomizer.nextDouble() * 6) : 0;
         return (short) ((defaultValue - lMaxRange) + Math.floor(Randomizer.nextDouble() * (lMaxRange * 2 + 1)) + godStatNum);
+    }
+
+    private static short getNormalMax(short defaultValue, int maxRange) {
+        if (defaultValue == 0) {
+            return 0;
+        }
+        int lMaxRange = (int) Math.min(Math.ceil(defaultValue * 0.1), maxRange);
+        return (short) (defaultValue + lMaxRange);
     }
 
     public Equip randomizeStats(Equip equip) {
@@ -1268,6 +1276,14 @@ public class ItemInformationProvider {
 
         // 阿尔泰耳环、女神手镯、划痕眼镜、海盗帽、何露斯之眼 副本装备不带神装属性
         if (id == 1032101 || id == 1082232 || id == 1022073 || id == 1002574 || id == 1122010) godStat = false;
+
+        short origStr = equip.getStr(), origDex = equip.getDex(), origInt = equip.getInt(), origLuk = equip.getLuk();
+        short origMatk = equip.getMatk(), origWatk = equip.getWatk();
+        short origAcc = equip.getAcc(), origAvoid = equip.getAvoid();
+        short origJump = equip.getJump(), origSpeed = equip.getSpeed();
+        short origWdef = equip.getWdef(), origMdef = equip.getMdef();
+        short origHp = equip.getHp(), origMp = equip.getMp();
+
         equip.setStr(getRandStat(equip.getStr(), 5, godStat));
         equip.setDex(getRandStat(equip.getDex(), 5, godStat));
         equip.setInt(getRandStat(equip.getInt(), 5, godStat));
@@ -1282,8 +1298,25 @@ public class ItemInformationProvider {
         equip.setMdef(getRandStat(equip.getMdef(), 10, godStat));
         equip.setHp(getRandStat(equip.getHp(), 10, godStat));
         equip.setMp(getRandStat(equip.getMp(), 10, godStat));
+
         if (godStat) {
-            equip.setOwner("「稀有」");
+            boolean isRare = equip.getStr() > getNormalMax(origStr, 5)
+                    || equip.getDex() > getNormalMax(origDex, 5)
+                    || equip.getInt() > getNormalMax(origInt, 5)
+                    || equip.getLuk() > getNormalMax(origLuk, 5)
+                    || equip.getMatk() > getNormalMax(origMatk, 5)
+                    || equip.getWatk() > getNormalMax(origWatk, 5)
+                    || equip.getAcc() > getNormalMax(origAcc, 5)
+                    || equip.getAvoid() > getNormalMax(origAvoid, 5)
+                    || equip.getJump() > getNormalMax(origJump, 5)
+                    || equip.getSpeed() > getNormalMax(origSpeed, 5)
+                    || equip.getWdef() > getNormalMax(origWdef, 10)
+                    || equip.getMdef() > getNormalMax(origMdef, 10)
+                    || equip.getHp() > getNormalMax(origHp, 10)
+                    || equip.getMp() > getNormalMax(origMp, 10);
+            if (isRare) {
+                equip.setOwner("「稀有」");
+            }
         }
         return equip;
     }
