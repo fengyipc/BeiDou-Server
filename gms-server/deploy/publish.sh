@@ -144,18 +144,36 @@ if [[ "$SKIP_MAVEN" != true ]]; then
   if [[ -n "${JAVA_HOME:-}" ]]; then
     echo "Using JAVA_HOME=$JAVA_HOME"
   fi
+
+  # Two-phase build: compile first, then package.
+  # macOS APFS race condition: class files may not be visible to the jar plugin
+  # scanner if compile and package run in the same mvn invocation.
+  mvn -q -f "$SERVER_ROOT/pom.xml" compile -Dmaven.test.skip=true
   mvn -q -f "$SERVER_ROOT/pom.xml" package -Dmaven.test.skip=true
 
-  # Workaround: maven-jar-plugin on macOS may produce an incomplete JAR.
-  # Patch the fat JAR with the full set of compiled classes.
+  JAR_BIN="jar"
+  if [[ -n "${JAVA_HOME:-}" && -x "$JAVA_HOME/bin/jar" ]]; then
+    JAR_BIN="$JAVA_HOME/bin/jar"
+  fi
+
+  # Safety net: re-inject all compiled classes into the fat JAR.
   CLASSES_DIR="$SERVER_ROOT/target/classes"
   if [[ -d "$CLASSES_DIR" ]]; then
     FIX_TMP="$(mktemp -d)"
     mkdir -p "$FIX_TMP/BOOT-INF"
     cp -a "$CLASSES_DIR" "$FIX_TMP/BOOT-INF/classes"
-    jar uf "$SERVER_ROOT/target/BeiDou.jar" -C "$FIX_TMP" BOOT-INF/classes
+    "$JAR_BIN" uf "$SERVER_ROOT/target/BeiDou.jar" -C "$FIX_TMP" BOOT-INF/classes
     rm -rf "$FIX_TMP"
   fi
+
+  # Verify the JAR contains compiled classes (catch incomplete builds early).
+  disk_count="$(find "$CLASSES_DIR" -name '*.class' | wc -l | tr -d ' ')"
+  jar_count="$("$JAR_BIN" tf "$SERVER_ROOT/target/BeiDou.jar" | grep -c 'BOOT-INF/classes/.*\.class$' || true)"
+  if [[ "$jar_count" -lt "$disk_count" ]]; then
+    echo "JAR verification FAILED: $jar_count classes in JAR vs $disk_count on disk" >&2
+    exit 1
+  fi
+  echo "JAR verified: $jar_count classes"
 fi
 
 JAR_PATH="$SERVER_ROOT/target/BeiDou.jar"
