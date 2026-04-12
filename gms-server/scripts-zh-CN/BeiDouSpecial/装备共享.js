@@ -65,6 +65,9 @@ function level0() {
         if (pos <= 0) continue;
 
         var itemId = item.getItemId();
+        // 过滤现金道具（itemId 5xxxxxx）和不可交易道具
+        if (itemId >= 5000000 && itemId < 6000000) continue;
+        if (item.isUntradeable()) continue;
         equipSlots.push(pos);
         var quality = getItemQuality(item);
         var qualityTag = getQualityTag(quality);
@@ -134,14 +137,14 @@ function level1() {
 
     var text = TITLE + SEP;
     text += "#e请选择职业分类浏览：#n\r\n\r\n";
-    text += "#L1##b全部装备 (" + shareList.size() + ")#k#l\r\n\r\n";
+    text += "#L99999##b全部装备 (" + shareList.size() + ")#k#l\r\n\r\n";
 
     var jobKeys = [0, 1, 2, 4, 8, 16];
     for (var j = 0; j < jobKeys.length; j++) {
         var k = jobKeys[j];
         var count = jobBuckets[k] || 0;
         if (count > 0) {
-            text += "#L" + (k + 2) + "##b" + JOB_NAMES[k] + " (" + count + ")#k#l\r\n\r\n";
+            text += "#L" + k + "##b" + JOB_NAMES[k] + " (" + count + ")#k#l\r\n\r\n";
         }
     }
 
@@ -161,7 +164,7 @@ function level1() {
 }
 
 function levelBrowseList(sel) {
-    browseJobFilter = sel;
+    browseJobFilter = (sel === 99999) ? -1 : sel;
     browsePage = 0;
     showBrowsePage();
 }
@@ -447,15 +450,7 @@ function val(v) {
 }
 
 function getItemQuality(equip) {
-    // 根据装备属性简单估算品质，与dto的quality字段对应
-    var str = equip.getStr(), dex = equip.getDex(), inte = equip.getInt(), luk = equip.getLuk();
-    var watk = equip.getWatk(), matk = equip.getMatk();
-    var total = str + dex + inte + luk + watk + matk;
-    if (total === 0) return 2;
-    if (total >= 50) return 5;
-    if (total >= 30) return 4;
-    if (total >= 15) return 3;
-    return 2;
+    return ItemInformationProvider.getInstance().getEquipQuality(equip);
 }
 
 function getReqLevel(itemId) {
