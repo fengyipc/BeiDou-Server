@@ -1352,7 +1352,7 @@ public class ItemInformationProvider {
                 equip.getSpeed(), equip.getJump()
         };
 
-        // 若所有关注属性的标准值均为0，默认返回普通
+        // 检查是否有任何关注属性的标准值不为0
         boolean hasAnyBase = false;
         for (short baseStat : baseStats) {
             if (baseStat > 0) {
@@ -1360,20 +1360,30 @@ public class ItemInformationProvider {
                 break;
             }
         }
+        // 若所有基础属性为0，且实际属性也全为0，默认返回普通
         if (!hasAnyBase) {
-            return QUALITY_NORMAL;
+            boolean hasAnyActual = false;
+            for (short actualStat : actualStats) {
+                if (actualStat > 0) {
+                    hasAnyActual = true;
+                    break;
+                }
+            }
+            if (!hasAnyActual) {
+                return QUALITY_NORMAL;
+            }
         }
 
-        // 计算标准属性和
+        // 计算标准属性和（攻击力watk索引4按2倍权重）
         int baseSum = 0;
-        for (short baseStat : baseStats) {
-            baseSum += baseStat;
+        for (int i = 0; i < baseStats.length; i++) {
+            baseSum += baseStats[i] * (i == 4 ? 2 : 1);
         }
 
-        // 计算实际属性和（已砸卷装备需减去level值）
+        // 计算实际属性和（攻击力watk索引4按2倍权重，已砸卷装备需减去level值）
         int actualSum = 0;
-        for (short actualStat : actualStats) {
-            actualSum += actualStat;
+        for (int i = 0; i < actualStats.length; i++) {
+            actualSum += actualStats[i] * (i == 4 ? 2 : 1);
         }
         if (equip.getLevel() > 0) {
             actualSum -= equip.getLevel();
