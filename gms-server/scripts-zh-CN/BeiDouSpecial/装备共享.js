@@ -11,8 +11,8 @@ var SEP = '#d' + '\r\n'.padStart(28, '——') + '#k';
 
 var QUALITY_TAGS = {
     1: " #d[次品]#k",
-    2: "#d[#e#b普通#d]#k",
-    3: " #d[#e#b优质#d]#k",
+    2: "#d[#e#b普通#n#d]#k",
+    3: " #d[#e#b优质#n#d]#k",
     4: " #d[#e#r稀有#n#d]#k",
     5: " #d[#e#r神器#n#d]#k"
 };
