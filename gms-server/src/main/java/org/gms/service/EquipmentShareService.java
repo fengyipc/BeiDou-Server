@@ -21,10 +21,7 @@ public class EquipmentShareService {
     private EquipmentShareMapper equipmentShareMapper;
 
     public boolean shareEquip(int world, String sharerName, Equip equip) {
-        boolean isRare = equip.getOwner() != null && equip.getOwner().contains("「稀有」");
-        if (!isRare) {
-            isRare = ItemInformationProvider.getInstance().isEquipRare(equip);
-        }
+        int quality = ItemInformationProvider.getInstance().getEquipQuality(equip);
 
         Map<String, Integer> wzStats = ItemInformationProvider.getInstance().getEquipStats(equip.getItemId());
         int reqJob = wzStats != null && wzStats.containsKey("reqJob") ? wzStats.get("reqJob") : 0;
@@ -33,7 +30,7 @@ public class EquipmentShareService {
                 .world(world)
                 .sharerName(sharerName)
                 .itemId(equip.getItemId())
-                .isRare(isRare ? 1 : 0)
+                .quality(quality)
                 .upgradeSlots((int) equip.getUpgradeSlots())
                 .level((int) equip.getLevel())
                 .str((int) equip.getStr())

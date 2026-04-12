@@ -100,7 +100,12 @@ public enum ItemFactory {
 
     private static Equip loadEquipFromResultSet(ResultSet rs) throws SQLException {
         Equip equip = new Equip(rs.getInt("itemid"), (short) rs.getInt("position"));
-        equip.setOwner(rs.getString("owner"));
+        String owner = rs.getString("owner");
+        // 历史数据兼容：清除旧的品质标记
+        if (owner != null && owner.contains("「稀有」")) {
+            owner = "";
+        }
+        equip.setOwner(owner);
         equip.setQuantity((short) rs.getInt("quantity"));
         equip.setAcc((short) rs.getInt("acc"));
         equip.setAvoid((short) rs.getInt("avoid"));

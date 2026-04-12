@@ -694,6 +694,14 @@ public class MapleMap {
                     } else {
                         if (ItemConstants.getInventoryType(de.itemId) == InventoryType.EQUIP) {
                             idrop = ii.randomizeStats((Equip) ii.getEquipById(de.itemId));
+                            // 品质通报：稀有或神器装备掉落时发送世界通报
+                            int quality = ii.getEquipQuality((Equip) idrop);
+                            if (quality >= ItemInformationProvider.QUALITY_RARE) {
+                                String qualityName = ItemInformationProvider.getEquipQualityName(quality);
+                                String itemName = ii.getName(de.itemId);
+                                String msg = "恭喜 " + chr.getName() + " 获得了[" + qualityName + "]装备 " + itemName + "！";
+                                Server.getInstance().broadcastMessage(getWorld(), PacketCreator.serverNotice(6, msg));
+                            }
                         } else {
                             idrop = new Item(de.itemId, (short) 0, (short) 1);
                         }
@@ -726,6 +734,14 @@ public class MapleMap {
                     if (de.itemId != 0) {
                         if (ItemConstants.getInventoryType(de.itemId) == InventoryType.EQUIP) {
                             idrop = ii.randomizeStats((Equip) ii.getEquipById(de.itemId));
+                            // 品质通报：稀有或神器装备掉落时发送世界通报
+                            int quality = ii.getEquipQuality((Equip) idrop);
+                            if (quality >= ItemInformationProvider.QUALITY_RARE) {
+                                String qualityName = ItemInformationProvider.getEquipQualityName(quality);
+                                String itemName = ii.getName(de.itemId);
+                                String msg = "恭喜 " + chr.getName() + " 获得了[" + qualityName + "]装备 " + itemName + "！";
+                                Server.getInstance().broadcastMessage(getWorld(), PacketCreator.serverNotice(6, msg));
+                            }
                         } else {
                             idrop = new Item(de.itemId, (short) 0, (short) 1);
                         }

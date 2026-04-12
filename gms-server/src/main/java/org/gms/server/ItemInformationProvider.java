@@ -1299,54 +1299,147 @@ public class ItemInformationProvider {
         equip.setHp(getRandStat(equip.getHp(), 10, godStat));
         equip.setMp(getRandStat(equip.getMp(), 10, godStat));
 
-        if (godStat) {
-            boolean isRare = equip.getStr() > getNormalMax(origStr, 5)
-                    || equip.getDex() > getNormalMax(origDex, 5)
-                    || equip.getInt() > getNormalMax(origInt, 5)
-                    || equip.getLuk() > getNormalMax(origLuk, 5)
-                    || equip.getMatk() > getNormalMax(origMatk, 5)
-                    || equip.getWatk() > getNormalMax(origWatk, 5)
-                    || equip.getAcc() > getNormalMax(origAcc, 5)
-                    || equip.getAvoid() > getNormalMax(origAvoid, 5)
-                    || equip.getJump() > getNormalMax(origJump, 5)
-                    || equip.getSpeed() > getNormalMax(origSpeed, 5)
-                    || equip.getWdef() > getNormalMax(origWdef, 10)
-                    || equip.getMdef() > getNormalMax(origMdef, 10)
-                    || equip.getHp() > getNormalMax(origHp, 10)
-                    || equip.getMp() > getNormalMax(origMp, 10);
-            if (isRare) {
-                equip.setOwner("「稀有」");
-            }
-        }
         return equip;
     }
 
     /**
-     * 判断一件已随机化属性的装备是否为稀有装备（任意属性超过WZ基础值的正常随机上限）。
-     * 用于对历史装备补充稀有标记。
+     * 判断一件已随机化属性的装备是否为稀有装备。
+     * @deprecated 请使用 {@link #getEquipQuality(Equip)} 代替，判断 quality >= 4 即为稀有。
      */
+    @Deprecated
     public boolean isEquipRare(Equip equip) {
-        if (equip.getLevel() > 0) {
-            return false;
-        }
+        return getEquipQuality(equip) >= QUALITY_RARE;
+    }
+
+    /**
+     * 品质等级常量
+     */
+    public static final int QUALITY_DEFECTIVE = 1;  // 次品
+    public static final int QUALITY_NORMAL = 2;     // 普通
+    public static final int QUALITY_FINE = 3;       // 优质
+    public static final int QUALITY_RARE = 4;       // 稀有
+    public static final int QUALITY_ARTIFACT = 5;   // 神器
+
+    /**
+     * 计算装备品质等级（1-5）。
+     * <p>
+     * 品质判定基于"属性总和"与"单项属性突破"两个维度的综合评估。
+     * 仅考虑关注属性（STR/DEX/INT/LUK/PAD/MAD/ACC/EVA/Hands/Speed/Jump），排除 HP/MP/PDD/MDD。
+     * 对于已砸卷装备（level > 0），属性和减去 level 值。
+     *
+     * @param equip 待评估的装备
+     * @return 品质等级：1=次品, 2=普通, 3=优质, 4=稀有, 5=神器
+     */
+    public int getEquipQuality(Equip equip) {
         Item base = getEquipById(equip.getItemId());
         if (!(base instanceof Equip baseEquip)) {
-            return false;
+            return QUALITY_NORMAL;
         }
-        return equip.getStr() > getNormalMax(baseEquip.getStr(), 5)
-                || equip.getDex() > getNormalMax(baseEquip.getDex(), 5)
-                || equip.getInt() > getNormalMax(baseEquip.getInt(), 5)
-                || equip.getLuk() > getNormalMax(baseEquip.getLuk(), 5)
-                || equip.getMatk() > getNormalMax(baseEquip.getMatk(), 5)
-                || equip.getWatk() > getNormalMax(baseEquip.getWatk(), 5)
-                || equip.getAcc() > getNormalMax(baseEquip.getAcc(), 5)
-                || equip.getAvoid() > getNormalMax(baseEquip.getAvoid(), 5)
-                || equip.getJump() > getNormalMax(baseEquip.getJump(), 5)
-                || equip.getSpeed() > getNormalMax(baseEquip.getSpeed(), 5)
-                || equip.getWdef() > getNormalMax(baseEquip.getWdef(), 10)
-                || equip.getMdef() > getNormalMax(baseEquip.getMdef(), 10)
-                || equip.getHp() > getNormalMax(baseEquip.getHp(), 10)
-                || equip.getMp() > getNormalMax(baseEquip.getMp(), 10);
+
+        // 关注属性的标准值（WZ基础值）
+        short[] baseStats = {
+                baseEquip.getStr(), baseEquip.getDex(), baseEquip.getInt(), baseEquip.getLuk(),
+                baseEquip.getWatk(), baseEquip.getMatk(),
+                baseEquip.getAcc(), baseEquip.getAvoid(), baseEquip.getHands(),
+                baseEquip.getSpeed(), baseEquip.getJump()
+        };
+
+        // 关注属性的实际值
+        short[] actualStats = {
+                equip.getStr(), equip.getDex(), equip.getInt(), equip.getLuk(),
+                equip.getWatk(), equip.getMatk(),
+                equip.getAcc(), equip.getAvoid(), equip.getHands(),
+                equip.getSpeed(), equip.getJump()
+        };
+
+        // 若所有关注属性的标准值均为0，默认返回普通
+        boolean hasAnyBase = false;
+        for (short baseStat : baseStats) {
+            if (baseStat > 0) {
+                hasAnyBase = true;
+                break;
+            }
+        }
+        if (!hasAnyBase) {
+            return QUALITY_NORMAL;
+        }
+
+        // 计算标准属性和
+        int baseSum = 0;
+        for (short baseStat : baseStats) {
+            baseSum += baseStat;
+        }
+
+        // 计算实际属性和（已砸卷装备需减去level值）
+        int actualSum = 0;
+        for (short actualStat : actualStats) {
+            actualSum += actualStat;
+        }
+        if (equip.getLevel() > 0) {
+            actualSum -= equip.getLevel();
+        }
+
+        // 计算各属性的普通上限和单项阈值，并判断是否有属性突破
+        boolean hasStatAboveNormalMax = false;       // 有属性 > 普通上限
+        boolean hasStatAboveNormalMaxPlus15 = false;  // 有属性 > 普通上限 + 15
+        boolean hasStatAboveThreshold = false;        // 有属性 > 单项阈值 max(标准属性, 普通上限-2)
+
+        for (int i = 0; i < baseStats.length; i++) {
+            if (baseStats[i] == 0) {
+                continue;
+            }
+            short normalMax = getNormalMax(baseStats[i], 5);
+            short threshold = (short) Math.max(baseStats[i], normalMax - 2);
+
+            if (actualStats[i] > normalMax + 15) {
+                hasStatAboveNormalMaxPlus15 = true;
+            }
+            if (actualStats[i] > normalMax) {
+                hasStatAboveNormalMax = true;
+            }
+            if (actualStats[i] > threshold) {
+                hasStatAboveThreshold = true;
+            }
+        }
+
+        int sumDiff = actualSum - baseSum;
+
+        // 从高到低优先级匹配
+        // 神器：属性和 ≥ 标准属性和 且有属性 > 普通上限+15；或者属性和 > 标准属性和+40
+        if ((actualSum >= baseSum && hasStatAboveNormalMaxPlus15) || sumDiff > 40) {
+            return QUALITY_ARTIFACT;
+        }
+        // 稀有：属性和 ≥ 标准属性和 且有属性 > 普通上限；或者属性和 > 标准属性和+20
+        if ((actualSum >= baseSum && hasStatAboveNormalMax) || sumDiff > 20) {
+            return QUALITY_RARE;
+        }
+        // 优质：属性和 ≥ 标准属性和 且有属性 > 单项阈值；或者属性和 > 标准属性和+10
+        if ((actualSum >= baseSum && hasStatAboveThreshold) || sumDiff > 10) {
+            return QUALITY_FINE;
+        }
+        // 普通：属性和 ≥ 标准属性和 且没有属性达到单项阈值
+        if (actualSum >= baseSum) {
+            return QUALITY_NORMAL;
+        }
+        // 次品：属性和 < 标准属性和 且没有属性达到单项阈值
+        return QUALITY_DEFECTIVE;
+    }
+
+    /**
+     * 获取品质等级对应的名称。
+     *
+     * @param quality 品质等级（1-5）
+     * @return 品质名称字符串
+     */
+    public static String getEquipQualityName(int quality) {
+        return switch (quality) {
+            case QUALITY_DEFECTIVE -> "次品";
+            case QUALITY_NORMAL -> "普通";
+            case QUALITY_FINE -> "优质";
+            case QUALITY_RARE -> "稀有";
+            case QUALITY_ARTIFACT -> "神器";
+            default -> "普通";
+        };
     }
 
     private static short getRandUpgradedStat(short defaultValue, int maxRange) {

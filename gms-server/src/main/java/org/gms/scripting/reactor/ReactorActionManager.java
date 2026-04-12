@@ -28,6 +28,7 @@ import org.gms.client.inventory.InventoryType;
 import org.gms.client.inventory.Item;
 import org.gms.constants.inventory.ItemConstants;
 import org.gms.scripting.AbstractPlayerInteraction;
+import org.gms.net.server.Server;
 import org.gms.server.ItemInformationProvider;
 import org.gms.server.TimerManager;
 import org.gms.server.life.LifeFactory;
@@ -38,6 +39,7 @@ import org.gms.server.maps.ReactorDropEntry;
 import org.gms.server.partyquest.CarnivalFactory;
 import org.gms.server.partyquest.CarnivalFactory.MCSkill;
 import org.gms.util.NumberTool;
+import org.gms.util.PacketCreator;
 
 import javax.script.Invocable;
 import java.awt.*;
@@ -181,6 +183,14 @@ public class ReactorActionManager extends AbstractPlayerInteraction {
                         drop = new Item(d.itemId, (short) 0, (short) 1);
                     } else {
                         drop = ii.randomizeStats((Equip) ii.getEquipById(d.itemId));
+                        // 品质通报：稀有或神器装备掉落时发送世界通报
+                        int quality = ii.getEquipQuality((Equip) drop);
+                        if (quality >= ItemInformationProvider.QUALITY_RARE && c.getPlayer() != null) {
+                            String qualityName = ItemInformationProvider.getEquipQualityName(quality);
+                            String itemName = ii.getName(d.itemId);
+                            String msg = "恭喜 " + c.getPlayer().getName() + " 获得了[" + qualityName + "]装备 " + itemName + "！";
+                            Server.getInstance().broadcastMessage(c.getPlayer().getWorld(), PacketCreator.serverNotice(6, msg));
+                        }
                     }
 
                     reactor.getMap().dropFromReactor(getPlayer(), reactor, drop, dropPos, (short) d.questid);
@@ -213,6 +223,14 @@ public class ReactorActionManager extends AbstractPlayerInteraction {
                     } else {
                         ItemInformationProvider ii = ItemInformationProvider.getInstance();
                         drop = ii.randomizeStats((Equip) ii.getEquipById(d.itemId));
+                        // 品质通报：稀有或神器装备掉落时发送世界通报
+                        int quality = ii.getEquipQuality((Equip) drop);
+                        if (quality >= ItemInformationProvider.QUALITY_RARE && chr != null) {
+                            String qualityName = ItemInformationProvider.getEquipQualityName(quality);
+                            String itemName = ii.getName(d.itemId);
+                            String msg = "恭喜 " + chr.getName() + " 获得了[" + qualityName + "]装备 " + itemName + "！";
+                            Server.getInstance().broadcastMessage(chr.getWorld(), PacketCreator.serverNotice(6, msg));
+                        }
                     }
 
                     r.getMap().dropFromReactor(getPlayer(), r, drop, dropPos, (short) d.questid);

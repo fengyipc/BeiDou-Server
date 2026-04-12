@@ -32,7 +32,7 @@ public class EquipmentShareDO implements Serializable {
 
     private Integer itemId;
 
-    private Integer isRare;
+    private Integer quality;
 
     private Integer upgradeSlots;
 

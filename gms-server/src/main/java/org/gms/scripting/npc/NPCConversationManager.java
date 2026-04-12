@@ -1524,11 +1524,8 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         var dto = optRecord.get();
 
         Equip equip = buildEquipFromShare(dto);
-        if (dto.getIsRare() != null && dto.getIsRare() == 1) {
-            equip.setOwner("「稀有」");
-        } else {
-            equip.setOwner("");
-        }
+        // owner字段设为分享人名字，作为来源标记
+        equip.setOwner(dto.getSharerName() != null ? dto.getSharerName() : "");
 
         if (!InventoryManipulator.checkSpace(c, equip.getItemId(), 1, equip.getOwner())) {
             equipmentShareService.reInsert(dto);
@@ -1550,11 +1547,8 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         var dto = optRecord.get();
 
         Equip equip = buildEquipFromShare(dto);
-        if (dto.getIsRare() != null && dto.getIsRare() == 1) {
-            equip.setOwner("「稀有」");
-        } else {
-            equip.setOwner("");
-        }
+        // 撤回时清空owner字段
+        equip.setOwner("");
 
         if (!InventoryManipulator.checkSpace(c, equip.getItemId(), 1, equip.getOwner())) {
             equipmentShareService.reInsert(dto);

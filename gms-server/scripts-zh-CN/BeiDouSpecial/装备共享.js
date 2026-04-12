@@ -9,6 +9,14 @@ var ItemInformationProvider = Java.type('org.gms.server.ItemInformationProvider'
 var TITLE = "\t\t\t\t\t#e#d装 备 共 享#k#n\t\t\t\t\r\n";
 var SEP = '#d' + '\r\n'.padStart(28, '——') + '#k';
 
+var QUALITY_TAGS = {
+    1: " #d[次品]#k",
+    2: "",
+    3: " #b[优质]#k",
+    4: " #d[#e#r稀有#n#d]#k",
+    5: " #d[#e#r神器#n#d]#k"
+};
+
 var JOB_NAMES = {
     0: "全职业", 1: "战士", 2: "魔法师", 4: "弓箭手", 8: "飞侠", 16: "海盗"
 };
@@ -58,11 +66,9 @@ function level0() {
 
         var itemId = item.getItemId();
         equipSlots.push(pos);
-        var owner = item.getOwner();
-        var rareTag = (owner != null && String(owner).indexOf("「稀有」") >= 0) ? " #b[稀有]#k" : "";
         var lvTag = " Lv." + getReqLevel(itemId);
         var scrollTag = (item.getLevel() > 0) ? " #g+" + item.getLevel() + "#k" : "";
-        text += "#L" + idx + "##v" + itemId + "#" + rareTag + lvTag + " #z" + itemId + "#" + scrollTag;
+        text += "#L" + idx + "##v" + itemId + "#" + lvTag + " #z" + itemId + "#" + scrollTag;
         text += buildBriefStats(item);
         text += "#l\r\n";
         idx++;
@@ -192,10 +198,10 @@ function showBrowsePage() {
     for (var i = startIdx; i < endIdx; i++) {
         var dto = filtered[i];
         var itemId = dto.getItemId();
-        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
+        var qualityTag = getQualityTag(dto.getQuality());
         var lvTag = " Lv." + getReqLevel(itemId);
         var scrollTag = (val(dto.getLevel()) > 0) ? " #g+" + dto.getLevel() + "#k" : "";
-        text += "#L" + i + "##v" + itemId + "#" + rareTag + lvTag + " #z" + itemId + "#" + scrollTag;
+        text += "#L" + i + "##v" + itemId + "#" + qualityTag + lvTag + " #z" + itemId + "#" + scrollTag;
         text += buildBriefStatsFromDto(dto);
         text += " #d[" + dto.getSharerName() + "]#k";
         text += "#l\r\n";
@@ -238,11 +244,11 @@ function levelBrowseSelect(sel) {
     selectedShareId = selectedDto.getId();
 
     var itemId = selectedDto.getItemId();
-    var rareTag = (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) ? " #b[稀有]#k" : "";
+    var qualityTag = getQualityTag(selectedDto.getQuality());
     var lvTag = " Lv." + getReqLevel(itemId);
     var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #g+" + selectedDto.getLevel() + "#k" : "";
     var text = TITLE + SEP;
-    text += "#v" + itemId + "#" + rareTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
+    text += "#v" + itemId + "#" + qualityTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
     text += buildFullStatsFromDto(selectedDto);
     text += "\r\n#d分享人: " + selectedDto.getSharerName() + "#k\r\n\r\n";
     text += "是否取用这件装备？";
@@ -273,10 +279,10 @@ function level2() {
     for (var i = 0; i < myShareList.size(); i++) {
         var dto = myShareList.get(i);
         var itemId = dto.getItemId();
-        var rareTag = (dto.getIsRare() != null && dto.getIsRare() == 1) ? " #b[稀有]#k" : "";
+        var qualityTag = getQualityTag(dto.getQuality());
         var lvTag = " Lv." + getReqLevel(itemId);
         var scrollTag = (val(dto.getLevel()) > 0) ? " #g+" + dto.getLevel() + "#k" : "";
-        text += "#L" + i + "##v" + itemId + "#" + rareTag + lvTag + " #z" + itemId + "#" + scrollTag;
+        text += "#L" + i + "##v" + itemId + "#" + qualityTag + lvTag + " #z" + itemId + "#" + scrollTag;
         text += buildBriefStatsFromDto(dto);
         text += "#l\r\n";
     }
@@ -293,11 +299,11 @@ function levelMineDetail(sel) {
     selectedShareId = selectedDto.getId();
 
     var itemId = selectedDto.getItemId();
-    var rareTag = (selectedDto.getIsRare() != null && selectedDto.getIsRare() == 1) ? " #b[稀有]#k" : "";
+    var qualityTag = getQualityTag(selectedDto.getQuality());
     var lvTag = " Lv." + getReqLevel(itemId);
     var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #g+" + selectedDto.getLevel() + "#k" : "";
     var text = TITLE + SEP;
-    text += "#v" + itemId + "#" + rareTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
+    text += "#v" + itemId + "#" + qualityTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
     text += buildFullStatsFromDto(selectedDto);
     text += "\r\n\r\n是否撤回该共享？装备将返还到你的背包中。";
 
@@ -444,4 +450,9 @@ function val(v) {
 function getReqLevel(itemId) {
     var lv = ItemInformationProvider.getInstance().getEquipLevelReq(itemId);
     return lv != null ? lv : 0;
+}
+
+function getQualityTag(quality) {
+    var q = val(quality);
+    return QUALITY_TAGS[q] || "";
 }
