@@ -11,8 +11,8 @@ var SEP = '#d' + '\r\n'.padStart(28, '——') + '#k';
 
 var QUALITY_TAGS = {
     1: " #d[次品]#k",
-    2: "",
-    3: " #b[优质]#k",
+    2: "#d[#e#b普通#d]#k",
+    3: " #d[#e#b优质#d]#k",
     4: " #d[#e#r稀有#n#d]#k",
     5: " #d[#e#r神器#n#d]#k"
 };
@@ -66,10 +66,11 @@ function level0() {
 
         var itemId = item.getItemId();
         equipSlots.push(pos);
+        var quality = getItemQuality(item);
+        var qualityTag = getQualityTag(quality);
         var lvTag = " Lv." + getReqLevel(itemId);
-        var scrollTag = (item.getLevel() > 0) ? " #g+" + item.getLevel() + "#k" : "";
-        text += "#L" + idx + "##v" + itemId + "#" + lvTag + " #z" + itemId + "#" + scrollTag;
-        text += buildBriefStats(item);
+        var scrollTag = (item.getLevel() > 0) ? " #r(+" + item.getLevel() + ")#k" : "";
+        text += "#L" + idx + "##v" + itemId + "#" + qualityTag + lvTag + " #z" + itemId + "#" + scrollTag;
         text += "#l\r\n";
         idx++;
     }
@@ -133,14 +134,14 @@ function level1() {
 
     var text = TITLE + SEP;
     text += "#e请选择职业分类浏览：#n\r\n\r\n";
-    text += "#L-1##b全部装备 (" + shareList.size() + ")#k#l\r\n\r\n";
+    text += "#L1##b全部装备 (" + shareList.size() + ")#k#l\r\n\r\n";
 
     var jobKeys = [0, 1, 2, 4, 8, 16];
     for (var j = 0; j < jobKeys.length; j++) {
         var k = jobKeys[j];
         var count = jobBuckets[k] || 0;
         if (count > 0) {
-            text += "#L" + k + "##b" + JOB_NAMES[k] + " (" + count + ")#k#l\r\n\r\n";
+            text += "#L" + (k + 2) + "##b" + JOB_NAMES[k] + " (" + count + ")#k#l\r\n\r\n";
         }
     }
 
@@ -200,9 +201,8 @@ function showBrowsePage() {
         var itemId = dto.getItemId();
         var qualityTag = getQualityTag(dto.getQuality());
         var lvTag = " Lv." + getReqLevel(itemId);
-        var scrollTag = (val(dto.getLevel()) > 0) ? " #g+" + dto.getLevel() + "#k" : "";
+        var scrollTag = (val(dto.getLevel()) > 0) ? " #r(+" + dto.getLevel() + ")#k" : "";
         text += "#L" + i + "##v" + itemId + "#" + qualityTag + lvTag + " #z" + itemId + "#" + scrollTag;
-        text += buildBriefStatsFromDto(dto);
         text += " #d[" + dto.getSharerName() + "]#k";
         text += "#l\r\n";
     }
@@ -246,7 +246,7 @@ function levelBrowseSelect(sel) {
     var itemId = selectedDto.getItemId();
     var qualityTag = getQualityTag(selectedDto.getQuality());
     var lvTag = " Lv." + getReqLevel(itemId);
-    var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #g+" + selectedDto.getLevel() + "#k" : "";
+        var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #r(+" + selectedDto.getLevel() + ")#k" : "";
     var text = TITLE + SEP;
     text += "#v" + itemId + "#" + qualityTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
     text += buildFullStatsFromDto(selectedDto);
@@ -281,9 +281,8 @@ function level2() {
         var itemId = dto.getItemId();
         var qualityTag = getQualityTag(dto.getQuality());
         var lvTag = " Lv." + getReqLevel(itemId);
-        var scrollTag = (val(dto.getLevel()) > 0) ? " #g+" + dto.getLevel() + "#k" : "";
+        var scrollTag = (val(dto.getLevel()) > 0) ? " #r(+" + dto.getLevel() + ")#k" : "";
         text += "#L" + i + "##v" + itemId + "#" + qualityTag + lvTag + " #z" + itemId + "#" + scrollTag;
-        text += buildBriefStatsFromDto(dto);
         text += "#l\r\n";
     }
 
@@ -301,7 +300,7 @@ function levelMineDetail(sel) {
     var itemId = selectedDto.getItemId();
     var qualityTag = getQualityTag(selectedDto.getQuality());
     var lvTag = " Lv." + getReqLevel(itemId);
-    var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #g+" + selectedDto.getLevel() + "#k" : "";
+    var scrollTag = (val(selectedDto.getLevel()) > 0) ? " #r(+" + selectedDto.getLevel() + ")#k" : "";
     var text = TITLE + SEP;
     text += "#v" + itemId + "#" + qualityTag + lvTag + " #e#z" + itemId + "##n" + scrollTag + "\r\n";
     text += buildFullStatsFromDto(selectedDto);
@@ -445,6 +444,18 @@ function buildFullStatsFromDto(dto) {
 
 function val(v) {
     return v != null ? v : 0;
+}
+
+function getItemQuality(equip) {
+    // 根据装备属性简单估算品质，与dto的quality字段对应
+    var str = equip.getStr(), dex = equip.getDex(), inte = equip.getInt(), luk = equip.getLuk();
+    var watk = equip.getWatk(), matk = equip.getMatk();
+    var total = str + dex + inte + luk + watk + matk;
+    if (total === 0) return 2;
+    if (total >= 50) return 5;
+    if (total >= 30) return 4;
+    if (total >= 15) return 3;
+    return 2;
 }
 
 function getReqLevel(itemId) {
