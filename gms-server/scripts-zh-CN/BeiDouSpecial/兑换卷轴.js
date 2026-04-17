@@ -3,6 +3,20 @@
  * 作者：maplepeng
  * 版本：1.0
  * 日期：2025-04-16
+ *
+ * ----------------------------------------------------------------------------
+ * 合成候选过滤规则（三类过滤协作，作用于 levelExchangeType 构建 canExchangeItem）
+ * ----------------------------------------------------------------------------
+ *   1) isDefenseScroll           —— 防御卷轴白名单（DEFENSE_SCROLL_IDS）
+ *      由 tools/gen-scroll-meta 基于 wz inc* 字段集合自动生成。
+ *   2) isAccuracyWeaponScroll    —— 命中率武器卷轴白名单（ACCURACY_WEAPON_SCROLL_IDS）
+ *      由 tools/gen-scroll-meta 基于 wz inc* 最大值包含 incACC 自动生成，
+ *      范围限定武器卷轴段 2043xxx / 2044xxx。
+ *   3) isExcludedExchangeScroll  —— 手工排除单品（EXCLUDED_EXCHANGE_SCROLL_IDS）
+ *      仅影响"合成兑换"入口；不影响"分解卷轴"流程，排除单品仍可被玩家分解。
+ *
+ * 对应商店数据库入口：src/main/resources/db/migration/V2.0.7__shopitems_9000069_rebuild.sql
+ * 由 tools/gen-scroll-meta/gen-shop-9000069.js 基于本脚本的 data + 上述三类过滤生成。
  */
 
 const data = {
@@ -1489,6 +1503,65 @@ function isDefenseScroll(itemId) {
     return DEFENSE_SCROLL_ID_SET[Number(itemId)] === true;
 }
 
+// ============================================================================
+// 命中率武器卷轴白名单
+// 由 tools/gen-scroll-meta 根据 wz/Item.wz/Consume/*.img.xml 自动生成；
+// 请勿手工编辑，如需更新请重跑：node tools/gen-scroll-meta/index.js
+// 判定规则：卷轴 ID 属于武器卷轴段 2043xxx / 2044xxx，且 inc* 最大值字段
+//           集合包含 incACC（宽口径：并列最大也算）。
+// ============================================================================
+const ACCURACY_WEAPON_SCROLL_IDS = [
+    2043015, 2043016, 2043017, 2043018, 2043019, 2043024, 2043025, 2043110,
+    2043111, 2043112, 2043113, 2043114, 2043118, 2043119, 2043210, 2043211,
+    2043212, 2043213, 2043214, 2043218, 2043219, 2044010, 2044011, 2044012,
+    2044013, 2044014, 2044026, 2044027, 2044110, 2044111, 2044112, 2044113,
+    2044114, 2044118, 2044119, 2044210, 2044211, 2044212, 2044213, 2044214,
+    2044218, 2044219, 2044310, 2044311, 2044312, 2044313, 2044314, 2044318,
+    2044319, 2044410, 2044411, 2044412, 2044413, 2044414, 2044418, 2044419,
+    2044512, 2044612, 2044712, 2044805, 2044806, 2044807, 2044808, 2044809,
+    2044813, 2044814
+];
+const ACCURACY_WEAPON_SCROLL_ID_SET = (function () {
+    const s = {};
+    for (let i = 0; i < ACCURACY_WEAPON_SCROLL_IDS.length; i++) {
+        s[ACCURACY_WEAPON_SCROLL_IDS[i]] = true;
+    }
+    return s;
+})();
+
+/**
+ * 判定指定物品 ID 是否为命中率武器卷轴。
+ * @param {number|string} itemId
+ * @returns {boolean}
+ */
+function isAccuracyWeaponScroll(itemId) {
+    return ACCURACY_WEAPON_SCROLL_ID_SET[Number(itemId)] === true;
+}
+
+// ============================================================================
+// 手工排除单品名单
+// 将这些卷轴从"合成兑换"菜单中移除（分解流程不受影响）。
+// 目前包含：2040412 = 上衣运气卷轴 10%；2040413 = 上衣运气卷轴 60%。
+// 如需增删，仅修改此数组即可。
+// ============================================================================
+const EXCLUDED_EXCHANGE_SCROLL_IDS = [2040412, 2040413];
+const EXCLUDED_EXCHANGE_SCROLL_ID_SET = (function () {
+    const s = {};
+    for (let i = 0; i < EXCLUDED_EXCHANGE_SCROLL_IDS.length; i++) {
+        s[EXCLUDED_EXCHANGE_SCROLL_IDS[i]] = true;
+    }
+    return s;
+})();
+
+/**
+ * 判定指定物品 ID 是否在"兑换菜单手工排除名单"中。
+ * @param {number|string} itemId
+ * @returns {boolean}
+ */
+function isExcludedExchangeScroll(itemId) {
+    return EXCLUDED_EXCHANGE_SCROLL_ID_SET[Number(itemId)] === true;
+}
+
 // 卷轴碎片物品 ID
 const FRAGMENT_ITEM_ID = 4001136;
 
@@ -1695,9 +1768,12 @@ function levelExchangeType(choose) {
         return;
     }
 
-    // 过滤：按子类型筛选 + 移除防御卷轴
+    // 过滤：按子类型筛选 + 移除防御卷轴 + 移除命中率武器卷轴 + 移除手工排除单品
     canExchangeItem = Object.entries(data)
-        .filter(([key, value]) => value[1] === exchangeSubType && !isDefenseScroll(key))
+        .filter(([key, value]) => value[1] === exchangeSubType
+            && !isDefenseScroll(key)
+            && !isAccuracyWeaponScroll(key)
+            && !isExcludedExchangeScroll(key))
         .map(([key]) => key);
 
     if (canExchangeItem.length === 0) {

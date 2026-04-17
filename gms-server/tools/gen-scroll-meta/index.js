@@ -7,11 +7,32 @@
  *   1. 扫描 wz/Item.wz/Consume/*.img.xml；
  *   2. 解析每个 8 位卷轴 imgdir，抽取其 info 节点下的 inc* 属性、success、cursed；
  *   3. 判定是否为"防御卷轴"（所有 inc* 属性均属于 {incPDD, incMDD, incMHP, incMMP}）；
- *   4. 输出两份产物：
- *      - scroll-meta.json      全量元数据（供开发者查阅）
- *      - scroll-defense-ids.js 仅防御卷轴 ID 数组，供 兑换卷轴.js 合并
+ *   4. 判定是否为"命中率武器卷轴"（ID 落在武器卷轴段 2043xxx / 2044xxx，
+ *      且 inc* 属性中数值最大者包含 incACC，宽口径含并列最大）；
+ *   5. 输出三份产物：
+ *      - scroll-meta.json        全量元数据（供开发者查阅）
+ *      - scroll-defense-ids.js   仅防御卷轴 ID 数组，供 兑换卷轴.js 合并
+ *      - scroll-accuracy-ids.js  仅命中率武器卷轴 ID 数组，供 兑换卷轴.js 合并
  *
  * 该脚本仅用于离线 / 数据变更时更新白名单，不在运行时被调用。
+ *
+ * -------------------------------------------------------------------
+ * 防御卷轴识别规则
+ * -------------------------------------------------------------------
+ *   卷轴 info 节点下所有 inc* 属性都属于 {incPDD, incMDD, incMHP, incMMP}
+ *   集合；且至少存在一个 inc* 字段。
+ *
+ * -------------------------------------------------------------------
+ * 命中率武器卷轴识别规则
+ * -------------------------------------------------------------------
+ *   1) ID 范围限定：仅考虑 2043000-2044999（即 2043xxx / 2044xxx，
+ *      覆盖单手剑/单手斧/单手钝器/短刀/双手剑/双手斧/双手钝器/枪/矛/
+ *      弓/弩/拳套/指节 等武器卷轴段）；
+ *   2) inc* 属性值最大的字段集合包含 incACC（命中率）。
+ *      - 严格最大：incACC 唯一最大，直接命中；
+ *      - 并列最大：如 incACC == incPAD 等，宽口径也判为命中率武器卷轴。
+ *   3) 至少需要存在一个 inc* 字段；若卷轴没有任何 inc* 字段，则不视为
+ *      命中率武器卷轴（避免误伤特殊卷轴）。
  */
 const fs = require('fs');
 const path = require('path');
@@ -27,6 +48,10 @@ const OUTPUT_DIR = __dirname;
 
 // 防御系属性集合：info 下仅出现这些 inc* 字段才判定为"防御卷轴"
 const DEFENSE_INC_KEYS = new Set(['incPDD', 'incMDD', 'incMHP', 'incMMP']);
+
+// 武器卷轴 ID 段：2043xxx / 2044xxx（仅这两段参与"命中率武器卷轴"判定）
+const WEAPON_SCROLL_ID_MIN = 2043000;
+const WEAPON_SCROLL_ID_MAX = 2044999;
 
 // 卷轴物品 ID 段前缀：204 / 205 / 207（204 装备卷轴，205 白卷，207 混沌卷）
 // 本次仅需防御类卷轴识别，范围集中在 2040xxx。
@@ -126,6 +151,31 @@ function isDefense(incs) {
     return keys.every((k) => DEFENSE_INC_KEYS.has(k));
 }
 
+/**
+ * 判定一个卷轴是否为"命中率武器卷轴"。
+ *
+ * 规则（对应顶部注释）：
+ *   1) ID 必须落在武器卷轴段 [WEAPON_SCROLL_ID_MIN, WEAPON_SCROLL_ID_MAX]；
+ *   2) inc* 至少存在一个字段；
+ *   3) inc* 数值最大的字段集合中包含 "incACC"（宽口径：并列最大也算）。
+ *
+ * @param {number} id 卷轴物品 ID（7-8 位）
+ * @param {Object<string, number>} incs 仅含 inc* 字段的对象
+ * @returns {boolean}
+ */
+function isAccuracyWeapon(id, incs) {
+    if (id < WEAPON_SCROLL_ID_MIN || id > WEAPON_SCROLL_ID_MAX) return false;
+    const keys = Object.keys(incs);
+    if (keys.length === 0) return false;
+    let max = -Infinity;
+    for (const k of keys) {
+        if (incs[k] > max) max = incs[k];
+    }
+    // 数值最大字段集合（处理并列最大）
+    const topKeys = keys.filter((k) => incs[k] === max);
+    return topKeys.includes('incACC');
+}
+
 // ============================================================================
 // 主流程
 // ============================================================================
@@ -169,6 +219,7 @@ function collectScrolls() {
                 success: Object.prototype.hasOwnProperty.call(allInts, 'success') ? allInts.success : null,
                 cursed: Object.prototype.hasOwnProperty.call(allInts, 'cursed') ? allInts.cursed : null,
                 isDefense: isDefense(incsSorted),
+                isAccuracyWeapon: isAccuracyWeapon(parseInt(blk.id, 10), incsSorted),
                 sourceFile: file,
             });
         }
@@ -229,6 +280,46 @@ function writeDefenseIdsJs(records) {
     return { outPath, count: defenseIds.length };
 }
 
+/**
+ * 将命中率武器卷轴 ID 写入 scroll-accuracy-ids.js（CommonJS + ESM 双导出形式）。
+ */
+function writeAccuracyIdsJs(records) {
+    const accuracyIds = records.filter((r) => r.isAccuracyWeapon).map((r) => r.id);
+    accuracyIds.sort((a, b) => a - b);
+
+    // 每行 8 个 ID，提高可读性
+    const lines = [];
+    for (let i = 0; i < accuracyIds.length; i += 8) {
+        lines.push('  ' + accuracyIds.slice(i, i + 8).join(', ') + ',');
+    }
+    const body = lines.length > 0 ? lines.join('\n') : '  // (空)';
+
+    const content =
+        '/**\n' +
+        ' * 命中率武器卷轴 ID 白名单\n' +
+        ' *\n' +
+        ' * 由 tools/gen-scroll-meta 根据 wz/Item.wz/Consume/*.img.xml 自动生成，\n' +
+        ' * 请勿手工编辑；如需更新，重新运行：\n' +
+        ' *   node tools/gen-scroll-meta/index.js\n' +
+        ' *\n' +
+        ' * 判定规则：\n' +
+        ' *   1) ID 必须落在武器卷轴段 2043000 - 2044999；\n' +
+        ' *   2) inc* 数值最大的字段集合包含 incACC（宽口径：并列最大也算）。\n' +
+        ` * 共 ${accuracyIds.length} 个。\n` +
+        ' */\n' +
+        'const ACCURACY_WEAPON_SCROLL_IDS = Object.freeze([\n' +
+        body +
+        '\n]);\n\n' +
+        '// 同时提供 ESM / CommonJS 两种导出方式，方便不同场景引入\n' +
+        "if (typeof module !== 'undefined' && module.exports) {\n" +
+        '  module.exports = { ACCURACY_WEAPON_SCROLL_IDS };\n' +
+        '}\n';
+
+    const outPath = path.join(OUTPUT_DIR, 'scroll-accuracy-ids.js');
+    fs.writeFileSync(outPath, content, 'utf8');
+    return { outPath, count: accuracyIds.length };
+}
+
 function main() {
     console.log('===========================================');
     console.log('  WZ 卷轴元数据提取工具');
@@ -240,17 +331,20 @@ function main() {
     const records = collectScrolls();
     const metaPath = writeMetaJson(records);
     const { outPath: idsPath, count } = writeDefenseIdsJs(records);
+    const { outPath: accPath, count: accCount } = writeAccuracyIdsJs(records);
 
     // 统计输出
     const total = records.length;
     const withIncs = records.filter((r) => Object.keys(r.incs).length > 0).length;
     console.log('统计信息:');
-    console.log(`  扫描到卷轴数量:     ${total}`);
-    console.log(`  含 inc* 属性卷轴:   ${withIncs}`);
-    console.log(`  判定为防御卷轴数:   ${count}\n`);
+    console.log(`  扫描到卷轴数量:         ${total}`);
+    console.log(`  含 inc* 属性卷轴:       ${withIncs}`);
+    console.log(`  判定为防御卷轴数:       ${count}`);
+    console.log(`  判定为命中率武器卷轴:   ${accCount}\n`);
     console.log('产物文件:');
     console.log(`  ${metaPath}`);
     console.log(`  ${idsPath}`);
+    console.log(`  ${accPath}`);
     console.log('\n提取完成!');
 }
 
