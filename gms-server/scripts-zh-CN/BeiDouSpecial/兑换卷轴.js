@@ -1444,12 +1444,68 @@ const data = {
                ]
              };
 
+// ============================================================================
+// 防御卷轴白名单
+// 由 tools/gen-scroll-meta 根据 wz/Item.wz/Consume/*.img.xml 自动生成；
+// 请勿手工编辑，如需更新请重跑：node tools/gen-scroll-meta/index.js
+// 判定规则：卷轴 info 节点下所有 inc* 属性都属于 {incPDD, incMDD, incMHP, incMMP}
+// ============================================================================
+const DEFENSE_SCROLL_IDS = [
+    2040000, 2040001, 2040003, 2040004, 2040005, 2040007, 2040008, 2040010,
+    2040011, 2040019, 2040021, 2040022, 2040041, 2040042, 2040045, 2040046,
+    2040100, 2040101, 2040102, 2040103, 2040104, 2040115, 2040117, 2040308,
+    2040311, 2040324, 2040325, 2040326, 2040327, 2040328, 2040339, 2040340,
+    2040400, 2040401, 2040402, 2040403, 2040404, 2040405, 2040408, 2040409,
+    2040415, 2040416, 2040420, 2040421, 2040422, 2040429, 2040430, 2040433,
+    2040434, 2040503, 2040504, 2040505, 2040507, 2040510, 2040511, 2040524,
+    2040525, 2040539, 2040543, 2040600, 2040601, 2040602, 2040603, 2040604,
+    2040605, 2040608, 2040609, 2040615, 2040616, 2040620, 2040621, 2040622,
+    2040629, 2040630, 2040633, 2040634, 2040732, 2040733, 2040738, 2040812,
+    2040813, 2040823, 2040824, 2040825, 2040831, 2040832, 2040900, 2040901,
+    2040902, 2040903, 2040904, 2040905, 2040908, 2040909, 2040910, 2040911,
+    2040912, 2040926, 2040927, 2040928, 2040936, 2040939, 2040940, 2040943,
+    2041000, 2041001, 2041002, 2041003, 2041004, 2041005, 2041006, 2041007,
+    2041008, 2041009, 2041010, 2041011, 2041024, 2041025, 2041026, 2041027,
+    2041028, 2041029, 2041030, 2041031, 2041032, 2041033, 2041042, 2041043,
+    2041044, 2041045, 2041046, 2041047, 2041048, 2041049, 2041066, 2041067,
+    2041068, 2041069, 2041112, 2041211, 2041212, 2049208, 2049209, 2049210,
+    2049211
+];
+// 使用对象作为 Set 的兜底实现，Nashorn 也支持 ES6 Set，但为兼容性更稳妥起见保留对象
+const DEFENSE_SCROLL_ID_SET = (function () {
+    const s = {};
+    for (let i = 0; i < DEFENSE_SCROLL_IDS.length; i++) {
+        s[DEFENSE_SCROLL_IDS[i]] = true;
+    }
+    return s;
+})();
+
+/**
+ * 判定指定物品 ID 是否为防御卷轴。
+ * @param {number|string} itemId
+ * @returns {boolean}
+ */
+function isDefenseScroll(itemId) {
+    return DEFENSE_SCROLL_ID_SET[Number(itemId)] === true;
+}
+
+// 卷轴碎片物品 ID
+const FRAGMENT_ITEM_ID = 4001136;
+
+// ---------------- 模块级状态 ----------------
 let scrollItems;
 let hasItems;
 let chooseItem;
 
 let canExchangeItem;
 let exchangeItem;
+
+// 合成子类型：6 = 60% 成功率卷轴；1 = 10% 成功率卷轴
+let exchangeSubType;
+
+// 一键分解防御卷轴的预汇总结果（在确认阶段之间传递）
+// 结构： { items: [{id, qty, fragPerScroll}], totalScrolls, totalFragments }
+let defenseDecomposePreview;
 
 function start() {
     levelStart();
@@ -1464,17 +1520,23 @@ function levelStart() {
 }
 
 function level0() {
-    if (!scrollItems) {
-         scrollItems = Object.keys(data);
-    }
+    // 每次进入都重置 scrollItems，避免跨会话残留与数据表热更后不一致
+    scrollItems = Object.keys(data);
 
     hasItems = scrollItems.filter((item) => cm.hasItem(+item));
-    if (hasItems.length === 0) {
+    // 计算背包中实际拥有的防御卷轴数量，用于决定是否展示"一键分解"入口
+    const hasAnyDefense = DEFENSE_SCROLL_IDS.some((id) => cm.getItemQuantity(id) > 0);
+
+    if (hasItems.length === 0 && !hasAnyDefense) {
         cm.sendNextLevel("Start", "你没有任何卷轴可分解！");
         return;
     }
     let text = "你拥有以下卷轴，请选择你要分解的：\r\n\r\n";
     text += '#d' + '\r\n'.padStart(28,'——') + '#k';
+    // 将"一键分解防御卷轴"固定放在顶部，使用索引 999 与普通卷轴索引（0..N）隔离
+    if (hasAnyDefense) {
+        text += '#L999# #r一键分解所有防御卷轴#k #l\r\n';
+    }
     hasItems.forEach((item, index) => {
         text += '#L' + index + '##z' + item + '# \r\n';
     })
@@ -1484,58 +1546,190 @@ function level0() {
 }
 
 function levelDecompose(choose) {
+    // 分支一：一键分解所有防御卷轴
+    if (choose === 999) {
+        beginDefenseDecompose();
+        return;
+    }
+
+    // 分支二：选择了某张具体卷轴
     chooseItem = hasItems[choose];
+    const ownedQty = cm.getItemQuantity(Number(chooseItem));
+    const defaultQty = Math.min(ownedQty > 0 ? ownedQty : 1, 999);
     let text = '你选择了#b#z'+chooseItem+'##k,每张可分解得到 #r' + (data[chooseItem][1] > 5 ? 2 : 3) + '张卷轴碎片#k\r\n\r\n';
-    text += '请输入要分解的数量:\r\n\r\n';
-    cm.getInputNumberLevel("DecomposeNum", text, 1, 0, 999);
+    text += '你当前持有 #e' + ownedQty + '#n 张，请输入要分解的数量:\r\n\r\n';
+    cm.getInputNumberLevel("DecomposeNum", text, defaultQty, 0, 999);
 }
 
 function levelDecomposeNum(inputNum) {
     if (!cm.hasItem(Number(chooseItem), inputNum)) {
          let text = '你没有#e' + inputNum + '#n张#b#z'+chooseItem+'##k\r\n\r\n';
             text += '请确认后重新输入要分解的数量:\r\n\r\n';
-        cm.getInputNumberLevel("DecomposeNum", text, 1, 0, 999);
+        const ownedQty = cm.getItemQuantity(Number(chooseItem));
+        const defaultQty = Math.min(ownedQty > 0 ? ownedQty : 1, 999);
+        cm.getInputNumberLevel("DecomposeNum", text, defaultQty, 0, 999);
         return;
     }
 
     const fragmentNum = (data[chooseItem][1] > 5 ? 2 : 3) * inputNum;
     cm.gainItem(Number(chooseItem), -inputNum);
-    cm.gainItem(4001136, fragmentNum);
-    cm.sendOkLevel('Start', '你成功使用#e' + inputNum + '#n张#b#z'+chooseItem+'##k 分解了#e' + fragmentNum + '#n张#b#z4001136##n!');
+    cm.gainItem(FRAGMENT_ITEM_ID, fragmentNum);
+    cm.sendOkLevel('Start', '你成功使用#e' + inputNum + '#n张#b#z'+chooseItem+'##k 分解了#e' + fragmentNum + '#n张#b#z' + FRAGMENT_ITEM_ID + '##n!');
+}
+
+// ============================================================================
+// 一键分解防御卷轴
+// ============================================================================
+
+/**
+ * 收集玩家背包中所有防御卷轴的持有数，并构建预汇总结果。
+ * 同时渲染二次确认界面；如无持有量则直接提示并返回。
+ */
+function beginDefenseDecompose() {
+    const items = [];
+    let totalScrolls = 0;
+    let totalFragments = 0;
+    for (let i = 0; i < DEFENSE_SCROLL_IDS.length; i++) {
+        const id = DEFENSE_SCROLL_IDS[i];
+        const qty = cm.getItemQuantity(id);
+        if (qty <= 0) continue;
+        // 若该防御卷轴尚未登记到 data 表（极少数 2049xxx 特殊通用卷轴），用默认 2 碎片/张兜底
+        const meta = data[String(id)];
+        const fragPerScroll = meta ? (meta[1] > 5 ? 2 : 3) : 2;
+        items.push({ id: id, qty: qty, fragPerScroll: fragPerScroll });
+        totalScrolls += qty;
+        totalFragments += qty * fragPerScroll;
+    }
+
+    if (items.length === 0) {
+        cm.sendNextLevel("Start", "你的背包中没有可分解的防御卷轴！");
+        return;
+    }
+
+    defenseDecomposePreview = {
+        items: items,
+        totalScrolls: totalScrolls,
+        totalFragments: totalFragments
+    };
+
+    let text = '#b即将一键分解以下防御卷轴：#k\r\n';
+    text += '#d' + '\r\n'.padStart(28,'——') + '#k';
+    text += '参与分解类别：#r' + items.length + '#k 种\r\n';
+    text += '参与分解总张数：#r' + totalScrolls + '#k 张\r\n';
+    text += '预计获得碎片：#r' + totalFragments + '#k 个 #b#z' + FRAGMENT_ITEM_ID + '##k\r\n\r\n';
+    text += '#L0# #b确认分解#k #l\r\n';
+    text += '#L1# 取消 #l';
+    cm.sendNextSelectLevel("DefenseConfirm", text);
+}
+
+/**
+ * 二次确认后的路由：0 = 确认分解，1 = 取消。
+ */
+function levelDefenseConfirm(choose) {
+    if (choose !== 0) {
+        // 取消或非预期选项，回到分解入口
+        defenseDecomposePreview = null;
+        level0();
+        return;
+    }
+    if (!defenseDecomposePreview || defenseDecomposePreview.items.length === 0) {
+        // 异常兜底
+        cm.sendNextLevel("Start", "操作已失效，请重试。");
+        return;
+    }
+
+    const preview = defenseDecomposePreview;
+
+    // 背包容量校验：卷轴碎片为可堆叠消耗品，按总数量一次性校验
+    if (!cm.canHold(FRAGMENT_ITEM_ID, preview.totalFragments)) {
+        defenseDecomposePreview = null;
+        cm.sendNextLevel("Start", "背包容量不足，请整理后再操作！");
+        return;
+    }
+
+    // 扣除所有防御卷轴；二次校验每张仍在背包中，避免并发变化
+    for (let i = 0; i < preview.items.length; i++) {
+        const it = preview.items[i];
+        const currentQty = cm.getItemQuantity(it.id);
+        const toRemove = Math.min(it.qty, currentQty);
+        if (toRemove > 0) {
+            cm.gainItem(it.id, -toRemove);
+        }
+    }
+    // 一次性发放碎片
+    cm.gainItem(FRAGMENT_ITEM_ID, preview.totalFragments);
+
+    const text = '共分解 #r' + preview.totalScrolls + '#k 张防御卷轴'
+        + '（#r' + preview.items.length + '#k 种），'
+        + '获得 #r' + preview.totalFragments + '#k 个 #b#z' + FRAGMENT_ITEM_ID + '##k。';
+
+    defenseDecomposePreview = null;
+    cm.sendOkLevel('Start', text);
 }
 
 function level1() {
-    if (!canExchangeItem) {
-        canExchangeItem = Object.entries(data)
-          .filter(([key, value]) => value[1] === 6)
-          .map(([key]) => key);
+    // 进入合成流程时重置相关状态
+    canExchangeItem = null;
+    exchangeItem = null;
+    exchangeSubType = null;
+
+    let text = '请选择你想要合成的卷轴类型：\r\n\r\n';
+    text += '#L0# #b60% 成功率卷轴兑换#k #l\r\n';
+    text += '#L1# #b10% 成功率卷轴兑换#k #l\r\n';
+    cm.sendNextSelectLevel("ExchangeType", text);
+}
+
+/**
+ * 10% / 60% 二级菜单选择后的路由：
+ *  - choose === 0 -> 60%（data[x][1] === 6）
+ *  - choose === 1 -> 10%（data[x][1] === 1）
+ */
+function levelExchangeType(choose) {
+    if (choose === 0) {
+        exchangeSubType = 6;
+    } else if (choose === 1) {
+        exchangeSubType = 1;
+    } else {
+        // 非预期选项，回到二级菜单
+        level1();
+        return;
     }
+
+    // 过滤：按子类型筛选 + 移除防御卷轴
+    canExchangeItem = Object.entries(data)
+        .filter(([key, value]) => value[1] === exchangeSubType && !isDefenseScroll(key))
+        .map(([key]) => key);
+
+    if (canExchangeItem.length === 0) {
+        cm.sendNextLevel("Start", "该类型下暂无可兑换卷轴！");
+        return;
+    }
+
     let text = '请选择你想要合成的卷轴：\r\n\r\n';
     canExchangeItem.forEach((item, index) => {
         text += '#L' + index + '##z' + item + '# \r\n';
-    })
-
-    // 选择分解某个卷轴
+    });
     cm.sendNextSelectLevel("Exchange", text);
 }
 
 function levelExchange(choose) {
     exchangeItem = canExchangeItem[choose];
-    let text = '你选择了合成#b#z'+exchangeItem+'##k,每合成1张需要 #r' + (data[exchangeItem][1] > 5 ? 30 : 45) + '#n张#b#z4001136##n#k\r\n\r\n';
+    let text = '你选择了合成#b#z'+exchangeItem+'##k,每合成1张需要 #r' + (data[exchangeItem][1] > 5 ? 30 : 45) + '#n张#b#z' + FRAGMENT_ITEM_ID + '##n#k\r\n\r\n';
     text += '请输入要合成的数量:\r\n\r\n';
     cm.getInputNumberLevel("ExchangeNum", text, 1, 0, 999);
 }
 
 function levelExchangeNum(inputNum) {
     const fragmentNum = (data[exchangeItem][1] > 5 ? 30 : 45) * inputNum;
-    if (!cm.hasItem(4001136, fragmentNum)) {
-         let text = '你没有#e' + fragmentNum + '#n张#b#z4001136##k\r\n\r\n';
+    if (!cm.hasItem(FRAGMENT_ITEM_ID, fragmentNum)) {
+         let text = '你没有#e' + fragmentNum + '#n张#b#z' + FRAGMENT_ITEM_ID + '##k\r\n\r\n';
             text += '请确认后重新输入要合成的数量:\r\n\r\n';
-        cm.getInputNumberLevel("levelExchangeNum", text, 1, 0, 999);
+        cm.getInputNumberLevel("ExchangeNum", text, 1, 0, 999);
         return;
     }
 
-    cm.gainItem(4001136, -fragmentNum);
+    cm.gainItem(FRAGMENT_ITEM_ID, -fragmentNum);
     cm.gainItem(Number(exchangeItem), inputNum);
-    cm.sendOkLevel('Start', '你成功使用#e' + fragmentNum + '#n张#b#z4001136##k 合成了#e' + fragmentNum + '#n张#b#z' + exchangeItem + '##n!');
+    // 修复原文案 BUG：合成了的张数应为 inputNum 而非 fragmentNum
+    cm.sendOkLevel('Start', '你成功使用#e' + fragmentNum + '#n张#b#z' + FRAGMENT_ITEM_ID + '##k 合成了#e' + inputNum + '#n张#b#z' + exchangeItem + '##n!');
 }
