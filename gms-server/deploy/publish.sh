@@ -129,18 +129,30 @@ if [[ "$has_resources" == true ]]; then
 fi
 
 if [[ "$SKIP_MAVEN" != true ]]; then
-  # Ensure JDK 21 is used for compilation (macOS Homebrew path as fallback)
+  # Ensure JDK 21 is used for compilation.
+  # If JAVA_HOME is missing OR points to a non-21 JDK, try known local JDK 21 paths.
+  _need_switch_jdk=false
   if [[ -z "${JAVA_HOME:-}" ]]; then
+    _need_switch_jdk=true
+  elif [[ -x "${JAVA_HOME}/bin/javac" ]]; then
+    _jc_ver="$("${JAVA_HOME}/bin/javac" -version 2>&1 | awk '{print $2}' | cut -d. -f1)"
+    if [[ "${_jc_ver}" != "21" ]]; then
+      _need_switch_jdk=true
+    fi
+  fi
+  if [[ "${_need_switch_jdk}" == true ]]; then
     for candidate in \
       /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home \
       /usr/lib/jvm/java-21-openjdk-amd64 \
       /usr/lib/jvm/java-21; do
       if [[ -d "$candidate" ]]; then
         export JAVA_HOME="$candidate"
+        export PATH="$JAVA_HOME/bin:$PATH"
         break
       fi
     done
   fi
+  unset _need_switch_jdk _jc_ver
   if [[ -n "${JAVA_HOME:-}" ]]; then
     echo "Using JAVA_HOME=$JAVA_HOME"
   fi
