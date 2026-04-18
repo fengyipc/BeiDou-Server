@@ -1118,8 +1118,10 @@ public class EventInstanceManager {
 
         AbstractPlayerInteraction api = player.getAbstractPlayerInteraction();
         int rnd = (int) Math.floor(Math.random() * randomRewardsSet.size());
-        for (Integer i = 0; i < fixedRewardsSet.size(); i++) {
-            api.gainItem(fixedRewardsSet.get(i), fixedRewardsQty.get(i).shortValue());
+        if (fixedRewardsSet != null) {
+            for (Integer i = 0; i < fixedRewardsSet.size(); i++) {
+                api.gainItem(fixedRewardsSet.get(i), fixedRewardsQty.get(i).shortValue());
+            }
         }
         api.gainItem(randomRewardsSet.get(rnd), randomRewardsQty.get(rnd).shortValue());
         if (rewardExp > 0) {
