@@ -118,7 +118,8 @@ function getEligibleParty(party) {      //selects, from the given party, the tea
 
 function setup(channel) {
     var eim = em.newInstance("Balrog" + channel);
-    eim.setProperty("level", channel);
+    var level = 1;
+    eim.setProperty("level", level);
     eim.setProperty("boss", "0");
     eim.setProperty("canJoin", 1);
 
